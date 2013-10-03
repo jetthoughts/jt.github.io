@@ -1,4 +1,5 @@
 .top_menu_wrap {
+  font-size: 1.111em;
   height: $nav_height;
   background: $deep_blue;
   .menu {
@@ -9,6 +10,8 @@
     @include inline-block;
     height: $nav_height;
     .menu_link {
+      font-size: 0.75em;
+      font-weight: 400;
       text-transform: uppercase;
       color: $white;
       height: $nav_height;

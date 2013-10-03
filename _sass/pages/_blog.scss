@@ -5,23 +5,21 @@
     text-align: center;
   }
   .post_date {
-    @include myriad(22px);
-    font-weight: 100;
+    @include lato(1.1em);
     text-align: center;
     color: $dirt_blue_lighter;
-    padding: 15px 0;
+    padding: 5px 0 10px;
     display: block;
     background: $white_gray;
     border-radius: $radius;
     .month {
       display: block;
-      margin-bottom: 10px;
     }
     .day {
       display: block;
-      font-size: 30px;
-      line-height: 20px;
-      font-weight: 700;
+      font-size: 1.5em;
+      line-height: 120%;
+      font-weight: 900;
     }
   }
   .b_footer {
@@ -50,8 +48,8 @@
   }
   .header {
     .heading_one {
-      @include myriad(41px);
-      font-weight: 300;
+      @include lato(2em);
+      font-weight: 400;
       line-height: 41px;
       color: $dark_blue;
       text-align: left;
@@ -60,7 +58,7 @@
     }
   }
   .post_meta {
-    @include myriad(19px);
+    @include lato(1em);
     color: $dirt_blue_lighter;
     .author {
       color: $orange_shadow;
@@ -80,7 +78,7 @@
 }
 
 .post_content {
-  @include myriad(19px);
+  @include lato(1.15em);
   margin-top: 10px;
   .description {
     color: $mid_gray;
@@ -96,9 +94,6 @@
 
 .inside_post {
   color: $mid_gray;
-  p {
-    line-height: 2em;
-  }
   .b_footer {
     .share {
       background: $light_gray_3;

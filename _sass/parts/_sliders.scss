@@ -24,8 +24,8 @@ $slider_caption_top: 330px;
   }
   .heading_one {
     text-align: center;
-    @include proxima(2em);
-    font-weight: 400;
+    @include lato(1.9em);
+    font-weight: 300;
     color: $explicit_gray;
     margin: 0;
     text-shadow: 0 1px 9px transparentize($black, 0.4);
@@ -98,8 +98,8 @@ $slider_caption_top: 330px;
       height: inherit;
     }
     .orbit-caption {
-      @include myriad(emCalc(20));
-      line-height: 1.2em;
+      font-size: 1.15em;
+      font-weight: 300;
       text-align: center;
       padding: 0;
       width: $slider_laptop_caption_width;
@@ -145,8 +145,7 @@ $slider_caption_top: 330px;
     margin-top: emCalc(20);
     @extend .dark_bg;
     .message {
-      @include myriad(1.125em);
-      line-height: 1.85em;
+      font-size: 1.15em;
       color: $white;
     }
   }
@@ -202,6 +201,7 @@ $slider_caption_top: 330px;
     text-align: center;
     .heading_one {
       color: $white;
+      font-weight: 400;
     }
     .icon_circle {
       margin: 0 auto;

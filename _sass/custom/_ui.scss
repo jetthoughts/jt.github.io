@@ -1,3 +1,5 @@
+$button_min_width: 190px;
+
 .link_underline {
   text-decoration: underline;
   &:hover {
@@ -6,13 +8,13 @@
 }
 
 .button {
-  //@include verb(emCalc(20));
-  @include myriad(20px);
+  @include lato(1.05em);
   font-weight: 400;
   background: $orange;
   border: none;
   border-radius: 3px;
   padding-bottom: 0.7em;
+  min-width: $button_min_width;
   @include box-shadow(0 4px 0 $orange_shadow);
   &:hover {
     background: $orange_shadow;

@@ -3,20 +3,34 @@
   border-color: $light_gray_3;
   border-radius: $radius;
   @include box-shadow(none);
+  &:focus {
+    color: $dark_blue;
+  }
   &.error {
     color: $white;
     background: $red_error;
     border-color: $red_error;
+    &:focus {
+      color: $red_juicy;
+    }
   }
+}
+
+.form_label {
+  font-size: 0.95em;
+  color: $dirt_blue_lighter;
+  line-height: 200%;
 }
 
 .validation_input {
   position: relative;
   .validate_text {
     &.error {
+      font-size: 0.8em;
+      font-weight: 300;
       color: $red;
-      display: block;
       line-height: 1.5em;
+      display: block;
       vertical-align: middle;
       padding-left: 40px;
       padding-right: 15px;
@@ -32,7 +46,7 @@
         @extend .icons-warn;
         position: absolute;
         left: 10px;
-        top: 10px;
+        top: 8px;
         width: 16px;
         height: 15px;
       }
@@ -41,8 +55,9 @@
 }
 
 .textarea {
-  @include myriad(14px);
-  padding: 20px;
+  @include lato(0.8em);
+  font-weight: 300;
+  padding: 15px;
   color: $gray;
   border-color: $explicit_gray;
   background: $explicit_gray;

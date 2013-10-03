@@ -24,7 +24,7 @@ $ava_diameter: 126px;
     border-radius: $ava_diameter/2;
   }
   .position {
-    @include myriad(20px);
+    @include lato(0.95em);
     line-height: 40px;
     vertical-align: middle;
     color: $white;
@@ -40,13 +40,13 @@ $ava_diameter: 126px;
   .bio_wrap {
     padding: $team_card_inner_pad;
     .name {
-      @include myriad(36px);
-      font-weight: 500;
+      @include lato(1.750em);
+      font-weight: 400;
       line-height: 24px;
       color: $light_brown;
     }
     .bio {
-      @include myriad(18px);
+      @include lato(0.85em);
       line-height: 24px;
       color: $light_brown;
     }

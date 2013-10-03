@@ -12,12 +12,12 @@ $portfolio_item_height: 282px;
   .sorter {
     @extend .button;
     @extend .button_gray;
-    @include myriad(14px);
-    line-height: 14px;
-    font-weight: 400;
+    @include lato(0.65em);
+    line-height: 100%;
     text-transform: uppercase;
     padding-bottom: 0.5em;
     margin-bottom: 0;
+    min-width: 50px;
     @include inline-block(middle);
     &.active {
       @extend .button_extraordinary;
@@ -39,7 +39,7 @@ $portfolio_item_height: 282px;
     border-radius: $radius;
     min-height: $portfolio_item_height;
     .button {
-      @include myriad(14px);
+      @include lato(0.65em);
       font-weight: 400;
       text-transform: uppercase;
       display: block;
@@ -50,15 +50,16 @@ $portfolio_item_height: 282px;
     .header {
       padding: 0;
       .heading_one {
-        @include verb(24px);
+        @include lato(1.15em);
         font-weight: 400;
         line-height: 24px;
         color: $white;
+        margin: 10px 0 12px;
       }
     }
     .project_link {
       color: $white;
-      @include myriad(16px);
+      @include lato(0.85em);
       margin-top: 10px;
       text-decoration: underline;
       &:hover {
@@ -66,7 +67,7 @@ $portfolio_item_height: 282px;
       }
     }
     .summary {
-      @include myriad(14px);
+      @include lato(0.85em);
       line-height: 20px;
       color: $white;
     }
@@ -80,7 +81,8 @@ $portfolio_item_height: 282px;
       display: none;
     }
     .heading_one {
-      @include verb(21px);
+      @include lato(1.050em);
+      font-weight: 900;
       color: $light_brown;
     }
   }
@@ -92,7 +94,7 @@ $portfolio_item_height: 282px;
     }
   }
   p {
-    @include myriad(14px);
+    @include lato(0.75em);
     color: $light_brown;
   }
   .portfolio_box {
@@ -132,7 +134,7 @@ $portfolio_item_height: 282px;
     }
   }
   .back_button {
-    @include myriad(16px);
+    @include lato(0.85em);
     font-weight: 400;
     padding: 13px 15px 12px 40px;
     position: relative;
@@ -151,13 +153,14 @@ $portfolio_item_height: 282px;
 .related_projects {
   @extend .similar_projects;
   .heading_five {
+    font-size: 0.85em;
     padding: 0;
   }
   .list {
-    margin-left: -1em;
-    margin-right: -1em;
+    margin-left: -18px;
+    //margin-right: -1em;
     .item {
-      margin: 0 2em 3em;
+      margin: 0 18px 20px;
     }
   }
 }

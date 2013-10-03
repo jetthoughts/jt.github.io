@@ -1,7 +1,8 @@
 .career {
   .header {
     .heading_one {
-      @include proxima(36px);
+      @include lato(1.65em);
+      font-weight: 900;
     }
     .message {
       //padding: 0 160px;
@@ -9,7 +10,7 @@
   }
   .mid_slider_section {
     .heading_one {
-      font-size: 36px;
+      font-size: 1.65em;
     }
   }
   .job_section {
@@ -24,7 +25,8 @@
 .job_application {
   padding: 60px 0 46px;
   .heading_two {
-    @include proxima(48px);
+    @include lato(2.25em);
+    font-weight: 900;
     text-align: center;
     color: $dark_blue;
   }
@@ -52,14 +54,13 @@ $job_section_inner_padding_left: 38px;
       display: none;
     }
     .heading_one {
-      @include myriad(24px);
-      line-height: 24px;
+      @include lato(1.15em);
+      font-weight: 400;
       color: $modern_green;
       margin-top: 25px;
     }
     .description {
-      @include myriad(14px);
-      line-height: 24px;
+      @include lato(0.8em);
       padding-right: 20px;
     }
   }
@@ -70,7 +71,7 @@ $job_section_inner_padding_left: 38px;
       float: left;
     }
     .heading_three {
-      @include myriad(18px);
+      @include lato(1em);
       line-height: 24px;
       color: $modern_green;
     }
@@ -81,14 +82,13 @@ $job_section_inner_padding_left: 38px;
   padding-left: $job_section_inner_padding_left;
   padding-right: $job_section_inner_padding_left;
   .heading_two {
-    @include myriad(21px);
+    @include lato(1em);
     line-height: 24px;
     color: $modern_green;
     text-align: left;
   }
   .paragraph {
-    @include myriad(14px);
-    line-height: 24px;
+    @include lato(0.8em);
   }
 }
 
@@ -101,7 +101,7 @@ $job_section_inner_padding_left: 38px;
   background: $explicit_gray;
   padding: 20px 0 20px;
   .heading_five {
-    @include myriad(18px);
+    @include lato(1em);
     font-weight: 400;
     color: $dirt_blue;
     padding-left: 40px;
@@ -111,13 +111,13 @@ $job_section_inner_padding_left: 38px;
   .list {
     text-align: center;
     margin-bottom: 0;
-    margin-left: -12px;
-    margin-right: -12px;
+    margin-left: -10px;
+    margin-right: -10px;
     .item {
       @include inline-block(middle);
       width: $similar_project_thumb_size;
       height: $similar_project_thumb_size;
-      margin: 0 24px 15px;
+      margin: 0 10px 15px;
       .thumb {
         display: block;
         background: $modern_green;

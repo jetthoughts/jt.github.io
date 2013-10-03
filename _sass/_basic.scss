@@ -18,6 +18,14 @@
   }
 }
 
+
+@mixin lato($fs:14px) {
+  font: {
+    family: "Lato", sans-serif;
+    size: $fs;
+  }
+}
+
 .blueprint_pat {
   background: $blue url("../images/pat_blueprint.png") repeat;
 }
@@ -42,10 +50,6 @@
   background: $white;
   border-radius: $mid_radius;
   @extend .smooth_shadow;
-}
-
-body {
-  font-size: emCalc(20);
 }
 
 .inner {

@@ -12,7 +12,7 @@ $map_height: 400px;
     border-bottom: 2px solid $explicit_gray;
   }
   .heading_three {
-    @include myriad(20px);
+    @include lato(0.95em);
     font-weight: 400;
     color: $dirt_blue;
     text-transform: uppercase;

@@ -1,4 +1,4 @@
-$offer_block_min_height: 492px;
+$offer_block_min_height: 500px;
 
 .offer_section {
   background: url("../images/pat_isometric.png") repeat;
@@ -7,15 +7,15 @@ $offer_block_min_height: 492px;
     margin-top: 60px;
     margin-bottom: 55px;
     .heading_one {
-      @include proxima(2.5em);
-      line-height: 1em;
+      font-size: 2.250em;
+      font-weight: 900;
       color: $dark_blue;
       text-align: center;
       margin: 0;
     }
   }
   .message {
-    @include proxima(1em);
+    font-size: 1.278em;
     color: $dark_blue;
     margin-bottom: 40px;
   }
@@ -24,14 +24,14 @@ $offer_block_min_height: 492px;
     margin: 0 emCalc(15) emCalc(20);
     @extend .smooth_shadow;
     .heading_two {
-      @include proxima(emCalc(36));
+      @include lato(1.65em);
+      font-weight: 900;
       color: $modern_green;
       margin-top: 0;
       margin-bottom: 10px;
     }
     .message {
-      @include myriad(emCalc(14));
-      font-weight: 400;
+      @include lato(0.8em);
       color: $text_brown;
       margin: 0;
     }
@@ -52,7 +52,7 @@ $offer_block_min_height: 492px;
       background: $modern_green;
       border-radius: $mid_radius $mid_radius 0 0;
       .icon_circle {
-        margin-right: 20px;
+        margin-right: 10px;
       }
       .icon_circle,
       .heading_wrap {
@@ -63,10 +63,10 @@ $offer_block_min_height: 492px;
       text-align: left;
     }
     .subheading {
-      @include myriad(0.75em);
+      @include lato(0.9em);
     }
     .heading_three {
-      @include myriad(emCalc(26));
+      @include lato(1.45em);
       line-height: 0.9em;
       color: $white;
       font-weight: 400;
@@ -75,7 +75,7 @@ $offer_block_min_height: 492px;
       margin-bottom: 0;
     }
     .description {
-      @include myriad(0.9em);
+      @include lato(0.9em);
       color: $text_brown;
       padding: 0 emCalc(20) 0;
       margin: emCalc(10) 0;
@@ -99,7 +99,7 @@ $offer_block_min_height: 492px;
     .partner {
       @include inline-block(bottom);
       line-height: 60px;
-      margin: 0 20px;
+      margin: 0 0.75em;
       .partners-logo_paypal {
         margin-bottom: -8px;
       }

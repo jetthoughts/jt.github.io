@@ -1,25 +1,44 @@
+body {
+  @include lato(1.111em);
+  font-weight: 300;
+  word-spacing: 0.1em;
+}
+
 .basic_text {
   font: {
-    family: "PT Sans", "Myriad Pro", sans-serif;
-    size: 18px;
-    weight: 400;
+    family: "Lato",sans-serif;
+    size: 1em;
+    weight: 300;
   }
-  line-height: 24px;
 }
 
 .white {
   color: $white;
 }
 
+p {
+  font-weight: 300;
+  line-height: 150%;
+}
+
+b {
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 700;
+}
+
 .inner {
   .article {
     .heading_one {
-      @include proxima(48px);
-      line-height: 48px;
+      @include lato(2.25em);
+      font-weight: 900;
+      line-height: 140%;
       color: $dark_blue;
     }
     .message {
-      @include proxima(22px);
+      @include lato(1.15em);
       line-height: 30px;
       text-align: center;
       color: $dark_blue;
@@ -41,10 +60,10 @@
 // Headings
 
 .h1 {
-  @include proxima(2.5em);
+  @include lato(2.5em);
   line-height: 1em;
   color: $dark_blue;
-  margin: emCalc(20px) 0 emCalc(10px);
+  margin: 14px 0 10px;
 }
 
 .heading_one, h1 {
@@ -54,13 +73,13 @@
 h2,
 .heading_two {
   @extend .h1;
-  font-size: emCalc(20px);
+  font-size: 2.3em;
 }
 
 h3,
 .heading_three {
   @extend .h1;
-  font-size: emCalc(18px);
+  font-size: 1.45em;
 }
 
 h4,
@@ -83,7 +102,6 @@ h6,
 }
 
 .table {
-  @include myriad(12px);
   border: none;
   width: 100%;
   .tr {
@@ -95,6 +113,7 @@ h6,
   }
   .th,
   .td {
+    font-size: 0.75em;
     border-bottom: 1px solid $light_gray;
     background: none;
     padding-top: 10px;
@@ -107,7 +126,7 @@ h6,
 }
 
 .notice {
-  font-size: 13px;
+  font-size: 0.75em;
   color: $dirt_blue;
   background: $explicit_gray;
   padding: 20px 10px;

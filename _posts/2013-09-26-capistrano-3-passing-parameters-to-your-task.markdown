@@ -24,12 +24,12 @@ end
 
 and now we can run `rake db:migrate` on remote hosts:
 
-```
+{% highlight bash linenos=table %}
 $ cap staging "task:invoke[db:migrate]"
 INFO [397d776e] Running rake db:migrate on 8.8.8.8
 DEBUG [397d776e] Command: ( RAILS_ENV=staging rake db:migrate )
 ...
-```
+{% endhighlight %}
 
 I used the quotes, because for `zsh` the brackets are used for some shell features.
 
