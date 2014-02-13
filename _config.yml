@@ -4,11 +4,16 @@ markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 pygments: true
-safe: true
+#safe: true
 lsi: false
 paginate: 25
-paginate_path: "blog/page:num"
 exclude: ["vendor"]
+permalink: "/blog/:categories/:year/:month/:day/:title/"
+paginate_path: "/blog/page:num"
+
+category_page_dir: "/blog"
+category_page_layout: "category"
+category_paginate_path: "/page:num"
 
 asset_pipeline:
   bundle: true            # Default = true

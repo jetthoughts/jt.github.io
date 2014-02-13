@@ -1,0 +1,12 @@
+<ul class="pagination">
+  {% for count in (1..paginator.total_pages) %}
+  {% if count == paginator.page %}
+  <li class="page_item active">
+    <span class="page_link current-page">{{ count }}</span>
+  {% else %}
+  <li class="page_item">
+    <a class="page_link" href="{{ page.category | category_url: count }}">{{ count }}</a>
+  {% endif %}
+  </li>
+  {% endfor %}
+</ul>

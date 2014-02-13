@@ -1,0 +1,66 @@
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post_item">
+    <div class="row">
+      <div class="columns large-1">
+        <time class="post_date">
+          <span class="month">{{ post.date | date: "%b" }}</span>
+          <span class="day">{{ post.date | date: "%d" }}</span>
+          <span class="year">{{ post.date | date: "%Y" }}</span>
+        </time>
+        <div class="post_icon icons-{{ post.categories }}"></div>
+      </div>
+      <div class="columns large-11">
+        <header class="header">
+          <h1 class="heading_one"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+
+          <div class="post_meta">
+            {% if post.author %}
+            posted by <a href="/team.html" class="author link_underline">{{ post.author }}</a>
+            {% else %}
+            <a href="/team.html" class="author link_underline">Anonymous</a> posted it
+            {% endif %}
+            <!--TODO: Need to add category link-->
+            {% for cat in post.categories %}
+            in
+            <a href="{{ cat | category_url }}" class="category link_underline">{{ cat }}</a>&nbsp;
+            {% endfor %}
+          </div>
+        </header>
+
+
+        <div class="post_content">
+          {% if post.thumb %}
+          <img class="post_thumb" src="{{ post.thumb }}" alt="{{ post.title }}"/>
+          {% endif %}
+
+          <p class="description">
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.content | truncatewords:50 | strip_html }}
+            {% endif %}
+          </p>
+
+          <footer class="b_footer">
+            <a href="{{ post.url }}" class="continue_link link_underline">Continue reading</a>
+            <div class="clear"></div>
+            <div class="share left">
+              <a class="share_link" href="{{ post.url }}#disqus_thread"><span class="comments_num"></span></a>&nbsp;<i class="icons-comment share_link"></i>
+              &nbsp;|&nbsp;
+              <a class="icons-linkedin share_link" href="https://www.linkedin.com/cws/share?url={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}" onclick="window.open('https://www.linkedin.com/cws/share?url={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}','linkedin-share-dialog','width=626,height=436');return false;">in</a>
+              <a class="icons-twitter_small share_link" href="https://twitter.com/share?url={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}&via=jetthoughts" target="_blank" onclick="window.open('https://twitter.com/share?url={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}&via=jetthoughts','twitter-share-dialog','width=626,height=436');return false;">tw</a>
+              <a class="icons-facebook_small share_link" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}','facebook-share-dialog','width=626,height=436');return false;">fb</a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr class="hr large-12">
+    </div>
+
+  </article>
+  {% endfor %}
+</div>

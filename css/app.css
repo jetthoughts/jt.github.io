@@ -10097,16 +10097,25 @@ code {
   zoom: 1;
   *display: inline;
 }
-
+/* line 42, ../_sass/pages/_blog.scss */
+.blog_section .blog_title {
+  margin-bottom: 52px;
+}
 /* line 44, ../_sass/pages/_blog.scss */
+.blog_section .blog_title .title {
+  font-weight: 900;
+  text-align: center;
+}
+
+/* line 51, ../_sass/pages/_blog.scss */
 .post_item {
   margin-bottom: 50px;
 }
-/* line 46, ../_sass/pages/_blog.scss */
+/* line 53, ../_sass/pages/_blog.scss */
 .post_item .hr {
   border-bottom: 4px solid #cbd6d6;
 }
-/* line 50, ../_sass/pages/_blog.scss */
+/* line 57, ../_sass/pages/_blog.scss */
 .post_item .header .heading_one {
   font-family: Lato;
   font-size: 2em;
@@ -10117,34 +10126,34 @@ code {
   vertical-align: text-top;
   margin-top: 0;
 }
-/* line 58, ../_sass/pages/_blog.scss */
+/* line 65, ../_sass/pages/_blog.scss */
 .post_item .header .heading_one a {
   color: #2c3d4f;
 }
-/* line 63, ../_sass/pages/_blog.scss */
+/* line 70, ../_sass/pages/_blog.scss */
 .post_item .post_meta {
   font-family: Lato;
   font-size: 1em;
   color: #7f8c8c;
 }
-/* line 66, ../_sass/pages/_blog.scss */
+/* line 73, ../_sass/pages/_blog.scss */
 .post_item .post_meta .author {
   color: #e67740;
 }
-/* line 69, ../_sass/pages/_blog.scss */
+/* line 76, ../_sass/pages/_blog.scss */
 .post_item .post_meta .category {
   color: #3296d9;
 }
-/* line 71, ../_sass/pages/_blog.scss */
+/* line 78, ../_sass/pages/_blog.scss */
 .post_item .post_meta .category:after {
   content: ",";
 }
-/* line 75, ../_sass/pages/_blog.scss */
+/* line 82, ../_sass/pages/_blog.scss */
 .post_item .post_meta .category:last-child:after {
   content: none;
 }
 
-/* line 85, ../_sass/pages/_blog.scss */
+/* line 92, ../_sass/pages/_blog.scss */
 .author_wrap .author {
   position: relative;
   float: left;
@@ -10154,7 +10163,16 @@ code {
   box-shadow: inset 0 2px 1px rgba(153, 163, 164, 0.25);
   color: white;
 }
-/* line 94, ../_sass/pages/_blog.scss */
+/* line 99, ../_sass/pages/_blog.scss */
+.author_wrap .author:before {
+  content: 'Author:';
+  font-size: 10px;
+  color: #ff8448;
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+/* line 108, ../_sass/pages/_blog.scss */
 .author_wrap .ava {
   width: 160px;
   height: 160px;
@@ -10162,74 +10180,74 @@ code {
   float: left;
   margin-right: 15px;
 }
-/* line 101, ../_sass/pages/_blog.scss */
+/* line 115, ../_sass/pages/_blog.scss */
 .author_wrap .author_name {
   float: left;
   margin-top: 15px;
   margin-bottom: 10px;
 }
-/* line 106, ../_sass/pages/_blog.scss */
+/* line 120, ../_sass/pages/_blog.scss */
 .author_wrap .social_link {
   color: white;
   display: block;
 }
 
-/* line 112, ../_sass/pages/_blog.scss */
+/* line 125, ../_sass/pages/_blog.scss */
 .post_content {
   font-family: Lato;
   font-size: 1.15em;
   margin-top: 10px;
 }
-/* line 115, ../_sass/pages/_blog.scss */
+/* line 128, ../_sass/pages/_blog.scss */
 .post_content .description {
   color: #525656;
 }
-/* line 118, ../_sass/pages/_blog.scss */
+/* line 131, ../_sass/pages/_blog.scss */
 .post_content .post_thumb {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-/* line 122, ../_sass/pages/_blog.scss */
+/* line 135, ../_sass/pages/_blog.scss */
 .post_content .continue_link {
   color: #3296d9;
 }
 
-/* line 127, ../_sass/pages/_blog.scss */
+/* line 140, ../_sass/pages/_blog.scss */
 .inside_post {
   color: #525656;
 }
-/* line 130, ../_sass/pages/_blog.scss */
+/* line 143, ../_sass/pages/_blog.scss */
 .inside_post .b_footer .share {
   margin-bottom: 20px;
   background: #d9d9d9;
 }
-/* line 133, ../_sass/pages/_blog.scss */
+/* line 146, ../_sass/pages/_blog.scss */
 .inside_post .b_footer .share .share_link {
   margin: 10px 5px;
   border-radius: 5px;
 }
 
-/* line 142, ../_sass/pages/_blog.scss */
+/* line 155, ../_sass/pages/_blog.scss */
 .share .icons-facebook_large {
   background-color: #3b5998;
 }
-/* line 144, ../_sass/pages/_blog.scss */
+/* line 157, ../_sass/pages/_blog.scss */
 .share .icons-facebook_large:hover {
   background-color: rgba(59, 89, 152, 0.7);
 }
-/* line 148, ../_sass/pages/_blog.scss */
+/* line 161, ../_sass/pages/_blog.scss */
 .share .icons-linkedin_large {
   background-color: #4875b4;
 }
-/* line 150, ../_sass/pages/_blog.scss */
+/* line 163, ../_sass/pages/_blog.scss */
 .share .icons-linkedin_large:hover {
   background-color: rgba(72, 117, 180, 0.7);
 }
-/* line 154, ../_sass/pages/_blog.scss */
+/* line 167, ../_sass/pages/_blog.scss */
 .share .icons-twitter_large {
   background-color: #33ccff;
 }
-/* line 156, ../_sass/pages/_blog.scss */
+/* line 169, ../_sass/pages/_blog.scss */
 .share .icons-twitter_large:hover {
   background-color: rgba(51, 204, 255, 0.7);
 }

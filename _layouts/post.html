@@ -25,7 +25,7 @@ layout: default
             {% endif %}
             <!--TODO: Need to add category link-->
             in {% for cat in page.categories %}
-            <a href="#cat_link" class="category link_underline">{{ cat }}</a>&nbsp;
+            <a href="{{ cat | category_url }}" class="category link_underline">{{ cat }}</a>&nbsp;
             {% endfor %}
           </div>
         </header>
