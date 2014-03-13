@@ -6,15 +6,16 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: pg,postgresql,rails
 category: tech
+excerpt: Installing postgres(pg) gem for i386 arch.
 ---
 
-I have Mac OS Snow Leopard which has arch x86_64. But when I tried install postgres gem for this arch I had errors, such as:
+I have Mac OS Snow Leopard which has arch x86_64. But when I tried to install postgres gem for this arch, I had errors, such as:
 
 {% highlight ruby linenos=table %}
 compat.h:38:2: error: #error PostgreSQL client version too old, requires 7.3 or later.
 {% endhighlight %}
 
-So I install postgres(pg) gem for i386 arch:
+So I installed postgres(pg) gem for i386 arch:
 
 {% highlight ruby linenos=table %}
 export ARCHFLAGS='-arch i386'
