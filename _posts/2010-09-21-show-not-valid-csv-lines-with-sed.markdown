@@ -1,20 +1,21 @@
 ---
 layout: post
-title: Show not valid CSV lines with sed
+title: Show Not Valid CSV Lines with Sed
 date: 21-09-2010
 author: Michael Nikitochkin
 authors_git: miry
 tags: sed,shell,csv
 category: tech
+excerpt: Installing postgres(pg) gem for i386 arch.
 ---
 
-I have trouble with invalid formatted CSV file. First step show lines with invalid lines.
+I have an issue with invalid formatted CSV file. First step show lines with invalid lines.
 
 {% highlight bash linenos=table %}
 sed -n '/"[^",]*"[^",]*"[^",]*",/,1p' <fileName>
 {% endhighlight %}
 
-Then find in the google way to replace symbol inside quotes. And read next manual http://sed.sourceforge.net/sed1line.txt. So create a sed script with next content, call it as __script.sed__:
+Then I googled a way to replace symbol inside quotes. And I read the next manual http://sed.sourceforge.net/sed1line.txt. So I created a sed script with the next content, called it __script.sed__:
 
 {% highlight bash linenos=table %}
 s/\",\"/\$XXXX\$/g;
@@ -30,7 +31,7 @@ Next we just do:
 sed -f script.sed <fileName>
 {% endhighlight %}
 
-And we get in output a normal csv format file. Next we just add the argument to apply this in this file.
+And we get a normal csv format file in the output. Next we just add the argument to apply that in this file.
 
 {% highlight bash linenos=table %}
 sed -i .bak -f script.sed <fileName>
