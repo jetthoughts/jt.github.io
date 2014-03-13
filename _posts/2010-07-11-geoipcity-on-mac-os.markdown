@@ -6,9 +6,10 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: geoip,ruby,gem
 category: tech
+excerpt: Description of a bug in Syntax Highlighting gem.
 ---
 
-Today, I spent a time to install gem *geoip_city*. So what did I do:
+Today I spent a lot of time installing gem *geoip_city*. So what have I done:
 
 * Get latest version of GeoIP C Api from <http://geolite.maxmind.com/download/geoip/api/c/>
 
@@ -30,13 +31,13 @@ perl -i.bak -pe'/^archive_cmds=/ and !/\bGEOIP_ARCH\b/ and s/-dynamiclib\b/-dyna
 make
 {% endhighlight %}
 
-* When run all this stuff, I did not get a success result, I still have a error when install gem.
+* When I have run all this stuff, I did not get a successful result, I still had an error when installing a gem.
 
-* show available SDKs in you host
+* Showed available SDKs in the host
  ` ls /Developer/SDKs `
  I got two: MacOSX10.5.sdk     MacOSX10.6.sdk
 
-* So change line in readme file
+* So I have changed a line in readme file
 before
 
 {% highlight bash linenos=table %}
@@ -49,7 +50,7 @@ to
 export CFLAGS="-mmacosx-version-min=10.4 -isysroot /Developer/SDKs/MacOSX10.6.sdk $GEOIP_ARCH"
 {% endhighlight %}
 
-* and execute all steps from README file.
+* and executed all steps from README file.
 
 * but found a problem in step configure:
 
@@ -61,13 +62,13 @@ configure: error: C compiler cannot create executables
 See `config.log' for more details.
 {% endhighlight %}
 
-* I choose another SDK and set to "MacOSX10.5.sdk"
+* I chose another SDK and set to "MacOSX10.5.sdk"
 
-* run again all steps
+* repeated all steps once again
 
 * then install gem and all works fine
 
-if you have troubles to install gem and still see next message:
+If you have troubles installing a gem and still see the next message:
 
 {% highlight bash linenos=table %}
 checking for GeoIP_record_by_ipnum() in -lGeoIP... no
@@ -99,7 +100,7 @@ Provided configuration options:
   --without-GeoIPlib
 {% endhighlight %}
 
-So you should add include /usr/local/lib to DYNLD_LIBRARY_PATH. Or do next:
+Then you should add include /usr/local/lib to DYNLD_LIBRARY_PATH. Or do the folllowing:
 in step of configuration do  `./configure --disable-dependency-tracking  --prefix=/opt/GeoIP`
-and then next steps from README. I suggest do `make clean` before each compiles.
+and then the next steps from README. I suggest do `make clean` before each of compiles.
 And then `sudo gem install geoip_city -- --with-geoip-dir=/opt/GeoIP` to install gem.
