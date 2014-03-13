@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Redis Store to store session
+title: Redis Store to Store Session
 date: 28-09-2010
 author: Michael Nikitochkin
 authors_git: miry
