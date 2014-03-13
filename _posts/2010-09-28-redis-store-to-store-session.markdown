@@ -6,9 +6,10 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: redis,rails
 category: tech
+excerpt: If you get an error caching some session values, try this solution.
 ---
 
-I use Redis to store session and cache. And When I try cache some session values, I get exception "TypeError (can't dump TCPSocket)". I have researched this trouble. It was because session.slice('keys') return not simple Hash instance, but SessionHash. So instance method *to_hash* fix all troubles. 
+I use Redis to store session and cache. And when I try to cache some session values, I get an exception "TypeError (can't dump TCPSocket)". I have researched this problem. It happened because session.slice('keys') returns not simple Hash instance, but SessionHash. So instance method *to_hash* fixes all troubles. 
 Example:
 
 {% highlight ruby linenos=table %}
