@@ -6,9 +6,10 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: capistrano,git,mercurial
 category: tech
+excerpt: How to run remote Rails console using Capistrano.
 ---
 
-Many times we want execute some commands in remote servers. We login to server, change directory, run script/console. Thanks to Capistrano we could only add next snippet to *config/deploy.rb* of our rails app:
+Many times we want to execute some commands in remote servers. We login to server, change directory, run script/console. Thanks to Capistrano we could only add next snippet to *config/deploy.rb* of our rails app:
 
 {% highlight ruby linenos=table %}
 desc "remotely console"
