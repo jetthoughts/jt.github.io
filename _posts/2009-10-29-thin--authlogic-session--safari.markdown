@@ -6,12 +6,10 @@ authors_git: miry
 date: 2009-10-29
 tags: linux,thin,authlogic
 category: tech
+excerpt: Description of Rails 2.3.4 bug with Authlogic.
 ---
 
-Вчера потратил уйму времени из-за того что  под Сафари не разлогинится. Попробылва под фариком то все ок.
-Так же мне не нравится что несколько запросов посылает Сафари серверу, возможно это из за включеного монитора нагрузки ресурсов.
-У меня сервер был thin  простое приложение на рельсах с использованием authlogic.
-Сегодня *утром* решил от дебужить, и нашел что при использовании монгрела все ок.
-После нескольких тестов , опять такая же фигня. Почему Сафари отсылает два запроса вместо одного, не понятно.
+Yesterday I spent a lot of time because I did not login in Safari. Tried Firefox, worked fine. Also I don’t like the fact that Safari sends several requests to server. Maybe that happens because of resource load monitor which has been turned on. I used Thin server for a simple Rails application with authlogic. 
 
-Рельсы у меня 2.3.4. Когда они появились, то в новостях видел баг их с authlogic.
+Today in the morning I decided to debug. Found out that while using Mongrel everything works fine. After running several tests, the same issue came up. I cannot understand, why Safary sends two requests instead of one. I use Rails 2.3.4. When it was released, I saw their bug with authlogic in the news. 
+
