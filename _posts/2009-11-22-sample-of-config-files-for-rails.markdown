@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Sample of config files for Rails
+title: Sample of Config Files for Rails
 author: Michael Nikitochkin
 authors_git: miry
 date: 2009-11-22
 tags: rails,config,jruby
 category: tech
+excerpt: An easy way of setting gems for different platforms.
 ---
-Sometime we run same application in different platforms: Ruby and JRuby or Windows and Linux. And each platform has own version of a gem.
-Example of my config file for Rails to run instance with **ruby** or **jruby**.
+Sometimes we run the same application in different platforms: Ruby and JRuby or Windows and Linux. And each platform has its own version of a gem.
+Here is an example of my config file for Rails to run instance with **ruby** or **jruby**.
 Setting gems for different platforms **config/environment.rb**:
 
 {% highlight ruby linenos=table %}
