@@ -6,6 +6,7 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: macos,plist,xml,bplist
 category: tech
+excerpt: Convertion of Mac OS preference files to xml.
 ---
 
 Convert Mac OS preference files to xml:
@@ -14,7 +15,7 @@ Convert Mac OS preference files to xml:
 plutil -convert xml1 path/to/preferences.plist
 {% endhighlight %}
 
-Then open *path/to/preferences.plist* and see XML formated file. Do some changes and
+Then open *path/to/preferences.plist* and see XML formated file. Make some changes and
 convert back:
 
 {% highlight bash linenos=table %}
