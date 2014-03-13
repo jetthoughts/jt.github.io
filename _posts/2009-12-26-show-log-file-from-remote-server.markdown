@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Show log file from remote server
+title: Show Log File from Remote Server
 date: 26-12-2009
 author: Michael Nikitochkin
 authors_git: miry
 tags: rails,capistrano,ruby
 category: tech
+excerpt: Creating a simple *capistrano* task for showing current log file from remote server.
 ---
 
-Create simple *capistrano* task for showing current log file from remote server so simple. Add next lines to *Capfile* or *config/deploy.rb* (if you are using rails)
+Creating a simple *capistrano* task for showing current log file from remote server is so simple. Just add the following  lines to *Capfile* or *config/deploy.rb* (if you are using Rails)
  
 {% highlight ruby linenos=table %}
 desc
@@ -23,9 +24,9 @@ Run this task:
 # cap show_log
 {% endhighlight %}
 
-And you see log file in real time.
+And you will see log file in real time.
 
-So it is universal method work for multistage capistrano extension too.
+So it is a universal method that works for multistage capistrano extension too.
 
 {% highlight bash linenos=table %}
 # cap production show_log
