@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Change size of images shell script
+title: Change Size of Images Shell Script
 date: 17-05-2010
 author: Michael Nikitochkin
 authors_git: miry
 tags: shell,imagemagick
 category: tech
+excerpt: How to resize images.
 ---
 
-I had a issue: Find all images in directory and change size to "150x200". So lets start.
+I had a issue: Find all images in directory and change size to "150x200". So let's start.
 
 1. Find all images **find .**
 2. Convert size of image: **convert -geometry '150x200' image.gif image.gif**
@@ -20,4 +21,4 @@ do
 done
 {% endhighlight %}
 
-If you want get only image size use: *identify image.png*
+If you want to get only image size use: *identify image.png*
