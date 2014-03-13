@@ -1,22 +1,23 @@
 ---
 layout: post
-title: Rails assets host with ssl
+title: Rails Assets host with SSL
 date: 19-02-2010
 author: Michael Nikitochkin
 authors_git: miry
 tags: rails,assets
 category: tech
+excerpt: A beautiful solution to get rid of browser user alerts about the unsafe content.
 ---
 
-When we use simple assets server as 
+When we use simple assets server, such as 
 
 {% highlight ruby linenos=table %}
 ActionController::Base.asset_host = "http://assets%d.example.com"
 {% endhighlight %}
 
-, so we have a problem with pages which used ssl and some browsers alert users,that some content is not safe.
+we have a problem with pages which use ssl and some browsers alert users that some content is not safe.
 
-So I found in the **google** next solution:
+So I found in **google** the following solution:
 
 {% highlight ruby linenos=table %}
 ActionController::Base.asset_host = Proc.new { |source, request|
@@ -25,4 +26,4 @@ ActionController::Base.asset_host = Proc.new { |source, request|
 {% endhighlight %}
 
 
-It is beautiful, because for each image we use only one host, so when you refresh you page, a image always have example host 'assets1' in each page, not random host.
+It is beautiful, because for each image we use only one host, so when you refresh a page, an image always has an example host 'assets1' in each page, not some random host.
