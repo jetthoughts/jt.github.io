@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Postgresql Insert not valid unicode values
+title: Postgresql Insert not Valid Unicode Values
 date: 16-12-2009
 author: Michael Nikitochkin
 authors_git: miry
