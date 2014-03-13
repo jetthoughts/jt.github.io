@@ -1,19 +1,20 @@
 ---
 layout: post
-title: Add new conditions to Searchlogic sample by Range
+title: Add New Conditions to Searchlogic Sample by Range
 date: 1-12-2009
 author: Michael Nikitochkin
 authors_git: miry
 tags: rails,searchlogic
 category: tech
+excerpt: Three simple steps to fix bugs with Postgres.
 ---
 
-I am using awesome plugin searchlogic by binarylogic. But it is has some small bugs with working Postgres.
+I am using an awesome plugin searchlogic by binarylogic. But it has some small bugs concerning working with Postgres.
 
 Issue: Add time interval for conditions.
 
-We need only three small steps in file vendor/plugin/searchlogic/named_scopes/conditions.rb:
-First adding conditon before line `CONDITIONS = {}`:
+We need to add only three small steps in file vendor/plugin/searchlogic/named_scopes/conditions.rb:
+First of all, add a conditon before a line `CONDITIONS = {}`:
 
 {% highlight ruby linenos=table %}
 RANGE_CONDITIONS = {
@@ -22,13 +23,13 @@ RANGE_CONDITIONS = {
 }
 {% endhighlight %}
 
-Second step register our conditions, write after line `CONDITIONS={}`:
+The second step: register our conditions, write after line `CONDITIONS={}`:
 
 {% highlight ruby linenos=table %}
 RANGE_CONDITIONS.each { |condition, aliases| CONDITIONS[condition] = aliases }
 {% endhighlight %}
 
-Third step write our query in the method *create_primary_condition* find case and add next exprs:
+The third step: write our query in the method *create_primary_condition* find case and add next exprs:
 
 {% highlight ruby linenos=table %}
 when "range"
@@ -39,5 +40,5 @@ end
 {% endhighlight %}
 
 Go to console and type some query: User.created_at_range(1.month.ago, 1.day.ago)
-Wuala, we have all users in that period.
+Wuala, we have all users for that period.
 
