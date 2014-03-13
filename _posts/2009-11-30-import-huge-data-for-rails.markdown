@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Import huge data for Rails
+title: Import Huge Data for Rails
 date: 30-11-2010
 author: Michael Nikitochkin
 authors_git: miry
 tags: rake,rails,csv
 category: tech
+excerpt: A simple rake task for dumping data from DB to CSV file. 
 ---
 
-I wrote simple rake task for dump data from DB to CSV file:
+I wrote a simple rake task for dump data from DB to CSV file:
 
 {% highlight ruby linenos=table %}
 namespace :db do
