@@ -6,6 +6,7 @@ authors_git: miry
 date: 2009-10-3
 tags: mercurial,hg
 category: tech
+excerpt: A solution for changing name and email in Mercurial repository.
 ---
 
 #### Problem:
