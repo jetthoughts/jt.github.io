@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rails Assets host with SSL
+title: Rails Assets Host with SSL
 date: 19-02-2010
 author: Michael Nikitochkin
 authors_git: miry
