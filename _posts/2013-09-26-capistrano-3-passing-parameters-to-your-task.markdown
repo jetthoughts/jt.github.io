@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 26-09-2013
-title: "Capistrano 3: Passing parameters to your task"
+title: "Capistrano 3: Passing Parameters to Your Task"
 author: Michael Nikitochkin
 authors_git: miry
 tags: ruby capistrano deploy config rakefile
