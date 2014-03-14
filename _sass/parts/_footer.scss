@@ -1,5 +1,12 @@
 $footer-height: 438px;
 //@include sticky-footer($footer-height, ".wrapper", ".footer_push", ".footer");
+.legal_link {
+  font-size: 13px;
+  color: $explicit_gray;
+  &:hover {
+    color: #fff;
+  }
+}
 
 .footer {
   color: $white;

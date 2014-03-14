@@ -94,6 +94,7 @@ $circle_small_icon_diameter: 64px;
   vertical-align: middle;
   width: $circle_icon_diameter;
   height: $circle_icon_diameter;
+  position: relative;
   overflow: hidden;
   border: 1px solid $white;
   border-radius: ceil($circle_icon_diameter/2);
@@ -105,15 +106,86 @@ $circle_small_icon_diameter: 64px;
     height: $circle_mid_icon_diameter;
     line-height: $circle_mid_icon_diameter;
     border-radius: ceil($circle_mid_icon_diameter/2);
-    >[class*="icon"] {
-      line-height: $circle_mid_icon_diameter;
-    }
   }
   >[class*="icon"] {
-    @include inline-block(middle);
-    line-height: $circle_icon_diameter;
-    vertical-align: middle;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
   }
+  .icons-webapp {
+    margin-left: -(icons-sprite-width(webapp)/2);
+    margin-top: -(icons-sprite-height(webapp)/2);
+  }
+
+  .icons-mobile {
+    margin-left: -(icons-sprite-width(mobile)/2);
+    margin-top: -(icons-sprite-height(mobile)/2);
+  }
+
+  .icons-scales {
+    margin-left: -(icons-sprite-width(scales)/2);
+    margin-top: -(icons-sprite-height(scales)/2);
+  }
+
+  .icons-brain {
+    margin-left: -(icons-sprite-width(brain)/2);
+    margin-top: -(icons-sprite-height(brain)/2);
+  }
+
+  .icons-binder {
+    margin-left: -(icons-sprite-width(binder)/2);
+    margin-top: -(icons-sprite-height(binder)/2);
+  }
+
+  .icons-moneybag {
+    margin-left: -(icons-sprite-width(moneybag)/2);
+    margin-top: -(icons-sprite-height(moneybag)/2);
+  }
+
+  .icons-tools {
+    margin-left: -(icons-sprite-width(tools)/2);
+    margin-top: -(icons-sprite-height(tools)/2);
+  }
+
+  .icons-phone {
+    margin-left: -(icons-sprite-width(phone)/2);
+    margin-top: -(icons-sprite-height(phone)/2);
+  }
+
+  .icons-photo {
+    margin-left: -(icons-sprite-width(photo)/2);
+    margin-top: -(icons-sprite-height(photo)/2);
+  }
+
+  .icons-mail {
+    margin-left: -(icons-sprite-width(mail)/2);
+    margin-top: -(icons-sprite-height(mail)/2);
+  }
+
+  .icons-mic {
+    margin-left: -(icons-sprite-width(mic)/2);
+    margin-top: -(icons-sprite-height(mic)/2);
+  }
+
+  .icons-client-oriented {
+    margin-left: -(icons-sprite-width(client-oriented)/2);
+    margin-top: -(icons-sprite-height(client-oriented)/2);
+  }
+  .icons-efficiency {
+    margin-left: -(icons-sprite-width(efficiency)/2);
+    margin-top: -(icons-sprite-height(efficiency)/2);
+  }
+  .icons-support {
+    margin-left: -(icons-sprite-width(support)/2);
+    margin-top: -(icons-sprite-height(support)/2);
+  }
+
+  .icons-cost-advantage {
+    margin-left: -(icons-sprite-width(cost-advantage)/2);
+    margin-top: -(icons-sprite-height(cost-advantage)/2);
+  }
+
 }
 
 .pagination {

@@ -77,6 +77,38 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
       display: none;
     }
   }
+  .catch_section {
+    .s_footer {
+      .message {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 140%;
+      }
+    }
+  }
+  .job_summary {
+    padding: 0 20px;
+  }
+  .slider_section {
+    .slider_wrap,
+    .orbit-container {
+      width: auto;
+    }
+    .orbit-timer {
+      display: none;
+    }
+    .slider_list {
+      width: auto;
+    }
+  }
+  .offer_section {
+    .offer_block {
+      min-height: inherit;
+      .description {
+        font-size: 15px;
+      }
+    }
+  }
 }
 
 @media #{$casual} {
@@ -90,7 +122,7 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
 @media #{$below_nav} {
   .top_menu_wrap {
     .logo {
-      margin-left: 40px;
+      margin-left: 10px;
     }
     .top-bar-section {
       display: none;
@@ -213,32 +245,6 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
   .offer_section {
     .offer_block {
       min-height: inherit;
-    }
-  }
-}
-
-@media #{$below_small} {
-  .job_summary {
-    padding: 0 20px;
-  }
-  .slider_section {
-    .slider_wrap,
-    .orbit-container {
-      width: auto;
-    }
-    .orbit-timer {
-      display: none;
-    }
-    .slider_list {
-      width: auto;
-    }
-  }
-  .offer_section {
-    .offer_block {
-      min-height: inherit;
-      .description {
-        font-size: 15px;
-      }
     }
   }
 }

@@ -2,6 +2,11 @@ $tech-spacing: 40px;
 @import "tech/*.png";
 @include all-tech-sprites;
 
+$clients-spacing: 20px;
+@import "clients/*.png";
+@include all-clients-sprites;
+
+
 $icons-spacing: 40px;
 @import "icons/*.png";
 @include all-icons-sprites;
@@ -50,4 +55,39 @@ $ui-spacing: 20px;
 .tech-responsive {
   width: tech-sprite-width(responsive);
   height: tech-sprite-height(responsive);
+}
+
+.clients-alba {
+  width: clients-sprite-width(alba);
+  height: clients-sprite-height(alba);
+}
+
+.clients-bigbinary {
+  width: clients-sprite-width(bigbinary);
+  height: clients-sprite-height(bigbinary);
+}
+
+.clients-mipt {
+  width: clients-sprite-width(mipt);
+  height: clients-sprite-height(mipt);
+}
+
+.clients-imagine {
+  width: clients-sprite-width(imagine);
+  height: clients-sprite-height(imagine);
+}
+
+.clients-vault {
+  width: clients-sprite-width(vault);
+  height: clients-sprite-height(vault);
+}
+
+.ui-swipe_side_blue {
+  width: ui-sprite-width(swipe_side_blue);
+  height: ui-sprite-height(swipe_side_blue);
+}
+
+.ui-swipe_side_white {
+  width: ui-sprite-width(swipe_side_white);
+  height: ui-sprite-height(swipe_side_white);
 }

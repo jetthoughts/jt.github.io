@@ -164,9 +164,16 @@ $slider_caption_top: 330px;
 
 $mid_slider_item_height: 300px;
 .mid_slider_section {
+  position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
   background: $blue url("../images/pat_blueprint_light.png") repeat;
+  #swipe_feature_slider {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
   .orbit-timer {
     display: none;
   }
@@ -223,5 +230,8 @@ $mid_slider_item_height: 300px;
     .icon_circle {
       margin: 0 auto;
     }
+  }
+  .slider_message {
+    font-size: 20px;
   }
 }

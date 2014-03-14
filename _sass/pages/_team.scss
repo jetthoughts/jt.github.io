@@ -23,6 +23,7 @@ $ava_diameter: 126px;
   .ava_wrap {
     padding: $team_card_inner_pad;
     position: relative;
+    float: left;
   }
   .ava {
     display: block;

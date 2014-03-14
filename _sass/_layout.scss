@@ -1,5 +1,13 @@
 .wrapper {
-  background: $body-bg;
+//  background: $body-bg;
+}
+
+.homepage_body {
+  background-color: #436995;
+  background-image: url("../images/bg/bg_06.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .spacer {
@@ -14,13 +22,19 @@ $corner_height: 19px;
     position: relative;
     &:after {
       content: " ";
-      width: $corner_width;
-      height: $corner_height;
-      @extend .ui-corner;
       position: absolute;
       bottom: -($corner_height);
       left: 50%;
       margin-left: -($corner_width/2);
+      border: {
+        style: solid;
+        color: #eeede8 transparent transparent transparent;
+        width: ($corner_height) ($corner_width/2) 0;
+      }
     }
   }
+}
+
+.credits_wrap {
+  padding-bottom: 50px;
 }

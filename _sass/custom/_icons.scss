@@ -1,92 +1,86 @@
 [class^="icons"],
 [class^="tech"] {
   text-indent: -9999px;
-  @include inline-block(middle);
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .icons-webapp {
-  width: 63px;
-  height: 60px;
+  width: icons-sprite-width(webapp);
+  height: icons-sprite-height(webapp);
 }
 
 .icons-mobile {
-  width: 37px;
-  height: 60px;
+  width: icons-sprite-width(mobile);
+  height: icons-sprite-height(mobile);
 }
 
 .icons-scales {
-  width: 61px;
-  height: 61px;
+  width: icons-sprite-width(scales);
+  height: icons-sprite-height(scales);
 }
 
 .icons-brain {
-  width: 71px;
-  height: 78px;
+  width: icons-sprite-width(brain);
+  height: icons-sprite-height(brain);
 }
 
 .icons-binder {
-  width: 11px;
-  height: 24px;
+  width: icons-sprite-width(binder);
+  height: icons-sprite-height(binder);
 }
 
 .icons-moneybag {
-  width: 30px;
-  height: 50px;
+  width: icons-sprite-width(moneybag);
+  height: icons-sprite-height(moneybag);
 }
 
 .icons-tools {
-  width: 52px;
-  height: 51px;
+  width: icons-sprite-width(tools);
+  height: icons-sprite-height(tools);
 }
 
 .icons-phone {
-  width: 16px;
-  height: 16px;
+  width: icons-sprite-width(phone);
+  height: icons-sprite-height(phone);
 }
 
 .icons-photo {
-  width: 48px;
-  height: 34px;
+  width: icons-sprite-width(photo);
+  height: icons-sprite-height(photo);
 }
 
 .icons-mail {
-  width: 14px;
-  height: 12px;
+  width: icons-sprite-width(mail);
+  height: icons-sprite-height(mail);
 }
 
 .icons-mic {
-  width: 37px;
-  height: 60px;
+  width: icons-sprite-width(mic);
+  height: icons-sprite-height(mic);
+}
+
+.icons-client-oriented {
+  width: icons-sprite-width(client-oriented);
+  height: icons-sprite-height(client-oriented);
+}
+.icons-efficiency {
+  width: icons-sprite-width(efficiency);
+  height: icons-sprite-height(efficiency);
+}
+.icons-support {
+  width: icons-sprite-width(support);
+  height: icons-sprite-height(support);
+}
+
+.icons-cost-advantage {
+  width: icons-sprite-width(cost-advantage);
+  height: icons-sprite-height(cost-advantage);
 }
 
 .icons-location {
-  width: 11px;
-  height: 15px;
-}
-
-.partners-logo_authorize {
-  width: 166px;
-  height: 31px;
-}
-
-.partners-logo_braintree {
-  width: 157px;
-  height: 40px;
-}
-
-.partners-logo_paypal {
-  width: 115px;
-  height: 32px;
-}
-
-.partners-logo_stripe {
-  width: 90px;
-  height: 38px;
-}
-
-.partners-logo_visa {
-  width: 75px;
-  height: 25px;
+  width: icons-sprite-width(location);
+  height: icons-sprite-height(location);
 }
 
 .icons-facebook_small {
@@ -132,22 +126,4 @@
 .icons-linkedin-small {
   width: icons-sprite-width(linkedin-small);
   height: icons-sprite-height(linkedin-small);
-}
-
-.icons-client-oriented {
-  width: icons-sprite-width(client-oriented);
-  height: icons-sprite-height(client-oriented);
-}
-.icons-efficiency {
-  width: icons-sprite-width(efficiency);
-  height: icons-sprite-height(efficiency);
-}
-.icons-support {
-  width: icons-sprite-width(support);
-  height: icons-sprite-height(support);
-}
-
-.icons-cost-advantage {
-  width: icons-sprite-width(cost-advantage);
-  height: icons-sprite-height(cost-advantage);
 }
