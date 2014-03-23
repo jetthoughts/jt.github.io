@@ -115,16 +115,6 @@ $contact_icon_wrap_width: 60px;
 .social_wrap {
   .hr {
     position: relative;
-    &:after {
-      content: ' ';
-      display: block;
-      width: 220px;
-      height: 3px;
-      position: absolute;
-      left: 0;
-      top: -4px;
-      background: $explicit_gray;
-    }
   }
   .social_label {
     font-size: 21px;

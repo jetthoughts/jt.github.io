@@ -167,11 +167,11 @@ $catch_section_min_height: 450px;
     top: 0;
   }
   .big_heading {
-    font-size: 90px;
+    font-size: 86px;
     font-weight: 900;
     color: $dark_blue;
     text-align: left;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
   }
   .sub_heading {
     font-size: 30px;
@@ -179,6 +179,15 @@ $catch_section_min_height: 450px;
     color: $dark_blue;
     text-align: left;
     margin-bottom: 30px;
+  }
+  .small_slogan {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 100%;
+    text-align: right;
+    color: $dark_blue;
+    display: block;
+    margin-bottom: 70px;
   }
   .message {
     font-size: 30px;

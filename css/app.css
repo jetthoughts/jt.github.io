@@ -6858,158 +6858,158 @@ code {
   border-top: 3px solid #e67740;
 }
 
-/* line 2, ../_sass/custom/_icons.scss */
+/* line 1, ../_sass/custom/_icons.scss */
 [class^="icons"] {
   text-indent: -9999px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 8, ../_sass/custom/_icons.scss */
+/* line 7, ../_sass/custom/_icons.scss */
 .icons-webapp {
   width: 63px;
   height: 60px;
 }
 
-/* line 13, ../_sass/custom/_icons.scss */
+/* line 12, ../_sass/custom/_icons.scss */
 .icons-mobile {
   width: 37px;
   height: 60px;
 }
 
-/* line 18, ../_sass/custom/_icons.scss */
+/* line 17, ../_sass/custom/_icons.scss */
 .icons-scales {
   width: 61px;
   height: 61px;
 }
 
-/* line 23, ../_sass/custom/_icons.scss */
+/* line 22, ../_sass/custom/_icons.scss */
 .icons-brain {
   width: 71px;
   height: 78px;
 }
 
-/* line 28, ../_sass/custom/_icons.scss */
+/* line 27, ../_sass/custom/_icons.scss */
 .icons-binder {
   width: 11px;
   height: 24px;
 }
 
-/* line 33, ../_sass/custom/_icons.scss */
+/* line 32, ../_sass/custom/_icons.scss */
 .icons-moneybag {
   width: 30px;
   height: 50px;
 }
 
-/* line 38, ../_sass/custom/_icons.scss */
+/* line 37, ../_sass/custom/_icons.scss */
 .icons-tools {
   width: 52px;
   height: 51px;
 }
 
-/* line 43, ../_sass/custom/_icons.scss */
+/* line 42, ../_sass/custom/_icons.scss */
 .icons-phone {
   width: 16px;
   height: 16px;
 }
 
-/* line 48, ../_sass/custom/_icons.scss */
+/* line 47, ../_sass/custom/_icons.scss */
 .icons-photo {
   width: 48px;
   height: 34px;
 }
 
-/* line 53, ../_sass/custom/_icons.scss */
+/* line 52, ../_sass/custom/_icons.scss */
 .icons-mail {
   width: 14px;
   height: 12px;
 }
 
-/* line 58, ../_sass/custom/_icons.scss */
+/* line 57, ../_sass/custom/_icons.scss */
 .icons-mic {
   width: 37px;
   height: 60px;
 }
 
-/* line 63, ../_sass/custom/_icons.scss */
+/* line 62, ../_sass/custom/_icons.scss */
 .icons-client-oriented {
   width: 60px;
   height: 60px;
 }
 
-/* line 67, ../_sass/custom/_icons.scss */
+/* line 66, ../_sass/custom/_icons.scss */
 .icons-efficiency {
   width: 52px;
   height: 61px;
 }
 
-/* line 71, ../_sass/custom/_icons.scss */
+/* line 70, ../_sass/custom/_icons.scss */
 .icons-support {
   width: 60px;
   height: 52px;
 }
 
-/* line 76, ../_sass/custom/_icons.scss */
+/* line 75, ../_sass/custom/_icons.scss */
 .icons-cost-advantage {
   width: 60px;
   height: 62px;
 }
 
-/* line 81, ../_sass/custom/_icons.scss */
+/* line 80, ../_sass/custom/_icons.scss */
 .icons-location {
   width: 11px;
   height: 15px;
 }
 
-/* line 86, ../_sass/custom/_icons.scss */
+/* line 85, ../_sass/custom/_icons.scss */
 .icons-facebook_small {
   width: 17px;
   height: 16px;
 }
 
-/* line 91, ../_sass/custom/_icons.scss */
+/* line 90, ../_sass/custom/_icons.scss */
 .icons-twitter_small {
   width: 18px;
   height: 14px;
 }
 
-/* line 96, ../_sass/custom/_icons.scss */
+/* line 95, ../_sass/custom/_icons.scss */
 .icons-linkedin {
   width: 14px;
   height: 12px;
 }
 
-/* line 101, ../_sass/custom/_icons.scss */
+/* line 100, ../_sass/custom/_icons.scss */
 .icons-github {
   width: 18px;
   height: 18px;
 }
 
-/* line 106, ../_sass/custom/_icons.scss */
+/* line 105, ../_sass/custom/_icons.scss */
 .icons-comment {
   width: 16px;
   height: 15px;
 }
 
-/* line 111, ../_sass/custom/_icons.scss */
+/* line 110, ../_sass/custom/_icons.scss */
 .icons-facebook_large {
   width: 47px;
   height: 47px;
 }
 
-/* line 116, ../_sass/custom/_icons.scss */
+/* line 115, ../_sass/custom/_icons.scss */
 .icons-twitter_large {
   width: 47px;
   height: 47px;
 }
 
-/* line 121, ../_sass/custom/_icons.scss */
+/* line 120, ../_sass/custom/_icons.scss */
 .icons-linkedin_large {
   width: 47px;
   height: 47px;
 }
 
-/* line 126, ../_sass/custom/_icons.scss */
+/* line 125, ../_sass/custom/_icons.scss */
 .icons-linkedin-small {
   width: 18px;
   height: 18px;
@@ -7305,11 +7305,11 @@ code {
 }
 /* line 169, ../_sass/pages/_home.scss */
 .catch_section .big_heading {
-  font-size: 90px;
+  font-size: 86px;
   font-weight: 900;
   color: #2c3d4f;
   text-align: left;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
 /* line 176, ../_sass/pages/_home.scss */
 .catch_section .sub_heading {
@@ -7320,13 +7320,23 @@ code {
   margin-bottom: 30px;
 }
 /* line 183, ../_sass/pages/_home.scss */
+.catch_section .small_slogan {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 100%;
+  text-align: right;
+  color: #2c3d4f;
+  display: block;
+  margin-bottom: 70px;
+}
+/* line 192, ../_sass/pages/_home.scss */
 .catch_section .message {
   font-size: 30px;
   line-height: 48px;
   text-align: left;
   color: white;
 }
-/* line 189, ../_sass/pages/_home.scss */
+/* line 198, ../_sass/pages/_home.scss */
 .catch_section .map_wrap {
   text-align: center;
   padding-bottom: 30px;
@@ -8664,23 +8674,12 @@ code {
 .social_wrap .hr {
   position: relative;
 }
-/* line 118, ../_sass/parts/_footer.scss */
-.social_wrap .hr:after {
-  content: ' ';
-  display: block;
-  width: 220px;
-  height: 3px;
-  position: absolute;
-  left: 0;
-  top: -4px;
-  background: #ebebeb;
-}
-/* line 129, ../_sass/parts/_footer.scss */
+/* line 119, ../_sass/parts/_footer.scss */
 .social_wrap .social_label {
   font-size: 21px;
   margin-right: 10px;
 }
-/* line 133, ../_sass/parts/_footer.scss */
+/* line 123, ../_sass/parts/_footer.scss */
 .social_wrap .social_icon {
   display: -moz-inline-stack;
   display: inline-block;
@@ -8693,7 +8692,7 @@ code {
   height: 18px;
   background-color: #102f44;
 }
-/* line 139, ../_sass/parts/_footer.scss */
+/* line 129, ../_sass/parts/_footer.scss */
 .social_wrap .social_icon:hover {
   background-color: #efefe7;
 }
