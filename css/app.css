@@ -7296,14 +7296,15 @@ code {
 /* line 160, ../_sass/pages/_home.scss */
 .catch_section .s_footer .message {
   font-size: 23px;
+  text-align: center;
   color: white;
 }
-/* line 165, ../_sass/pages/_home.scss */
+/* line 166, ../_sass/pages/_home.scss */
 .catch_section .map_message {
   position: absolute;
   top: 0;
 }
-/* line 169, ../_sass/pages/_home.scss */
+/* line 170, ../_sass/pages/_home.scss */
 .catch_section .big_heading {
   font-size: 86px;
   font-weight: 900;
@@ -7311,7 +7312,7 @@ code {
   text-align: left;
   margin-bottom: 10px;
 }
-/* line 176, ../_sass/pages/_home.scss */
+/* line 177, ../_sass/pages/_home.scss */
 .catch_section .sub_heading {
   font-size: 30px;
   font-weight: 700;
@@ -7319,7 +7320,7 @@ code {
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 183, ../_sass/pages/_home.scss */
+/* line 184, ../_sass/pages/_home.scss */
 .catch_section .small_slogan {
   font-size: 28px;
   font-weight: 900;
@@ -7329,19 +7330,20 @@ code {
   display: block;
   margin-bottom: 70px;
 }
-/* line 192, ../_sass/pages/_home.scss */
+/* line 193, ../_sass/pages/_home.scss */
 .catch_section .message {
   font-size: 30px;
   line-height: 48px;
   text-align: left;
   color: white;
 }
-/* line 198, ../_sass/pages/_home.scss */
+/* line 199, ../_sass/pages/_home.scss */
 .catch_section .map_wrap {
   text-align: center;
   padding-bottom: 30px;
   line-height: 450px;
   min-height: 450px;
+  margin-bottom: -110px;
   position: relative;
   text-shadow: 0 3px 0 rgba(44, 61, 79, 0.25);
 }

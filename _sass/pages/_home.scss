@@ -159,6 +159,7 @@ $catch_section_min_height: 450px;
     background: rgba(54, 100, 155, 0.5);
     .message {
       font-size: 23px;
+      text-align: center;
       color: $white;
     }
   }
@@ -200,6 +201,7 @@ $catch_section_min_height: 450px;
     padding-bottom: 30px;
     line-height: $catch_section_min_height;
     min-height: $catch_section_min_height;
+    margin-bottom: -110px;
     position: relative;
     text-shadow: 0 3px 0 transparentize($dark_blue,0.75);
   }
