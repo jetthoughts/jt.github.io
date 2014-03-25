@@ -7,12 +7,49 @@ $large-screen: 1440px;
 $below_casual: "only screen and (max-width:"#{$casual_screen}")";
 $casual: "only screen and (min-width:"#{$casual_screen}")";
 $below_nav: "only screen and (max-width:"#{$nav_breakpoint}")";
+$ipad: "only screen and (min-width:"#{$small_screen}") and (max-width: "#{$casual_screen}")";
 
 $below_small: "only screen and (max-width:"#{$small-screen}")";
 $below_medium: "only screen and (max-width:"#{$medium-screen}")";
 $below_large: "only screen and (max-width:"#{$large-screen}")";
 
 @media #{$below_small} {
+  .footer {
+    .social_wrap {
+      .social_icon {
+        width: 29px;
+        height: 29px;
+        background-color: transparent;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+      .icons-facebook {
+        background-position: 0 -1332px;
+        &:hover {
+          background-position: 0 -1846px;
+        }
+      }
+      .icons-twitter {
+        background-position: 0 -745px;
+        &:hover {
+          background-position: 0 -1039px;
+        }
+      }
+      .icons-linkedin-small {
+        background-position: 0 -1162px;
+        &:hover {
+          background-position: 0 -1492px;
+        }
+      }
+      .icons-github {
+        background-position: 0 -814px;
+        &:hover {
+          background-position: 0 -970px;
+        }
+      }
+    }
+  }
   .blog_section {
     .post_date {
       .month {
@@ -27,7 +64,11 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
   }
   .map_wrap {
     .big_heading {
-      font-size: 70px;
+      font-size: 40px;
+    }
+    .small_slogan {
+      font-size: 20px;
+
     }
     .sub_heading {
       font-size: 22px;
@@ -107,6 +148,17 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
       .description {
         font-size: 15px;
       }
+    }
+  }
+}
+
+@media #{$ipad} {
+  .map_wrap {
+    .big_heading {
+      font-size: 70px;
+    }
+    .small_slogan {
+      font-size: 26px;
     }
   }
 }

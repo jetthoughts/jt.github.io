@@ -87,36 +87,35 @@
   height: icons-sprite-height(facebook_small);
 }
 
-.icons-twitter_small {
-  width: icons-sprite-width(twitter_small);
-  height: icons-sprite-height(twitter_small);
-}
-
-.icons-linkedin {
-  width: icons-sprite-width(linkedin);
-  height: icons-sprite-height(linkedin);
-}
-
-.icons-github {
-  width: icons-sprite-width(github);
-  height: icons-sprite-height(github);
-}
-
-.icons-comment {
-  width: icons-sprite-width(comment);
-  height: icons-sprite-height(comment);
-}
-
 .icons-facebook_large {
   width: icons-sprite-width(facebook_large);
   height: icons-sprite-height(facebook_large);
 }
 
+.icons-mob_fb {
+  width: icons-sprite-width(mob_fb);
+  height: icons-sprite-height(mob_fb);
+}
+
+.icons-twitter_small {
+  width: icons-sprite-width(twitter_small);
+  height: icons-sprite-height(twitter_small);
+}
 .icons-twitter_large {
   width: icons-sprite-width(twitter_large);
   height: icons-sprite-height(twitter_large);
 }
 
+.icons-mob_twi {
+  width: icons-sprite-width(mob_twi);
+  height: icons-sprite-height(mob_twi);
+}
+
+
+.icons-linkedin {
+  width: icons-sprite-width(linkedin);
+  height: icons-sprite-height(linkedin);
+}
 .icons-linkedin_large {
   width: icons-sprite-width(linkedin_large);
   height: icons-sprite-height(linkedin_large);
@@ -126,3 +125,23 @@
   width: icons-sprite-width(linkedin-small);
   height: icons-sprite-height(linkedin-small);
 }
+
+.icons-mob_in {
+  width: icons-sprite-width(mob_in);
+  height: icons-sprite-height(mob_in);
+}
+
+.icons-github {
+  width: icons-sprite-width(github);
+  height: icons-sprite-height(github);
+}
+.icons-mob_git {
+  width: icons-sprite-width(mob_git);
+  height: icons-sprite-height(mob_git);
+}
+
+.icons-comment {
+  width: icons-sprite-width(comment);
+  height: icons-sprite-height(comment);
+}
+
