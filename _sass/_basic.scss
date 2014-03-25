@@ -21,7 +21,7 @@
 
 @mixin lato($fs:14px) {
   font: {
-    family: Lato;
+    family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
     size: $fs;
   }
 }

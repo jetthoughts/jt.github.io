@@ -5,7 +5,6 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic,900);
 /* line 22, ../_sass/_normalize.scss */
 article,
 aside,
@@ -6459,74 +6458,85 @@ table tfoot tr td {
   height: 0;
 }
 
-/* line 1, ../_sass/custom/_typography.scss */
+/* line 2, ../_sass/custom/_typography.scss */
+.wf-loading,
+.wf-inactive {
+  font-family: sans-serif;
+}
+
+/* line 5, ../_sass/custom/_typography.scss */
+.wf-active {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 9, ../_sass/custom/_typography.scss */
 body {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.111em;
   font-weight: 400;
   word-spacing: 0.1em;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 10, ../_sass/custom/_typography.scss */
+/* line 18, ../_sass/custom/_typography.scss */
 .basic_text {
   font-family: Lato;
   font-size: 16px;
   font-weight: normal;
 }
 
-/* line 18, ../_sass/custom/_typography.scss */
+/* line 26, ../_sass/custom/_typography.scss */
 .white {
   color: white;
 }
 
-/* line 22, ../_sass/custom/_typography.scss */
+/* line 30, ../_sass/custom/_typography.scss */
 p {
   font-weight: 400;
   line-height: 150%;
 }
 
-/* line 27, ../_sass/custom/_typography.scss */
+/* line 35, ../_sass/custom/_typography.scss */
 b {
   font-weight: 600;
 }
 
-/* line 31, ../_sass/custom/_typography.scss */
+/* line 39, ../_sass/custom/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 37, ../_sass/custom/_typography.scss */
+/* line 45, ../_sass/custom/_typography.scss */
 .inner .article .heading_one {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 2.25em;
   font-weight: 900;
   line-height: 140%;
   color: #2c3d4f;
 }
-/* line 43, ../_sass/custom/_typography.scss */
+/* line 51, ../_sass/custom/_typography.scss */
 .inner .article .message {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.15em;
   line-height: 30px;
   text-align: center;
   color: #2c3d4f;
 }
 
-/* line 52, ../_sass/custom/_typography.scss */
+/* line 60, ../_sass/custom/_typography.scss */
 ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 57, ../_sass/custom/_typography.scss */
+/* line 65, ../_sass/custom/_typography.scss */
 .list {
   font-size: 12px;
   padding: 0;
   list-style: none;
 }
 
-/* line 63, ../_sass/custom/_typography.scss */
+/* line 71, ../_sass/custom/_typography.scss */
 .h1, .heading_one, h1, h2,
 .heading_two, h3,
 .heading_three,
@@ -6534,60 +6544,60 @@ ul {
 .heading_four, h5,
 .heading_five, h6,
 .heading_six {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 2.5em;
   line-height: 130%;
   color: #2c3d4f;
   margin: 14px 0 10px;
 }
 
-/* line 75, ../_sass/custom/_typography.scss */
+/* line 83, ../_sass/custom/_typography.scss */
 h2,
 .heading_two {
   font-size: 2.3em;
 }
 
-/* line 81, ../_sass/custom/_typography.scss */
+/* line 89, ../_sass/custom/_typography.scss */
 h3,
 .heading_three,
 .contacts_wrap .contacts_section .heading_one {
   font-size: 1.45em;
 }
 
-/* line 87, ../_sass/custom/_typography.scss */
+/* line 95, ../_sass/custom/_typography.scss */
 h4,
 .heading_four {
   font-size: 16px;
 }
 
-/* line 93, ../_sass/custom/_typography.scss */
+/* line 101, ../_sass/custom/_typography.scss */
 h5,
 .heading_five {
   font-size: 14px;
 }
 
-/* line 99, ../_sass/custom/_typography.scss */
+/* line 107, ../_sass/custom/_typography.scss */
 h6,
 .heading_six {
   font-size: 13px;
   font-weight: 700;
 }
 
-/* line 105, ../_sass/custom/_typography.scss */
+/* line 113, ../_sass/custom/_typography.scss */
 .table {
   border: none;
   width: 100%;
 }
-/* line 108, ../_sass/custom/_typography.scss */
+/* line 116, ../_sass/custom/_typography.scss */
 .table .tr {
   background: none;
 }
-/* line 111, ../_sass/custom/_typography.scss */
+/* line 119, ../_sass/custom/_typography.scss */
 .table .th {
   font-weight: 700;
   text-align: left;
 }
-/* line 116, ../_sass/custom/_typography.scss */
+/* line 124, ../_sass/custom/_typography.scss */
 .table .th,
 .table .td {
   font-size: 0.75em;
@@ -6597,12 +6607,12 @@ h6,
   padding-bottom: 10px;
   vertical-align: top;
 }
-/* line 124, ../_sass/custom/_typography.scss */
+/* line 132, ../_sass/custom/_typography.scss */
 .table .td {
   padding-right: 10px;
 }
 
-/* line 129, ../_sass/custom/_typography.scss */
+/* line 137, ../_sass/custom/_typography.scss */
 .notice {
   font-size: 0.75em;
   color: #666f80;
@@ -6611,23 +6621,23 @@ h6,
   border-radius: 5px;
 }
 
-/* line 137, ../_sass/custom/_typography.scss */
+/* line 145, ../_sass/custom/_typography.scss */
 code {
   font-weight: 400;
 }
 
-/* line 141, ../_sass/custom/_typography.scss */
+/* line 149, ../_sass/custom/_typography.scss */
 .highlighttable {
   display: block;
   overflow-y: hidden;
   overflow-x: auto;
   padding-bottom: 10px;
 }
-/* line 147, ../_sass/custom/_typography.scss */
+/* line 155, ../_sass/custom/_typography.scss */
 .highlighttable pre {
   white-space: pre;
 }
-/* line 150, ../_sass/custom/_typography.scss */
+/* line 158, ../_sass/custom/_typography.scss */
 .highlighttable .linenodiv {
   font-size: 11px;
   color: #ebebeb;
@@ -7140,7 +7150,7 @@ code {
 
 /* line 57, ../_sass/custom/_forms.scss */
 .textarea {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.8em;
   font-weight: 300;
   padding: 15px;
@@ -7451,7 +7461,7 @@ code {
 }
 /* line 34, ../_sass/pages/_team.scss */
 .team_member .position {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.95em;
   line-height: 40px;
   vertical-align: middle;
@@ -7472,7 +7482,7 @@ code {
 }
 /* line 51, ../_sass/pages/_team.scss */
 .team_member .bio_wrap .name {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.75em;
   font-weight: 400;
   line-height: 24px;
@@ -7480,7 +7490,7 @@ code {
 }
 /* line 57, ../_sass/pages/_team.scss */
 .team_member .bio_wrap .bio {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.85em;
   line-height: 24px;
   color: #94846e;
@@ -7488,7 +7498,7 @@ code {
 
 /* line 5, ../_sass/pages/_work.scss */
 .work_wrap .work_detailed .message {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1em;
 }
 
@@ -7508,7 +7518,7 @@ code {
 
 /* line 24, ../_sass/pages/_work.scss */
 .bordered_message {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.15em;
   position: relative;
   padding: 35px 50px;
@@ -7518,7 +7528,7 @@ code {
 /* line 31, ../_sass/pages/_work.scss */
 .or {
   content: 'OR';
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 2.25em;
   font-weight: 900;
   height: 48px;
@@ -7574,7 +7584,7 @@ code {
 }
 /* line 18, ../_sass/pages/_career.scss */
 .job_application .heading_two {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 2.25em;
   font-weight: 900;
   text-align: center;
@@ -7608,7 +7618,7 @@ code {
 }
 /* line 47, ../_sass/pages/_career.scss */
 .job_section .header .heading_one {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.15em;
   font-weight: 400;
   color: #2dcc70;
@@ -7616,7 +7626,7 @@ code {
 }
 /* line 53, ../_sass/pages/_career.scss */
 .job_section .header .description {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.8em;
   color: #615648;
   padding-right: 20px;
@@ -7633,7 +7643,7 @@ code {
 }
 /* line 65, ../_sass/pages/_career.scss */
 .job_section .detailed .heading_three, .job_section .detailed .contacts_wrap .contacts_section .heading_one, .contacts_wrap .contacts_section .job_section .detailed .heading_one {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1em;
   line-height: 24px;
   color: #2dcc70;
@@ -7666,7 +7676,7 @@ code {
 }
 /* line 92, ../_sass/pages/_career.scss */
 .detailed_inner .heading_two {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1em;
   line-height: 24px;
   color: #2dcc70;
@@ -7674,7 +7684,7 @@ code {
 }
 /* line 98, ../_sass/pages/_career.scss */
 .detailed_inner .paragraph {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.8em;
 }
 
@@ -7690,7 +7700,7 @@ code {
 }
 /* line 110, ../_sass/pages/_career.scss */
 .similar_projects .heading_five, .related_projects .heading_five {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1em;
   font-weight: 400;
   color: #666f80;
@@ -7757,7 +7767,7 @@ code {
 }
 /* line 12, ../_sass/pages/_portfolio.scss */
 .portfolio_sort .sorter {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.65em;
   line-height: 100%;
   text-transform: uppercase;
@@ -7792,7 +7802,7 @@ code {
 }
 /* line 41, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .button, .portfolio_item .details .portfolio_sort .sorter, .portfolio_sort .portfolio_item .details .sorter {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.65em;
   font-weight: 400;
   text-transform: uppercase;
@@ -7807,7 +7817,7 @@ code {
 }
 /* line 52, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .header .heading_one {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.15em;
   font-weight: 400;
   line-height: 24px;
@@ -7817,7 +7827,7 @@ code {
 /* line 60, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .project_link {
   color: white;
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.85em;
   margin-top: 10px;
   text-decoration: underline;
@@ -7828,7 +7838,7 @@ code {
 }
 /* line 69, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .summary {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.85em;
   line-height: 20px;
   color: white;
@@ -7844,7 +7854,7 @@ code {
 }
 /* line 83, ../_sass/pages/_portfolio.scss */
 .portfolio .header .heading_one {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.05em;
   font-weight: 900;
   color: #94846e;
@@ -7859,7 +7869,7 @@ code {
 }
 /* line 96, ../_sass/pages/_portfolio.scss */
 .portfolio p {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.75em;
   color: #94846e;
 }
@@ -7894,7 +7904,7 @@ code {
 }
 /* line 136, ../_sass/pages/_portfolio.scss */
 .portfolio .back_button {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.85em;
   font-weight: 400;
   padding: 13px 15px 12px 40px;
@@ -7940,7 +7950,7 @@ code {
 }
 /* line 14, ../_sass/pages/_contacts.scss */
 .contacts_wrap .heading_three, .contacts_wrap .contacts_section .heading_one {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.95em;
   font-weight: 400;
   color: #666f80;
@@ -7970,7 +7980,7 @@ code {
 }
 /* line 7, ../_sass/pages/_blog.scss */
 .blog_section .post_date {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.1em;
   text-align: center;
   color: #7f8c8c;
@@ -8025,7 +8035,7 @@ code {
 }
 /* line 50, ../_sass/pages/_blog.scss */
 .post_item .header .heading_one {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 2em;
   font-weight: 400;
   line-height: 41px;
@@ -8040,7 +8050,7 @@ code {
 }
 /* line 63, ../_sass/pages/_blog.scss */
 .post_item .post_meta {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1em;
   color: #7f8c8c;
 }
@@ -8093,7 +8103,7 @@ code {
 
 /* line 112, ../_sass/pages/_blog.scss */
 .post_content {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.15em;
   margin-top: 10px;
 }
@@ -8701,7 +8711,7 @@ code {
 }
 /* line 91, ../_sass/parts/_footer.scss */
 .contacts_section .address_wrap {
-  font-family: Lato;
+  font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.75em;
   line-height: 20px;
   padding-left: 60px;

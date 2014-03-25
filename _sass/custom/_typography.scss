@@ -1,3 +1,11 @@
+.wf-loading,
+.wf-inactive {
+  font-family: sans-serif;
+}
+.wf-active {
+  font-family: 'Lato', sans-serif;
+}
+
 body {
   @include lato(1.111em);
   font-weight: 400;
