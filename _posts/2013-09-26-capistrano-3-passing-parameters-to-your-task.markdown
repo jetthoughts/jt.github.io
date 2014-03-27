@@ -6,7 +6,8 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: ruby capistrano deploy config rakefile
 category: Tech
-exerpt: The new way of passing parameters in Capistrano v3 is to use the same solution as Rake (in some sort Capistrano 3 is totally based on Rake).
+excerpt: The new way of passing parameters in Capistrano v3 is to use the same solution as Rake (in some sort Capistrano 3 is totally based on Rake).
+
 ---
 
 The new way of passing parameters in Capistrano v3 is to use the same solution as Rake (in some sort Capistrano 3 is  totally based on Rake).
