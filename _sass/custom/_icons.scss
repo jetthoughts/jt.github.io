@@ -111,6 +111,11 @@
   height: icons-sprite-height(mob_twi);
 }
 
+.icons-birdy {
+  width: icons-sprite-width(birdy);
+  height: icons-sprite-height(birdy);
+}
+
 
 .icons-linkedin {
   width: icons-sprite-width(linkedin);
@@ -135,9 +140,14 @@
   width: icons-sprite-width(github);
   height: icons-sprite-height(github);
 }
+
 .icons-mob_git {
   width: icons-sprite-width(mob_git);
   height: icons-sprite-height(mob_git);
+}
+.icons-octocat {
+  width: icons-sprite-width(octocat);
+  height: icons-sprite-height(octocat);
 }
 
 .icons-comment {

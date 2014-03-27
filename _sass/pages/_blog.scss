@@ -103,9 +103,21 @@
     margin-top: 15px;
     margin-bottom: 10px;
   }
+  .social_name {
+    line-height: 32px;
+    vertical-align: text-top;
+  }
   .social_link {
     color: white;
     display: block;
+    &:hover {
+      .icons-octocat {
+        background-position: sprite-position($icons_sprite, 'octocat_hover');
+      }
+      .icons-birdy {
+        background-position: sprite-position($icons_sprite, 'birdy_hover');
+      }
+    }
   }
 }
 

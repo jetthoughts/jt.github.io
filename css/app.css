@@ -6042,14 +6042,23 @@ table tfoot tr td {
   background-position: 0 -52px;
 }
 
-/* line 378, icons/*.png */
-.icons-sprite, .icons-binder, .icons-brain, .icons-client-oriented, .icons-cocktail, .icons-comment, .icons-cost-advantage, .icons-efficiency, .icons-facebook, .icons-facebook_large, .icons-facebook_small, .icons-gears, .icons-github, .icons-head_brain, .icons-linkedin-small, .icons-linkedin, .icons-linkedin_large, .icons-location, .icons-mail, .icons-mic, .icons-mob_fb, .icons-mob_git, .icons-mob_in, .icons-mob_twi, .icons-mobile, .icons-moneybag, .icons-phone, .icons-photo, .icons-scales, .icons-support, .icons-tools, .icons-twitter, .icons-twitter_large, .icons-twitter_small, .icons-warn, .validation_input .validate_text.error:after, .icons-webapp {
-  background: url('../images/icons-sfc704a8d74.png') no-repeat;
+/* line 410, icons/*.png */
+.icons-sprite, .icons-binder, .icons-birdy, .icons-brain, .icons-client-oriented, .icons-cocktail, .icons-comment, .icons-cost-advantage, .icons-efficiency, .icons-facebook, .icons-facebook_large, .icons-facebook_small, .icons-gears, .icons-github, .icons-head_brain, .icons-linkedin-small, .icons-linkedin, .icons-linkedin_large, .icons-location, .icons-mail, .icons-mic, .icons-mob_fb, .icons-mob_git, .icons-mob_in, .icons-mob_twi, .icons-mobile, .icons-moneybag, .icons-octocat, .icons-phone, .icons-photo, .icons-scales, .icons-support, .icons-tools, .icons-twitter, .icons-twitter_large, .icons-twitter_small, .icons-warn, .validation_input .validate_text.error:after, .icons-webapp {
+  background: url('../images/icons-s64cb8c6f3c.png') no-repeat;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-binder {
-  background-position: 0 -2850px;
+  background-position: 0 -3138px;
+}
+
+/* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-birdy {
+  background-position: 0 -1375px;
+}
+/* line 43, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-birdy:hover, .icons-birdy.birdy_hover, .icons-birdy.birdy-hover {
+  background-position: 0 -1108px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -6064,12 +6073,12 @@ table tfoot tr td {
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-cocktail {
-  background-position: 0 -2324px;
+  background-position: 0 -2612px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-comment {
-  background-position: 0 -1704px;
+  background-position: 0 -1992px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -6084,26 +6093,26 @@ table tfoot tr td {
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook {
-  background-position: 0 -3082px;
+  background-position: 0 -3370px;
 }
 /* line 43, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook:hover, .icons-facebook.facebook_hover, .icons-facebook.facebook-hover {
-  background-position: 0 -3140px;
+  background-position: 0 -3428px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook_large {
-  background-position: 0 -1759px;
+  background-position: 0 -2047px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook_small {
-  background-position: 0 -1648px;
+  background-position: 0 -1936px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-gears {
-  background-position: 0 -1915px;
+  background-position: 0 -2203px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -6117,7 +6126,7 @@ table tfoot tr td {
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-head_brain {
-  background-position: 0 -1996px;
+  background-position: 0 -2284px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -6131,36 +6140,36 @@ table tfoot tr td {
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-linkedin {
-  background-position: 0 -2082px;
+  background-position: 0 -2370px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-linkedin_large {
-  background-position: 0 -1561px;
+  background-position: 0 -1849px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-location {
-  background-position: 0 -2684px;
+  background-position: 0 -2972px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-mail {
-  background-position: 0 -3030px;
+  background-position: 0 -3318px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-mic {
-  background-position: 0 -2224px;
+  background-position: 0 -2512px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-mob_fb {
-  background-position: 0 -1332px;
+  background-position: 0 -1620px;
 }
 /* line 43, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-mob_fb:hover, .icons-mob_fb.mob_fb_hover, .icons-mob_fb.mob_fb-hover {
-  background-position: 0 -1846px;
+  background-position: 0 -2134px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -6174,11 +6183,11 @@ table tfoot tr td {
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-mob_in {
-  background-position: 0 -1162px;
+  background-position: 0 -1306px;
 }
 /* line 43, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-mob_in:hover, .icons-mob_in.mob_in_hover, .icons-mob_in.mob_in-hover {
-  background-position: 0 -1492px;
+  background-position: 0 -1780px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -6192,27 +6201,36 @@ table tfoot tr td {
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-mobile {
-  background-position: 0 -2410px;
+  background-position: 0 -2698px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-moneybag {
-  background-position: 0 -2134px;
+  background-position: 0 -2422px;
+}
+
+/* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-octocat {
+  background-position: 0 -1447px;
+}
+/* line 43, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-octocat:hover, .icons-octocat.octocat_hover, .icons-octocat.octocat-hover {
+  background-position: 0 -1234px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-phone {
-  background-position: 0 -2739px;
+  background-position: 0 -3027px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-photo {
-  background-position: 0 -2510px;
+  background-position: 0 -2798px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-scales {
-  background-position: 0 -1231px;
+  background-position: 0 -1519px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -6222,16 +6240,16 @@ table tfoot tr td {
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-tools {
-  background-position: 0 -1401px;
+  background-position: 0 -1689px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter {
-  background-position: 0 -2914px;
+  background-position: 0 -3202px;
 }
 /* line 43, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter:hover, .icons-twitter.twitter_hover, .icons-twitter.twitter-hover {
-  background-position: 0 -2972px;
+  background-position: 0 -3260px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -6241,17 +6259,17 @@ table tfoot tr td {
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-twitter_small {
-  background-position: 0 -1108px;
+  background-position: 0 -1180px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-warn, .validation_input .validate_text.error:after {
-  background-position: 0 -2795px;
+  background-position: 0 -3083px;
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-webapp {
-  background-position: 0 -2584px;
+  background-position: 0 -2872px;
 }
 
 /* line 114, ui/*.png */
@@ -6309,91 +6327,91 @@ table tfoot tr td {
   background-position: 0 -479px;
 }
 
-/* line 20, ../_sass/_sprite.scss */
+/* line 21, ../_sass/_sprite.scss */
 .tech-ruby {
   width: 67px;
   height: 66px;
 }
 
-/* line 25, ../_sass/_sprite.scss */
+/* line 26, ../_sass/_sprite.scss */
 .tech-rails {
   width: 65px;
   height: 83px;
 }
 
-/* line 30, ../_sass/_sprite.scss */
+/* line 31, ../_sass/_sprite.scss */
 .tech-coffeescript {
   width: 175px;
   height: 30px;
 }
 
-/* line 35, ../_sass/_sprite.scss */
+/* line 36, ../_sass/_sprite.scss */
 .tech-jquery {
   width: 140px;
   height: 37px;
 }
 
-/* line 40, ../_sass/_sprite.scss */
+/* line 41, ../_sass/_sprite.scss */
 .tech-mongodb {
   width: 163px;
   height: 47px;
 }
 
-/* line 45, ../_sass/_sprite.scss */
+/* line 46, ../_sass/_sprite.scss */
 .tech-html5 {
   width: 75px;
   height: 56px;
 }
 
-/* line 50, ../_sass/_sprite.scss */
+/* line 51, ../_sass/_sprite.scss */
 .tech-sass {
   width: 84px;
   height: 62px;
 }
 
-/* line 55, ../_sass/_sprite.scss */
+/* line 56, ../_sass/_sprite.scss */
 .tech-responsive {
   width: 94px;
   height: 65px;
 }
 
-/* line 60, ../_sass/_sprite.scss */
+/* line 61, ../_sass/_sprite.scss */
 .clients-alba {
   width: 168px;
   height: 59px;
 }
 
-/* line 65, ../_sass/_sprite.scss */
+/* line 66, ../_sass/_sprite.scss */
 .clients-bigbinary {
   width: 128px;
   height: 32px;
 }
 
-/* line 70, ../_sass/_sprite.scss */
+/* line 71, ../_sass/_sprite.scss */
 .clients-mipt {
   width: 127px;
   height: 45px;
 }
 
-/* line 75, ../_sass/_sprite.scss */
+/* line 76, ../_sass/_sprite.scss */
 .clients-imagine {
   width: 202px;
   height: 32px;
 }
 
-/* line 80, ../_sass/_sprite.scss */
+/* line 81, ../_sass/_sprite.scss */
 .clients-vault {
   width: 194px;
   height: 57px;
 }
 
-/* line 85, ../_sass/_sprite.scss */
+/* line 86, ../_sass/_sprite.scss */
 .ui-swipe_side_blue {
   width: 60px;
   height: 70px;
 }
 
-/* line 90, ../_sass/_sprite.scss */
+/* line 91, ../_sass/_sprite.scss */
 .ui-swipe_side_white {
   width: 60px;
   height: 70px;
@@ -7043,43 +7061,55 @@ code {
   height: 29px;
 }
 
-/* line 115, ../_sass/custom/_icons.scss */
+/* line 114, ../_sass/custom/_icons.scss */
+.icons-birdy {
+  width: 33px;
+  height: 32px;
+}
+
+/* line 120, ../_sass/custom/_icons.scss */
 .icons-linkedin {
   width: 14px;
   height: 12px;
 }
 
-/* line 119, ../_sass/custom/_icons.scss */
+/* line 124, ../_sass/custom/_icons.scss */
 .icons-linkedin_large {
   width: 47px;
   height: 47px;
 }
 
-/* line 124, ../_sass/custom/_icons.scss */
+/* line 129, ../_sass/custom/_icons.scss */
 .icons-linkedin-small {
   width: 18px;
   height: 18px;
 }
 
-/* line 129, ../_sass/custom/_icons.scss */
+/* line 134, ../_sass/custom/_icons.scss */
 .icons-mob_in {
   width: 29px;
   height: 29px;
 }
 
-/* line 134, ../_sass/custom/_icons.scss */
+/* line 139, ../_sass/custom/_icons.scss */
 .icons-github {
   width: 18px;
   height: 18px;
 }
 
-/* line 138, ../_sass/custom/_icons.scss */
+/* line 144, ../_sass/custom/_icons.scss */
 .icons-mob_git {
   width: 29px;
   height: 29px;
 }
 
-/* line 143, ../_sass/custom/_icons.scss */
+/* line 148, ../_sass/custom/_icons.scss */
+.icons-octocat {
+  width: 33px;
+  height: 32px;
+}
+
+/* line 153, ../_sass/custom/_icons.scss */
 .icons-comment {
   width: 16px;
   height: 15px;
@@ -8096,67 +8126,80 @@ code {
   margin-bottom: 10px;
 }
 /* line 106, ../_sass/pages/_blog.scss */
+.author_wrap .social_name {
+  line-height: 32px;
+  vertical-align: text-top;
+}
+/* line 110, ../_sass/pages/_blog.scss */
 .author_wrap .social_link {
   color: white;
   display: block;
 }
+/* line 114, ../_sass/pages/_blog.scss */
+.author_wrap .social_link:hover .icons-octocat {
+  background-position: 0 -1234px;
+}
+/* line 117, ../_sass/pages/_blog.scss */
+.author_wrap .social_link:hover .icons-birdy {
+  background-position: 0 -1108px;
+}
 
-/* line 112, ../_sass/pages/_blog.scss */
+/* line 124, ../_sass/pages/_blog.scss */
 .post_content {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.15em;
   margin-top: 10px;
 }
-/* line 115, ../_sass/pages/_blog.scss */
+/* line 127, ../_sass/pages/_blog.scss */
 .post_content .description {
   color: #525656;
 }
-/* line 118, ../_sass/pages/_blog.scss */
+/* line 130, ../_sass/pages/_blog.scss */
 .post_content .post_thumb {
   border-radius: 5px;
   margin-bottom: 20px;
 }
-/* line 122, ../_sass/pages/_blog.scss */
+/* line 134, ../_sass/pages/_blog.scss */
 .post_content .continue_link {
   color: #3296d9;
 }
 
-/* line 127, ../_sass/pages/_blog.scss */
+/* line 139, ../_sass/pages/_blog.scss */
 .inside_post {
   color: #525656;
 }
-/* line 130, ../_sass/pages/_blog.scss */
+/* line 142, ../_sass/pages/_blog.scss */
 .inside_post .b_footer .share {
   margin-bottom: 20px;
   background: #d9d9d9;
 }
-/* line 133, ../_sass/pages/_blog.scss */
+/* line 145, ../_sass/pages/_blog.scss */
 .inside_post .b_footer .share .share_link {
   margin: 10px 5px;
   border-radius: 5px;
 }
 
-/* line 142, ../_sass/pages/_blog.scss */
+/* line 154, ../_sass/pages/_blog.scss */
 .share .icons-facebook_large {
   background-color: #3b5998;
 }
-/* line 144, ../_sass/pages/_blog.scss */
+/* line 156, ../_sass/pages/_blog.scss */
 .share .icons-facebook_large:hover {
   background-color: rgba(59, 89, 152, 0.7);
 }
-/* line 148, ../_sass/pages/_blog.scss */
+/* line 160, ../_sass/pages/_blog.scss */
 .share .icons-linkedin_large {
   background-color: #4875b4;
 }
-/* line 150, ../_sass/pages/_blog.scss */
+/* line 162, ../_sass/pages/_blog.scss */
 .share .icons-linkedin_large:hover {
   background-color: rgba(72, 117, 180, 0.7);
 }
-/* line 154, ../_sass/pages/_blog.scss */
+/* line 166, ../_sass/pages/_blog.scss */
 .share .icons-twitter_large {
   background-color: #33ccff;
 }
-/* line 156, ../_sass/pages/_blog.scss */
+/* line 168, ../_sass/pages/_blog.scss */
 .share .icons-twitter_large:hover {
   background-color: rgba(51, 204, 255, 0.7);
 }

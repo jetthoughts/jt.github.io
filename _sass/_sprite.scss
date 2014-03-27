@@ -8,6 +8,7 @@ $clients-spacing: 20px;
 
 
 $icons-spacing: 40px;
+$icons_sprite: sprite-map("icons/*.png", $spacing: $icons-spacing);
 @import "icons/*.png";
 @include all-icons-sprites;
 
