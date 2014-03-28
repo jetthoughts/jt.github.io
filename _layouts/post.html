@@ -11,7 +11,13 @@ layout: default
           <span class="day">{{ page.date | date: "%d" }}</span>
           <span class="year">{{ page.date | date: "%Y" }}</span>
         </time>
-        <div class="post_icon icons-{{ post.categories }}"></div>
+        {% assign cat_s = page.categories | size %}
+        {% if cat_s > 1 %}
+        <div class="post_icon icon-mixed"></div>
+        {% elsif cat_s == 0 %}
+        {% else %}
+        <div class="post_icon icon-{{ page.categories }}"></div>
+        {% endif %}
       </div>
       <div class="columns large-11 medium-10">
         <header class="header">
