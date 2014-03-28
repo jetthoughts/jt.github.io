@@ -1,11 +1,13 @@
 miry:
   name: 'Michael'
+  full_name: 'Michael Nikitochkin'
   ava: 'http://gravatar.com/avatar/0e556a2be10ff4f32bb9e6f9a2c00cfa.png?s=160'
   twitter: 'miry_sof'
   role: 'Ruby developer'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 pftg:
   name: 'Paul'
+  full_name: 'Paul Nikitochkin'
   ava: 'http://gravatar.com/avatar/9e5f22c74ce7f180fc495c2fec0fd070.png'
   twitter: 'pftg'
   role: 'Team Leader'
