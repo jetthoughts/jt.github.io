@@ -1,39 +1,39 @@
 miry:
-  name: 'Michael Nikitochkin'
+  name: 'Michael'
   ava: 'http://gravatar.com/avatar/0e556a2be10ff4f32bb9e6f9a2c00cfa.png?s=160'
   twitter: 'miry_sof'
   role: 'Ruby developer'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 pftg:
-  name: 'Paul Nikitochkin'
+  name: 'Paul'
   ava: 'http://gravatar.com/avatar/9e5f22c74ce7f180fc495c2fec0fd070.png'
   twitter: 'pftg'
-  role: 'team lead'
+  role: 'Team Leader'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 annkuptsova:
-  name: 'Asya Kuptsova'
+  name: 'Asya'
   ava: 'images/team/asyakup.jpeg'
-  role: 'project manager'
+  role: 'Project Manager'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 annafoksha:
-  name: 'Anna Foksha'
+  name: 'Anna'
   ava: 'images/team/annafoksha.jpg'
-  role: 'project manager'
+  role: 'Project Manager'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 xmarvin:
   name: 'Alexey'
   ava: 'images/team/alexey.jpeg'
-  role: 'ruby developer'
+  role: 'Ruby Developer'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 xserg:
   name: 'Sergey'
   ava: 'images/team/sergey.jpeg'
-  role: 'ruby developer'
+  role: 'Ruby Developer'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 mli-max:
   name: 'Max'
   ava: 'images/team/max.jpeg'
-  role: 'ruby developer'
+  role: 'Ruby Developer'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 mir4a:
   name: 'Miroslav'
@@ -44,15 +44,15 @@ mir4a:
 rskvirskiy:
   name: 'Roman'
   ava: 'images/team/roma.jpeg'
-  role: 'ruby developer'
+  role: 'Ruby Developer'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 valeronm:
   name: 'Valeriy'
   ava: 'images/team/valeron.png'
-  role: 'ruby developer'
+  role: 'Ruby Developer'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 tehhi42:
   name: 'Elena'
   ava: 'images/team/valeron.png'
-  role: 'project manager'
+  role: 'Sales Manager'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
