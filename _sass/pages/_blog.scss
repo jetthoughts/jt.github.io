@@ -82,9 +82,12 @@
 
 .author_wrap {
   $post_ava_size: 160px;
+  min-width: 420px;
+  @extend .clearfix;
   .author {
     position: relative;
     float: left;
+    min-width: inherit;
     padding: 20px;
     background: $blue url("../images/pat_blueprint_light.png") repeat;
     border-radius: 8px;
@@ -99,7 +102,7 @@
     margin-right: 15px;
   }
   .author_name {
-    float: left;
+    display: block;
     margin-top: 15px;
     margin-bottom: 10px;
   }
