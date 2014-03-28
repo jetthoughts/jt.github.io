@@ -19,7 +19,7 @@ layout: default
 
           <div class="post_meta">
             {% if page.author %}
-            posted by <a href="/team.html" class="author link_underline">{{ page.author }}</a>
+            posted by <a href="/team.html" class="author link_underline">{{ site.data.team.[page.authors_git].full_name }}</a>
             {% else %}
             <a href="/team.html" class="author link_underline">Anonymous</a> posted it
             {% endif %}
@@ -47,7 +47,7 @@ layout: default
 
         <div class="author_wrap">
           <div class="author">
-            <img class="ava" src="{{ site.data.team.[page.authors_git].ava }}" alt="{{ site.data.team.[page.authors_git].name }}" />
+            <img class="ava" src="{{ site.data.team.[page.authors_git].ava }}" alt="{{ site.data.team.[page.authors_git].full_name }}" />
             <span class="author_name">{{ site.data.team.[page.authors_git].full_name }}</span>
 
             <div class="social_wrap">
