@@ -9,39 +9,47 @@ category: tech
 excerpt: How to set up SSL certificate for web application.
 ---
 
-<p>
-I was assigned a task: to set up <strong>ssl</strong> certificate for web application. We used  <strong>nginx</strong>, and found a free provider http://www.instantssl.com/ *COMODO*.</p>
+I was assigned a task: to set up <strong>ssl</strong> certificate for web application. We used  <strong>nginx</strong>, and found a free provider http://www.instantssl.com/ *COMODO*.
 
-<p>My coworker Sasha Lokshin helped to find a solution and provided key creation and provider signing algorithm. And he also gave the simplest documentation http://www.rapidssl.com/resources/csr/apache_mod_ssl.htm. The generation process passed on quickly. I have filled fields according to the suggested template. I have neither imputed secret phrases nor filled in any <strong>extra</strong>attributes.
-</p>
+My coworker Sasha Lokshin helped to find a solution and provided key creation and provider signing algorithm. And he also gave the simplest documentation http://www.rapidssl.com/resources/csr/apache_mod_ssl.htm. The generation process passed on quickly. I have filled fields according to the suggested template. I have neither imputed secret phrases nor filled in any *extra* attributes.
 
-<pre># openssl genrsa -out domain.com.key
+```
+# openssl genrsa -out domain.com.key
 Generating RSA private key, 2048 bit long modulus
 
 # openssl req -new -key domain.com.key -out domain.com.csr
 ....
-</pre><p>
+```
+
 I have got two files. Now it was time to register with provider. It was easy too. We need to copy the  domain.com.csr file content and post it to the field. 
 
-</p><pre># cat domain.com.csr</pre><p>
+```
+# cat domain.com.csr
+```
+
 After that, service sent an activation email to the domain admin email address and after the certificate activation I have received an archive with the description:
-</p>
-<pre>
+
+```
     * Root CA Certificate - AddTrustExternalCARoot.crt
     * Intermediate CA Certificate - UTNAddTrustSGCCA.crt
     * Intermediate CA Certificate - ComodoUTNSGCCA.crt
     * Intermediate CA Certificate - EssentialSSLCA_2.crt
     * Your Free SSL Certificate - domain_com.crt
-</pre><p>
+```
+
 I thought that my troubles were over. In accordance with nginx manual I have created a config for the application. 
-</p><pre>ssl    on;
+
+```
+ssl    on;
 ssl_certificate    /etc/ssl/private/domain_com.crt; (or .pem)
 ssl_certificate_key    /etc/ssl/private/domain.com.key;
-</pre><p>
+```
+
 All is well. The app has loaded. Oh, snap! I loaded a page and got a mistake about the unknown certificate. After an hour of doing rain dance, I have found an article http://terra-firma-design.com/blog/20-Installing-an-EV-SSL-Certificate-on-Nginx, where the method of transferance of several certificates in one for nginx was described. That is not necessary for apache. A catalogue of certificate can be set up for apache. 
 
-</p><pre># cat  AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt domain_com.crt &gt;&gt; domain_com_new.crt
-</pre>
+```
+# cat  AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt domain_com.crt &gt;&gt; domain_com_new.crt
+```
 
 And I have corrected nginx config. After that I rebooted server and got an error. 
 <pre>Restarting nginx: [emerg]: invalid number of arguments in "ssl_certificate" directive in /opt/nginx/conf/production.conf:54</pre>
@@ -95,20 +103,28 @@ Modulus (2048 bit):
 
 I have found out that they are different. And that a provider signed the key with 2048 bit code. And I have 1024 by default. I decided to recompose the key, but setup 2048 bit. 
 
-<pre># openssl genrsa -out domain_com.key 2048
+```
+# openssl genrsa -out domain_com.key 2048
 # openssl req -new -key domain_com.key -out domain_com.csr
-</pre>
+```
 
 For half an hour I made an arrangement with a provider about replacing csr file and about issuing a new certificate. Checked the clean certificate and my key. Failed. Then I have united all certificates in one using the following method:
-<pre># cat  AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt domain_com.crt &gt;&gt; domain_com_new.crt
-</pre>
+
+```
+# cat  AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt domain_com.crt &gt;&gt; domain_com_new.crt
+```
+
 When web server is loading, I get the same error as the last time. Then I decided to check the information of this certificate:
-<pre># openssl x509 -noout -text -in ssl-bundle.crt -modulus
-</pre>
+
+```
+# openssl x509 -noout -text -in ssl-bundle.crt -modulus
+```
+
 It has issued only the first certificate from the list. Then I decided to slightly change the method of certificates merge, move my domain certificate higher and check the information:
 
-<pre># cat domain_com.crt AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt &gt; domain_com_2.crt
+```
+# cat domain_com.crt AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt &gt; domain_com_2.crt
 # openssl x509 -noout -text -in ssl-bundle.crt -modulus
-</pre>
+```
 
 As anticipated, it issued information only about the necessary certificate. Reloaded web server and - wuala - it has loaded. Opened webpage - a certificate is displayed normally. No errors. 
