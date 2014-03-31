@@ -26,18 +26,18 @@ slug: contacts
         <div class="columns large-8">
           <h3 class="heading_three">Send Inquiry</h3>
 
-          <form method="post" name="apply_form" action="?">
+          <form id="contact_form" class="form" method="post" target="_self" onsubmit="" action="">
 
             <div class="row">
               <div class="columns large-2"><label class="form_label" for="name">Name:</label></div>
-              <div class="columns large-10"><input class="form_input" type="text" name="name" id="name"/></div>
+              <div class="columns large-10"><input class="form_input" type="text" name="name" id="name" /></div>
             </div>
 
             <div class="row">
               <div class="columns large-2"><label class="form_label" for="email">E-mail:</label></div>
               <div class="columns large-10">
-                <div class="validation_input">
-                  <input class="form_input error" type="email" name="email" id="email"/>
+                <div class="validation_wrap">
+                  <input class="form_input" type="email" name="email" id="email" required="required" />
                   <span class="error validate_text">Check Email</span>
                 </div>
               </div>
@@ -45,15 +45,24 @@ slug: contacts
 
             <div class="row">
               <div class="columns large-12">
-                <textarea class="textarea" name="message" id="message" cols="30" rows="10">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at dolor dolores dolorum eius error explicabo iure laboriosam praesentium, quaerat quasi qui tenetur totam vel voluptatem. Facilis impedit quos similique.
-                </textarea>
+                <div class="validation_wrap">
+                  <textarea class="textarea" name="message" id="message" cols="30" rows="10" required="required" placeholder="Message"></textarea>
+                  <span class="error validate_text">Wrote something to us</span>
+                </div>
               </div>
             </div>
 
             <div class="row">
               <div class="large-12 column">
-                <button class="button button_ordinary left" type="submit">Send</button>
+                <button class="button left submit_btn" type="submit">Send</button>
+              </div>
+            </div>
+
+            <div class="form_sent">
+              <div class="thnk_u">
+                <p>
+                  Thank you for your response. We will respond you ASAP.
+                </p>
               </div>
             </div>
 

@@ -6043,7 +6043,7 @@ table tfoot tr td {
 }
 
 /* line 410, icons/*.png */
-.icons-sprite, .icons-binder, .icons-birdy, .icons-brain, .icons-client-oriented, .icons-cocktail, .icons-comment, .icons-cost-advantage, .icons-efficiency, .icons-facebook, .icons-facebook_large, .icons-facebook_small, .icons-gears, .icons-github, .icons-head_brain, .icons-linkedin-small, .icons-linkedin, .icons-linkedin_large, .icons-location, .icons-mail, .icons-mic, .icons-mob_fb, .icons-mob_git, .icons-mob_in, .icons-mob_twi, .icons-mobile, .icons-moneybag, .icons-octocat, .icons-phone, .icons-photo, .icons-scales, .icons-support, .icons-tools, .icons-twitter, .icons-twitter_large, .icons-twitter_small, .icons-warn, .validation_input .validate_text.error:after, .icons-webapp {
+.icons-sprite, .icons-binder, .icons-birdy, .icons-brain, .icons-client-oriented, .icons-cocktail, .icons-comment, .icons-cost-advantage, .icons-efficiency, .icons-facebook, .icons-facebook_large, .icons-facebook_small, .icons-gears, .icons-github, .icons-head_brain, .icons-linkedin-small, .icons-linkedin, .icons-linkedin_large, .icons-location, .icons-mail, .icons-mic, .icons-mob_fb, .icons-mob_git, .icons-mob_in, .icons-mob_twi, .icons-mobile, .icons-moneybag, .icons-octocat, .icons-phone, .icons-photo, .icons-scales, .icons-support, .icons-tools, .icons-twitter, .icons-twitter_large, .icons-twitter_small, .icons-warn, .validation_wrap .validate_text:after, .icons-webapp {
   background: url('../images/icons-s64cb8c6f3c.png') no-repeat;
 }
 
@@ -6263,7 +6263,7 @@ table tfoot tr td {
 }
 
 /* line 60, ../../../.rvm/gems/ruby-2.1.0@jetthoughts-site/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-warn, .validation_input .validate_text.error:after {
+.icons-warn, .validation_wrap .validate_text:after {
   background-position: 0 -3083px;
 }
 
@@ -6727,26 +6727,26 @@ code {
 }
 
 /* line 52, ../_sass/custom/_ui.scss */
-.button_primary {
+.button_primary, .form .submit_btn {
   background: #2dcc70;
   -webkit-box-shadow: 0 4px 0 #4fae76;
   -moz-box-shadow: 0 4px 0 #4fae76;
   box-shadow: 0 4px 0 #4fae76;
 }
 /* line 55, ../_sass/custom/_ui.scss */
-.button_primary:hover {
+.button_primary:hover, .form .submit_btn:hover {
   background: #4fae76;
 }
 
 /* line 60, ../_sass/custom/_ui.scss */
-.button_ordinary {
+.button_ordinary, .form.invalid .submit_btn {
   background: #ebebeb;
   -webkit-box-shadow: 0 4px 0 #d9d9d9;
   -moz-box-shadow: 0 4px 0 #d9d9d9;
   box-shadow: 0 4px 0 #d9d9d9;
 }
 /* line 63, ../_sass/custom/_ui.scss */
-.button_ordinary:hover {
+.button_ordinary:hover, .form.invalid .submit_btn:hover {
   background: #d9d9d9;
 }
 
@@ -7116,7 +7116,11 @@ code {
 }
 
 /* line 1, ../_sass/custom/_forms.scss */
-.form_input {
+.form {
+  position: relative;
+}
+/* line 3, ../_sass/custom/_forms.scss */
+.form .form_input {
   color: #2c3d4f;
   border-color: #d9d9d9;
   border-radius: 5px;
@@ -7124,52 +7128,71 @@ code {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 6, ../_sass/custom/_forms.scss */
-.form_input:focus {
+/* line 8, ../_sass/custom/_forms.scss */
+.form .form_input:focus {
   color: #2c3d4f;
 }
-/* line 9, ../_sass/custom/_forms.scss */
-.form_input.error {
-  color: white;
-  background: #eab9b9;
-  border-color: #eab9b9;
+/* line 14, ../_sass/custom/_forms.scss */
+.form .submit_btn:focus {
+  outline: none;
 }
-/* line 13, ../_sass/custom/_forms.scss */
-.form_input.error:focus {
-  color: #e2534b;
+/* line 19, ../_sass/custom/_forms.scss */
+.form.invalid .submit_btn {
+  opacity: 0.75;
 }
 
-/* line 19, ../_sass/custom/_forms.scss */
+/* line 26, ../_sass/custom/_forms.scss */
 .form_label {
   font-size: 0.95em;
   color: #7f8c8c;
   line-height: 200%;
 }
 
-/* line 25, ../_sass/custom/_forms.scss */
-.validation_input {
+/* line 32, ../_sass/custom/_forms.scss */
+.validation_wrap {
   position: relative;
 }
-/* line 28, ../_sass/custom/_forms.scss */
-.validation_input .validate_text.error {
+/* line 35, ../_sass/custom/_forms.scss */
+.validation_wrap.invalid .form_input, .validation_wrap.invalid .textarea {
+  color: white;
+  background: #eab9b9;
+  border-color: #eab9b9;
+}
+/* line 39, ../_sass/custom/_forms.scss */
+.validation_wrap.invalid .form_input:focus, .validation_wrap.invalid .textarea:focus {
+  color: #e2534b;
+}
+/* line 43, ../_sass/custom/_forms.scss */
+.validation_wrap.invalid .validate_text {
+  display: block;
+}
+/* line 47, ../_sass/custom/_forms.scss */
+.validation_wrap .form_input {
+  margin-bottom: 18px;
+}
+/* line 50, ../_sass/custom/_forms.scss */
+.validation_wrap .textarea {
+  margin-bottom: 18px;
+}
+/* line 53, ../_sass/custom/_forms.scss */
+.validation_wrap .validate_text {
+  display: none;
   font-size: 0.8em;
   font-weight: 300;
   color: #e66b64;
-  line-height: 1.5em;
-  display: block;
+  line-height: 140%;
   vertical-align: middle;
   padding-left: 40px;
   padding-right: 15px;
   position: absolute;
-  right: 3px;
+  right: 2px;
   top: 3px;
-  bottom: 3px;
   background: white;
-  border-radius: 5px;
+  border-radius: 3px;
   margin: 0;
 }
-/* line 44, ../_sass/custom/_forms.scss */
-.validation_input .validate_text.error:after {
+/* line 68, ../_sass/custom/_forms.scss */
+.validation_wrap .validate_text:after {
   content: " ";
   position: absolute;
   left: 10px;
@@ -7178,7 +7201,28 @@ code {
   height: 15px;
 }
 
-/* line 57, ../_sass/custom/_forms.scss */
+/* line 80, ../_sass/custom/_forms.scss */
+.form_sent {
+  display: none;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: 0;
+  left: 0;
+  background: #ebebeb;
+  border-radius: 5px;
+}
+/* line 89, ../_sass/custom/_forms.scss */
+.form_sent .thnk_u {
+  text-align: center;
+  vertical-align: middle;
+  color: #2c3d4f;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+}
+
+/* line 99, ../_sass/custom/_forms.scss */
 .textarea {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.8em;
