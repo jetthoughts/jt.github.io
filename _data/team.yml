@@ -4,7 +4,7 @@ miry:
   ava: 'http://gravatar.com/avatar/0e556a2be10ff4f32bb9e6f9a2c00cfa.png?s=160'
   twitter: 'miry_sof'
   role: 'Ruby developer'
-  bio: 'Michael is a perfect manager and a technology guru, who can cope with toughest projects. He can always provide a new insight and propose up-to-date solutions to your problems. As an inherent leader, he has built a team of highly-qualified developers.'
+  bio: 'Michael is a technology guru, who can cope with toughest projects. He can always provide a new insight and propose up-to-date solutions to your problems. As an inherent leader, he has built a team of highly-qualified developers.'
 pftg:
   name: 'Paul'
   full_name: 'Paul Nikitochkin'
@@ -16,12 +16,12 @@ annkuptsova:
   name: 'Asya'
   ava: 'images/team/asyakup.jpeg'
   role: 'Project Manager'
-  bio: 'Asya is looking for outstanding talents to join our team. She can easily spot the right candidate among thousands of offers. Asya keeps up to date with the most recent requirements for developers. She knows how to build a well-balanced and professional team. Asya is a kind-hearted and compassionate person, who is always ready to help you cope with any work issues.'
+  bio: 'Asya is looking for outstanding talents to join our team. She can easily spot the right candidate among thousands of offers. She knows how to build a well-balanced and professional team. Asya is always ready to help you cope with any work issues.'
 annafoksha:
   name: 'Anna'
   ava: 'images/team/annafoksha.jpg'
   role: 'Project Manager'
-  bio: 'Anna successfully connects clients expectation and ideas and the skills of our team to develop great applications in the shortest time possible. She knows how to motivate the staff and to keep developers working effectively together. Anna is optimistic, open-minded and easy to deal with.'
+  bio: 'Anna connects clients expectation and ideas and the skills of our team to develop great applications in the shortest time possible. She knows how to motivate the staff and to keep developers working effectively together. Anna is optimistic and open-minded.'
 xmarvin:
   name: 'Alexey'
   ava: 'images/team/alexey.jpeg'
