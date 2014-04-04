@@ -6728,7 +6728,7 @@ code {
 
 /* line 52, ../_sass/custom/_ui.scss */
 .button_primary, .form .submit_btn {
-  background: #2dcc70;
+  background: #2ecc71;
   -webkit-box-shadow: 0 4px 0 #4fae76;
   -moz-box-shadow: 0 4px 0 #4fae76;
   box-shadow: 0 4px 0 #4fae76;
@@ -6777,25 +6777,25 @@ code {
 /* line 91, ../_sass/custom/_ui.scss */
 .icon_circle {
   text-align: center;
-  line-height: 102px;
+  line-height: 132px;
   vertical-align: middle;
-  width: 102px;
-  height: 102px;
+  width: 132px;
+  height: 132px;
   position: relative;
   overflow: hidden;
   border: 1px solid white;
-  border-radius: 51px;
+  border-radius: 66px;
 }
 /* line 101, ../_sass/custom/_ui.scss */
 .icon_circle.green {
-  background: #2dcc70;
+  background: #2ecc71;
 }
 /* line 104, ../_sass/custom/_ui.scss */
 .icon_circle.mid {
-  width: 94px;
-  height: 94px;
-  line-height: 94px;
-  border-radius: 47px;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 60px;
 }
 /* line 110, ../_sass/custom/_ui.scss */
 .icon_circle > [class*="icon"] {
@@ -6899,7 +6899,7 @@ code {
 }
 /* line 200, ../_sass/custom/_ui.scss */
 .pagination .page_item.active .page_link {
-  background: #68de99;
+  background: #69dd9a;
   border-top: 3px solid #71bf91;
 }
 /* line 205, ../_sass/custom/_ui.scss */
@@ -7251,7 +7251,7 @@ code {
 }
 /* line 9, ../_sass/pages/_home.scss */
 .offer_section .s_header .heading_one {
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 900;
   color: #2c3d4f;
   text-align: center;
@@ -7291,46 +7291,48 @@ code {
 /* line 43, ../_sass/pages/_home.scss */
 .offer_section .panel {
   margin-top: 40px;
+  padding: 18px 30px;
   border-radius: 5px;
 }
-/* line 47, ../_sass/pages/_home.scss */
+/* line 48, ../_sass/pages/_home.scss */
 .offer_section .panel .heading_two {
   font-size: 33px;
   font-weight: 900;
-  color: #2dcc70;
+  color: #2ecc71;
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* line 54, ../_sass/pages/_home.scss */
+/* line 55, ../_sass/pages/_home.scss */
 .offer_section .panel .message {
   font-size: 15px;
   color: #615648;
   margin: 0;
 }
-/* line 59, ../_sass/pages/_home.scss */
+/* line 60, ../_sass/pages/_home.scss */
 .offer_section .panel .button, .offer_section .panel .portfolio_sort .sorter, .portfolio_sort .offer_section .panel .sorter {
   margin-top: 10px;
   margin-bottom: 0;
 }
-/* line 64, ../_sass/pages/_home.scss */
+/* line 65, ../_sass/pages/_home.scss */
 .offer_section .offer_block {
   min-height: 400px;
   background: white;
   border-radius: 9px;
 }
-/* line 69, ../_sass/pages/_home.scss */
+/* line 70, ../_sass/pages/_home.scss */
 .offer_section .offer_block .heading {
   color: white;
   text-align: left;
-  padding: 20px;
-  background: #2dcc70;
+  white-space: nowrap;
+  padding: 12px;
+  background: #2ecc71;
   border-radius: 9px 9px 0 0;
 }
-/* line 75, ../_sass/pages/_home.scss */
+/* line 77, ../_sass/pages/_home.scss */
 .offer_section .offer_block .heading .icon_circle {
-  margin-right: 10px;
+  margin-right: 4px;
 }
-/* line 79, ../_sass/pages/_home.scss */
+/* line 81, ../_sass/pages/_home.scss */
 .offer_section .offer_block .heading .icon_circle,
 .offer_section .offer_block .heading .heading_wrap {
   display: -moz-inline-stack;
@@ -7340,25 +7342,26 @@ code {
   zoom: 1;
   *display: inline;
 }
-/* line 83, ../_sass/pages/_home.scss */
+/* line 85, ../_sass/pages/_home.scss */
 .offer_section .offer_block .heading_wrap {
   text-align: left;
 }
-/* line 86, ../_sass/pages/_home.scss */
+/* line 88, ../_sass/pages/_home.scss */
 .offer_section .offer_block .subheading {
   font-size: 19px;
-  font-weight: 300;
+  font-weight: normal;
 }
-/* line 90, ../_sass/pages/_home.scss */
+/* line 92, ../_sass/pages/_home.scss */
 .offer_section .offer_block .heading_three, .offer_section .offer_block .contacts_wrap .contacts_section .heading_one, .contacts_wrap .contacts_section .offer_section .offer_block .heading_one {
   font-size: 30px;
+  font-weight: normal;
   line-height: 40px;
   color: white;
   white-space: nowrap;
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 98, ../_sass/pages/_home.scss */
+/* line 101, ../_sass/pages/_home.scss */
 .offer_section .offer_block .description {
   font-size: 17px;
   line-height: 24px;
@@ -7366,14 +7369,14 @@ code {
   padding: 0 20px 0;
   margin: 10px 0;
 }
-/* line 104, ../_sass/pages/_home.scss */
+/* line 107, ../_sass/pages/_home.scss */
 .offer_section .offer_block .description:last-child {
   margin-bottom: 20px;
 }
 
-/* line 111, ../_sass/pages/_home.scss */
+/* line 114, ../_sass/pages/_home.scss */
 .partners_section {
-  background: #f3f3f3;
+  background: #f3f3f3 url("/images/isometric_51.jpg") repeat;
   -webkit-box-shadow: 0 -1px 7px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 -1px 7px rgba(0, 0, 0, 0.1);
   box-shadow: 0 -1px 7px rgba(0, 0, 0, 0.1);
@@ -7382,24 +7385,24 @@ code {
   padding-bottom: 30px;
   z-index: 10;
 }
-/* line 118, ../_sass/pages/_home.scss */
+/* line 121, ../_sass/pages/_home.scss */
 .partners_section .s_header {
   margin-top: 30px;
   margin-bottom: 40px;
 }
-/* line 121, ../_sass/pages/_home.scss */
+/* line 124, ../_sass/pages/_home.scss */
 .partners_section .s_header .heading_one {
-  font-size: 38px;
+  font-size: 41px;
   font-weight: 900;
   color: #2c3d4f;
   text-align: center;
   margin: 0;
 }
-/* line 129, ../_sass/pages/_home.scss */
+/* line 132, ../_sass/pages/_home.scss */
 .partners_section .partners {
   text-align: center;
 }
-/* line 132, ../_sass/pages/_home.scss */
+/* line 135, ../_sass/pages/_home.scss */
 .partners_section .partners .partner {
   display: -moz-inline-stack;
   display: inline-block;
@@ -7410,15 +7413,15 @@ code {
   line-height: 60px;
   margin: 0 15px 10px;
 }
-/* line 136, ../_sass/pages/_home.scss */
+/* line 139, ../_sass/pages/_home.scss */
 .partners_section .partners .partner .partners-logo_paypal {
   margin-bottom: -8px;
 }
-/* line 139, ../_sass/pages/_home.scss */
+/* line 142, ../_sass/pages/_home.scss */
 .partners_section .partners .partner .partners-logo_stripe {
   margin-bottom: -6px;
 }
-/* line 142, ../_sass/pages/_home.scss */
+/* line 145, ../_sass/pages/_home.scss */
 .partners_section .partners .partner > [class^="clients"] {
   display: block;
   line-height: inherit;
@@ -7426,29 +7429,29 @@ code {
   text-indent: -9999px;
 }
 
-/* line 153, ../_sass/pages/_home.scss */
+/* line 156, ../_sass/pages/_home.scss */
 .catch_section {
   padding-top: 60px;
 }
-/* line 155, ../_sass/pages/_home.scss */
+/* line 158, ../_sass/pages/_home.scss */
 .catch_section .s_footer {
   padding-top: 36px;
   padding-bottom: 26px;
   margin-top: 20px;
   background: rgba(54, 100, 155, 0.5);
 }
-/* line 160, ../_sass/pages/_home.scss */
+/* line 163, ../_sass/pages/_home.scss */
 .catch_section .s_footer .message {
   font-size: 23px;
   text-align: center;
   color: white;
 }
-/* line 166, ../_sass/pages/_home.scss */
+/* line 169, ../_sass/pages/_home.scss */
 .catch_section .map_message {
   position: absolute;
   top: 0;
 }
-/* line 170, ../_sass/pages/_home.scss */
+/* line 173, ../_sass/pages/_home.scss */
 .catch_section .big_heading {
   font-size: 86px;
   font-weight: 900;
@@ -7456,7 +7459,7 @@ code {
   text-align: left;
   margin-bottom: 10px;
 }
-/* line 177, ../_sass/pages/_home.scss */
+/* line 180, ../_sass/pages/_home.scss */
 .catch_section .sub_heading {
   font-size: 30px;
   font-weight: 700;
@@ -7464,7 +7467,7 @@ code {
   text-align: left;
   margin-bottom: 30px;
 }
-/* line 184, ../_sass/pages/_home.scss */
+/* line 187, ../_sass/pages/_home.scss */
 .catch_section .small_slogan {
   font-size: 28px;
   font-weight: 900;
@@ -7474,14 +7477,14 @@ code {
   display: block;
   margin-bottom: 70px;
 }
-/* line 193, ../_sass/pages/_home.scss */
+/* line 196, ../_sass/pages/_home.scss */
 .catch_section .message {
   font-size: 30px;
   line-height: 48px;
   text-align: left;
   color: white;
 }
-/* line 199, ../_sass/pages/_home.scss */
+/* line 202, ../_sass/pages/_home.scss */
 .catch_section .map_wrap {
   text-align: center;
   padding-bottom: 30px;
@@ -7674,7 +7677,7 @@ code {
   margin: 0 auto;
   position: relative;
   left: 50%;
-  margin-left: -37px;
+  margin-left: -50px;
 }
 
 /* line 38, ../_sass/pages/_career.scss */
@@ -7695,7 +7698,7 @@ code {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.15em;
   font-weight: 400;
-  color: #2dcc70;
+  color: #2ecc71;
   margin-top: 25px;
 }
 /* line 53, ../_sass/pages/_career.scss */
@@ -7720,7 +7723,7 @@ code {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1em;
   line-height: 24px;
-  color: #2dcc70;
+  color: #2ecc71;
 }
 
 /* line 73, ../_sass/pages/_career.scss */
@@ -7753,7 +7756,7 @@ code {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1em;
   line-height: 24px;
-  color: #2dcc70;
+  color: #2ecc71;
   text-align: left;
 }
 /* line 98, ../_sass/pages/_career.scss */
@@ -7804,7 +7807,7 @@ code {
 /* line 128, ../_sass/pages/_career.scss */
 .similar_projects .list .item .thumb, .related_projects .list .item .thumb {
   display: block;
-  background: #2dcc70;
+  background: #2ecc71;
   border-radius: 5px;
   width: 190px;
   height: 190px;
@@ -7821,7 +7824,7 @@ code {
   font-weight: 900;
   font-weight: 400;
   text-align: left;
-  color: #2dcc70;
+  color: #2ecc71;
 }
 /* line 147, ../_sass/pages/_career.scss */
 .application_form form {
@@ -8029,16 +8032,17 @@ code {
   font-weight: 400;
   color: #666f80;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
-/* line 20, ../_sass/pages/_contacts.scss */
+/* line 21, ../_sass/pages/_contacts.scss */
 .contacts_wrap .contacts_section {
   color: #777777;
 }
-/* line 22, ../_sass/pages/_contacts.scss */
+/* line 23, ../_sass/pages/_contacts.scss */
 .contacts_wrap .contacts_section .tel_link {
   color: #777777;
 }
-/* line 25, ../_sass/pages/_contacts.scss */
+/* line 26, ../_sass/pages/_contacts.scss */
 .contacts_wrap .contacts_section .link {
   color: #e2534b;
   text-decoration: underline;
@@ -8413,9 +8417,6 @@ code {
 
 /* line 40, ../_sass/parts/_nav.scss */
 .logo {
-  font-family: "verb_extraboldregular", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
   color: #fff !important;
   line-height: 110px;
   display: block;
@@ -8426,12 +8427,12 @@ code {
   vertical-align: middle;
   margin-left: 10px;
 }
-/* line 51, ../_sass/parts/_nav.scss */
+/* line 48, ../_sass/parts/_nav.scss */
 .logo strong {
   font-weight: 900;
 }
 
-/* line 56, ../_sass/parts/_nav.scss */
+/* line 53, ../_sass/parts/_nav.scss */
 .menu_button {
   position: absolute;
   right: 10px;
@@ -8439,7 +8440,7 @@ code {
   display: none;
 }
 
-/* line 62, ../_sass/parts/_nav.scss */
+/* line 59, ../_sass/parts/_nav.scss */
 .menu_button_wrap {
   display: block;
   position: relative;
@@ -8448,7 +8449,7 @@ code {
   overflow: hidden;
 }
 
-/* line 70, ../_sass/parts/_nav.scss */
+/* line 67, ../_sass/parts/_nav.scss */
 .fake_menu, .fake_submenu {
   display: block;
   width: 20px;
@@ -8456,7 +8457,7 @@ code {
   background: white;
   position: absolute;
 }
-/* line 77, ../_sass/parts/_nav.scss */
+/* line 74, ../_sass/parts/_nav.scss */
 .fake_menu:before, .fake_submenu:before, .fake_menu:after, .fake_submenu:after {
   content: '';
   display: inherit;
@@ -8466,12 +8467,12 @@ code {
   top: 8px;
   background: inherit;
 }
-/* line 86, ../_sass/parts/_nav.scss */
+/* line 83, ../_sass/parts/_nav.scss */
 .fake_menu:after, .fake_submenu:after {
   top: 16px;
 }
 
-/* line 91, ../_sass/parts/_nav.scss */
+/* line 88, ../_sass/parts/_nav.scss */
 .fake_submenu {
   background-color: #ff8448;
   top: 4px;
@@ -8482,7 +8483,7 @@ code {
   transition: 600ms all ease;
 }
 
-/* line 100, ../_sass/parts/_nav.scss */
+/* line 97, ../_sass/parts/_nav.scss */
 .move-left .fake_submenu {
   left: 18px;
   -webkit-transition: 600ms all ease;
@@ -8491,24 +8492,24 @@ code {
   transition: 600ms all ease;
 }
 
-/* line 106, ../_sass/parts/_nav.scss */
+/* line 103, ../_sass/parts/_nav.scss */
 .aside_menu {
   list-style: none;
   padding: 40px 0 0;
   margin: 0;
 }
-/* line 110, ../_sass/parts/_nav.scss */
+/* line 107, ../_sass/parts/_nav.scss */
 .aside_menu .menu_link {
   color: white;
   display: block;
   padding: 10px 20px;
 }
-/* line 114, ../_sass/parts/_nav.scss */
+/* line 111, ../_sass/parts/_nav.scss */
 .aside_menu .menu_link:hover {
   background: #ff8448;
 }
 
-/* line 120, ../_sass/parts/_nav.scss */
+/* line 117, ../_sass/parts/_nav.scss */
 .right-off-canvas-menu {
   background: #1b2b38;
 }
@@ -8535,7 +8536,7 @@ code {
   left: 0;
   top: 0;
   height: 1px;
-  background: #2dcc70;
+  background: #2ecc71;
 }
 /* line 28, ../_sass/parts/_sliders.scss */
 .slider_section .s_header {
@@ -8660,7 +8661,7 @@ code {
 }
 /* line 134, ../_sass/parts/_sliders.scss */
 .slider_section .slider_list .orbit-caption a {
-  color: #2dcc70;
+  color: #2ecc71;
   text-decoration: underline;
 }
 /* line 140, ../_sass/parts/_sliders.scss */
@@ -8761,14 +8762,14 @@ code {
 .mid_slider_section .slide_item {
   color: white;
   text-align: center;
-  height: 300px;
+  height: 360px;
   padding: 0 100px;
   overflow: hidden;
 }
 /* line 226, ../_sass/parts/_sliders.scss */
 .mid_slider_section .slide_item .heading_one {
   color: white;
-  font-weight: 400;
+  font-weight: bold;
 }
 /* line 230, ../_sass/parts/_sliders.scss */
 .mid_slider_section .slide_item .icon_circle {
@@ -8776,7 +8777,7 @@ code {
 }
 /* line 234, ../_sass/parts/_sliders.scss */
 .mid_slider_section .slider_message {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 /* line 3, ../_sass/parts/_footer.scss */
@@ -8805,18 +8806,25 @@ code {
 .footer .logo_wrap .logo {
   font-size: 30px;
   line-height: 2em;
-  height: auto;
+  text-indent: -9999px;
+  display: block;
+  width: 190px;
+  height: 42px;
   position: relative;
-  margin-left: 0;
+  overflow: hidden;
+  margin: 8px 0 10px;
+  background: url("/images/logo.png") no-repeat -57px;
+  background-size: cover;
 }
-/* line 26, ../_sass/parts/_footer.scss */
+/* line 32, ../_sass/parts/_footer.scss */
 .footer .logo_wrap .copyright {
   font-size: 13px;
   color: #c4c4c4;
 }
-/* line 32, ../_sass/parts/_footer.scss */
+/* line 38, ../_sass/parts/_footer.scss */
 .footer .s_header .heading_one {
   font-size: 20px;
+  font-weight: normal;
   text-align: center;
   color: white;
   margin: 20px 0;
@@ -8824,17 +8832,17 @@ code {
   border-bottom: 1px solid white;
 }
 
-/* line 43, ../_sass/parts/_footer.scss */
+/* line 50, ../_sass/parts/_footer.scss */
 .foo_link {
   color: white;
   text-decoration: none;
 }
-/* line 46, ../_sass/parts/_footer.scss */
+/* line 53, ../_sass/parts/_footer.scss */
 .foo_link:hover {
   color: #ff8448;
 }
 
-/* line 52, ../_sass/parts/_footer.scss */
+/* line 59, ../_sass/parts/_footer.scss */
 .recent_posts_section .post_heading {
   font-size: 16px;
   font-weight: 400;
@@ -8842,48 +8850,48 @@ code {
   color: white;
   display: block;
 }
-/* line 58, ../_sass/parts/_footer.scss */
+/* line 65, ../_sass/parts/_footer.scss */
 .recent_posts_section .post_heading:hover {
   color: #ff8448;
 }
-/* line 62, ../_sass/parts/_footer.scss */
+/* line 69, ../_sass/parts/_footer.scss */
 .recent_posts_section p {
   font-size: 13px;
   margin-bottom: 0;
 }
-/* line 66, ../_sass/parts/_footer.scss */
+/* line 73, ../_sass/parts/_footer.scss */
 .recent_posts_section .post_date {
   font-size: 12px;
   color: #c4c4c4;
   display: block;
 }
-/* line 71, ../_sass/parts/_footer.scss */
+/* line 78, ../_sass/parts/_footer.scss */
 .recent_posts_section .posts_list {
   list-style: none;
 }
-/* line 74, ../_sass/parts/_footer.scss */
+/* line 81, ../_sass/parts/_footer.scss */
 .recent_posts_section .post_item {
   margin-bottom: 10px;
 }
 
-/* line 80, ../_sass/parts/_footer.scss */
+/* line 87, ../_sass/parts/_footer.scss */
 .some_text_section .message {
   font-size: 13px;
 }
 
-/* line 87, ../_sass/parts/_footer.scss */
+/* line 94, ../_sass/parts/_footer.scss */
 .contacts_section .address_item {
   position: relative;
   margin-bottom: 20px;
 }
-/* line 91, ../_sass/parts/_footer.scss */
+/* line 98, ../_sass/parts/_footer.scss */
 .contacts_section .address_wrap {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.75em;
   line-height: 20px;
   padding-left: 60px;
 }
-/* line 96, ../_sass/parts/_footer.scss */
+/* line 103, ../_sass/parts/_footer.scss */
 .contacts_section .icon_wrap {
   text-align: center;
   position: absolute;
@@ -8891,7 +8899,7 @@ code {
   top: 0;
   width: 60px;
 }
-/* line 102, ../_sass/parts/_footer.scss */
+/* line 109, ../_sass/parts/_footer.scss */
 .contacts_section .icon_wrap > [class^="icons"] {
   display: -moz-inline-stack;
   display: inline-block;
@@ -8900,25 +8908,25 @@ code {
   zoom: 1;
   *display: inline;
 }
-/* line 107, ../_sass/parts/_footer.scss */
+/* line 114, ../_sass/parts/_footer.scss */
 .contacts_section .link {
   color: white;
 }
-/* line 110, ../_sass/parts/_footer.scss */
+/* line 117, ../_sass/parts/_footer.scss */
 .contacts_section .tel_link {
   color: white;
 }
 
-/* line 116, ../_sass/parts/_footer.scss */
+/* line 123, ../_sass/parts/_footer.scss */
 .social_wrap .hr {
   position: relative;
 }
-/* line 119, ../_sass/parts/_footer.scss */
+/* line 126, ../_sass/parts/_footer.scss */
 .social_wrap .social_label {
   font-size: 21px;
   margin-right: 10px;
 }
-/* line 123, ../_sass/parts/_footer.scss */
+/* line 130, ../_sass/parts/_footer.scss */
 .social_wrap .social_icon {
   display: -moz-inline-stack;
   display: inline-block;
@@ -8931,7 +8939,7 @@ code {
   height: 18px;
   background-color: #102f44;
 }
-/* line 129, ../_sass/parts/_footer.scss */
+/* line 136, ../_sass/parts/_footer.scss */
 .social_wrap .social_icon:hover {
   background-color: #efefe7;
 }
@@ -9199,13 +9207,13 @@ code {
   }
   /* line 252, ../_sass/_responsive.scss */
   .offer_section .offer_block .heading {
-    padding: 20px 15px;
+    padding: 8px;
   }
   /* line 256, ../_sass/_responsive.scss */
   .offer_section .icon_circle {
-    line-height: 69px;
-    height: 69px;
-    width: 69px;
+    line-height: 95px;
+    height: 95px;
+    width: 95px;
   }
   /* line 260, ../_sass/_responsive.scss */
   .offer_section .icon_circle > [class*="icon"] {

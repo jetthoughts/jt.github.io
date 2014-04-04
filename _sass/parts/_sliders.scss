@@ -162,7 +162,7 @@ $slider_caption_top: 330px;
   }
 }
 
-$mid_slider_item_height: 300px;
+$mid_slider_item_height: 360px;
 .mid_slider_section {
   position: relative;
   padding-top: 40px;
@@ -225,13 +225,13 @@ $mid_slider_item_height: 300px;
     overflow: hidden;
     .heading_one {
       color: $white;
-      font-weight: 400;
+      font-weight: bold;
     }
     .icon_circle {
       margin: 0 auto;
     }
   }
   .slider_message {
-    font-size: 20px;
+    font-size: 22px;
   }
 }

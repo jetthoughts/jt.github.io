@@ -7,7 +7,7 @@ $offer_block_min_height: 400px;
     margin-top: 60px;
     margin-bottom: 55px;
     .heading_one {
-      font-size: 38px;
+      font-size: 42px;
       font-weight: 900;
       color: $dark_blue;
       text-align: center;
@@ -42,6 +42,7 @@ $offer_block_min_height: 400px;
   }
   .panel {
     margin-top: 40px;
+    padding: 18px 30px;
     border-radius: $radius;
     @extend .smooth_shadow;
     .heading_two {
@@ -69,11 +70,12 @@ $offer_block_min_height: 400px;
     .heading {
       color: $white;
       text-align: left;
-      padding: 20px;
+      white-space: nowrap;
+      padding: 12px;
       background: $modern_green;
       border-radius: $mid_radius $mid_radius 0 0;
       .icon_circle {
-        margin-right: 10px;
+        margin-right: 4px;
       }
       .icon_circle,
       .heading_wrap {
@@ -85,10 +87,11 @@ $offer_block_min_height: 400px;
     }
     .subheading {
       font-size: 19px;
-      font-weight: 300;
+      font-weight: normal;
     }
     .heading_three {
       font-size: 30px;
+      font-weight: normal;
       line-height: 40px;
       color: $white;
       white-space: nowrap;
@@ -109,7 +112,7 @@ $offer_block_min_height: 400px;
 }
 
 .partners_section {
-  background: $light_gray;
+  background: $light_gray url('/images/isometric_51.jpg') repeat;
   @include box-shadow(0 -1px 7px transparentize($black, 0.9));
   position: relative;
   padding-top: 24px;
@@ -119,7 +122,7 @@ $offer_block_min_height: 400px;
     margin-top: 30px;
     margin-bottom: 40px;
     .heading_one {
-      font-size: 38px;
+      font-size: 41px;
       font-weight: 900;
       color: $dark_blue;
       text-align: center;

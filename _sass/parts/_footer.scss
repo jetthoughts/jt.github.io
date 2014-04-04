@@ -19,9 +19,15 @@ $footer-height: 438px;
     .logo {
       font-size: 30px;
       line-height: 2em;
-      height: auto;
+      text-indent: -9999px;
+      display: block;
+      width: 190px;
+      height: 42px;
       position: relative;
-      margin-left: 0;
+      overflow: hidden;
+      margin: 8px 0 10px;
+      background: url('/images/logo.png') no-repeat -57px;
+      background-size: cover;
     }
     .copyright {
       font-size: 13px;
@@ -31,6 +37,7 @@ $footer-height: 438px;
   .s_header {
     .heading_one {
       font-size: 20px;
+      font-weight: normal;
       text-align: center;
       color: $white;
       margin: 20px 0;
