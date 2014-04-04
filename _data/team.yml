@@ -53,6 +53,16 @@ valeronm:
   ava: 'images/team/valeron.png'
   role: 'Ruby Developer'
   bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
+tmwh:
+  name: 'Dmitriy'
+  ava: 'images/team/valeron.png'
+  role: 'Ruby Developer'
+  bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
+shyjt:
+  name: 'Igor'
+  ava: 'images/team/valeron.png'
+  role: 'Ruby Developer'
+  bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur laudantium molestias ullam. A ab alias aperiam aut, inventore iure maiores quibusdam ratione repellat reprehenderit saepe unde ut velit voluptatibus.'
 tehhi42:
   name: 'Elena'
   ava: 'images/team/valeron.png'
