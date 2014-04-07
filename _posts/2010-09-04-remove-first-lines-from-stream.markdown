@@ -5,7 +5,7 @@ author: Michael Nikitochkin
 authors_git: miry
 date: 04-09-2010
 tags: linux,sed
-category: tech
+category: tricks
 excerpt: A clean and simple way to strip first lines from output stream. 
 ---
 
