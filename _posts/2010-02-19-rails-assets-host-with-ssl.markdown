@@ -5,7 +5,7 @@ date: 19-02-2010
 author: Michael Nikitochkin
 authors_git: miry
 tags: rails,assets
-category: tech
+category: tricks
 excerpt: A beautiful solution to get rid of browser user alerts about the unsafe content.
 ---
 
