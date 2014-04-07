@@ -5,7 +5,7 @@ date: 13-02-2010
 author: Michael Nikitochkin
 authors_git: miry
 tags: linux,ram
-category: tech
+category: magic
 excerpt: How to free cache RAM for Linux OS
 ---
 
