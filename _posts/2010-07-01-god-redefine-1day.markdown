@@ -5,7 +5,7 @@ date: 01-07-2010
 author: Michael Nikitochkin
 authors_git: miry
 tags: god,rails
-category: tech
+category: magic
 excerpt: A solution for a bug with adding gem bundler to the rails application. 
 ---
 
