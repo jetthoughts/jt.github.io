@@ -5,7 +5,7 @@ date: 30-11-2010
 author: Michael Nikitochkin
 authors_git: miry
 tags: rake,rails,csv
-category: tech
+category: database
 excerpt: A simple rake task for dumping data from DB to CSV file. 
 ---
 
