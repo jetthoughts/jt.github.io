@@ -5,7 +5,7 @@ date: 30-01-2010
 author: Michael Nikitochkin
 authors_git: miry
 tags: rails
-category: tech
+category: experimental
 excerpt: Published my first gem. 
 ---
 
