@@ -5,7 +5,7 @@ authors_git: miry
 title: Multiple Likes for One Page
 date: 28-11-2012
 tags: facebook,like,button,thumbnail,image,mutliple,rails,route,meta
-category: tech
+category: tricks
 excerpt: A step-by-step tutorial for adding several Facebook Like buttons for one page or product.
 ---
 
