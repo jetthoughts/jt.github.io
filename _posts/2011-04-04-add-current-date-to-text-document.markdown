@@ -5,7 +5,7 @@ date: 2011-04-04
 author: Michael Nikitochkin
 authors_git: miry
 tags: mac,applescript
-category: tech
+category: tricks
 excerpt: 5 simple steps to implement the feature.
 ---
 
