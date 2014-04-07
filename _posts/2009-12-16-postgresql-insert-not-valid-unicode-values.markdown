@@ -5,7 +5,7 @@ date: 16-12-2009
 author: Michael Nikitochkin
 authors_git: miry
 tags: rails,postgresql,ruby
-category: tech
+category: tricks
 excerpt: A solution for clearing not unicode symbols.
 ---
 
