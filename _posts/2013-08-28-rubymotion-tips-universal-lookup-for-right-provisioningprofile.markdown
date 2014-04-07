@@ -5,7 +5,7 @@ title: "RubyMotion Tips: Universal lookup for right ProvisioningProfile"
 author: Michael Nikitochkin
 authors_git: miry
 tags: ruby motion config rakefile
-category: tech
+category: mobile
 excerpt: How to setup provisioning_profile for Rubymotion project.
 
 ---
