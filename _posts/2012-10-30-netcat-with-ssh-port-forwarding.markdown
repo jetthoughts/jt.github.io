@@ -4,6 +4,7 @@ author: Michael Nikitochkin
 authors_git: miry
 title: Netcat with SSH Port Forwarding
 date: 30-10-2012
+category: tricks
 excerpt: How to get access to the private local service which is available from the local machine.
 ---
 
