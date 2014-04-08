@@ -13,7 +13,7 @@ excerpt: A solution for changing name and email in Mercurial repository.
 Change name and email in mercurial repository.
     
 #### Solution: 
-Use the extension [ConvertExtension](http://mercurial.selenic.com/wiki/ConvertExtension). Install this extension and configure your __.hgrc__ to enable the extension by adding following lines:
+Use the extension [ConvertExtension](http://mercurial.selenic.com/wiki/ConvertExtension). Install this extension and configure your `.hgrc` to enable the extension by adding following lines:
 
 {% highlight ruby linenos=table %}
   [extensions]
