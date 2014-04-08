@@ -48,9 +48,9 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
         }
       }
       .icons-facebook {
-        background-position: 0 -1332px;
+        background-position: 0 -1620px;
         &:hover {
-          background-position: 0 -1846px;
+          background-position: 0 -2134px;
         }
       }
       .icons-twitter {
@@ -60,9 +60,9 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
         }
       }
       .icons-linkedin-small {
-        background-position: 0 -1162px;
+        background-position: 0 -1306px;
         &:hover {
-          background-position: 0 -1492px;
+          background-position: 0 -1780px;
         }
       }
       .icons-github {
@@ -318,6 +318,14 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
   .offer_section {
     .offer_block {
       min-height: inherit;
+    }
+  }
+  .logo {
+    width: 200px;
+    overflow: hidden;
+    .logo_img {
+      margin-left: -62px;
+      max-width: 260px;
     }
   }
 }
