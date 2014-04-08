@@ -6,7 +6,7 @@ authors_git: miry
 date: 2009-11-22
 tags: rails,config,jruby
 category: magic
-excerpt: An easy way of setting gems for different platforms.
+
 ---
 Sometimes we run the same application in different platforms: Ruby and JRuby or Windows and Linux. And each platform has its own version of a gem.
 Here is an example of my config file for Rails to run instance with **ruby** or **jruby**.
@@ -19,6 +19,8 @@ else
     config.gem "sqlite3-ruby", :lib =&gt; "sqlite3"
     config.gem 'rmagick', :lib =&gt; 'RMagick'
 {% endhighlight %}
+
+<!--cut-->
 
 **config/database.yml**:
 

@@ -6,7 +6,6 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: ruby capistrano deploy config rakefile
 category: Magic
-excerpt: The new way of passing parameters in Capistrano v3 is to use the same solution as Rake (in some sort Capistrano 3 is totally based on Rake).
 
 ---
 
@@ -24,6 +23,7 @@ namespace :task do
   end
 end
 {% endhighlight %}
+<!--cut-->
 
 and now we can run `rake db:migrate` on remote hosts:
 

@@ -6,15 +6,18 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: linux,ram
 category: magic
-excerpt: How to free cache RAM for Linux OS
+
 ---
 
 For running some performance tests you might want to free cache RAM example test your web server or DB.
 
 ![Before clear](/images/ram_info_before_clear.png "Before clear")
 
+<!--cut-->
 
-`sudo echo 3 | sudo tee /proc/sys/vm/drop_caches`
+{% highlight bash linenos=table %}
+sudo echo 3 | sudo tee /proc/sys/vm/drop_caches
+{% endhighlight %}
 
 ![After clear](/images/ram_after.png "After clear")
 

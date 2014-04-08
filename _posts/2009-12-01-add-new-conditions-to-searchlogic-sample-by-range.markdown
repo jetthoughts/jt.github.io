@@ -6,7 +6,7 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: rails,searchlogic
 category: tech
-excerpt: Three simple steps to fix bugs with Postgres.
+
 ---
 
 I am using an awesome plugin searchlogic by binarylogic. But it has some small bugs concerning working with Postgres.
@@ -22,6 +22,8 @@ RANGE_CONDITIONS = {
   :not_range => []
 }
 {% endhighlight %}
+
+<!--cut-->
 
 The second step: register our conditions, write after line `CONDITIONS={}`:
 

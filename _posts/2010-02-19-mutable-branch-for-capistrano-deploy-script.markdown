@@ -6,7 +6,7 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: capistrano,ruby
 category: tech
-excerpt: How to create mutable branch for Capistrano deploy script.
+
 ---
 
 I always had issues testing a new feature. I forgot to change a branch in capistrano config. So I have found one solution that helped me:
@@ -20,6 +20,8 @@ or for git:
 {% highlight ruby linenos=table %}
 set :branch, `git branch | grep '*' | sed 's/^[^a-zA-Z]*//'`.strip || "master"
 {% endhighlight %}
+
+<!--cut-->
 
 {% highlight ruby linenos=table %}
 set :branch do

@@ -6,7 +6,7 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: ruby,strings,metaprogramming
 category: Tech
-excerpt: A few examples of solving the issue of defining a dynamic template.
+
 ---
 
 Sometimes we need to define a dynamic template before defining variables used in the template.
@@ -19,6 +19,7 @@ string = "echo %{expr}" # -> "echo %{expr}"
 string % {expr: 1}      # -> "echo 1"
 {% endhighlight %}
 
+<!--cut-->
 
 The first method is based on the ability to evaluate the Ruby expression in string:
 

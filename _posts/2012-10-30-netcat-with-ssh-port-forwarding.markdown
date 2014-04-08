@@ -5,7 +5,7 @@ authors_git: miry
 title: Netcat with SSH Port Forwarding
 date: 30-10-2012
 category: tricks
-excerpt: How to get access to the private local service which is available from the local machine.
+
 ---
 
 I have encountered a problem with getting access to the private local service which available from the local machine.
@@ -21,6 +21,8 @@ while [ 1 ]; do nc -l -p 8080 < pipe | ssh gw_to_private_net -p 22977  "nc 192.1
 So we need run this only on local machine. Now we have the open local port `8080` forwarded to private machine `192.168.12.230:80`.
 
 Let me describe these commands
+
+<!--cut-->
 
 First open a local port to hear from our network connections. So this port will be proxy the data to private net:
 

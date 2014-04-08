@@ -5,7 +5,7 @@ author: Michael Nikitochkin
 authors_git: miry
 date: 22-12-2010
 category: magic
-excerpt:  Do you experience a problem with sending XHR requests from different domains? A simple solution is here.
+
 ---
 
 If you have problem with sending XHR requests from different domains, it will be problematic to get content, because
@@ -20,6 +20,8 @@ The solution is to setup response headers: _Access-Control-Request-Method_, _Acc
 headers['Access-Control-Allow-Origin'] = '*'
 headers['Access-Control-Request-Method'] = '*'
 {% endhighlight %}
+
+<!--cut-->
 
 Example for rails:
 

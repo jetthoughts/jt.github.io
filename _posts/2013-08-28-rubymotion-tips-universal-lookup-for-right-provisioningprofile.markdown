@@ -6,7 +6,6 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: ruby motion config rakefile
 category: mobile
-excerpt: How to setup provisioning_profile for Rubymotion project.
 
 ---
 
@@ -22,6 +21,8 @@ end
 
 And this method allows us to search for ProvisioningProfile not just by full path as it is described in documentation.
 But you can find the ProvisioningProfile via name.
+
+<!--cut-->
 
 Example:
 You have created the provisioning profile with the name `MagicMotionAppProfile`. Use the next snippet to find the profile.

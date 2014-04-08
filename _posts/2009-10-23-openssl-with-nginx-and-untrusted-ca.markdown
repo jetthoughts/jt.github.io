@@ -6,7 +6,7 @@ authors_git: miry
 date: 2009-10-23
 tags: linux,nginx,ssl,certificate
 category: tech
-excerpt: How to set up SSL certificate for web application.
+
 ---
 
 I was assigned a task: to set up <strong>ssl</strong> certificate for web application. We used  <strong>nginx</strong>, and found a free provider http://www.instantssl.com/ *COMODO*.
@@ -21,7 +21,9 @@ Generating RSA private key, 2048 bit long modulus
 ....
 {% endhighlight %}
 
-I have got two files. Now it was time to register with provider. It was easy too. We need to copy the  domain.com.csr file content and post it to the field. 
+I have got two files. Now it was time to register with provider. It was easy too. We need to copy the  domain.com.csr file content and post it to the field.
+
+<!--cut-->
 
 {% highlight bash linenos=table %}
 # cat domain.com.csr
@@ -37,7 +39,7 @@ After that, service sent an activation email to the domain admin email address a
 * Your Free SSL Certificate - domain_com.crt
 {% endhighlight %}
 
-I thought that my troubles were over. In accordance with nginx manual I have created a config for the application. 
+I thought that my troubles were over. In accordance with nginx manual I have created a config for the application.
 
 ```
 ssl    on;
@@ -45,16 +47,16 @@ ssl_certificate    /etc/ssl/private/domain_com.crt; (or .pem)
 ssl_certificate_key    /etc/ssl/private/domain.com.key;
 ```
 
-All is well. The app has loaded. Oh, snap! I loaded a page and got a mistake about the unknown certificate. After an hour of doing rain dance, I have found an article http://terra-firma-design.com/blog/20-Installing-an-EV-SSL-Certificate-on-Nginx, where the method of transferance of several certificates in one for nginx was described. That is not necessary for apache. A catalogue of certificate can be set up for apache. 
+All is well. The app has loaded. Oh, snap! I loaded a page and got a mistake about the unknown certificate. After an hour of doing rain dance, I have found an article http://terra-firma-design.com/blog/20-Installing-an-EV-SSL-Certificate-on-Nginx, where the method of transferance of several certificates in one for nginx was described. That is not necessary for apache. A catalogue of certificate can be set up for apache.
 
 ```
 # cat  AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt domain_com.crt &gt;&gt; domain_com_new.crt
 ```
 
-And I have corrected nginx config. After that I rebooted server and got an error. 
+And I have corrected nginx config. After that I rebooted server and got an error.
 <pre>Restarting nginx: [emerg]: invalid number of arguments in "ssl_certificate" directive in /opt/nginx/conf/production.conf:54</pre>
 
-Then I found a forum, where the similar situation was discussed. One guy suggested checking the key and the received certificate. He told that Modulus fields should correspond as well. 
+Then I found a forum, where the similar situation was discussed. One guy suggested checking the key and the received certificate. He told that Modulus fields should correspond as well.
 
 {% highlight bash linenos=table %}
 # openssl x509 -noout -text -in domain_com.crs
@@ -101,7 +103,7 @@ Modulus (2048 bit):
   5c:5d
 {% endhighlight %}
 
-I have found out that they are different. And that a provider signed the key with 2048 bit code. And I have 1024 by default. I decided to recompose the key, but setup 2048 bit. 
+I have found out that they are different. And that a provider signed the key with 2048 bit code. And I have 1024 by default. I decided to recompose the key, but setup 2048 bit.
 
 ```
 # openssl genrsa -out domain_com.key 2048
@@ -127,4 +129,4 @@ It has issued only the first certificate from the list. Then I decided to slight
 # openssl x509 -noout -text -in ssl-bundle.crt -modulus
 ```
 
-As anticipated, it issued information only about the necessary certificate. Reloaded web server and - wuala - it has loaded. Opened webpage - a certificate is displayed normally. No errors. 
+As anticipated, it issued information only about the necessary certificate. Reloaded web server and - wuala - it has loaded. Opened webpage - a certificate is displayed normally. No errors.
