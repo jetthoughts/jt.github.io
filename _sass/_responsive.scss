@@ -37,6 +37,19 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
   .author_wrap {
     min-width: 100%;
   }
+  .team_member {
+    &:before {
+      display: none;
+    }
+    .position {
+      position: relative;
+    }
+    .ava_wrap {
+      min-height: initial;
+      margin-right: 0;
+      padding-bottom: 0;
+    }
+  }
   .footer {
     .social_wrap {
       .social_icon {
@@ -165,7 +178,19 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
     }
   }
   .offer_section {
+    .panel {
+      .heading_two {
+        font-size: 30px;
+        line-height: 1.3;
+      }
+    }
     .offer_block {
+      .heading_three {
+        font-size: 28px;
+      }
+      .subheading {
+        font-size: 14px;
+      }
       min-height: inherit;
       .description {
         font-size: 15px;
@@ -192,29 +217,6 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
   }
 }
 
-@media #{$below_nav} {
-  .top_menu_wrap {
-    .logo {
-      margin-left: 10px;
-    }
-    .top-bar-section {
-      display: none;
-    }
-    .toggle-topbar {
-      display: block !important;
-    }
-    .menu_button {
-      display: block;
-      &.hide {
-        display: none;
-      }
-    }
-  }
-  .title-area {
-    width: 100%;
-  }
-}
-
 @media #{$below_large} {
   .logo {
     margin-left: 20px;
@@ -238,6 +240,11 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
     .slide_item {
       height: auto;
       padding: 0;
+    }
+  }
+  .catch_section {
+    .big_heading {
+      font-size: 76px;
     }
   }
   .offer_section {
@@ -329,3 +336,33 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
     }
   }
 }
+
+@media #{$below_nav} {
+  .top_menu_wrap {
+    .logo {
+      margin-left: 10px;
+    }
+    .top-bar-section {
+      display: none;
+    }
+    .toggle-topbar {
+      display: block !important;
+    }
+    .menu_button {
+      display: block;
+      &.hide {
+        display: none;
+      }
+    }
+  }
+  .catch_section {
+    .big_heading {
+      font-size: 56px;
+    }
+  }
+  .title-area {
+    width: 100%;
+  }
+}
+
+
