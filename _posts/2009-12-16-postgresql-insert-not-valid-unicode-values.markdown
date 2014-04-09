@@ -6,7 +6,7 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: rails,postgresql,ruby
 category: tricks
-excerpt: A solution for clearing not unicode symbols.
+
 ---
 
 I get an error when I try to insert to DB characters, which are not valid for Postgres in Rails application:
@@ -14,6 +14,8 @@ I get an error when I try to insert to DB characters, which are not valid for Po
 {% highlight ruby linenos=table %}
 PGError: ERROR:  invalid byte sequence for encoding "UTF8": 0x92
 {% endhighlight %}
+
+<!--cut-->
 
 I have found a solution, but not pretty cast all string to UTF-8 with valid characters by Kconv:
 

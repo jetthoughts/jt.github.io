@@ -9,6 +9,7 @@ lsi: false
 paginate: 25
 paginate_path: "blog/page:num"
 exclude: ["vendor"]
+excerpt_separator: <!--cut-->
 
 asset_pipeline:
   bundle: true            # Default = true

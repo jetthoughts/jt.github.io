@@ -6,7 +6,7 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: nokogiri,macos
 category: magic
-excerpt: How to install gem geoip_city.
+excerpt: How to install gem nokogiri on Mac OS.
 ---
 
 Run in the terminal:

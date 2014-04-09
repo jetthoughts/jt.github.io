@@ -6,7 +6,7 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: geoip,ruby,gem
 category: tech
-excerpt: Description of a bug in Syntax Highlighting gem.
+
 ---
 
 Today I spent a lot of time installing gem *geoip_city*. So what have I done:
@@ -18,6 +18,8 @@ wget http://geolite.maxmind.com/download/geoip/api/c/GeoIP-1.4.6.tar.gz
 tar zxf GeoIP-1.4.6.tar.gz
 cd GeoIP-1.4.6
 {% endhighlight %}
+
+<!--cut-->
 
 * Read file *README.OSX*. Found simple instructions to compile this lib.
 

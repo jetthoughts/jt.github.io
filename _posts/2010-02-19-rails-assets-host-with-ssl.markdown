@@ -6,16 +6,18 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: rails,assets
 category: tricks
-excerpt: A beautiful solution to get rid of browser user alerts about the unsafe content.
+
 ---
 
-When we use simple assets server, such as 
+When we use simple assets server, such as
 
 {% highlight ruby linenos=table %}
 ActionController::Base.asset_host = "http://assets%d.example.com"
 {% endhighlight %}
 
 we have a problem with pages which use ssl and some browsers alert users that some content is not safe.
+
+<!--cut-->
 
 So I found in **google** the following solution:
 

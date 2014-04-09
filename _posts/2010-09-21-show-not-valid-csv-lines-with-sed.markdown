@@ -6,7 +6,7 @@ author: Michael Nikitochkin
 authors_git: miry
 tags: sed,shell,csv
 category: tech
-excerpt: Installing postgres(pg) gem for i386 arch.
+
 ---
 
 I have an issue with invalid formatted CSV file. First step show lines with invalid lines.
@@ -14,6 +14,8 @@ I have an issue with invalid formatted CSV file. First step show lines with inva
 {% highlight bash linenos=table %}
 sed -n '/"[^",]*"[^",]*"[^",]*",/,1p' <fileName>
 {% endhighlight %}
+
+<!--cut-->
 
 Then I googled a way to replace symbol inside quotes. And I read the next manual http://sed.sourceforge.net/sed1line.txt. So I created a sed script with the next content, called it __script.sed__:
 
