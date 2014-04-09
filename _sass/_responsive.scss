@@ -43,6 +43,19 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
   .author_wrap {
     min-width: 100%;
   }
+  .team_member {
+    &:before {
+      display: none;
+    }
+    .position {
+      position: relative;
+    }
+    .ava_wrap {
+      min-height: initial;
+      margin-right: 0;
+      padding-bottom: 0;
+    }
+  }
   .footer {
     .social_wrap {
       .social_icon {
