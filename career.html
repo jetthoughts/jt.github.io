@@ -14,57 +14,41 @@ slug: career
   <div class="job_application">
     <div class="row">
       <div class="columns large-offset-1 large-10 medium-10 medium-offset-1 small-12 small-offset-0">
-        <h2 class="heading_two">We're Hiring</h2>
+        {% if site.career %}
+          <h2 class="heading_two">We're Hiring</h2>
+        {% else %}
+          <h2 class="heading_two">We have no open vacancies now</h2>
+        {% endif %}
 
         <div class="spacer"></div>
 
 
-        <dl class="section_wrap accordion" data-accordion>
-          <dd class="job_section">
-            <a href="#pos1" class="link">
+          <dl class="section_wrap accordion" data-accordion>
+          {% for post in site.career %}
+            <dd class="job_section">
+            <a href="#job_{{forloop.index}}" class="link">
               <header class="header section_heading">
-                <div class="row">
-                  <div class="columns large-2 medium-2">
-                    <div class="icon_wrap">
-                      <div class="icon_circle mid green"><i class="icons-tools">tools</i></div>
-                    </div>
+                <div class="job_icon">
+                  <div class="icon_wrap">
+                    <div class="icon_circle mid green"><i class="icon-{{post.category}}">{{post.category}}</i></div>
                   </div>
-                  <div class="columns large-10 medium-10 bg_white">
-                    <div class="job_summary">
-                      <h1 class="heading_one ">Senior Backend Engineer</h1>
+                </div>
+                <div class="job_summary">
+                  <h1 class="heading_one ">{{post.title}}</h1>
 
-                      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque culpa
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             eius eligendi enim error, esse expedita</p>
-                    </div>
-                  </div>
+                  <p class="description">{{post.excerpt}}</p>
                 </div>
               </header>
             </a>
 
-            <div class="section_details content active" id="pos1">
+            <div class="section_details content" id="job_{{forloop.index}}">
               <div class="detailed">
                 <div class="large-9 medium-8 small-12 col">
 
                   <div class="detailed_inner">
                     <h2 class="heading_two">Position Description</h2>
 
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ducimus eum, hic in
-                                         laborum libero nisi, odit, praesentium quasi sed sunt voluptatibus. Adipisci blanditiis explicabo
-                                         numquam odio quibusdam saepe vero?</p>
-
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aliquid
-                                         blanditiis culpa debitis eos expedita fugit ipsa laboriosam libero minima optio perferendis quidem
-                                         quo,
-                                         similique soluta ullam veritatis vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                         Aliquid
-                                         debitis doloribus ea expedita fuga illo incidunt, magnam modi molestiae neque nesciunt provident,
-                                         quidem
-                                         quis quisquam reiciendis repellat, sunt. Aspernatur, tempore?</p>
+                    {{post.content | markdownify}}
                   </div>
 
                 </div>
@@ -72,18 +56,12 @@ slug: career
                   <h3 class="heading_three">Position Details</h3>
                   <table class="table">
                     <tbody>
+                    {% for tr in post.details %}
                     <tr class="tr">
-                      <th class="th">Hire date</th>
-                      <td class="td">immidiately</td>
+                      <th class="th">{{tr[0]}}</th>
+                      <td class="td">{{tr[1]}}</td>
                     </tr>
-                    <tr class="tr">
-                      <th class="th">Skills</th>
-                      <td class="td">HTML/CSS WORDPRESS</td>
-                    </tr>
-                    <tr class="tr">
-                      <th class="th">Expirience</th>
-                      <td class="td">3-5 Years</td>
-                    </tr>
+                    {% endfor %}
                     </tbody>
                   </table>
                 </div>
@@ -93,298 +71,20 @@ slug: career
               <div class="similar_projects hide-for-small">
                 <h5 class="heading_five">Projects similar to what you’ll be working on:</h5>
                 <ul class="list">
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
+                  {% for portfolio in site.portfolio limit: 4 %}
+                  <li class="item"><a href="{{portfolio.url}}"><img class="thumb" src="{{portfolio.thumb}}" alt="similar projects" /></a></li>
+                  {% endfor %}
                 </ul>
               </div>
 
               <div class="application_form">
-                <form method="post" name="apply_form" action="?">
-                  <h2 class="heading_two">Apply</h2>
+                {% include form.html id=post.url position=post.title %}
 
-                  <div class="row">
-                    <div class="columns large-2"><label class="form_label" for="name">Name:</label></div>
-                    <div class="columns large-10"><input class="form_input" type="text" name="name" id="name" /></div>
-                  </div>
-
-                  <div class="row">
-                    <div class="columns large-2"><label class="form_label" for="email">E-mail:</label></div>
-                    <div class="columns large-10">
-                      <div class="validation_input">
-                        <input class="form_input error" type="email" name="email" id="email" />
-                        <span class="error validate_text">Check Email</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="columns large-12">
-                      <textarea class="textarea" name="message" id="message" cols="30" rows="10">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at dolor dolores dolorum eius
-                        error explicabo iure laboriosam praesentium, quaerat quasi qui tenetur totam vel voluptatem.
-                        Facilis
-                        impedit quos similique.
-                      </textarea>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="large-12 column">
-                      <button class="button button_ordinary left large-2 medium-3 small-12" type="submit">Send</button>
-                      <button class="button button_primary right large-2 medium-3 small-12">
-                        <i class="icons-binder"></i> + Attach a CV
-                      </button>
-                    </div>
-                  </div>
-
-                </form>
               </div>
             </div>
-          </dd>
-          <dd class="job_section">
-            <a href="#pos2" class="link">
-              <header class="header section_heading">
-                <div class="row">
-                  <div class="column large-2 medium-2">
-                    <div class="icon_wrap">
-                      <div class="icon_circle mid green"><i class="icons-photo"></i></div>
-                    </div>
-                  </div>
-                  <div class="columns large-10 medium-10 bg_white">
-                    <div class="job_summary">
-                      <h1 class="heading_one ">Junior Backend Engineer</h1>
+              </dd>
+          {% endfor %}
 
-                      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque culpa
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             <!--eius eligendi enim error, esse expedita-->
-                                             eius eligendi enim error, esse expedita</p>
-                    </div>
-                  </div>
-                </div>
-              </header>
-            </a>
-
-            <div class="section_details content" id="pos2">
-              <div class="detailed">
-                <div class="large-9 medium-8 small-12 col">
-
-                  <div class="detailed_inner">
-                    <h2 class="heading_two">Position Description</h2>
-
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ducimus eum, hic in
-                                         laborum libero nisi, odit, praesentium quasi sed sunt voluptatibus. Adipisci blanditiis explicabo
-                                         numquam odio quibusdam saepe vero?</p>
-
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aliquid
-                                         blanditiis culpa debitis eos expedita fugit ipsa laboriosam libero minima optio perferendis quidem
-                                         quo,
-                                         similique soluta ullam veritatis vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                         Aliquid
-                                         debitis doloribus ea expedita fuga illo incidunt, magnam modi molestiae neque nesciunt provident,
-                                         quidem
-                                         quis quisquam reiciendis repellat, sunt. Aspernatur, tempore?</p>
-                  </div>
-
-                </div>
-                <div class="large-3 medium-4 medium-4 medium-offset-0 large-offset-0 small-10 small-offset-1 col">
-                  <h3 class="heading_three">Position Details</h3>
-                  <table class="table">
-                    <tbody>
-                    <tr class="tr">
-                      <th class="th">Hire date</th>
-                      <td class="td">immidiately</td>
-                    </tr>
-                    <tr class="tr">
-                      <th class="th">Skills</th>
-                      <td class="td">HTML/CSS WORDPRESS</td>
-                    </tr>
-                    <tr class="tr">
-                      <th class="th">Expirience</th>
-                      <td class="td">3-5 Years</td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-              </div>
-
-              <div class="similar_projects hide-for-small">
-                <h5 class="heading_five">Projects similar to what you’ll be working on:</h5>
-                <ul class="list">
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                </ul>
-              </div>
-
-              <div class="application_form">
-                <form method="post" name="apply_form" action="?">
-                  <h2 class="heading_two">Apply</h2>
-
-                  <div class="row">
-                    <div class="columns large-2"><label class="form_label" for="name">Name:</label></div>
-                    <div class="columns large-10"><input class="form_input" type="text" name="name" id="name" /></div>
-                  </div>
-
-                  <div class="row">
-                    <div class="columns large-2"><label class="form_label" for="email">E-mail:</label></div>
-                    <div class="columns large-10">
-                      <div class="validation_input">
-                        <input class="form_input error" type="email" name="email" id="email" />
-                        <span class="error validate_text">Check Email</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="columns large-12">
-                      <textarea class="textarea" name="message" id="message" cols="30" rows="10">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at dolor dolores dolorum eius
-                        error explicabo iure laboriosam praesentium, quaerat quasi qui tenetur totam vel voluptatem.
-                        Facilis
-                        impedit quos similique.
-                      </textarea>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="large-12 column">
-                      <button class="button button_ordinary left large-2 medium-3 small-12" type="submit">Send</button>
-                      <button class="button button_primary right large-2 medium-3 small-12">
-                        <i class="icons-binder"></i> + Attach a CV
-                      </button>
-                    </div>
-                  </div>
-
-                </form>
-              </div>
-            </div>
-          </dd>
-          <dd class="job_section">
-            <a href="#pos3" class="link">
-              <header class="header section_heading">
-                <div class="row">
-                  <div class="column large-2 medium-2">
-                    <div class="icon_wrap">
-                      <div class="icon_circle mid green"><i class="icons-mic"></i></div>
-                    </div>
-                  </div>
-                  <div class="column large-10 medium-10 bg_white">
-                    <div class="job_summary">
-                      <h1 class="heading_one">Voiceover Engineer</h1>
-
-                      <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque culpa
-                                             eius eligendi enim error, esse expedita
-                                             eius eligendi enim error, esse expedita</p>
-                    </div>
-                  </div>
-                </div>
-              </header>
-            </a>
-
-            <div class="section_details content" id="pos3">
-              <div class="detailed">
-                <div class="large-9 medium-8 small-12 col">
-
-                  <div class="detailed_inner">
-                    <h2 class="heading_two">Position Description</h2>
-
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ducimus eum, hic in
-                                         laborum libero nisi, odit, praesentium quasi sed sunt voluptatibus. Adipisci blanditiis explicabo
-                                         numquam odio quibusdam saepe vero?</p>
-
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aliquid
-                                         blanditiis culpa debitis eos expedita fugit ipsa laboriosam libero minima optio perferendis quidem
-                                         quo,
-                                         similique soluta ullam veritatis vitae.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                         Aliquid
-                                         debitis doloribus ea expedita fuga illo incidunt, magnam modi molestiae neque nesciunt provident,
-                                         quidem
-                                         quis quisquam reiciendis repellat, sunt. Aspernatur, tempore?</p>
-                  </div>
-
-                </div>
-                <div class="large-3 medium-4 medium-4 medium-offset-0 large-offset-0 small-10 small-offset-1 col">
-                  <h3 class="heading_three">Position Details</h3>
-                  <table class="table">
-                    <tbody>
-                    <tr class="tr">
-                      <th class="th">Hire date</th>
-                      <td class="td">immidiately</td>
-                    </tr>
-                    <tr class="tr">
-                      <th class="th">Skills</th>
-                      <td class="td">HTML/CSS WORDPRESS</td>
-                    </tr>
-                    <tr class="tr">
-                      <th class="th">Expirience</th>
-                      <td class="td">3-5 Years</td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-              </div>
-
-              <div class="similar_projects hide-for-small">
-                <h5 class="heading_five">Projects similar to what you’ll be working on:</h5>
-                <ul class="list">
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects" /></a></li>
-                </ul>
-              </div>
-
-              <div class="application_form">
-                <form method="post" name="apply_form" action="?">
-                  <h2 class="heading_two">Apply</h2>
-
-                  <div class="row">
-                    <div class="columns large-2"><label class="form_label" for="name">Name:</label></div>
-                    <div class="columns large-10"><input class="form_input" type="text" name="name" id="name" /></div>
-                  </div>
-
-                  <div class="row">
-                    <div class="columns large-2"><label class="form_label" for="email">E-mail:</label></div>
-                    <div class="columns large-10">
-                      <div class="validation_input">
-                        <input class="form_input error" type="email" name="email" id="email" />
-                        <span class="error validate_text">Check Email</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="columns large-12">
-                      <textarea class="textarea" name="message" id="message" cols="30" rows="10">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci at dolor dolores dolorum eius
-                        error explicabo iure laboriosam praesentium, quaerat quasi qui tenetur totam vel voluptatem.
-                        Facilis
-                        impedit quos similique.
-                      </textarea>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="large-12 column">
-                      <button class="button button_ordinary left large-2 medium-3 small-12" type="submit">Send</button>
-                      <button class="button button_primary right large-2 medium-3 small-12">
-                        <i class="icons-binder"></i> + Attach a CV
-                      </button>
-                    </div>
-                  </div>
-
-                </form>
-              </div>
-            </div>
-          </dd>
         </dl>
 
       </div>

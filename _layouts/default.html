@@ -55,21 +55,21 @@
     });
   </script>
 
-  <link rel="icon" href="/favicon-32.ico">
-  <link rel="shortcut icon" href="/favicon-32.ico">
+  <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32">
+  <link rel="shortcut icon" href="/favicon.ico?v=3">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
   <!--RSS-->
   <link href="{{site.url}}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.title }}" />
 
 </head>
 
-<body class="{{page.categories}}_body">
+<body class="{{page.categories}}_body homepage_body">
 <div class="off-canvas-wrap">
     <div class="inner-wrap">
 
 
         <!-- Off Canvas Menu -->
-        <aside class="right-off-canvas-menu hide">
+        <aside class="right-off-canvas-menu">
             <!-- whatever you want goes here -->
             <ul class="aside_menu"
             {% assign pages_list = site.pages %}
@@ -85,7 +85,7 @@
                     {{ content }}
 
                 </div>
-                <div class="footer_push"></div>
+                <!--<div class="footer_push"></div>-->
             </div>
             <!-- /container -->
 

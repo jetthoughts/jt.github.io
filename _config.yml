@@ -4,16 +4,16 @@ markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 pygments: true
-safe: true
-lsi: false
 paginate: 25
 paginate_path: "blog/page:num"
-exclude: ["vendor"]
+permalink: "/:categories/:year/:month/:day/:title.html"
+safe: true
+
+exclude: [Gemfile, Gemfile.lock, Rakefile, .gitignore, Procfile, config.rb, bower.json]
 excerpt_separator: <!--cut-->
 
-asset_pipeline:
-  bundle: true            # Default = true
-  compress: true          # Default = true
-  output_path: assets     # Default = assets
-  display_path: nil       # Default = nil
-  gzip: false             # Default = false
+collections:
+  portfolio:
+    output: true
+  career:
+    output: true

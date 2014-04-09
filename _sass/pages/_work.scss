@@ -47,9 +47,9 @@ $rounded_number_diameter: 100px;
     margin-top: 40px;
   }
   .rounded_number {
-    font-style: 400;
+    font-style: normal;
     text-align: center;
-    line-height: $rounded_number_diameter - 4;
+    line-height: $rounded_number_diameter - 7;
     @include inline-block(baseline);
     margin-right: 20px;
     width: $rounded_number_diameter;

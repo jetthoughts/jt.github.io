@@ -34,6 +34,12 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
 }
 
 @media #{$below_small} {
+  .right-off-canvas-menu {
+    background: $deep_ocean;
+  }
+  .homepage_body {
+    background-size: initial;
+  }
   .author_wrap {
     min-width: 100%;
   }
@@ -86,19 +92,21 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
     }
   }
   .map_wrap {
-    .big_heading {
-      font-size: 40px;
-    }
-    .small_slogan {
-      font-size: 20px;
-    }
-    .sub_heading {
-      font-size: 22px;
-      line-height: 130%;
-    }
-    .message {
-      font-size: 20px;
-      line-height: 120%;
+    .map_message {
+      .big_heading {
+        font-size: 40px;
+      }
+      .small_slogan {
+        font-size: 20px;
+      }
+      .sub_heading {
+        font-size: 22px;
+        line-height: 130%;
+      }
+      .message {
+        font-size: 20px;
+        line-height: 120%;
+      }
     }
   }
   .slider_section {
@@ -150,25 +158,64 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
     }
   }
   .job_summary {
-    padding: 0 20px;
+    padding-top: 18px;
+  }
+  .job_section {
+    .header {
+      .heading_one {
+        font-size: 20px;
+        line-height: 110%;
+      }
+    }
   }
   .slider_section {
     .slider_wrap,
     .orbit-container {
-      width: auto;
+      width: auto !important;
+      height: 240px !important;
     }
     .orbit-timer {
       display: none;
     }
     .slider_list {
-      width: auto;
+      width: auto !important;
     }
   }
   .offer_section {
+    .panel {
+      .heading_two {
+        font-size: 30px;
+        line-height: 1.3;
+      }
+    }
     .offer_block {
+      .heading_three {
+        font-size: 28px;
+      }
+      .subheading {
+        font-size: 14px;
+      }
       min-height: inherit;
       .description {
         font-size: 15px;
+      }
+    }
+  }
+  .similar_projects, .related_projects {
+    text-align: center;
+    margin: 20px -20px -20px;
+  }
+  .portfolio {
+    .slider_section {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+    .portfolio_box {
+      padding: 20px;
+    }
+    &.inner {
+      .header {
+        padding: 0;
       }
     }
   }
@@ -192,29 +239,6 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
   }
 }
 
-@media #{$below_nav} {
-  .top_menu_wrap {
-    .logo {
-      margin-left: 10px;
-    }
-    .top-bar-section {
-      display: none;
-    }
-    .toggle-topbar {
-      display: block !important;
-    }
-    .menu_button {
-      display: block;
-      &.hide {
-        display: none;
-      }
-    }
-  }
-  .title-area {
-    width: 100%;
-  }
-}
-
 @media #{$below_large} {
   .logo {
     margin-left: 20px;
@@ -222,15 +246,26 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
 }
 
 @media #{$below_medium} {
+  .team_member {
+    .ava_wrap {
+      min-height: 300px;
+    }
+  }
+  .job_summary {
+    padding-left: $circle_small_icon_diameter + 40;
+  }
   .job_section {
-    .icon_circle {
-      margin-left: -($circle_small_icon_diameter/2 - 10);
-      width: $circle_small_icon_diameter;
-      height: $circle_small_icon_diameter;
-      line-height: $circle_small_icon_diameter;
-      border-radius: ceil($circle_small_icon_diameter/2);
-      > [class*="icon"] {
+    .job_icon {
+      width: $circle_small_icon_diameter + 26;
+      .icon_circle {
+        margin-left: -($circle_small_icon_diameter/2);
+        width: $circle_small_icon_diameter;
+        height: $circle_small_icon_diameter;
         line-height: $circle_small_icon_diameter;
+        border-radius: ceil($circle_small_icon_diameter/2);
+        > [class*="icon"] {
+          line-height: $circle_small_icon_diameter;
+        }
       }
     }
   }
@@ -238,6 +273,11 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
     .slide_item {
       height: auto;
       padding: 0;
+    }
+  }
+  .catch_section {
+    .big_heading {
+      font-size: 76px;
     }
   }
   .offer_section {
@@ -327,5 +367,49 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
       margin-left: -62px;
       max-width: 260px;
     }
+  }
+}
+
+@media #{$below_nav} {
+  .team_member {
+    &:before {
+      display: none;
+    }
+    .ava_wrap {
+      min-height: initial;
+      margin-right: 0;
+      padding-bottom: 0;
+    }
+    .ava {
+      width: 80px;
+    }
+    .bio {
+      margin-bottom: 50px;
+    }
+  }
+  .top_menu_wrap {
+    .logo {
+      margin-left: 10px;
+    }
+    .top-bar-section {
+      display: none;
+    }
+    .toggle-topbar {
+      display: block !important;
+    }
+    .menu_button {
+      display: block;
+      &.hide {
+        display: none;
+      }
+    }
+  }
+  .catch_section {
+    .big_heading {
+      font-size: 56px;
+    }
+  }
+  .title-area {
+    width: 100%;
   }
 }

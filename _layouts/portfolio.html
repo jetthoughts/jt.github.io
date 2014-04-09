@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="inner {{ page.slug }}">
+<div class="inner portfolio">
 
   <div class="row">
     <div class="column large-12">
-      <a class="button button_dark back_button" href="portfolio.html">Back to Portfolio</a>
+      <a class="button button_dark back_button" href="/portfolio.html">Back to Portfolio</a>
     </div>
   </div>
 
@@ -16,39 +16,42 @@ layout: default
         <div class="portfolio_box">
           <header class="header">
             <div class="row">
-              <div class="column large-10 large-offset-1">
+              <div class="column large-10 large-offset-1 medium-10 medium-offset-1">
                 <h1 class="heading_one">{{ page.title }}</h1>
               </div>
             </div>
           </header>
 
           <div class="row">
-            <div class="column large-offset-1 large-10">
-              <p>{{ page.description }}</p>
+            <div class="column large-offset-1 large-10 medium-10 medium-offset-1">
+              <p>{{ page.excerpt }}</p>
             </div>
           </div>
 
+          {% if page.slider %}
           <div class="row">
             <div class="column large-12">
-              {% include sections/portfolio_slider.html %}
+              {% include sections/portfolio_slider.html images=page.slider %}
             </div>
           </div>
+          {% endif %}
 
           <div class="row">
-            <div class="column large-offset-1 large-10">
+            <div class="column large-offset-1 large-10 medium-10 medium-offset-1">
               {{ content }}
             </div>
           </div>
 
           <div class="related_projects">
             <div class="row">
-              <div class="column large-10 large-offset-1">
+              <div class="column large-10 large-offset-1 medium-10 medium-offset-1">
                 <h5 class="heading_five">Related projects</h5>
                 <ul class="list">
-                  <li class="item first"><a href="#"><img class="thumb" src=".." alt="similar projects"/></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects"/></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects"/></a></li>
-                  <li class="item last"><a href="#"><img class="thumb" src=".." alt="similar projects"/></a></li>
+                  {% for post in site.portfolio %}
+                    {% if post.url != page.url %}
+                    <li class="item"><a href="{{post.url}}"><img class="thumb" src="{{post.thumb}}" alt="similar projects"/></a></li>
+                    {% endif %}
+                  {% endfor %}
                 </ul>
               </div>
             </div>

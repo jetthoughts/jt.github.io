@@ -1,5 +1,21 @@
 .career {
   .mid_slider_section {
+    .slider_icon {
+      width: 50%;
+      height: 50%;
+      margin-top: -25%;
+      margin-left: -25%;
+      background-size: cover;
+      &.icon-dreamteam {
+        margin-left: -23.5%;
+      }
+      &.icon-team {
+        width: 82%;
+        height: 82%;
+        margin-left: -41%;
+        margin-top: -39%;
+      }
+    }
     .heading_one {
       font-size: 1.65em;
     }
@@ -16,10 +32,11 @@
 .job_application {
   padding: 60px 0 46px;
   .heading_two {
-    @include lato(2.25em);
+    font-size: 20px !important;
     font-weight: 900;
     text-align: center;
     color: $dark_blue;
+    margin-top: 22px;
   }
   .icon_wrap {
     padding-top: 10px;
@@ -35,43 +52,110 @@
 
 $similar_project_thumb_size: 190px;
 $job_section_inner_padding_left: 38px;
+
+$job_icon_size: 94px;
+$job_icon_side_paddings: 40px;
 .job_section {
   color: $text_brown;
   margin-bottom: 37px;
-  .header {
+  background: #fff;
+  border-radius: $mid_radius;
+  .job_icon {
+    position: absolute;
+    width: $job_icon_size + $job_icon_side_paddings + 20;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0;
     @extend .bg_gray;
+    border-radius: $mid_radius 0 0;
+    .icon_circle {
+      display: block;
+      line-height: $job_icon_size;
+      width: $job_icon_size;
+      height: $job_icon_size;
+      margin-left: -($job_icon_size/2);
+      > [class^="icon"] {
+        font-size: 0;
+        width: 70%;
+        height: 70%;
+        margin-top: -35%;
+        margin-left: -35%;
+        background-size: cover;
+      }
+      > .icon-manager {
+        width: 71%*0.7;
+        height: 100%*0.7;
+        margin-left: -((71%*0.7)/2);
+        margin-top: -((100%*0.7)/2);
+      }
+    }
+  }
+  .header {
+    position: relative;
+    min-height: 115px;
+    padding: 0 !important;
     border-bottom: 1px solid $light_gray;
     &:after {
       display: none;
     }
     .heading_one {
-      @include lato(1.15em);
-      font-weight: 400;
+      font-size: 23px;
+      font-weight: bold;
       color: $modern_green;
-      margin-top: 25px;
+      margin-top: 0;
+      margin-bottom: 3px;
     }
     .description {
-      @include lato(0.8em);
+      font-size: 14px;
       color: $text_brown;
       padding-right: 20px;
+      margin-bottom: 10px;
     }
   }
   .detailed {
     @include clearfix;
     padding-top: 30px;
+    padding-bottom: 30px;
     .col {
       float: left;
     }
     .heading_three {
-      @include lato(1em);
+      font-size: 18px !important;
+      font-weight: 700;
       line-height: 24px;
       color: $modern_green;
+      margin-top: 20px;
     }
   }
 }
 
+.icon-developer {
+  background-image: url("/images/categories/developer.png");
+  background-image: url("/images/categories/developer.svg"), none;
+}
+
+.icon-manager {
+  background-image: url("/images/categories/manager.png");
+  background-image: url("/images/categories/manager.svg"), none;
+}
+
+.icon-designer {
+  background-image: url("/images/categories/designer.png");
+  background-image: url("/images/categories/designer.svg"), none;
+}
+.icon-beneficial {
+  background-image: url("/images/categories/beneficial.png");
+  background-image: url("/images/categories/beneficial.svg"), none;
+}
+.icon-dreamteam {
+  background-image: url("/images/categories/dreamteam.png");
+  background-image: url("/images/categories/dreamteam.svg"), none;
+}
+
 .section_details {
   height: 0;
+  overflow: hidden;
   @include transition(1s all ease);
   opacity: 0;
   &.active {
@@ -96,12 +180,14 @@ $job_section_inner_padding_left: 38px;
     text-align: left;
   }
   .paragraph {
-    @include lato(0.8em);
+    font-size: 14px;
   }
 }
 
 .job_summary {
-  min-height: 71px;
+  padding-top: 22px;
+  padding-right: 20px;
+  padding-left: $job_icon_size + (2 * $job_icon_side_paddings);
 }
 
 .similar_projects {
@@ -116,35 +202,37 @@ $job_section_inner_padding_left: 38px;
     margin-top: 0;
   }
   .list {
+    font-size: 0;
     text-align: center;
     margin-bottom: 0;
     margin-left: -10px;
     margin-right: -10px;
     .item {
+      font-size: 0;
       @include inline-block(middle);
+      line-height: $similar_project_thumb_size;
       width: $similar_project_thumb_size;
       height: $similar_project_thumb_size;
       margin: 0 10px 15px;
+      overflow: hidden;
+      border-radius: $radius;
       .thumb {
-        display: block;
+        display: inline-block;
         background: $modern_green;
         border-radius: $radius;
         width: $similar_project_thumb_size;
-        height: $similar_project_thumb_size;
+        height: auto;
       }
     }
   }
 }
 
 .application_form {
-  padding: 20px 20px 0 50px;
+  padding: 20px 20px 1px 50px;
   .heading_two {
     @include verb(30px);
     font-weight: 400;
     text-align: left;
     color: $modern_green;
-  }
-  form {
-    margin-bottom: 0;
   }
 }

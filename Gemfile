@@ -12,12 +12,11 @@ ruby '2.1.0'
 #  gem 'stringex'
 #end
 
-gem 'jekyll', '>= 1.4.3'
+gem 'jekyll', '> 2.0'
 gem 'liquid'
 gem 'pygments.rb'
 gem 'fileutils'
 gem 'redcarpet'
-gem 'github-pages'
 gem 'font-awesome-sass-rails', '~> 3.0.2.2'
 gem 'compass', '>= 0.12'
 gem 'rake'

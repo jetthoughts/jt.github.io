@@ -10,9 +10,8 @@ description: "JetThoughts' Articles"
 
 <section class="blog_section">
   <div class="posts">
+
     {% for post in paginator.posts %}
-
-
 
     <article class="post_item">
       <div class="row">
@@ -22,30 +21,13 @@ description: "JetThoughts' Articles"
             <span class="day">{{ post.date | date: "%d" }}</span>
             <span class="year">{{ post.date | date: "%Y" }}</span>
           </time>
-          {% assign cat_s = post.categories | size %}
-          {% if cat_s > 1 %}
-          <div class="post_icon icon-mixed"></div>
-          {% elsif cat_s == 0 %}
-          {% else %}
-          <div class="post_icon icon-{{ post.categories }}"></div>
-          {% endif %}
+          {% include post_icon.html %}
         </div>
         <div class="columns large-11 medium-10">
           <header class="header">
             <h1 class="heading_one"><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
-            <div class="post_meta">
-              {% if post.authors_git %}
-              posted by <a href="/team.html" class="author link_underline">{{ site.data.team.[post.authors_git].full_name }}</a>
-              {% else %}
-              <a href="/team.html" class="author link_underline">Anonymous</a> posted it
-              {% endif %}
-              <!--TODO: Need to add category link-->
-              in
-              {% for cat in post.categories %}
-              <a href="#cat_link" class="category link_underline">{{ cat }}</a>&nbsp;
-              {% endfor %}
-            </div>
+            {% include post_meta.html %}
           </header>
 
 
@@ -62,7 +44,7 @@ description: "JetThoughts' Articles"
               <a href="{{ post.url }}" class="continue_link link_underline">Continue reading</a>
               <div class="clear"></div>
               <div class="share left">
-                <a class="share_link" href="{{ post.url }}#disqus_thread"><span class="comments_num"></span></a>&nbsp;<i class="icons-comment share_link"></i>
+                <a class="share_link" href="{{ site.url }}{{ post.url }}#disqus_thread"><span class="comments_num"></span></a>&nbsp;<i class="icons-comment share_link"></i>
                 &nbsp;|&nbsp;
                 <a class="icons-linkedin share_link" href="https://www.linkedin.com/cws/share?url={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}" onclick="window.open('https://www.linkedin.com/cws/share?url={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}','linkedin-share-dialog','width=626,height=436');return false;">in</a>
                 <a class="icons-twitter_small share_link" href="https://twitter.com/share?url={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}&via=jetthoughts" target="_blank" onclick="window.open('https://twitter.com/share?url={{ site.url | cgi_escape }}{{ post.url | cgi_escape }}&via=jetthoughts','twitter-share-dialog','width=626,height=436');return false;">tw</a>

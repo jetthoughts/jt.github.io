@@ -1,0 +1,86 @@
+---
+layout: default
+---
+<div class="inner portfolio">
+
+  <div class="row">
+    <div class="column large-12">
+      <a class="button button_dark back_button" href="/career.html">Back to Career</a>
+    </div>
+  </div>
+
+
+  <article class="article">
+    <div class="row">
+      <div class="large-12 column">
+
+        <div class="job_application">
+          <div class="job_section">
+            <a href="#pos1" class="link">
+              <header class="header section_heading">
+                <div class="job_icon">
+                  <div class="icon_wrap">
+                    <div class="icon_circle mid green"><i class="icon-{{page.category}}">{{page.category}}</i>
+                    </div>
+                  </div>
+                </div>
+                <div class="job_summary">
+                  <h1 class="heading_one ">{{page.title}}</h1>
+
+                  <p class="description">{{page.excerpt}}</p>
+                </div>
+              </header>
+            </a>
+
+            <div class="section_details content active" id="pos1">
+              <div class="detailed">
+                <div class="large-9 medium-8 small-12 col">
+
+                  <div class="detailed_inner">
+                    <h2 class="heading_two">Position Description</h2>
+
+                    {{ page.content | markdownify}}
+                  </div>
+
+                </div>
+                <div class="large-3 medium-4 medium-offset-0 large-offset-0 small-10 small-offset-1 col">
+                  <h3 class="heading_three">Position Details</h3>
+                  <table class="table">
+                    <tbody>
+
+                    {% for tr in page.details %}
+                    <tr class="tr">
+                      <th class="th">{{tr[0]}}</th>
+                      <td class="td">{{tr[1]}}</td>
+                    </tr>
+                    {% endfor %}
+
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+              <div class="similar_projects hide-for-small">
+                <h5 class="heading_five">Projects similar to what you’ll be working on:</h5>
+                <ul class="list">
+                  {% for portfolio in site.portfolio limit:4 %}
+                  <li class="item">
+                    <a href="{{portfolio.url}}"><img class="thumb" src="{{portfolio.thumb}}" alt="similar projects" /></a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
+
+              <div class="application_form">
+                {% include form.html id=page.url position=page.title %}
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+</div>

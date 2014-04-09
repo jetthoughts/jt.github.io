@@ -42,3 +42,185 @@
 #swipe_feature_slider {
   @include animation('swipe-sides 2s infinite');
 }
+
+%hide_in_line {
+  animation: fadeLine linear 0.25s;
+  animation-iteration-count: 1;
+  -webkit-animation: fadeLine linear 0.25s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation: fadeLine linear 0.25s;
+  -moz-animation-iteration-count: 1;
+  -o-animation: fadeLine linear 0.25s;
+  -o-animation-iteration-count: 1;
+  -ms-animation: fadeLine linear 0.25s;
+  -ms-animation-iteration-count: 1;
+}
+
+@keyframes fadeLine {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+@-moz-keyframes fadeLine {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -moz-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -moz-transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+@-webkit-keyframes fadeLine {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+@-o-keyframes fadeLine {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -o-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -o-transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+@-ms-keyframes fadeLine {
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -ms-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+
+%show_in_fade {
+  animation: fadeInDown ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: fadeInDown ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
+  -moz-animation: fadeInDown ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: fadeInDown ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -ms-animation: fadeInDown ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-fill-mode:forwards; /*IE 10+*/
+}
+
+@keyframes fadeInDown{
+  0% {
+    left:0px;
+    top:-25px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes fadeInDown{
+  0% {
+    left:0px;
+    top:-25px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    left:0px;
+    top:-25px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes fadeInDown {
+  0% {
+    left:0px;
+    top:-25px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes fadeInDown {
+  0% {
+    left:0px;
+    top:-25px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}

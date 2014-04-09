@@ -11,8 +11,9 @@ slug: contacts
   <div class="column large-12">
     <div class="contacts_wrap">
       <div class="map">
-        <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.8026147457485!2d-115.08837939999998!3d36.02511319999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d1d9540eda97%3A0xd9605efddb955f14!2s2360+Corporate+Cir+%23400!5e0!3m2!1sru!2sua!4v1396698951493""></iframe>
+        <a href="https://goo.gl/maps/MKsk2" target="_blank" rel="nofollow" title="Open on google map in new tab">
+          <img width="100%" height="400" src="http://maps.googleapis.com/maps/api/staticmap?center=2360+Corporate+Cir+400+Henderson,+NV+89074+USA&zoom=13&size=600x200&maptype=roadmap&markers=color:red%7Clabel:JT%7C36.025755,-115.091362&sensor=false&scale=2" />
+        </a>
       </div>
 
 
@@ -29,18 +30,19 @@ slug: contacts
         <div class="columns large-8">
           <h3 class="heading_three">Drop us a line</h3>
 
-          <form id="contact_form" class="form" method="post" target="_self" onsubmit="" action="">
+          <form class="form contact_form" method="post" target="_self" onsubmit="" action="" data-source="contact.html">
+            <input type="hidden" name="source" class="source_input" value="contact.html" />
 
             <div class="row">
               <div class="columns large-2"><label class="form_label" for="name">Name:</label></div>
-              <div class="columns large-10"><input class="form_input" type="text" name="name" id="name" /></div>
+              <div class="columns large-10"><input class="form_input name_input" type="text" name="name" id="name" /></div>
             </div>
 
             <div class="row">
               <div class="columns large-2"><label class="form_label" for="email">E-mail:</label></div>
               <div class="columns large-10">
                 <div class="validation_wrap">
-                  <input class="form_input" type="email" name="email" id="email" required="required" />
+                  <input class="form_input email_input" type="email" name="email" id="email" required="required" />
                   <span class="error validate_text">Check Email</span>
                 </div>
               </div>
@@ -49,7 +51,7 @@ slug: contacts
             <div class="row">
               <div class="columns large-12">
                 <div class="validation_wrap">
-                  <textarea class="textarea" name="message" id="message" cols="30" rows="10" required="required" placeholder="Message"></textarea>
+                  <textarea class="textarea message_input" name="message" id="message" cols="30" rows="10" required="required" placeholder="Message"></textarea>
                   <span class="error validate_text">Write something to us</span>
                 </div>
               </div>
@@ -57,7 +59,7 @@ slug: contacts
 
             <div class="row">
               <div class="large-12 column">
-                <button class="button left submit_btn" type="submit">Send</button>
+                <button class="button left submit_btn" type="button">Send</button>
               </div>
             </div>
 
