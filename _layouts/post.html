@@ -11,29 +11,13 @@ layout: default
           <span class="day">{{ page.date | date: "%d" }}</span>
           <span class="year">{{ page.date | date: "%Y" }}</span>
         </time>
-        {% assign cat_s = page.categories | size %}
-        {% if cat_s > 1 %}
-        <div class="post_icon icon-mixed"></div>
-        {% elsif cat_s == 0 %}
-        {% else %}
-        <div class="post_icon icon-{{ page.categories }}"></div>
-        {% endif %}
+        {% include post_icon.html %}
       </div>
       <div class="columns large-11 medium-10">
         <header class="header">
           <h1 class="heading_one">{{ page.title }}</h1>
 
-          <div class="post_meta">
-            {% if page.author %}
-            posted by <a href="/team.html" class="author link_underline">{{ site.data.team.[page.authors_git].full_name }}</a>
-            {% else %}
-            <a href="/team.html" class="author link_underline">Anonymous</a> posted it
-            {% endif %}
-            <!--TODO: Need to add category link-->
-            in {% for cat in page.categories %}
-            <a href="#cat_link" class="category link_underline">{{ cat }}</a>&nbsp;
-            {% endfor %}
-          </div>
+          {% include post_meta.html %}
         </header>
 
 

@@ -1,0 +1,14 @@
+tech:
+  name: "Technology"
+mobile:
+  name: "Mobile apps"
+web:
+  name: "Web applications"
+database:
+  name: "Database"
+experimental:
+  name: "Experimental"
+tricks:
+  name: "Tricks"
+magic:
+  name: "Magic"
