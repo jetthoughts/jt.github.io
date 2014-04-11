@@ -2,9 +2,15 @@
 layout: portfolio
 title: "Some Work in portfolio"
 authors_git: mir4a
+project_url: www.jetthoughts.com
+thumb: /images/projects/project_thumb_02.jpg
+excerpt: Some interesting text
+slider:
+  /images/projects/project_01.jpg
+  /images/projects/project_02.jpg
 categories:
-- portfolio
-- web
+  portfolio
+  web
 
 ---
 

@@ -1,6 +1,6 @@
 $slider_laptop_width: 1011px;
 $slider_laptop_height: 581px;
-$slider_laptop_inner_width: 770px;
+$slider_laptop_inner_width: 768px;
 $slider_laptop_inner_height: 480px;
 $slider_laptop_caption_width: 720px;
 $slider_laptop_overlay_width: 311px;
@@ -88,9 +88,6 @@ $slider_caption_top: 330px;
   .orbit-next {
     width: 22px;
     height: 33px;
-    &:hover {
-      background-color: transparent;
-    }
     > span {
       display: none;
     }
@@ -101,11 +98,16 @@ $slider_caption_top: 330px;
     overflow: hidden;
     position: absolute;
     top: 34px;
-    left: ($slider_laptop_width - $slider_laptop_inner_width)/2;
+    left: ceil(($slider_laptop_width - $slider_laptop_inner_width)/2);
+    background: $black;
     .slider_item {
       display: block;
       width: inherit;
       height: inherit;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
     .orbit-caption {
       font-size: 23px;

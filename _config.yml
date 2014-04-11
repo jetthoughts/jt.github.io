@@ -9,7 +9,7 @@ paginate_path: "blog/page:num"
 permalink: "/blog/:month/:day/:year/:title.html"
 source: "."
 
-exclude: [vendor, Gemfile, Gemfile.lock, Rakefile, .gitignore, Procfile, config.rb, bower.json]
+exclude: [Gemfile, Gemfile.lock, Rakefile, .gitignore, Procfile, config.rb, bower.json]
 excerpt_separator: <!--cut-->
 categories:
   template: "_layouts/category_index"
@@ -23,4 +23,4 @@ asset_pipeline:
   compress: true          # Default = true
   output_path: assets     # Default = assets
   display_path: nil       # Default = nil
-  gzip: false             # Default = false
+  gzip: true             # Default = false
