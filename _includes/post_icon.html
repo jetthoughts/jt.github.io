@@ -1,0 +1,12 @@
+{% if post == null %}
+{% assign post = page %}
+{% endif %}
+
+{% assign cat_s = post.categories | size %}
+{% if cat_s == 1 %}
+<div class="post_icon icon-mixed"></div>
+{% elsif cat_s == 2 %}
+<div class="post_icon icon-{{ post.categories[1] }}"></div>
+{% else %}
+<div class="post_icon icon-{{ post.categories }}"></div>
+{% endif %}

@@ -116,21 +116,26 @@ $job_section_inner_padding_left: 38px;
     margin-top: 0;
   }
   .list {
+    font-size: 0;
     text-align: center;
     margin-bottom: 0;
     margin-left: -10px;
     margin-right: -10px;
     .item {
+      font-size: 0;
       @include inline-block(middle);
+      line-height: $similar_project_thumb_size;
       width: $similar_project_thumb_size;
       height: $similar_project_thumb_size;
       margin: 0 10px 15px;
+      overflow: hidden;
+      border-radius: $radius;
       .thumb {
-        display: block;
+        display: inline-block;
         background: $modern_green;
         border-radius: $radius;
         width: $similar_project_thumb_size;
-        height: $similar_project_thumb_size;
+        height: auto;
       }
     }
   }

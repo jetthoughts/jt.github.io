@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="inner {{ page.slug }}">
+<div class="inner portfolio">
 
   <div class="row">
     <div class="column large-12">
-      <a class="button button_dark back_button" href="portfolio.html">Back to Portfolio</a>
+      <a class="button button_dark back_button" href="/portfolio.html">Back to Portfolio</a>
     </div>
   </div>
 
@@ -24,15 +24,17 @@ layout: default
 
           <div class="row">
             <div class="column large-offset-1 large-10">
-              <p>{{ page.description }}</p>
+              <p>{{ page.excerpt }}</p>
             </div>
           </div>
 
+          {% if page.slider %}
           <div class="row">
             <div class="column large-12">
-              {% include sections/portfolio_slider.html %}
+              {% include sections/portfolio_slider.html images=page.slider %}
             </div>
           </div>
+          {% endif %}
 
           <div class="row">
             <div class="column large-offset-1 large-10">
@@ -45,10 +47,11 @@ layout: default
               <div class="column large-10 large-offset-1">
                 <h5 class="heading_five">Related projects</h5>
                 <ul class="list">
-                  <li class="item first"><a href="#"><img class="thumb" src=".." alt="similar projects"/></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects"/></a></li>
-                  <li class="item"><a href="#"><img class="thumb" src=".." alt="similar projects"/></a></li>
-                  <li class="item last"><a href="#"><img class="thumb" src=".." alt="similar projects"/></a></li>
+                  {% for post in site.categories['portfolio'] %}
+                    {% if post.categories[1] == page.categories[1] and post.url != page.url %}
+                    <li class="item"><a href="{{post.url}}"><img class="thumb" src="{{post.thumb}}" alt="similar projects"/></a></li>
+                    {% endif %}
+                  {% endfor %}
                 </ul>
               </div>
             </div>

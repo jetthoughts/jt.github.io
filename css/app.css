@@ -6482,12 +6482,12 @@ table tfoot tr td {
   font-family: sans-serif;
 }
 
-/* line 5, ../_sass/custom/_typography.scss */
+/* line 6, ../_sass/custom/_typography.scss */
 .wf-active {
   font-family: 'Lato', sans-serif;
 }
 
-/* line 9, ../_sass/custom/_typography.scss */
+/* line 10, ../_sass/custom/_typography.scss */
 body {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.111em;
@@ -6496,35 +6496,41 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 18, ../_sass/custom/_typography.scss */
+/* line 19, ../_sass/custom/_typography.scss */
 .basic_text {
   font-family: Lato;
   font-size: 16px;
   font-weight: normal;
 }
 
-/* line 26, ../_sass/custom/_typography.scss */
+/* line 27, ../_sass/custom/_typography.scss */
 .white {
   color: white;
 }
 
-/* line 30, ../_sass/custom/_typography.scss */
+/* line 31, ../_sass/custom/_typography.scss */
 p {
   font-weight: 400;
   line-height: 150%;
 }
 
-/* line 35, ../_sass/custom/_typography.scss */
+/* line 36, ../_sass/custom/_typography.scss */
 b {
   font-weight: 600;
 }
 
-/* line 39, ../_sass/custom/_typography.scss */
+/* line 40, ../_sass/custom/_typography.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 45, ../_sass/custom/_typography.scss */
+/* line 46, ../_sass/custom/_typography.scss */
+.blog_section > .header > .heading_one {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/* line 55, ../_sass/custom/_typography.scss */
 .inner .article .heading_one {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 2.25em;
@@ -6532,7 +6538,7 @@ strong {
   line-height: 140%;
   color: #2c3d4f;
 }
-/* line 51, ../_sass/custom/_typography.scss */
+/* line 61, ../_sass/custom/_typography.scss */
 .inner .article .message {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.15em;
@@ -6541,20 +6547,20 @@ strong {
   color: #2c3d4f;
 }
 
-/* line 60, ../_sass/custom/_typography.scss */
+/* line 70, ../_sass/custom/_typography.scss */
 ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 65, ../_sass/custom/_typography.scss */
+/* line 75, ../_sass/custom/_typography.scss */
 .list {
   font-size: 12px;
   padding: 0;
   list-style: none;
 }
 
-/* line 71, ../_sass/custom/_typography.scss */
+/* line 82, ../_sass/custom/_typography.scss */
 .h1, .heading_one, h1, h2,
 .heading_two, h3,
 .heading_three,
@@ -6569,53 +6575,53 @@ ul {
   margin: 14px 0 10px;
 }
 
-/* line 83, ../_sass/custom/_typography.scss */
+/* line 94, ../_sass/custom/_typography.scss */
 h2,
 .heading_two {
   font-size: 2.3em;
 }
 
-/* line 89, ../_sass/custom/_typography.scss */
+/* line 100, ../_sass/custom/_typography.scss */
 h3,
 .heading_three,
 .contacts_wrap .contacts_section .heading_one {
   font-size: 1.45em;
 }
 
-/* line 95, ../_sass/custom/_typography.scss */
+/* line 106, ../_sass/custom/_typography.scss */
 h4,
 .heading_four {
   font-size: 16px;
 }
 
-/* line 101, ../_sass/custom/_typography.scss */
+/* line 112, ../_sass/custom/_typography.scss */
 h5,
 .heading_five {
   font-size: 14px;
 }
 
-/* line 107, ../_sass/custom/_typography.scss */
+/* line 118, ../_sass/custom/_typography.scss */
 h6,
 .heading_six {
   font-size: 13px;
   font-weight: 700;
 }
 
-/* line 113, ../_sass/custom/_typography.scss */
+/* line 124, ../_sass/custom/_typography.scss */
 .table {
   border: none;
   width: 100%;
 }
-/* line 116, ../_sass/custom/_typography.scss */
+/* line 127, ../_sass/custom/_typography.scss */
 .table .tr {
   background: none;
 }
-/* line 119, ../_sass/custom/_typography.scss */
+/* line 130, ../_sass/custom/_typography.scss */
 .table .th {
   font-weight: 700;
   text-align: left;
 }
-/* line 124, ../_sass/custom/_typography.scss */
+/* line 135, ../_sass/custom/_typography.scss */
 .table .th,
 .table .td {
   font-size: 0.75em;
@@ -6625,12 +6631,12 @@ h6,
   padding-bottom: 10px;
   vertical-align: top;
 }
-/* line 132, ../_sass/custom/_typography.scss */
+/* line 143, ../_sass/custom/_typography.scss */
 .table .td {
   padding-right: 10px;
 }
 
-/* line 137, ../_sass/custom/_typography.scss */
+/* line 148, ../_sass/custom/_typography.scss */
 .notice {
   font-size: 0.75em;
   color: #666f80;
@@ -6639,23 +6645,23 @@ h6,
   border-radius: 5px;
 }
 
-/* line 145, ../_sass/custom/_typography.scss */
+/* line 156, ../_sass/custom/_typography.scss */
 code {
   font-weight: 400;
 }
 
-/* line 149, ../_sass/custom/_typography.scss */
+/* line 160, ../_sass/custom/_typography.scss */
 .highlighttable {
   display: block;
   overflow-y: hidden;
   overflow-x: auto;
   padding-bottom: 10px;
 }
-/* line 155, ../_sass/custom/_typography.scss */
+/* line 166, ../_sass/custom/_typography.scss */
 .highlighttable pre {
   white-space: pre;
 }
-/* line 158, ../_sass/custom/_typography.scss */
+/* line 169, ../_sass/custom/_typography.scss */
 .highlighttable .linenodiv {
   font-size: 11px;
   color: #ebebeb;
@@ -6684,7 +6690,7 @@ code {
 .button, .portfolio_sort .sorter {
   font-size: 21px;
   border: none;
-  padding: 12px 20px;
+  padding: 8px 20px 14px;
   min-width: 190px;
   background: #ff8448;
   border-radius: 3px;
@@ -7809,37 +7815,42 @@ code {
 }
 /* line 118, ../_sass/pages/_career.scss */
 .similar_projects .list, .related_projects .list {
+  font-size: 0;
   text-align: center;
   margin-bottom: 0;
   margin-left: -10px;
   margin-right: -10px;
 }
-/* line 123, ../_sass/pages/_career.scss */
+/* line 124, ../_sass/pages/_career.scss */
 .similar_projects .list .item, .related_projects .list .item {
+  font-size: 0;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+  line-height: 190px;
   width: 190px;
   height: 190px;
   margin: 0 10px 15px;
+  overflow: hidden;
+  border-radius: 5px;
 }
-/* line 128, ../_sass/pages/_career.scss */
+/* line 133, ../_sass/pages/_career.scss */
 .similar_projects .list .item .thumb, .related_projects .list .item .thumb {
-  display: block;
+  display: inline-block;
   background: #2ecc71;
   border-radius: 5px;
   width: 190px;
-  height: 190px;
+  height: auto;
 }
 
-/* line 139, ../_sass/pages/_career.scss */
+/* line 144, ../_sass/pages/_career.scss */
 .application_form {
   padding: 20px 20px 0 50px;
 }
-/* line 141, ../_sass/pages/_career.scss */
+/* line 146, ../_sass/pages/_career.scss */
 .application_form .heading_two {
   font-family: 'verb_extraboldregular', sans-serif;
   font-size: 30px;
@@ -7848,7 +7859,7 @@ code {
   text-align: left;
   color: #2ecc71;
 }
-/* line 147, ../_sass/pages/_career.scss */
+/* line 152, ../_sass/pages/_career.scss */
 .application_form form {
   margin-bottom: 0;
 }
@@ -7859,12 +7870,17 @@ code {
 }
 
 /* line 8, ../_sass/pages/_portfolio.scss */
+.portfolio_list {
+  padding-bottom: 20px;
+}
+
+/* line 11, ../_sass/pages/_portfolio.scss */
 .portfolio_sort {
   padding: 18px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
-/* line 12, ../_sass/pages/_portfolio.scss */
+/* line 15, ../_sass/pages/_portfolio.scss */
 .portfolio_sort .sorter {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.65em;
@@ -7881,25 +7897,33 @@ code {
   *display: inline;
 }
 
-/* line 28, ../_sass/pages/_portfolio.scss */
-.protfolio_thumb {
-  border-radius: 5px;
-  border-bottom: 3px solid #e1e1d9;
+/* line 31, ../_sass/pages/_portfolio.scss */
+.portfolio_thumb {
+  max-height: 282px;
   margin-bottom: 10px;
-  width: 100%;
-}
-
-/* line 35, ../_sass/pages/_portfolio.scss */
-.portfolio_item {
-  margin-bottom: 25px;
+  overflow: hidden;
+  border-bottom: 3px solid #e1e1d9;
+  border-radius: 8px;
 }
 /* line 37, ../_sass/pages/_portfolio.scss */
+.portfolio_thumb .portfolio_thumb_img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* line 43, ../_sass/pages/_portfolio.scss */
+.portfolio_item {
+  margin-bottom: 25px;
+  overflow: hidden;
+  opacity: 1;
+}
+/* line 53, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details {
   padding: 20px;
   border-radius: 5px;
   min-height: 282px;
 }
-/* line 41, ../_sass/pages/_portfolio.scss */
+/* line 57, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .button, .portfolio_item .details .portfolio_sort .sorter, .portfolio_sort .portfolio_item .details .sorter {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.65em;
@@ -7910,11 +7934,11 @@ code {
   padding-bottom: 10px;
   margin: 40px auto 0;
 }
-/* line 50, ../_sass/pages/_portfolio.scss */
+/* line 66, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .header {
   padding: 0;
 }
-/* line 52, ../_sass/pages/_portfolio.scss */
+/* line 68, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .header .heading_one {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.15em;
@@ -7923,19 +7947,20 @@ code {
   color: white;
   margin: 10px 0 12px;
 }
-/* line 60, ../_sass/pages/_portfolio.scss */
+/* line 76, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .project_link {
   color: white;
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.85em;
-  margin-top: 10px;
   text-decoration: underline;
+  margin-top: 16px;
+  margin-bottom: 20px;
 }
-/* line 65, ../_sass/pages/_portfolio.scss */
+/* line 82, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .project_link:hover {
   text-decoration: none;
 }
-/* line 69, ../_sass/pages/_portfolio.scss */
+/* line 86, ../_sass/pages/_portfolio.scss */
 .portfolio_item .details .summary {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.85em;
@@ -7943,45 +7968,45 @@ code {
   color: white;
 }
 
-/* line 77, ../_sass/pages/_portfolio.scss */
+/* line 94, ../_sass/pages/_portfolio.scss */
 .portfolio {
   padding-bottom: 40px;
 }
-/* line 80, ../_sass/pages/_portfolio.scss */
+/* line 97, ../_sass/pages/_portfolio.scss */
 .portfolio .header:after {
   display: none;
 }
-/* line 83, ../_sass/pages/_portfolio.scss */
+/* line 100, ../_sass/pages/_portfolio.scss */
 .portfolio .header .heading_one {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.05em;
   font-weight: 900;
   color: #94846e;
 }
-/* line 89, ../_sass/pages/_portfolio.scss */
+/* line 106, ../_sass/pages/_portfolio.scss */
 .portfolio.inner {
   padding-top: 1.5em;
 }
-/* line 92, ../_sass/pages/_portfolio.scss */
+/* line 109, ../_sass/pages/_portfolio.scss */
 .portfolio.inner .header {
   padding: 60px 0 0;
 }
-/* line 96, ../_sass/pages/_portfolio.scss */
+/* line 113, ../_sass/pages/_portfolio.scss */
 .portfolio p {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.75em;
   color: #94846e;
 }
-/* line 100, ../_sass/pages/_portfolio.scss */
+/* line 117, ../_sass/pages/_portfolio.scss */
 .portfolio .portfolio_box {
   overflow: hidden;
 }
-/* line 104, ../_sass/pages/_portfolio.scss */
+/* line 121, ../_sass/pages/_portfolio.scss */
 .portfolio .slider_section {
   background: none;
   margin: 50px 0 70px;
 }
-/* line 108, ../_sass/pages/_portfolio.scss */
+/* line 125, ../_sass/pages/_portfolio.scss */
 .portfolio .slider_section .orbit-prev,
 .portfolio .slider_section .orbit-next {
   padding: 5px;
@@ -7990,7 +8015,12 @@ code {
   height: 40px;
   border-radius: 5px;
 }
-/* line 114, ../_sass/pages/_portfolio.scss */
+/* line 131, ../_sass/pages/_portfolio.scss */
+.portfolio .slider_section .orbit-prev:hover,
+.portfolio .slider_section .orbit-next:hover {
+  background: #2ecc71;
+}
+/* line 134, ../_sass/pages/_portfolio.scss */
 .portfolio .slider_section .orbit-prev > span,
 .portfolio .slider_section .orbit-next > span {
   display: block;
@@ -8001,7 +8031,7 @@ code {
   height: 16px;
   border: 0;
 }
-/* line 136, ../_sass/pages/_portfolio.scss */
+/* line 156, ../_sass/pages/_portfolio.scss */
 .portfolio .back_button {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.85em;
@@ -8009,7 +8039,7 @@ code {
   padding: 13px 15px 12px 40px;
   position: relative;
 }
-/* line 141, ../_sass/pages/_portfolio.scss */
+/* line 161, ../_sass/pages/_portfolio.scss */
 .portfolio .back_button:after {
   content: " ";
   width: 15px;
@@ -8019,16 +8049,16 @@ code {
   top: 14px;
 }
 
-/* line 155, ../_sass/pages/_portfolio.scss */
+/* line 175, ../_sass/pages/_portfolio.scss */
 .related_projects .heading_five {
   font-size: 0.85em;
   padding: 0;
 }
-/* line 159, ../_sass/pages/_portfolio.scss */
+/* line 179, ../_sass/pages/_portfolio.scss */
 .related_projects .list {
   margin-left: -18px;
 }
-/* line 162, ../_sass/pages/_portfolio.scss */
+/* line 182, ../_sass/pages/_portfolio.scss */
 .related_projects .list .item {
   margin: 0 18px 20px;
 }
@@ -8548,9 +8578,9 @@ code {
 .slider_section .orbit-timer {
   top: auto;
   bottom: 67px;
-  right: 121px;
+  right: 122px;
   height: 1px;
-  width: 768px;
+  width: 766px;
   overflow: hidden;
 }
 /* line 21, ../_sass/parts/_sliders.scss */
@@ -8593,10 +8623,10 @@ code {
 }
 /* line 58, ../_sass/parts/_sliders.scss */
 .slider_section .orbit-bullets {
-  width: 770px;
+  width: 768px;
   margin: 0;
   position: absolute;
-  left: 120.5px;
+  left: 121.5px;
   bottom: 70px;
   top: auto;
   text-align: center;
@@ -8629,31 +8659,32 @@ code {
   height: 33px;
 }
 /* line 91, ../_sass/parts/_sliders.scss */
-.slider_section .orbit-prev:hover,
-.slider_section .orbit-next:hover {
-  background-color: transparent;
-}
-/* line 94, ../_sass/parts/_sliders.scss */
 .slider_section .orbit-prev > span,
 .slider_section .orbit-next > span {
   display: none;
 }
-/* line 98, ../_sass/parts/_sliders.scss */
+/* line 95, ../_sass/parts/_sliders.scss */
 .slider_section .slider_list {
-  width: 770px;
+  width: 768px;
   height: 480px;
   overflow: hidden;
   position: absolute;
   top: 34px;
-  left: 120.5px;
+  left: 122px;
+  background: black;
 }
-/* line 105, ../_sass/parts/_sliders.scss */
+/* line 103, ../_sass/parts/_sliders.scss */
 .slider_section .slider_list .slider_item {
   display: block;
   width: inherit;
   height: inherit;
 }
-/* line 110, ../_sass/parts/_sliders.scss */
+/* line 107, ../_sass/parts/_sliders.scss */
+.slider_section .slider_list .slider_item img {
+  width: 100%;
+  height: auto;
+}
+/* line 112, ../_sass/parts/_sliders.scss */
 .slider_section .slider_list .orbit-caption {
   font-size: 23px;
   font-weight: 300;
@@ -8663,35 +8694,35 @@ code {
   position: absolute;
   top: 330px;
   bottom: auto;
-  left: 25px;
+  left: 24px;
   z-index: 10;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   text-shadow: 0 1px 0 black;
   opacity: 0.1;
 }
-/* line 125, ../_sass/parts/_sliders.scss */
+/* line 127, ../_sass/parts/_sliders.scss */
 .slider_section .slider_list .orbit-caption .heading_three, .slider_section .slider_list .orbit-caption .contacts_wrap .contacts_section .heading_one, .contacts_wrap .contacts_section .slider_section .slider_list .orbit-caption .heading_one {
   color: white;
 }
-/* line 128, ../_sass/parts/_sliders.scss */
+/* line 130, ../_sass/parts/_sliders.scss */
 .slider_section .slider_list .orbit-caption > .caption_p {
   font-size: inherit;
   line-height: inherit;
   padding: 10px;
   margin: 0;
 }
-/* line 134, ../_sass/parts/_sliders.scss */
+/* line 136, ../_sass/parts/_sliders.scss */
 .slider_section .slider_list .orbit-caption a {
   color: #2ecc71;
   text-decoration: underline;
 }
-/* line 140, ../_sass/parts/_sliders.scss */
+/* line 142, ../_sass/parts/_sliders.scss */
 .slider_section .slide_img {
   position: relative;
   z-index: 8;
 }
-/* line 144, ../_sass/parts/_sliders.scss */
+/* line 146, ../_sass/parts/_sliders.scss */
 .slider_section .screen_overlay {
   background: url("../images/screen_glare.png") no-repeat;
   width: 311px;
@@ -8701,46 +8732,46 @@ code {
   right: 94px;
   z-index: 9;
 }
-/* line 153, ../_sass/parts/_sliders.scss */
+/* line 155, ../_sass/parts/_sliders.scss */
 .slider_section .s_footer {
   padding-top: 36px;
   padding-bottom: 26px;
   margin-top: 20px;
 }
-/* line 158, ../_sass/parts/_sliders.scss */
+/* line 160, ../_sass/parts/_sliders.scss */
 .slider_section .s_footer .message {
   font-size: 23px;
   color: white;
 }
 
-/* line 166, ../_sass/parts/_sliders.scss */
+/* line 168, ../_sass/parts/_sliders.scss */
 .mid_slider_section {
   position: relative;
   padding-top: 40px;
   padding-bottom: 40px;
   background: #2f87b9 url("../images/pat_blueprint_light.png") repeat;
 }
-/* line 171, ../_sass/parts/_sliders.scss */
+/* line 173, ../_sass/parts/_sliders.scss */
 .mid_slider_section #swipe_feature_slider {
   display: none;
   position: absolute;
   right: 20px;
   top: 20px;
 }
-/* line 177, ../_sass/parts/_sliders.scss */
+/* line 179, ../_sass/parts/_sliders.scss */
 .mid_slider_section .orbit-timer {
   display: none;
 }
-/* line 180, ../_sass/parts/_sliders.scss */
+/* line 182, ../_sass/parts/_sliders.scss */
 .mid_slider_section .orbit-container {
   text-align: center;
   background: none;
 }
-/* line 184, ../_sass/parts/_sliders.scss */
+/* line 186, ../_sass/parts/_sliders.scss */
 .mid_slider_section .orbit-bullets {
   text-align: center;
 }
-/* line 186, ../_sass/parts/_sliders.scss */
+/* line 188, ../_sass/parts/_sliders.scss */
 .mid_slider_section .orbit-bullets > li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -8756,31 +8787,31 @@ code {
   border: none;
   border-radius: 6px;
 }
-/* line 195, ../_sass/parts/_sliders.scss */
+/* line 197, ../_sass/parts/_sliders.scss */
 .mid_slider_section .orbit-bullets > li.active {
   background: white;
 }
-/* line 200, ../_sass/parts/_sliders.scss */
+/* line 202, ../_sass/parts/_sliders.scss */
 .mid_slider_section .orbit-slide-number {
   display: none;
 }
-/* line 210, ../_sass/parts/_sliders.scss */
+/* line 212, ../_sass/parts/_sliders.scss */
 .mid_slider_section .orbit-prev,
 .mid_slider_section .orbit-next {
   width: 14px;
   height: 21px;
 }
-/* line 213, ../_sass/parts/_sliders.scss */
+/* line 215, ../_sass/parts/_sliders.scss */
 .mid_slider_section .orbit-prev:hover,
 .mid_slider_section .orbit-next:hover {
   background-color: transparent;
 }
-/* line 216, ../_sass/parts/_sliders.scss */
+/* line 218, ../_sass/parts/_sliders.scss */
 .mid_slider_section .orbit-prev > span,
 .mid_slider_section .orbit-next > span {
   display: none;
 }
-/* line 220, ../_sass/parts/_sliders.scss */
+/* line 222, ../_sass/parts/_sliders.scss */
 .mid_slider_section .slide_item {
   color: white;
   text-align: center;
@@ -8788,16 +8819,16 @@ code {
   padding: 0 100px;
   overflow: hidden;
 }
-/* line 226, ../_sass/parts/_sliders.scss */
+/* line 228, ../_sass/parts/_sliders.scss */
 .mid_slider_section .slide_item .heading_one {
   color: white;
   font-weight: bold;
 }
-/* line 230, ../_sass/parts/_sliders.scss */
+/* line 232, ../_sass/parts/_sliders.scss */
 .mid_slider_section .slide_item .icon_circle {
   margin: 0 auto;
 }
-/* line 234, ../_sass/parts/_sliders.scss */
+/* line 236, ../_sass/parts/_sliders.scss */
 .mid_slider_section .slider_message {
   font-size: 22px;
 }
@@ -9190,7 +9221,7 @@ code {
   /* line 214, ../_sass/_responsive.scss */
   .orbit-caption {
     top: 330px;
-    left: 25px;
+    left: 24px;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -9433,4 +9464,222 @@ code {
   -moz-animation: swipe-sides 2s infinite;
   -o-animation: swipe-sides 2s infinite;
   animation: swipe-sides 2s infinite;
+}
+
+/* line 46, ../_sass/_animation.scss */
+.portfolio_item.hide_el {
+  animation: fadeLine linear 0.25s;
+  animation-iteration-count: 1;
+  -webkit-animation: fadeLine linear 0.25s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation: fadeLine linear 0.25s;
+  -moz-animation-iteration-count: 1;
+  -o-animation: fadeLine linear 0.25s;
+  -o-animation-iteration-count: 1;
+  -ms-animation: fadeLine linear 0.25s;
+  -ms-animation-iteration-count: 1;
+}
+
+@keyframes fadeLine {
+  /* line 60, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+
+  /* line 66, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+@-moz-keyframes fadeLine {
+  /* line 75, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -moz-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+
+  /* line 81, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -moz-transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+@-webkit-keyframes fadeLine {
+  /* line 90, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+
+  /* line 96, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+@-o-keyframes fadeLine {
+  /* line 105, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -o-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+
+  /* line 111, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -o-transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+@-ms-keyframes fadeLine {
+  /* line 120, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -ms-transform: rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  }
+
+  /* line 126, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-transform: rotate(0deg) scaleX(5) scaleY(0.07) skewX(0deg) skewY(0deg);
+  }
+}
+
+/* line 135, ../_sass/_animation.scss */
+.portfolio_item.show_el {
+  animation: fadeInDown ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
+  -webkit-animation: fadeInDown ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+  -moz-animation: fadeInDown ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
+  -o-animation: fadeInDown ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
+  -ms-animation: fadeInDown ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/
+}
+
+@keyframes fadeInDown {
+  /* line 154, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: -25px;
+    opacity: 0;
+    transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  /* line 160, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  /* line 169, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: -25px;
+    opacity: 0;
+    -moz-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  /* line 175, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -moz-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  /* line 184, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: -25px;
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  /* line 190, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-o-keyframes fadeInDown {
+  /* line 199, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: -25px;
+    opacity: 0;
+    -o-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  /* line 205, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -o-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+}
+
+@-ms-keyframes fadeInDown {
+  /* line 214, ../_sass/_animation.scss */
+  0% {
+    left: 0px;
+    top: -25px;
+    opacity: 0;
+    -ms-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
+
+  /* line 220, ../_sass/_animation.scss */
+  100% {
+    left: 0px;
+    top: 0px;
+    opacity: 1;
+    -ms-transform: rotate(0deg) scaleX(1) scaleY(1);
+  }
 }

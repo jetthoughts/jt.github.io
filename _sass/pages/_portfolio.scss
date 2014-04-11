@@ -5,6 +5,9 @@
 
 $portfolio_item_height: 282px;
 
+.portfolio_list {
+  padding-bottom: 20px;
+}
 .portfolio_sort {
   padding: 18px;
   margin-bottom: 20px;
@@ -25,15 +28,28 @@ $portfolio_item_height: 282px;
   }
 }
 
-.protfolio_thumb {
-  border-radius: $radius;
-  border-bottom: 3px solid $dark_sand;
+.portfolio_thumb {
+  max-height: $portfolio_item_height;
   margin-bottom: 10px;
-  width: 100%;
+  overflow: hidden;
+  border-bottom: 3px solid $dark_sand;
+  border-radius: $radius + 3;
+  .portfolio_thumb_img {
+    width: 100%;
+    border-radius: $radius;
+  }
 }
 
 .portfolio_item {
   margin-bottom: 35px - 10;
+  overflow: hidden;
+  opacity: 1;
+  &.hide_el {
+    @extend %hide_in_line;
+  }
+  &.show_el {
+    @extend %show_in_fade;
+  }
   .details {
     padding: 20px;
     border-radius: $radius;
@@ -60,8 +76,9 @@ $portfolio_item_height: 282px;
     .project_link {
       color: $white;
       @include lato(0.85em);
-      margin-top: 10px;
       text-decoration: underline;
+      margin-top: 16px;
+      margin-bottom: 20px;
       &:hover {
         text-decoration: none;
       }
@@ -111,6 +128,9 @@ $portfolio_item_height: 282px;
       width: 40px;
       height: 40px;
       border-radius: $radius;
+      &:hover {
+        background: $modern_green;
+      }
       >span {
         display: block;
         margin-top: -8px;

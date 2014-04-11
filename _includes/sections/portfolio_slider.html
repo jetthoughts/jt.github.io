@@ -1,12 +1,12 @@
 <section class="slider_section">
   <div class="slider_wrap">
     <ul class="slider_list" data-orbit="$data-orbit$">
+      {% assign slides = include.images %}
+      {% for slide in slides %}
       <li class="slider_item">
-        <img class="slide_img" src="images/projects/project_01.jpg" alt="project"/>
+        <img class="slide_img" src="{{slide}}" alt="project"/>
       </li>
-      <li class="slider_item">
-        <img class="slide_img" src="images/projects/project_02.jpg" alt="project"/>
-      </li>
+      {% endfor %}
     </ul>
     <div class="screen_overlay"></div>
   </div>

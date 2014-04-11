@@ -1,0 +1,20 @@
+{% if post == null %}
+{% assign post = page %}
+{% endif %}
+
+
+<div class="post_meta">
+  {% if post.authors_git %}
+  posted by <a href="/team.html" class="author link_underline">{{ site.data.team.[post.authors_git].full_name }}</a>
+  {% else %}
+  <a href="/team.html" class="author link_underline">Anonymous</a> posted it
+  {% endif %}
+  in
+  {% assign cat = post.categories[1] %}
+  <a href="/categories/{{cat}}" class="category link_underline">{{ site.data.categories.[cat].name | capitalize }}</a>&nbsp;
+  tagged as:
+  {% for tag in post.tags %}
+  <a class="category" href="/tag/{{ tag }}">{{ tag }}</a>
+
+  {% endfor %}
+</div>
