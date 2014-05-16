@@ -24,7 +24,7 @@
 }
 
 .form_label {
-  font-size: 0.95em;
+  font-size: 18px;
   color: $dirt_blue_lighter;
   line-height: 200%;
 }
@@ -34,6 +34,7 @@
   &.invalid {
     .form_input, .textarea {
       color: $white;
+      height: inherit;
       background: $red_error;
       border-color: $red_error;
       &:focus {
@@ -97,14 +98,22 @@
 }
 
 .textarea {
-  @include lato(0.8em);
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: normal;
   padding: 15px;
-  color: $gray;
+  color: $mid_gray;
   border-color: $explicit_gray;
   background: $explicit_gray;
   border-radius: $radius;
   min-height: 240px;
   resize: vertical;
   @include box-shadow(none);
+}
+
+.contact_form {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  .submit_btn {
+    margin-bottom: 0;
+  }
 }

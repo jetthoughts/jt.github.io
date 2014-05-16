@@ -3,17 +3,12 @@
     <h1 class="heading_one">Recent posts</h1>
   </header>
   <ul class="posts_list">
-
-    {% for post in site.posts limit:2 %}
+    {% for post in site.categories['blog'] limit:2 %}
     <li class="post_item">
       <a class="post_heading" href="{{ post.url }}">{{ post.title }}</a>
 
       <p>
-        {% if post.content contains '<!--more-->' %}
-        {{ post.content | split:'<!--more-->' | first }}
-        {% else %}
-        {{ post.categories }}
-        {% endif %}
+        {{ post.excerpt | strip_html | truncatewords: 10 }}
       </p>
       <span class="post_date">{{ post.date | date_to_string }}</span>
     </li>

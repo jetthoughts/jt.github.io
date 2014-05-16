@@ -1,0 +1,24 @@
+tech:
+  name: 'Technology'
+  slug: tech
+mobile:
+  name: 'Mobile apps'
+  slug: mobile
+web:
+  name: 'Web applications'
+  slug: web
+database:
+  name: 'Database'
+  slug: database
+experimental:
+  name: 'Experimental'
+  slug: experimental
+tricks:
+  name: 'Tricks'
+  slug: tricks
+magic:
+  name: 'Magic'
+  slug: magic
+team:
+  name: 'Team'
+  slug: team

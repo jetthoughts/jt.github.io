@@ -108,6 +108,7 @@
     color: $white;
     display: block;
     padding: 10px 20px;
+    &.active,
     &:hover {
       background: $orange;
     }

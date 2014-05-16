@@ -2,12 +2,21 @@
 $post_icon_size: 64px;
 .post_icon {
   display: block;
+  position: relative;
   float: right;
   width: $post_icon_size;
   height: $post_icon_size;
   background-size: cover;
   background-color: $dirt_blue_lighter;
   border-radius: $radius;
+  .cat_icon_link {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 }
 .blog_section {
   padding: 52px 0;
