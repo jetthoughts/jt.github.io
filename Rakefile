@@ -96,3 +96,18 @@ task :publish => [:generate] do
     Dir.chdir pwd
   end
 end
+
+namespace :assets do
+  desc "Precompile assets"
+  task :precompile do
+    sh "bundle exec jekyll build"
+  end
+  desc "Clean assets"
+  task :clean do
+  end
+end
+
+desc "Remove compiled files"
+task :clean do
+  sh "rm -rf #{File.dirname(__FILE__)}/_site/*"
+end
