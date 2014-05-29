@@ -23,23 +23,26 @@ menu_position: 1
     <section class="portfolio_item" data-portfolio="{{post.category}}">
       <div class="row">
         <div class="columns large-6 medium-6">
-          <div class="portfolio_thumb">
+          <div class="portfolio_thumb" style="background-image: url({{post.thumb_wide}}); background-size: cover; background-position: 50%;" id="portfolio_{{ forloop.index }}" >
             <img class="portfolio_thumb_img" src="{{post.thumb_wide}}" alt="project thumb"/>
           </div>
         </div>
         <div class="columns large-6 medium-6">
-          <div class="details dark_bg">
+          <div class="details dark_bg" data-portfolio-id="#portfolio_{{ forloop.index }}">
             <header class="header clearfix">
-              <h1 class="heading_one left">{{post.title}}</h1>
+              <h1 class="heading_one">
+                {{post.title}}
+              </h1>
               {% if post.project_url %}
-                <a class="project_link right" href="http://{{post.project_url}}">{{post.project_url}}</a>
+                <a class="project_link right" target="_blank" rel="nofollow" href="http://{{post.project_url}}">{{post.project_url}}</a>
               {% endif %}
             </header>
             <p class="summary">
               {{post.excerpt}}
             </p>
-
-            <a class="button button_large" href="{{post.url}}">View details</a>
+            <div class="details_btn_wrap">
+              <a class="button button_large" href="{{post.url}}">View details</a>
+            </div>
           </div>
         </div>
       </div>
@@ -49,3 +52,7 @@ menu_position: 1
   </div>
 
 </div>
+
+<script>
+  window.portfolioPage = true;
+</script>

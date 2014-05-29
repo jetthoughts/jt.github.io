@@ -47,9 +47,6 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
     &:before {
       display: none;
     }
-    .position {
-      position: relative;
-    }
     .ava_wrap {
       min-height: initial;
       margin-right: 0;
@@ -259,6 +256,16 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
 }
 
 @media #{$below_medium} {
+  .portfolio_thumb {
+    height: 280px;
+  }
+  .portfolio_item {
+    .details {
+      .button {
+        min-width: 220px;
+      }
+    }
+  }
   .team_member {
     .ava_wrap {
       min-height: 300px;
