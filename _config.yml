@@ -9,6 +9,7 @@ paginate_path: "blog/page:num"
 permalink: "/:categories/:year/:month/:day/:title.html"
 safe: true
 
+
 exclude: [Gemfile, Gemfile.lock, Rakefile, .gitignore, Procfile, config.rb, bower.json, vendor, MIT-LICENSE.txt]
 excerpt_separator: <!--cut-->
 

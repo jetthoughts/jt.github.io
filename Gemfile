@@ -12,6 +12,7 @@ group :assets do
   gem 'coffee-script'
   gem 'jekyll-asset-pipeline'
   gem 'oily_png'
+  gem 'jekyll-sitemap'
 end
 
 group :utils do
