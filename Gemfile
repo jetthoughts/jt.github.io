@@ -7,7 +7,6 @@ group :assets do
   gem 'pygments.rb'
   gem 'fileutils'
   gem 'redcarpet'
-  gem 'font-awesome-sass-rails', '~> 3.0.2.2'
   gem 'compass', '>= 0.12'
   gem 'rake'
   gem 'coffee-script'
