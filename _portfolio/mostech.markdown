@@ -1,6 +1,6 @@
 ---
 layout: portfolio
-title: "Informational communication platform of Moscow Technological Entrepreneurship Academic Department"
+title: "Communicational platform for MIPT"
 authors_git: tehhi42
 project_url: mos-hi-tech.ru
 thumb: "/images/portfolio/ges/thumb.jpg"

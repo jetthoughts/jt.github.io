@@ -1,4 +1,4 @@
-(function portfolioSorter() {
+function portfolioSorter() {
     var sorter = $('[data-sort-type]');
 
     sorter.on('click', function(e){
@@ -44,4 +44,8 @@
 //            items.removeClass('show_el').addClass('hide_el').hide(250).filter('[data-portfolio='+type+']').removeClass('hide_el').addClass('show_el').show(1000);
         }
     })
-})();
+}
+
+if(window.portfolioPage) {
+    portfolioSorter();
+}

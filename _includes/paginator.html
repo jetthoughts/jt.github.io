@@ -10,7 +10,7 @@
     <a class="page_link" href="{{ '/blog/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
   <li class="page_item">
-    <a class="page_link" href="/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    <a class="page_link" href="/{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/">{{ page }}</a>
     {% endif %}
   </li>
   {% endfor %}

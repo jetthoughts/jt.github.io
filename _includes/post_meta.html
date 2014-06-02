@@ -9,8 +9,10 @@
   {% else %}
   <a href="/team.html" class="author">Anonymous</a> posted it
   {% endif %}
-  in
   {% assign cat = post.categories[1] %}
+  {% if cat %}
+  in
   <a href="/categories/{{cat}}.html" class="category link_underline">{{ site.data.categories.[cat].name | capitalize }}</a>
+  {% endif %}
 
 </div>

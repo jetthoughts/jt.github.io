@@ -34,7 +34,6 @@
   &.invalid {
     .form_input, .textarea {
       color: $white;
-      height: inherit;
       background: $red_error;
       border-color: $red_error;
       &:focus {
