@@ -4,3 +4,4 @@ _site
 .sass-cache
 .public
 .bundle
+.ruby-gemset
