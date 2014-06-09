@@ -47,17 +47,17 @@ After that, service sent an activation email to the domain admin email address a
 
 I thought that my troubles were over. In accordance with nginx manual I have created a config for the application.
 
-```
+{% highlight bash linenos=table %}
 ssl    on;
 ssl_certificate    /etc/ssl/private/domain_com.crt; (or .pem)
 ssl_certificate_key    /etc/ssl/private/domain.com.key;
-```
+{% endhighlight %}
 
 All is well. The app has loaded. Oh, snap! I loaded a page and got a mistake about the unknown certificate. After an hour of doing rain dance, I have found an article http://terra-firma-design.com/blog/20-Installing-an-EV-SSL-Certificate-on-Nginx, where the method of transferance of several certificates in one for nginx was described. That is not necessary for apache. A catalogue of certificate can be set up for apache.
 
-```
+{% highlight bash linenos=table %}
 # cat  AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt domain_com.crt &gt;&gt; domain_com_new.crt
-```
+{% endhighlight %}
 
 And I have corrected nginx config. After that I rebooted server and got an error.
 <pre>Restarting nginx: [emerg]: invalid number of arguments in "ssl_certificate" directive in /opt/nginx/conf/production.conf:54</pre>
@@ -111,28 +111,28 @@ Modulus (2048 bit):
 
 I have found out that they are different. And that a provider signed the key with 2048 bit code. And I have 1024 by default. I decided to recompose the key, but setup 2048 bit.
 
-```
+{% highlight bash linenos=table %}
 # openssl genrsa -out domain_com.key 2048
 # openssl req -new -key domain_com.key -out domain_com.csr
-```
+{% endhighlight %}
 
 For half an hour I made an arrangement with a provider about replacing csr file and about issuing a new certificate. Checked the clean certificate and my key. Failed. Then I have united all certificates in one using the following method:
 
-```
+{% highlight bash linenos=table %}
 # cat  AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt domain_com.crt &gt;&gt; domain_com_new.crt
-```
+{% endhighlight %}
 
 When web server is loading, I get the same error as the last time. Then I decided to check the information of this certificate:
 
-```
+{% highlight bash linenos=table %}
 # openssl x509 -noout -text -in ssl-bundle.crt -modulus
-```
+{% endhighlight %}
 
 It has issued only the first certificate from the list. Then I decided to slightly change the method of certificates merge, move my domain certificate higher and check the information:
 
-```
+{% highlight bash linenos=table %}
 # cat domain_com.crt AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt &gt; domain_com_2.crt
 # openssl x509 -noout -text -in ssl-bundle.crt -modulus
-```
+{% endhighlight %}
 
 As anticipated, it issued information only about the necessary certificate. Reloaded web server and - wuala - it has loaded. Opened webpage - a certificate is displayed normally. No errors.
