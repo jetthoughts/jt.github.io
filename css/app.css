@@ -9099,6 +9099,21 @@ html {
 }
 
 /* line 59, ../_sass/parts/_footer.scss */
+.some_text_section .menu_link {
+  color: white;
+  text-decoration: none;
+}
+/* line 62, ../_sass/parts/_footer.scss */
+.some_text_section .menu_link:hover {
+  color: #f8f8f8;
+  border-bottom: 1px solid;
+}
+/* line 66, ../_sass/parts/_footer.scss */
+.some_text_section .menu_link.active {
+  color: rgba(248, 248, 248, 0.75);
+}
+
+/* line 73, ../_sass/parts/_footer.scss */
 .recent_posts_section .post_heading {
   font-size: 16px;
   font-weight: 400;
@@ -9106,52 +9121,52 @@ html {
   color: white;
   display: block;
 }
-/* line 65, ../_sass/parts/_footer.scss */
+/* line 79, ../_sass/parts/_footer.scss */
 .recent_posts_section .post_heading:hover {
   color: #ff8448;
 }
-/* line 69, ../_sass/parts/_footer.scss */
+/* line 83, ../_sass/parts/_footer.scss */
 .recent_posts_section p {
   font-size: 13px;
   margin-bottom: 0;
 }
-/* line 73, ../_sass/parts/_footer.scss */
+/* line 87, ../_sass/parts/_footer.scss */
 .recent_posts_section .post_date {
   font-size: 12px;
   color: #c4c4c4;
   display: block;
 }
-/* line 78, ../_sass/parts/_footer.scss */
+/* line 92, ../_sass/parts/_footer.scss */
 .recent_posts_section .posts_list {
   list-style: none;
 }
-/* line 81, ../_sass/parts/_footer.scss */
+/* line 95, ../_sass/parts/_footer.scss */
 .recent_posts_section .post_item {
   margin-bottom: 10px;
 }
 
-/* line 87, ../_sass/parts/_footer.scss */
+/* line 101, ../_sass/parts/_footer.scss */
 .some_text_section .message {
   font-size: 13px;
 }
-/* line 90, ../_sass/parts/_footer.scss */
+/* line 104, ../_sass/parts/_footer.scss */
 .some_text_section .list {
   font-size: 14px;
 }
 
-/* line 97, ../_sass/parts/_footer.scss */
+/* line 111, ../_sass/parts/_footer.scss */
 .contacts_section .address_item {
   position: relative;
   margin-bottom: 20px;
 }
-/* line 101, ../_sass/parts/_footer.scss */
+/* line 115, ../_sass/parts/_footer.scss */
 .contacts_section .address_wrap {
   font-family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 0.75em;
   line-height: 20px;
   padding-left: 60px;
 }
-/* line 106, ../_sass/parts/_footer.scss */
+/* line 120, ../_sass/parts/_footer.scss */
 .contacts_section .icon_wrap {
   text-align: center;
   position: absolute;
@@ -9159,7 +9174,7 @@ html {
   top: 0;
   width: 60px;
 }
-/* line 112, ../_sass/parts/_footer.scss */
+/* line 126, ../_sass/parts/_footer.scss */
 .contacts_section .icon_wrap > [class^="icons"] {
   display: -moz-inline-stack;
   display: inline-block;
@@ -9168,25 +9183,25 @@ html {
   zoom: 1;
   *display: inline;
 }
-/* line 117, ../_sass/parts/_footer.scss */
+/* line 131, ../_sass/parts/_footer.scss */
 .contacts_section .link {
   color: white;
 }
-/* line 120, ../_sass/parts/_footer.scss */
+/* line 134, ../_sass/parts/_footer.scss */
 .contacts_section .tel_link {
   color: white;
 }
 
-/* line 126, ../_sass/parts/_footer.scss */
+/* line 140, ../_sass/parts/_footer.scss */
 .social_wrap .hr {
   position: relative;
 }
-/* line 129, ../_sass/parts/_footer.scss */
+/* line 143, ../_sass/parts/_footer.scss */
 .social_wrap .social_label {
   font-size: 21px;
   margin-right: 10px;
 }
-/* line 133, ../_sass/parts/_footer.scss */
+/* line 147, ../_sass/parts/_footer.scss */
 .social_wrap .social_icon {
   display: -moz-inline-stack;
   display: inline-block;
@@ -9199,7 +9214,7 @@ html {
   height: 18px;
   background-color: #102f44;
 }
-/* line 139, ../_sass/parts/_footer.scss */
+/* line 153, ../_sass/parts/_footer.scss */
 .social_wrap .social_icon:hover {
   background-color: #efefe7;
 }
