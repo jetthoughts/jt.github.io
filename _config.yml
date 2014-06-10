@@ -10,7 +10,7 @@ permalink: "/:categories/:year/:month/:day/:title.html"
 safe: true
 
 
-exclude: [Gemfile, Gemfile.lock, Rakefile, .gitignore, Procfile, config.rb, bower.json, vendor, MIT-LICENSE.txt]
+exclude: [Gemfile, Gemfile.lock, Rakefile, .gitignore, Procfile, config.rb, bower.json, vendor, MIT-LICENSE.txt, jetthoughtblog-links-map.csv]
 excerpt_separator: <!--cut-->
 
 collections:
