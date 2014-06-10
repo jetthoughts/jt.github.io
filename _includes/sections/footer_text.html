@@ -1,14 +1,12 @@
 <section class="some_text_section">
   <header class="s_header">
-    <h1 class="heading_one">Categories</h1>
+    <h1 class="heading_one">Sitemap</h1>
   </header>
   {% assign categories = site.data.categories %}
   <ul class="list">
-    {% for cat in categories %}
-    <li class="list_item">
-      <a class="foo_link" href="/categories/{{cat[1].slug}}.html">{{cat[1].name}}</a>
-    </li>
-    {% endfor %}
+  {% assign pages_list = site.pages %}
+  {% assign group = 'navigation' %}
+  {% include pages_list %}
   </ul>
 
 </section>

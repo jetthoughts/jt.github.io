@@ -55,6 +55,20 @@ $footer-height: 438px;
   }
 }
 
+.some_text_section {
+  .menu_link {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      color: $white_gray;
+      border-bottom: 1px solid;
+    }
+    &.active {
+      color: transparentize($white_gray,0.25);
+    }
+  }
+}
+
 .recent_posts_section {
   .post_heading {
     font-size: 16px;
