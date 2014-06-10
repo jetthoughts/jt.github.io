@@ -1,0 +1,79 @@
+@mixin verb($fs:14px) {
+  font-family: 'verb_extraboldregular', sans-serif;
+  font-size: $fs;
+  font-weight: 900;
+}
+
+@mixin proxima($fs:14px) {
+  font: {
+    family: "Proxima Nova", "ProximaNova", "Montserrat", sans-serif;
+    size: $fs;
+  }
+}
+
+@mixin myriad($fs:14px) {
+  font: {
+    family: "Myriad Pro", "MyriadPro", "PT Sans", sans-serif;
+    size: $fs;
+  }
+}
+
+
+@mixin lato($fs:14px) {
+  font: {
+    family: Lato, 'Helvetica Neue', Helvetica, arial, sans-serif;
+    size: $fs;
+  }
+}
+
+.blueprint_pat {
+  background: $blue url("/images/pat_blueprint.png") repeat;
+}
+
+.blueprint_pat_light {
+  background: $blue url("/images/pat_blueprint_light.png") repeat;
+}
+
+.isometric_bg {
+  background: url("/images/pat_isometric.png") repeat -180px 0;
+}
+
+
+.dark_bg {
+  background: transparentize($black, 0.7);
+}
+
+.smooth_shadow {
+  @include box-shadow(0 2px 6px transparentize($black, 0.86));
+}
+
+.box {
+  background: $white;
+  border-radius: $mid_radius;
+  @extend .smooth_shadow;
+}
+
+.inner {
+  @extend .isometric_bg;
+}
+
+.bg_gray {
+  background: $light_gray;
+}
+
+.bg_white {
+  background: $white;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

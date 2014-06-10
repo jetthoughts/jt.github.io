@@ -38,22 +38,10 @@
   <meta name="google-site-verification" content="BE5YTiUkPfkf0Itp9yhMpCekgBkXZoC1ierHGaCdQpQ" />
 
   <link href="/css/app.css" media="screen, projector, print" rel="stylesheet" type="text/css"/>
-  <link href="/css/syntax.css" media="screen, projector, print" rel="stylesheet" type="text/css"/>
   {% if page.categories == 404 %}
   <link href="/css/404.css" media="screen, projector, print" rel="stylesheet" type="text/css"/>
   {% endif %}
 
-
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-
-  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script type="text/javascript">
-    WebFont.load({
-      google: {
-        families: [ 'Lato:300,400,700,900,700italic:latin' ]
-      }
-    });
-  </script>
 
   <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32">
   <link rel="shortcut icon" href="/favicon.ico?v=3">
@@ -64,18 +52,18 @@
 </head>
 
 <body class="{{page.categories}}_body homepage_body">
-<div class="off-canvas-wrap">
+<div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
 
 
         <!-- Off Canvas Menu -->
         <aside class="right-off-canvas-menu">
             <!-- whatever you want goes here -->
-            <ul class="aside_menu"
+            <ul class="aside_menu">
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include pages_list %}
-            ></ul>
+            </ul>
         </aside>
         <div class="wrapper">
             {% include header.html %}
@@ -91,7 +79,7 @@
 
         </div>
         {% include footer.html %}
-        <a class="exit-off-canvas"></a>
+        <a class="exit-off-canvas"> </a>
 
     </div>
 </div>

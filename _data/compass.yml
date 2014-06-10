@@ -1,0 +1,8 @@
+output_style: compressed
+
+import_paths:
+- bower_components/foundation/scss
+
+css_dir: css
+sass_dir: _assets/stylesheets
+images_dir: images
