@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/team/2014/07/18/jetthoughts-thailand-trip.html</loc>
+    <lastmod>2014-07-18T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/team/2014/04/17/how-to-learn-ruby.html</loc>
+    <lastmod>2014-04-17T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/magic/2013/09/26/capistrano-3-passing-parameters-to-your-task.html</loc>
+    <lastmod>2013-09-26T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/mobile/2013/08/28/rubymotion-tips-universal-lookup-for-right-provisioningprofile.html</loc>
+    <lastmod>2013-08-28T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tricks/2012/11/28/multiple-likes-for-one-page.html</loc>
+    <lastmod>2012-11-28T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tricks/2012/10/30/netcat-with-ssh-port-forwarding.html</loc>
+    <lastmod>2012-10-30T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2012/07/10/simple-dynamic-template.html</loc>
+    <lastmod>2012-07-10T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2011/09/24/change-factory-girl-directory-path-for-rails-3-generator.html</loc>
+    <lastmod>2011-09-24T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tricks/2011/04/04/add-current-date-to-text-document.html</loc>
+    <lastmod>2011-04-04T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/magic/2010/12/22/allow-multiple-access-control-requests-for-rails.html</loc>
+    <lastmod>2010-12-22T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/database/2010/11/30/import-huge-data-for-rails.html</loc>
+    <lastmod>2010-11-30T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/09/28/redis-store-to-store-session.html</loc>
+    <lastmod>2010-09-28T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/09/26/installing-pg-gem-on-mac-os.html</loc>
+    <lastmod>2010-09-26T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/09/21/show-not-valid-csv-lines-with-sed.html</loc>
+    <lastmod>2010-09-21T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/09/16/different-timestamp-for-rails-and-postgres.html</loc>
+    <lastmod>2010-09-16T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tricks/2010/09/04/remove-first-lines-from-stream.html</loc>
+    <lastmod>2010-09-04T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/09/04/enable-line-numbers-in-toto-syntaxhighlight.html</loc>
+    <lastmod>2010-09-04T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/07/11/geoipcity-on-mac-os.html</loc>
+    <lastmod>2010-07-11T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/magic/2010/07/01/install-nokogiri-on-mac-os.html</loc>
+    <lastmod>2010-07-01T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/magic/2010/07/01/god-redefine-1day.html</loc>
+    <lastmod>2010-07-01T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/05/17/change-size-of-images-shell-script.html</loc>
+    <lastmod>2010-05-17T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/04/13/jruby-and-spork.html</loc>
+    <lastmod>2010-04-13T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/03/01/remote-rails-console.html</loc>
+    <lastmod>2010-03-01T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tricks/2010/02/19/rails-assets-host-with-ssl.html</loc>
+    <lastmod>2010-02-19T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/02/19/mutable-branch-for-capistrano-deploy-script.html</loc>
+    <lastmod>2010-02-19T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/02/14/convert-bplist-to-xml.html</loc>
+    <lastmod>2010-02-14T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/magic/2010/02/13/free-cache-ram-for-linux-os.html</loc>
+    <lastmod>2010-02-13T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/experimental/2010/01/30/publish-first-gem-for-rails-calculations-by-time-range.html</loc>
+    <lastmod>2010-01-30T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2010/01/03/show-time-string-in-different-locale-in-rails.html</loc>
+    <lastmod>2010-01-03T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2009/12/26/show-log-file-from-remote-server.html</loc>
+    <lastmod>2009-12-26T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tricks/2009/12/16/postgresql-insert-not-valid-unicode-values.html</loc>
+    <lastmod>2009-12-16T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2009/12/01/add-new-conditions-to-searchlogic-sample-by-range.html</loc>
+    <lastmod>2009-12-01T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/magic/2009/11/22/sample-of-config-files-for-rails.html</loc>
+    <lastmod>2009-11-22T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2009/10/29/thin--authlogic-session--safari.html</loc>
+    <lastmod>2009-10-29T00:00:00+02:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tech/2009/10/23/openssl-with-nginx-and-untrusted-ca.html</loc>
+    <lastmod>2009-10-23T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/tricks/2009/10/03/convert-authors-names-in-mercurial.html</loc>
+    <lastmod>2009-10-03T00:00:00+03:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://www.jetthoughts.com/404.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/career.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/contact.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/credits.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/categories/database.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/categories/experimental.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/categories/magic.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/categories/mobile.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/portfolio.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/portfolio_single.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/categories/team.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/team.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/categories/tech.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/categories/tricks.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/categories/web.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/work.html</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.jetthoughts.com/blog/page2/</loc>
+    <lastmod>2014-07-18T19:56:37+03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+</urlset>

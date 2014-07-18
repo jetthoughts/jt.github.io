@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>OpenSSL with Nginx and Untrusted CA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <meta name="og:url" content="www.jetthoughts.com">
+  <meta name="og:type" content="website">
+  <meta name="og:title" content="OpenSSL with Nginx and Untrusted CA">
+  <meta name="og:locale" content="en_US">
+  <meta name="og:image" content="http://www.jetthoughts.com/images/social-logo.jpg">
+  <meta name="og:site_name" content="JetThoughts">
+  <meta name="og:updated_time" content="2014-07-18 19:56:37 +0300">
+  <!--TODO: Need to register app and insert app id into tag below, do the same with admins -->
+  <meta name="fb:app_id" content="">
+  <meta name="fb:admins" content="">
+  <meta name="fb:profile_id" content="277156138129">
+
+  <!--TODO: After production deployment need to validate and send application for twitter cards. More info at https://dev.twitter.com/docs/cards/validation/validator -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OpenSSL with Nginx and Untrusted CA">
+  <meta name="twitter:creator" content="@jetthoughts">
+  
+  
+  <meta name="twitter:description" content="">
+  
+
+  <meta name="twitter:domain" content="www.jetthoughts.com">
+  <meta name="twitter:site" content="@jetthoughts">
+  <meta name="twitter:image:src" content="http://www.jetthoughts.com/images/social-logo.jpg">
+
+  <meta name="google-site-verification" content="BE5YTiUkPfkf0Itp9yhMpCekgBkXZoC1ierHGaCdQpQ" />
+
+  <link href="/css/app.css" media="screen, projector, print" rel="stylesheet" type="text/css"/>
+  <link href="/css/syntax.css" media="screen, projector, print" rel="stylesheet" type="text/css"/>
+  
+
+
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: [ 'Lato:300,400,700,900,700italic:latin' ]
+      }
+    });
+  </script>
+
+  <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32">
+  <link rel="shortcut icon" href="/favicon.ico?v=3">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <!--RSS-->
+  <link href="http://www.jetthoughts.com/feed.xml" rel="alternate" type="application/rss+xml" title="" />
+
+</head>
+
+<body class="blogtech_body homepage_body">
+<div class="off-canvas-wrap">
+    <div class="inner-wrap">
+
+
+        <!-- Off Canvas Menu -->
+        <aside class="right-off-canvas-menu">
+            <!-- whatever you want goes here -->
+            <ul class="aside_menu"
+            
+            
+            
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/portfolio.html" class="menu_link">Portfolio</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/team.html" class="menu_link">Our Team</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/career.html" class="menu_link">Career</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/work.html" class="menu_link">How We Work</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/blog/index.html" class="menu_link">Blog</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+      
+    
+  
+
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/contact.html" class="menu_link">Contacts</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+
+
+            ></ul>
+        </aside>
+        <div class="wrapper">
+            <div class="top_menu_wrap">
+
+
+  <div class="container">
+    <nav class="top-bar row">
+      <ul class="title-area">
+        <li class="name">
+          <a href="/" class="logo"><img class="logo_img" src="/images/logo@2.png" alt="JetThoughts logo" width="286" height="52" /></a>
+        </li>
+        <li class="right-off-canvas-toggle menu_button">
+          <a class="menu_button_wrap" href="#menu">
+            <span class="fake_menu"></span>
+            <span class="fake_submenu"></span>
+          </a>
+        </li>
+      </ul>
+
+
+      <section class="top-bar-section">
+        <ul class="submenu right">
+        
+        
+        
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/portfolio.html" class="menu_link">Portfolio</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/team.html" class="menu_link">Our Team</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/career.html" class="menu_link">Career</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/work.html" class="menu_link">How We Work</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/blog/index.html" class="menu_link">Blog</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+      
+    
+  
+
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/contact.html" class="menu_link">Contacts</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+
+
+        </ul>
+      </section>
+    </nav>
+  </div>
+</div>
+
+            <div class="container">
+                <div class="site">
+
+                    <section class="blog_section">
+  <article class="post_item inside_post">
+    <div class="row">
+      <div class="columns large-1 medium-2">
+        <time class="post_date">
+          <span class="month">Oct</span>
+          <span class="day">23</span>
+          <span class="year">2009</span>
+        </time>
+        
+
+
+
+
+
+<div class="post_icon icon-tech">
+  <a class="cat_icon_link" href="/categories/tech.html"></a>
+</div>
+
+      </div>
+      <div class="columns large-11 medium-10">
+        <header class="header">
+          <h1 class="heading_one">OpenSSL with Nginx and Untrusted CA</h1>
+
+          
+
+
+<div class="post_meta">
+  
+  Posted by <a href="/team.html" class="author">Michael Nikitochkin</a>
+  
+  
+  
+  in
+  <a href="/categories/tech.html" class="category link_underline">Technology</a>
+  
+
+</div>
+        </header>
+
+
+        <div class="post_content">
+
+          <p>I was assigned a task: to set up <strong>ssl</strong> certificate for web application. We used  <strong>nginx</strong>, and found a free provider <a href="http://www.instantssl.com/">http://www.instantssl.com/</a> <em>COMODO</em>.</p>
+
+<p>My coworker Sasha Lokshin helped to find a solution and provided key creation and provider signing algorithm. And he also gave the simplest documentation <a href="http://www.rapidssl.com/resources/csr/apache_mod_ssl.htm">http://www.rapidssl.com/resources/csr/apache_mod_ssl.htm</a>. The generation process passed on quickly. I have filled fields according to the suggested template. I have neither imputed secret phrases nor filled in any <em>extra</em> attributes.</p>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1
+2
+3
+4
+5</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># openssl genrsa -out domain.com.key</span>
+Generating RSA private key, 2048 bit long modulus
+
+<span class="c"># openssl req -new -key domain.com.key -out domain.com.csr</span>
+....
+</pre></div>
+</td></tr></table>
+
+<p>I have got two files. Now it was time to register with provider. It was easy too. We need to copy the  domain.com.csr file content and post it to the field.</p>
+
+<!--cut-->
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># cat domain.com.csr</span>
+</pre></div>
+</td></tr></table>
+
+<p>After that, service sent an activation email to the domain admin email address and after the certificate activation I have received an archive with the description:</p>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1
+2
+3
+4
+5</code></pre></div></td><td class="code"><div class="highlight"><pre>* Root CA Certificate - AddTrustExternalCARoot.crt
+* Intermediate CA Certificate - UTNAddTrustSGCCA.crt
+* Intermediate CA Certificate - ComodoUTNSGCCA.crt
+* Intermediate CA Certificate - EssentialSSLCA_2.crt
+* Your Free SSL Certificate - domain_com.crt
+</pre></div>
+</td></tr></table>
+
+<p>I thought that my troubles were over. In accordance with nginx manual I have created a config for the application.</p>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1
+2
+3</code></pre></div></td><td class="code"><div class="highlight"><pre>ssl    on<span class="p">;</span>
+ssl_certificate    /etc/ssl/private/domain_com.crt<span class="p">;</span> <span class="o">(</span>or .pem<span class="o">)</span>
+ssl_certificate_key    /etc/ssl/private/domain.com.key<span class="p">;</span>
+</pre></div>
+</td></tr></table>
+
+<p>All is well. The app has loaded. Oh, snap! I loaded a page and got a mistake about the unknown certificate. After an hour of doing rain dance, I have found an article <a href="http://terra-firma-design.com/blog/20-Installing-an-EV-SSL-Certificate-on-Nginx">http://terra-firma-design.com/blog/20-Installing-an-EV-SSL-Certificate-on-Nginx</a>, where the method of transferance of several certificates in one for nginx was described. That is not necessary for apache. A catalogue of certificate can be set up for apache.</p>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># cat  AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt domain_com.crt &amp;gt;&amp;gt; domain_com_new.crt</span>
+</pre></div>
+</td></tr></table>
+
+<p>And I have corrected nginx config. After that I rebooted server and got an error.
+<pre>Restarting nginx: [emerg]: invalid number of arguments in &quot;ssl_certificate&quot; directive in /opt/nginx/conf/production.conf:54</pre></p>
+
+<p>Then I found a forum, where the similar situation was discussed. One guy suggested checking the key and the received certificate. He told that Modulus fields should correspond as well.</p>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># openssl x509 -noout -text -in domain_com.crs</span>
+</pre></div>
+</td></tr></table>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</code></pre></div></td><td class="code"><div class="highlight"><pre>RSA Public Key: <span class="o">(</span>1024 bit<span class="o">)</span>
+Modulus <span class="o">(</span>1024 bit<span class="o">)</span>:
+  00:bb:e1:e7:7a:63:b8:eb:14:e4:44:93:11:1e:25:
+  e4:52:07:5c:d1:33:5d:e2:84:88:4c:24:3a:bb:61:
+  32:35:fe:51:02:73:fb:2e:09:86:9c:54:3f:dc:e0:
+  11:d1:b7:4c:4f:a8:f9:fa:ab:e4:a7:a1:22:f5:43:
+  b3:b6:a9:f4:84:4a:89:33:63:d3:3b:e5:9f:11:65:
+  31:0a:84:0b:6e:b3:62:75:42:40:ac:17:cc:3e:9b:
+  eb:46:04:25:3a:43:be:3c:73:57:04:8b:f0:f2:45:
+  ad:4c:5c:f5:38:fb:66:bc:7f:b0:30:5e:ab:7d:73:
+  af:1d:2c:a6:0f:01:5d:25:d9
+</pre></div>
+</td></tr></table>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># openssl x509 -noout -text -in /opt/nginx/cert/domain_com.crt</span>
+</pre></div>
+</td></tr></table>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</code></pre></div></td><td class="code"><div class="highlight"><pre>RSA Public Key: <span class="o">(</span>2048 bit<span class="o">)</span>
+Modulus <span class="o">(</span>2048 bit<span class="o">)</span>:
+  00:b7:89:02:04:4e:4c:9b:cd:29:be:e9:3e:fa:74:
+  44:6b:8e:bd:58:91:68:82:cb:3c:06:c9:2a:fe:19:
+  95:b1:21:29:a0:94:94:5b:58:30:bb:bd:5b:d5:ca:
+  79:4c:c2:d0:65:1e:d8:e8:2e:91:c6:5d:c0:55:49:
+  d1:9d:a7:ec:38:d9:be:db:21:1a:59:b3:56:d7:6f:
+  94:18:ec:65:38:35:82:9d:c5:80:f5:48:07:77:fc:
+  07:4f:50:8e:df:a3:bf:07:49:2b:9a:91:be:c8:a5:
+  b4:9e:1e:aa:b1:6d:c8:aa:ea:64:a3:da:13:27:7d:
+  80:92:0e:41:de:3a:54:95:d4:75:24:2a:17:35:27:
+  e2:00:10:d2:c0:22:24:e9:32:84:49:d4:eb:ba:f0:
+  e3:de:ee:0d:90:e6:23:62:aa:51:6c:57:3f:46:00:
+  5d:3c:35:64:24:f5:ab:ea:f7:21:22:91:46:48:e5:
+  af:35:ea:03:bd:3b:fb:80:d7:38:cd:46:16:9a:34:
+  ee:f4:96:24:2c:37:dc:27:87:3f:c2:b9:f9:d0:66:
+  eb:90:c9:19:6b:87:c3:f7:f1:d0:c2:c6:68:a8:5a:
+  71:e7:b8:79:6b:d0:c6:cd:88:0c:cf:d5:c4:67:0f:
+  da:47:ad:6e:c1:72:5e:f2:30:64:2f:14:7c:4d:d5:
+  5c:5d
+</pre></div>
+</td></tr></table>
+
+<p>I have found out that they are different. And that a provider signed the key with 2048 bit code. And I have 1024 by default. I decided to recompose the key, but setup 2048 bit.</p>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1
+2</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># openssl genrsa -out domain_com.key 2048</span>
+<span class="c"># openssl req -new -key domain_com.key -out domain_com.csr</span>
+</pre></div>
+</td></tr></table>
+
+<p>For half an hour I made an arrangement with a provider about replacing csr file and about issuing a new certificate. Checked the clean certificate and my key. Failed. Then I have united all certificates in one using the following method:</p>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># cat  AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt domain_com.crt &amp;gt;&amp;gt; domain_com_new.crt</span>
+</pre></div>
+</td></tr></table>
+
+<p>When web server is loading, I get the same error as the last time. Then I decided to check the information of this certificate:</p>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># openssl x509 -noout -text -in ssl-bundle.crt -modulus</span>
+</pre></div>
+</td></tr></table>
+
+<p>It has issued only the first certificate from the list. Then I decided to slightly change the method of certificates merge, move my domain certificate higher and check the information:</p>
+
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><code class="bash">1
+2</code></pre></div></td><td class="code"><div class="highlight"><pre><span class="c"># cat domain_com.crt AddTrustExternalCARoot.crt EssentialSSLCA_2.crt ComodoUTNSGCCA.crt UTNAddTrustSGCCA.crt &amp;gt; domain_com_2.crt</span>
+<span class="c"># openssl x509 -noout -text -in ssl-bundle.crt -modulus</span>
+</pre></div>
+</td></tr></table>
+
+<p>As anticipated, it issued information only about the necessary certificate. Reloaded web server and - wuala - it has loaded. Opened webpage - a certificate is displayed normally. No errors.</p>
+
+
+          <footer class="b_footer">
+            <div class="share right">
+              <a class="icons-linkedin_large share_link" href="https://www.linkedin.com/cws/share?url=http%3A%2F%2Fwww.jetthoughts.com%2Fblog%2Ftech%2F2009%2F10%2F23%2Fopenssl-with-nginx-and-untrusted-ca.html" onclick="window.open('https://www.linkedin.com/cws/share?url=http%3A%2F%2Fwww.jetthoughts.com%2Fblog%2Ftech%2F2009%2F10%2F23%2Fopenssl-with-nginx-and-untrusted-ca.html','linkedin-share-dialog','width=626,height=436');return false;">in</a>
+              <a class="icons-twitter_large share_link" href="https://twitter.com/share?url=http%3A%2F%2Fwww.jetthoughts.com%2Fblog%2Ftech%2F2009%2F10%2F23%2Fopenssl-with-nginx-and-untrusted-ca.html&via=jetthoughts" target="_blank" onclick="window.open('https://twitter.com/share?url=http%3A%2F%2Fwww.jetthoughts.com%2Fblog%2Ftech%2F2009%2F10%2F23%2Fopenssl-with-nginx-and-untrusted-ca.html&via=jetthoughts','twitter-share-dialog','width=626,height=436');return false;">tw</a>
+              <a class="icons-facebook_large share_link" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.jetthoughts.com%2Fblog%2Ftech%2F2009%2F10%2F23%2Fopenssl-with-nginx-and-untrusted-ca.html" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.jetthoughts.com%2Fblog%2Ftech%2F2009%2F10%2F23%2Fopenssl-with-nginx-and-untrusted-ca.html','facebook-share-dialog','width=626,height=436');return false;">fb</a>
+            </div>
+          </footer>
+        </div>
+
+
+        <div class="author_wrap">
+          <div class="author">
+            <img class="ava" src="http://gravatar.com/avatar/0e556a2be10ff4f32bb9e6f9a2c00cfa.png?s=160" alt="Michael Nikitochkin" />
+
+            <div class="author_contact">
+              <span class="author_name">Michael Nikitochkin</span>
+
+              <div class="social_wrap">
+                
+                <a class="social_link birdy" href="https://twitter.com/miry_sof"><span class="icons-birdy">twi:</span>&nbsp;<span class="social_name">miry_sof</span></a>
+                
+                <a class="social_link octocat" href="https://github.com/miry"><span class="icons-octocat">git:</span>&nbsp;<span class="social_name">miry</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </article>
+
+  <div class="comments">
+    <div class="row">
+      <div class="column large-11 large-offset-1">
+
+        <div id="disqus_thread" data-disqus-identifier="/blog/tech/2009/10/23/openssl-with-nginx-and-untrusted-ca.html"></div>
+        <script type="text/javascript">
+          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+          var disqus_shortname = 'jetthoughtblog'; // required: replace example with your forum shortname
+          var a = document.getElementById('disqus_thread'),
+              disqus_identifier;
+
+          if (a !== null) {
+            disqus_identifier = a.dataset.disqusIdentifier;
+          }
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function () {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+                                                                                                 Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+                </div>
+                <!--<div class="footer_push"></div>-->
+            </div>
+            <!-- /container -->
+
+        </div>
+        <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="columns large-3 medium-6">
+        <div class="logo_wrap">
+          <span class="logo">JetThoughts</span>
+          <span class="copyright">© 2014, All rights reserved.</span>
+          <a class="legal_link" href="/credits.html">Credits.</a>
+        </div>
+      </div>
+      <div class="columns large-3 medium-6">
+        <section class="recent_posts_section">
+  <header class="s_header">
+    <h1 class="heading_one">Recent posts</h1>
+  </header>
+  <ul class="posts_list">
+    
+    <li class="post_item">
+      <a class="post_heading" href="/blog/team/2014/07/18/jetthoughts-thailand-trip.html">JetThoughts Thailand Trip</a>
+
+      <p>
+        Wouldn't it be great to wake up on a February...
+      </p>
+      <span class="post_date">18 Jul 2014</span>
+    </li>
+    
+    <li class="post_item">
+      <a class="post_heading" href="/blog/team/2014/04/17/how-to-learn-ruby.html">How to Learn Ruby</a>
+
+      <p>
+        Starting to learn a new programming language or a new...
+      </p>
+      <span class="post_date">17 Apr 2014</span>
+    </li>
+    
+
+  </ul>
+</section>
+
+      </div>
+      <div class="columns large-3 medium-6">
+        <section class="some_text_section">
+  <header class="s_header">
+    <h1 class="heading_one">Sitemap</h1>
+  </header>
+  
+  <ul class="list">
+  
+  
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/portfolio.html" class="menu_link">Portfolio</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/team.html" class="menu_link">Our Team</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/career.html" class="menu_link">Career</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/work.html" class="menu_link">How We Work</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/blog/index.html" class="menu_link">Blog</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+      
+    
+  
+
+  
+    
+  
+    
+  
+    
+      
+
+        
+
+            
+              <li class="menu_item"><a href="/contact.html" class="menu_link">Contacts</a></li>
+            
+
+        
+
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+
+
+
+  </ul>
+
+</section>
+
+      </div>
+      <div class="columns large-3 medium-6">
+        <section class="contacts_section">
+  <header class="s_header">
+    <h1 class="heading_one">Get In Touch</h1>
+  </header>
+  <div class="address">
+    <div class="address_item">
+      <div class="icon_wrap">
+        <i class="icons-location"></i>
+      </div>
+
+      <div class="address_wrap">
+        2360 Corporate Circle STE 400 <br>
+        Henderson 89074-7722 NV, USA
+      </div>
+    </div>
+    <div class="address_item">
+      <div class="icon_wrap">
+        <i class="icons-phone"></i>
+      </div>
+
+      <div class="address_wrap">
+        <a class="tel_link" href="callto:+17602644264">+1 (760) 264-4264</a> <br>
+      </div>
+    </div>
+    <div class="address_item">
+      <div class="icon_wrap">
+        <i class="icons-mail"></i>
+      </div>
+
+      <div class="address_wrap">
+        <a class="link" href="mailto:%22JetThoughts%22%20%3Cinfo@jetthoughts.com%3E?subject=Hello%20JetThoughts!">info@jetthoughts.com</a> <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="columns large-12">
+        <div class="social_wrap">
+          <hr class="hr">
+          <span class="social_label">We are social:</span>
+          <a class="social_icon icons-facebook" href="https://www.facebook.com/pages/JetThoughts/133760883361898?fref=ts">facebook</a>
+          <a class="social_icon icons-twitter" href="https://twitter.com/jetthoughts">twitter</a>
+          <a class="social_icon icons-linkedin-small" href="http://www.linkedin.com/company/jetthoughts">linkedin</a>
+          <a class="social_icon icons-github" href="https://github.com/jetthoughts/">github</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="/bower_components/jquery/jquery.js"></script>
+
+<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.js"></script>
+<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.accordion.js"></script>
+<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.orbit.js"></script>
+<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+<script type="text/javascript" src="/bower_components/fastclick/lib/fastclick.js"></script>
+<script src="/javascripts/hide_swipe.js"></script>
+<script type="text/javascript">
+  $(document).foundation({
+    deep_linking: false
+  });
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="/javascripts/contact.js"></script>
+<script src="/javascripts/portfolio_sorter.js"></script>
+<script src="/javascripts/portfolio_heights.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10749382-1', 'jetthoughts.com');
+  ga('send', 'pageview');
+
+</script>
+
+        <a class="exit-off-canvas"></a>
+
+    </div>
+</div>
+</body>
+</html>

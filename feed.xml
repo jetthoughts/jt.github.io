@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JetThoughts</title>
+    <description></description>
+    <link>http://www.jetthoughts.com</link>
+    <atom:link href="http://www.jetthoughts.com/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>JetThoughts Thailand Trip</title>
+      <description>&lt;p&gt;Wouldn&amp;#39;t it be great to wake up on a February morning to the sound of waves lapping and birds singing, have some fragrant fried rice with seafood and a cold mango shake for breakfast, go for a swim in the azure-blue sea, then open your laptop and start coding? Sure, it would be awesome! That&amp;#39;s what we thought and decided to swap our nasty Ukrainian winter for a quite tolerable tropical one. &lt;/p&gt;
+
+&lt;p&gt;This year part of our company has spent a month in Thailand, discovering a new country, working and relaxing. Check out the post for our Russian-speaking readers where JetThoughts  team is sharing the experience for everyone who wants to know about joys and challenges of living on a tropical island.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://farm4.staticflickr.com/3845/14497610008_3a7e3dabcf.jpg&quot; alt=&quot;ThailandJT1&quot;&gt;&lt;/p&gt;
+</description>
+      <pubDate>Fri, 18 Jul 2014 00:00:00 +0300</pubDate>
+      <link>http://www.jetthoughts.com/blog/team/2014/07/18/jetthoughts-thailand-trip.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/team/2014/07/18/jetthoughts-thailand-trip.html</guid>
+    </item>
+    
+    <item>
+      <title>How to Learn Ruby</title>
+      <description>&lt;p&gt;Starting to learn a new programming language or a new framework every person faces a problem - what should I start studying with? In this article I will outline the basic resources, which I consider to be the best for Ruby on Rails beginners.&lt;/p&gt;
+</description>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 +0300</pubDate>
+      <link>http://www.jetthoughts.com/blog/team/2014/04/17/how-to-learn-ruby.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/team/2014/04/17/how-to-learn-ruby.html</guid>
+    </item>
+    
+    <item>
+      <title>Capistrano 3: Passing Parameters to Your Task</title>
+      <description>&lt;p&gt;The new way of passing parameters in Capistrano v3 is to use the same solution as Rake (in some sort Capistrano 3 is  totally based on Rake).&lt;/p&gt;
+
+&lt;p&gt;A little example, let us create a task to run any specific rake task with options:&lt;/p&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:task&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;desc&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Execute the specific rake task&amp;#39;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;task&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:invoke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:command&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;roles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:app&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;execute&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:rake&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:command&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</description>
+      <pubDate>Thu, 26 Sep 2013 00:00:00 +0300</pubDate>
+      <link>http://www.jetthoughts.com/blog/magic/2013/09/26/capistrano-3-passing-parameters-to-your-task.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/magic/2013/09/26/capistrano-3-passing-parameters-to-your-task.html</guid>
+    </item>
+    
+    <item>
+      <title>RubyMotion Tips: Universal lookup for right ProvisioningProfile</title>
+      <description>&lt;p&gt;I would like to share my experience of setting up &lt;code&gt;provisioning_profile&lt;/code&gt; for general Rubymotion project.&lt;/p&gt;
+
+&lt;p&gt;I have found the following line in Rubymotion Library: &lt;a href=&quot;https://github.com/HipByte/RubyMotion/blob/cfc7bfdb3c17c5059a98152d7c472e13eb55f8ea/lib/motion/project/template/ios/config.rb#L79&quot;&gt;config.rb#L79&lt;/a&gt;&lt;/p&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;1
+2
+3&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;provisioning_profile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/iOS Team Provisioning Profile/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# ....&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;And this method allows us to search for ProvisioningProfile not just by full path as it is described in documentation.
+But you can find the ProvisioningProfile via name.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 28 Aug 2013 00:00:00 +0300</pubDate>
+      <link>http://www.jetthoughts.com/blog/mobile/2013/08/28/rubymotion-tips-universal-lookup-for-right-provisioningprofile.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/mobile/2013/08/28/rubymotion-tips-universal-lookup-for-right-provisioningprofile.html</guid>
+    </item>
+    
+    <item>
+      <title>Multiple Likes for One Page</title>
+      <description>A step-by-step tutorial for adding several Facebook Like buttons for one page or product.</description>
+      <pubDate>Wed, 28 Nov 2012 00:00:00 +0200</pubDate>
+      <link>http://www.jetthoughts.com/blog/tricks/2012/11/28/multiple-likes-for-one-page.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/tricks/2012/11/28/multiple-likes-for-one-page.html</guid>
+    </item>
+    
+    <item>
+      <title>Netcat with SSH Port Forwarding</title>
+      <description>&lt;p&gt;I have encountered a problem with getting access to the private local service which available from the local machine.
+And I need to write application using this service in another network.
+I have only one port open to access the local machine &lt;code&gt;ssh&lt;/code&gt; daemon.
+After a few minutes of problem discussion, we decided to use &lt;code&gt;NetCat&lt;/code&gt;.&lt;/p&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;1
+2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;mkfifo pipe
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; 1 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;nc -l -p 8080 &amp;lt; pipe &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; ssh gw_to_private_net -p 22977  &lt;span class=&quot;s2&quot;&gt;&amp;quot;nc 192.168.12.230 80&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; tee pipe&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;So we need run this only on local machine. Now we have the open local port &lt;code&gt;8080&lt;/code&gt; forwarded to private machine &lt;code&gt;192.168.12.230:80&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Let me describe these commands&lt;/p&gt;
+</description>
+      <pubDate>Tue, 30 Oct 2012 00:00:00 +0200</pubDate>
+      <link>http://www.jetthoughts.com/blog/tricks/2012/10/30/netcat-with-ssh-port-forwarding.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/tricks/2012/10/30/netcat-with-ssh-port-forwarding.html</guid>
+    </item>
+    
+    <item>
+      <title>Simple Dynamic Template</title>
+      <description>&lt;p&gt;Sometimes we need to define a dynamic template before defining variables used in the template.
+Let me show a few examples how to solve this problem in Ruby.&lt;/p&gt;
+
+&lt;p&gt;The best way is to use the &lt;a href=&quot;http://ruby-doc.org/core-2.0.0/String.html#method-i-25&quot;&gt;format string features from the Ruby&lt;/a&gt;:&lt;/p&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;1
+2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;echo %{expr}&amp;quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# -&amp;gt; &amp;quot;echo %{expr}&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;expr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;      &lt;span class=&quot;c1&quot;&gt;# -&amp;gt; &amp;quot;echo 1&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</description>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0300</pubDate>
+      <link>http://www.jetthoughts.com/blog/tech/2012/07/10/simple-dynamic-template.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/tech/2012/07/10/simple-dynamic-template.html</guid>
+    </item>
+    
+    <item>
+      <title>Change Factory Girl Directory Path for Rails 3 Generator</title>
+      <description>&lt;p&gt;After Rails 3.1 + Rspec + FactoryGirl setup, all factories are generated to &lt;strong&gt;test/factories&lt;/strong&gt; instead of  &lt;strong&gt;spec/factories&lt;/strong&gt;.
+Solution is to add to your &lt;strong&gt;application.rb&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;g&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fixture_replacement&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:factory_girl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;spec/factories&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</description>
+      <pubDate>Sat, 24 Sep 2011 00:00:00 +0300</pubDate>
+      <link>http://www.jetthoughts.com/blog/tech/2011/09/24/change-factory-girl-directory-path-for-rails-3-generator.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/tech/2011/09/24/change-factory-girl-directory-path-for-rails-3-generator.html</guid>
+    </item>
+    
+    <item>
+      <title>Add Current Date to Text Document</title>
+      <description>5 simple steps to implement the feature.</description>
+      <pubDate>Mon, 04 Apr 2011 00:00:00 +0300</pubDate>
+      <link>http://www.jetthoughts.com/blog/tricks/2011/04/04/add-current-date-to-text-document.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/tricks/2011/04/04/add-current-date-to-text-document.html</guid>
+    </item>
+    
+    <item>
+      <title>Allow Multiple Access Control Requests for Rails</title>
+      <description>&lt;p&gt;If you have problem with sending XHR requests from different domains, it will be problematic to get content, because&lt;/p&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;XMLHttpRequest cannot load http://different.domain.local:3000/visits. Origin http://localhost:3000 is not allowed by Access-Control-Allow-Origin.
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;The solution is to setup response headers: &lt;em&gt;Access-Control-Request-Method&lt;/em&gt;, &lt;em&gt;Access-Control-Allow-Origin&lt;/em&gt;.&lt;/p&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;1
+2&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Access-Control-Allow-Origin&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;*&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Access-Control-Request-Method&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;*&amp;#39;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</description>
+      <pubDate>Wed, 22 Dec 2010 00:00:00 +0200</pubDate>
+      <link>http://www.jetthoughts.com/blog/magic/2010/12/22/allow-multiple-access-control-requests-for-rails.html</link>
+      <guid isPermaLink="true">http://www.jetthoughts.com/blog/magic/2010/12/22/allow-multiple-access-control-requests-for-rails.html</guid>
+    </item>
+    
+  </channel>
+</rss>
