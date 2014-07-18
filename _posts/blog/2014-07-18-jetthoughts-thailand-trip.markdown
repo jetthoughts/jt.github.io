@@ -17,7 +17,7 @@ excerpt: Wouldn't it be great to wake up on a February morning to the sound of w
 
 This year part of our company has spent a month in Thailand, discovering a new country, working and relaxing. Check out the post for our Russian-speaking readers where JetThoughts  team is sharing the experience for everyone who wants to know about joys and challenges of living on a tropical island.
 
-![Thailand_JT_1] (https://www.dropbox.com/s/1m7k0jxzns21mbc/Thailand_JT_1.jpg)
+![ThailandJT1](https://www.dropbox.com/s/1m7k0jxzns21mbc/Thailand_JT_1.jpg)
 
 ---
 
