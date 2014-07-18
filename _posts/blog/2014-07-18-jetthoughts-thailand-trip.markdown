@@ -13,6 +13,8 @@ categories:
 - blog
 - team
 
+---
+
 Wouldn't it be great to wake up on a February morning to the sound of waves lapping and birds singing, have some fragrant fried rice with seafood and a cold mango shake for breakfast, go for a swim in the azure-blue sea, then open your laptop and start coding? Sure, it would be awesome! That's what we thought and decided to swap our nasty Ukrainian winter for a quite tolerable tropical one. 
 
 This year part of our company has spent a month in Thailand, discovering a new country, working and relaxing. Check out the post for our Russian-speaking readers where JetThoughts  team is sharing the experience for everyone who wants to know about joys and challenges of living on a tropical island.
