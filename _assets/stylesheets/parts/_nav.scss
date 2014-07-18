@@ -1,0 +1,123 @@
+.top_menu_wrap {
+  height: $nav_height;
+  background: $deep_blue;
+  .menu {
+    height: $nav_height;
+    margin-bottom: 0;
+  }
+  .menu_item {
+    display: inline-block;
+    margin-left: -3px;
+    margin-right: -3px;
+    float: none;
+    height: $nav_height;
+    .menu_link {
+      font-size: 15px !important;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $white;
+      height: $nav_height;
+      line-height: $nav_height;
+      display: block;
+      padding: 0 20px !important;
+      vertical-align: middle;
+      &:hover,
+      &.active {
+        background: $orange !important;
+      }
+    }
+  }
+
+}
+
+.expanded {
+  .submenu {
+    position: relative;
+    z-index: 999;
+    .menu_item {
+      width: 100%;
+    }
+  }
+}
+
+.logo {
+  color: #fff !important;
+  line-height: $nav_height;
+  display: block;
+  height: $nav_height;
+  @include stretch-y;
+  vertical-align: middle;
+  margin-left: 10px;
+  strong {
+    font-weight: 900;
+  }
+}
+
+.menu_button {
+  position: absolute;
+  right: 10px;
+  top: 45px;
+  display: none;
+}
+.menu_button_wrap {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.fake_menu {
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: $white;
+  position: absolute;
+  &:before,
+  &:after {
+    content: '';
+    display: inherit;
+    width: inherit;
+    height: inherit;
+    position: inherit;
+    top: 8px;
+    background: inherit;
+  }
+  &:after {
+    top: 16px;
+  }
+}
+
+.fake_submenu {
+  @extend .fake_menu;
+  background-color: $orange;
+  top: 4px;
+  left: -20px;
+  @include transition(600ms all ease);
+}
+
+.move-left {
+  .fake_submenu {
+    left: 18px;
+    @include transition(600ms all ease);
+  }
+}
+
+.aside_menu {
+  list-style: none;
+  padding: 40px 0 0;
+  margin: 0;
+  .menu_link {
+    color: $white;
+    display: block;
+    padding: 10px 20px;
+    &.active,
+    &:hover {
+      background: $orange;
+    }
+  }
+}
+
+.right-off-canvas-menu {
+  background: transparent;
+}

@@ -1,0 +1,94 @@
+$tech-spacing: 40px;
+@import "../images/tech/*.png";
+@include all-tech-sprites;
+
+$clients-spacing: 20px;
+@import "../images/clients/*.png";
+@include all-clients-sprites;
+
+
+$icons-spacing: 40px;
+$icons_sprite: sprite-map("icons/*.png", $spacing: $icons-spacing);
+@import "../images/icons/*.png";
+@include all-icons-sprites;
+
+$ui-spacing: 20px;
+@import "../images/ui/*.png";
+@include all-ui-sprites;
+
+//width: icons-sprite-width(facebook_small);
+
+.tech-ruby {
+  width: tech-sprite-width(ruby);
+  height: tech-sprite-height(ruby);
+}
+
+.tech-rails {
+  width: tech-sprite-width(rails);
+  height: tech-sprite-height(rails);
+}
+
+.tech-coffeescript {
+  width: tech-sprite-width(coffeescript);
+  height: tech-sprite-height(coffeescript);
+}
+
+.tech-jquery {
+  width: tech-sprite-width(jquery);
+  height: tech-sprite-height(jquery);
+}
+
+.tech-mongodb {
+  width: tech-sprite-width(mongodb);
+  height: tech-sprite-height(mongodb);
+}
+
+.tech-html5 {
+  width: tech-sprite-width(html5);
+  height: tech-sprite-height(html5);
+}
+
+.tech-sass {
+  width: tech-sprite-width(sass);
+  height: tech-sprite-height(sass);
+}
+
+.tech-responsive {
+  width: tech-sprite-width(responsive);
+  height: tech-sprite-height(responsive);
+}
+
+.clients-alba {
+  width: clients-sprite-width(alba);
+  height: clients-sprite-height(alba);
+}
+
+.clients-bigbinary {
+  width: clients-sprite-width(bigbinary);
+  height: clients-sprite-height(bigbinary);
+}
+
+.clients-mipt {
+  width: clients-sprite-width(mipt);
+  height: clients-sprite-height(mipt);
+}
+
+.clients-imagine {
+  width: clients-sprite-width(imagine);
+  height: clients-sprite-height(imagine);
+}
+
+.clients-vault {
+  width: clients-sprite-width(vault);
+  height: clients-sprite-height(vault);
+}
+
+.ui-swipe_side_blue {
+  width: ui-sprite-width(swipe_side_blue);
+  height: ui-sprite-height(swipe_side_blue);
+}
+
+.ui-swipe_side_white {
+  width: ui-sprite-width(swipe_side_white);
+  height: ui-sprite-height(swipe_side_white);
+}

@@ -19,8 +19,12 @@ group :utils do
   gem 'foreman'
 end
 
+gem 'jekyll-assets'
+gem 'jekyll-compass'
 gem 'rack-contrib'
 gem 'rack-cache'
 gem 'dalli'
 gem 'kgio'
 gem 'puma'
+gem 'coffee-rails'
+gem 'uglifier'

@@ -32,15 +32,14 @@
     </div>
   </div>
 </footer>
-<script src="/bower_components/jquery/jquery.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
+<script>
+  if (!window.jQuery) {
+    document.write("<script src=\"{{ 'jquery.js' | asset_path }}\"> <\/script>");
+  }
+</script>
 
-<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.js"></script>
-<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.accordion.js"></script>
-<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.topbar.js"></script>
-<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.orbit.js"></script>
-<script type="text/javascript" src="/bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
-<script type="text/javascript" src="/bower_components/fastclick/lib/fastclick.js"></script>
-<script src="/javascripts/hide_swipe.js"></script>
+{% javascript app %}
 <script type="text/javascript">
   $(document).foundation({
     deep_linking: false
@@ -49,7 +48,4 @@
     FastClick.attach(document.body);
   });
 </script>
-<script src="/javascripts/contact.js"></script>
-<script src="/javascripts/portfolio_sorter.js"></script>
-<script src="/javascripts/portfolio_heights.js"></script>
 {% include analytics.html %}
