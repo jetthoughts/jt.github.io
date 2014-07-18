@@ -21,10 +21,10 @@ This year part of our company has spent a month in Thailand, discovering a new c
 
 ---
 
-#Дверь в лето, или как мы провели февраль в Таиланде
+#Дверь в лето, или Как мы провели февраль в Таиланде
 
 
-![Thailand_team](https://www.dropbox.com/s/573ekhuu5yf5ve0/Thailand_team.png)
+![Thailand_team](https://flic.kr/p/o66Ytd)
 
 В этом году наша команда провела месяц в Таиланде, открывая для себя новую страну, работая и отдыхая. Идею “перезимовать” в Азии предложили самые активные и теплолюбивые сотрудники. А руководство компании с удовольствием ее поддержало. Мы решили испытать на себе, насколько идеальное представление об образе жизни фрилансеров-путешественников соответствует действительности. 
 
@@ -44,7 +44,7 @@ This year part of our company has spent a month in Thailand, discovering a new c
  
 ##Визы
 
-![Thailand_JT_2] (https://www.dropbox.com/s/x5pax29z96w794s/Thailand_JT_2.jpg)
+![Thailand_JT_2](https://www.dropbox.com/s/x5pax29z96w794s/Thailand_JT_2.jpg)
 
 Граждане Украины получают в Таиланде визу по прилету, которая стоит 30$. Виза действует 14 дней. Так как мы решили провести в этой стране месяц, через 2 недели мы съездили в Малайзию на день. Это обошлось в 38$ (+ еще 30$ за повторную визу). 
 
@@ -60,7 +60,7 @@ This year part of our company has spent a month in Thailand, discovering a new c
 
 ##Транспорт
 
-![Thailand_JT_5] (https://www.dropbox.com/s/s67z9bty2yx60vp/Thailand_JT_5.jpg)
+![Thailand_JT_5](https://www.dropbox.com/s/s67z9bty2yx60vp/Thailand_JT_5.jpg)
 
 Мы летели самолетом в Бангкок с пересадкой в Москве (билет в обе стороны - 704$). Есть несколько вариантов трансфера на остров Самуи: 
 - Самолет. (Дорого, билеты из Бангкока от 100$).
@@ -77,7 +77,7 @@ This year part of our company has spent a month in Thailand, discovering a new c
 
 Нам предлагали и дом, который мы изначально планировали снять, за 2900$ в месяц + коммунальные услуги. Остановило нас то, что этот дом находится в закрытом коттеджном поселке. Нужно было арендовать машину для поездок за продуктами. А из нашего отеля - 5 минут пешком до ближайших ресторанчиков, лотков с фруктами и супермаркета. 
 
-![Thailand_JT_3] (https://www.dropbox.com/s/6ann7evoa59w68p/Thailand_JT_3.jpg)
+![Thailand_JT_3](https://www.dropbox.com/s/6ann7evoa59w68p/Thailand_JT_3.jpg)
 
 ##Перемещение по острову
 
@@ -101,7 +101,7 @@ This year part of our company has spent a month in Thailand, discovering a new c
 
 ##Работа
 
-![Thailand_JT_6] (https://www.dropbox.com/s/s8x36u1wv108654/Thailand_JT_6.jpg)
+![Thailand_JT_6](https://www.dropbox.com/s/s8x36u1wv108654/Thailand_JT_6.jpg)
 
 В статьях об удаленной работе в теплых странах встречаются распространенные утверждения и мифы. Вот наши ответы на некоторые из них:
 
@@ -125,7 +125,7 @@ This year part of our company has spent a month in Thailand, discovering a new c
 
 К нашему удивлению, между нами не было мелких бытовых ссор, которые, казалось бы, неизбежны, когда люди проводят почти 24 часа вместе. Наоборот, мы настолько полюбили работать рядом на веранде, что в первый день после возвращения в офис все по привычке собрались в одной комнате. Думаю, что если бы мы готовили еду, ездили за совместными закупками и убирали комнаты сами, возникли бы какие-то конфликты. Возможно, мы проверим это в следующий раз, сняв один большой дом на всех.
 
-![Thailand_JT_4] (https://www.dropbox.com/s/91o5sdxba25gjwf/Thailand_JT_4.jpg)
+![Thailand_JT_4](https://www.dropbox.com/s/91o5sdxba25gjwf/Thailand_JT_4.jpg)
 
 За месяц мы получили море эмоций, ярких впечатлений, и самое главное - опыт жизни в незнакомой стране и работы в сложных условиях. Команда JetThoughts рекомендует поездку в Таиланд всем, кто хочет испытать себя, увидеть новую страну и совместить приятное с полезным. 
 
