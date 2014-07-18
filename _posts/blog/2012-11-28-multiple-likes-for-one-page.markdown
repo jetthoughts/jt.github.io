@@ -28,7 +28,7 @@ A sample application is pushed to [Github](https://github.com/miry/facebook-mult
 And deployed to [Heroku](http://facebook-multiple-like.herokuapp.com/).
 
 Add a Facebook Like Button
-==========================
+--------------------------
 
 To add a simple button we need include the [JavaScript SDK](https://developers.facebook.com/docs/reference/javascript/)
 on your page once, ideally right after the opening `<body>` tag:
@@ -61,8 +61,8 @@ For example, if you want to share a product, you should put it like this:
 Don't forget to provide the full url, not only the path.
 You can easily generate a custom *Like button* [here](https://developers.facebook.com/docs/reference/plugins/like).
 
-How does work the Facebook Like Button
-======================================
+How does the Facebook Like Button Work
+--------------------------------------
 
 After a user clicks on a like button, the url from the attribue `data-href` is sent to the Facebook service.
 If the url is missed in a store of urls, Facebook runs a scrapper to get all required information about the page.
@@ -75,7 +75,7 @@ To check what values the scrapper will return for your page, you can use a [Face
 With this tool you can check what image would be provided for users.
 
 Customize Image and Title
-=========================
+-------------------------
 
 Now we have the button and the ability to share the page. But what if we want to provide our special image, instead of Facebook's variant.
 We need to add the [Open Graph tag](https://developers.facebook.com/docs/reference/plugins/like/#ogtags) for `image` and `title`. Let us add an ability to add headers from the action views to our layout.
@@ -112,7 +112,7 @@ And use method `image_path` to return image with assets host. After our view wou
 Checking our url in the [Facebook Debugger](https://developers.facebook.com/tools/debug/og/object?q=http%3A%2F%2Ffacebook-multiple-like.herokuapp.com)
 
 Use Different Images For Each Like Button
-=========================================
+-----------------------------------------
 
 Let us add Like button to index page of products.
 In this case if we add a simple Like button with the same path as for show product page, then we would have different images and titles.
