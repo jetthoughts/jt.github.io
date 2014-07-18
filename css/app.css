@@ -8673,18 +8673,19 @@ html {
   line-height: 110px;
   display: block;
   height: 110px;
+  width: 286px;
   position: absolute;
   top: 0;
   bottom: 0;
   vertical-align: middle;
   margin-left: 10px;
 }
-/* line 48, ../_sass/parts/_nav.scss */
+/* line 49, ../_sass/parts/_nav.scss */
 .logo strong {
   font-weight: 900;
 }
 
-/* line 53, ../_sass/parts/_nav.scss */
+/* line 54, ../_sass/parts/_nav.scss */
 .menu_button {
   position: absolute;
   right: 10px;
@@ -8692,7 +8693,7 @@ html {
   display: none;
 }
 
-/* line 59, ../_sass/parts/_nav.scss */
+/* line 60, ../_sass/parts/_nav.scss */
 .menu_button_wrap {
   display: block;
   position: relative;
@@ -8701,7 +8702,7 @@ html {
   overflow: hidden;
 }
 
-/* line 67, ../_sass/parts/_nav.scss */
+/* line 68, ../_sass/parts/_nav.scss */
 .fake_menu, .fake_submenu {
   display: block;
   width: 20px;
@@ -8709,7 +8710,7 @@ html {
   background: white;
   position: absolute;
 }
-/* line 74, ../_sass/parts/_nav.scss */
+/* line 75, ../_sass/parts/_nav.scss */
 .fake_menu:before, .fake_submenu:before, .fake_menu:after, .fake_submenu:after {
   content: '';
   display: inherit;
@@ -8719,12 +8720,12 @@ html {
   top: 8px;
   background: inherit;
 }
-/* line 83, ../_sass/parts/_nav.scss */
+/* line 84, ../_sass/parts/_nav.scss */
 .fake_menu:after, .fake_submenu:after {
   top: 16px;
 }
 
-/* line 88, ../_sass/parts/_nav.scss */
+/* line 89, ../_sass/parts/_nav.scss */
 .fake_submenu {
   background-color: #ff8448;
   top: 4px;
@@ -8735,7 +8736,7 @@ html {
   transition: 600ms all ease;
 }
 
-/* line 97, ../_sass/parts/_nav.scss */
+/* line 98, ../_sass/parts/_nav.scss */
 .move-left .fake_submenu {
   left: 18px;
   -webkit-transition: 600ms all ease;
@@ -8744,24 +8745,24 @@ html {
   transition: 600ms all ease;
 }
 
-/* line 103, ../_sass/parts/_nav.scss */
+/* line 104, ../_sass/parts/_nav.scss */
 .aside_menu {
   list-style: none;
   padding: 40px 0 0;
   margin: 0;
 }
-/* line 107, ../_sass/parts/_nav.scss */
+/* line 108, ../_sass/parts/_nav.scss */
 .aside_menu .menu_link {
   color: white;
   display: block;
   padding: 10px 20px;
 }
-/* line 112, ../_sass/parts/_nav.scss */
+/* line 113, ../_sass/parts/_nav.scss */
 .aside_menu .menu_link.active, .aside_menu .menu_link:hover {
   background: #ff8448;
 }
 
-/* line 118, ../_sass/parts/_nav.scss */
+/* line 119, ../_sass/parts/_nav.scss */
 .right-off-canvas-menu {
   background: transparent;
 }
