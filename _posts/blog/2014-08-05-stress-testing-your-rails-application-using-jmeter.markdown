@@ -16,7 +16,7 @@ categories:
 
 Some time ago we needed to make a simple stress-testing of our application to get an idea of where we are going, and find out whether we should take a break and pay some attention to optimizations or not. The number of stress-testing tools is huge, but we decided to stick to a well-tried solution - [JMeter]. 
 
-![stress_testing](https://www.dropbox.com/s/d3cy29h6z4xkp8f/ID-10069226.jpg)
+![stress_testing](https://farm3.staticflickr.com/2917/14648111570_ebdb373220.jpg)
 
 <!--cut-->
 
@@ -170,6 +170,6 @@ This article covers only the basic usage of these great tools.
 [CSRF]:http://en.wikipedia.org/wiki/Cross-site_request_forgery
 [you can't parse HTML with regex]:http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454
 
-Image courtesy of [Stuart Miles] / FreeDigitalPhotos.net
+Image courtesy of Stuart Miles / FreeDigitalPhotos.net
 
 
