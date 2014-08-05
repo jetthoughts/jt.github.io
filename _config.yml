@@ -3,7 +3,7 @@ url: http://www.jetthoughts.com
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
-pygments: true
+highlighter: pygments
 paginate: 25
 paginate_path: "blog/page:num"
 permalink: "/:categories/:year/:month/:day/:title.html"

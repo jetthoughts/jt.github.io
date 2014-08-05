@@ -2,7 +2,7 @@ source "https://rubygems.org"
 ruby '2.1.2'
 
 group :assets do
-  gem 'jekyll', '> 2.0'
+  gem 'jekyll', '>= 2.2.0'
   gem 'liquid'
   gem 'pygments.rb'
   gem 'fileutils'
