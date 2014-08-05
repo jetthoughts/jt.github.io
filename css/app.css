@@ -6582,18 +6582,23 @@ ul {
   padding-left: 15px;
 }
 /* line 90, ../_sass/custom/_typography.scss */
+.post_content ul > li > p,
+.detailed_inner ul > li > p {
+  display: inline;
+}
+/* line 93, ../_sass/custom/_typography.scss */
 .post_content ul > li:before,
 .detailed_inner ul > li:before {
   content: '— ';
   margin-left: -15px;
 }
-/* line 95, ../_sass/custom/_typography.scss */
+/* line 98, ../_sass/custom/_typography.scss */
 .post_content ul > ul,
 .detailed_inner ul > ul {
   list-style: square;
 }
 
-/* line 102, ../_sass/custom/_typography.scss */
+/* line 105, ../_sass/custom/_typography.scss */
 .h1, .heading_one, h1, h2,
 .heading_two, h3,
 .heading_three,
@@ -6608,53 +6613,53 @@ ul {
   margin: 14px 0 10px;
 }
 
-/* line 114, ../_sass/custom/_typography.scss */
+/* line 117, ../_sass/custom/_typography.scss */
 h2,
 .heading_two {
   font-size: 2.3em;
 }
 
-/* line 120, ../_sass/custom/_typography.scss */
+/* line 123, ../_sass/custom/_typography.scss */
 h3,
 .heading_three,
 .contacts_wrap .contacts_section .heading_one {
   font-size: 1.45em;
 }
 
-/* line 126, ../_sass/custom/_typography.scss */
+/* line 129, ../_sass/custom/_typography.scss */
 h4,
 .heading_four {
   font-size: 16px;
 }
 
-/* line 132, ../_sass/custom/_typography.scss */
+/* line 135, ../_sass/custom/_typography.scss */
 h5,
 .heading_five {
   font-size: 14px;
 }
 
-/* line 138, ../_sass/custom/_typography.scss */
+/* line 141, ../_sass/custom/_typography.scss */
 h6,
 .heading_six {
   font-size: 13px;
   font-weight: 700;
 }
 
-/* line 144, ../_sass/custom/_typography.scss */
+/* line 147, ../_sass/custom/_typography.scss */
 .table {
   border: none;
   width: 100%;
 }
-/* line 147, ../_sass/custom/_typography.scss */
+/* line 150, ../_sass/custom/_typography.scss */
 .table .tr {
   background: none;
 }
-/* line 150, ../_sass/custom/_typography.scss */
+/* line 153, ../_sass/custom/_typography.scss */
 .table .th {
   font-weight: 700;
   text-align: left;
 }
-/* line 155, ../_sass/custom/_typography.scss */
+/* line 158, ../_sass/custom/_typography.scss */
 .table .th,
 .table .td {
   font-size: 13px;
@@ -6664,12 +6669,12 @@ h6,
   padding-bottom: 10px;
   vertical-align: top;
 }
-/* line 163, ../_sass/custom/_typography.scss */
+/* line 166, ../_sass/custom/_typography.scss */
 .table .td {
   padding-right: 10px;
 }
 
-/* line 168, ../_sass/custom/_typography.scss */
+/* line 171, ../_sass/custom/_typography.scss */
 .notice {
   font-size: 0.75em;
   color: #666f80;
@@ -6678,23 +6683,23 @@ h6,
   border-radius: 5px;
 }
 
-/* line 176, ../_sass/custom/_typography.scss */
+/* line 179, ../_sass/custom/_typography.scss */
 code {
   font-weight: 400;
 }
 
-/* line 180, ../_sass/custom/_typography.scss */
+/* line 183, ../_sass/custom/_typography.scss */
 .highlighttable {
   display: block;
   overflow-y: hidden;
   overflow-x: auto;
   padding-bottom: 10px;
 }
-/* line 186, ../_sass/custom/_typography.scss */
+/* line 189, ../_sass/custom/_typography.scss */
 .highlighttable pre {
   white-space: pre;
 }
-/* line 189, ../_sass/custom/_typography.scss */
+/* line 192, ../_sass/custom/_typography.scss */
 .highlighttable .linenodiv {
   font-size: 11px;
   color: #ebebeb;

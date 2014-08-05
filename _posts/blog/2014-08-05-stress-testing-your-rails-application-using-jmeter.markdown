@@ -44,7 +44,7 @@ I suggest 3 simple steps:
 
 We can take this method as the template:
 
-```ruby
+{% highlight ruby linenos=table %}
 def jmeter_test_plan(url, threads_count)
   uri = URI(url)
   test do
@@ -54,7 +54,7 @@ def jmeter_test_plan(url, threads_count)
     end
   end
 end
-```
+{% endhighlight %}
 
 The method has 2 parameters:
 `url` - url to our application.
@@ -74,7 +74,7 @@ So, to authenticate user we need to:
 
 Let's write that in Ruby:
 
-```ruby
+{% highlight ruby linenos=table %}
 user_defined_variables [{name: 'email', value: email}, {name: 'password', value: password}]
 
 visit name: 'login page', url: '/users/sign_in' do
@@ -90,7 +90,7 @@ submit name: '/users/sign_in', url: '/users/sign_in',
          'user[email]' => '${email}',
          'user[password]' => '${password}',
        }
-```
+{% endhighlight %}
 
 Firstly, we store `email` and `password` in the user defined variables. Then, we use `visit` to load our login page. The `extract` command is used to set 2 variables: the `${csrf-token}` and the `${csrf-param}` with extracted values by XPath. We use csrf-token data in `http_header_manager` method to set the header `X-CSRF-TOKEN` in order to fix `devise` issue similar to https://github.com/plataformatec/devise/issues/2734#issuecomment-41969856. And, finally, the `submit` sends the `POST` request to our app server.
 
@@ -105,7 +105,7 @@ Following our plan, next we need to:
 
 Ok, that's as simple as:
 
-```ruby
+{% highlight ruby linenos=table %}
 visit name: 'friends page', url: '/friends' do
   extract name: 'conversation-url', xpath: "//section[@class='friends']//a[@class='conversation']/@href", 
           tolerant: true
@@ -113,20 +113,20 @@ end
 
 visit name: 'random conversation', 
       url: '${__V(conversation-url_${__Random(1,${conversation-url_matchNr})})}'
-```
+{% endhighlight %}
 
 Well, ok, maybe not very simple. Ok, the first part is easy to understand. There is nothing new here. We are visiting the '/friends' page and extracting the `conversation-url` variable.
 
 But under the hood the XPath Extractor creates a set of variables for each match. So, for example, when we have 5 friends on the '/friends' page, the XPath extractor will create 6 variables:
 
-```ruby
+{% highlight ruby linenos=table %}
 conversation-url
 conversation-url_1
 conversation-url_2
 conversation-url_3
 conversation-url_4
 conversation-url_matchNr
-```
+{% endhighlight %}
 
 The last one contains the number of matches (5 in our case). 
 
@@ -140,18 +140,18 @@ The `${__Random(1,${conversation-url_matchNr})}` here generates the random numbe
 
 To display testing results we can use so-called listeners. Personally I am adding these ones:
 
-```ruby
+{% highlight ruby linenos=table %}
 view_results_in_table
 graph_results
 aggregate_graph
-```
+{% endhighlight %}
 
 To debug your test plan you can use:
 
-```ruby
+{% highlight ruby linenos=table %}
 debug_sampler
 view_results_tree
-```
+{% endhighlight %}
 
 ## What to read more?
 
