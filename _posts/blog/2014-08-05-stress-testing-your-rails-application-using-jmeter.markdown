@@ -18,6 +18,7 @@ Some time ago we needed to make a simple stress-testing of our application to ge
 
 ![stress_testing](https://farm3.staticflickr.com/2917/14648111570_ebdb373220.jpg)
 
+
 <!--cut-->
 
 [JMeter] is an opensource cross-platform load testing tool which is being developed by [Apache Foundation]. It has a rich graphical interface and a big number of features. But it is not novice-friendly at all. So, I think I should share my experience of playing with this tool.
