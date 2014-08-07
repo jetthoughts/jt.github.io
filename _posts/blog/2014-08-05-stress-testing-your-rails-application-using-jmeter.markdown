@@ -39,9 +39,9 @@ As the starting point we should define our user steps that we want to be tested 
 
 I suggest 3 simple steps:
 
- 1. [User logs into our application.](#1-authentication)
- 1. [User loads his 'friends' page.](#2-viewing-the-pages)
- 1. [User views the conversation with the random friend of his friendlist.](#3-metrics)
+ 1. [User logs into our application.](#1.-authentication)
+ 1. [User loads his 'friends' page.](#2.-viewing-the-pages)
+ 1. [User views the conversation with the random friend of his friendlist.](#3.-metrics)
 
 We can take this method as the template:
 
