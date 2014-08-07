@@ -98,7 +98,7 @@ Firstly, we store `email` and `password` in the user defined variables. Then, we
 
 To extract the `csrf-param` and `csrf-token` we are using XPath extractor which I like more than Regex extractor. Because, you know, [you can't parse HTML with regex].
 
-### 2. Viewing the pages.
+### 2. Viewing the pages
 
 Following our plan, next we need to:
  1. View the friends page.
@@ -138,7 +138,7 @@ Ok, the next thing is this:
 
 The `${__Random(1,${conversation-url_matchNr})}` here generates the random number between 1 and the number of matches. And the `__V()` function gets the variable content by its name.
 
-### 3. Metrics.
+### 3. Metrics
 
 To display testing results we can use so-called listeners. Personally I am adding these ones:
 
