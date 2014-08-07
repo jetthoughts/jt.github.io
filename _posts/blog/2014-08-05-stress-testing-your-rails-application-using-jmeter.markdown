@@ -23,7 +23,7 @@ Some time ago we needed to make a simple stress-testing of our application to ge
 
 [JMeter] is an opensource cross-platform load testing tool which is being developed by [Apache Foundation]. It has a rich graphical interface and a big number of features. But it is not novice-friendly at all. So, I think I should share my experience of playing with this tool.
 
-## The [ruby-jmeter].
+## The [ruby-jmeter]
 
 To begin with, I don't like GUIs. I'd like to write the test plan in a text format instead of building it with a mouse. [JMeter] gives us such an opportunity due to its test plans are xml files. But xml is not cool for handwriting either.
 
@@ -31,16 +31,17 @@ After spending 3 minutes searching with Google I've found the satisfying solutio
 
 [ruby-jmeter] is a gem that simplifies the generation of [JMeter] test plans and allows to use Ruby language to describe them. It can generate a jmx file or start headless [JMeter] and run the test.
 
-## Writing a test plan.
+## Writing a test plan
 
 Let's say that our application is a simple social network. We don't have any functionality for anonymous users except for the login page. So, the [JMeter access log sampler] is not a solution in our case and we should dig deeper.
 
 As the starting point we should define our user steps that we want to be tested by our test plan.
 
 I suggest 3 simple steps:
- 1. User logs into our application.
- 2. User loads his 'friends' page.
- 3. User views the conversation with the random friend of his friendlist.
+
+ 1. [User logs into our application.](#1.-authentication)
+ 1. [User loads his 'friends' page.](#2-viewing-the-pages)
+ 1. [User views the conversation with the random friend of his friendlist.](#3-metrics)
 
 We can take this method as the template:
 
@@ -57,8 +58,9 @@ end
 {% endhighlight %}
 
 The method has 2 parameters:
-`url` - url to our application.
-`threads_count` - number of threads (users) that will test our app.
+ - `url` - url to our application.
+ - `threads_count` - number of threads (users) that will test our app.
+
 
 The `test` directive is a root point, where all the magic starts. Then, using `threads` method we are telling [JMeter] what number of users we want to use. The `defaults` command allows us to specify default options for all our http requests. And, finally,`cookies` indicates that we need to store cookies and send them with each request.
 
@@ -69,8 +71,8 @@ To authenticate user in our application we need to send the POST request to `/us
 
 So, to authenticate user we need to:
  1. Load the login page.
- 2. Extract the CSRF-token from the page.
- 3. POST the email, password and an authentication token to `/users/sign_in` path.
+ 1. Extract the `CSRF-token` from the page.
+ 1. `POST` the email, password and an authentication token to `/users/sign_in` path.
 
 Let's write that in Ruby:
 
@@ -158,9 +160,7 @@ view_results_tree
 This article covers only the basic usage of these great tools.
 
  - You can read more about JMeter in the User manual - http://jmeter.apache.org/usermanual/index.html
-
  - To read about ruby-jmeter DSL you can refer to the github page - https://github.com/flood-io/ruby-jmeter
-
  - If you want to know more about stress-testing of web applications you can read this article - http://msdn.microsoft.com/en-us/library/bb924374.aspx
 
 
