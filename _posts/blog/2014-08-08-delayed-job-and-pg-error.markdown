@@ -56,7 +56,8 @@ So, what events do we have there?
 :failure
 ```
 
-You can setup callbacks to be run on `before`, `after` or `around` events simply using `Delayed::Worker.lifecycle.before`, `Delayed::Worker.lifecycle.after` and `Delayed::Worker.lifecycle.around` methods.
+
+ You can setup callbacks to be run on `before`, `after` or `around` events simply using `Delayed::Worker.lifecycle.before`, `Delayed::Worker.lifecycle.after` and `Delayed::Worker.lifecycle.around` methods.
 
 ##The Solution
 
