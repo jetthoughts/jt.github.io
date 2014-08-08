@@ -34,17 +34,19 @@ Now let's take a break and look into DelayedJob internals. [Delayed::Job] has sy
 
 So, what events do we have there?
 
-Job-related events:
+####Job-related events:
 
 ```ruby
-:enqueue
-:perform
-:error
-:failure
-:invoke_job
+ :enqueue
+ :perform
+ :error
+ :failure
+ :invoke_job
 ```
 
-Worker-related events:
+
+####Worker-related events:
+
 
 ```ruby
 :execute
@@ -78,6 +80,9 @@ Delayed::Worker.lifecycle.before :execute do
 end
 ```
 
+
 [Delayed::Job]:https://github.com/collectiveidea/delayed_job
 [I18n-active_record]:https://github.com/svenfuchs/i18n-active_record
 [delayed_job_active_record]:https://github.com/collectiveidea/delayed_job_active_record
+
+
