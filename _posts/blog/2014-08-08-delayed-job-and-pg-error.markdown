@@ -17,6 +17,17 @@ categories:
 Recently I've got strange errors on the staging server. Delayed::Job workers started successfully. But when they were starting to lock the jobs, workers failed with PG::Error: no connection to server and  PG::Error: FATAL: invalid frontend message type 60 errors. 
 
 <!--cut-->
+{% highlight ruby linenos=table %}
+def jmeter_test_plan(url, threads_count)
+  uri = URI(url)
+  test do
+    threads count: threads_count do
+      defaults domain: uri.host, port: uri.port
+      cookies policy: 'rfc2109', clear_each_iteration: true
+    end
+  end
+end
+{% endhighlight %}
 
 Obviously, that is not what I've expected from [Delayed::Job] workers. So I took the shovel and started digging into git history. Since the last release the only significant modification has been made in the internationalization. We've moved to [I18n-active_record] backend to grant the privilege to modify translations not only to developers but also to highly-educated mere mortals.
 
