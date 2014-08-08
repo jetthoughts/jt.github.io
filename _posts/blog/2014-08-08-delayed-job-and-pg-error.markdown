@@ -11,6 +11,7 @@ tags:
 categories:
 - blog
 - tech
+
 ---
 
 Recently I've got strange errors on the staging server. Delayed::Job workers started successfully. But when they were starting to lock the jobs, workers failed with PG::Error: no connection to server and  PG::Error: FATAL: invalid frontend message type 60 errors. 
