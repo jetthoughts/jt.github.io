@@ -28,13 +28,13 @@ The first thing I've found was that the problem did not turn up when delayed job
 
 After some research on DelayedJob internals I've found that the main difference between a rake task and a binstub was in the `fork` method that was invoked in the binstub version. It is seamlessly executed using `Daemons#run_process` method.
 
-### [Delayed::Job] lifecycle
+## [Delayed::Job] lifecycle
 
 Now let's take a break and look into DelayedJob internals. [Delayed::Job] has systems of the hooks that could be used by plugin-writers and in our applications. All this cool events functionality is hidden in `Delayed::Lifecycle` class. Each worker has its own instance of that class.
 
 So, what events do we have there?
 
-####Job-related events:
+###Job-related events:
 
 ```ruby
  :enqueue
@@ -45,7 +45,7 @@ So, what events do we have there?
 ```
 
 
-####Worker-related events:
+###Worker-related events:
 
 
 ```ruby
@@ -58,7 +58,7 @@ So, what events do we have there?
 
 You can setup callbacks to be run on `before`, `after` or `around` events simply using `Delayed::Worker.lifecycle.before`, `Delayed::Worker.lifecycle.after` and `Delayed::Worker.lifecycle.around` methods.
 
-###The Solution
+##The Solution
 
 Ok, let's move on to our problem. It has turned out that [delayed_job_active_record] is closing all database connections in `before_fork` hook and reestablishing them in `after_fork` hook. It was clear that I18n-active-record does not like it and does not want to play by the rules set by others. So, it needed special treatment and I provided it.
 
