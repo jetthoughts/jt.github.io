@@ -63,7 +63,7 @@ So, what events do we have there?
 
 Ok, let's move on to our problem. It has turned out that [delayed_job_active_record] is closing all database connections in `before_fork` hook and reestablishing them in `after_fork` hook. It was clear that I18n-active-record does not like it and does not want to play by the rules set by others. So, it needed special treatment and I provided it.
 
-I've looked into DelayedJob lifecycle and chosen `before :execute` hook. It is being executed after all DelayedJob ActiveRecord backend connections manipulations.
+I've looked into `DelayedJob` lifecycle and chosen `before :execute` hook. It is being executed after all `DelayedJob ActiveRecord` backend connections manipulations.
 
 So, basically my locales initializer for delayed_job workers looks like this:
 
