@@ -2,7 +2,7 @@
 layout: post
 author: Dmitriy Dudkin
 authors_git: tmwh
-title: DelayedJob and PG::error: No Connection to Server
+title: DelayedJob and PG Error No Connection to Server
 date: 08-08-2014
 tags:
 - ruby
