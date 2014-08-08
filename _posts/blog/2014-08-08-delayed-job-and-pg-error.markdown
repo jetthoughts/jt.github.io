@@ -47,13 +47,13 @@ So, what events do we have there?
 
 ###Job-related events:
 
-```ruby
+{% highlight ruby linenos=table %}
  :enqueue
  :perform
  :error
  :failure
  :invoke_job
-```
+{% endhighlight %}
 
 
 ###Worker-related events:
@@ -78,7 +78,7 @@ I've looked into DelayedJob lifecycle and chosen `before :execute` hook. It is b
 
 So, basically my locales initializer for delayed_job workers looks like this:
 
-```ruby
+{% highlight ruby linenos=table %}
 require 'i18n/backend/active_record'
   
 Translation  = I18n::Backend::ActiveRecord::Translation
@@ -90,11 +90,7 @@ Delayed::Worker.lifecycle.before :execute do
     I18n.backend = I18n::Backend::Chain.new(I18n::Backend::Simple.new, I18n.backend)
   end
 end
-```
-
-
-
-
+{% endhighlight %}
 
 [Delayed::Job]:https://github.com/collectiveidea/delayed_job
 [I18n-active_record]:https://github.com/svenfuchs/i18n-active_record
