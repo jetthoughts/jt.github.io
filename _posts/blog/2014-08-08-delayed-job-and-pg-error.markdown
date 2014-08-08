@@ -81,6 +81,9 @@ end
 ```
 
 
+
+
+
 [Delayed::Job]:https://github.com/collectiveidea/delayed_job
 [I18n-active_record]:https://github.com/svenfuchs/i18n-active_record
 [delayed_job_active_record]:https://github.com/collectiveidea/delayed_job_active_record
