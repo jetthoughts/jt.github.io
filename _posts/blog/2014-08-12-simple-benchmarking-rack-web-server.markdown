@@ -21,9 +21,9 @@ Let's use, for example, [Geminabox](http://tomlea.co.uk/posts/gem-in-a-box/) app
 
 ![Geminabox](http://ournewupdates.files.wordpress.com/2011/11/gem-box.png)
 
-<!--cut-->
-
 There are a lot of Ruby Web Servers. More details you can get from Digital Ocean article [A Comparison of (Rack) Web Servers for Ruby Web Applications](https://www.digitalocean.com/community/tutorials/a-comparison-of-rack-web-servers-for-ruby-web-applications). I excluded **Passenger** because it requires to compile Nginx module and **Thin** - it could not use all CPU cores.
+
+<!--cut-->
 
 ## Test environment:
 
@@ -263,7 +263,7 @@ Shortest transaction:	        2.52
 
 # Conclusion
 
-After current investigation, I see that [Puma](http://puma.io) is cross platform and fast web server. So if you have not decided what ruby to choose. [Puma](http://puma.io) will be best solution.
+After current investigation, I see that [Puma](http://puma.io) is cross platform and fast web server. So if you have not decided what ruby to choose, [Puma](http://puma.io) will be the best solution.
 More about benchmarking and web servers:
 - [The Ruby Web Benchmark Report](http://www.madebymarket.com/blog/dev/ruby-web-benchmark-report.html)
 - [A Simple Webserver Comparison](https://gist.github.com/cespare/3793565)
