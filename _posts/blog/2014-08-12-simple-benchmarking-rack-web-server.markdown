@@ -78,6 +78,7 @@ Longest transaction:	        1.20
 Shortest transaction:	        0.58
 ```
 *Siege report for 25 concurrencies:*
+
 ```
 Transactions:		         250 hits
 Availability:		      100.00 %
@@ -97,6 +98,7 @@ Shortest transaction:	        1.36
 ### With 5 workers
 
 Run Rack application:
+
 ```bash
 $ rbenv shell 2.2.0-dev
 $ sudo puma config.ru -t 4:32 -p 80 -w 5
@@ -104,6 +106,7 @@ $ sudo puma config.ru -t 4:32 -p 80 -w 5
 CPU was loaded at near 360%.
 
 *Siege report for 5 concurrencies:*
+
 ```
 Transactions:		          50 hits
 Availability:		      100.00 %
@@ -120,6 +123,7 @@ Shortest transaction:	        0.46
 ```
 
 *Siege report for 25 concurrencies:*
+
 ```
 Transactions:		         250 hits
 Availability:		      100.00 %
@@ -147,6 +151,7 @@ $ sudo bundle exec puma config.ru -t 4:32 -p 80
 CPU was loaded at 100% only
 
 *Siege report for 5 concurrencies:*
+
 ```
 Transactions:		          50 hits
 Availability:		      100.00 %
@@ -163,6 +168,7 @@ Shortest transaction:	        0.38
 ```
 
 *Siege report for 25 concurrencies:*
+
 ```
 Transactions:		         250 hits
 Availability:		      100.00 %
@@ -181,6 +187,7 @@ Shortest transaction:	        7.34
 ## Puma + JRuby
 
 Run Rack application:
+
 ```bash
 $ rbenv shell jruby-1.7.9
 $ sudo bundle exec puma config.ru -t 4:32 -p 80
@@ -189,6 +196,7 @@ $ sudo bundle exec puma config.ru -t 4:32 -p 80
 For first requests a response time was huge. But after the second experiment, it was decreased. During the experiments the CPU was loaded at near 350%.
 
 *Siege report for 5 concurrencies:*
+
 ```
 Transactions:		          50 hits
 Availability:		      100.00 %
@@ -205,6 +213,7 @@ Shortest transaction:	        0.25
 ```
 
 *Siege report for 25 concurrencies:*
+
 ```
 Transactions:		         250 hits
 Availability:		      100.00 %
@@ -223,6 +232,7 @@ Shortest transaction:	        0.35
 ## TorqueBox + JRuby
 
 Run Rack application:
+
 ```bash
 $ rbenv shell jruby-1.7.9
 $ torquebox deploy
@@ -230,6 +240,7 @@ $ torquebox run
 ```
 
 *Siege report for 5 concurrencies:*
+
 ```
 Transactions:		          50 hits
 Availability:		      100.00 %
@@ -246,6 +257,7 @@ Shortest transaction:	        0.39
 ```
 
 *Siege report for 25 concurrencies:*
+
 ```
 Transactions:		         250 hits
 Availability:		      100.00 %
