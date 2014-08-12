@@ -63,7 +63,7 @@ $ sudo WEB_CONCURRENCY=5 unicorn -c config/unicorn.rb
 ```
 
 
-*Siege report for 5 concurrencies:*
+ *Siege report for 5 concurrencies:*
 
 ```
 Transactions:		          50 hits
