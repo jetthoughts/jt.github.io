@@ -37,6 +37,15 @@ There are a lot of Ruby Web Servers. More details you can get from Digital Ocean
 
 Before we go we should install all ruby versions and required gems. I use [rbenv](http://rbenv.org) to manage multiple ruby versions in one host.
 
+```shell
+$ rbenv install 2.2.0-dev
+$ rbenv shell 2.2.0-dev
+$ gem install bundler puma unicorn 
+$ rbenv install jruby-1.7.9
+$ rbenv shell jruby-1.7.9
+$ gem install bundler puma torquebox
+```
+
 
 
 
