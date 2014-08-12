@@ -62,6 +62,7 @@ $ sudo WEB_CONCURRENCY=5 unicorn -c config/unicorn.rb
 ```
 
 *Siege report for 5 concurrencies:*
+
 ```text
 Transactions:		          50 hits
 Availability:		      100.00 %
@@ -78,6 +79,7 @@ Shortest transaction:	        0.58
 ```
 
 *Siege report for 25 concurrencies:*
+
 ```text
 Transactions:		         250 hits
 Availability:		      100.00 %
@@ -104,6 +106,7 @@ $ sudo puma config.ru -t 4:32 -p 80 -w 5
 CPU was loaded at near 360%.
 
 *Siege report for 5 concurrencies:*
+
 ```text
 Transactions:		          50 hits
 Availability:		      100.00 %
@@ -270,7 +273,7 @@ More about benchmarking and web servers:
 - [Benchmarking TorqueBox](http://torquebox.org/news/2011/02/23/benchmarking-torquebox/)
 - [High Performance Ruby Part 3: non-blocking IO and web application scalability](http://blog.gregweber.info/posts/2011-06-16-high-performance-rb-part3)
 
-[Geminbox]:http://tomlea.co.uk/posts/gem-in-a-box/
+[Geminabox]:http://tomlea.co.uk/posts/gem-in-a-box/
 [Puma]:http://puma.io
 [Unicorn]:http://unicorn.bogomips.org
 [A Comparison of (Rack) Web Servers for Ruby Web Applications]:https://www.digitalocean.com/community/tutorials/a-comparison-of-rack-web-servers-for-ruby-web-applications
