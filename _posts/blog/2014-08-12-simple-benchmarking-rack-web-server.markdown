@@ -21,6 +21,8 @@ Let's use, for example, [Geminabox](http://tomlea.co.uk/posts/gem-in-a-box/) app
 
 ![GemBox](http://ournewupdates.files.wordpress.com/2011/11/gem-box.png)
 
+<!--cut-->
+
 There are a lot of Ruby Web Servers. More details you can get from Digital Ocean article [A Comparison of (Rack) Web Servers for Ruby Web Applications]. I excluded **Passenger** because it requires to compile Nginx module and **Thin** - it could not use all CPU cores.
 
 ## Test environment:
