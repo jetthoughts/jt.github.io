@@ -33,5 +33,10 @@ There are a lot of Ruby Web Servers. More details you can get from Digital Ocean
 - Benchmark tool: [Siege](http://linux.die.net/man/1/siege)
 - Web servers: [Puma](http://puma.io), [Unicorn](http://unicorn.bogomips.org), [TorqueBox](http://torquebox.org)
 
+# Benchmarking
+
+Before we go we should install all ruby versions and required gems. I use [rbenv](http://rbenv.org) to manage multiple ruby versions in one host.
+
+
 
 
