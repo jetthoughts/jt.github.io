@@ -45,6 +45,7 @@ $ rbenv install jruby-1.7.9
 $ rbenv shell jruby-1.7.9
 $ gem install bundler puma torquebox
 ```
+
 Prepare the application:
 
 ```bash
@@ -60,6 +61,7 @@ Run Rack application:
 $ rbenv shell 2.2.0-dev
 $ sudo WEB_CONCURRENCY=5 unicorn -c config/unicorn.rb
 ```
+
 
 *Siege report for 5 concurrencies:*
 
@@ -77,6 +79,7 @@ Failed transactions:	           0
 Longest transaction:	        1.20
 Shortest transaction:	        0.58
 ```
+
 *Siege report for 25 concurrencies:*
 
 ```
@@ -103,6 +106,7 @@ Run Rack application:
 $ rbenv shell 2.2.0-dev
 $ sudo puma config.ru -t 4:32 -p 80 -w 5
 ```
+
 CPU was loaded at near 360%.
 
 *Siege report for 5 concurrencies:*
@@ -121,6 +125,7 @@ Failed transactions:	           0
 Longest transaction:	        1.64
 Shortest transaction:	        0.46
 ```
+
 
 *Siege report for 25 concurrencies:*
 
@@ -166,6 +171,7 @@ Failed transactions:	           0
 Longest transaction:	        2.37
 Shortest transaction:	        0.38
 ```
+
 
 *Siege report for 25 concurrencies:*
 
@@ -241,7 +247,6 @@ $ torquebox deploy
 $ torquebox run
 ```
 
-
 *Siege report for 5 concurrencies:*
 
 ```
@@ -258,7 +263,6 @@ Failed transactions:	           0
 Longest transaction:	        1.07
 Shortest transaction:	        0.39
 ```
-
 
 *Siege report for 25 concurrencies:*
 
