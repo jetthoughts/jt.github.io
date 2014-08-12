@@ -195,6 +195,7 @@ $ sudo bundle exec puma config.ru -t 4:32 -p 80
 
 For first requests a response time was huge. But after the second experiment, it was decreased. During the experiments the CPU was loaded at near 350%.
 
+
 *Siege report for 5 concurrencies:*
 
 ```
@@ -211,6 +212,7 @@ Failed transactions:	           0
 Longest transaction:	        0.66
 Shortest transaction:	        0.25
 ```
+
 
 *Siege report for 25 concurrencies:*
 
@@ -239,6 +241,7 @@ $ torquebox deploy
 $ torquebox run
 ```
 
+
 *Siege report for 5 concurrencies:*
 
 ```
@@ -255,6 +258,7 @@ Failed transactions:	           0
 Longest transaction:	        1.07
 Shortest transaction:	        0.39
 ```
+
 
 *Siege report for 25 concurrencies:*
 
@@ -277,6 +281,7 @@ Shortest transaction:	        2.52
 
 After current investigation, I see that [Puma](http://puma.io) is cross platform and fast web server. So if you have not decided what ruby to choose, [Puma](http://puma.io) will be the best solution.
 More about benchmarking and web servers:
+
 - [The Ruby Web Benchmark Report](http://www.madebymarket.com/blog/dev/ruby-web-benchmark-report.html)
 - [A Simple Webserver Comparison](https://gist.github.com/cespare/3793565)
 - [Benchmarking TorqueBox](http://torquebox.org/news/2011/02/23/benchmarking-torquebox/)
