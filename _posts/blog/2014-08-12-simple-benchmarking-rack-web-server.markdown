@@ -66,7 +66,6 @@ $ sudo WEB_CONCURRENCY=5 unicorn -c config/unicorn.rb
  *Siege report for 5 concurrencies:*
 
 {% highlight linenos=table %}
-
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       15.83 secs
