@@ -82,6 +82,7 @@ Shortest transaction:	        0.58
 
 *Siege report for 25 concurrencies:*
 
+
 ```
 Transactions:		         250 hits
 Availability:		      100.00 %
@@ -129,6 +130,7 @@ Shortest transaction:	        0.46
 
 *Siege report for 25 concurrencies:*
 
+
 ```
 Transactions:		         250 hits
 Availability:		      100.00 %
@@ -157,6 +159,7 @@ CPU was loaded at 100% only
 
 *Siege report for 5 concurrencies:*
 
+
 ```
 Transactions:		          50 hits
 Availability:		      100.00 %
@@ -174,6 +177,7 @@ Shortest transaction:	        0.38
 
 
 *Siege report for 25 concurrencies:*
+
 
 ```
 Transactions:		         250 hits
