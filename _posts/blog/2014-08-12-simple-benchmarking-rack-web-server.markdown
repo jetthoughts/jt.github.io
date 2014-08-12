@@ -46,7 +46,6 @@ $ rbenv shell jruby-1.7.9
 $ gem install bundler puma torquebox
 ```
 
-
 Prepare the application:
 
 ```bash
