@@ -30,7 +30,7 @@ There are a lot of Ruby Web Servers. More details you can get from Digital Ocean
 - Hardware: MacMini Late 2012 (16 GB 1333 MHz DDR3, 2.5 GHz Intel Core i5)
 - OS: OS X 10.9.4 (13E28)
 - Ruby versions: ruby-2.2.0-dev, jruby-1.7.9
-- Benchmark tool: [Siege]
+- Benchmark tool: [Siege](http://linux.die.net/man/1/siege)
 - Web servers: [Puma](http://puma.io), [Unicorn](http://unicorn.bogomips.org), [TorqueBox](http://torquebox.org)
 
 # Benchmarking
