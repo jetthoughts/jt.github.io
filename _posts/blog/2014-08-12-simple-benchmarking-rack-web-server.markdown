@@ -49,24 +49,24 @@ $ gem install bundler puma torquebox
 
 Prepare the application:
 
-```bash
+{% highlight bash linenos=table %}
 $ git clone http://github.com/miry/geminabox_web_server
 $ cd geminabox_web_server
-```
+{% endhighlight %}
 
 ## Unicorn + Ruby
 
 Run Rack application:
 
-```bash
+{% highlight bash linenos=table %}
 $ rbenv shell 2.2.0-dev
 $ sudo WEB_CONCURRENCY=5 unicorn -c config/unicorn.rb
-```
-
+{% endhighlight %}
 
  *Siege report for 5 concurrencies:*
 
-```
+{% highlight linenos=table %}
+
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       15.83 secs
@@ -79,12 +79,11 @@ Successful transactions:          50
 Failed transactions:	           0
 Longest transaction:	        1.20
 Shortest transaction:	        0.58
-```
+{% endhighlight %}
 
 *Siege report for 25 concurrencies:*
 
-
-```
+{% highlight linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		       63.15 secs
@@ -97,23 +96,23 @@ Successful transactions:         250
 Failed transactions:	           0
 Longest transaction:	        6.58
 Shortest transaction:	        1.36
-```
+{% endhighlight %}
 
 ## Puma + Ruby
 ### With 5 workers
 
 Run Rack application:
 
-```bash
+{% highlight bash linenos=table %}
 $ rbenv shell 2.2.0-dev
 $ sudo puma config.ru -t 4:32 -p 80 -w 5
-```
+{% endhighlight %}
 
 CPU was loaded at near 360%.
 
 *Siege report for 5 concurrencies:*
 
-```
+{% highlight linenos=table %}
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       15.30 secs
@@ -126,13 +125,13 @@ Successful transactions:          50
 Failed transactions:	           0
 Longest transaction:	        1.64
 Shortest transaction:	        0.46
-```
+{% endhighlight %}
 
 
 *Siege report for 25 concurrencies:*
 
 
-```
+{% highlight linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		       61.02 secs
@@ -145,23 +144,24 @@ Successful transactions:         250
 Failed transactions:	           0
 Longest transaction:	       16.57
 Shortest transaction:	        0.52
-```
+{% endhighlight %}
 
 ## Puma + Ruby
 ### Without workers
 
 Run Rack application:
-```bash
+
+{% highlight bash linenos=table %}
 $ rbenv shell 2.2.0-dev
 $ sudo bundle exec puma config.ru -t 4:32 -p 80
-```
+{% endhighlight %}
 
 CPU was loaded at 100% only
 
 *Siege report for 5 concurrencies:*
 
 
-```
+{% highlight linenos=table %}
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       21.18 secs
@@ -174,13 +174,13 @@ Successful transactions:          50
 Failed transactions:	           0
 Longest transaction:	        2.37
 Shortest transaction:	        0.38
-```
+{% endhighlight %}
 
 
 *Siege report for 25 concurrencies:*
 
 
-```
+{% highlight linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		      111.67 secs
@@ -193,23 +193,23 @@ Successful transactions:         250
 Failed transactions:	           0
 Longest transaction:	       11.19
 Shortest transaction:	        7.34
-```
+{% endhighlight %}
 
 ## Puma + JRuby
 
 Run Rack application:
 
-```bash
+{% highlight bash linenos=table %}
 $ rbenv shell jruby-1.7.9
 $ sudo bundle exec puma config.ru -t 4:32 -p 80
-```
+{% endhighlight %}
 
 For first requests a response time was huge. But after the second experiment, it was decreased. During the experiments the CPU was loaded at near 350%.
 
 
 *Siege report for 5 concurrencies:*
 
-```
+{% highlight linenos=table %}
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       10.61 secs
@@ -222,12 +222,12 @@ Successful transactions:          50
 Failed transactions:	           0
 Longest transaction:	        0.66
 Shortest transaction:	        0.25
-```
+{% endhighlight %}
 
 
 *Siege report for 25 concurrencies:*
 
-```
+{% highlight linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		       41.97 secs
@@ -240,21 +240,21 @@ Successful transactions:         250
 Failed transactions:	           0
 Longest transaction:	        5.83
 Shortest transaction:	        0.35
-```
+{% endhighlight %}
 
 ## TorqueBox + JRuby
 
 Run Rack application:
 
-```bash
+{% highlight bash linenos=table %}
 $ rbenv shell jruby-1.7.9
 $ torquebox deploy
 $ torquebox run
-```
+{% endhighlight %}
 
 *Siege report for 5 concurrencies:*
 
-```
+{% highlight linenos=table %}
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       15.18 secs
@@ -267,11 +267,11 @@ Successful transactions:          50
 Failed transactions:	           0
 Longest transaction:	        1.07
 Shortest transaction:	        0.39
-```
+{% endhighlight %}
 
 *Siege report for 25 concurrencies:*
 
-```
+{% highlight linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		       63.80 secs
@@ -284,7 +284,7 @@ Successful transactions:         250
 Failed transactions:	           0
 Longest transaction:	        7.48
 Shortest transaction:	        2.52
-```
+{% endhighlight %}
 
 # Conclusion
 
