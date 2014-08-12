@@ -23,7 +23,7 @@ Let's use, for example, [Geminabox](http://tomlea.co.uk/posts/gem-in-a-box/) app
 
 <!--cut-->
 
-There are a lot of Ruby Web Servers. More details you can get from Digital Ocean article [A Comparison of (Rack) Web Servers for Ruby Web Applications]. I excluded **Passenger** because it requires to compile Nginx module and **Thin** - it could not use all CPU cores.
+There are a lot of Ruby Web Servers. More details you can get from Digital Ocean article [A Comparison of (Rack) Web Servers for Ruby Web Applications](https://www.digitalocean.com/community/tutorials/a-comparison-of-rack-web-servers-for-ruby-web-applications). I excluded **Passenger** because it requires to compile Nginx module and **Thin** - it could not use all CPU cores.
 
 ## Test environment:
 
@@ -31,7 +31,7 @@ There are a lot of Ruby Web Servers. More details you can get from Digital Ocean
 - OS: OS X 10.9.4 (13E28)
 - Ruby versions: ruby-2.2.0-dev, jruby-1.7.9
 - Benchmark tool: [Siege]
-- Web servers: [Puma], [Unicorn], [TorqueBox]
+- Web servers: [Puma](http://puma.io), [Unicorn](http://unicorn.bogomips.org), [TorqueBox](http://torquebox.org)
 
 
 
