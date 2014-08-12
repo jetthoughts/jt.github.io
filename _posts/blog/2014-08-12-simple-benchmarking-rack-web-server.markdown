@@ -46,30 +46,6 @@ $ rbenv shell jruby-1.7.9
 $ gem install bundler puma torquebox
 ```
 
-Prepare the application:
-
-```shell
-$ git clone http://github.com/miry/geminabox_web_server
-$ cd geminabox_web_server
-```
-
-## Unicorn + Ruby
-
-Run Rack application:
-```bash
-$ rbenv shell 2.2.0-dev
-$ sudo WEB_CONCURRENCY=5 unicorn -c config/unicorn.rb
-```
-
-# Conclusion
-
-After current investigation, I see that [Puma] is cross platform and fast web server. So if you have not decided what ruby to choose. [Puma] will be best solution.
-More about benchmarking and web servers:
-- [The Ruby Web Benchmark Report](http://www.madebymarket.com/blog/dev/ruby-web-benchmark-report.html)
-- [A Simple Webserver Comparison](https://gist.github.com/cespare/3793565)
-- [Benchmarking TorqueBox](http://torquebox.org/news/2011/02/23/benchmarking-torquebox/)
-- [High Performance Ruby Part 3: non-blocking IO and web application scalability](http://blog.gregweber.info/posts/2011-06-16-high-performance-rb-part3)
-
 [Geminabox]:http://tomlea.co.uk/posts/gem-in-a-box/
 [Puma]:http://puma.io
 [Unicorn]:http://unicorn.bogomips.org
