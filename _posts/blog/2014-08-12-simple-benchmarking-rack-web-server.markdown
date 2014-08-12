@@ -46,12 +46,4 @@ $ rbenv shell jruby-1.7.9
 $ gem install bundler puma torquebox
 ```
 
-[Geminabox]:http://tomlea.co.uk/posts/gem-in-a-box/
-[Puma]:http://puma.io
-[Unicorn]:http://unicorn.bogomips.org
-[A Comparison of (Rack) Web Servers for Ruby Web Applications]:https://www.digitalocean.com/community/tutorials/a-comparison-of-rack-web-servers-for-ruby-web-applications
-[rbenv]:http://rbenv.org
-[TorqueBox]:http://torquebox.org
-[Install TorqueBox]:http://torquebox.org/builds/LATEST/getting-started/first-steps.html#d0e407
-[Siege]:http://linux.die.net/man/1/siege
 
