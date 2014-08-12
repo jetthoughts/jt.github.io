@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Michael Nikitochkin
-authors_git: miry_sof
+authors_git: miry
 title: Simple Benchmarking Rack Web Server
 date: 12-08-2014
 tags:
