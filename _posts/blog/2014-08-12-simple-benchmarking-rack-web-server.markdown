@@ -65,7 +65,7 @@ $ sudo WEB_CONCURRENCY=5 unicorn -c config/unicorn.rb
 
  *Siege report for 5 concurrencies:*
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       15.83 secs
@@ -82,7 +82,7 @@ Shortest transaction:	        0.58
 
 *Siege report for 25 concurrencies:*
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		       63.15 secs
@@ -111,7 +111,7 @@ CPU was loaded at near 360%.
 
 *Siege report for 5 concurrencies:*
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       15.30 secs
@@ -130,7 +130,7 @@ Shortest transaction:	        0.46
 *Siege report for 25 concurrencies:*
 
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		       61.02 secs
@@ -160,7 +160,7 @@ CPU was loaded at 100% only
 *Siege report for 5 concurrencies:*
 
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       21.18 secs
@@ -179,7 +179,7 @@ Shortest transaction:	        0.38
 *Siege report for 25 concurrencies:*
 
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		      111.67 secs
@@ -208,7 +208,7 @@ For first requests a response time was huge. But after the second experiment, it
 
 *Siege report for 5 concurrencies:*
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       10.61 secs
@@ -226,7 +226,7 @@ Shortest transaction:	        0.25
 
 *Siege report for 25 concurrencies:*
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		       41.97 secs
@@ -253,7 +253,7 @@ $ torquebox run
 
 *Siege report for 5 concurrencies:*
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		          50 hits
 Availability:		      100.00 %
 Elapsed time:		       15.18 secs
@@ -270,7 +270,7 @@ Shortest transaction:	        0.39
 
 *Siege report for 25 concurrencies:*
 
-{% highlight linenos=table %}
+{% highlight bash linenos=table %}
 Transactions:		         250 hits
 Availability:		      100.00 %
 Elapsed time:		       63.80 secs
