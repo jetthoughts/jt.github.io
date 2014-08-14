@@ -67,7 +67,7 @@ The testability of this solution is very high. You can instantiate decorators wi
 
 The usage of decorators is the cool and clean solution. But what if I need some really complicated logic to build the view that is based on 2 non-relative models? What if my logic is not related to models at all? The second name of the Decorator pattern is Wrapper. What should I wrap?
 
-### View object.
+### View object
 
 I present to you View Objects! The View Objects concept is simple. All the logic you need in views should go into the View Objects.
 
