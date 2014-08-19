@@ -2,11 +2,11 @@
 layout: post
 author: Dmitriy Dudkin
 authors_git: tmwh
-title: Cleaning Up Your Rails Views With Presenters
+title: Cleaning Up Your Rails Views With View Objects
 date: 14-08-2014
 tags:
 - rails
-- presenters
+- view objects
 
 categories:
 - blog
