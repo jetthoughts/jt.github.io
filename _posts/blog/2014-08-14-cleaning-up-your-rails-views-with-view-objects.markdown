@@ -15,9 +15,11 @@ categories:
 
 ### Why logic in views is a bad idea?
 
-The main reason not to put the complex logic into your views is, of course, testing. I don't want to say that it is impossible to test logic defined in views, but it is much more complicated. And, as a very lazy person, I don't like doing an extra work.
+<div class="left">
+    <img src="https://farm6.staticflickr.com/5584/14672643419_807619aacc.jpg" title="cleaner"/>
+</div>
 
-![cleaner](https://farm6.staticflickr.com/5584/14672643419_807619aacc.jpg)
+The main reason not to put the complex logic into your views is, of course, testing. I don't want to say that it is impossible to test logic defined in views, but it is much more complicated. And, as a very lazy person, I don't like doing an extra work.
 
 <!--cut-->
 
