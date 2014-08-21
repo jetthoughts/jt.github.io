@@ -13,7 +13,7 @@ categories:
 - tech
 ---
 
-### Why logic in views is a bad idea?
+## Why logic in views is a bad idea?
 
 The main reason not to put the complex logic into your views is, of course, testing. I don't want to say that it is impossible to test logic defined in views, but it is much more complicated. And, as a very lazy person, I don't like doing an extra work.
 
@@ -35,7 +35,7 @@ In our company we have a few simple conventions about logic in views:
 
 There are some common practices to resolve logic-less views problems. Let's take a closer look.
 
-### What is wrong with helpers?
+## What is wrong with helpers?
 
 Rails gives us a powerful tool named helpers. You can define methods inside those modules and then magically use them inside your views. Cool! We can put logic inside those modules and forget about our problems!
 
@@ -53,13 +53,13 @@ Here I will give you the list of what I don't like in helpers:
 
 - The testing is much easier, but still not perfect.
 
-### Fat models
+## Fat models
 
 This is not an option in the real world, but it deserves to be mentioned in this list. We can encapsulate all our views logic inside models. Of course, this will lead us to 1000 lines of unmaintainable code. But, finally, we can test it easily and have a working inheritance.
 
 To avoid model code overgrowth we can define all views-related logic in modules and then include them into model class. But still, we have one monolith class with hundreds of public methods.
 
-### Decorators
+## Decorators
 
 To separate views-related logic from models folks from OOP world are using the [Decorator pattern]. This pattern allows to add behaviors to a single object. In rails world we have a few gems implementing this pattern. The alive one is [draper] gem. It has a cool DSL not only for decorating your models, but also for decoration of their relations. So, you can build the whole decorators tree using simple `Model.decorate` method.
 
@@ -69,7 +69,7 @@ The testability of this solution is very high. You can instantiate decorators wi
 
 The usage of decorators is the cool and clean solution. But what if I need some really complicated logic to build the view that is based on 2 non-relative models? What if my logic is not related to models at all? The second name of the Decorator pattern is Wrapper. What should I wrap?
 
-### View object
+## View object
 
 I present to you View Objects! The View Objects concept is simple. All the logic you need in views should go into the View Objects.
 
