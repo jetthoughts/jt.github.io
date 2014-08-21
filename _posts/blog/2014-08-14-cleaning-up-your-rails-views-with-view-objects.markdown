@@ -15,13 +15,13 @@ categories:
 
 ### Why logic in views is a bad idea?
 
-<div class="left" style="margin-right: 1em;">
-    <img src="https://farm6.staticflickr.com/5584/14672643419_807619aacc.jpg" title="cleaner"/>
-</div>
-
 The main reason not to put the complex logic into your views is, of course, testing. I don't want to say that it is impossible to test logic defined in views, but it is much more complicated. And, as a very lazy person, I don't like doing an extra work.
 
 <!--cut-->
+
+<div class="left" style="margin-right: 1em;">
+    <img src="https://farm6.staticflickr.com/5584/14672643419_807619aacc.jpg" title="cleaner"/>
+</div>
 
 The second reason is that views should have as little  embedded dynamic code as possible. This gives us much cleaner code which is easy to modify and maintain.
 
