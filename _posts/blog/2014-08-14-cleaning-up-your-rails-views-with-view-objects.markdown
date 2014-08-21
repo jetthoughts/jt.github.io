@@ -15,7 +15,7 @@ categories:
 
 ### Why logic in views is a bad idea?
 
-<div class="left">
+<div class="left" style="margin-right: 1em;">
     <img src="https://farm6.staticflickr.com/5584/14672643419_807619aacc.jpg" title="cleaner"/>
 </div>
 
