@@ -19,7 +19,7 @@ Sometimes you don't want to write big javascript application just to have workin
 
 *Note: I am using [bootstrap] modals here but this solution can be adopted to any js modals implementations.*
 
-You can find the working demo here <http://remote-modals-demo.herokuapp.com/> | [source code on github]
+You can find the working demo here [source code on github](http://remote-modals-demo.herokuapp.com/)
 
 ####**Step 1. Modify your layout files.**
 
@@ -187,7 +187,6 @@ And, finally, you should add 2 attributes to your form:
 
 `data-modal` is used to tell our script to handle this form as the modal form.
 
-I've created a small demo application which you can find here: <http://remote-modals-demo.herokuapp.com/> | [source code on github]
+I've created a small demo application which you can find here:  [source code on github](http://remote-modals-demo.herokuapp.com/)
 
-[source code on github]:https://github.com/tmwh/remote-modals-demo
-[bootstrap]:http://getbootstrap.com/javascript/#modals
+
