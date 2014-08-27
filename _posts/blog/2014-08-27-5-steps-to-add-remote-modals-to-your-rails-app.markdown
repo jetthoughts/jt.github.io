@@ -19,7 +19,7 @@ Sometimes you don't want to write big javascript application just to have workin
 
 *Note: I am using [bootstrap](http://getbootstrap.com/javascript/#modals) modals here but this solution can be adopted to any js modals implementations.*
 
-You can find the working demo here [source code on github](http://remote-modals-demo.herokuapp.com/)
+You can find the working demo here. [source code on github](http://remote-modals-demo.herokuapp.com/)
 
 ####**Step 1. Modify your layout files**
 
