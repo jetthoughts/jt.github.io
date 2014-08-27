@@ -23,11 +23,10 @@ You can find the working demo here [source code on github](http://remote-modals-
 
 ####**Step 1. Modify your layout files**
 
-We want to render our modals the same way we are rendering our regular pages but render them with the `modal` layout:
-
-        <%# app/views/layouts/modal.html.erb %>
-        <div class="modal" id="mainModal" tabindex="-1" role="dialog" aria-labelledby="mainModalLabel"       aria-hidden="true">
-    <div class="modal-dialog">
+{% highlight erb linenos=table %}
+<%# app/views/layouts/modal.html.erb %>
+<div class="modal" id="mainModal" tabindex="-1" role="dialog" aria-labelledby="mainModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -35,15 +34,19 @@ We want to render our modals the same way we are rendering our regular pages but
           <%= yield :title if content_for? :title %>&nbsp;
         </h4>
       </div>
-     <%= yield %>
+
+      <%= yield %>
     </div>
-    </div>
-    </div>
-    
+  </div>
+</div>
+{% endhighlight %}
+
 Also, we need to define place where modals will be rendered. Let's add it to `application` layout:
 
-    <%# app/views/layouts/application.html.erb %>
-    <div id="modal-holder"></div>
+{% highlight erb linenos=table %}
+<%# app/views/layouts/application.html.erb %>
+<div id="modal-holder"></div>
+{% endhighlight %}
     
 ####**Step 2. Create modal.js.coffee**
 
