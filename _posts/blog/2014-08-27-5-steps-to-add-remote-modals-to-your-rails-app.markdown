@@ -17,5 +17,5 @@ Sometimes you don't want to write big javascript application just to have workin
 
 <!--cut-->
 
-
+*Note: I am using [bootstrap](http://getbootstrap.com/javascript/#modals) modals here but this solution can be adopted to any js modals implementations.*
 
