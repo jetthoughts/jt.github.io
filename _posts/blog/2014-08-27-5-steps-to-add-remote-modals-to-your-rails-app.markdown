@@ -51,7 +51,7 @@ Now, we can move to the javascript part of our modals implementation. We want ou
 
 Also, we need to work on the remote forms submit. The application should properly handle redirects to the given page and form redisplays with errors. Let's assume that if the response has `Location` header set, then we need to redirect user to the given location, otherwise we will redisplay the form.
 
-```coffescript
+{% highlight coffeescript linenos=table %}
 # app/assets/javascripts/modals.js.coffee
 $ ->
   modal_holder_selector = '#modal-holder'
@@ -80,5 +80,5 @@ $ ->
         find(modal_selector).modal()
 
       false
-```
+{% endhighlight %}
 
