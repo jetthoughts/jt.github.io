@@ -2,7 +2,7 @@
 layout: post
 author: Dmitriy Dudkin
 authors_git: tmwh
-title: Cleaning Up Your Rails Views With View Objects
+title: 5 Steps to Add Remote Modals to Your Rails App
 date: 27-08-2014
 tags:
 - rails
