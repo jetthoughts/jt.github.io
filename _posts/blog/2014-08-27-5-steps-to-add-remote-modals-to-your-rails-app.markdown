@@ -44,4 +44,41 @@ Also, we need to define place where modals will be rendered. Let's add it to `ap
 
     <%# app/views/layouts/application.html.erb %>
     <div id="modal-holder"></div>
+    
+####**Step 2. Create modal.js.coffee**
+
+Now, we can move to the javascript part of our modals implementation. We want our links with `data-modal` attribute to be rendered in modal windows.
+
+Also, we need to work on the remote forms submit. The application should properly handle redirects to the given page and form redisplays with errors. Let's assume that if the response has `Location` header set, then we need to redirect user to the given location, otherwise we will redisplay the form.
+
+```coffescript
+# app/assets/javascripts/modals.js.coffee
+$ ->
+  modal_holder_selector = '#modal-holder'
+  modal_selector = '.modal'
+
+  $(document).on 'click', 'a[data-modal]', ->
+    location = $(this).attr('href')
+    #Load modal dialog from server
+    $.get location, (data)->
+      $(modal_holder_selector).html(data).
+      find(modal_selector).modal()
+    false
+
+  $(document).on 'ajax:success',
+    'form[data-modal]', (event, data, status, xhr)->
+      url = xhr.getResponseHeader('Location')
+      if url
+        # Redirect to url
+        window.location = url
+      else
+        # Remove old modal backdrop
+        $('.modal-backdrop').remove()
+
+        # Replace old modal with new one
+        $(modal_holder_selector).html(data).
+        find(modal_selector).modal()
+
+      false
+```
 
