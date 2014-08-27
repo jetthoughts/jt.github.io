@@ -85,3 +85,105 @@ $ ->
       false
 {% endhighlight %}
 
+####**Step 3. Create Modal Responder**
+
+Ok, now when we have prepared our frontend, we need to implement the server side logic.
+
+I am widely using `respond_with` in my applications, so I want something similar for modals.
+
+The `respond_with` method is using the `ActionController::Responder` class for result rendering. Let's make our own implementation and call it `ModalResponder`.
+
+{% highlight ruby linenos=table %}
+class ModalResponder < ActionController::Responder
+  cattr_accessor :modal_layout
+  self.modal_layout = 'modal'
+
+  def render(*args)
+    options = args.extract_options!
+    if request.xhr?
+      options.merge! layout: modal_layout
+    end
+    controller.render *args, options
+  end
+
+  def default_render(*args)
+    render(*args)
+  end
+
+  def redirect_to(options)
+    if request.xhr?
+      head :ok, location: controller.url_for(options)
+    else
+      controller.redirect_to(options)
+    end
+  end
+end
+{% endhighlight %}
+
+Here, we are overriding `render` and `redirect_to` methods to give them the new behavior when request is made via xhr.
+
+If request is made via ajax we want `render` to use our custom `modal` layout. And instead of redirecting we want `redirect_to` to return only headers with `location` header set which will handle our js logic.
+
+####**Step 4. Modify Application Controller**
+
+Now, when we have our custom `ModalResponder`, let's add our own helper `respond_modal_with`. It will call the `respond_with` method with `ModalResponder` specified as the responder:
+
+{% highlight ruby linenos=table %}
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
+
+  def respond_modal_with(*args, &blk)
+    options = args.extract_options!
+    options[:responder] = ModalResponder
+    respond_with *args, options, &blk
+  end
+end
+{% endhighlight %}
+
+####**Step 5. Use it!**
+
+Ok, now we have everything to use our cool remote modals. Let's use them!
+
+Well, in the first place, we need to add a link to the modal:
+
+{% highlight erb linenos=table %}
+<%= link_to 'Create category', new_category_path, 
+            data: { modal: true } %>
+{% endhighlight %}
+
+Now, we need to modify our controller using our new `respond_modal_with` method instead of `respond_with`:
+
+{% highlight ruby linenos=table %}
+class CategoriesController < ApplicationController
+  respond_to :html, :json
+
+  def new
+    @category = Category.new
+    respond_modal_with @category
+  end
+
+  def create
+    @category = Category.create(category_params)
+    respond_modal_with @category, location: root_path
+  end
+
+  private
+
+  def category_params
+    params.require(:category).permit(:name, :order)
+  end
+end
+{% endhighlight %}
+
+And, finally, you should add 2 attributes to your form:
+
+{% highlight erb linenos=table %}
+<%= simple_form_for(@category, remote: request.xhr?, html: { data: { modal: true } }) %>
+{% endhighlight %}
+
+`remote` is used to tell `jquery_ujs` to submit this form with ajax. I am using `request.xhr?` because I want this form be fully functional both when displayed in modal and separately.
+
+`data-modal` is used to tell our script to handle this form as the modal form.
+
+I've created a small demo application which you can find here:  [source code on github](http://remote-modals-demo.herokuapp.com/)
+
