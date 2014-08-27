@@ -95,7 +95,7 @@ I am widely using `respond_with` in my applications, so I want something similar
 
 The `respond_with` method is using the `ActionController::Responder` class for result rendering. Let's make our own implementation and call it `ModalResponder`.
 
-```ruby
+{% highlight ruby linenos=table %}
 class ModalResponder < ActionController::Responder
   cattr_accessor :modal_layout
   self.modal_layout = 'modal'
@@ -120,7 +120,7 @@ class ModalResponder < ActionController::Responder
     end
   end
 end
-```
+{% endhighlight %}
 
 Here, we are overriding `render` and `redirect_to` methods to give them the new behavior when request is made via xhr.
 
@@ -130,7 +130,7 @@ If request is made via ajax we want `render` to use our custom `modal` layout. A
 
 Now, when we have our custom `ModalResponder`, let's add our own helper `respond_modal_with`. It will call the `respond_with` method with `ModalResponder` specified as the responder:
 
-```ruby
+{% highlight ruby linenos=table %}
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
@@ -140,7 +140,7 @@ class ApplicationController < ActionController::Base
     respond_with *args, options, &blk
   end
 end
-```
+{% endhighlight %}
 
 ####**Step 5. Use it!**
 
@@ -155,7 +155,7 @@ Well, in the first place, we need to add a link to the modal:
 
 Now, we need to modify our controller using our new `respond_modal_with` method instead of `respond_with`:
 
-```ruby
+{% highlight ruby linenos=table %}
 class CategoriesController < ApplicationController
   respond_to :html, :json
 
@@ -175,7 +175,7 @@ class CategoriesController < ApplicationController
     params.require(:category).permit(:name, :order)
   end
 end
-```
+{% endhighlight %}
 
 And, finally, you should add 2 attributes to your form:
 
