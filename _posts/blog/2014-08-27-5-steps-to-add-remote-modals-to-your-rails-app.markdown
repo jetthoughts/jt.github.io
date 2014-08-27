@@ -21,7 +21,7 @@ Sometimes you don't want to write big javascript application just to have workin
 
 You can find the working demo here [source code on github](http://remote-modals-demo.herokuapp.com/)
 
-####**Step 1. Modify your layout files.**
+####**Step 1. Modify your layout files**
 
 We want to render our modals the same way we are rendering our regular pages but render them with the `modal` layout:
 
@@ -39,4 +39,9 @@ We want to render our modals the same way we are rendering our regular pages but
     </div>
     </div>
     </div>
+    
+Also, we need to define place where modals will be rendered. Let's add it to `application` layout:
+
+    <%# app/views/layouts/application.html.erb %>
+    <div id="modal-holder"></div>
 
