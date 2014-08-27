@@ -3,142 +3,191 @@ layout: post
 author: Dmitriy Dudkin
 authors_git: tmwh
 title: Cleaning Up Your Rails Views With View Objects
-date: 14-08-2014
+date: 27-08-2014
 tags:
 - rails
-- view objects
+- remote modals
 
 categories:
 - blog
 - tech
 ---
 
-#### **Why logic in views is a bad idea?**
-
-The main reason not to put the complex logic into your views is, of course, testing. I don't want to say that it is impossible to test logic defined in views, but it is much more complicated. And, as a very lazy person, I don't like doing an extra work.
+Sometimes you don't want to write big javascript application just to have working remote modals in your rails application. The whole JSON-response parsing thing looks big and scary. Why can't we simply render our views on server and just display them as modals to users? Let's take a look at how we can implement this with elegance.
 
 <!--cut-->
 
-<div class="left" style="margin-right: 1em;">
-    <img src="https://farm6.staticflickr.com/5584/14672643419_807619aacc.jpg" title="cleaner"/>
+*Note: I am using [bootstrap] modals here but this solution can be adopted to any js modals implementations.*
+
+You can find the working demo here <http://remote-modals-demo.herokuapp.com/> | [source code on github]
+
+##Step 1. Modify your layout files.
+
+We want to render our modals the same way we are rendering our regular pages but render them with the `modal` layout:
+
+```html.erb
+<%# app/views/layouts/modal.html.erb %>
+<div class="modal" id="mainModal" tabindex="-1" role="dialog" aria-labelledby="mainModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="mainModalLabel">
+          <%= yield :title if content_for? :title %>&nbsp;
+        </h4>
+      </div>
+
+      <%= yield %>
+    </div>
+  </div>
 </div>
+```
 
-The second reason is that views should have as little  embedded dynamic code as possible. This gives us much cleaner code which is easy to modify and maintain.
+Also, we need to define place where modals will be rendered. Let's add it to `application` layout:
 
-In our company we have a few simple conventions about logic in views:
+```html.erb
+<%# app/views/layouts/application.html.erb %>
+<div id="modal-holder"></div>
+```
 
-- The *Use only one dot* rule. Which is also known as the [Law of Demeter]. You should try to avoid expressions that are accessible with more than 1 dot. For example,  `@user.current_ledger.articles`. It is obvious that you should make this call in controller, not in views.
+##Step 2. Create modal.js.coffee
 
-- Don't hit database in views. This mistake is just as obvious as it is common. You should not make database calls inside views.
+Now, we can move to the javascript part of our modals implementation. We want our links with `data-modal` attribute to be rendered in modal windows.
 
-- Avoid the variables assignments inside views. You should not make any computations in the views. They should only display already computed values.
+Also, we need to work on the remote forms submit. The application should properly handle redirects to the given page and form redisplays with errors. Let's assume that if the response has `Location` header set, then we need to redirect user to the given location, otherwise we will redisplay the form.
 
-There are some common practices to resolve logic-less views problems. Let's take a closer look.
+```coffescript
+# app/assets/javascripts/modals.js.coffee
+$ ->
+  modal_holder_selector = '#modal-holder'
+  modal_selector = '.modal'
 
-#### **What is wrong with helpers?**
+  $(document).on 'click', 'a[data-modal]', ->
+    location = $(this).attr('href')
+    #Load modal dialog from server
+    $.get location, (data)->
+      $(modal_holder_selector).html(data).
+      find(modal_selector).modal()
+    false
 
-Rails gives us a powerful tool named helpers. You can define methods inside those modules and then magically use them inside your views. Cool! We can put logic inside those modules and forget about our problems!
+  $(document).on 'ajax:success',
+    'form[data-modal]', (event, data, status, xhr)->
+      url = xhr.getResponseHeader('Location')
+      if url
+        # Redirect to url
+        window.location = url
+      else
+        # Remove old modal backdrop
+        $('.modal-backdrop').remove()
 
-Here I will give you the list of what I don't like in helpers:
+        # Replace old modal with new one
+        $(modal_holder_selector).html(data).
+        find(modal_selector).modal()
 
-- Helpers are often being used to retrieve data from the db. An example: `visible_comments_for(article)`
+      false
+```
 
-- A big number of helpers are generating html tags with ruby. In this case when I need to modify the markup, I will have to modify all the helpers, not markup files. The helpers should format data, not generate markup.
+##Step 3. Create Modal Responder
 
-- It is not obvious what is the receiver object of the helper method. This call `prepare_output(article.body)` reminds me about global procedures and functions. C'mon, this is an OOP world, why the stuff like that is still alive here?
+Ok, now when we have prepared our frontend, we need to implement the server side logic.
 
-- Helper functions are defined inside modules, so we don't have the power of inheritance (we can mix modules with modules, but that is not the same).
+I am widely using `respond_with` in my applications, so I want something similar for modals.
 
-- It is hard to track helpers dependencies on another helpers. I've seen a lot of helpers that are calling another ones not from their native module.
+The `respond_with` method is using the `ActionController::Responder` class for result rendering. Let's make our own implementation and call it `ModalResponder`.
 
-- The testing is much easier, but still not perfect.
+```ruby
+class ModalResponder < ActionController::Responder
+  cattr_accessor :modal_layout
+  self.modal_layout = 'modal'
 
-#### **Fat models**
-
-This is not an option in the real world, but it deserves to be mentioned in this list. We can encapsulate all our views logic inside models. Of course, this will lead us to 1000 lines of unmaintainable code. But, finally, we can test it easily and have a working inheritance.
-
-To avoid model code overgrowth we can define all views-related logic in modules and then include them into model class. But still, we have one monolith class with hundreds of public methods.
-
-#### **Decorators**
-
-To separate views-related logic from models folks from OOP world are using the [Decorator pattern]. This pattern allows to add behaviors to a single object. In rails world we have a few gems implementing this pattern. The alive one is [draper] gem. It has a cool DSL not only for decorating your models, but also for decoration of their relations. So, you can build the whole decorators tree using simple `Model.decorate` method.
-
-The decorator pattern was designed for replacing your object with the new one with additional functionality, so you can use your decorator objects as you would use your models objects.
-
-The testability of this solution is very high. You can instantiate decorators with stubs without hitting the database in the most of your test cases at all.
-
-The usage of decorators is the cool and clean solution. But what if I need some really complicated logic to build the view that is based on 2 non-relative models? What if my logic is not related to models at all? The second name of the Decorator pattern is Wrapper. What should I wrap?
-
-#### **View object**
-
-I present to you View Objects! The View Objects concept is simple. All the logic you need in views should go into the View Objects.
-
-The View Object sometimes can be the simple decorator. This happens when your view logic depends only on the model data. In this case you need to "add custom behavior" to an object, this is where decorator suits perfectly:
-
-{% highlight ruby linenos=table %}
-class DiscussionViewObject
-  attr_reader :discussion
-
-  delegate :name, :created_at, to: :discussion
-
-  def initialize(discussion)
-    @discussion = discussion
+  def render(*args)
+    options = args.extract_options!
+    if request.xhr?
+      options.merge! layout: modal_layout
+    end
+    controller.render *args, options
   end
 
-  def name_with_time
-    @name_with_time ||= created_at.strftime('%Y/%m/%d') + name
-  end
-end
-{% endhighlight %}
-
-The second case is when your view logic is based on several not connected models or even on the request. When you are facing this problem the View Object can implement the "Presenter" part of the MVP pattern.
-
-The *MVP* (Model-View-Presenter) is a pattern well-known in C#/Java world. It is mostly used to build interfaces (views, in our case). It allows us to separate concerns: the model encapsulates domain logic, the presenter takes all the view logic and the view [knows nothing].
-
-The main difference between 'classic' presenters and our ones is that we still have a controller that receives user's inputs and commands. 
-
-Here is the View Object that implements the logic from the 2 unrelated models:
-
-{% highlight ruby linenos=table %}
-class IssuesPresenter
-  attr_reader :issues, filters
-
-  def initialize(issues, filters)
-    @issues, @filters = issues, filters
+  def default_render(*args)
+    render(*args)
   end
 
-  def has_selected_filters?
-    filter.any?
-  end
-
-  def all_issues_are_resolved?
-    issues.all?(:resolved?)
+  def redirect_to(options)
+    if request.xhr?
+      head :ok, location: controller.url_for(options)
+    else
+      controller.redirect_to(options)
+    end
   end
 end
-{% endhighlight %}
+```
 
-The View Object allows you to build complex page logic using simple view logic wrappers.
+Here, we are overriding `render` and `redirect_to` methods to give them the new behavior when request is made via xhr.
 
-As in the case with decorators, you should instantiate the view objects at the end of your actions. The controller should process given parameters, select necessary models, instantiate view objects and then give control to view (render it).
+If request is made via ajax we want `render` to use our custom `modal` layout. And instead of redirecting we want `redirect_to` to return only headers with `location` header set which will handle our js logic.
 
-The view can use view objects methods along with models methods if that is necessary, but I don't recommend mixing them inside one view.
+##Step 4. Modify Application Controller
 
-You can have as many view objects as you want. When you need some unique logic, you will have 1 view object per action and when you have the repeating logic, you can reuse your view objects in multiple actions.
+Now, when we have our custom `ModalResponder`, let's add our own helper `respond_modal_with`. It will call the `respond_with` method with `ModalResponder` specified as the responder:
 
-But you should not stick to your actions. For example, if one of your layouts has a complex logic depending on the current controller state, then you can create View Object for it and instantiate it in actions where you are using it (with `before_filter` for example).
+```ruby
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
 
-The main pros of using this solution are:
+  def respond_modal_with(*args, &blk)
+    options = args.extract_options!
+    options[:responder] = ModalResponder
+    respond_with *args, options, &blk
+  end
+end
+```
 
-- View Objects are the [PORO], so you can use all cool OOP features ruby has: mixins, inheritance, etc.
+##Step 5. Use it!
 
-- View Objects are not bound to models directly, so you can use them when the decorator does not suit properly.
+Ok, now we have everything to use our cool remote modals. Let's use them!
 
-- Test View Objects logic is as easy as test ruby classes. As in decorators solution, you can feed View Objects with stubs to increase the tests speed.
+Well, in the first place, we need to add a link to the modal:
 
-[Law of Demeter]:http://en.wikipedia.org/wiki/Law_of_Demeter#In_object-oriented_programming
-[Decorator pattern]:http://en.wikipedia.org/wiki/Decorator_pattern
-[draper]:https://github.com/drapergem/draper
-[knows nothing]:http://youtu.be/Pkyy57iMaB0
-[PORO]:http://blog.jayfields.com/2007/10/ruby-poro.html
+```html.erb
+<%= link_to 'Create category', new_category_path, 
+            data: { modal: true } %>
+```
 
-Image courtesy of Vectorolie/ FreeDigitalPhotos.net
+Now, we need to modify our controller using our new `respond_modal_with` method instead of `respond_with`:
+
+```ruby
+class CategoriesController < ApplicationController
+  respond_to :html, :json
+
+  def new
+    @category = Category.new
+    respond_modal_with @category
+  end
+
+  def create
+    @category = Category.create(category_params)
+    respond_modal_with @category, location: root_path
+  end
+
+  private
+
+  def category_params
+    params.require(:category).permit(:name, :order)
+  end
+end
+```
+
+And, finally, you should add 2 attributes to your form:
+
+```html.erb
+<%= simple_form_for(@category, remote: request.xhr?, html: { data: { modal: true } }) %>
+```
+
+`remote` is used to tell `jquery_ujs` to submit this form with ajax. I am using `request.xhr?` because I want this form be fully functional both when displayed in modal and separately.
+
+`data-modal` is used to tell our script to handle this form as the modal form.
+
+I've created a small demo application which you can find here: <http://remote-modals-demo.herokuapp.com/> | [source code on github]
+
+[source code on github]:https://github.com/tmwh/remote-modals-demo
+[bootstrap]:http://getbootstrap.com/javascript/#modals
