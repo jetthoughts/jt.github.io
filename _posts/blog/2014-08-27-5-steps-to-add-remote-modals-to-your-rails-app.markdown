@@ -21,7 +21,7 @@ Sometimes you don't want to write big javascript application just to have workin
 
 You can find the working demo here <http://remote-modals-demo.herokuapp.com/> | [source code on github]
 
-##Step 1. Modify your layout files.
+####**Step 1. Modify your layout files.**
 
 We want to render our modals the same way we are rendering our regular pages but render them with the `modal` layout:
 
@@ -50,7 +50,7 @@ Also, we need to define place where modals will be rendered. Let's add it to `ap
 <div id="modal-holder"></div>
 ```
 
-##Step 2. Create modal.js.coffee
+####**Step 2. Create modal.js.coffee**
 
 Now, we can move to the javascript part of our modals implementation. We want our links with `data-modal` attribute to be rendered in modal windows.
 
@@ -87,7 +87,7 @@ $ ->
       false
 ```
 
-##Step 3. Create Modal Responder
+####**Step 3. Create Modal Responder**
 
 Ok, now when we have prepared our frontend, we need to implement the server side logic.
 
@@ -126,7 +126,7 @@ Here, we are overriding `render` and `redirect_to` methods to give them the new 
 
 If request is made via ajax we want `render` to use our custom `modal` layout. And instead of redirecting we want `redirect_to` to return only headers with `location` header set which will handle our js logic.
 
-##Step 4. Modify Application Controller
+####**Step 4. Modify Application Controller**
 
 Now, when we have our custom `ModalResponder`, let's add our own helper `respond_modal_with`. It will call the `respond_with` method with `ModalResponder` specified as the responder:
 
@@ -142,7 +142,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-##Step 5. Use it!
+####**Step 5. Use it!**
 
 Ok, now we have everything to use our cool remote modals. Let's use them!
 
