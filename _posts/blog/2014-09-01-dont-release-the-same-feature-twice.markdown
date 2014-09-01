@@ -16,9 +16,7 @@ I do not like bureaucracy, but I can not live without it. That's why I have inte
 
 <!--cut-->
 
-<div class="left" style="margin-right: 1em;">
-    <img src="http://images1.wikia.nocookie.net/__cb20110608003336/starwars/images/thumb/9/99/MalgusLeaves-Deceived.jpg/830px-MalgusLeaves-Deceived.jpg" title="deceived"/>
-</div>
+![I was Deceived](http://images1.wikia.nocookie.net/__cb20110608003336/starwars/images/thumb/9/99/MalgusLeaves-Deceived.jpg/830px-MalgusLeaves-Deceived.jpg)
 
 First feelings were as if a seller had sold the same thing to many customers :)
 
@@ -34,6 +32,6 @@ I have asked my team. There was a bug in recently deployed version of an applica
 1. **We can create a fix in the same branch**. I don't think it is a good idea. According to Gitflow, we should create a patch in a hotfix branch instead. If we don't use such flows, we should rebase the branch first. But what is  the difference, if I create a new branch and rebase the merged branch against master?
 
 
-#### Solution
+#### **Solution**
 
 After deploy, instead of reopen, create a new issue, and mention about the related one in it. In this case we always knew what was wrong, how did we fix it and how fast we apply a patch. Also we can count how many bugs we have missed after deploy to production.
