@@ -22,7 +22,7 @@ First feelings were as if a seller had sold the same thing to many customers :)
 
 #### **Why it is not good for me?**
 
-We could not guarantee what was released in each versions. Did we resolve issue in the first version, and what changes were in next versions?
+We could not guarantee what was released in each version. Did we resolve issue in the first version, and what changes were in next versions?
 
 #### **Why it is good for others?**
 
