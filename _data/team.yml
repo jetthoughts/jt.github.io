@@ -85,16 +85,20 @@ alyona:
   ava: '/images/team/alena.jpg'
   role: 'Manager'
   bio: 'Alyona uses her creative and problem-solving skills to make sure that JetThoughts team members have everything they need for productive work. She keeps our office organised and provides the smooth operation of the day-to-day business of the company.'
-  name: 'Alyona'
+solomiya:  
+  name: 'Solomiya'
   full_name: 'Solomiya'
   ava: '/images/team/solomiya.jpg'
   role: 'Manager'
   bio: 'Following her motto “There is always room for improvement”, Solomiya makes our office a great working environment by keeping it organized, tidy and filled with the smell of fresh cookies and coffee. She loves working with people and takes their opinions and needs into consideration. Solomiya likes spending time out-of-doors and in the countryside.'
+nazar:
   name: 'Nazar'
   full_name: 'Nazar'
   ava: '/images/team/nazar.jpg'
   role: 'Developer'
   bio: 'Nazar is a dedicated and results-driven Ruby on Rails developer. He is a  highly-communicative person and a good team player, who enjoys working with others on tough projects. Nazar loves Arts and appreciates the beauty of a well-written code.'
+andriy:
+  name: 'Andriy'
   full_name: 'Andriy'
   ava: '/images/team/andriy.jpg'
   role: 'Developer'
