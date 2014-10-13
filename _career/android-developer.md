@@ -4,6 +4,7 @@ title: "Android Developer (Remote)"
 authors_git: tehhi42
 excerpt: We are searching for a talented Android developer to join our expanding team.
 category: developer
+date: 10-10-2014
 
 details:
   Hire date: immediately

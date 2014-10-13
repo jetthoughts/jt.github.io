@@ -4,6 +4,7 @@ title: "Senior Python Developer (Local or Remote)"
 authors_git: tehhi42
 excerpt: JetThoughts is looking for a Python guru with an experience with Tornado and Django.
 category: developer
+date: 10-10-2014
 
 details:
   Hire date: immediately

@@ -4,6 +4,7 @@ title: "Senior Ruby on Rails Developer (Local or Remote)"
 authors_git: tehhi42
 excerpt: If you are an experienced Rails developer, who has built multiple production-ready Rails apps and who is proud of his simple and readable code, you might be a great fit for our team. 
 category: developer
+date: 14-10-2014
 
 details:
   Hire date: immediately

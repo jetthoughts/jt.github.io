@@ -4,7 +4,7 @@ title: "Middle Ruby on Rails Developer (Local or Remote)"
 authors_git: tehhi42
 excerpt: Our team of developers is looking for Ruby on Rails enthusiast, who is willing to join us on site in Lviv or remotely.
 category: developer
-date: 14-10-2014
+date: 13-10-2014
 
 details:
   Hire date: immediately

@@ -4,6 +4,7 @@ title: "Web Designer (Remote)"
 authors_git: tehhi42
 excerpt: Are you geeky about design? Share your portfolio with us and become part of our team.
 category: designer
+date: 10-10-2014
 
 details:
   Hire date: immediately

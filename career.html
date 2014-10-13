@@ -24,7 +24,8 @@ slug: career
 
 
           <dl class="section_wrap accordion" data-accordion>
-          {% for post in site.career %}
+          {% assign jobs = site.career | sort:"date"  %}
+          {% for post in jobs reversed %}
             <dd class="job_section">
             <a href="#job_{{forloop.index}}" class="link">
               <header class="header section_heading">

@@ -4,6 +4,7 @@ title: "iOS Developer (Remote)"
 authors_git: tehhi42
 excerpt: Our company has an opening for a passionate iOS developer. 
 category: developer
+date: 10-10-2014
 
 details:
   Hire date: immediately
