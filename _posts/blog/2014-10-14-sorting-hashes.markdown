@@ -20,11 +20,11 @@ In one of the applications, that we are developing, we needed to implement the s
 
 In general, the search filter may be represented as a set of attributes, such as:
 
-```
+{% highlight text linenos=table %}
 price_min: 100,
 price_max: 1000,
 color: 'red'
-```
+{% endhighlight %}
 
 On one hand, with the help of all these attributes, we can simply create a model. But on the other hand, it is not a beneficial way, because there are quite a lot of filter attributes. Obviously, we should be able to add these attributes easily. I believe that the easiest way to do so is to keep them as a hash in the model in the serialized field.
 
