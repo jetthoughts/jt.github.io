@@ -127,7 +127,7 @@ And here are results which we have got:
 
 For 20 keys in hash:
 
-```
+{% highlight json linenos=table %}
        user     system      total        real
 new_hash      0.000000   0.000000   0.000000 (  0.000015)
 new_hash_inj  0.000000   0.000000   0.000000 (  0.000015)
@@ -136,11 +136,11 @@ sort_by       0.000000   0.000000   0.000000 (  0.000024)
 old_sort      0.000000   0.000000   0.000000 (  0.000038)
 old_sort_by   0.000000   0.000000   0.000000 (  0.000042)
 sort          0.000000   0.000000   0.000000 (  0.000050)
-```
+{% endhighlight %}
 
 And for 100 items:
 
-```
+{% highlight json linenos=table %}
        user     system      total        real
 new_hash      0.000000   0.000000   0.000000 (  0.000046)
 new_hash_inj  0.000000   0.000000   0.000000 (  0.000049)
@@ -149,11 +149,11 @@ old_sort_by   0.000000   0.000000   0.000000 (  0.000093)
 sort_by       0.000000   0.000000   0.000000 (  0.000097)
 sort          0.000000   0.000000   0.000000 (  0.000275)
 old_sort      0.000000   0.000000   0.000000 (  0.000286)
-```
+{% endhighlight %}
 
 And for 100'000 items:
 
-```
+{% highlight json linenos=table %}
        user     system      total        real
 new_hash      0.090000   0.010000   0.100000 (  0.094235)
 by_deleting!  0.120000   0.000000   0.120000 (  0.126402)
@@ -162,11 +162,11 @@ sort_by       0.200000   0.010000   0.210000 (  0.202221)
 old_sort_by   0.290000   0.000000   0.290000 (  0.295042)
 sort          0.640000   0.010000   0.650000 (  0.668481)
 old_sort      0.680000   0.000000   0.680000 (  0.689761)
-```
+{% endhighlight %}
 
 And for 1'000'000 records (by the way, if you have a hash with 1'000'000 keys, then you are doing something wrong):
 
-```
+{% highlight json linenos=table %}
        user     system      total        real
 by_deleting!  1.620000   0.010000   1.630000 (  1.656473)
 new_hash      1.790000   0.030000   1.820000 (  1.885463)
@@ -175,7 +175,7 @@ old_sort_by   3.650000   0.030000   3.680000 (  3.725720)
 sort_by       3.760000   0.040000   3.800000 (  3.834567)
 old_sort      8.860000   0.150000   9.010000 (  9.091311)
 sort          9.610000   0.120000   9.730000 (  9.843766)
-```
+{% endhighlight %}
 
 Consequently, we can see that creating a 'new hash' is the fastest way to sort a hash, less fast is 'by deleting!' (but it modifies an original array and this is not always allowed). And the shortest way ('sort')is also  the longest one (from 3x for 20 items to 7x for 1'000'000 items).
 
