@@ -1,9 +1,8 @@
-
 ---
 layout: post
 author: Valeriy Mironov
 authors_git: valeronm
-title: Recent Searches & Sorting Hashes: How They are Connected
+title: 'Recent Searches & Sorting Hashes: How They are Connected'
 date: 14-10-2014
 tags:
 - rails
