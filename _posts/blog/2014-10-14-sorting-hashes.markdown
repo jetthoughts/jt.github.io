@@ -20,7 +20,7 @@ In one of the applications, that we are developing, we needed to implement the s
 
 In general, the search filter may be represented as a set of attributes, such as:
 
-{% highlight text linenos=table %}
+{% highlight json linenos=table %}
 price_min: 100,
 price_max: 1000,
 color: 'red'
