@@ -9,7 +9,7 @@ tags:
 
 categories:
 - blog
-- tech
+- tricks
 ---
 
 <div class="left" style="margin-right: 1em;">
@@ -20,7 +20,7 @@ In one of the applications, that we are developing, we needed to implement the s
 
 In general, the search filter may be represented as a set of attributes, such as:
 
-{% highlight text linenos=table %}
+{% highlight ruby linenos=table %}
 price_min: 100,
 price_max: 1000,
 color: 'red'
@@ -129,7 +129,7 @@ And here are results which we have got:
 
 For 20 keys in hash:
 
-{% highlight text linenos=table %}
+{% highlight ruby linenos=table %}
        user     system      total        real
 new_hash      0.000000   0.000000   0.000000 (  0.000015)
 new_hash_inj  0.000000   0.000000   0.000000 (  0.000015)
@@ -142,7 +142,7 @@ sort          0.000000   0.000000   0.000000 (  0.000050)
 
 And for 100 items:
 
-{% highlight text linenos=table %}
+{% highlight ruby linenos=table %}
        user     system      total        real
 new_hash      0.000000   0.000000   0.000000 (  0.000046)
 new_hash_inj  0.000000   0.000000   0.000000 (  0.000049)
@@ -155,7 +155,7 @@ old_sort      0.000000   0.000000   0.000000 (  0.000286)
 
 And for 100'000 items:
 
-{% highlight text linenos=table %}
+{% highlight ruby linenos=table %}
        user     system      total        real
 new_hash      0.090000   0.010000   0.100000 (  0.094235)
 by_deleting!  0.120000   0.000000   0.120000 (  0.126402)
@@ -168,7 +168,7 @@ old_sort      0.680000   0.000000   0.680000 (  0.689761)
 
 And for 1'000'000 records (by the way, if you have a hash with 1'000'000 keys, then you are doing something wrong):
 
-{% highlight text linenos=table %}
+{% highlight ruby linenos=table %}
        user     system      total        real
 by_deleting!  1.620000   0.010000   1.630000 (  1.656473)
 new_hash      1.790000   0.030000   1.820000 (  1.885463)
