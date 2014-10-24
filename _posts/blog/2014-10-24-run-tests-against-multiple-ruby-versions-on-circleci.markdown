@@ -19,9 +19,7 @@ categories:
 
 Using multiple MRI ruby versions is not very hard. There are some ruby versions that have already been installed, and if you want to add example `2.2.0-dev` you need to have a closer look. [CircleCI](https://circleci.com) adds a lot of abilities to run different commands during all processes.
 
-<!--cut-->
-
-## 1. Run the same tests against multiple ruby versions for the same platform
+### 1. Run the same tests against multiple ruby versions for the same platform
 
 {% highlight ruby linenos=table %}
 dependencies:
@@ -35,9 +33,11 @@ test:
     - 'rvm-exec 2.2.0-preview1 bundle exec rake'
 {% endhighlight %}
 
+<!--cut-->
+
 It was easy. The main feature that CircleCI uses is [rvm] and it helps us to choose the correct ruby version. There is a list of preinstalled ruby [versions](https://circleci.com/docs/environment#ruby). In the first section we install gems for each ruby and in the second we run a test.
 
-## 2. Install custom ruby version
+### 2. Install custom ruby version
 
 Before runnung tests against a new version of ruby, we should install it. [rvm] helps us to do that.
 
@@ -58,7 +58,7 @@ test:
 
 Now you should see the logs with ruby installation.
 
-## 3. Jruby + MRI
+### 3. Jruby + MRI
 
 We already know how to run test for multiple ruby versions. Now let's add supporting of [JRuby]. [Latest version](https://circleci.com/docs/environment#ruby) that CircleCI currently supports is `jruby-1.7.13`. Let's update our config to use the latest available by rvm.
 
@@ -89,7 +89,7 @@ machine:
     JRUBY_OPTS: '-J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-noverify -X-C -Xcompile.invokedynamic=false --1.9 -J-Xmx1g'
 {% endhighlight %}
 
-## 3. What if Java gems are different from MRI
+### 4. What if Java gems are different from MRI
 
 As you know, the real world projects are cruel, and mostly you have different versions of gems or even different gems to support Jruby and MRI. Simple solution is just to add a separate `Gemfile` for Java. And to update our config file accordingly :
 
@@ -105,7 +105,7 @@ test:
     #....
 {% endhighlight %}
 
-## 4. Parallelism
+### 5. Parallelism
 
 I was tired of waiting for all tests to be finished. And decided to split all processes. I've found a good [manual](https://circleci.com/docs/parallel-manual-setup) and what we have:
 
