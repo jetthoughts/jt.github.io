@@ -14,7 +14,7 @@ categories:
 ---
 
 <div class="left" style="margin-right: 1em;">
-    <img src="https://farm4.staticflickr.com/3887/14372035815_7ded626494_z.jpg" title="multiple_versions"/>
+    <img src="https://farm4.staticflickr.com/3887/14372035815_7ded626494_n.jpg" title="multiple_versions"/>
 </div>
 
 Using multiple MRI ruby versions is not very hard. There are some ruby versions that have already been installed, and if you want to add example `2.2.0-dev` you need to have a closer look. [CircleCI](https://circleci.com) adds a lot of abilities to run different commands during all processes.
