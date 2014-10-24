@@ -13,14 +13,14 @@ categories:
 - tricks
 ---
 
-
-
-
 <div class="left" style="margin-right: 1em;">
     <img src="https://farm4.staticflickr.com/3887/14372035815_7ded626494.jpg" title="multiple_versions"/>
 </div>
 
 Using multiple MRI ruby versions is not very hard. There are some ruby versions that have already been installed, and if you want to add example `2.2.0-dev` you need to have a closer look. [CircleCI](https://circleci.com) adds a lot of abilities to run different commands during all processes.
+
+<!--cut-->
+
 ### 1. Run the same tests against multiple ruby versions for the same platform
 
 {% highlight ruby linenos=table %}
@@ -34,8 +34,6 @@ test:
     - 'rvm-exec 2.1.0 bundle exec rake'
     - 'rvm-exec 2.2.0-preview1 bundle exec rake'
 {% endhighlight %}
-
-<!--cut-->
 
 It was easy. The main feature that CircleCI uses is [rvm] and it helps us to choose the correct ruby version. There is a list of preinstalled ruby [versions](https://circleci.com/docs/environment#ruby). In the first section we install gems for each ruby and in the second we run a test.
 
