@@ -78,7 +78,7 @@ test:
     #....
 {% endhighlight %}
 
-Let's add other options to specify what JVM should use and Jruby options
+Let's add other options to specify what JVM should use and Jruby options:
 
 {% highlight ruby linenos=table %}
 machine:
@@ -91,7 +91,7 @@ machine:
 
 ### 4. What if Java gems are different from MRI
 
-As you know, the real world projects are cruel, and mostly you have different versions of gems or even different gems to support Jruby and MRI. Simple solution is just to add a separate `Gemfile` for Java. And to update our config file accordingly :
+As you know, the real world projects are cruel, and mostly you have different versions of gems or even different gems to support Jruby and MRI. A simple solution is just to add a separate `Gemfile` for Java. And to update our config file accordingly :
 
 {% highlight ruby linenos=table %}
 dependencies:
@@ -149,7 +149,7 @@ test:
 
 You can move these scripts to files.
 
-That's all Folks. The final version of `circle.yml` with some tricks you can find [here](https://github.com/miry/multiple_ruby_for_circleci/blob/master/circle.yml)
+That's all, folks. You can find the final version of `circle.yml` with some tricks  [here](https://github.com/miry/multiple_ruby_for_circleci/blob/master/circle.yml)
 
 CircleCI build: https://circleci.com/gh/miry/multiple_ruby_for_circleci/36
 
