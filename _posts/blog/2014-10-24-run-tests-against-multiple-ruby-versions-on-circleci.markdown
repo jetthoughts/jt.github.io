@@ -23,7 +23,7 @@ Using multiple MRI ruby versions is not very hard. There are some ruby versions 
 
 ## 1. Run the same tests against multiple ruby versions for the same platform
 
-{% highlight yml linenos=table %}
+{% highlight ruby linenos=table %}
 dependencies:
   override:
     - 'rvm-exec 2.1.0 bundle install'
@@ -41,7 +41,7 @@ It was easy. The main feature that CircleCI uses is [rvm] and it helps us to cho
 
 Before runnung tests against a new version of ruby, we should install it. [rvm] helps us to do that.
 
-{% highlight yml linenos=table %}
+{% highlight ruby linenos=table %}
 dependencies:
   pre:
     - 'rvm install ruby-head'
@@ -62,7 +62,7 @@ Now you should see the logs with ruby installation.
 
 We already know how to run test for multiple ruby versions. Now let's add supporting of [JRuby]. [Latest version](https://circleci.com/docs/environment#ruby) that CircleCI currently supports is `jruby-1.7.13`. Let's update our config to use the latest available by rvm.
 
-{% highlight yml linenos=table %}
+{% highlight ruby linenos=table %}
 dependencies:
   pre:
     - 'rvm install jruby'
@@ -80,7 +80,7 @@ test:
 
 Let's add other options to specify what JVM should use and Jruby options
 
-{% highlight yml linenos=table %}
+{% highlight ruby linenos=table %}
 machine:
   java:
     version: 'openjdk7'
@@ -93,7 +93,7 @@ machine:
 
 As you know, the real world projects are cruel, and mostly you have different versions of gems or even different gems to support Jruby and MRI. Simple solution is just to add a separate `Gemfile` for Java. And to update our config file accordingly :
 
-{% highlight yml linenos=table %}
+{% highlight ruby linenos=table %}
 dependencies:
   override:
     - 'rvm-exec jruby bundle install --gemfile Gemfile.java'
@@ -109,7 +109,7 @@ test:
 
 I was tired of waiting for all tests to be finished. And decided to split all processes. I've found a good [manual](https://circleci.com/docs/parallel-manual-setup) and what we have:
 
-{% highlight yml linenos=table %}
+{% highlight ruby linenos=table %}
 machine:
   java:
     version: openjdk7
