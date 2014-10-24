@@ -13,6 +13,9 @@ categories:
 - tricks
 ---
 
+
+
+
 <div class="left" style="margin-right: 1em;">
     <img src="https://farm4.staticflickr.com/3887/14372035815_7ded626494.jpg" title="multiple_versions"/>
 </div>
