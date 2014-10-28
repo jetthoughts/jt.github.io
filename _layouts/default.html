@@ -36,8 +36,8 @@
 
   {% assign first_cat  = page.categories | first %}
   {% if first_cat == "blog" %}
-  <meta name="twitter:description" content="{{ page.content | truncatewords: 22 }}">
-  <meta name="description" content="{{ page.content | truncatewords: 22 }}">
+  <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 22 }}">
+  <meta name="description" content="{{ page.content | strip_html | truncatewords: 22 }}">
   {% else %}
   <meta name="twitter:description" content="Ruby on Rails full stack web and mobile development team. We create Rails apps from scratch, offer support, optimisation and code review, provide RoR consulting services for startups and entrepreneurs. Use AngularJS and Backbone. Follow Agile workflow.">
   <meta name="description" content="Ruby on Rails full stack web and mobile development team. We create Rails apps from scratch, offer support, optimisation and code review, provide RoR consulting services for startups and entrepreneurs. Use AngularJS and Backbone. Follow Agile workflow.">
