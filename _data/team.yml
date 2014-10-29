@@ -3,14 +3,14 @@ miry:
   full_name: 'Michael Nikitochkin'
   ava: 'http://gravatar.com/avatar/0e556a2be10ff4f32bb9e6f9a2c00cfa.png?s=160'
   twitter: 'miry_sof'
-  role: 'TeachLead'
+  role: 'Teach Lead'
   bio: 'Michael is a technology guru, who can cope with toughest projects. He can always provide a new insight and propose up-to-date solutions to your problems. As an inherent leader, he has built a team of highly-qualified developers.'
 pftg:
   name: 'Paul'
   full_name: 'Paul Nikitochkin'
   ava: 'http://gravatar.com/avatar/9e5f22c74ce7f180fc495c2fec0fd070.png'
   twitter: 'pftg'
-  role: 'TeamLead'
+  role: 'Team Lead'
   bio: 'Paul is a software developer and an open source contributor. His favourite framework is Ruby on Rails. He has a great experience in tackling programming related problems. Paul likes to improve his beloved web framework by giving back to the community.'
 annkuptsova:
   name: 'Asya'
