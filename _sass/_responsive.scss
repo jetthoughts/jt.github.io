@@ -64,27 +64,27 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
         }
       }
       .icons-facebook {
-        background-position: 0 -1620px;
+        background-position: sprite-position($icons_sprite, 'mob_fb');
         &:hover {
-          background-position: 0 -2134px;
+          background-position: sprite-position($icons_sprite, 'mob_fb_hover');
         }
       }
       .icons-twitter {
-        background-position: 0 -745px;
+        background-position: sprite-position($icons_sprite, 'mob_twi');
         &:hover {
-          background-position: 0 -1039px;
+          background-position: sprite-position($icons_sprite, 'mob_twi_hover');
         }
       }
       .icons-linkedin-small {
-        background-position: 0 -1306px;
+        background-position: sprite-position($icons_sprite, 'mob_in');
         &:hover {
-          background-position: 0 -1780px;
+          background-position: sprite-position($icons_sprite, 'mob_in_hover');
         }
       }
       .icons-github {
-        background-position: 0 -814px;
+        background-position: sprite-position($icons_sprite, 'mob_git');
         &:hover {
-          background-position: 0 -970px;
+          background-position: sprite-position($icons_sprite, 'mob_git_hover');
         }
       }
     }

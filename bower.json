@@ -1,8 +1,9 @@
 {
-    "name": "jetthoughts-site",
-    "version": "0.0.1",
-    "private": "true",
-    "dependencies": {
-        "foundation": "zurb/bower-foundation"
-    }
+  "name": "jetthoughts-site",
+  "version": "0.0.2",
+  "private": "true",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation",
+    "components-webfontloader": "~1.5.2"
+  }
 }
