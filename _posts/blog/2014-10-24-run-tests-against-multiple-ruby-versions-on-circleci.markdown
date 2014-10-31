@@ -3,7 +3,7 @@ layout: post
 author: Michael Nikitochkin
 authors_git: miry
 title: 'Run Tests Against Multiple Ruby Versions On CircleCI'
-date: 24-10-2014
+date: 24-11-2014
 tags:
 - rails
 - ruby
