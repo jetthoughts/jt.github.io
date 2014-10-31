@@ -1,10 +1,13 @@
-var gulp = require('gulp');
-var imagemin = require('gulp-imagemin');
-var pngcrush = require('imagemin-pngcrush');
-var sourcemaps = require('gulp-sourcemaps');
+var gulp = require('gulp')
+  , imagemin = require('gulp-imagemin')
+  , pngcrush = require('imagemin-pngcrush')
+  , sourcemaps = require('gulp-sourcemaps')
+  , shell = require('gulp-shell')
+  , compass = require('gulp-compass')
+  , uglifyjs = require('gulp-uglifyjs');
 
 var assets = {
-  "js": [
+  "js"    : [
     "./bower_components/modernizr/modernizr.js",
     "./bower_components/components-webfontloader/webfont.js",
     "./javascripts/webfont_config.js",
@@ -28,34 +31,41 @@ gulp.task('imagemin', function () {
   return gulp.src('source_images/**/*')
     .pipe(imagemin({
       progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
-      use: [pngcrush()]
+      svgoPlugins: [
+        {removeViewBox: false}
+      ],
+      use        : [pngcrush()]
     }))
     .pipe(gulp.dest('images'));
 });
 
 
-var compass = require('gulp-compass');
-
-gulp.task('compass', function() {
+gulp.task('compass', function () {
   gulp.src(assets.styles)
     .pipe(sourcemaps.init())
-      .pipe(compass({
-        config_file: './config.rb',
-        css: 'css',
-        sass: '_sass'
-      }))
+    .pipe(compass({
+      config_file: './config.rb',
+      css        : 'css',
+      sass       : '_sass'
+    }))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css'));
 });
 
 
-var uglifyjs = require('gulp-uglifyjs');
-
-gulp.task('uglify', function() {
+gulp.task('uglify', function () {
   gulp.src(assets.js)
     .pipe(uglifyjs('app.min.js', {
       outSourceMap: true
     }))
     .pipe(gulp.dest('./js'))
 });
+
+gulp.task('watch', function () {
+  gulp.watch(assets.js, ['uglify']);
+  gulp.watch(assets.styles, ['compass']);
+});
+
+gulp.task('jekyll', shell.task('jekyll serve -w'));
+
+gulp.task('default', ['watch', 'jekyll', 'uglify', 'compass']);

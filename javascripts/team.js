@@ -13,7 +13,7 @@ window.onload = function () {
                     if (!execAsap)
                         func.apply(obj, args);
                     timeout = null;
-                };
+                }
 
                 if (timeout)
                     clearTimeout(timeout);
@@ -22,7 +22,7 @@ window.onload = function () {
 
                 timeout = setTimeout(delayed, threshold || 100);
             };
-        }
+        };
         // smartresize
         jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 

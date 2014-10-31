@@ -25,6 +25,7 @@
     "gulp-sourcemaps": "~1.2.4",
     "gulp-compass": "~2.0.1",
     "gulp-concat": "~2.4.1",
-    "gulp-uglifyjs": "~0.4.4"
+    "gulp-uglifyjs": "~0.4.4",
+    "gulp-shell": "~0.2.10"
   }
 }
