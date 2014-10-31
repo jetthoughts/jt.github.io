@@ -11,13 +11,35 @@ For those who has ruby installed, simply clone project and run
 bundle install
 ```
 
-#Workflow
+Then install tools for developing. Among them task manager **gulp**, which is used for routine tasks and building assets.
 
-##Development branch
+*__Please note:__ you should have __Node.js__ installed in your system for this step*.
 
-All work and development goes inside `development` branch. To checkout into this branch just run `git checkout development` inside project root directory.
+```
+npm install
+```
 
-*Every code changes has done inside of **master** would be overwritten by every [publishing](#publishing-changes) action.*
+#Developing workflow
+
+##Run site and tasks
+
+When all of gems and npm dependencies are installed just run following command in terminal:
+
+```
+gulp
+```
+
+##Compressing images
+
+For optimizing images we're using gulp task, but first of all place new images inside `source_images` directory and run:
+
+```
+gulp imagemin
+```
+
+This task will compress images and copy them to folder `images` which is using in production.
+
+#Content workflow
 
 ##Team page
 
@@ -151,9 +173,6 @@ Keep in mind [categoies](#categories) and remember to include `blog` category fo
 
 By default all posts has date sorting. This means that you can set date in post file name, like this: `2014-04-17-how-to-learn-ruby.markdown` or you can override the date inside post markdown file with attribute `date` in UTC format `YYYY-MM-DD HH:MM:SS`.
 
-##Publishing changes
+##Publish changes
 
-For publishing a new changes that was done on `development` branch just run following command:
-```
-rake publish
-```
+Just push new commit to master branch
