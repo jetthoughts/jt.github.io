@@ -9,10 +9,10 @@ tags:
 
 categories:
 - blog
-- tech
+- team
 ---
 <div class="left" style="margin-right: 1em;">
-    <img src="https://cloud.githubusercontent.com/assets/5908100/4884879/e1278a36-636f-11e4-8a58-c0de5d99d236.jpg" title="default_ruby"/>
+    <img src="https://cloud.githubusercontent.com/assets/5908100/4884942/7d47496a-6370-11e4-8bbd-897931ce3da7.jpg" title="default_ruby"/>
 </div>
 
 Not that long ago I joined **JetThoughts**. By this time I learned team, workflow, colleagues minds(just a little) and technologies used to build applications.
