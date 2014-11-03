@@ -46,8 +46,4 @@ Result products can be deployed almost on every server able to run Ruby, but for
 
 Many opensource libraries/gems also used for development to achieve fast and convenient result. Our developers contribute to most of these projects paying tribute and supporting community.
 
-<div class="left" style="margin-right: 1em;">
-    <img src="https://cloud.githubusercontent.com/assets/5908100/4886073/44332f46-6379-11e4-8b72-917e184004b7.jpg"/>
-</div>
-
 Whole team masters default stack technologies, the rest is optional. As my spiritual mentor once said: "You can do everything with a blade. If you can't solve problem with blade than you are causing the problem." I consider this is a metaphor which means omakase stack is enough (and more than enough) to build an application. That's why we relate to omakase stack as to base stack. Team can decide whether they need anything unusual.
