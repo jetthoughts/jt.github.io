@@ -19,7 +19,7 @@ Not that long ago I joined **JetThoughts**. By this time I learned team, workflo
 
 **Development** is based on agile methodologies which means that clients are continuously getting new or changed functionality for their product deployed and maintained.
 
-Applications I know about written in Ruby on Rails. Technologies used by team are mostly common for RoR developers but therefore flexible to meet clients requirements. We use both default(omakase) and advanced technologies stacks.
+Applications I know about written in **Ruby on Rails**. Technologies used by team are mostly common for RoR developers but therefore flexible to meet clients requirements. We use both default(omakase) and advanced technologies stacks.
 
 The most common **database choice** is PostgreSQL but MongoDB or any other SQL(which relates to default stack), or NoSQL database can be used too. 
 
@@ -35,9 +35,9 @@ Then comes up **haml**, lightweight markup language that helps us to markup our 
 
 For asynchronous tasks handling we use either sidekiq or delayedjob. Delayedjob uses SQL database for storage. Sidekiq uses redis for storage and gives better performance for massive jobs.
 
-**Testing.** First it requires some test data. For these  purposes we use fixtures/factory girl. I'm not gonna dive deep into argues which one to use, just need to mention that fixtures belong to omakase stack. After setting up the test data you are ready to write unit tests. At  JetThoughts we do it using minitest and Rspec. Rspec got its DSL magic, minitest goes more ruby way. For integration testing we use capybara and phantomjs. As a  preloader we use spring, it keeps application running in background significantly reducing time spent to run test. Tests are run locally as well as on continuous integration server running Teamcity.
+**Testing.** First it requires some test data. For these  purposes we use fixtures/factory girl. I'm not gonna dive deep into argues which one to use, just need to mention that fixtures belong to omakase stack. After setting up the test data you are ready to write unit tests. At  JetThoughts we do it using Minitest and Rspec. Rspec got its DSL magic, Minitest goes more ruby way. For integration testing we use capybara and phantomjs. As a preloader we use Spring, it keeps application running in background significantly reducing time spent to run test. Tests are run locally as well as on continuous integration server running Teamcity.
 
-**For writing code** we use vim sublime and rubymine. Most of team uses RubyMine because it is IDE, not just a text editor, and its magic simplifies coding process. I still can't get used to it so my choice is vim+plugins. Written code stored in Github or Bitbucket. I guess Github is an obvious choice:
+**For writing code** we use vim sublime and RubyMine. Most of team uses RubyMine because it is IDE, not just a text editor, and its magic simplifies coding process. I still can't get used to it so my choice is vim+plugins. Written code stored in Github or Bitbucket. I guess Github is an obvious choice:
 
 * user-friendly interface eases team collaboration;
 * community choice.
