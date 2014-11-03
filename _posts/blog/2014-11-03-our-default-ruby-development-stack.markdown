@@ -9,19 +9,19 @@ tags:
 
 categories:
 - blog
-- technology
+- tech
 ---
 <div class="left" style="margin-right: 1em;">
-    <img src="https://cloud.githubusercontent.com/assets/5908100/4884842/8f3370b4-636f-11e4-95d4-b8caca6201f3.jpg" title="default_ruby"/>
+    <img src="https://cloud.githubusercontent.com/assets/5908100/4884879/e1278a36-636f-11e4-8a58-c0de5d99d236.jpg" title="default_ruby"/>
 </div>
 
-Not that long ago I joined JetThoughts. By this time I learned team, workflow, colleagues minds(just a little) and technologies used to build applications.
+Not that long ago I joined **JetThoughts**. By this time I learned team, workflow, colleagues minds(just a little) and technologies used to build applications.
 
 **Development** is based on agile methodologies which means that clients are continuously getting new or changed functionality for their product deployed and maintained.
 
-<!--cut-->
-
 Applications I know about written in Ruby on Rails. Technologies used by team are mostly common for RoR developers but therefore flexible to meet clients requirements. We use both default(omakase) and advanced technologies stacks.
+
+<!--cut-->
 
 The most common **database choice** is PostgreSQL but MongoDB or any other SQL(which relates to default stack), or NoSQL database can be used too. 
 
