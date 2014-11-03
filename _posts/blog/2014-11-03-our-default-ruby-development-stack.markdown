@@ -23,9 +23,9 @@ Applications I know about written in Ruby on Rails. Technologies used by team ar
 
 The most common **database choice** is PostgreSQL but MongoDB or any other SQL(which relates to default stack), or NoSQL database can be used too. 
 
-**Front-end technologies** are ERB, Haml, Bootstrap, Javascript, Coffeescript, AngularJS. 
-
 <!--cut-->
+
+**Front-end technologies** are ERB, Haml, Bootstrap, Javascript, Coffeescript, AngularJS. 
 
 **ERB** - I guess you guys all know about it. It belongs to default stack. Erb allows us to embed :surprise: ruby code into text documents, we use it in html templates. It can be topped with bootstrap to get the flavour of multiple device and screen size support. 
 
