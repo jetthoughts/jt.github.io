@@ -19,7 +19,7 @@ Not that long ago I joined **JetThoughts**. By this time I learned team, workflo
 
 **Development** is based on agile methodologies which means that clients are continuously getting new or changed functionality for their product deployed and maintained.
 
-Applications I know about written in **Ruby on Rails**. Technologies used by team are mostly common for RoR developers but therefore flexible to meet clients requirements. We use both default(omakase) and advanced technologies stacks.
+Applications I know about are written in **Ruby on Rails**. Technologies used by team are mostly common for RoR developers but therefore flexible to meet clients requirements. We use both default(omakase) and advanced technologies stacks.
 
 The most common **database choice** is PostgreSQL but MongoDB or any other SQL(which relates to default stack), or NoSQL database can be used too. 
 
