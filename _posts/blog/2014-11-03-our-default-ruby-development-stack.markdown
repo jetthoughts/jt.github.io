@@ -12,7 +12,7 @@ categories:
 - technology
 ---
 <div class="left" style="margin-right: 1em;">
-    <img src="https://cloud.githubusercontent.com/assets/5908100/4884730/9575589e-636e-11e4-980a-a7b81394d212.png" title="default_ruby"/>
+    <img src="https://cloud.githubusercontent.com/assets/5908100/4884842/8f3370b4-636f-11e4-95d4-b8caca6201f3.jpg" title="default_ruby"/>
 </div>
 
 Not that long ago I joined JetThoughts. By this time I learned team, workflow, colleagues minds(just a little) and technologies used to build applications.
