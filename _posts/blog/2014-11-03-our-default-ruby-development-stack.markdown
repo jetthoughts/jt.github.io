@@ -37,7 +37,7 @@ For **asynchronous tasks handling** we use either sidekiq or delayedjob. Delayed
 
 **Testing.** First it requires some test data. For these purposes we use fixtures/factory girl. I'm not gonna dive deep into argues which one to use, just need to mention that fixtures belong to omakase stack. After setting up the test data you are ready to write **unit tests**. At JetThoughts we do it using Minitest and Rspec. Rspec got its DSL magic, Minitest goes more ruby way. For integration testing we use capybara and phantomjs. As a **preloader** we use Spring, it keeps application running in background significantly reducing time spent to run test. Tests are run locally as well as on continuous integration server running Teamcity.
 
-**For writing code** we use vim sublime and RubyMine. Most of team uses RubyMine because it is IDE, not just a text editor, and its magic simplifies coding process. I still can't get used to it so my choice is vim+plugins. Written code is stored in Github or Bitbucket. I guess Github is an obvious choice:
+**For writing code** we use Vim, Sublime, and RubyMine. Most of team uses RubyMine because it is IDE, not just a text editor, and its magic simplifies coding process. I still can't get used to it so my choice is vim+plugins. Written code is stored in Github or Bitbucket. I guess Github is an obvious choice:
 
 * user-friendly interface eases team collaboration;
 * community choice.
