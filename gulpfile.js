@@ -8,6 +8,7 @@ var gulp = require('gulp')
 
 var assets = {
   "js"    : [
+    "./bower_components/jquery/jquery.js",
     "./bower_components/modernizr/modernizr.js",
     "./bower_components/components-webfontloader/webfont.js",
     "./javascripts/webfont_config.js",
