@@ -240,6 +240,14 @@ $below_large: "only screen and (max-width:"#{$large-screen}")";
       }
     }
   }
+  #error404 {
+    h1 {
+      font-size: 140px;
+    }
+    .error_message {
+      font-size: 28px;
+    }
+  }
 }
 
 @media #{$ipad} {

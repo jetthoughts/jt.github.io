@@ -1,10 +1,15 @@
-var gulp = require('gulp')
-  , imagemin = require('gulp-imagemin')
-  , pngcrush = require('imagemin-pngcrush')
-  , sourcemaps = require('gulp-sourcemaps')
-  , shell = require('gulp-shell')
-  , compass = require('gulp-compass')
-  , uglifyjs = require('gulp-uglifyjs');
+var gulp = require('gulp'),
+  imagemin = require('gulp-imagemin'),
+  pngcrush = require('imagemin-pngcrush'),
+  sourcemaps = require('gulp-sourcemaps'),
+  shell = require('gulp-shell'),
+  compass = require('gulp-compass'),
+  uglifyjs = require('gulp-uglifyjs'),
+  glob = require('glob'),
+  cssmin = require('gulp-cssmin'),
+  requireDir = require('require-dir');
+
+var dir = requireDir('./tasks');
 
 var assets = {
   "js"    : [
@@ -70,3 +75,5 @@ gulp.task('watch', function () {
 gulp.task('jekyll', shell.task('jekyll serve -w'));
 
 gulp.task('default', ['watch', 'jekyll', 'uglify', 'compass']);
+
+gulp.task('minify', ['imagemin', 'uglify', 'compass', 'uncss']);
