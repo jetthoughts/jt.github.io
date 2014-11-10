@@ -21,15 +21,13 @@
     "gulp": "~3.8.9",
     "gulp-imagemin": "~1.2.1",
     "imagemin-pngcrush": "~4.0.0",
-    "gulp-uglify": "~1.0.1",
     "gulp-sourcemaps": "~1.2.4",
     "gulp-compass": "~2.0.1",
     "gulp-concat": "~2.4.1",
     "gulp-uglifyjs": "~0.4.4",
-    "gulp-shell": "~0.2.10"
-  },
-  "dependencies": {
-    "uncss": "~0.9.1",
-    "gulp-uncss": "~0.5.1"
+    "gulp-shell": "~0.2.10",
+    "gulp-uncss": "~0.5.1",
+    "glob": "~4.0.6",
+    "gulp-cssmin": "~0.1.6"
   }
 }

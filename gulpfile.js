@@ -4,7 +4,10 @@ var gulp = require('gulp')
   , sourcemaps = require('gulp-sourcemaps')
   , shell = require('gulp-shell')
   , compass = require('gulp-compass')
-  , uglifyjs = require('gulp-uglifyjs');
+  , uglifyjs = require('gulp-uglifyjs')
+  , glob = require('glob')
+  , cssmin = require('gulp-cssmin')
+  , uncss = require('gulp-uncss');
 
 var assets = {
   "js"    : [
@@ -71,13 +74,15 @@ gulp.task('jekyll', shell.task('jekyll serve -w'));
 
 gulp.task('default', ['watch', 'jekyll', 'uglify', 'compass']);
 
-
-var uncss = require('gulp-uncss');
-var glob = require("glob")
 gulp.task('uncss', function() {
-    return gulp.src('css/*.css')
-        .pipe(uncss({
-            html: glob.sync('./_site/**/*.html')
-        }))
-        .pipe(gulp.dest('./out'));
+  gulp.src(['./css/*.css'])
+    .pipe(uncss({
+      html: glob.sync('./_site/**/*.html'),
+      ignore: [/validation_wrap/, /invalid/, /icon_circle/, /portfolio/, /orbit/, /off-canvas/, /move\-left/, /inner\-wrap/],
+      timeout: 2000
+    }))
+    .pipe(sourcemaps.init())
+    .pipe(cssmin())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./out'));
 });

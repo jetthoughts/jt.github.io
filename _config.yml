@@ -25,7 +25,8 @@ exclude:
     jetthoughtblog-links-map.csv,
     node_modules,
     gulfile.js,
-    README.md
+    README.md,
+    source_images
   ]
 excerpt_separator: <!--cut-->
 
