@@ -28,5 +28,8 @@
     "gulp-uglifyjs": "~0.4.4",
     "gulp-shell": "~0.2.10",
     "gulp-uncss-task": "~0.3.0"
+  },
+  "dependencies": {
+    "uncss": "~0.9.1"
   }
 }
