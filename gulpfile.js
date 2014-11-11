@@ -9,6 +9,9 @@ var gulp = require('gulp')
   , cssmin = require('gulp-cssmin')
   , uncss = require('gulp-uncss');
 
+var requireDir = require('require-dir');
+var dir = requireDir('./tasks');
+
 var assets = {
   "js"    : [
     "./bower_components/jquery/jquery.js",
@@ -73,16 +76,3 @@ gulp.task('watch', function () {
 gulp.task('jekyll', shell.task('jekyll serve -w'));
 
 gulp.task('default', ['watch', 'jekyll', 'uglify', 'compass']);
-
-gulp.task('uncss', function() {
-  gulp.src(['./css/*.css'])
-    .pipe(uncss({
-      html: glob.sync('./_site/**/*.html'),
-      ignore: [/validation_wrap/, /invalid/, /icon_circle/, /portfolio/, /orbit/, /off-canvas/, /move\-left/, /inner\-wrap/],
-      timeout: 2000
-    }))
-    .pipe(sourcemaps.init())
-    .pipe(cssmin())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./out'));
-});
