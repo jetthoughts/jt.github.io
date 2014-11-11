@@ -20,4 +20,4 @@ gulp.task('uncss', function() {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('minimize', ['imagemin', 'uglify', 'uncss']);
+gulp.task('minimize', ['imagemin', 'uglify', 'compass', 'uncss']);
