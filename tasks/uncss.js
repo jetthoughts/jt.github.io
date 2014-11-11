@@ -1,3 +1,6 @@
+var IGNORE = [/validation_wrap/, /invalid/, /icon_circle/, /portfolio/, /orbit/,
+  /off-canvas/, /move\-left/, /inner\-wrap/];
+
 var gulp = require('gulp'),
   glob = require('glob'),
   cssmin = require('gulp-cssmin'),
@@ -8,7 +11,7 @@ gulp.task('uncss', function() {
   gulp.src(['./css/*.css'])
     .pipe(uncss({
       html: glob.sync('./_site/**/*.html'),
-      ignore: [/validation_wrap/, /invalid/, /icon_circle/, /portfolio/, /orbit/, /off-canvas/, /move\-left/, /inner\-wrap/],
+      ignore: IGNORE,
       timeout: 2000
     }))
     .pipe(sourcemaps.init())
