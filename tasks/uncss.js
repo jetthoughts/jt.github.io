@@ -19,3 +19,5 @@ gulp.task('uncss', function() {
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./css'));
 });
+
+gulp.task('minimize', ['imagemin', 'uglify', 'uncss']);
