@@ -75,3 +75,5 @@ gulp.task('watch', function () {
 gulp.task('jekyll', shell.task('jekyll serve -w'));
 
 gulp.task('default', ['watch', 'jekyll', 'uglify', 'compass']);
+
+gulp.task('minimize', ['imagemin', 'uglify', 'compass', 'uncss']);
