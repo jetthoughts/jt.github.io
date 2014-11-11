@@ -1,0 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
+
+#error404 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 60px;
+  background: #2f87b9 url("../images/pat_blueprint_light.png") repeat;
+}
+
+#error404 h1 {
+  font-size: 455px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+#error404 .error_message {
+  font-size: 39px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=404.css.map */

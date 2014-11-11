@@ -71,35 +71,13 @@ gulp.task('jekyll', shell.task('jekyll serve -w'));
 
 gulp.task('default', ['watch', 'jekyll', 'uglify', 'compass']);
 
+
+var uncss = require('gulp-uncss');
+var glob = require("glob")
 gulp.task('uncss', function() {
-  var uncss = require('uncss'), css_path = '../../../../../../css/', files_root = 'http://localhost:4000/';
-  var stylesheets = ['app.css', '404.css', 'ie.css', 'print.css', 'syntax.css',
-          'fonts/awesome/scss/font-awesome-ie7.css', 'fonts/awesome/scss/font-awesome.css'],
-      files = ['index.html', 'portfolio.html', 'team.html', 'career.html', 'work.html', 'blog/index.html',
-          'contact.html', '/categories/tricks.html'],
-      options = {
-          stylesheets  : stylesheets,
-          timeout      : 1000
-      };
-
-  for (i = 0; i < stylesheets.length; i++) {
-      stylesheets[i] = (css_path + stylesheets[i]);
-  }
-
-  for (i = 0; i < files.length; i++) {
-      files[i] = (files_root + files[i]);
-  }
-
-  uncss(files, options, function (error, output) {
-      var fs = require('fs');
-      fs.writeFile('cleaned_app_styles.css', output, function(err) {
-          if(err) {
-              console.log(err);
-          } else {
-              console.log("The file was saved!");
-          }
-      });
-      console.log(output);
-  });
-
+    return gulp.src('css/*.css')
+        .pipe(uncss({
+            html: glob.sync('./_site/**/*.html')
+        }))
+        .pipe(gulp.dest('./out'));
 });
