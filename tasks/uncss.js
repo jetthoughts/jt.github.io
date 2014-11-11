@@ -14,5 +14,5 @@ gulp.task('uncss', function() {
     .pipe(sourcemaps.init())
     .pipe(cssmin())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./out'));
+    .pipe(gulp.dest('./css'));
 });
