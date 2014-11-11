@@ -1,15 +1,14 @@
-var gulp = require('gulp')
-  , imagemin = require('gulp-imagemin')
-  , pngcrush = require('imagemin-pngcrush')
-  , sourcemaps = require('gulp-sourcemaps')
-  , shell = require('gulp-shell')
-  , compass = require('gulp-compass')
-  , uglifyjs = require('gulp-uglifyjs')
-  , glob = require('glob')
-  , cssmin = require('gulp-cssmin')
-  , uncss = require('gulp-uncss');
+var gulp = require('gulp'),
+  imagemin = require('gulp-imagemin'),
+  pngcrush = require('imagemin-pngcrush'),
+  sourcemaps = require('gulp-sourcemaps'),
+  shell = require('gulp-shell'),
+  compass = require('gulp-compass'),
+  uglifyjs = require('gulp-uglifyjs'),
+  glob = require('glob'),
+  cssmin = require('gulp-cssmin'),
+  requireDir = require('require-dir');
 
-var requireDir = require('require-dir');
 var dir = requireDir('./tasks');
 
 var assets = {
