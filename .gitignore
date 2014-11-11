@@ -7,4 +7,3 @@ _site
 .ruby-gemset
 .jekyll-assets-cache/
 node_modules/
-out/
