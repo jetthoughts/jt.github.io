@@ -39,6 +39,35 @@ gulp imagemin
 
 This task will compress images and copy them to folder `images` which is using in production.
 
+##Creating screenshots and testing changes on pages
+
+For trecking visible changes on page we're using `gemini` module.
+But before it you need to set attribute `rootUrl` to `http://www.jetthoughts.com/` in `.gemini.yml` file.
+Or you can download them in to the folder `reports` (create it in root of project) - the link is in github wiki.
+To create original screeshots run command:
+
+```
+gemini gather tests/gemini_tests/all_pages.js
+```
+
+it will create folder `reports` with all screeshots of website pages.
+
+After that you need to set attribute `rootUrl` to `http://localhost:4000/` (your locallhost) in `.gemini.yml` file.
+And run command:
+
+```
+gemini test tests/gemini_tests/all_pages.js --reporter html
+```
+
+it will create folder `gemini-report` with all report of your tests.
+
+Yo can run tests only in console without creating report, to do it run command:
+
+```
+gemini test tests/gemini_tests/all_pages.js
+```
+
+
 #Content workflow
 
 ##Team page
