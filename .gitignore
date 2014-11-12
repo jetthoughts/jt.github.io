@@ -8,3 +8,4 @@ _site
 .jekyll-assets-cache/
 node_modules/
 gemini/
+gemini-report/
