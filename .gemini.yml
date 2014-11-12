@@ -1,0 +1,4 @@
+rootUrl: http://localhost:4000/
+screenshotsDir: gemini/screens
+browsers:
+  phantomjs: phantomjs
