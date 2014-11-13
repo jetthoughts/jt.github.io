@@ -15,13 +15,13 @@ categories:
 ---
 
 <div class="left" style="margin-right: 1em;">
-    <img src="https://cloud.githubusercontent.com/assets/5908100/5030357/f183acf8-6b57-11e4-9f2c-9b6dc5008d59.png" title="mexico"/>
+    <img src="https://cloud.githubusercontent.com/assets/5908100/5030715/8f2d2ae0-6b5a-11e4-899c-73cda14d7fee.jpg" title="mexico"/>
 </div>
 
 The best Ruby and Ruby on Rails articles found in the Ruby community over the past week:
 
 1. Check if you have read all of these [**6 Best Ruby Programming Books**] (http://www.fromdev.com/2014/11/ruby-programming-books.html)
-2. A comparison of the most popular hosting solutions [Rails Hosts: Amazon AWS vs. Digital Ocean vs. Heroku vs. Engine Yard] (http://www.airpair.com/ruby-on-rails/posts/rails-host-comparison-aws-digitalocean-heroku-engineyard)
-3. [Back to Basics: Anonymous Functions and Closures] (http://robots.thoughtbot.com/back-to-basics-anonymous-functions-and-closures) Anonymous functions and closures are a useful concepts included in most modern programming languages. Anonymous functions are used heavily in JavaScript for many things, most notably the many callbacks used by the language’s many frameworks. In Ruby we see them most often in their block format.
-4. [4 Fantastic Ways to Set Up State in Minitest] (http://chriskottom.com/blog/2014/10/4-fantastic-ways-to-set-up-state-in-minitest) 
-5. AngularJS is trending right now. Is it better than Ember.js? [Rails JS frameworks: Ember.js vs. AngularJS] (http://www.airpair.com/ruby-on-rails/posts/ember-vs-angular-with-rails) 
+2. A comparison of the most popular hosting solutions [**Rails Hosts: Amazon AWS vs. Digital Ocean vs. Heroku vs. Engine Yard**] (http://www.airpair.com/ruby-on-rails/posts/rails-host-comparison-aws-digitalocean-heroku-engineyard)
+3. [**Back to Basics: Anonymous Functions and Closures**] (http://robots.thoughtbot.com/back-to-basics-anonymous-functions-and-closures) Anonymous functions and closures are a useful concepts included in most modern programming languages. Anonymous functions are used heavily in JavaScript for many things, most notably the many callbacks used by the language’s many frameworks. In Ruby we see them most often in their block format.
+4. [**4 Fantastic Ways to Set Up State in Minitest**] (http://chriskottom.com/blog/2014/10/4-fantastic-ways-to-set-up-state-in-minitest) 
+5. AngularJS is trending right now. Is it better than Ember.js? [**Rails JS frameworks: Ember.js vs. AngularJS**] (http://www.airpair.com/ruby-on-rails/posts/ember-vs-angular-with-rails) 
