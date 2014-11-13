@@ -5,13 +5,13 @@ Home site
 
 #Setup
 
-For those who has ruby installed, simply clone project and run
+For those who have ruby installed, simply clone the project and run
 
 ```
 bundle install
 ```
 
-Then install tools for developing. Among them task manager **gulp**, which is used for routine tasks and building assets.
+Then install tools for developing. Among them there is a task manager **gulp**, which is used for routine tasks and building assets.
 
 *__Please note:__ you should have __Node.js__ installed in your system for this step*.
 
@@ -23,7 +23,7 @@ npm install
 
 ##Run site and tasks
 
-When all of gems and npm dependencies are installed just run following command in terminal:
+When all gems and npm dependencies are installed just run the following command in terminal:
 
 ```
 gulp
@@ -37,22 +37,22 @@ For optimizing images we're using gulp task, but first of all place new images i
 gulp imagemin
 ```
 
-This task will compress images and copy them to folder `images` which is using in production.
+This task will compress images and copy them to folder `images` which is used in production.
 
 ##Creating screenshots and testing changes on pages
 
-For trecking visible changes on page we're using `gemini` module.
-But before it you need to set attribute `rootUrl` to `http://www.jetthoughts.com/` in `.gemini.yml` file.
-Or you can download them in to the folder `reports` (create it in root of project) - the link is in github wiki.
+For tracking visible changes on page we're using `gemini` module.
+But before that you need to set an attribute `rootUrl` to `http://www.jetthoughts.com/` in `.gemini.yml` file.
+Or you can download them into the folder `reports` (create it in the root of the project) - the link is in github wiki.
 To create original screeshots run command:
 
 ```
 gemini gather tests/gemini_tests/all_pages.js
 ```
 
-it will create folder `reports` with all screeshots of website pages.
+it will create a folder `reports` with all screeshots of website pages.
 
-After that you need to set attribute `rootUrl` to `http://localhost:4000/` (your locallhost) in `.gemini.yml` file.
+After that you need to set an attribute `rootUrl` to `http://localhost:4000/` (your locallhost) in `.gemini.yml` file.
 And run command:
 
 ```
@@ -61,7 +61,7 @@ gemini test tests/gemini_tests/all_pages.js --reporter html
 
 it will create folder `gemini-report` with all report of your tests.
 
-Yo can run tests only in console without creating report, to do it run command:
+You can run tests only in console without creating report, to do that run command:
 
 ```
 gemini test tests/gemini_tests/all_pages.js
@@ -74,12 +74,12 @@ gemini test tests/gemini_tests/all_pages.js
 
 ###Add/edit new team mates info
 
-Information about team members are stored inside `_data/team.yml`. It's structured as array of the objects, the first key is actually the name of the github nic of the current user.
-For adding or editing new team mate simply edit information in that file in `yaml` syntax.
+Information about team members is stored inside `_data/team.yml`. It's structured as array of the objects, the first key is actually the name of the github nickname of the current user.
+For adding or editing a new team mate simply edit information in that file in `yaml` syntax.
 
 ###Team page
 
-For adding or move team member view just dig in `team.html`. Inside it there is following wrappers for team members:
+For adding or moving team member view just dig in `team.html`. Inside it there are following wrappers for team members:
 
 ```
 <div class="columns large-6 medium-6">
@@ -87,16 +87,16 @@ For adding or move team member view just dig in `team.html`. Inside it there is 
 </div>
 ```
 
-Where `team=site.data.team.miry` is the parameter sent to included template. So the fraction `miry` means team member's github name.
-In that manner just copy-paste markup mentioned above and change parameter `team` with proper key (github name of a new team mate).
+Where `team=site.data.team.miry` is the parameter sent to the included template. So the fraction `miry` means a team member's github name.
+In that manner just copy-paste markup mentioned above and change parameter `team` with a proper key (github name of a new team mate).
 
-If you want to move or arrange team mates inside team page simply change ordering of the markup wrappers.
+If you want to move or arrange team mates inside a team page simply change ordering of the markup wrappers.
 
 ##Portfolio
 
 ###Add new
 
-All portfolio items is located inside `_posts/portfolio/` dir and has __markdown__ format with some `yaml` data in the heading of the current file. Typical settings in `yaml` format for portfolio item look like this:
+All portfolio items are located inside `_posts/portfolio/` dir and have __markdown__ format with some `yaml` data in the heading of the current file. Typical settings in `yaml` format for portfolio item look like this:
 
 ```
 ---
@@ -124,12 +124,12 @@ categories:
 
 ####Portfolio thumbs
 
-Each portfolio item require two thumbs for better presentation. The sizes of thumbs are: __190x190__ and __570x270__ pixels.
-Inside portfolio item file set the value for `thumb` and `thumb_wide` as path to both images, the squared and wide.
+Each portfolio item requires two thumbs for better presentation. The sizes of thumbs are: __190x190__ and __570x270__ pixels.
+Inside a portfolio item file set the value for `thumb` and `thumb_wide` as a path to both images, the squared and the wide ones.
 
 ####Slider
 
-If you want to show slider inside portfolio project simply assign array of the images path to `slider` key inside markdown portfolio item file.
+If you want to show the slider inside portfolio project simply assign array of the images path to `slider` key inside markdown portfolio item file.
 For a better view prepare images for each slides with following dimensions: __770x480__ pixels.
 
 ###Arranging portfolio items
@@ -138,9 +138,9 @@ You can arrange portfolio items simply as [blog posts](#sorting-posts)
 
 ##Career
 
-###Adding new vacancy
+###Adding a new vacancy
 
-Adding vacancies as simple as writing [blog posts](#writting-a-new-post) with two differences:
+Adding vacancies is as simple as writing [blog posts](#writting-a-new-post) with two differences:
 
   1. Place markdown files inside `_posts/career/` directory.
 
@@ -152,11 +152,11 @@ details:
   Skills: fluent english, b2b selling
   Experience: over 10 years
 ```
-This will generates simple summary table inside job position item.
+This will generate a simple summary table inside a job position item.
 
-####Vacany layout
+####Vacancy layout
 
-Set proper layout value at the top of the post:
+Set a proper layout value at the top of the post:
 
 ```
 ---
@@ -168,17 +168,17 @@ title: "Managers! Where are you?"
 
 ###Categories
 
-All posts has to be have two categories.
+All posts have to be have two categories.
 
-  1. Type category – is for global type (in this case `blog`) which is represent its position inside the site structure, like a blog, career and portfolio.
+  1. Type category – is for the global type (in this case `blog`) which represents its position inside the site structure, like a blog, career and portfolio.
 
-  2. Content category – represent contextual category itself, like mobile, team, ruby etc.
+  2. Content category – represents contextual category itself, like mobile, team, ruby etc.
 
-This simple guideline allows to generate archive pages with list of all post in selected categories(tags) and make links for category into post page.
+This simple guideline allows to generate archive pages with list of all post in selected categories(tags) and make links for category into a post page.
 
 ###Writing a new post
 
-Add new markdown file inside `_posts/blog/` directory with following header data:
+Add new markdown file inside `_posts/blog/` directory with the following header data:
 
 ```
 ---
@@ -195,13 +195,13 @@ categories:
 ---
 ```
 
-Where `authors_git` require author's github name for proper output for author's section at compiled blog post.
-Keep in mind [categoies](#categories) and remember to include `blog` category for proper output.
+Where `authors_git` requires author's github name for the proper output for author's section at the compiled blog post.
+Keep in mind [categoies](#categories) and remember to include `blog` category for the proper output.
 
 ###Sorting posts
 
-By default all posts has date sorting. This means that you can set date in post file name, like this: `2014-04-17-how-to-learn-ruby.markdown` or you can override the date inside post markdown file with attribute `date` in UTC format `YYYY-MM-DD HH:MM:SS`.
+By default all posts have date sorting. This means that you can set the date in the post file name, like this: `2014-04-17-how-to-learn-ruby.markdown` or you can change the date inside the post markdown file with an attribute `date` in UTC format `YYYY-MM-DD HH:MM:SS`.
 
 ##Publish changes
 
-Just push new commit to master branch
+Just push a new commit to the master branch. 
