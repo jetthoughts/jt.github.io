@@ -7,3 +7,6 @@ _site
 .ruby-gemset
 .jekyll-assets-cache/
 node_modules/
+gemini/
+gemini-report/
+reports/
