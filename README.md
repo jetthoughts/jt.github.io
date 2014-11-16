@@ -44,6 +44,19 @@ This task will compress images and copy them to folder `images` which is used in
 For tracking visible changes on page we're using `gemini` module.
 But before that you need to set an attribute `rootUrl` to `http://www.jetthoughts.com/` in `.gemini.yml` file.
 Or you can download them into the folder `reports` (create it in the root of the project) - the link is in github wiki.
+
+Before running screen gathering you need to run `PhantomJS` manually in a `WebDriver`
+
+```
+phantomjs --webdriver=4444
+```
+
+and run `jekyll`
+
+```
+jekyll serve
+```
+
 To create original screeshots run command:
 
 ```
@@ -204,4 +217,4 @@ By default all posts have date sorting. This means that you can set the date in 
 
 ##Publish changes
 
-Just push a new commit to the master branch. 
+Just push a new commit to the master branch.
