@@ -15,11 +15,13 @@ categories:
 
 ---
 
+<div class="left" style="margin-right: 1em;">
+    <img src="http://ournewupdates.files.wordpress.com/2011/11/gem-box.png" title="geminabox"/>
+</div> 
+
 Before each project we check new versions of favorite Ruby web servers and choose which is the best.
 
 Let's use, for example, [Geminabox](http://tomlea.co.uk/posts/gem-in-a-box/) application to distribute gems in the local network for our company. [Geminabox](http://tomlea.co.uk/posts/gem-in-a-box/) is a very tiny Rack application and it is easy to configure. You can get the sample [here](https://github.com/miry/geminabox_web_server). 
-
-![Geminabox](http://ournewupdates.files.wordpress.com/2011/11/gem-box.png)
 
 There are a lot of Ruby Web Servers. More details you can get from Digital Ocean article [A Comparison of (Rack) Web Servers for Ruby Web Applications](https://www.digitalocean.com/community/tutorials/a-comparison-of-rack-web-servers-for-ruby-web-applications). I excluded **Passenger** because it requires to compile Nginx module and **Thin** - it could not use all CPU cores.
 
