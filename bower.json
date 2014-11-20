@@ -4,6 +4,7 @@
   "private": "true",
   "dependencies": {
     "foundation": "zurb/bower-foundation",
-    "components-webfontloader": "~1.5.2"
+    "components-webfontloader": "~1.5.2",
+    "pure": "~0.5.0"
   }
 }
