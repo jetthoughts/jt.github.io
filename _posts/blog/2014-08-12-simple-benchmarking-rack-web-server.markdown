@@ -16,7 +16,7 @@ categories:
 ---
 
 <div class="left" style="margin-right: 1em;">
-    <img src="http://ournewupdates.files.wordpress.com/2011/11/gem-box.png" title="geminabox"/>
+    <img src="https://cloud.githubusercontent.com/assets/5908100/5127025/2c0d5b26-70da-11e4-9bc4-d3e5d23dc4e3.jpg" title="geminabox"/>
 </div> 
 
 Before each project we check new versions of favorite Ruby web servers and choose which is the best.
