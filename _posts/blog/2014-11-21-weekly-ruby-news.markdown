@@ -14,7 +14,7 @@ categories:
 - team
 ---
 
-<div class="left" style="margin-right: 1em;">
+<div class="right" style="margin-right: 1em;">
     <img src="https://cloud.githubusercontent.com/assets/5908100/5143614/98bb5960-719a-11e4-9023-5a4b6714fd45.jpg" title="rubynews"/>
 </div>
 
