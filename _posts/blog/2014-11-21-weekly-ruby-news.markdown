@@ -15,7 +15,7 @@ categories:
 ---
 
 <div class="right" style="margin-right: 1em;" width="200px" height="200px">
-    <img src="https://cloud.githubusercontent.com/assets/5908100/5143614/98bb5960-719a-11e4-9023-5a4b6714fd45.jpg" title="rubynews"/>
+    <img src="https://cloud.githubusercontent.com/assets/5908100/5144849/78a0e85a-71a6-11e4-916d-b5d7b1b36a0d.jpg" title="rubynews"/>
 </div>
 
 The best Ruby and Ruby on Rails articles found in the Ruby community over the past week:
