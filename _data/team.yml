@@ -103,4 +103,16 @@ andriy:
   ava: '/images/team/andriy.jpg'
   role: 'Developer'
   bio: 'Andriy has been in love with Ruby on Rails since he first discovered this framework. He enjoys the advantages of remote work, that gives great flexibility and proper work-life balance. When not coding, Andriy is probably practicing yoga.'
+alexey_2:
+  name: 'Alexey'
+  full_name: 'Alexey Chernov'
+  ava: '/images/team/alexey_2.jpg'
+  role: 'Developer'
+  bio: 'Alexey likes development, because this profession gives him an opportunity not only to practice his logical thinking and solve puzzles, but also to build useful applications for real people.' 
+mark:
+  name: 'Mark'
+  full_name: 'Mark '
+  ava: 'images/team/mark.jpg'
+  role: 'Developer'
+  bio: 'Inspired by simplicity and variety of nature beauty, Mark enjoys the construction of large-scale complex systems from simple and elegant pieces. The Ruby language as a tool suits perfectly for this task, because of its overall beautiful syntax and flexibility in solving a wide range of tasks.'   
 
