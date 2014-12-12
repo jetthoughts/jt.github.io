@@ -10,7 +10,7 @@ tags:
 
 categories:
 - blog
-- technology
+- tech
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/5414269/39fcdede-8226-11e4-838b-0916d9731d0d.jpg" class="left" style="margin-right: 1em;" width="324" />
