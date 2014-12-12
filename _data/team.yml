@@ -17,7 +17,7 @@ annkuptsova:
   full_name: 'Asya Kuptsova'
   ava: '/images/team/asyakup.jpeg'
   role: 'QA Engineer'
-  bio: 'Asya uses her ability to think outside the box for making Ruby on Rails applications bug-free and user-friendly. She is very detailed-oriented and good at documenting her work. Errors shan\'t pass.'
+  bio: "Asya uses her ability to think outside the box for making Ruby on Rails applications bug-free and user-friendly. She is very detailed-oriented and good at documenting her work. Errors shan't pass."
 annafoksha:
   name: 'Anna'
   full_name: 'Anna Foksha'
