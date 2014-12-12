@@ -21,6 +21,7 @@ with REST API, Authorization and other munchies for glory of the Empire.*
 
 OK, does it look like a regular specification for your customer's new project? As
 professional developers we definitely can handle this. Let's dive into our goals:
+
 * We have to research the domain of bloody repressions
 * Define pros and cons of existing systems
 * Continously deliver product for Leader's demands
