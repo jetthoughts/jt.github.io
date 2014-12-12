@@ -40,6 +40,7 @@ Empire.
 We can work with this knowledge now. After coding for a few weeks (yes, we are using
 the basic TDD approach) we have a pretty common Rails application with a pretty traditional
 structure:
+
 * Basic resource controllers.
 * Models:
 
@@ -54,6 +55,8 @@ end
 
 class Adjutant < ActiveRecord::Base
   belongs_to :dictator
+  ...
+end
 {% endhighlight %}
 
 This is a pretty common situation when developers start using a framework instead of a 
@@ -75,10 +78,13 @@ describe Dictator do
   ...
   it "has many airplains"
   it "can write a book"
+  ...
+end
 {% endhighlight %}
 
 This is what we can see in many projects. Models have so many aspects of domain to 
 deal with:
+
 * Permissions management
 * Inner state logic
 * Attributes
