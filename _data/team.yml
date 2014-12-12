@@ -112,7 +112,7 @@ alexey_2:
 marchi-martius:
   name: 'Mark'
   full_name: 'Mark Volosiuk'
-  ava: 'images/team/mark.jpg'
+  ava: '/images/team/mark.jpg'
   role: 'Developer'
   bio: 'Inspired by simplicity and variety of nature beauty, Mark enjoys the construction of large-scale complex systems from simple and elegant pieces. The Ruby language as a tool suits perfectly for this task, because of its overall beautiful syntax and flexibility in solving a wide range of tasks.'   
 
