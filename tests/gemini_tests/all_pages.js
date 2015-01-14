@@ -1,6 +1,6 @@
 var HTML_EXTENSION_SIZE = 4
 
-var gemini = require('gemini'), glob = require('glob'), pages_arr = glob.sync('./_site/*.html'),
+var gemini = require('gemini'), glob = require('glob'), pages_arr = glob.sync('./_site/**/*.html'),
   page_path = '', page_name = '', suite_name = '', capture_name = '1366x768_all_screen',
   capture_element = 'body';
 
@@ -16,7 +16,8 @@ for(var i = 0; i < pages_arr.length; i++) {
 
   gemini.suite(suite_name, function(suite) {
     suite.before(function(actions, find) {
-        actions.setWindowSize(screens.small.width, screens.small.height)
+        actions.setWindowSize(screens.small.width, screens.small.height);
+        actions.wait(5000);
       })
       .setUrl(page_path)
       .setCaptureElements(capture_element)
