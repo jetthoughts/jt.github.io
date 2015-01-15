@@ -45,7 +45,6 @@ gulp.task('imagemin', function () {
     .pipe(gulp.dest('images'));
 });
 
-
 gulp.task('compass', function () {
   gulp.src(assets.styles)
     .pipe(sourcemaps.init())
@@ -57,7 +56,6 @@ gulp.task('compass', function () {
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./css'));
 });
-
 
 gulp.task('uglify', function () {
   gulp.src(assets.js)
@@ -77,3 +75,17 @@ gulp.task('jekyll', shell.task('jekyll serve -w'));
 gulp.task('default', ['watch', 'jekyll', 'uglify', 'compass']);
 
 gulp.task('minify', ['imagemin', 'uglify', 'compass', 'uncss']);
+
+// grunt tatsks for gulp
+require('gulp-grunt')(gulp, {
+  base: null,
+  prefix: 'grunt-',
+});
+
+gulp.task('wpt_pagespeed', function() {
+  gulp.run('grunt-wpt');
+})
+
+gulp.task('pagespeed', function() {
+  gulp.run('grunt-pagespeed');
+})

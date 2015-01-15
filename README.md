@@ -80,6 +80,25 @@ You can run tests only in console without creating report, to do that run comman
 gemini test tests/gemini_tests/all_pages.js
 ```
 
+##Benchmarking
+
+For automating checking PageSpeed score as a part of CI we are using `grunt-pagespeed`
+
+```
+gulp pagespeed
+```
+
+And for WebPageTest scores we use `grunt-wpt`
+
+```
+gulp wpt_pagespeed
+```
+
+Also we use online pagespeed testing:
+
+```
+http://www.webpagetest.org/video
+```
 
 #Content workflow
 
