@@ -10,3 +10,5 @@ node_modules/
 gemini/
 gemini-report/
 reports/
+tmp/
+npm-debug.log

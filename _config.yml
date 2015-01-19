@@ -31,7 +31,8 @@ exclude:
     gemini-report,
     reports,
     tests,
-    bower_components/jquery-placeholder/demo.html
+    bower_components/jquery-placeholder/demo.html,
+    Gruntfile.js
   ]
 excerpt_separator: <!--cut-->
 
