@@ -12,3 +12,4 @@ gemini-report/
 reports/
 tmp/
 npm-debug.log
+bower_components/
