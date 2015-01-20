@@ -18,20 +18,21 @@
   "private": true,
   "homepage": "http://jetthoughts.com",
   "devDependencies": {
+    "glob": "~4.0.6",
+    "grunt": "^0.4.5",
+    "grunt-pagespeed": "^0.4.1",
+    "grunt-wpt": "^3.1.1",
     "gulp": "~3.8.9",
     "gulp-compass": "~2.0.1",
     "gulp-concat": "~2.4.1",
     "gulp-cssmin": "~0.1.6",
     "gulp-imagemin": "~1.2.1",
+    "gulp-minify-html": "^0.1.8",
     "gulp-shell": "~0.2.10",
     "gulp-sourcemaps": "~1.2.4",
     "gulp-uglifyjs": "~0.4.4",
     "gulp-uncss": "~0.5.1",
     "imagemin-pngcrush": "~4.0.0",
-    "require-dir": "~0.1.0",
-    "glob": "~4.0.6",
-    "grunt": "^0.4.5",
-    "grunt-pagespeed": "^0.4.1",
-    "grunt-wpt": "^3.1.1"
+    "require-dir": "~0.1.0"
   }
 }
