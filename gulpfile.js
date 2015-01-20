@@ -7,8 +7,7 @@ var gulp = require('gulp'),
   uglifyjs = require('gulp-uglifyjs'),
   glob = require('glob'),
   cssmin = require('gulp-cssmin'),
-  requireDir = require('require-dir'),
-  htmlmin = require('gulp-minify-html');
+  requireDir = require('require-dir');
 
 var dir = requireDir('./tasks');
 
@@ -69,13 +68,6 @@ gulp.task('uglify', function () {
 gulp.task('watch', function () {
   gulp.watch(assets.js, ['uglify']);
   gulp.watch(assets.styles, ['compass']);
-});
-
-gulp.task('minifyhtml', function(){
-  var opts = {comments:true,spare:true};
-  gulp.src('_site/**/*.html')
-      .pipe(htmlmin())
-      .pipe(gulp.dest('_site'))
 });
 
 gulp.task('jekyll', shell.task('jekyll serve -w'));
