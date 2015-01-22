@@ -46,6 +46,19 @@ gulp.task('imagemin', function () {
     .pipe(gulp.dest('images'));
 });
 
+// minifies all images from image folder
+// TODO reuse task imagemin
+// was added because compass adds dprites to image folder after optimization
+gulp.task('image-minify', function () {
+  return gulp.src('images/**/*')
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use        : [pngcrush()]
+    }))
+    .pipe(gulp.dest('images'));
+});
+
 gulp.task('compass', function () {
   gulp.src(assets.styles)
     .pipe(sourcemaps.init())
