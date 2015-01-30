@@ -2,8 +2,7 @@
 layout: career
 title: "Front-End Web Developer (Onsite in Lviv)"
 authors_git: tehhi42
-excerpt: JetThoughts is looking for a Front-End Developer specializing in creating elegant and rich web applications.
-We are looking for a talented individual to work with us onsite in Lviv, Ukraine. Currently we are not interested in remote candidates. Ukrainian/Russian native or bilingual proficiency is a must.
+excerpt: JetThoughts is looking for a Front-End Developer specializing in creating elegant and rich web applications. We are looking for a talented individual to work with us onsite in Lviv, Ukraine. Currently we are not interested in remote candidates. Ukrainian/Russian native or bilingual proficiency is a must.
 category: developer
 date: 30-01-2015
 
