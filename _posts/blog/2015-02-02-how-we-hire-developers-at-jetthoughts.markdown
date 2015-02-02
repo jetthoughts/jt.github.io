@@ -31,8 +31,8 @@ Here is the list of the things that are the most important for JetThoughts:
 * Specific experience for this position.
 * How familiar you are with technologies that are in our default development stack.
 * Your employment history. Types of companies you have been working for.
-* Projects that you developed, your roles and responsibilities
-* Experience working for small outsource companies is a plus
+* Projects that you developed, your roles and responsibilities.
+* Experience working for small outsource companies is a plus.
 * We would like to see the samples of your code. Please provide a link to your GitHub account. If you have your own project in the open repository or open source contributions, that will reduce the time of technical interview and showcase your skills before the next steps of hiring process.
 
 If you are a 4-5 year CS student or if you do not have sufficient programming experience, our advice is to do a test assignment or to develop your own project using the technologies mentioned in the job posting. To get a test assignment, please write at cv@jetthoughts.com.
