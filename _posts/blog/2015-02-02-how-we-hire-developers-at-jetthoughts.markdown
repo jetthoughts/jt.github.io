@@ -12,7 +12,7 @@ categories:
 - team
 ---
 
-<img src="https://cloud.githubusercontent.com/assets/5908100/5414726/f67c727e-8229-11e4-89e8-06d2368a8f16.jpg" class="left" style="margin-right: 1em;" />
+<img src="https://cloud.githubusercontent.com/assets/5908100/6001305/09d091c6-aaf1-11e4-94be-e352f9b2b93d.png" class="left" style="margin-right: 1em;" />
 
 Hiring process at JetThoughts is aimed at building a solid team. We are a small company, and it is crucial to hire right people who have the relevant experience and the same mindset as the rest of the team. This is a  guide on how we hire developers. 
 
