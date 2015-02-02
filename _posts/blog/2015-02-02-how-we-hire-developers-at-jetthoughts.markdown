@@ -3,7 +3,7 @@ layout: post
 author: Elena Gavryliuk
 authors_git: tehhi42
 title: 'How We Hire Developers at JetThoughts'
-date: 02-02-2014
+date: 02-02-2015
 tags:
 - hr
 
@@ -12,7 +12,7 @@ categories:
 - team
 ---
 
-<img src="https://cloud.githubusercontent.com/assets/5908100/6001305/09d091c6-aaf1-11e4-94be-e352f9b2b93d.png" class="left" style="margin-right: 1em;" />
+<img src="https://cloud.githubusercontent.com/assets/5908100/6001413/32ea22a6-aaf2-11e4-884b-f6824ec9f75d.jpg" class="left" style="margin-right: 1em;" />
 
 Hiring process at JetThoughts is aimed at building a solid team. We are a small company, and it is crucial to hire right people who have the relevant experience and the same mindset as the rest of the team. This is a  guide on how we hire developers. 
 
