@@ -26,14 +26,14 @@ Here is the list of the things that are the most important for JetThoughts:
 
 <!--cut-->
 
-*How long have you been coding? When did programming become your passion? 
-*Your overall programming experience and experience in developing commercial applications. 
-*Specific experience for this position.
-*How familiar you are with technologies that are in our default development stack.
-*Your employment history. Types of companies you have been working for.
-*Projects that you developed, your roles and responsibilities
-*Experience working for small outsource companies is a plus
-*We would like to see the samples of your code. Please provide a link to your GitHub account. If you have your own project in the open repository or open source contributions, that will reduce the time of technical interview and showcase your skills before the next steps of hiring process.
+* How long have you been coding? When did programming become your passion? 
+* Your overall programming experience and experience in developing commercial applications. 
+* Specific experience for this position.
+* How familiar you are with technologies that are in our default development stack.
+* Your employment history. Types of companies you have been working for.
+* Projects that you developed, your roles and responsibilities
+* Experience working for small outsource companies is a plus
+* We would like to see the samples of your code. Please provide a link to your GitHub account. If you have your own project in the open repository or open source contributions, that will reduce the time of technical interview and showcase your skills before the next steps of hiring process.
 
 If you are a 4-5 year CS student or if you do not have sufficient programming experience, our advice is to do a test assignment or to develop your own project using the technologies mentioned in the job posting. To get a test assignment, please write at cv@jetthoughts.com.
 
@@ -43,9 +43,9 @@ If we are interested in hiring you, you will receive a response within 1-2 busin
 
 Technical review is usually conducted via Skype. We use Collabedit for online coding session. This interview usually takes 40-60 minutes and covers the following topics:
 
-testing your computer science knowledge (algorithms, OOP principles, code style);
-checking specific knowledge relevant for this position (Ruby, Ruby on Rails, Python etc);
-asking general questions.
+* testing your computer science knowledge (algorithms, OOP principles, code style);
+* checking specific knowledge relevant for this position (Ruby, Ruby on Rails, Python etc);
+* asking general questions.
 
 At this stage we test your skills and get to know you closer. We start with the basic questions and notions, because JetThoughts is looking for people with solid background knowledge. Surprisingly, this part often trips up candidates that we thought were great. Afterwards, if everything is ok, we proceed to more complicated stuff. 
 
