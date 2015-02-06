@@ -10,7 +10,8 @@ var gulp = require('gulp'),
   requireDir = require('require-dir'),
   htmlmin = require('gulp-minify-html'),
   browserSync = require('browser-sync'),
-  newer = require('gulp-newer');
+  newer = require('gulp-newer'),
+  flatten = require('gulp-flatten');
 
 var dir = requireDir('./tasks');
 
@@ -47,7 +48,10 @@ var assets = {
     "./javascripts/contact.js"
   ],
   "styles"      : "./_sass/**/*.scss",
-  "site_styles" : ["./_site/css/app.css", "./_site/css/landing.css"]
+  "site_styles" : ["./_site/css/app.css", "./_site/css/landing.css"],
+  'fonts': [
+    '_sass/fonts/socicon/*.*'
+  ]
 };
 
 gulp.task('imagemin', function () {
@@ -145,12 +149,18 @@ gulp.task('browser-sync-site', function () {
   });
 });
 
+gulp.task('copy-fonts', function() {
+  gulp.src(assets.fonts, {base: '.'})
+    .pipe(flatten())
+    .pipe(gulp.dest('css/fonts/'))
+});
+
 // This task for stylefixes only (it serves html files from _site/ dir and not run jekyll)
 gulp.task('stylefix', ['browser-sync-site', 'watch-stylefix']);
 
 gulp.task('jekyll',['browser-sync'], shell.task('jekyll serve -w'));
 
-gulp.task('default', ['watch', 'jekyll', 'uglify', 'compass']);
+gulp.task('default', ['copy-fonts', 'watch', 'jekyll', 'uglify', 'compass']);
 
 gulp.task('minify', ['imagemin', 'uglify', 'compass', 'uncss']);
 
