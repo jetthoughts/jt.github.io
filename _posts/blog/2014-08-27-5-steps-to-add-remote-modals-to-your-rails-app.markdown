@@ -185,5 +185,5 @@ And, finally, you should add 2 attributes to your form:
 
 `data-modal` is used to tell our script to handle this form as the modal form.
 
-I've created a small demo application which you can find here:  [source code on github](https://github.com/tmwh/remote-modals-demo)
+I've created a small [demo application](http://remote-modals-demo.herokuapp.com/) which you can find here:  [source code on github](https://github.com/tmwh/remote-modals-demo)
 
