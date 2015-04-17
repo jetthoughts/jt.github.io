@@ -2,7 +2,7 @@
 layout: post
 author: Valeriy Mironov
 authors_git: valeronm
-title: 'It's Time For Active Job'
+title: 'It''s Time For Active Job'
 date: 17-04-2015
 tags:
 - ruby
