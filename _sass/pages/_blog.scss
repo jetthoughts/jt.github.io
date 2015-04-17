@@ -23,6 +23,8 @@ $post_icon_size: 64px;
   @extend .isometric_bg;
   .heading_one {
     text-align: center;
+    font-size: 2.1em;
+    font-weight: bold;
   }
   .post_date {
     @include lato(1.1em);
@@ -130,7 +132,7 @@ $post_icon_size: 64px;
     @include lato(1em);
     color: $dirt_blue_lighter;
     .author {
-      color: $orange_shadow;
+      color: $orange;
     }
     .category {
       color: $blue_lighter;
@@ -193,6 +195,10 @@ $post_icon_size: 64px;
 .post_content {
   @include lato(1.15em);
   margin-top: 10px;
+  h3 {
+    margin-top: 2em;
+    font-weight: bold;
+  }
   .description {
     color: $mid_gray;
   }
