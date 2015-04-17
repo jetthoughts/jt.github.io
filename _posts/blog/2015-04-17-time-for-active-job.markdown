@@ -6,6 +6,7 @@ title: 'It's Time For Active Job'
 date: 17-04-2015
 tags:
 - ruby
+- rails
 
 categories:
 - blog
