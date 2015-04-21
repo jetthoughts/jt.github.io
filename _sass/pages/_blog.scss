@@ -22,8 +22,9 @@ $post_icon_size: 64px;
   padding: 52px 0;
   @extend .isometric_bg;
   .heading_one {
-    font-size: 2.1em !important;
-    font-weight: bold !important;
+    text-align: center;
+    font-size: 2.1em;
+    font-weight: bold;
   }
   .post_date {
     @include lato(1.1em);
@@ -195,6 +196,7 @@ $post_icon_size: 64px;
   @include lato(1.15em);
   margin-top: 10px;
   h3 {
+    margin-top: 2em;
     font-weight: bold;
   }
   .description {
