@@ -3,7 +3,7 @@ layout: post
 author: Michael Nikitochkin
 authors_git: miry
 title: Visualization of Your Code
-date: 04-21-2014
+date: 21-04-2014
 tags:
 - rails
 
