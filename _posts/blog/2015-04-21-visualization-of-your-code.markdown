@@ -13,15 +13,15 @@ categories:
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/7250573/4be4477e-e82c-11e4-8c1a-24204d856290.jpg" class="left" style="margin-right: 1em;" />
-Working at long and big projects, it is fun to see on a release date how this project was built: who worked at a particular part; when a new guy joined the project,  deleted some code and did refactoring; or when the lead developer went to vacation. There is a lot of such tools, you can even use a browser version. But I still prefer using `gource`.
+Working at long and big projects, it is fun to see on a release date how this project was built: who worked at a particular part; when a new guy joined the project,  deleted some code and did refactoring; or when the lead developer went to vacation. There is a lot of such tools, you can even use a browser version. But I still prefer using `gource` (https://github.com/acaudwell/Gource) 
 
 This story would be about how to setup and automize video creation, what general issues you will encounter and other stuff.
 
 <!--cut-->
 
-It is an old tool. I started using it in 2009 when we finished the next sprint. https://github.com/acaudwell/Gource
+It is an old tool. I started using it in 2009 when we finished the next sprint.
 
-## Step 1: Installation
+### Step 1: Installation
 
 Ok, you wouldn't believe me, but I use ... use ... *MacOS* :)
 
@@ -34,7 +34,7 @@ $ brew install gource
 
 That's all.
 
-## Step 2: Show simple video
+### Step 2: Show simple video
 
 Now you are able to see visualization of any project of yours.
 
@@ -43,7 +43,7 @@ $ cd <path to project>
 $ gource
 {% endhighlight %}
 
-## Step 3: Avatars
+### Step 3: Avatars
 
 Ok, now you see some color dots and color figures. Let's add some recognizable images to authors. There is an old example showing how to get gravatars of users: 
 
@@ -58,7 +58,7 @@ $ perl authors_gravatar.pl
 $ gource --user-image-dir .git/avatar
 {% endhighlight %}
 
-## Step 4: Video
+### Step 4: Video
 
 First read this article [Gource Videos](https://code.google.com/p/gource/wiki/Videos#Linux_/_Mac)
 
@@ -68,7 +68,7 @@ $ gource --camera-mode overview --seconds-per-day 1 --user-image-dir .git/avatar
 $ ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i gource/gource.ppm -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 4 -bf 0 gource/gource.mp4
 {% endhighlight %}
 
-## Step 5: Soundtrack
+### Step 5: Soundtrack
 
 Open video file in QuickTime. From Finder Drag and Drop our soundtrack file to the QuickTime window. It is very easy.
 
