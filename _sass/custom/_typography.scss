@@ -34,11 +34,11 @@ p {
 }
 
 b {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 strong {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .blog_section {
@@ -103,10 +103,12 @@ ul {
 
 // Headings
 .h1 {
-  @include lato(2.5em);
+  @include lato(2.1em !important);
   line-height: 130%;
   color: $dark_blue;
   margin: 14px 0 10px;
+  margin-top: 1.8em;
+  font-weight: bold;
 }
 
 .heading_one, h1 {
@@ -122,7 +124,7 @@ h2,
 h3,
 .heading_three {
   @extend .h1;
-  font-size: 1.45em;
+  font-size: 1.45em !important;
 }
 
 h4,
