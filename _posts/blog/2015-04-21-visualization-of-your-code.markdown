@@ -19,8 +19,6 @@ This story would be about how to setup and automize video creation, what general
 
 <!--cut-->
 
-# Gource
-
 It is an old tool. I started using it in 2009 when we finished the next sprint. https://github.com/acaudwell/Gource
 
 ## Step 1: Installation
@@ -29,10 +27,10 @@ Ok, you wouldn't believe me, but I use ... use ... *MacOS* :)
 
 ![PowerPC](http://www.applegazette.com/wp-content/uploads/2007/08/emac.jpg)
 
-```
+{% highlight ruby linenos=table %}
 $ brew update
 $ brew install gource
-```
+{% endhighlight %}
 
 That's all.
 
@@ -40,35 +38,35 @@ That's all.
 
 Now you are able to see visualization of any project of yours.
 
-```
+{% highlight ruby linenos=table %}
 $ cd <path to project>
 $ gource
-```
+{% endhighlight %}
 
 ## Step 3: Avatars
 
 Ok, now you see some color dots and color figures. Let's add some recognizable images to authors. There is an old example showing how to get gravatars of users: 
 
-```
+{% highlight ruby linenos=table %}
 $ curl https://gist.githubusercontent.com/miry/dbf01f5a198060710255/raw/d07db1571a045e057e6d56444943bc798dd91be3/authors_gravatar.pl > authors_gravatar.pl
-```
+{% endhighlight %}
 
 Run the script `authors_gravatar.pl` and it would fetch gravatar images by author's email to `.git/avatar`.
 
-```
+{% highlight ruby linenos=table %}
 $ perl authors_gravatar.pl
 $ gource --user-image-dir .git/avatar
-```
+{% endhighlight %}
 
 ## Step 4: Video
 
 First read this article [Gource Videos](https://code.google.com/p/gource/wiki/Videos#Linux_/_Mac)
 
-```
+{% highlight ruby linenos=table %}
 $ gource --camera-mode overview --seconds-per-day 1 --user-image-dir .git/avatar/ -1280x720 -o gource/gource.ppm 
 
 $ ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i gource/gource.ppm -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 4 -bf 0 gource/gource.mp4
-```
+{% endhighlight %}
 
 ## Step 5: Soundtrack
 
