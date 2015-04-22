@@ -198,7 +198,11 @@ $post_icon_size: 64px;
     @include lato(2.1em !important);
   }
   h3 {
+    margin-top: 1.8em;
     font-weight: bold;
+  }
+  h2 {
+    margin-top: 1.8em;
   }
   .description {
     color: $mid_gray;
