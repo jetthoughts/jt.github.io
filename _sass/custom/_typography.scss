@@ -103,7 +103,7 @@ ul {
 
 // Headings
 .h1 {
-  @include lato(2.1em !important);
+  @include lato(2.1em);
   line-height: 130%;
   color: $dark_blue;
   margin: 14px 0 10px;
