@@ -36,12 +36,6 @@ xserg:
   ava: '/images/team/sergey.jpeg'
   role: 'Developer'
   bio: 'Sergey is an awesome Ruby developer, capable of implementing seemingly impossible tasks and hacks. When he is not madly coding on his computer, you can find Sergey working out in the gym, jogging or solving sudoku puzzles.'
-mli-max:
-  name: 'Maxim'
-  full_name: 'Maxim Litvinov'
-  ava: '/images/team/max.jpg'
-  role: 'Developer'
-  bio: 'Fueled by his passion for technology, Maxim enjoys developing Ruby on Rails applications, using code to create great projects. Outside of serious work, Maxim spends time dancing and taking beautiful photos.'
 mir4a:
   name: 'Miroslav'
   full_name: 'Myroslav Martynov'
