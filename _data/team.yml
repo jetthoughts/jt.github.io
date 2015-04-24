@@ -122,8 +122,8 @@ loogle18:
   role: 'Developer'
   bio: 'Sviat is a young and promising Front-End developer. He is keen on what he is doing and likes to find a perfect balance between logic and creativity while developing.'
 katlavan:  
-  name: 'Maksym'
-  full_name: 'Maksym Katkov'
+  name: 'Maxim'
+  full_name: 'Maxim Katkov'
   ava: '/images/team/katkov.jpg'
   role: 'Developer'
   bio: 'Maxim converts the results of Ruby developers work in handy UI, using popular javascript frameworks. He likes to work with AngularJS. In his work Maxim focuses on the end user convenience. In his spare time he is improving knowledge of the MEAN development stack.'   
