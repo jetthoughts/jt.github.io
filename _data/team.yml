@@ -127,3 +127,9 @@ katlavan:
   ava: '/images/team/katkov.jpg'
   role: 'Developer'
   bio: 'Maxim converts the results of Ruby developers work in handy UI, using popular javascript frameworks. He likes to work with AngularJS. In his work Maxim focuses on the end user convenience. In his spare time he is improving knowledge of the MEAN development stack.'   
+gra1:  
+  name: 'Ostap'
+  full_name: 'Ostap Bochulia'
+  ava: '/images/team/ostap.jpg'
+  role: 'Developer'
+  bio: 'Ostap considers Ruby and Rails to be the best programming language and framework ever. He likes to work hard because resolving difficult issues makes Ostap happy. But he does not forget to be funny and enjoy life as well.'
