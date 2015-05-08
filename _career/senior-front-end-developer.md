@@ -9,7 +9,7 @@ date: 30-01-2015
 details:
   Hire date: immediately
   Skills: HTML, CSS, JS, JQuery
-  Experience: 2+ years
+  Experience: 4+ years
 
 ---
 
