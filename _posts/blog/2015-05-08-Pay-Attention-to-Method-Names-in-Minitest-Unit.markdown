@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Hnat Kubov
-authors_git: hnat
+authors_git: hnatt
 title: Pay Attention to Method Names in Minitest::Unit
 date: 08-05-2015
 tags:
