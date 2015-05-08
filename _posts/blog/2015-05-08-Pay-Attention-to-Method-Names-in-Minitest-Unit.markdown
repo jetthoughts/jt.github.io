@@ -91,6 +91,6 @@ let(:name) { 'Bob' }
 
 --and your test won't load:
 
-    ArgumentError: let 'name' cannot override a method in Minitest::Spec. Please use another name.
+*ArgumentError: let 'name' cannot override a method in Minitest::Spec. Please use another name.*
 
 `Minitest::Unit` on the other hand is more straightforward and lets you do whatever you want.
