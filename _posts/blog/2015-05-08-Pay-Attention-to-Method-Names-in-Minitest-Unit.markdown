@@ -16,7 +16,11 @@ categories:
 
 **TL,DR: don't define any methods with names `name`, `message`, `time`, `pass` in `Minitest::Unit` test cases unless you really want to override those of `Minitest::TestCase`.**
 
+<br><br>
+
 When writing `Minitest::Unit` tests, it's convenient to use test case's instance methods as kind of RSpec's lazy-evaluated `let`-blocks or various helper methods.
+<br><br>
+
 
 <!--cut-->
 
