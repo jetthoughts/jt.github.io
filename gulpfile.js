@@ -32,7 +32,8 @@ var assets = {
     "./javascripts/fastclick_init.js",
     "./javascripts/contact.js",
     "./javascripts/portfolio_sorter.js",
-    "./javascripts/portfolio_heights.js"
+    "./javascripts/portfolio_heights.js",
+    "./javascripts/highlight_tabs.js"
   ],
   "self_scripts": [
     "./javascripts/webfont_config.js",
@@ -41,7 +42,8 @@ var assets = {
     "./javascripts/fastclick_init.js",
     "./javascripts/contact.js",
     "./javascripts/portfolio_sorter.js",
-    "./javascripts/portfolio_heights.js"
+    "./javascripts/portfolio_heights.js",
+    "./javascripts/highlight_tabs.js"
   ],
   'landing_scripts':[
     "./bower_components/jquery/jquery.js",
