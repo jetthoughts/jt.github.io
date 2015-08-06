@@ -2,9 +2,9 @@
 layout: career
 title: "Senior Ruby on Rails Developer (Local or Remote)"
 authors_git: tehhi42
-excerpt: If you are an experienced Rails developer, who has built multiple production-ready Rails apps and who is proud of his simple and readable code, you might be a great fit for our team. 
+excerpt: We are looking for a Senior RoR developer remotely or in Lviv. Is that you? Let’s check!
 category: developer
-date: 14-10-2014
+date: 06-08-2015
 
 details:
   Hire date: immediately
@@ -16,11 +16,12 @@ details:
 
 ###The necessary knowledge and skills:
 
-- 5+ years working with Ruby on Rails.
-- In depth knowledge of Ruby and one or two other languages: Java, Scala, Python, or PHP.
-- Strong to expert skills using HTML/DOM/CSS/Javascript.
-- Solid command of web standards, CSS-based design, cross-browser compatibility.
-- Excellent verbal and written English communication skills.
+- You are an expert Rubyist and have 5+ years working with Ruby on Rails, solid command of web standards and web technologies, experience in gem creation and maintenance.
+- You are not just writing solid code, but you can match technological solutions to business needs and requirements. 
+- You feel comfortable working in a dedicated team. 
+- You have an ability and (more importantly) a desire to communicate in English a lot every day.
+- Team leading experience will be considered as a big plus.
+
 
 
 
