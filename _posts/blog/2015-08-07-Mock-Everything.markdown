@@ -12,7 +12,7 @@ categories:
 - tech
 ---
 
-<img src="http://www.quickmeme.com/img/9a/9a7460d0eec7baa6db72ab966714669e4754fea9ae127b44d6da56761260c2b2.jpg" class="left" style="margin-right: 1em;" />
+<img src="http://www.quickmeme.com/img/9a/9a7460d0eec7baa6db72ab966714669e4754fea9ae127b44d6da56761260c2b2.jpg" class="left" style="margin-right: 2em;" />
 
 Have you found a lot of code with mocks and stubs? But how do you feel about it?
 When I see mocks/stubs I am always looking for the way to remove them.
@@ -22,11 +22,10 @@ When I see mocks/stubs I am always looking for the way to remove them.
 1. Everything starts from a happy developer and a clean architecture with fastest tests. 
 2. And one day in the middle of development we have changed the core application business logic. 
 3. We have changed our code base according to new requirements, and now we expect to have failed tests .... oops, most of expected tests pass successfully instead of failing
+<!--cut-->
 4. We found mocks in the code, updated them. 
 5. And now we have a hunch, that tests are cheating on us, so we should find all similar mocks and update them to correspond the last requirements. 
 6. And even after reviewing all tests, we still have considerable misgivings.
-
-<!--cut-->
 
 ### What has just happened:
 
