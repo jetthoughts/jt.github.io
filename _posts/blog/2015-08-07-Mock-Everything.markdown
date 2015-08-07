@@ -36,8 +36,8 @@ And that's duplication, baby!
 
 That said, Mocks and Stubs are powerful tools and should be put to a good use.
 Here are my principles when to use them:
-  * Stub/mock only the stuff that is impossible to setup/simulate like remote services responses, time and etc. 
-  * Stubs/Mocks only specifications, which will not be changed at all: external applications, libraries.
+  - Stub/mock only the stuff that is impossible to setup/simulate like remote services responses, time and etc. 
+  - Stubs/Mocks only specifications, which will not be changed at all: external applications, libraries.
 
 In other cases when I have a desire to mock something, then this is the first sign of a poor design.
 And I understand if I cannot add tests for simple application behaviour on initial stages,
