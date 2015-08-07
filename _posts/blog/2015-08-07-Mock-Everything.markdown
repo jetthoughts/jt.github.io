@@ -3,7 +3,7 @@ layout: post
 author: Paul Nikitochkin
 authors_git: pftg
 title: Mock Everything Is a Good Way to Sink
-date: 08-05-2015
+date: 07-08-2015
 tags:
 - rails
 
