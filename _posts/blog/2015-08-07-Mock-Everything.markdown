@@ -17,7 +17,7 @@ categories:
 Have you found a lot of code with mocks and stubs? But what do you feel about it?
 When I see mocks/stubs I always looking how to remove them.
 
-## Application Lifecycle with mocking everything strategy:
+### Application Lifecycle with mocking everything strategy:
 
 1. Everything starts from a happy developer and a clean architecture with fastest tests. 
 2. And one day in the middle of development we have changed the core application business logic. 
@@ -28,7 +28,7 @@ When I see mocks/stubs I always looking how to remove them.
 
 <!--cut-->
 
-## What has just happened:
+### What has just happened:
 
 With mocks, we cannot rely on implemented architecture because using mocks/stubs we built a fake application from small chunks which are placed in different parts of test suites. As it turns out, changes to application architecture will not make our tests fail. So we should look for all our chunks and update them ourselves. And that's duplication, baby!
 
@@ -38,15 +38,15 @@ That said, Mocks and Stubs are powerful tools and should be put to a good use. H
 
 In other cases when I have a desire to mock something, then this is the first sign of a poor design. And I understand if I cannot add tests for simple application behaviour on initial stages, then how I will support it when it will become a whale of an application? Mocked behaviour is a sort of our technical debts which we should fix as soon as possible.
 
-## Summary:
+### Summary:
 
 Do not overuse mocks and stubs ;) Most popular alternatives to mocks and stubs are fakes, which have some advantages of mocks, but are much easier to support. 
 
 Here are some useful links about mocking\stubbing: 
 
-(https://www.youtube.com/watch?v=z9quxZsLcfo&feature=youtu.be&t=21m00s)
-(http://martinfowler.com/articles/mocksArentStubs.html)
-(http://www.thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists)
-(https://gist.github.com/Integralist/7944948)
-(https://www.youtube.com/watch?v=URSWYvyc42M)
+ - https://www.youtube.com/watch?v=z9quxZsLcfo&feature=youtu.be&t=21m00s
+ - http://martinfowler.com/articles/mocksArentStubs.html
+ - http://www.thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists
+ - https://gist.github.com/Integralist/7944948
+ - https://www.youtube.com/watch?v=URSWYvyc42M
 
