@@ -29,15 +29,20 @@ When I see mocks/stubs, I am always looking for the way to remove them.
 
 ### What has just happened:
 
-With mocks, we cannot rely on implemented architecture because using mocks/stubs we built a fake application from small chunks which are placed in different parts of test suites.
+With mocks, we cannot rely on implemented architecture
+because using mocks/stubs we built a fake application from small chunks.
+And placed them in different parts of test suites.
 As it turns out, changes to application architecture will not make our tests fail.
 So we should look for all our chunks and update them ourselves.
 And that's duplication, baby!
 
-That said, Mocks and Stubs are powerful tools and should be put to a good use.
+### Mocking/Stubbing Principles:
+
+Mocks and Stubs are powerful tools and should be put to a good use.
 Here are my principles when to use them:
-  - Stub/mock only the stuff that is impossible to setup/simulate like remote services responses, time and etc. 
-  - Stubs/Mocks only specifications, which will not be changed at all: external applications, libraries.
+
+- Stub/mock only the stuff that is impossible to setup/simulate like remote services responses, time and etc. 
+- Stubs/Mocks only specifications, which will not be changed at all: external applications, libraries.
 
 In other cases when I have a desire to mock something, then this is the first sign of a poor design.
 And I understand if I cannot add tests for simple application behaviour on initial stages,
@@ -46,7 +51,8 @@ Mocked behaviour is a sort of our technical debts which we should fix as soon as
 
 ### Summary:
 
-Do not overuse mocks and stubs ;) Most popular alternatives to mocks and stubs are fakes, which have some advantages of mocks, but are much easier to support. 
+Do not overuse mocks and stubs ;) Most popular alternatives to mocks and stubs are fakes,
+which have some advantages of mocks, but are much easier to support. 
 
 Here are some useful links about mocking/stubbing: 
 
