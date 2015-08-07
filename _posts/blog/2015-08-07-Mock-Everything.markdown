@@ -13,8 +13,8 @@ categories:
 - tech
 ---
 
-Have you found a lot of code with mocks and stubs? But how do you feel about it?
-When I see mocks/stubs, I am always looking for the way to remove them.
+_Have you found a lot of code with mocks and stubs? But how do you feel about it?
+When I see mocks/stubs, I am always looking for the way to remove them._
 
 <img src="http://www.quickmeme.com/img/9a/9a7460d0eec7baa6db72ab966714669e4754fea9ae127b44d6da56761260c2b2.jpg" class="left" style="margin-right: 2em;" />
 
@@ -56,9 +56,9 @@ which have some advantages of mocks, but are much easier to support.
 
 Here are some useful links about mocking/stubbing: 
 
- - https://www.youtube.com/watch?v=z9quxZsLcfo&feature=youtu.be&t=21m00s
- - http://martinfowler.com/articles/mocksArentStubs.html
- - http://www.thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists
- - https://gist.github.com/Integralist/7944948
- - https://www.youtube.com/watch?v=URSWYvyc42M
+ - [Is TDD dead?](https://www.youtube.com/watch?v=z9quxZsLcfo&feature=youtu.be&t=21m00s)
+ - [Mocks Aren't Stubs](http://martinfowler.com/articles/mocksArentStubs.html)
+ - [Mockists Are Dead. Long Live Classicists.](http://www.thoughtworks.com/insights/blog/mockists-are-dead-long-live-classicists)
+ - [Rules for good testing](https://gist.github.com/Integralist/7944948)
+ - [The Magic Tricks of Testing by Sandi Metz](https://www.youtube.com/watch?v=URSWYvyc42M)
 
