@@ -26,6 +26,8 @@ When I see mocks/stubs, I am always looking for the way to remove them._
 4. We found mocks in the code, updated them. 
 5. And now we have a hunch, that tests are cheating on us, so we should find all similar mocks and update them to correspond the last requirements. 
 6. And even after reviewing all tests, we still have considerable misgivings.
+ 
+<!--cut-->
 
 ### What has just happened:
 
