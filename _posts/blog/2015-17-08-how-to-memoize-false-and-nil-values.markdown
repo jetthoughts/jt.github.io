@@ -4,7 +4,7 @@ author: Hnat Kubov
 authors_git: hnatt
 title: How To Memoize False and Nil Values
 layout: post
-date: 08-17-2015
+date: 17-08-2015
 tags:
 - rails
 
