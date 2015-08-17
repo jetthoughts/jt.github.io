@@ -21,7 +21,7 @@ Memoization is a useful technique which helps to achieve cleaner and more effici
 
 <!--cut-->
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 {% highlight ruby linenos=table %}
 class Book
