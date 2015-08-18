@@ -114,7 +114,7 @@ hnatt:
   full_name: 'Hnat Kubov'
   ava: '/images/team/kubov.jpg'
   role: 'Developer'
-  bio: 'Hnat works on the full stack of the app from database design to user interfaces, using PostgreSQL for DB, Minitest with fixtures and Capybara for testing, jQuery for UI goodies, Capistrano for deployment.' 
+  bio: 'Hnat is a Ruby on Rails developer. He appreciates clean and readable code more than anything in his profession and can argue for hours over choice of right names for classes and methods.' 
 loogle18:
   name: 'Sviat'
   full_name: 'Sviat Medved'
