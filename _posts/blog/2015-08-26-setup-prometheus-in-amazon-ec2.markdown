@@ -5,7 +5,12 @@ authors_git: miry
 title: Setup Prometheus in Amazon EC2 via ElasticBeans talk and Docker
 date: 26-08-2015
 tags:
-- rails
+- deploy
+- amazon
+- ec2
+- elasticbeanstalk
+- docker
+- prometheus
 
 categories:
 - blog
@@ -25,10 +30,10 @@ Let's play.
 
 1. [Run Prometheus on local machine](#run-prometheus-on-local-machine)
 1. [Setup ElasticBeanstalk Application and Environment](#create-elasticbeanstalk-application)
-1. Customize Prometheus
-1. Add Prometheus Dashboard(Rails app and Mysql)
-1. Add Nginx with HTTP Basic Auth
-1. Add Prometheus Pushgateway
+1. [Customize Prometheus](#customize-prometheus)
+1. [Add Prometheus Dashboard(Rails app and Mysql)](#add-prometheus-dashboardrails-app-and-mysql)
+1. [Add Nginx with HTTP Basic Auth](#add-nginx-with-http-basic-auth)
+1. [Add Prometheus Pushgateway](#add-prometheus-pushgateway)
 
 ### Run Prometheus on a local machine
 
