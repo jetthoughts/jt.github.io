@@ -646,7 +646,7 @@ To add nginx container you should go through similar steps as for rails-app. Ngi
 
 Remove ports from the `prometheus-app` container and `rails-app`. Create site config `proxy/conf.d/default.conf`:
 
-```conf
+```
 upstream rails_app {
     server rails-app:3000;
 }
