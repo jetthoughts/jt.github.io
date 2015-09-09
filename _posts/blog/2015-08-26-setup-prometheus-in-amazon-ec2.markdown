@@ -136,7 +136,7 @@ The config is clear, except the `essential`. This option required to mark this c
 
 Let's do local test for this configuration. Yep, it is the one of most cool features from `eb` running containers in local env using the same `docker` and `docker-compose`.
 
-```shell
+```
 $ eb local run
 Creating elasticbeanstalk_prometheusapp_1...
 Attaching to elasticbeanstalk_prometheusapp_1
@@ -162,7 +162,7 @@ prometheusapp:
 
 This file would help us in future to debug. Next step deploy:
 
-```shell
+```
 $ eb deploy
 ```
 
@@ -172,7 +172,7 @@ Wait for a few mins and check that all finished without `ERROR`.
 
 We setup the  sample prometheus with default configuration and settings. Let's add custom config file, that is stored out of the container with default settings. 
 
-```shell
+```
 $ mkdir prometheus
 $ cat > prometheus/prometheus.yml <<EOY
 # my global config
@@ -219,7 +219,7 @@ CMD        [ "-config.file=/etc/prometheus/prometheus.yml", \
 
 We need to change only one parameter `-config.file` to point to our file and others remain unchanged. Let's suppose that our config file will be located in `/opt/prometheus/prometheus.yml`. In a pure docker it would look like:
 
-```shell
+```
 $ docker run -p 9090:9090 -t prom/prometheus -config.file=/opt/prometheus/prometheus.yml -storage.local.path=/prometheus -web.console.libraries=/etc/prometheus/console_libraries -web.console.templates=/etc/prometheus/consoles
 
 prometheus, version 0.14.0 (branch: stable, revision: 67e7741)
@@ -235,7 +235,7 @@ ERRO[0000] Note: The configuration format has changed with version 0.14. Please 
 This file is missing. To share our local folder with docker container we need to add specific option. More information about in [Managing data in containers]. Simple version is: `docker run -v /path/local/folder:/path/container/folder`. 
 
 
-```shell
+```
 $ docker run -d -v $(pwd)/prometheus:/opt -p 9090:9090 -t prom/prometheus -config.file=/etc/prometheus/prometheus.yml -storage.local.path=/prometheus -web.console.libraries=/etc/prometheus/console_libraries -web.console.templates=/etc/prometheus/consoles
 $ open http://"$(boot2docker ip)":9090
 ```
@@ -500,7 +500,7 @@ Added an option `essential: false` to mark this container as should not kill all
 
 `bin/delay.sh`:
 
-```shell
+```
 #!/bin/sh
 timeout=$1
 shift
@@ -564,7 +564,7 @@ Next we should mount our bin folder and wrap rake command with `delay.sh`:
 
 Trying again `eb local run`, it looks like the migration has started, but quits afterwards. EB local does not support an option `essential: false` because it was related to [Docker Compose]. Add new wrapper `bin/sleep.sh`:
 
-```shell
+```
 #!/bin/sh
 echo `$@`
 if [ $? -eq 0 ]; then
