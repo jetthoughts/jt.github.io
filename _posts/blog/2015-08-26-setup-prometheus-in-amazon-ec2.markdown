@@ -16,6 +16,7 @@ categories:
 - blog
 - tech
 ---
+
 <img src="https://cloud.githubusercontent.com/assets/5908100/9756779/512bf326-56e5-11e5-9424-90c2a75ffd22.jpg" class="left" style="margin-right: 1em;" />
 
 What is [ElasticBeanstalk]? It is one of Amazon Services that help developers to deploy applications. Now any cloud hosting wants to be modern and support docker, [ElasticBeanstalk] is one of them. Developers replace chef recipes with `Dockerfile` and don't even think why.
