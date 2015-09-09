@@ -17,7 +17,7 @@ categories:
 - tech
 ---
 
-<img src="https://cloud.githubusercontent.com/assets/5908100/9756779/512bf326-56e5-11e5-9424-90c2a75ffd22.jpg" class="left" style="margin-right: 1em;" />
+<img src="https://cloud.githubusercontent.com/assets/5908100/9756779/512bf326-56e5-11e5-9424-90c2a75ffd22.jpg" class="left" style="margin-right: 1em;" width="300" />
 
 What is [ElasticBeanstalk]? It is one of Amazon Services that help developers to deploy applications. Now any cloud hosting wants to be modern and support docker, [ElasticBeanstalk] is one of them. Developers replace chef recipes with `Dockerfile` and don't even think why.
 
@@ -41,7 +41,7 @@ Let's play.
 
 If you are not familiar with Docker you can find more information in [Docker User Guide].
 
-![asciicast](https://asciinema.org/a/7go1iyz18m9gvvlwxhayvisq6.png)](https://asciinema.org/a/5diw0wwk6vbbovnqrk5sh1soy)
+[![asciicast](https://asciinema.org/a/7go1iyz18m9gvvlwxhayvisq6.png)](https://asciinema.org/a/5diw0wwk6vbbovnqrk5sh1soy)
 
 ```
 $ boot2docker start 
@@ -61,7 +61,7 @@ $ docker stop <container id: first column>
 
 ### Create ElasticBeanstalk Application
 
-```shell
+```
 $ mkdir prometheus
 $ cd prometheus
 $ brew install aws-elasticbeanstalk
@@ -74,7 +74,7 @@ It would create a Sample web application `prometheus` provided by [ElasticBeanst
 
 After that you can configure the application via web interface. Save configuration from environment settings menu. To access  saved configurations create a command `config` .
 
-```shell
+```
 $ eb config list
 $ eb config get <configname>
 $ vim .elasticbeanstalk/saved_configs/<configname>.cfg.yml
@@ -83,7 +83,7 @@ $ eb config put <configname>
 
 It is a useful feature if you want to put configuration in a repo and create new environments based on those configurations. The local copy of config is located in `.elasticbeanstalk/saved_configs`
 
-```shell
+```
 $ eb create other-env --cfg <configname>
 ```
 
