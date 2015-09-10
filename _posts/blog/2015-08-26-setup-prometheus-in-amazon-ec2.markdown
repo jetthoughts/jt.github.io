@@ -43,19 +43,19 @@ If you are not familiar with Docker you can find more information in [Docker Use
 
 [![asciicast](https://asciinema.org/a/7go1iyz18m9gvvlwxhayvisq6.png)](https://asciinema.org/a/5diw0wwk6vbbovnqrk5sh1soy)
 
-```
+{% highlight shell linenos=table %}
 $ boot2docker start 
 $ eval "$(boot2docker shellinit)"
 $ docker run -d -p 9090:9090 prom/prometheus
 $ open http://"$(boot2docker ip)":9090
-```
+{% endhighlight %}
 
 You should see the Prometheus status page. Try to play with Prometheus graph and queries. By default Prometheus gets own metrics. It was really easy. Don't forget to stop process after:
 
-```
+{% highlight shell linenos=table %}
 $ docker ps
 $ docker stop <container id: first column>
-```
+{% endhighlight %}
 
 ![Prometheus Status Page](http://cl.ly/image/2S2p1P0O0s1a/Prometheus%20default%20config.png)
 
