@@ -79,7 +79,7 @@ alyona:
   ava: '/images/team/alena.jpg'
   role: 'Manager'
   bio: 'Alyona uses her creative and problem-solving skills to make sure that JetThoughts team members have everything they need for productive work. She keeps our office organised and provides the smooth operation of the day-to-day business of the company.'
-solomiya:  
+solomiya:
   name: 'Solomiya'
   full_name: 'Solomiya'
   ava: '/images/team/solomiya.jpg'
@@ -102,34 +102,40 @@ alexey_2:
   full_name: 'Alexey Chernov'
   ava: '/images/team/alexey_2.jpg'
   role: 'Developer'
-  bio: 'Alexey likes development, because this profession gives him an opportunity not only to practice his logical thinking and solve puzzles, but also to build useful applications for real people.' 
+  bio: 'Alexey likes development, because this profession gives him an opportunity not only to practice his logical thinking and solve puzzles, but also to build useful applications for real people.'
 marchi-martius:
   name: 'Mark'
   full_name: 'Mark Volosiuk'
   ava: '/images/team/mark.jpg'
   role: 'Developer'
-  bio: 'Inspired by simplicity and variety of nature beauty, Mark enjoys the construction of large-scale complex systems from simple and elegant pieces. The Ruby language as a tool suits perfectly for this task, because of its overall beautiful syntax and flexibility in solving a wide range of tasks.' 
+  bio: 'Inspired by simplicity and variety of nature beauty, Mark enjoys the construction of large-scale complex systems from simple and elegant pieces. The Ruby language as a tool suits perfectly for this task, because of its overall beautiful syntax and flexibility in solving a wide range of tasks.'
 hnatt:
   name: 'Hnat'
   full_name: 'Hnat Kubov'
   ava: '/images/team/kubov.jpg'
   role: 'Developer'
-  bio: 'Hnat is a Ruby on Rails developer. He appreciates clean and readable code more than anything in his profession and can argue for hours over choice of right names for classes and methods.' 
+  bio: 'Hnat is a Ruby on Rails developer. He appreciates clean and readable code more than anything in his profession and can argue for hours over choice of right names for classes and methods.'
 loogle18:
   name: 'Sviat'
   full_name: 'Sviat Medved'
   ava: '/images/team/medved.jpg'
   role: 'Developer'
   bio: 'Sviat is a young and promising Front-End developer. He is keen on what he is doing and likes to find a perfect balance between logic and creativity while developing.'
-katlavan:  
+katlavan:
   name: 'Maxim'
   full_name: 'Maxim Katkov'
   ava: '/images/team/katkov.jpg'
   role: 'Developer'
-  bio: 'Maxim converts the results of Ruby developers work in handy UI, using popular javascript frameworks. He likes to work with AngularJS. In his work Maxim focuses on the end user convenience. In his spare time he is improving knowledge of the MEAN development stack.'   
-gra1:  
+  bio: 'Maxim converts the results of Ruby developers work in handy UI, using popular javascript frameworks. He likes to work with AngularJS. In his work Maxim focuses on the end user convenience. In his spare time he is improving knowledge of the MEAN development stack.'
+gra1:
   name: 'Ostap'
   full_name: 'Ostap Bochulia'
   ava: '/images/team/ostap.jpg'
   role: 'Developer'
   bio: 'Ostap considers Ruby and Rails to be the best programming language and framework ever. He likes to work hard because resolving difficult issues makes Ostap happy. But he does not forget to be funny and enjoy life as well.'
+Magons:
+  name: 'Ivan'
+  full_name: 'Ivan Prokopenko'
+  ava: '/images/team/ivan.jpg'
+  role: 'Developer'
+  bio: 'Ivan has tried a lot of frameworks before he began to work with Ruby on Rails, and this framework immediately conquered his heart. Ivan wants to be a professional so he never stops learning. Ivan does not see a problem, he sees solutions.'
