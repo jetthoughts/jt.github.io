@@ -18,7 +18,9 @@ categories:
 
 ### Time makes rules
 
-Every time when we start working on a new project, short iteration or just a new feature, we almost always worry about a delivery deadline. «Do we have enough time for this feature?», «Will we do it in time before customer loses the trust to us...». We always try to give an accurate estimation. We always wonder: «Will we be able to make it within this ETA and own workflow?». But, sometimes, when we had begun working on a particular task and had investigated it deeper, you realise that you don’t fit into the initial estimation.
+Every time when we start working on a new project, short iteration or just a new feature, we almost always worry about a delivery deadline. «Do we have enough time for this feature?», «Will we do it in time before customer loses the trust to us...». We always try to give an accurate estimation. 
+
+We always wonder: «Will we be able to make it within this ETA and own workflow?». But, sometimes, when we had begun working on a particular task and had investigated it deeper, you realise that you don’t fit into the initial estimation.
  
 <!--cut-->
 
@@ -27,7 +29,9 @@ Every time when we start working on a new project, short iteration or just a new
 
 Our workflow is a mixture of Kanban and Scrum methodologies.
  
-For example, we use default scrum board, but WIP is controlled by our workflow states; we have something like «daily scrum», but per week; we have clearly defined scrum roles, but our team is not cross-functional and its members specialize in certain tasks. Also, we plan the set of tasks for the following week (Sprints) in a close cooperation with our customers and usually wait for the next sprint with new changes. But sometimes we can add high-priority tasks to the current sprint. When the code is ready, it is subject to testing and code reviewing (twice!). Each stage repeats until result matches task requirements and style guides which we follow. In our work processes we stand for a couple of simple rules:
+For example, we use default scrum board, but WIP is controlled by our workflow states; we have something like «daily scrum», but per week; we have clearly defined scrum roles, but our team is not cross-functional and its members specialize in certain tasks. Also, we plan the set of tasks for the following week (Sprints) in a close cooperation with our customers and usually wait for the next sprint with new changes. 
+
+But sometimes we can add high-priority tasks to the current sprint. When the code is ready, it is subject to testing and code reviewing (twice!). Each stage repeats until result matches task requirements and style guides which we follow. In our work processes we stand for a couple of simple rules:
  
  - High priority tasks first.
  - Cover new changes with tests.
