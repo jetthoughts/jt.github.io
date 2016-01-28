@@ -1,7 +1,7 @@
 ---
  layout: post
  author: Sviat Medved
- authors_git: loogle_18
+ authors_git: loogle18
  title: How We Temporarily Transformed Our Usual Workflow for a Tight Deadline
  description: Every time when we start working on a new project, short iteration or just a new feature, we almost always worry about a delivery deadline.
  date: 28-02-2016
