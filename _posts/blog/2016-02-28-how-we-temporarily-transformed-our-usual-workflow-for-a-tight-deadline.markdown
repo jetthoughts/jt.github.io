@@ -1,9 +1,9 @@
----
+ ---
  layout: post
  author: Sviat Medved
  authors_git: loogle18
  title: How We Temporarily Transformed Our Usual Workflow for a Tight Deadline
- description: Every time when we start working on a new project, short iteration or just a new feature, we almost always worry about a delivery deadline.
+ description: "Our experience in creating a flexible workflow for a tight deadline."
  date: 28-02-2016
  tags:
  - workflow
