@@ -22,6 +22,7 @@ Every time when we start working on a new project, short iteration or just a new
  
 <!--cut-->
 
+
 ### Our workflow
 
 Our workflow is a mixture of Kanban and Scrum methodologies.
@@ -34,7 +35,7 @@ For example, we use default scrum board, but WIP is controlled by our workflow s
  - Do not merge until tests are green.
  - Do not merge your own branches.
  - And once we have broken all the rules...
- 
+
 ### Rush development
 
 One morning after a regular meeting with our customer we figured out that we have to implement huge changes in three days. Considering that before this day estimations were longer (about tenfold more), we had no idea how we can do it in the shortest time possible. Needless to say that day we had one more meeting asap. We have strong loyalty relation with this customer and have been building long-term success with him, so we have not refused a task and after some time of thoughts and calculation of story points, we started heavy work.
