@@ -4,7 +4,7 @@ author: Sviat Medved
 authors_git: loogle18
 title: How We Temporarily Transformed Our Usual Workflow for a Tight Deadline
 description: Our experience in creating a flexible workflow for a tight deadline.
-date: 28-02-2016
+date: 08-02-2016
 tags:
 - workflow
 
