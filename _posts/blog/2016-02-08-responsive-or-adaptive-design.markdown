@@ -10,7 +10,7 @@ tags:
 
 categories:
 - blog
-- team
+- tech
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/12886497/57db9f42-ce76-11e5-9930-c8cd7bbd4a58.jpg" class="left" style="margin-right: 1em;" />
