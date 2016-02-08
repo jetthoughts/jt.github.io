@@ -13,7 +13,7 @@ categories:
 - tech
 ---
 
-<img src="https://cloud.githubusercontent.com/assets/5908100/12886497/57db9f42-ce76-11e5-9930-c8cd7bbd4a58.jpg" class="left" style="margin-right: 1em;" />
+<img src="https://cloud.githubusercontent.com/assets/5908100/12886992/0e68ffe0-ce7a-11e5-83c9-1ac8c750e479.jpg" class="left" style="margin-right: 1em;" />
 
 
 
