@@ -17,7 +17,6 @@ categories:
 
 
 
-
 JetThoughts has launched a new project recently. Whole front-end team was set and started developing the UI part. They designed selected and adapted the suitable libraries, plugins, distributed the tasks – everything as usual. At this stage, a question arises: how the customer sees his future application.  Fortunately, we’ve already had several ready design layouts based on which we could estimate the basic layout. Was it responsive in this case.... or adaptive after all?
 
 There are many posts and discussions on a subject in what way a responsive design differs from an adaptive one. Why use one or another, what types of layers the global information resources, social networks (Facebook, Twitter, AIRBNB) use - we are going to consider this issue for our part. First, let's have a look at peculiarities of these approaches once again.
