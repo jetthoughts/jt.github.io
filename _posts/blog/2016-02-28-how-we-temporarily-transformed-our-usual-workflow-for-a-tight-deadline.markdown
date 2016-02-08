@@ -49,6 +49,7 @@ Just imagine the following: ten developers; about seventy percent of uncompleted
 Ruby developers make new layouts according to the complicated mockups, front-end team changes Rails helpers and team lead pushes fully implemented pages one by one. Such mode did not give us even the slightest chance for an accurate division of roles. Each member was a manager, a developer and a tester. Everybody had to be sure in their work quality, whenever he's done something, and in the work of a person who pushed commit before him. If rebase brings some bugs from the previous commit - these bugs become yours. But, anyway, help came quickly as soon as you needed it because all developers stuck to one simple rule: "One task down for someone - one task down for the whole team..."
 
 This proceeded from morning (~ 10 AM) to deep night (~ 3-4 AM) for the whole three days. And after such wild development process we were done with all tasks and have presented a redesigned application, which was naturally crude, but nevertheless was acceptable to our customer.
+
 ### Why should you avoid it?
 The main reason is the price you have to pay.
 #### Team members health
