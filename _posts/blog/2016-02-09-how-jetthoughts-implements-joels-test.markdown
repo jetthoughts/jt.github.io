@@ -21,7 +21,7 @@ For those of you who don’t know who Joel Spolsky is here are some facts:
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/12913580/4adda72e-cf28-11e5-8976-60786bbc7538.png"/>
 
-- Wrote (an awesome post)[http://www.joelonsoftware.com/articles/fog0000000043.html] about test to rate the quality of software team.
+- Wrote [an awesome post](http://www.joelonsoftware.com/articles/fog0000000043.html) about test to rate the quality of software team.
 
 <!--cut-->
 
