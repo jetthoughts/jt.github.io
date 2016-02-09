@@ -13,14 +13,16 @@ categories:
 - team
 ---
 
-<img src="https://cloud.githubusercontent.com/assets/5908100/12913446/7126dd48-cf27-11e5-9de4-0ae3554f7c96.jpg" class="left" style="margin-right: 1em;" />
+<img src="https://cloud.githubusercontent.com/assets/5908100/12913446/7126dd48-cf27-11e5-9de4-0ae3554f7c96.jpg"/>
 
 For those of you who don’t know who Joel Spolsky is here are some facts:
 
 - Worked at Microsoft
 - Founded (Fog Creek Software)[https://www.fogcreek.com], (Stack Exchange, Inc)[http://stackexchange.com/about]. 
-- Guilty for the world to see some interesting web products
-<img src="https://cloud.githubusercontent.com/assets/5908100/12913580/4adda72e-cf28-11e5-8976-60786bbc7538.png" class="left" style="margin-right: 1em;" />
+- Guilty for the world to see some interesting web products:
+
+<img src="https://cloud.githubusercontent.com/assets/5908100/12913580/4adda72e-cf28-11e5-8976-60786bbc7538.png"/>
+
 - Wrote an awesome post about test to rate the quality of software team: http://www.joelonsoftware.com/articles/fog0000000043.html
 
 <!--cut-->
