@@ -18,7 +18,7 @@ categories:
 For those of you who don’t know who Joel Spolsky is here are some facts:
 
 - Worked at Microsoft
-- Founded (Fog Creek Software)[https://www.fogcreek.com], (Stack Exchange, Inc)[http://stackexchange.com/about]. 
+- Founded [Fog Creek Software][https://www.fogcreek.com], [Stack Exchange, Inc][http://stackexchange.com/about]. 
 - Guilty for the world to see some interesting web products:
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/12913580/4adda72e-cf28-11e5-8976-60786bbc7538.png"/>
