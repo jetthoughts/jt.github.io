@@ -25,9 +25,9 @@ For those of you who don’t know who Joel Spolsky is here are some facts:
 
 <!--cut-->
 
-<img src="https://cloud.githubusercontent.com/assets/5908100/12913446/7126dd48-cf27-11e5-9de4-0ae3554f7c96.jpg"/>
-
 ###12 steps of Joel's test in reality of JetThoughts projects:
+
+<img src="https://cloud.githubusercontent.com/assets/5908100/12913446/7126dd48-cf27-11e5-9de4-0ae3554f7c96.jpg"class="left" style="margin-right: 1em;" />
 
 ####Do you use source control?
 
