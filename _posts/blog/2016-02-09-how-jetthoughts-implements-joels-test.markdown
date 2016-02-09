@@ -31,7 +31,7 @@ For those of you who don’t know who Joel Spolsky is here are some facts:
 
 ####Do you use source control?
 
-Hell yeah! Is there anyone who still develops software without using source control in 2015?! We use git as it is comfortable, reliable and modern. 
+Hell yeah! Is there anyone who still develops software without using source control in 2016?! We use git as it is comfortable, reliable and modern. 
 
 ####Can you make a build in one step?
 
