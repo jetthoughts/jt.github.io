@@ -1,4 +1,4 @@
-{% for menu_position in (1..5) %}
+<!-- {% for menu_position in (1..5) %}
   {% for node in pages_list %}
     {% if node.menu_position == menu_position %}
       {% if group == null or group == node.group %}
@@ -20,3 +20,12 @@
 
 {% assign pages_list = nil %}
 {% assign group = nil %}
+FIXME: Replace when solve jekyll migrating issue
+-->
+
+<li class="menu_item"><a href="/portfolio.html" class="menu_link">Portfolio</a></li>
+<li class="menu_item"><a href="/team.html" class="menu_link">Our Team</a></li>
+<li class="menu_item"><a href="/career.html" class="menu_link">Career</a></li>
+<li class="menu_item"><a href="/work.html" class="menu_link">How We Work</a></li>
+<li class="menu_item"><a href="/blog/index.html" class="menu_link">Blog</a></li>
+<li class="menu_item"><a href="/contact.html" class="menu_link">Contact</a></li>

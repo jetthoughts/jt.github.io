@@ -48,5 +48,13 @@ $(document).ready(function(){
     $(window).scrollTop(0);
     return false;
   })
+
+
+  $('.menu_link').each(function(i, el) {
+    var pat = location.pathname.replace('.html', '');
+    if (el.href.search(pat) >= 0) {
+      $(el).addClass('active');
+    }
+  });
 });
 })(jQuery);
