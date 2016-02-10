@@ -8,33 +8,35 @@ kramdown:
 paginate: 25
 paginate_path: "blog/page:num"
 permalink: "/:categories/:year/:month/:day/:title.html"
-safe: true
+gems: [jekyll-paginate]
 
 
 exclude:
   [
+    bower_components,
+    source_images,
+    vendor,
+    node_modules,
+    gemini,
+    gemini-report,
+    reports,
+    javascripts,
+    tasks,
+    config,
+
     Gemfile,
     Gemfile.lock,
     Rakefile,
     .gitignore,
     Procfile,
-    config.rb,
     config.ru,
     bower.json,
-    vendor,
     MIT-LICENSE.txt,
     jetthoughtblog-links-map.csv,
-    node_modules,
     gulfile.js,
     README.md,
-    source_images,
-    gemini,
-    gemini-report,
-    reports,
     tests,
-    Gruntfile.js
-    bower_components/,
-    tasks/,
+    Gruntfile.js,
     gulpfile.js,
     robots.txt,
     package.json

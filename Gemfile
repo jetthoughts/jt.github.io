@@ -1,19 +1,25 @@
 source "https://rubygems.org"
 ruby '2.1.2'
 
+require 'json'
+require 'open-uri'
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+
+gem 'github-pages', versions['github-pages']
+
 group :assets do
-  gem 'jekyll', '>= 2.2.0'
+  gem 'jekyll', '>= 3.0'
   gem 'liquid'
   gem 'pygments.rb'
   gem 'fileutils'
-  gem 'kramdown'
-  gem 'rouge'
+  gem 'redcarpet'
   gem 'compass', '>= 0.12'
   gem 'rake'
   gem 'coffee-script'
   gem 'jekyll-asset-pipeline'
   gem 'oily_png'
-  gem 'jekyll-sitemap'
+  gem 'jekyll-sitemap', '>= 0.10.0'
+  gem 'jekyll-paginate', '>= 1.1.0'
 end
 
 group :utils do

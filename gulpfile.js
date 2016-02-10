@@ -73,7 +73,7 @@ gulp.task('compass', function () {
   gulp.src(assets.styles)
     .pipe(sourcemaps.init())
     .pipe(compass({
-      config_file: './config.rb',
+      config_file: './config/config.rb',
       css        : 'css',
       sass       : '_sass'
     }))
@@ -85,7 +85,7 @@ gulp.task('compass-stylefix', function () {
   gulp.src(assets.styles)
     .pipe(sourcemaps.init())
     .pipe(compass({
-      config_file: './config.rb',
+      config_file: './config/config.rb',
       css        : 'css',
       sass       : '_sass'
     }))
@@ -160,11 +160,11 @@ gulp.task('copy-fonts', function() {
 // This task for stylefixes only (it serves html files from _site/ dir and not run jekyll)
 gulp.task('stylefix', ['browser-sync-site', 'watch-stylefix']);
 
-gulp.task('jekyll',['browser-sync'], shell.task('jekyll serve -w'));
+gulp.task('jekyll',['browser-sync'], shell.task('jekyll serve'));
 
 gulp.task('default', ['copy-fonts', 'watch', 'jekyll', 'uglify', 'compass']);
 
-gulp.task('minify', ['imagemin', 'uglify', 'compass', 'uncss']);
+gulp.task('minify', ['imagemin', 'uglify', 'compass']);
 
 // grunt tasks for gulp
 require('gulp-grunt')(gulp, {
