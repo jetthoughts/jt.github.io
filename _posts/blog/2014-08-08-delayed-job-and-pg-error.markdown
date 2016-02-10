@@ -34,7 +34,7 @@ Now let's take a break and look into DelayedJob internals. [Delayed::Job] has sy
 
 So, what events do we have there?
 
-###Job-related events:
+### Job-related events:
 
 {% highlight ruby linenos=table %}
  :enqueue
@@ -45,7 +45,7 @@ So, what events do we have there?
 {% endhighlight %}
 
 
-###Worker-related events:
+### Worker-related events:
 
 
 {% highlight ruby linenos=table %}
@@ -59,7 +59,7 @@ So, what events do we have there?
 
  You can setup callbacks to be run on `before`, `after` or `around` events simply using `Delayed::Worker.lifecycle.before`, `Delayed::Worker.lifecycle.after` and `Delayed::Worker.lifecycle.around` methods.
 
-##The Solution
+## The Solution
 
 Ok, let's move on to our problem. It has turned out that [delayed_job_active_record] is closing all database connections in `before_fork` hook and reestablishing them in `after_fork` hook. It was clear that I18n-active-record does not like it and does not want to play by the rules set by others. So, it needed special treatment and I provided it.
 

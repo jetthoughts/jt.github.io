@@ -64,7 +64,7 @@ plain old OOP. Because it's easy enough to `rails generate` working solution fas
 In some cases this is what you need, but often this approach leads the developer to
 bloated, nearly untestable system with ~1000 LOC per model.
 
-###Pitfall One: Bloated models
+### Pitfall One: Bloated models
 
 But what if instead of `generator` approach we will write specs first.
 
@@ -119,7 +119,7 @@ You may ask me now: What all those text above means? Where the hell are controll
 views, gems and other stuff ruby-on-rails developers are dealing with? Any of tools for
 faster write/run tests?
 
-###Pitfall Two: Environment dependency
+### Pitfall Two: Environment dependency
 
 To finish this nonsence I'll try to conclude:
 
