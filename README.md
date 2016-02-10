@@ -227,6 +227,10 @@ categories:
 ---
 ```
 
+### Markdown syntax
+
+We use [github](https://guides.github.com/features/mastering-markdown/) markdown synatx
+
 Where `authors_git` requires author's github name for the proper output for author's section at the compiled blog post.
 Keep in mind [categoies](#categories) and remember to include `blog` category for the proper output.
 
