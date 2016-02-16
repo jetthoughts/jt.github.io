@@ -83,19 +83,19 @@ Logging is useful to explain the non-exceptional behaviour of the application. I
 
 #### 5. Performance monitoring
 
-It's pretty obvious, why we should monitor application's performance. Application Performance Monitoring (APM) tools are helping us with that. I prefer using [New Relic](newrelic.com) and it has no significant alternatives for me. However, you can look at [AppSignal](https://appsignal.com), [Scout](https://scoutapp.com/plugin_urls/181-ruby-on-rails-monitoring), [Datadog](https://www.datadoghq.com).
+It's pretty obvious, why we should monitor application's performance. Application Performance Monitoring (APM) tools are helping us with that. I prefer using [New Relic](https://newrelic.com) and it has no significant alternatives for me. However, you can look at [AppSignal](https://appsignal.com), [Scout](https://scoutapp.com/plugin_urls/181-ruby-on-rails-monitoring), [Datadog](https://www.datadoghq.com).
 New Relic is a solid monitoring solution, that helps to measure front-end and back-end performance, bottlenecks in database and customer satisfaction. It can be set up to ping application every 30 seconds to keep it alive.
 
 #### 6. Email testing
 
 It is unacceptable to bring a risk of accidently send dummy emails to the real customers. To test email notifications, I recommend using [Mailtrap](https://mailtrap.io).
-Mailtrap is a dummy SMTP server for testing emails sent from development and staging environments. [Mailcatcher](mailcatcher.me) can be a replacement here.
-If you are looking for service, that helps to ensure your emails reach customer inboxes, you should look at [Mailgun](https://www.mailgun.com), [Sendgrid](www.sendgrid.com) or [Mandrill](https://www.mandrill.com). All of them provide email deliverability expertise, and they have solid free plans, offering 10k emails per month.
+Mailtrap is a dummy SMTP server for testing emails sent from development and staging environments. [Mailcatcher](https://mailcatcher.me) can be a replacement here.
+If you are looking for service, that helps to ensure your emails reach customer inboxes, you should look at [Mailgun](https://www.mailgun.com), [Sendgrid](https://www.sendgrid.com) or [Mandrill](https://www.mandrill.com). All of them provide email deliverability expertise, and they have solid free plans, offering 10k emails per month.
 
 #### 7. Caching
 
 One of the most effective ways to improve application's performance is caching regularly accessed data.
-There are two leading key-value stores: [Memcached](memcached.org) and [Redis](http://redis.io). I prefer using [Memcached Cloud](https://redislabs.com/memcached-cloud) add-on for caching, because it was originally intended for it and is easier to setup, and using Redis only for background jobs.
+There are two leading key-value stores: [Memcached](https://memcached.org) and [Redis](http://redis.io). I prefer using [Memcached Cloud](https://redislabs.com/memcached-cloud) add-on for caching, because it was originally intended for it and is easier to setup, and using Redis only for background jobs.
 
 #### 8. Background jobs
 
@@ -113,7 +113,7 @@ To see setup guide, visit <http://www.higherorderheroku.com/articles/cloudflare-
 
 When dealing with image processing, we can use [S3](https://aws.amazon.com/s3) and our own transformers, but in order to simplify development, better to use some free SaaS solution. We can rely on it when dealing with a common set of problems. Every image uploaded can be dynamically transformed to any thumbnail size, file format and quality so we are able to test different settings that best fit user expectations. All images can be automatically stripped and optimized in size and delivered from a CDN using correct cache settings.
 
-I recommend using [Cloudinary](cloudinary.com) as an image management solution. Once uploaded to Cloudinary, images are stored on Cloudinary's Amazon S3 account. If you wish, you can automatically back your images to your own S3 as well.
+I recommend using [Cloudinary](https://cloudinary.com) as an image management solution. Once uploaded to Cloudinary, images are stored on Cloudinary's Amazon S3 account. If you wish, you can automatically back your images to your own S3 as well.
 As an alternative service, you can use [Blitline](https://www.blitline.com) for image processing.
 
 
