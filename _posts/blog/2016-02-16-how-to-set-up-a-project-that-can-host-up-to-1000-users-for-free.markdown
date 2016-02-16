@@ -46,7 +46,7 @@ Using Platform as a Service (PaaS) makes sense because it encapsulates many tedi
 
 There are a lot of PaaS solutions for different needs and for different prices. You can check by yourself: <http://paasify.it>. In JT we have chosen to use Heroku - one of the best-known PaaS providers, especially in the Ruby community.
 
-[Heroku](https://www.heroku.com)runs on top of [Amazon Web Services (AWS)](https://aws.amazon.com). Key benefits for me are:
+[Heroku](https://www.heroku.com) runs on top of [Amazon Web Services (AWS)](https://aws.amazon.com). Key benefits for me are:
 
 - single command deployments;
 - fully-managed database service;
