@@ -17,14 +17,14 @@ categories:
 #### Basic Heroku Setup or Staging Configuration
 
  - Hosting service: [Heroku](https://www.heroku.com) 
- - Database: [PostgreSQL](www.postgresql.org/)
- - Error-tracking: [Rollbar](https://rollbar.com/)
- - Log aggregator: [Logentries](https://logentries.com/)
+ - Database: [PostgreSQL](www.postgresql.org)
+ - Error-tracking: [Rollbar](https://rollbar.com)
+ - Log aggregator: [Logentries](https://logentries.com)
  - Performance monitoring: [New Relic](http://newrelic.com)
- - Email testing: [Mailtrap](https://mailtrap.io/)
+ - Email testing: [Mailtrap](https://mailtrap.io)
  - Caching: [Memcached Cloud](https://redislabs.com/memcached-cloud)
  - Background Jobs: [Sidekiq](http://sidekiq.org)
- - Content Delivery Network: [CloudFront](https://aws.amazon.com/cloudfront/) or [CloudFlare](https://www.cloudflare.com)
+ - Content Delivery Network: [CloudFront](https://aws.amazon.com/cloudfront) or [CloudFlare](https://www.cloudflare.com)
  - Image Hosting: [Cloudinary](http://cloudinary.com)
  
 
@@ -77,25 +77,25 @@ The Rollbar's ancestor, [Airbrake](https://airbrake.io), is another good choice 
 #### 4. Log aggregator
 
 Logging is useful to explain the non-exceptional behaviour of the application. It provides an audit trail, that can be used to understand the activities of complex systems, to diagnose problems and to gather performance-relevant data.
-[Logentries](https://logentries.com/) is a powerful log-management tool. It offers a nice graphic representation of log data through web UI. It integrates with [New Relic](http://newrelic.com), providing combined search across both services. When Logentries throws an error, we can look at New Relic and see how badly it's affecting our application.
+[Logentries](https://logentries.com) is a powerful log-management tool. It offers a nice graphic representation of log data through web UI. It integrates with [New Relic](http://newrelic.com), providing combined search across both services. When Logentries throws an error, we can look at New Relic and see how badly it's affecting our application.
 
-[Logentries](https://logentries.com/) free plan is allowing 1-week storage with 33MB of log volume per day. As an alternative, I recommend taking a look at popular [Papertrail](https://papertrailapp.com), [Loggly](https://www.loggly.com), [FlyData](https://www.flydata.com/) or [Splunk](http://www.splunk.com).
+[Logentries](https://logentries.com) free plan is allowing 1-week storage with 33MB of log volume per day. As an alternative, I recommend taking a look at popular [Papertrail](https://papertrailapp.com), [Loggly](https://www.loggly.com), [FlyData](https://www.flydata.com/) or [Splunk](http://www.splunk.com).
 
 #### 5. Performance monitoring
 
-It's pretty obvious, why we should monitor application's performance. Application Performance Monitoring (APM) tools are helping us with that. I prefer using [New Relic](newrelic.com/) and it has no significant alternatives for me. However, you can look at [AppSignal](https://appsignal.com/), [Scout](https://scoutapp.com/plugin_urls/181-ruby-on-rails-monitoring), [Datadog](https://www.datadoghq.com/).
+It's pretty obvious, why we should monitor application's performance. Application Performance Monitoring (APM) tools are helping us with that. I prefer using [New Relic](newrelic.com) and it has no significant alternatives for me. However, you can look at [AppSignal](https://appsignal.com), [Scout](https://scoutapp.com/plugin_urls/181-ruby-on-rails-monitoring), [Datadog](https://www.datadoghq.com).
 New Relic is a solid monitoring solution, that helps to measure front-end and back-end performance, bottlenecks in database and customer satisfaction. It can be set up to ping application every 30 seconds to keep it alive.
 
 #### 6. Email testing
 
-It is unacceptable to bring a risk of accidently send dummy emails to the real customers. To test email notifications, I recommend using [Mailtrap](https://mailtrap.io/).
-Mailtrap is a dummy SMTP server for testing emails sent from development and staging environments. [Mailcatcher](mailcatcher.me/) can be a replacement here.
-If you are looking for service, that helps to ensure your emails reach customer inboxes, you should look at [Mailgun](https://www.mailgun.com/), [Sendgrid](www.sendgrid.com/) or [Mandrill](https://www.mandrill.com/). All of them provide email deliverability expertise, and they have solid free plans, offering 10k emails per month.
+It is unacceptable to bring a risk of accidently send dummy emails to the real customers. To test email notifications, I recommend using [Mailtrap](https://mailtrap.io).
+Mailtrap is a dummy SMTP server for testing emails sent from development and staging environments. [Mailcatcher](mailcatcher.me) can be a replacement here.
+If you are looking for service, that helps to ensure your emails reach customer inboxes, you should look at [Mailgun](https://www.mailgun.com), [Sendgrid](www.sendgrid.com) or [Mandrill](https://www.mandrill.com). All of them provide email deliverability expertise, and they have solid free plans, offering 10k emails per month.
 
 #### 7. Caching
 
 One of the most effective ways to improve application's performance is caching regularly accessed data.
-There are two leading key-value stores: [Memcached](memcached.org/) and [Redis](http://redis.io). I prefer using [Memcached Cloud](https://redislabs.com/memcached-cloud) add-on for caching, because it was originally intended for it and is easier to setup, and using Redis only for background jobs.
+There are two leading key-value stores: [Memcached](memcached.org) and [Redis](http://redis.io). I prefer using [Memcached Cloud](https://redislabs.com/memcached-cloud) add-on for caching, because it was originally intended for it and is easier to setup, and using Redis only for background jobs.
 
 #### 8. Background jobs
 
@@ -106,15 +106,15 @@ Heroku has the ability to include not just a free web, but also one free worker,
 
 Content Delivery Networks (CDN) are simple to use services that serve your website assets much faster than how your website hosting service can deliver them. CDNs are based on a large number of worldwide servers, or "edges". When visitors visit your website, they are automatically routed to the nearest edge location, so content is delivered with the best possible performance with a much-reduced latency. CDN allows offloading all requests for the static assets off of your web dynos, which in turn will free those dynos to handle more requests for dynamic content.
 
-There are many CDN providers available today. Among of the most popular are [AWS CloudFront](https://aws.amazon.com/cloudfront/) and [CloudFlare](https://www.cloudflare.com/). Both are pretty cheap and provide relatively similar performance.
+There are many CDN providers available today. Among of the most popular are [AWS CloudFront](https://aws.amazon.com/cloudfront) and [CloudFlare](https://www.cloudflare.com). Both are pretty cheap and provide relatively similar performance.
 To see setup guide, visit <http://www.higherorderheroku.com/articles/cloudflare-dns-heroku/> or <https://devcenter.heroku.com/articles/using-amazon-cloudfront-cdn>.
 
 #### 10. Image Uploading and Transforming 
 
-When dealing with image processing, we can use [S3](https://aws.amazon.com/s3/) and our own transformers, but in order to simplify development, better to use some free SaaS solution. We can rely on it when dealing with a common set of problems. Every image uploaded can be dynamically transformed to any thumbnail size, file format and quality so we are able to test different settings that best fit user expectations. All images can be automatically stripped and optimized in size and delivered from a CDN using correct cache settings.
+When dealing with image processing, we can use [S3](https://aws.amazon.com/s3) and our own transformers, but in order to simplify development, better to use some free SaaS solution. We can rely on it when dealing with a common set of problems. Every image uploaded can be dynamically transformed to any thumbnail size, file format and quality so we are able to test different settings that best fit user expectations. All images can be automatically stripped and optimized in size and delivered from a CDN using correct cache settings.
 
-I recommend using [Cloudinary](cloudinary.com/) as an image management solution. Once uploaded to Cloudinary, images are stored on Cloudinary's Amazon S3 account. If you wish, you can automatically back your images to your own S3 as well.
-As an alternative service, you can use [Blitline](https://www.blitline.com/) for image processing.
+I recommend using [Cloudinary](cloudinary.com) as an image management solution. Once uploaded to Cloudinary, images are stored on Cloudinary's Amazon S3 account. If you wish, you can automatically back your images to your own S3 as well.
+As an alternative service, you can use [Blitline](https://www.blitline.com) for image processing.
 
 
 
