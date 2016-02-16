@@ -17,16 +17,16 @@ categories:
 
 ### Basic Heroku Setup or Staging Configuration
 
-Hosting service: Heroku
-Database: PostgreSQL
-Error-tracking: Rollbar
-Log aggregator: Logentries
-Performance monitoring: New Relic
-Email testing: Mailtrap
-Caching: Memcached Cloud
-Background Jobs: Sidekiq
-Content Delivery Network: CloudFront or CloudFlare
-Image Hosting: Cloudinary
+ - Hosting service: Heroku
+ - Database: PostgreSQL
+ - Error-tracking: Rollbar
+ - Log aggregator: Logentries
+ - Performance monitoring: New Relic
+ - Email testing: Mailtrap
+ - Caching: Memcached Cloud
+ - Background Jobs: Sidekiq
+ - Content Delivery Network: CloudFront or CloudFlare
+ - Image Hosting: Cloudinary
 
 TL;DR Fast, simple & cheap project setup for a start-up, that can handle up to thousand users.
 
