@@ -12,10 +12,9 @@ categories:
 - blog
 - tricks
 ---
-
 <img src="https://cloud.githubusercontent.com/assets/5908100/13076073/6e9b7f34-d4b8-11e5-993e-33167c8d4ead.jpg" class="left" style="margin-right: 1em;" />
 
-### Basic Heroku Setup or Staging Configuration
+#### Basic Heroku Setup or Staging Configuration
 
  - Hosting service: Heroku
  - Database: PostgreSQL
@@ -28,7 +27,7 @@ categories:
  - Content Delivery Network: CloudFront or CloudFlare
  - Image Hosting: Cloudinary
 
-TL;DR Fast, simple & cheap project setup for a start-up, that can handle up to thousand users.
+*TL;DR Fast, simple & cheap project setup for a start-up, that can handle up to thousand users.*
 
 <!--cut-->
 
