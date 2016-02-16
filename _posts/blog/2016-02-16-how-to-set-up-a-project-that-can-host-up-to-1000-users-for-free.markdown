@@ -17,7 +17,7 @@ categories:
 #### Basic Heroku Setup or Staging Configuration
 
  - Hosting service: [Heroku](https://www.heroku.com) 
- - Database: [PostgreSQL](www.postgresql.org)
+ - Database: [PostgreSQL](http://www.postgresql.org)
  - Error-tracking: [Rollbar](https://rollbar.com)
  - Log aggregator: [Logentries](https://logentries.com)
  - Performance monitoring: [New Relic](http://newrelic.com)
