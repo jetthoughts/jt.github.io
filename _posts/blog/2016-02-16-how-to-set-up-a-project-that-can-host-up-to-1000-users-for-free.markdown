@@ -33,17 +33,23 @@ categories:
 
 #### 0. Intro to the problem
 Choosing Ruby on Rails (RoR) as a platform for your startup is a good choice for many reasons. One of them is a simplicity of a framework, and that's why a lot of start-up founders use RoR.
+
 While developing an application, you may and will face some common problems. There are plenty of services, that can deal with them, saving your time and money. I've made a list of services & add-ons I suggest to use for building a working application prototype that can host up to 1k users.
+
 Let's get started.
 
 #### 1. Hosting platform
 Using Platform as a Service (PaaS) makes sense because it encapsulates many tedious system administration functions and allows you to focus on your app by removing the need to maintain server infrastructure.
-There are a lot of PaaS solutions for different needs and for different prices. You can check by yourself: http://paasify.it. In JT we have chosen to use Heroku - one of the best-known PaaS providers, especially in the Ruby community.
+
+There are a lot of PaaS solutions for different needs and for different prices. You can check by yourself: <http://paasify.it>. In JT we have chosen to use Heroku - one of the best-known PaaS providers, especially in the Ruby community.
+
 Heroku runs on top of Amazon Web Services (AWS). Key benefits for me are:
+
 - single command deployments;
 - fully-managed database service;
 - automatic load balancing;
 - on-demand scaling.
+
 With Heroku, you can get things running in 5 minutes in a simple fashion and as you scale or need more horsepower the process of resizing an instance or adding more instances is much simpler than a traditional cloud or dedicated server model.
 Another benefit is add-ons, that provide solutions for nearly every need our application might have. These include databases, caching, logging, email/SMS, errors and exceptions, metrics, analytics and more. Many add-ons have free or low priced options and scale with your app.
 As the most similar alternative, you can use Ninefold or OpenShift. They both provide free plans, and can run almost any database while Heroku uses PostgreSQL.
