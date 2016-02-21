@@ -14,7 +14,7 @@ details:
 ---
 
 
-###The necessary knowledge and skills:
+### The necessary knowledge and skills:
 
 - You are an expert Rubyist and have 5+ years working with Ruby on Rails, solid command of web standards and web technologies, experience in gem creation and maintenance.
 - You are not just writing solid code, but you can match technological solutions to business needs and requirements. 
@@ -25,14 +25,14 @@ details:
 
 
 
-###Desired Skills:
+### Desired Skills:
 
 - BS or MS in Computer Science or an equivalent work experience.
 - An active public Github repo.
 - Also feel free to mention any relevant projects you are working on.
 
 
-###Responsibilities:
+### Responsibilities:
 
 - Write clean, maintainable and efficient code.
 - Work with team members and customers to define requirements and to develop  technical specifications.
@@ -45,7 +45,7 @@ details:
 
 
 
-###In our company you:
+### In our company you:
 
 - Work on interesting and challenging projects.
 - Spend your working day in a cozy fully-equipped office in Lviv or remotely from any place you find suitable for coding.
