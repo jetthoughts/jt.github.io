@@ -14,7 +14,7 @@ details:
 ---
 
 
-###The necessary knowledge and skills:
+### The necessary knowledge and skills:
 
 - 2+ years working with Ruby on Rails.
 - Experience with Ruby and one or two other languages: Java, Scala, Python, or PHP.
@@ -25,13 +25,13 @@ details:
 - Good verbal and written English communication skills.
 
 
-###Desired Skills:
+### Desired Skills:
 
 - BS or MS in Computer Science or an equivalent work experience.
 - If you have a public github repo or a technology blog, please provide a link in your CV.
 - Also feel free to mention any side projects you are working on.
 
-###Responsibilities:
+### Responsibilities:
 
 - Write clean, maintainable and efficient code.
 - Work with team members and customers to define requirements and to develop  technical specifications.
@@ -40,7 +40,7 @@ details:
 - Participate in our agile process.
 - Grow, learn and share.
 
-###In our company you:
+### In our company you:
 
 - Work on interesting and challenging projects.
 - Communicate with great colleagues and exchange experience.
