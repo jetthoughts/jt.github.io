@@ -18,6 +18,7 @@ Using multiple MRI ruby versions is not very hard. There are some ruby versions 
 
 <!--cut-->
 <div class="clear"></div>
+
 ### 1. Run the same tests against multiple ruby versions for the same platform
 
 {% highlight ruby linenos=table %}
