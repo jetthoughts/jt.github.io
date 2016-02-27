@@ -124,18 +124,18 @@ dependencies:
     - >
       case $CIRCLE_NODE_INDEX in
        0)
-         rvm-exec 2.1.0 bash -c "bundle check --path=vendor/bundle_2.1 || bundle install --path=vendor/bundle"
+         rvm-exec 2.1.0 bash -c "bundle check --path=vendor/bundle_2.1 || bundle install --path=vendor/bundle_2.1"
          ;;
        1)
-         rvm-exec 2.2.0-preview1 bash -c "bundle check --path=vendor/bundle_2.2 || bundle install --path=vendor/bundle"
+         rvm-exec 2.2.0-preview1 bash -c "bundle check --path=vendor/bundle_2.2 || bundle install --path=vendor/bundle_2.2"
          ;;
        2)
          rvm-exec ruby-head gem install bundler
-         rvm-exec ruby-head bash -c "bundle check --path=vendor/bundle_head || bundle install --path=vendor/bundle"
+         rvm-exec ruby-head bash -c "bundle check --path=vendor/bundle_head || bundle install --path=vendor/bundle_head"
          ;;
        3)
          rvm-exec jruby gem install bundler
-         rvm-exec jruby bash -c "bundle check --path=vendor/bundle_jruby --gemfile Gemfile.java || bundle install --path=vendor/bundle --gemfile Gemfile.java"
+         rvm-exec jruby bash -c "bundle check --path=vendor/bundle_jruby --gemfile Gemfile.java || bundle install --path=vendor/bundle_jruby --gemfile Gemfile.java"
          ;;
       esac
 
