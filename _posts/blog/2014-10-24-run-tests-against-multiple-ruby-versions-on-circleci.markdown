@@ -148,6 +148,5 @@ test:
 
 You can move these scripts to files.
 
-That's all, folks. You can find the final version of `circle.yml` with some tricks  [here](https://github.com/miry/multiple_ruby_for_circleci/blob/master/circle.yml)
+That's all, folks. You can find the final version of `circle.yml` with some tricks  [here](https://github.com/miry/multiple_ruby_for_circleci/blob/master/circle.yml) [![Circle CI](https://circleci.com/gh/miry/multiple_ruby_for_circleci.svg?style=svg)](https://circleci.com/gh/miry/multiple_ruby_for_circleci)
 
-[![Circle CI](https://circleci.com/gh/miry/multiple_ruby_for_circleci.svg?style=svg)](https://circleci.com/gh/miry/multiple_ruby_for_circleci)
