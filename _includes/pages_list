@@ -1,28 +1,3 @@
-<!-- {% for menu_position in (1..5) %}
-  {% for node in pages_list %}
-    {% if node.menu_position == menu_position %}
-      {% if group == null or group == node.group %}
-
-        {% unless node.url contains 'page' %}
-
-            {% if page.url == node.url %}
-              <li class="menu_item"><a href="{{node.url}}" class="active menu_link">{{node.menu_title}}</a></li>
-            {% else %}
-              <li class="menu_item"><a href="{{node.url}}" class="menu_link">{{node.menu_title}}</a></li>
-            {% endif %}
-
-        {% endunless %}
-
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-
-{% assign pages_list = nil %}
-{% assign group = nil %}
-FIXME: Replace when solve jekyll migrating issue
--->
-
 <li class="menu_item"><a href="/portfolio.html" class="menu_link">Portfolio</a></li>
 <li class="menu_item"><a href="/team.html" class="menu_link">Our Team</a></li>
 <li class="menu_item"><a href="/career.html" class="menu_link">Career</a></li>
