@@ -13,7 +13,7 @@ categories:
 - tech
 ---
 
-<img src="https://cloud.githubusercontent.com/assets/781760/15051915/b4e7bc44-1303-11e6-80f8-9ae2b9152072.jpg" class="left" style="margin-right: 1em;" />
+<img src="https://cloud.githubusercontent.com/assets/781760/15052988/09e2defe-1309-11e6-94ea-a0beba2f9b64.jpg" class="left" style="margin-right: 1em;" />
 
 > “What's in a name? that which we call a rose  
 > By any other name would smell as sweet.”
