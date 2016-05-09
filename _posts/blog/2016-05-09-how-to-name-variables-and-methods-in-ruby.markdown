@@ -4,7 +4,7 @@ author: Hnat Kubov
 authors_git: hnatt
 title: How To Name Variables And Methods In Ruby
 layout: post
-date: 2016-05-05
+date: 2016-05-09
 tags:
 - ruby
 
