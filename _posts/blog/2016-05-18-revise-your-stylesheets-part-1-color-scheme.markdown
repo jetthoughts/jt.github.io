@@ -21,7 +21,7 @@ categories:
 
 <img class='left' style='margin-right: 1em;' src='https://cloud.githubusercontent.com/assets/618900/15352908/2b55b5bc-1cef-11e6-8074-cb4d247d335a.png' alt='jake-the-dog-enjoys-the-rainbow' />
 
-Ever wonder how many colors exist in your project? Do you have strict style guides kindly prepared by design lead? How many psds did you slice for this particular project? Do you work alone or you have a large front-end team and no codestyle manifest? I bet that one day you'll wake up and see a rainbow full of hex, rgb and rgba colors spread all over the 100 scss files. And do you want to know how to merge 300 colors into 30? In this article you'll see how to gather and visualize colors presence in your project.
+Ever wonder how many colors exist in your project? Do you have strict style guides kindly prepared by the design lead? How many psds did you slice for this particular project? Do you work alone or do you have a large front-end team and no codestyle manifest? I bet that one day you'll wake up and see a rainbow full of hex, rgb and rgba colors spread all over the 100 scss files. And do you want to know how to merge 300 colors into 30? In this article you'll see how to gather and visualize colors presence in your project.
 
 <!--cut-->
 
