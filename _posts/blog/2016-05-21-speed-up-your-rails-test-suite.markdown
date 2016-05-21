@@ -3,7 +3,7 @@ layout: post
 author: Hnat Kubov
 authors_git: hnatt
 title: Speed Up Your Rails Test Suite By 6% In 1 Line
-date: 2016-05-20
+date: 2016-05-21
 tags:
 - rails
 - ruby
