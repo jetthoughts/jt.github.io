@@ -30,12 +30,6 @@ xmarvin:
   ava: '/images/team/alexey.jpeg'
   role: 'Developer'
   bio: 'A software guru by trade, Alexey is a highly-motivated person, who is passionate about working on unique projects. His aim is bringing value in every line of the code. Alexey always strives to self-improvement.'
-xserg:
-  name: 'Sergey'
-  full_name: 'Sergey Andreev'
-  ava: '/images/team/sergey.jpeg'
-  role: 'Developer'
-  bio: 'Sergey is an awesome Ruby developer, capable of implementing seemingly impossible tasks and hacks. When he is not madly coding on his computer, you can find Sergey working out in the gym, jogging or solving sudoku puzzles.'
 mir4a:
   name: 'Miroslav'
   full_name: 'Myroslav Martynov'
