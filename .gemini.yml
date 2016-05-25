@@ -1,10 +1,14 @@
 rootUrl: http://localhost:4000/
 screenshotsDir: reports/screenshots
-coverageExclude:
-  - bower_components/
-  - css/
-  - tasks/
-  - images/
-  - js/
 browsers:
-  phantomjs: phantomjs
+  PhantomJS:
+    desiredCapabilities:
+      browserName: phantomjs
+system:
+  coverage:
+    exclude:
+      - bower_components/
+      - css/
+      - tasks/
+      - images/
+      - js/
