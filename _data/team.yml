@@ -169,3 +169,9 @@ VasylYaremkiv:
   ava: '/images/team/yaremkiv.jpg'
   role: 'Developer'
   bio: 'Vasyl advocates for a code quality and has a spite against poorly written code doing his best to improve it whenever Vasyl sees any issues. In addition, he is always ready to accept new challenges, which make us stronger and more resilient.'
+m-k:
+  name: 'Maksym'
+  full_name: 'Maksym Khukhrianskyi'
+  ava: '/images/team/khukhrianskyi.png'
+  role: 'Developer'
+  bio: "Maksym's strategic thinking can help to establish convenient, scalable architecture on early stages of project development. Significant professional background helps him to mix different approaches to get better results."
