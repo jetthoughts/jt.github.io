@@ -33,7 +33,8 @@ var assets = {
     "./javascripts/contact.js",
     "./javascripts/portfolio_sorter.js",
     "./javascripts/portfolio_heights.js",
-    "./javascripts/highlight_tabs.js"
+    "./javascripts/highlight_tabs.js",
+    "./javascripts/team.js"
   ],
   "self_scripts": [
     "./javascripts/webfont_config.js",
