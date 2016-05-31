@@ -13,3 +13,8 @@ reports/
 tmp/
 npm-debug.log
 bower_components/
+.firebaserc
+database.rules.json
+firebase.json
+n/
+public/
