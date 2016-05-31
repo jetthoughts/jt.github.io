@@ -138,7 +138,7 @@ vlaew:
   full_name: 'Dmitriy Tsvetkov'
   ava: '/images/team/tsvetkov.jpg'
   role: 'Developer'
-  bio: 'Dmitriy is a developer with years of hands-on experience of developing complicated web-services. He is an idealist who knows when to stop to finish the project successfully. He strives at writing simple, self-documenting code that is easy to read and support. Dmitriy writes code for humans, not for the machines.'
+  bio: 'Dmitriy is a developer with years of hands-on experience of developing complicated web-services. He is an idealist who knows when to stop in order to finish the project successfully. He strives at writing simple, self-documenting code that is easy to read and support. Dmitriy writes code for humans, not for the machines.'
 Twizty:
   name: 'Maxim'
   full_name: 'Maxim Davydov'
@@ -162,13 +162,13 @@ igor04:
   full_name: 'Igor Guzak'
   ava: '/images/team/guzak.jpg'
   role: 'Developer'
-  bio: 'Igos is a Ruby developer. He considers that does not matter who you are it only matters what you do, and writing code is not an exception.'
+  bio: 'Igor is a Ruby developer. He considers that it does not matter who you are it only matters what you do, and writing code is not an exception.'
 VasylYaremkiv:
   name: 'Vasyl'
   full_name: 'Vasyl Yaremkiv'
   ava: '/images/team/yaremkiv.jpg'
   role: 'Developer'
-  bio: 'Vasyl advocates for a code quality and has a spite against poorly written code doing his best to improve it whenever Vasyl sees any issues. In addition, he is always ready to accept new challenges, which make us stronger and more resilient.'
+  bio: 'Vasyl advocates for a code quality and has a spite against poorly written code, doing his best to improve it, whenever he sees any issues. In addition, he is always ready to accept new challenges, which make us stronger and more resilient.'
 m-k:
   name: 'Maksym'
   full_name: 'Maksym Khukhrianskyi'
