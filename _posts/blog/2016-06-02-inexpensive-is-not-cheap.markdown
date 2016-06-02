@@ -25,7 +25,8 @@ And then comes one of the most ambiguous issues - the price. Should you go with 
 
 <!--cut-->
 
-I believe that you have already done a lot of research on how to choose the best provider for your needs. There are many articles that have gone viral about the challenges and pitfalls of working with developers with alluring rates and the high cost of “low-cost” software development. 
+I believe that you have already done a lot of research on how to choose the best provider for your needs. There are many articles that have gone viral about the challenges and pitfalls of working with developers with alluring rates and the high cost of “low-cost” software development.
+
 ## Avoid the Hidden Costs Trap
 
 So what are the hidden costs of a software development? Where do they come from? 
@@ -37,6 +38,7 @@ So what are the hidden costs of a software development? Where do they come from?
 **When should you agree to work with the low rates?** It might work for a short trial project or an MVP (Minimum viable product).
 
 Considering all the facts mentioned above, do you think it is a high time to turn toward high-end providers? Let’s have a look.
+
 ## What Are You Paying for When You Are Working with a Big-Name IT Company?
 
 1. **High margin.** The bigger the company is, the higher the expenses are, the higher are the maintenance costs. 
