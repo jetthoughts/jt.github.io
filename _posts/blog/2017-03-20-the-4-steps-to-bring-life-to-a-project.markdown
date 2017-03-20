@@ -110,8 +110,6 @@ Kanban helps us eliminate Staled Code by limiting Work In Progress are preventin
 
 ![enshtein](https://cloud.githubusercontent.com/assets/125715/23951257/4a4f8a94-0996-11e7-9a24-36e131ee3b7f.jpg)
 
-(http://www.quotemaster.org/images/71/71ff82cf8752f7676f7ca1178eb6513b.jpg)
-
 #### Signs of the Problem:
 
 1. Bugs for the same logic periodically appear;
