@@ -12,7 +12,7 @@ categories:
 - team
 ---
 
-<img class="left" style="margin-right: 1em;" width="500" src="https://cloud.githubusercontent.com/assets/5908100/15746555/bbd76378-28df-11e6-82d0-380b18147fed.jpg"/>
+<img class="left" style="margin-right: 1em;" width="500" src="https://cloud.githubusercontent.com/assets/125715/23949773/4325b284-0991-11e7-80fe-dd4454aac7d9.jpg"/>
 
 In initial stages of our new business or a startup, when there is no clarity, we prefer to have short-term solutions for our product: hiring and changing contractors, delivering with [technical debts](https://martinfowler.com/bliki/TechnicalDebt.html), changing requirements often.
 
