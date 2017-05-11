@@ -10,6 +10,8 @@ tags:
 categories:
 - blog
 - team
+redirect_to:
+  - https://jtway.co/the-4-steps-to-bringing-life-to-a-struggling-project-37a53bf9c7dc
 ---
 
 <img class="left" style="margin-right: 1em;" width="500" src="https://cloud.githubusercontent.com/assets/125715/23949773/4325b284-0991-11e7-80fe-dd4454aac7d9.jpg"/>
@@ -170,4 +172,3 @@ See also:
 * Atlassian’s Guide: [The Agile Coach](https://www.atlassian.com/agile)
 * Google’s Posts: [Hackable Projects](https://testing.googleblog.com/2016/08/hackable-projects.html)
 * Carbon Five’s Posts: [The 10 Practices of Healthy Engineering Teams](http://blog.carbonfive.com/2016/02/17/the-10-practices-of-healthy-engineering-teams-part-1/)
-
