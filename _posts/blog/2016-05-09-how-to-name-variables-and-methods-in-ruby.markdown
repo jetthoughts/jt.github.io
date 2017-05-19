@@ -11,6 +11,8 @@ tags:
 categories:
 - blog
 - tech
+redirect_to:
+  - https://jtway.co/how-to-name-variables-and-methods-in-ruby-b4a21fb66c4d
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/781760/15052988/09e2defe-1309-11e6-94ea-a0beba2f9b64.jpg" class="left" style="margin-right: 1em;" />
