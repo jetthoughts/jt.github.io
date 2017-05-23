@@ -11,6 +11,8 @@ tags:
 categories:
 - blog
 - tech
+redirect_to:
+- https://jtway.co/cleaning-up-your-rails-views-with-view-objects-42cf048ea491
 ---
 
 #### **Why logic in views is a bad idea?**
