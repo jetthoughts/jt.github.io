@@ -11,6 +11,9 @@ tags:
 categories:
 - blog
 - tech
+
+redirect_to:
+- https://jtway.co/its-time-for-active-job-239f7681a3ef
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/7202809/5a3e9844-e51e-11e4-9b25-b0e2375275f0.jpg" class="left" style="margin-right: 1em;" />
