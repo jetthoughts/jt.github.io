@@ -12,6 +12,9 @@ tags:
 categories:
 - blog
 - tricks
+
+redirect_to:
+- https://jtway.co/stress-testing-your-rails-application-using-jmeter-95a201071b98
 ---
 
 Some time ago we needed to make a simple stress-testing of our application to get an idea of where we are going, and find out whether we should take a break and pay some attention to optimizations or not. The number of stress-testing tools is huge, but we decided to stick to a well-tried solution - [JMeter]. 
