@@ -15,6 +15,9 @@ tags:
 categories:
 - blog
 - tech
+
+redirect_to:
+- https://jtway.co/setup-prometheus-in-amazon-ec2-via-elasticbeanstalk-and-docker-13ec426c21c0
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/9756779/512bf326-56e5-11e5-9424-90c2a75ffd22.jpg" class="left" style="margin-right: 1em;" width="300" />
