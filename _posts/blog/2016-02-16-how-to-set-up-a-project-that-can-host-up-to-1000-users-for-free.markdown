@@ -11,6 +11,9 @@ tags:
 categories:
 - blog
 - tricks
+
+redirect_to:
+- https://jtway.co/how-to-setup-a-project-that-can-host-up-to-1000-users-for-free-ab59ad3edaf1
 ---
 <img src="https://cloud.githubusercontent.com/assets/5908100/13076073/6e9b7f34-d4b8-11e5-993e-33167c8d4ead.jpg" class="left" style="margin-right: 1em;" />
 
