@@ -11,6 +11,9 @@ tags:
 categories:
 - blog
 - tech
+
+redirect_to:
+- https://jtway.co/how-to-memoize-false-and-nil-values-fe28b8ede9f8
 ---
 
 <img src="http://videos.web-03.net/diagramacao/eduardo/mrbool/begindiffjavap2/figure1.png" class="left" style="margin-right: 1em;" />
