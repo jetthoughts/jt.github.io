@@ -11,6 +11,9 @@ tags:
 categories:
 - blog
 - team
+
+redirect_to:
+- https://jtway.co/how-jetthoughts-implements-joels-test-96a870d0eedc
 ---
 
 For those of you who don’t know who Joel Spolsky is here are some facts:
