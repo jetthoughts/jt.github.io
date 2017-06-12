@@ -9,6 +9,8 @@ categories:
 - blog
 - magic
 
+redirect_to:
+- https://jtway.co/capistrano-3-passing-parameters-to-your-task-e22cc9f659c3
 ---
 
 The new way of passing parameters in Capistrano v3 is to use the same solution as Rake (in some sort Capistrano 3 is  totally based on Rake).
