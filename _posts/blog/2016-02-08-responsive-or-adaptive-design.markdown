@@ -11,6 +11,9 @@ tags:
 categories:
 - blog
 - tech
+
+redirect_to:
+- https://jtway.co/responsive-or-adaptive-design-find-out-which-one-is-better-for-you-4186ddc6e00c
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/12887162/2cea9ed2-ce7b-11e5-9cf9-47dfcc6180c6.jpg" class="left" style="margin-right: 1em;" />
