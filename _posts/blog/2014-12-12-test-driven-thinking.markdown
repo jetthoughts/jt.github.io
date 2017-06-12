@@ -11,6 +11,9 @@ tags:
 categories:
 - blog
 - tech
+
+redirect_to:
+- https://jtway.co/test-driven-thinking-for-solving-common-ruby-pitfalls-458fe6d3d856
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/5414726/f67c727e-8229-11e4-89e8-06d2368a8f16.jpg" class="left" style="margin-right: 1em;" />
