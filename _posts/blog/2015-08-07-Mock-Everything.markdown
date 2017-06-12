@@ -13,6 +13,9 @@ tags:
 categories:
 - blog
 - tech
+
+redirect_to:
+- https://jtway.co/mock-everything-is-a-good-way-to-sink-b8a1284fb81f
 ---
 
 _Have you found a lot of code with mocks and stubs? But how do you feel about it?
