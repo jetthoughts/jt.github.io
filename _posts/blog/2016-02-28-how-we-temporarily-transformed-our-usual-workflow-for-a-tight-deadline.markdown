@@ -11,6 +11,9 @@ tags:
 categories:
 - blog
 - team
+
+redirect_to:
+- https://jtway.co/how-we-temporarily-transformed-our-usual-workflow-for-a-tight-deadline-18d05dc34134
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/12644923/0e0364b8-c5cf-11e5-9c20-f7d9412417fc.jpg" class="left" style="margin-right: 1em;" />
