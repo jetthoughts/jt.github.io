@@ -10,6 +10,9 @@ tags:
 categories:
 - blog
 - team
+
+redirect_to:
+- https://jtway.co/our-default-ruby-development-stack-9d7e80ef21df
 ---
 <div class="left" style="margin-right: 1em;">
     <img src="https://cloud.githubusercontent.com/assets/5908100/4884942/7d47496a-6370-11e4-8bbd-897931ce3da7.jpg" title="default_ruby"/>
