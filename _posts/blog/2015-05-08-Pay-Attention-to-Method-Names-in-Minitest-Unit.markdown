@@ -10,6 +10,9 @@ tags:
 categories:
 - blog
 - tech
+
+redirect_to:
+- https://jtway.co/pay-attention-to-method-names-in-minitest-unit-80de16d9c05f
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/7536556/915f937e-f599-11e4-919f-e64d4fbbe445.jpg" class="left" style="margin-right: 1em;" />
