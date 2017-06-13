@@ -8,11 +8,14 @@ tags:
 - rake
 - rails
 - csv
+
 categories:
 - blog
 - database
-excerpt: A simple rake task for dumping data from DB to CSV file.
 
+excerpt: A simple rake task for dumping data from DB to CSV file.
+redirect_to:
+- https://jtway.co/import-huge-data-for-rails-e7e1b2713d71
 ---
 
 I wrote a simple rake task for dump data from DB to CSV file:
