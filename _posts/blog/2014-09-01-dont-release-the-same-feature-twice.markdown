@@ -10,6 +10,9 @@ tags:
 categories:
 - blog
 - tech
+
+redirect_to:
+- https://jtway.co/dont-release-the-same-feature-twice-c816bb47bb0d
 ---
 
 I do not like bureaucracy, but I can not live without it. That's why I have integrated `Changelog` to the project. After a few deploys, I have met with magic. In the project `Changelog` file there are two records of one issue. It confused me. Let me explain what I imagined in my head.
