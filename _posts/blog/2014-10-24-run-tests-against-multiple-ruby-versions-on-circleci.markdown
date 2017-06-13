@@ -11,6 +11,9 @@ tags:
 categories:
 - blog
 - tricks
+
+redirect_to:
+- https://jtway.co/run-tests-against-multiple-ruby-versions-on-circleci-60e1e523e245
 ---
 
 <img src="https://farm4.staticflickr.com/3887/14372035815_7ded626494.jpg" title="multiple_versions" class="left" style="margin-right: 1em;" width="324" />
