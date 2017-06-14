@@ -12,6 +12,9 @@ tags:
 categories:
 - blog
 - tricks
+
+redirect_to:
+- https://jtway.co/speed-up-your-rails-test-suite-by-6-in-1-line-13fedb869ec4
 ---
 
 <img class="left" style="margin-right: 1em;" src="https://cloud.githubusercontent.com/assets/781760/15439823/c735cf52-1eda-11e6-85b3-0cb47a86fbb7.jpg" alt="caber toss" />

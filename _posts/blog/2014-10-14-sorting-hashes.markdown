@@ -10,6 +10,9 @@ tags:
 categories:
 - blog
 - tricks
+
+redirect_to:
+- https://jtway.co/recent-searches-sorting-hashes-how-they-are-connected-61420fc95c99
 ---
 
 <div class="left" style="margin-right: 1em;">
