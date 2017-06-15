@@ -13,6 +13,8 @@ categories:
 - blog
 - tech
 
+redirect_to:
+- https://jtway.co/simple-benchmarking-rack-web-server-abe6a6f974f6
 ---
 
 <div class="left" style="margin-right: 1em;">
