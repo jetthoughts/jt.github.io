@@ -8,10 +8,13 @@ tags:
 - sed
 - shell
 - csv
+
 categories:
 - blog
 - tech
 
+redirect_to:
+- https://jtway.co/show-not-valid-csv-lines-with-sed-fa82da01f133
 ---
 
 I have an issue with invalid formatted CSV file. First step show lines with invalid lines.
