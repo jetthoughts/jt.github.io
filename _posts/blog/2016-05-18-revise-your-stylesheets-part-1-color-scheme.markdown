@@ -17,6 +17,9 @@ tags:
 categories:
 - blog
 - tricks
+
+redirect_to:
+- https://jtway.co/revise-your-stylesheets-part-1-color-scheme-6125f869453b
 ---
 
 <img class='left' style='margin-right: 1em;' src='https://cloud.githubusercontent.com/assets/618900/15352908/2b55b5bc-1cef-11e6-8074-cb4d247d335a.png' alt='jake-the-dog-enjoys-the-rainbow' />

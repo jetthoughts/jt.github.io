@@ -10,6 +10,9 @@ tags:
 categories:
 - blog
 - tricks
+
+redirect_to:
+- https://jtway.co/inexpensive-is-not-cheap-choosing-software-development-company-for-your-project-da97b7d9b3c0
 ---
 
 <img class="left" style="margin-right: 1em;" width="500" src="https://cloud.githubusercontent.com/assets/5908100/15746555/bbd76378-28df-11e6-82d0-380b18147fed.jpg"/>

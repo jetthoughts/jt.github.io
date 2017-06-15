@@ -10,6 +10,9 @@ tags:
 categories:
 - blog
 - tech
+
+redirect_to:
+- https://jtway.co/visualization-of-your-code-d4701affa767
 ---
 
 <img src="https://cloud.githubusercontent.com/assets/5908100/7250573/4be4477e-e82c-11e4-8c1a-24204d856290.jpg" class="left" style="margin-right: 1em;" />

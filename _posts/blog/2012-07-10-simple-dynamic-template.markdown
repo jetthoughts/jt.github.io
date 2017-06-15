@@ -8,10 +8,13 @@ tags:
 - ruby
 - strings
 - metaprogramming
+
 categories:
 - blog
 - tech
 
+redirect_to:
+- https://jtway.co/simple-dynamic-template-687ffbefce71
 ---
 
 Sometimes we need to define a dynamic template before defining variables used in the template.
