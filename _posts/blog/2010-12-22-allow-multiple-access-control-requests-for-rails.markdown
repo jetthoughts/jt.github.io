@@ -8,6 +8,8 @@ categories:
 - blog
 - magic
 
+redirect_to:
+- https://jtway.co/allow-multiple-access-control-requests-for-rails-50d1162c1425
 ---
 
 If you have problem with sending XHR requests from different domains, it will be problematic to get content, because
