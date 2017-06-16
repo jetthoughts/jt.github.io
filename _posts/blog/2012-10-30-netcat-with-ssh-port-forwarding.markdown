@@ -8,6 +8,8 @@ categories:
 - blog
 - tricks
 
+redirect_to:
+- https://jtway.co/netcat-with-ssh-port-forwarding-148177b2e850
 ---
 
 I have encountered a problem with getting access to the private local service which available from the local machine.
