@@ -7,10 +7,13 @@ date: 04-09-2010
 tags:
 - linux
 - sed
+
 categories:
 - blog
 - tricks
 
+redirect_to:
+- https://jtway.co/remove-the-first-lines-from-stream-83350e049166
 ---
 
 I am not a linux hacker, so I wasted a lot of time trying to find a solution to strip first lines from output stream. The first my solution was the following:
