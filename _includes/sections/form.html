@@ -1,0 +1,31 @@
+<section class="lets-talk js-lets-talk talk-wrapper" id="js-lets-talk">
+    <div class="container animated">
+        <div class="description">
+            <div class="title">Let's talk.</div>
+        </div>
+        <div class="wave-container">
+            <div class="wave">
+                {% include wave.html %}
+            </div>
+            <div class="js-wave-cover wave-cover"></div>
+        </div>
+        <div class="cta-btn">
+            <div class="btn-primary js-open-form">Get in touch</div>
+        </div>
+    </div>
+    <div class="controls animated">
+        <div class="back-btn js-back"></div>
+        <div class="close-btn js-close"></div>
+    </div>
+    <form class="contact-form animated">
+        <div class="row">
+            <div class="form-group"><label>name</label><input type="text" name="name" placeholder="Your name"/></div>
+            <div class="form-group"><label>email</label><input type="email" name="email" placeholder="Your email"/></div>
+        </div>
+        <div class="form-group message"><label>message</label><textarea name="message" rows="10" cols="30"
+                                                                        placeholder="Type here"></textarea></div>
+        <div class="submit">
+            <button class="btn-primary">Send</button>
+        </div>
+    </form>
+</section>

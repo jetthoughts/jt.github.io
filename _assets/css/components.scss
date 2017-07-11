@@ -1,0 +1,168 @@
+@import 'variables';
+
+.btn-primary {
+  align-items: center;
+  background-color: $primary-blue;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 10px;
+  outline: none;
+}
+
+.btn.alternative {
+  border-top: 1px solid white;
+  padding-top: 1rem;
+}
+
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+@mixin placeholder($color) {
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+  ::-moz-placeholder {
+    color: $color;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+  }
+  :-moz-placeholder {
+    color: $color;
+  }
+}
+
+@mixin respond-to($media) {
+  @if $media == md {
+    @media (max-width: $screen-md) {
+      @content;
+    }
+  } @else if $media == xs {
+    @media (max-width: $screen-xs) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media (max-width: $screen-sm) {
+      @content;
+    }
+  }
+}
+
+%content-max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+
+  @media (max-width: $screen-md) {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.hiden-xs {
+  @include respond-to(xs) {
+    display: none !important;
+  }
+}
+
+.hiden-md {
+  @include respond-to(md) {
+    display: none !important;
+  }
+}
+
+.hiden-md {
+  @include respond-to(md) {
+    display: none !important;
+  }
+}
+
+.video-cover {
+  @include size(100%, 100%);
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  //z-index: -1;
+  transform: translateX(-50%) translateY(-50%);
+  background: #f1f1f1 no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+@keyframes width-animation {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+@keyframes height-animation {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
+}
+
+// Form fields
+input,
+textarea {
+  @include placeholder($label-grey);
+  
+  background-color: $card-grey;
+  border: {
+    width: 0 0 1px 0;
+    style: solid;
+    color: rgba($label-grey, .5);
+  }
+  color: $white;
+  padding: 0.5rem;
+  width: 100%;
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
+
+i {
+  @include size(32px, 32px);
+  background: {
+    size: contain;
+    repeat: no-repeat;
+    position: center;
+  }
+
+  display: inline-block;
+
+  &.agile {
+    background-image: url('../images/vector/agile_icon.svg');
+  }
+
+  &.web {
+    background-image: url('../images/vector/web_icon.svg');
+  }
+
+  &.mobile {
+    background-image: url('../images/vector/mobile_icon.svg');
+  }
+}

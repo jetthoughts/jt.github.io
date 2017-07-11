@@ -1,0 +1,302 @@
+@import "components";
+
+.main.use-case {
+  background: {
+    image: url('../images/vector/dot_background.svg'), linear-gradient(45deg, #0072E5, #409FFF);
+    size: 514px, 100%;
+    repeat: no-repeat;
+    position: center, 100%;
+  }
+  display: flex;
+  flex-direction: column;
+
+  .wrapper {
+    @extend %content-max-width;
+    display: flex;
+    padding-top: 10rem;
+
+    @include respond-to(md) {
+      flex-direction: column;
+      padding-top: 3rem;
+    }
+  }
+
+  .title {
+    font-size: 10rem;
+
+    @include respond-to(md) {
+      font-size: 4rem;
+    }
+
+  }
+
+  .subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    span {
+      max-width: 300px;
+
+      @media (max-width: $screen-sm) {
+        max-width: 50%;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.case-descriptor {
+  background-color: $white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    @extend %content-max-width;
+    display: flex;
+
+    @include respond-to(md) {
+      min-height: 80vh;
+      justify-content: space-around;
+    }
+
+    @include respond-to(sm) {
+      flex-direction: column;
+    }
+  }
+
+  .title {
+    font-size: 3rem;
+
+    @include respond-to(sm) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .description {
+    color: $desc-color;
+    line-height: 2rem;
+
+    @media (min-width: $screen-md) {
+      padding-left: 2rem;
+    }
+  }
+}
+
+.case-subdscriptor {
+  align-items: center;
+  background: {
+    color: #262829;
+    image: url('../images/black_iphone.png');
+    repeat: no-repeat;
+    size: cover;
+  }
+  display: flex;
+
+  @include respond-to(sm) {
+    align-items: flex-start;
+    background-position-x: -200px;
+  }
+
+  .wrapper {
+    @extend %content-max-width;
+
+    .title,
+    .description {
+      max-width: 30vw;
+
+      @include respond-to(sm) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+
+    @include respond-to(sm) {
+      margin: 2rem 0;
+    }
+  }
+
+  .description {
+    color: rgba(white, .35);
+    line-height: 1.5rem;
+  }
+}
+
+.screen-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond-to(xs) {
+    &:nth-child(odd) {
+      flex-direction: column-reverse;
+    }
+  }
+  
+  .block {
+    flex-basis: 50%;
+    min-width: ($screen-md / 2);
+
+    @include respond-to(md) {
+      flex-basis: 100%;
+      min-width: $screen-xs / 2;
+    }
+
+    &.screen,
+    &.text {
+      height: 80vh;
+    }
+
+    &.screen {
+      background-color: $primary-blue;
+      //max-width: 50%;
+      .image-wrapper {
+        @include size(inherit, inherit);
+        overflow: hidden;
+        position: relative;
+
+        img {
+          position: absolute;
+          transform: translateX(0) translateY(0);
+        }
+      }
+    }
+
+    &.text {
+      align-items: center;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      padding: 0 3rem;
+
+      @include respond-to(xs) {
+        padding: 1.5rem;
+      }
+
+      .wrapper {
+      }
+
+      .title {
+        color: #000;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+      }
+
+      .description {
+        color: $desc-color;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+.services-in-case {
+  align-items: center;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+
+  .wrapper {
+    @extend %content-max-width;
+  }
+
+  ul {
+    display: flex;
+
+    @include respond-to(sm) {
+      flex-direction: column;
+    }
+
+    li {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin: 1rem 2rem;
+    }
+  }
+
+  .title {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+
+  }
+  .description {
+    color: $desc-color;
+    line-height: 1.5rem;
+  }
+}
+
+.project-demo {
+  background-color: $white;
+  color: black;
+
+  .wrapper {
+    @extend %content-max-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px;
+  }
+
+  .subtitle {
+    color: $primary-blue;
+  }
+
+  .text-block {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    font-size: 2.5rem;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 3.3rem;
+
+    @media (min-width: 1024px) {
+      max-width: 50%;
+    }
+  }
+
+  .switcher {
+    border-top: 1px solid rgba(black, .05);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 1rem 0;
+
+    @include respond-to(md) {
+      padding: 1rem 0;
+    }
+
+    @include respond-to(xs) {
+      flex-direction: column;
+    }
+
+    .project-label {
+      border-bottom: 1px solid rgba(white, .5);
+      padding: 0.5rem;
+
+      .project {
+        font-size: 1.5rem;
+        line-height: 3rem;
+      }
+
+      &.active {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.services-in-case,
+.project-demo {
+  min-height: 640px;
+}

@@ -1,4 +1,780 @@
+@import 'vendor/animate.min';
+@import 'vendor/normalize.min';
+
+@import 'variables';
+@import 'components';
+@import 'case';
+
 body {
-  background-color: red;
+  background-color: $card-grey;
+  color: $white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+
 }
 
+div {
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  flex-basis: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+
+  li {
+    cursor: pointer;
+  }
+}
+
+a {
+  color: $white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+label {
+  color: $label-grey;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.content {
+  background-color: $primary-grey;
+}
+
+section {
+  background-color: $primary-grey;
+  min-height: 100vh;
+}
+
+.logo {
+  @include respond-to(xs) {
+    display: block;
+    width: 40px;
+    overflow-x: hidden;
+  }
+}
+
+.main-screen {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+
+    .content {
+      margin-top: 10%;
+      background-color: transparent;
+      display: flex;
+      flex-grow: 2;
+    }
+
+    .main {
+      font-size: 10rem;
+      flex-grow: 2;
+      position: relative;
+
+      @include respond-to(md) {
+        align-self: center;
+        &:after {
+          display: none;
+        }
+      }
+
+      &:after {
+        @include size(46px, 35px);
+        content: '';
+        background: {
+          image: url(asset_path('vector/arrow-right.svg'));
+          repeat: no-repeat;
+          size: 40px;
+        }
+        position: absolute;
+        bottom: 25px;
+        left: 18%;
+        transform: rotate(90deg);
+      }
+
+      .title {
+        font-weight: 500;
+        max-width: 80%;
+        margin: 0 auto;
+
+        @media (max-width: 1100px) {
+          font-size: 8rem;
+        }
+
+        @include respond-to(md) {
+          font-size: 4rem;
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    .blog-articles {
+      border-right: 1px solid rgba(white, .3);
+      display: flex;
+      flex-direction: column;
+      flex-basis: 150px;
+      margin-right: 4rem;
+      font-weight: 500;
+
+      li {
+        align-items: center;
+        border: 2px solid transparent;
+        display: flex;
+        height: 4rem;
+        margin: 2rem 0;
+        padding-right: 2rem;
+
+        &:hover {
+          border-right-color: white;
+        }
+      }
+    }
+  }
+}
+
+.services {
+  display: flex;
+
+  @include respond-to(md) {
+    flex-direction: column-reverse;
+
+  }
+}
+
+.services article {
+  align-items: flex-start;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  height: inherit;
+  flex-basis: 50%;
+
+  @include respond-to(md) {
+    padding-top: 4rem;
+    display: block;
+
+    &.team {
+      padding-bottom: 15rem;
+    }
+  }
+
+  &.team {
+    position: relative;
+    background-color: $primary-grey;
+
+    > svg {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .description {
+      &,
+      & .title {
+        color: $white;
+      }
+    }
+
+    @include respond-to(xs) {
+      svg {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .description {
+    padding: 1rem 2rem;
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+
+    .title,
+    .subtitle {
+      font-size: 3.5rem;
+
+      @include respond-to(xs) {
+        font-size: 2rem;
+      }
+    }
+
+    .title {
+      color: black;
+    }
+
+    .subtitle {
+      font-weight: normal;
+    }
+  }
+
+  &.slider {
+    background-color: $white;
+
+    .description {
+      color: $label-grey;
+    }
+
+    .service-wrapper {
+      margin: 2rem 0;
+    }
+
+    .title,
+    .subtitle {
+      font-size: 2rem;
+
+      @include respond-to(xs) {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.uses-cases {
+  align-items: center;
+  background-color: $primary-blue;
+  display: flex;
+  flex-direction: column;
+
+  .switcher {
+    @extend %content-max-width;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    margin: 1rem 0;
+
+    @include respond-to(md) {
+      padding: 1rem 0;
+    }
+
+    @include respond-to(xs) {
+      flex-direction: column;
+    }
+
+    .project-label {
+      border-bottom: 1px solid rgba(white, .5);
+      padding: 0.5rem;
+
+      .project {
+        font-size: 1.5rem;
+      }
+
+      .type {
+        color: rgba(white, .5);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        margin-top: 0.5rem;
+      }
+    }
+
+  }
+
+  .slide {
+    @extend %content-max-width;
+
+    background: {
+      image: url(asset_path('vector/dot_background.svg')), url(asset_path('Iphone_color.png'));
+      size: 514px, 120vh;
+      repeat: no-repeat;
+      position: 100% 43%, 50%;
+    }
+    padding: 0 1.5rem;
+
+    label {
+      color: rgba(white, .5);
+      display: none;
+      margin-bottom: 0;
+
+      @include respond-to(xs) {
+        display: block;
+      }
+    }
+
+    @include respond-to(xs) {
+      background: {
+        size: 400px, 730px;
+        position: 0 25px, 47% 100px;
+      }
+
+      flex-direction: column;
+      padding: 30% 1.5rem 0;
+    }
+
+    flex-grow: 2;
+    display: flex;
+    padding-top: 5rem;
+
+    .title {
+      font-size: 10rem;
+      margin-bottom: 2.5rem;
+
+      @include respond-to(md) {
+        font-size: 6rem;
+      }
+
+      @include respond-to(xs) {
+        font-size: 3rem;
+        word-spacing: 10rem;
+      }
+    }
+
+    .subtitle {
+      align-items: flex-end;
+      display: flex;
+      padding-bottom: 9rem;
+
+      span {
+        max-width: 300px;
+      }
+
+      @include respond-to(xs) {
+
+      }
+    }
+
+  }
+}
+
+.posts {
+  align-items: center;
+  background-color: $bg-grey;
+  display: flex;
+  min-height: 70vh;
+  padding: 2rem 0;
+
+  .container {
+    @extend %content-max-width;
+    padding-top: 5rem;
+    margin: 0 auto;
+
+    @include respond-to(xs) {
+      padding-top: 3rem;
+    }
+  }
+
+  .posts-list {
+    display: flex;
+    margin: 2rem auto 0;
+
+    li {
+      flex-grow: 1;
+      height: 500px;
+
+      background-color: $card-grey;
+      display: flex;
+      align-items: flex-end;
+      padding: 0.4rem 1rem;
+
+      label {
+        color: #737380;
+        display: block;
+      }
+
+      span {
+        font-size: 3rem;
+
+        @include respond-to(xs) {
+          font-size: 1.5rem ;
+        }
+      }
+
+      &:nth-child(odd) {
+        margin: 0 10px;
+      }
+
+      &:hover {
+        background: {
+          color: $primary-blue;
+          image: url(asset_path('vector/arrow-right.svg'));
+          repeat: no-repeat;
+          position: 95% 5%;
+        }
+        label {
+          color: rgba(white, .5);
+        }
+      }
+    }
+
+    @include respond-to(md) {
+      overflow-x: auto;
+      padding-bottom: 3rem;
+
+      li {
+        margin: .5rem 0;
+        min-width: 190px;
+        height: 350px;
+      }
+    }
+  }
+}
+
+.lets-talk {
+  align-items: center;
+  display: flex;
+
+  .container {
+    @extend %content-max-width;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .wave-container {
+    flex-basis: 60%;
+    height: 200px;
+    position: relative;
+
+    .wave-cover {
+      @include size(100%, 200px);
+      background-color: #1b1b1f;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &.wave-overlap {
+        animation-name: width-animation;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+      }
+    }
+
+    @include respond-to(md) {
+      flex-basis: 100%;
+      overflow: hidden;
+
+      .wave {
+        @include size(200%, 200px);
+        transform: translateX(-10%);
+      }
+    }
+  }
+
+  .cta-btn {
+    flex-basis: 100%;
+  }
+
+  .description {
+    flex-basis: 30%;
+    .title {
+      font-size: 10rem;
+
+    }
+  }
+
+  @include respond-to(xs) {
+    .description {
+      padding: 0 1.5rem;
+      flex-basis: 100%;
+
+      .title {
+        font-size: 5rem;
+      }
+    }
+
+    .cta-btn {
+      padding-left: 1.5rem;
+    }
+
+  }
+}
+
+.contact-form-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to(xs) {
+    padding: 0 10px;
+  }
+
+  .controls {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60px;
+
+
+    .back-btn {
+      @include size(30px, 15px);
+      transform: rotate(180deg);
+      background: {
+        image: url(asset_path('vector/arrow-right.svg'));
+        repeat: no-repeat;
+        size: 30px;
+      }
+      cursor: pointer;
+      margin: 0 1.5rem;
+    }
+
+    .close-btn {
+      @include size(20px, 20px);
+
+      background: {
+        image: url(asset_path('vector/close-x.svg'));
+        repeat: no-repeat;
+        size: 20px;
+      }
+      cursor: pointer;
+      margin: 1.5rem;
+
+    }
+
+    @include respond-to(xs) {
+      .close-btn,
+      .back-btn {
+        margin: 0;
+      }
+    }
+  }
+
+  .contact-form {
+    @extend %content-max-width;
+    padding: 0 1.5rem;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include respond-to(xs) {
+      flex-grow: 0;
+      padding: 0;
+      input,
+      textarea {
+        max-width: 90%;
+      }
+      padding-bottom: 2rem;
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .form-group {
+      flex-basis: 40%;
+
+      &:first-of-type {
+        margin-right: 1rem;
+      }
+    }
+
+    input {
+      display: block;
+    }
+
+    @include respond-to(xs) {
+      flex-direction: column;
+
+      .form-group {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+        &:first-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .form-group {
+    label {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .message {
+    padding-top: 3rem;
+  }
+
+  .submit {
+    padding-top: 3rem;
+
+    button {
+      padding: 10px 20px;
+    }
+  }
+}
+
+.talk-wrapper {
+  overflow-x: hidden;
+}
+
+footer {
+  background-color: $bg-grey;
+  padding: 3rem 0 5rem;
+
+  .social-links {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.75rem;
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.75rem;
+  }
+
+  .container {
+    @extend %content-max-width;
+    display: flex;
+
+    .col-3 {
+      flex-basis: 33%;
+    }
+
+    .col-6 {
+      flex-basis: 66%;
+
+      @include respond-to(xs) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+
+    @include respond-to(md) {
+      .col-3,
+      .col-6 {
+        flex-basis: 50%;
+      }
+    }
+  }
+
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+
+  }
+
+  .promo-text {
+    color: rgba($label-grey, .5);
+    font-size: 0.8rem;
+  }
+
+  .rights {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+
+    > span {
+      padding-bottom: 0.5rem;
+      font-size: 1.15rem;
+    }
+  }
+
+  @include respond-to(md) {
+    padding: 3rem 1.5rem;
+
+    .container {
+      flex-wrap: wrap;
+      width: 95%;
+
+      .rights {
+        margin: 1rem auto 0;
+        flex-basis: 100%;
+      }
+    }
+
+  }
+
+  @include respond-to(xs) {
+    width: inherit;
+
+    .container {
+      .col-3,
+      .col-6 {
+        flex-basis: 100%;
+      }
+
+      .rights {
+        text-align: left;
+      }
+    }
+
+    .social-links,
+    .contacts {
+      flex-direction: column;
+      margin: 1rem 0;
+      > div {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .contacts {
+      margin-top: 2rem;
+      padding-bottom: 0;
+    }
+  }
+}
+
+label {
+  @include respond-to(xs) {
+    display: block;
+  }
+}
+
+body,
+.services,
+.uses-cases {
+  .animated{
+    display: none;
+
+    &.lets-talk,
+    &.slide.passed-animation {
+      display: flex;
+    }
+
+
+    &.passed-animation {
+      display: block;
+    }
+  }
+}
+
+
+.contact-form-wrapper {
+  .container{
+    display: none;
+  }
+}
+.lets-talk {
+  .controls,
+  .contact-form {
+    display: none;
+  }
+}
+
+//.title,
+//.subtitle {
+//  word-break: break-word;
+//}

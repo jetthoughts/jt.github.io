@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section class="main-screen">
+    <div class="video-cover">
+        <video poster="{{ asset['bg.png'] }}/" playsinline="" autoplay="" muted="" loop="">
+            <source src="/video_bg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container">
+        {% include nav.html %}
+
+        <div class="content">
+            <div class="main">
+                <div class="title animated">Make anything possible</div>
+            </div>
+            <ul class="blog-articles hiden-md animated">
+                <li><a href="https://jtway.co" target="_blank">Our tips for succesfull carrier</a></li>
+                <li><a href="https://jtway.co" target="_blank">Functional programing in Elixir</a></li>
+                <li><a href="https://jtway.co" target="_blank">Why using _.chain is a mistake</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+{{ content }}

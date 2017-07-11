@@ -30,6 +30,8 @@ assets:
     js: true
   sources:
     - _assets/css
+    - _assets/javascripts
+    - _assets/images
   autoprefixer:
       browsers:
         - "last 2 versions"

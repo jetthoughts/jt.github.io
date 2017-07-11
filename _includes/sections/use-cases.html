@@ -1,0 +1,18 @@
+<section class="uses-cases" id="js-use-cases">
+  <ul class="switcher hiden-xs">
+    {% for case_hash in site.data.use_cases %}
+    {% assign case = case_hash[1] %}
+      <li class="project-label">
+        <div class="project">{{ case.title }}</div>
+        <div class="type">{{ case.scope }}</div>
+      </li>
+    {% endfor %}
+  </ul>
+  <div class="slide animated agent-inbox">
+    <div class="project"><label>use case</label>
+      <div class="title">Agent Inbox</div>
+      <a class="btn alternative" href="/case.html" target="_blank">learn more</a></div>
+    <div class="subtitle hiden-xs"><span>Next level for Real Estate Agents Communication. Help to build new platform and deliver on the market</span>
+    </div>
+  </div>
+</section>
