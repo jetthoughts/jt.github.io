@@ -1,0 +1,119 @@
+---
+layout: default
+title: Agent Inbox | Jetthougths
+---
+<section class="main use-case">
+  {% include nav.html %}
+  <div class="wrapper">
+    <div class="title animated">Agent Inbox</div>
+    <div class="subtitle"><span>Next level for Real Estate Agents Communication. Help to build new platform and deliver on the market</span>
+    </div>
+  </div>
+  <!--img.phone(src='images/iphone_color.png')-->
+</section>
+<section class="case-descriptor">
+  <div class="wrapper">
+    <div class="title">Agent Inbox is the world's leading real estate messaging platform</div>
+    <div class="description">Agent Inbox empowers MLSs to launch market-wide messaging systems and facilitate
+      communication between all agent and transaction participants. Powered by MLS data, the Agent Inbox platform starts
+      at first contact, is accessible everywhere, and centralizes each deal through closing.
+    </div>
+  </div>
+</section>
+<section class="case-subdscriptor">
+  <div class="wrapper">
+    <div class="title">Agent Inbox Platform</div>
+    <div class="description">Agent Inbox empowers MLSs to launch market-wide messaging systems and facilitate
+      communication between all agent and transaction participants. Powered by MLS data, the Agent Inbox platform starts
+      at first contact, is accessible everywhere, and centralizes each deal through closing.
+    </div>
+  </div>
+</section>
+<div class="screen-section">
+  <div class="block screen">
+    <div class="image-wrapper">
+      <!--<img src="images/colormacbook.png">-->
+    </div>
+  </div>
+  <div class="block text">
+    <div class="wrapper">
+      <div class="title">Drive Brokerage Performance With Agent Inbox</div>
+      <div class="description">More than just messaging, Agent Inbox facilitates collaboration on transactions, team
+        conversations in channels, and scheduling management. Brokerages keep agents and staff informed and
+        communicating in one central place.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="screen-section">
+  <div class="block text">
+    <div class="wrapper">
+      <div class="title">Agent Inbox Platform</div>
+      <div class="description">Agent Inbox empowers MLSs to launch market-wide messaging systems and facilitate
+        communication between all agent and transaction participants. Powered by MLS data, the Agent Inbox platform
+        starts at first contact, is accessible everywhere, and centralizes each deal through closing.
+      </div>
+    </div>
+  </div>
+  <div class="block screen">
+    <div class="image-wrapper">
+      <!--<img src="images/ipad.png">-->
+    </div>
+  </div>
+</div>
+<div class="screen-section">
+  <div class="block screen">
+    <div class="image-wrapper">
+      <!--<img src="images/colorwatch.png">-->
+    </div>
+  </div>
+  <div class="block text">
+    <div class="wrapper">
+      <div class="title">Drive Brokerage Performance With Agent Inbox</div>
+      <div class="description">More than just messaging, Agent Inbox facilitates collaboration on transactions, team
+        conversations in channels, and scheduling management. Brokerages keep agents and staff informed and
+        communicating in one central place.
+      </div>
+    </div>
+  </div>
+</div>
+<section class="services-in-case">
+  <div class="wrapper">
+    <ul>
+      <li><i class="agile"></i>
+        <div class="title">Agile consulting</div>
+        <div class="description">We perform products audit, configure and automate process, improve quality and
+          productivity
+        </div>
+      </li>
+      <li><i class="web"></i>
+        <div class="title">Web development</div>
+        <div class="description">We passionate into elegant solution for your web project using RubyOnRails, React and
+          more
+        </div>
+      </li>
+      <li><i class="mobile"></i>
+        <div class="title">Mobile Development</div>
+        <div class="description">We build mobile application, from highly technical internal tools to robust customer -
+          facing intefaces
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="project-demo">
+  <div class="wrapper">
+    <div class="text-block">
+      <div class="title">Want to see how Agent Inbox works?</div>
+      <a class="subtitle" href="/">Explore Agent Inbox platform</a></div>
+    <ul class="switcher hiden-md">
+      {% for case_hash in site.data.use_cases %}
+      {% assign case = case_hash[1] %}
+      <li class="project-label active">
+        <div class="project">{{ case.title }}</div>
+        <label>{{ case.scope }}</label>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

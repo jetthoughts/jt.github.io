@@ -155,14 +155,14 @@ i {
   display: inline-block;
 
   &.agile {
-    background-image: url('../images/vector/agile_icon.svg');
+    background-image: url(asset_path('vector/agile_icon.svg'));
   }
 
   &.web {
-    background-image: url('../images/vector/web_icon.svg');
+    background-image: url(asset_path('vector/web_icon.svg'));
   }
 
   &.mobile {
-    background-image: url('../images/vector/mobile_icon.svg');
+    background-image: url(asset_path('vector/mobile_icon.svg'));
   }
 }

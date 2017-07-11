@@ -2,7 +2,7 @@
 
 .main.use-case {
   background: {
-    image: url('../images/vector/dot_background.svg'), linear-gradient(45deg, #0072E5, #409FFF);
+    image: url(asset_path('vector/dot_background.svg')), linear-gradient(45deg, #0072E5, #409FFF);
     size: 514px, 100%;
     repeat: no-repeat;
     position: center, 100%;
@@ -89,7 +89,7 @@
   align-items: center;
   background: {
     color: #262829;
-    image: url('../images/black_iphone.png');
+    image: url(asset_path('black_iphone.png'));
     repeat: no-repeat;
     size: cover;
   }
