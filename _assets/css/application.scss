@@ -380,7 +380,7 @@ section {
     overflow-x: auto;
 
     li {
-      flex-grow: 1;
+      flex-basis: 350px;
       height: 500px;
       min-width: 275px;
 
@@ -399,6 +399,10 @@ section {
 
         @include respond-to(xs) {
           font-size: 1.5rem ;
+        }
+
+        @include respond-to(md) {
+          font-size: 2rem ;
         }
       }
 
@@ -425,7 +429,8 @@ section {
 
       li {
         margin: .5rem 0;
-        min-width: 190px;
+        min-width: 200px;
+        height: 350px;
       }
     }
   }
