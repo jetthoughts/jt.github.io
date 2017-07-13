@@ -1,6 +1,7 @@
 //= require vendor/zepto.min
 //= require vendor/smooth-scroll.min.js
 //= require vendor/noframework.waypoints.min.js
+//= require form
 
 
 const passAnimationClass = 'passed-animation';
@@ -36,6 +37,7 @@ $(document).ready(function () {
     $('.js-lets-talk .container').toggleClass('fadeOutLeft fadeInLeft');
     $('.js-lets-talk .controls, .js-lets-talk .contact-form').toggleClass('fadeOutRight fadeInRight');
     $('.js-lets-talk').toggleClass('lets-talk contact-form-wrapper');
+    $('.form-sent').addClass('hide');
   });
 
   if ($('#js-services').length) {

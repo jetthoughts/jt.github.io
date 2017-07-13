@@ -617,6 +617,16 @@ section {
   }
 }
 
+.form-sent {
+  align-items: center;
+  display: flex;
+  flex-grow: 2;
+  font-size: 2rem;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0;
+}
+
 .talk-wrapper {
   overflow-x: hidden;
 }
@@ -770,6 +780,10 @@ body,
 .lets-talk {
   .controls,
   .contact-form {
+    display: none;
+  }
+
+  .form-sent {
     display: none;
   }
 }

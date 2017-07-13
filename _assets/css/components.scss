@@ -166,3 +166,10 @@ i {
     background-image: url(asset_path('vector/mobile_icon.svg'));
   }
 }
+
+.form-group.invalid {
+  input,
+  textarea {
+    border-color: red;
+  }
+}
