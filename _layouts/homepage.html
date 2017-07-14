@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="main-screen">
     <div class="video-cover">
-        <video poster="{{ asset['bg.png'] }}/" playsinline="" autoplay="" muted="" loop="">
+        <video poster="{% asset_path bg.png %}" playsinline="" autoplay="" muted="" loop="">
             <source src="/video_bg.mp4" type="video/mp4">
         </video>
     </div>
