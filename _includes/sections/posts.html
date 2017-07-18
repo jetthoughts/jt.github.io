@@ -1,11 +1,20 @@
 <section class="posts">
     <div class="container"><label class="label-posts">Latest posts</label>
         <ul class="posts-list">
+
             {% for post_hash in site.data.posts %}
             {% assign post = post_hash[1] %}
                 <li>
                     <a href="{{ post.url }}"
-                       target="_blank"><label>Medium</label><span>
+                       target="_blank"><label>Medium</label>
+                        {% if post.title.size < 60 %}
+                        {% assign klass = 'small' %}
+                        {% elsif post.title.size < 100 %}
+                        {% assign klass = 'medium' %}
+                        {% else %}
+                        {% assign klass = 'large' %}
+                        {% endif %}
+                        <span class="post-title {{ klass }}">
                         {{ post.title }}
                     </span>
                     </a>
