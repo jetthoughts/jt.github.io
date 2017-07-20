@@ -13,6 +13,14 @@ function animateShowing(element, direction, effect = 'fadeInUp') {
   }
 }
 
+function toggleForm() {
+  $('.js-lets-talk .container').removeClass('fadeInLeft').addClass('fadeOutLeft');
+  $('.js-lets-talk .controls, .js-lets-talk .contact-form')
+    .removeClass('fadeOutRight hide')
+    .addClass('fadeInRight');
+  $('.js-lets-talk').toggleClass('lets-talk contact-form-wrapper');
+}
+
 $(document).ready(function () {
   smoothScroll.init();
 
@@ -22,16 +30,8 @@ $(document).ready(function () {
     }
   });
 
-  $('.main .title').addClass(`bounceInDown ${passAnimationClass}`);
-  $('.blog-articles').addClass('bounceInRight');
 
-  $('.js-open-form').on('click', () => {
-    $('.js-lets-talk .container').removeClass('fadeInLeft').addClass('fadeOutLeft');
-    $('.js-lets-talk .controls, .js-lets-talk .contact-form')
-      .removeClass('fadeOutRight hide')
-      .addClass('fadeInRight');
-    $('.js-lets-talk').toggleClass('lets-talk contact-form-wrapper');
-  });
+  $('.js-open-form').on('click', () => toggleForm());
 
   $('.js-back, .js-close').on('click', () => {
     $('.js-lets-talk .container').toggleClass('fadeOutLeft fadeInLeft');
@@ -40,25 +40,29 @@ $(document).ready(function () {
     $('.form-sent').addClass('hide');
   });
 
-  if ($('#js-services').length) {
-    const Team = new Waypoint({
-      element: document.getElementById('js-services'),
-      handler: (direction) => {
-        animateShowing('.team .description', direction);
-        animateShowing('.slider', direction);
-      },
-      offset: '30%'
-    });
+  if(window.innerWidth > 768) {
+    $('.main .title').addClass(`bounceInDown ${passAnimationClass}`);
+    $('.blog-articles').addClass('bounceInRight');
 
-    const UseCase = new Waypoint({
-      element: document.getElementById('js-use-cases'),
-      handler: (direction) => {
-        animateShowing('.slide', direction);
-      },
-      offset: '40%'
-    })
+    if ($('#js-services').length) {
+      const Team = new Waypoint({
+        element: document.getElementById('js-services'),
+        handler: (direction) => {
+          animateShowing('.team .description', direction);
+          animateShowing('.slider', direction);
+        },
+        offset: '30%'
+      });
 
-  }
+      const UseCase = new Waypoint({
+        element: document.getElementById('js-use-cases'),
+        handler: (direction) => {
+          animateShowing('.slide', direction);
+        },
+        offset: '40%'
+      })
+    }
+  } 
 
   const LetsTalk = new Waypoint({
     element: document.getElementById('js-lets-talk'),
