@@ -380,12 +380,14 @@ section {
 
   li {
     flex-basis: $block-height - 150;
+    flex-grow: 1;
     height: $block-height;
 
     background-color: $card-grey;
     display: flex;
     align-items: flex-end;
     padding: 0.4rem 1rem;
+    margin: 0 1rem 1rem 0;
 
     label {
       color: #737380;
@@ -438,12 +440,6 @@ section {
       }
     }
 
-    @media (min-width: $screen-md) {
-      &:nth-child(odd) {
-        margin: 0 .5rem;
-      }
-    }
-
     &:hover {
       background: {
         color: $primary-blue;
@@ -461,8 +457,8 @@ section {
     padding-bottom: 3rem;
 
     li {
-      margin: 0 0 1rem;
       min-width: $block-height - 230;
+      margin-bottom: 1rem;
     }
   }
 
@@ -486,7 +482,7 @@ section {
 
     .wave-cover {
       @include size(100%, 200px);
-      background-color: #1b1b1f;
+      background-color: $primary-grey;
       position: absolute;
       top: 0;
       right: 0;
