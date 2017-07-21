@@ -15,9 +15,10 @@ layout: default
                 <div class="title animated">Make anything possible</div>
             </div>
             <ul class="blog-articles hiden-md animated">
-                <li><a href="https://jtway.co" target="_blank">Our tips for succesfull carrier</a></li>
-                <li><a href="https://jtway.co1" target="_blank">Functional programing in Elixir</a></li>
-                <li><a href="https://jtway.co" target="_blank">Why using _.chain is a mistake</a></li>
+                {% for post_hash in site.data.posts %}
+                {% assign post = post_hash[1] %}
+                    <li><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></li>
+                {% endfor %}
             </ul>
         </div>
     </div>
