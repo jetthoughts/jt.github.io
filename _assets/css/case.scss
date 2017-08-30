@@ -9,14 +9,14 @@
   flex-direction: column;
 
   .image-wrapper {
-    $image-wrapper: 90vh;
+    $image-wrapper: 60vw;
     @include size($image-wrapper, $image-wrapper);
     background: {
       image: url(asset_path('ai_case_main_bg.png'));
       repeat: no-repeat;
       size: contain;
     }
-  ;
+  
     position: absolute;
     right: 0;
     bottom: -#{$image-wrapper / 4};
@@ -30,18 +30,18 @@
     @extend %content-max-width;
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 5em;
 
     @include respond-to(md) {
-      padding-top: 3rem;
+      padding-top: 3em;
     }
   }
 
   .title {
-    font-size: 10rem;
+    font-size: 10em;
 
     @include respond-to(md) {
-      font-size: 4rem;
+      font-size: 4em;
     }
 
   }
@@ -54,14 +54,14 @@
 
       @media (max-width: $screen-sm) {
         max-width: 50%;
-        margin-top: 1rem;
+        margin-top: 1em;
       }
     }
   }
 
   .title,
   .subtitle {
-    max-width: 50vw;
+    max-width: 300px;
 
     @include respond-to(xs) {
       max-width: 100%;
@@ -76,6 +76,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 2em 0;
   min-height: 80vh;
 
   .wrapper {
@@ -94,16 +95,17 @@
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 3em;
+    margin-bottom: 2em;
 
     @include respond-to(sm) {
-      font-size: 2.5rem;
+      font-size: 2.5em;
     }
   }
 
   .description {
     color: $desc-color;
-    line-height: 2rem;
+    line-height: 2em;
   }
 }
 
@@ -123,7 +125,7 @@
   @include respond-to(md) {
     align-items: flex-start;
     background-image: none, url(asset_path('house.png')), none;
-    padding-top: 3rem;
+    padding-top: 3em;
   }
 
   .wrapper {
@@ -145,17 +147,17 @@
 
   .title {
     color: black;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2.5em;
+    margin-bottom: 2em;
 
     @include respond-to(sm) {
-      margin: 2rem 0;
+      margin: 2em 0;
     }
   }
 
   .description {
     color: $desc-color;
-    line-height: 1.5rem;
+    line-height: 1.5em;
   }
 }
 
@@ -163,6 +165,7 @@
   display: flex;
   min-height: 50vh;
   background-attachment: fixed;
+  background-size: cover;
 
   &.project {
     background-image: url(asset_path('keys_bg_project.png'));
@@ -186,19 +189,19 @@
     }
 
     li {
-      padding: 1rem;
+      padding: 1em;
       text-align: center;
     }
 
     .label {
       color: rgba($white, .5);
-      font-size: 1.33rem;
-      margin-bottom: 1.1rem;
+      font-size: 1.33em;
+      margin-bottom: 1.1em;
     }
 
     .title {
       color: $white;
-      font-size: 2rem;
+      font-size: 2em;
     }
   }
 }
@@ -219,12 +222,12 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem 0;
+    padding: 1em 0;
 
     li {
       background-color: $white;
-      padding: 2rem;
-      margin: 1rem;
+      padding: 2em;
+      margin: 1em;
     }
   }
 
@@ -260,23 +263,23 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      margin-left: 0.95rem;
+      margin-left: 0.95em;
     }
 
     .name {
       color: black;
-      font-size: 1.3rem;
+      font-size: 1.3em;
     }
 
     .role {
       color: rgba($bg-grey, .5);
-      font-size: 0.8rem;
+      font-size: 0.8em;
       text-transform: uppercase;
     }
     .feedback-text {
       color: #A6A6A6;
-      font-size: 1.1rem;
-      margin-top: 4rem;
+      font-size: 1.1em;
+      margin-top: 4em;
       margin-left: 57px;
       line-height: 160%;
     }
@@ -356,28 +359,28 @@
       background-color: $white;
       display: flex;
       justify-content: center;
-      padding: 0 3rem;
+      padding: 0 3em;
 
       @include respond-to(xs) {
-        padding: 1.5rem;
+        padding: 1.5em;
       }
 
       .title {
         color: #000;
-        font-size: 3rem;
-        margin-bottom: 2rem;
+        font-size: 3em;
+        margin-bottom: 2em;
       }
 
       .description {
         color: $desc-color;
-        line-height: 2rem;
+        line-height: 2em;
       }
     }
   }
 }
 
 .technical-challenge {
-  padding-top: 9rem;
+  padding-top: 9em;
 
   .wrapper {
     @extend %content-max-width;
@@ -393,7 +396,7 @@
 
     @include respond-to(sm) {
       flex-direction: column;
-      margin-bottom: 2rem;
+      margin-bottom: 2em;
 
       &.reverse {
         flex-direction: column-reverse;
@@ -414,14 +417,14 @@
     }
 
     .title {
-      font-size: 2rem;
+      font-size: 2em;
       line-height: 130%;
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
     }
 
     .description {
       color: #737380;
-      font-size: 1rem;
+      font-size: 1em;
       line-height: 160%;
     }
   }
@@ -469,8 +472,8 @@
 
   .title {
     color: $primary-grey;
-    font-size: 2rem;
-    margin-bottom: 5rem;
+    font-size: 2em;
+    margin-bottom: 5em;
   }
 
   .row {
@@ -515,10 +518,9 @@
     display: flex;
     flex-grow: 2;
     flex-direction: column;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: 500;
     justify-content: center;
-    line-height: 3.3rem;
 
     @media (min-width: 1024px) {
       max-width: 50%;
@@ -529,11 +531,11 @@
     border-top: 1px solid rgba(black, .05);
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
-    margin: 1rem 0;
+    padding: 1em 0;
+    margin: 1em 0;
 
     @include respond-to(md) {
-      padding: 1rem 0;
+      padding: 1em 0;
     }
 
     @include respond-to(xs) {
@@ -542,11 +544,11 @@
 
     .project-label {
       border-bottom: 1px solid rgba(white, .5);
-      padding: 0.5rem;
+      padding: 0.5em;
 
       .project {
-        font-size: 1.5rem;
-        line-height: 3rem;
+        font-size: 1.5em;
+        line-height: 3em;
       }
 
       &.active {

@@ -8,7 +8,15 @@ body {
   background-color: $card-grey;
   color: $white;
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+
+  @include respond-to(xs) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $screen-md * 2) {
+    font-size: 24px;
+  }
 }
 
 * {
@@ -18,7 +26,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
   flex-basis: 70px;
 }
 
@@ -41,7 +49,7 @@ a {
 label {
   color: $label-grey;
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 
 .content {
@@ -84,7 +92,7 @@ section {
     }
 
     .main {
-      font-size: 10rem;
+      font-size: 10em;
       flex-grow: 2;
       position: relative;
 
@@ -115,11 +123,11 @@ section {
         margin: 0 auto;
 
         @media (max-width: 1100px) {
-          font-size: 8rem;
+          font-size: 8em;
         }
 
         @include respond-to(md) {
-          font-size: 4rem;
+          font-size: 4em;
           max-width: 100%;
           text-align: center;
           display: block;
@@ -132,16 +140,16 @@ section {
       display: flex;
       flex-direction: column;
       flex-basis: 250px;
-      margin-right: 4rem;
+      margin-right: 4em;
       font-weight: 500;
 
       li {
         align-items: center;
         border: 2px solid transparent;
         display: flex;
-        height: 4rem;
-        margin: 2rem 0;
-        padding-right: 2rem;
+        height: 4em;
+        margin: 2em 0;
+        padding-right: 2em;
 
         &:hover {
           border-right-color: white;
@@ -162,19 +170,19 @@ section {
 
 .services article {
   align-items: flex-start;
-  padding-top: 10rem;
-  padding-bottom: 5rem;
+  padding-top: 10em;
+  padding-bottom: 5em;
   display: flex;
   justify-content: center;
   height: inherit;
   flex-basis: 50%;
 
   @include respond-to(md) {
-    padding-top: 4rem;
+    padding-top: 4em;
     display: block;
 
     &.team {
-      padding-bottom: 15rem;
+      padding-bottom: 15em;
     }
   }
 
@@ -203,20 +211,20 @@ section {
   }
 
   .description {
-    padding: 1rem 2rem;
+    padding: 1em 2em;
 
     label {
       display: block;
-      font-size: 0.9rem;
-      margin-bottom: 2rem;
+      font-size: 0.9em;
+      margin-bottom: 2em;
     }
 
     .title,
     .subtitle {
-      font-size: 3.5rem;
+      font-size: 3.5em;
 
       @include respond-to(xs) {
-        font-size: 2rem;
+        font-size: 2em;
       }
     }
 
@@ -237,15 +245,15 @@ section {
     }
 
     .service-wrapper {
-      margin: 2rem 0;
+      margin: 2em 0;
     }
 
     .title,
     .subtitle {
-      font-size: 2rem;
+      font-size: 2em;
 
       @include respond-to(xs) {
-        font-size: 1rem;
+        font-size: 1em;
       }
     }
   }
@@ -261,11 +269,11 @@ section {
     @extend %content-max-width;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 3rem;
-    margin: 1rem 0;
+    padding: 1em 3em;
+    margin: 1em 0;
 
     @include respond-to(md) {
-      padding: 1rem 0;
+      padding: 1em 0;
     }
 
     @include respond-to(xs) {
@@ -274,17 +282,17 @@ section {
 
     .project-label {
       border-bottom: 1px solid rgba(white, .5);
-      padding: 0.5rem;
+      padding: 0.5em;
 
       .project {
-        font-size: 1.5rem;
+        font-size: 1.5em;
       }
 
       .type {
         color: rgba(white, .5);
-        font-size: 0.75rem;
+        font-size: 0.75em;
         text-transform: uppercase;
-        margin-top: 0.5rem;
+        margin-top: 0.5em;
       }
     }
 
@@ -299,7 +307,7 @@ section {
       repeat: no-repeat;
       position: 100% 43%, 50%;
     }
-    padding: 0 1.5rem;
+    padding: 0 1.5em;
 
     label {
       color: rgba(white, .5);
@@ -318,31 +326,31 @@ section {
       }
 
       flex-direction: column;
-      padding: 30% 1.5rem 0;
+      padding: 30% 1.5em 0;
     }
 
     flex-grow: 2;
     display: flex;
-    padding-top: 5rem;
+    padding-top: 5em;
 
     .title {
-      font-size: 10rem;
-      margin-bottom: 2.5rem;
+      font-size: 10em;
+      margin-bottom: 2.5em;
 
       @include respond-to(md) {
-        font-size: 6rem;
+        font-size: 6em;
       }
 
       @include respond-to(xs) {
-        font-size: 3rem;
-        word-spacing: 10rem;
+        font-size: 3em;
+        word-spacing: 10em;
       }
     }
 
     .subtitle {
       align-items: flex-end;
       display: flex;
-      padding-bottom: 9rem;
+      padding-bottom: 9em;
 
       span {
         max-width: 300px;
@@ -357,15 +365,15 @@ section {
   background-color: $bg-grey;
   display: flex;
   min-height: 70vh;
-  padding: 2rem 0;
+  padding: 2em 0;
 
   .container {
     @extend %content-max-width;
-    padding-top: 5rem;
+    padding-top: 5em;
     margin: 0 auto;
 
     @include respond-to(xs) {
-      padding-top: 3rem;
+      padding-top: 3em;
     }
   }
 
@@ -375,7 +383,7 @@ section {
   $block-height: 500px;
 
   display: flex;
-  margin: 2rem auto 0;
+  margin: 2em auto 0;
   flex-wrap: wrap;
 
   li {
@@ -386,8 +394,8 @@ section {
     background-color: $card-grey;
     display: flex;
     align-items: flex-end;
-    padding: 0.4rem 1rem;
-    margin: 0 1rem 1rem 0;
+    padding: 0.4em 1em;
+    margin: 0 1em 1em 0;
 
     label {
       color: #737380;
@@ -400,42 +408,42 @@ section {
       overflow: hidden;
 
       &.small {
-        font-size: 3rem;
+        font-size: 3em;
       }
 
       &.medium {
-        font-size: 2.5rem;
+        font-size: 2.5em;
       }
 
       &.large {
-        font-size: 1.5rem;
+        font-size: 1.5em;
       }
 
       @include respond-to(md) {
         &.small {
-          font-size: 3rem;
+          font-size: 3em;
         }
 
         &.medium {
-          font-size: 2.5rem;
+          font-size: 2.5em;
         }
 
         &.large {
-          font-size: 1.5rem;
+          font-size: 1.5em;
         }
       }
 
       @include respond-to(xs) {
         &.small {
-          font-size: 2rem;
+          font-size: 2em;
         }
 
         &.medium {
-          font-size: 1.7rem;
+          font-size: 1.7em;
         }
 
         &.large {
-          font-size: 1.3rem;
+          font-size: 1.3em;
         }
       }
     }
@@ -454,11 +462,11 @@ section {
   }
 
   @include respond-to(md) {
-    padding-bottom: 3rem;
+    padding-bottom: 3em;
 
     li {
       min-width: $block-height - 230;
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
     }
   }
 
@@ -512,23 +520,23 @@ section {
   .description {
     flex-basis: 30%;
     .title {
-      font-size: 10rem;
+      font-size: 10em;
 
     }
   }
 
   @include respond-to(xs) {
     .description {
-      padding: 0 1.5rem;
+      padding: 0 1.5em;
       flex-basis: 100%;
 
       .title {
-        font-size: 5rem;
+        font-size: 5em;
       }
     }
 
     .cta-btn {
-      padding-left: 1.5rem;
+      padding-left: 1.5em;
     }
 
   }
@@ -557,7 +565,7 @@ section {
         size: 30px;
       }
       cursor: pointer;
-      margin: 0 1.5rem;
+      margin: 0 1.5em;
     }
 
     .close-btn {
@@ -569,7 +577,7 @@ section {
         size: 20px;
       }
       cursor: pointer;
-      margin: 1.5rem;
+      margin: 1.5em;
 
     }
 
@@ -583,7 +591,7 @@ section {
 
   .contact-form {
     @extend %content-max-width;
-    padding: 0 1.5rem;
+    padding: 0 1.5em;
     flex-grow: 2;
     display: flex;
     flex-direction: column;
@@ -596,7 +604,7 @@ section {
       textarea {
         max-width: 90%;
       }
-      padding-bottom: 2rem;
+      padding-bottom: 2em;
     }
   }
 
@@ -609,7 +617,7 @@ section {
       flex-basis: 40%;
 
       &:first-of-type {
-        margin-right: 1rem;
+        margin-right: 1em;
       }
     }
 
@@ -622,7 +630,7 @@ section {
 
       .form-group {
         flex-basis: 100%;
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
         &:first-of-type {
           margin-right: 0;
         }
@@ -633,16 +641,16 @@ section {
   .form-group {
     label {
       display: block;
-      margin-bottom: 1rem;
+      margin-bottom: 1em;
     }
   }
 
   .message {
-    padding-top: 3rem;
+    padding-top: 3em;
   }
 
   .submit {
-    padding-top: 3rem;
+    padding-top: 3em;
 
     button {
       padding: 10px 20px;
@@ -654,10 +662,10 @@ section {
   align-items: center;
   display: flex;
   flex-grow: 2;
-  font-size: 2rem;
+  font-size: 2em;
   justify-content: center;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1em 0;
 }
 
 .talk-wrapper {
@@ -666,24 +674,24 @@ section {
 
 footer {
   background-color: $bg-grey;
-  padding: 3rem 0 5rem;
+  padding: 3em 0 5em;
 
   .social-links {
     color: $white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 1.75rem;
+    font-size: 1.75em;
 
     li {
-      margin: 0.5rem 0;
+      margin: 0.5em 0;
     }
 
   }
 
   label {
     display: block;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.75em;
   }
 
   .container {
@@ -714,13 +722,13 @@ footer {
   .contacts {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 2rem;
+    padding-bottom: 2em;
 
   }
 
   .promo-text {
     color: rgba($label-grey, .5);
-    font-size: 0.8rem;
+    font-size: 0.8em;
   }
 
   .rights {
@@ -730,20 +738,20 @@ footer {
     text-align: right;
 
     > span {
-      padding-bottom: 0.5rem;
-      font-size: 1.15rem;
+      padding-bottom: 0.5em;
+      font-size: 1.15em;
     }
   }
 
   @include respond-to(md) {
-    padding: 3rem 1.5rem;
+    padding: 3em 1.5em;
 
     .container {
       flex-wrap: wrap;
       width: 95%;
 
       .rights {
-        margin: 1rem auto 0;
+        margin: 1em auto 0;
         flex-basis: 100%;
       }
     }
@@ -767,14 +775,14 @@ footer {
     .social-links,
     .contacts {
       flex-direction: column;
-      margin: 1rem 0;
+      margin: 1em 0;
       > div {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.5em;
       }
     }
 
     .contacts {
-      margin-top: 2rem;
+      margin-top: 2em;
       padding-bottom: 0;
     }
   }
