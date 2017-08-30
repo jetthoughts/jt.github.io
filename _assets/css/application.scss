@@ -335,7 +335,7 @@ section {
 
     .title {
       font-size: 10em;
-      margin-bottom: 2.5em;
+      margin-bottom: .5em;
 
       @include respond-to(md) {
         font-size: 6em;

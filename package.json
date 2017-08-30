@@ -1,0 +1,24 @@
+{
+  "name": "jt_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jetthoughts/jetthoughts.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jetthoughts/jetthoughts.github.io/issues"
+  },
+  "homepage": "https://github.com/jetthoughts/jetthoughts.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.3.0",
+    "imagemin-pngcrush": "^5.1.0"
+  }
+}
