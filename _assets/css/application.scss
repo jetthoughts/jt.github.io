@@ -62,6 +62,9 @@ section {
 }
 
 .logo {
+  align-items: center;
+  display: flex;
+  
   @include respond-to(xs) {
     display: block;
     width: 40px;
@@ -85,14 +88,14 @@ section {
     height: inherit;
 
     .content {
-      margin-top: 10%;
+      margin-top: 15%;
       background-color: transparent;
       display: flex;
       flex-grow: 2;
     }
 
     .main {
-      font-size: 10em;
+      font-size: 6em;
       flex-grow: 2;
       position: relative;
 
@@ -119,15 +122,11 @@ section {
 
       .title {
         font-weight: 500;
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
 
-        @media (max-width: 1100px) {
-          font-size: 8em;
-        }
-
         @include respond-to(md) {
-          font-size: 4em;
+          font-size: 0.5em;
           max-width: 100%;
           text-align: center;
           display: block;
@@ -146,13 +145,19 @@ section {
       li {
         align-items: center;
         border: 2px solid transparent;
-        display: flex;
-        height: 4em;
-        margin: 2em 0;
-        padding-right: 2em;
+        padding: 1em 2em 1em 0;
 
+
+        a {
+          color: rgba($white, .5);
+
+        }
         &:hover {
           border-right-color: white;
+
+          a {
+            color: $white;
+          }
         }
       }
     }
@@ -273,7 +278,7 @@ section {
     margin: 1em 0;
 
     @include respond-to(md) {
-      padding: 1em 0;
+      padding: 1em 0.5em;
     }
 
     @include respond-to(xs) {
@@ -282,15 +287,15 @@ section {
 
     .project-label {
       border-bottom: 1px solid rgba(white, .5);
-      padding: 0.5em;
+      padding: 1em 0 0.5em;
 
       .project {
-        font-size: 1.5em;
+        font-size: 1.3em;
       }
 
       .type {
         color: rgba(white, .5);
-        font-size: 0.75em;
+        font-size: 0.7em;
         text-transform: uppercase;
         margin-top: 0.5em;
       }
@@ -303,26 +308,33 @@ section {
 
     background: {
       image: url(asset_path('vector/dot_background.svg')), url(asset_path('Iphone_color.png'));
-      size: 514px, 120vh;
+      size: 514px, 900px;
       repeat: no-repeat;
       position: 100% 43%, 50%;
     }
-    padding: 0 1.5em;
+    padding: 0 1.5em 2em;
 
     label {
       color: rgba(white, .5);
       display: none;
-      margin-bottom: 0;
+      margin-bottom: 1em;
 
       @include respond-to(xs) {
         display: block;
       }
     }
 
+    @media (max-width: 1400px) {
+      background: {
+        position: 100%, 20vw 55%;
+        size: 514px, 700px;
+      };
+    }
+
     @include respond-to(xs) {
       background: {
         size: 400px, 730px;
-        position: 0 25px, 47% 100px;
+        position: 35vw 15vw, 47% 100px;
       }
 
       flex-direction: column;
@@ -339,20 +351,27 @@ section {
 
       @include respond-to(md) {
         font-size: 6em;
+        max-width: 70%;
       }
 
       @include respond-to(xs) {
         font-size: 3em;
         word-spacing: 10em;
       }
+
+      &.show-sm {
+        @media (min-width: $screen-sm) {
+          display: none;
+        }
+      }
     }
 
     .subtitle {
       align-items: flex-end;
       display: flex;
-      padding-bottom: 9em;
 
       span {
+        color: rgba($white, .5);
         max-width: 300px;
       }
     }
@@ -396,6 +415,11 @@ section {
     align-items: flex-end;
     padding: 0.4em 1em;
     margin: 0 1em 1em 0;
+
+    @include respond-to(xs) {
+      height: initial;
+      margin: 0;
+    }
 
     label {
       color: #737380;
@@ -481,6 +505,10 @@ section {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @include respond-to(md) {
+    padding: 2em 0;
   }
 
   .wave-container {
@@ -599,12 +627,7 @@ section {
 
     @include respond-to(xs) {
       flex-grow: 0;
-      padding: 0;
-      input,
-      textarea {
-        max-width: 90%;
-      }
-      padding-bottom: 2em;
+      padding: 0 0 2em;
     }
   }
 
@@ -707,7 +730,7 @@ footer {
 
       @include respond-to(xs) {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
       }
     }
 
@@ -757,6 +780,14 @@ footer {
       }
     }
 
+    .contacts {
+      flex-direction: column;
+
+      .mail {
+        margin-bottom: 1em;
+      }
+    }
+
   }
 
   @include respond-to(xs) {
@@ -783,7 +814,7 @@ footer {
     }
 
     .contacts {
-      margin-top: 2em;
+      margin: 0 0 1em;
       padding-bottom: 0;
     }
   }
@@ -801,7 +832,7 @@ body,
   .animated {
     display: none;
 
-    @include respond-to(xs) {
+    @include respond-to(md) {
       display: block;
     }
 

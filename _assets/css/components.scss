@@ -71,19 +71,19 @@
   display: none !important;
 }
 
-.hiden-xs {
+.hidden-xs {
   @include respond-to(xs) {
     display: none !important;
   }
 }
 
-.hiden-md {
-  @include respond-to(md) {
+.hidden-sm {
+  @include respond-to(sm) {
     display: none !important;
   }
 }
 
-.hiden-md {
+.hidden-md {
   @include respond-to(md) {
     display: none !important;
   }

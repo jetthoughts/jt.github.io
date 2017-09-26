@@ -14,7 +14,7 @@ layout: default
             <div class="main">
                 <div class="title animated">Make anything possible</div>
             </div>
-            <ul class="blog-articles hiden-md animated">
+            <ul class="blog-articles hidden-md animated">
                 {% for post_hash in site.data.posts %}
                 {% assign post = post_hash[1] %}
                     <li><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></li>

@@ -43,7 +43,12 @@
     @include respond-to(md) {
       font-size: 4em;
     }
-
+  }
+  
+  .btn-primary {
+    background-color: transparent;
+    border: 2px solid $white;
+    border-radius: 2px;
   }
 
   .subtitle {
