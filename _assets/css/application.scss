@@ -325,9 +325,9 @@ section {
 
     background: {
       image: url(asset_path('vector/dot_background.svg')), url(asset_path('Iphone_color.png'));
-      size: 514px, 900px;
+      size: 500px, 900px;
       repeat: no-repeat;
-      position: 100% 43%, 50%;
+      position: 100% 43%, 92% 50%;
     }
     padding: 0 1.5em 2em;
 
@@ -343,15 +343,25 @@ section {
 
     @media (max-width: 1400px) {
       background: {
-        position: 100%, 20vw 55%;
+        position: 100%, 18vw 55%;
         size: 390px, 770px;
       };
     }
 
+    @include respond-to(md) {
+      background: {
+        size: 400px, 700px;
+        position: 90% 42%, 79% 35px;
+      }
+    }
+    @include respond-to(sm) {
+      background-position: 115% 42%, 0 90px;
+    }
+
     @include respond-to(xs) {
       background: {
-        size: 400px, 730px;
-        position: 35vw 15vw, 47% 100px;
+        size: 460px, 730px;
+        position: 35vw 20vw, 47% 100px;
       }
 
       flex-direction: column;
@@ -364,6 +374,7 @@ section {
 
     .title {
       font-size: 10em;
+      display: block;
       margin-bottom: .5em;
 
       @include respond-to(md) {
@@ -393,6 +404,10 @@ section {
         max-width: 24vw;
         line-height: 1.5em;
         margin-bottom: 10em;
+
+        @media (max-width: 1150px) {
+          margin-bottom: 0;
+        }
       }
     }
 
@@ -419,7 +434,7 @@ section {
 }
 
 .posts-list {
-  $block-height: 500px;
+  $block-height: 400px;
 
   display: flex;
   margin: 2em auto 0;
@@ -559,17 +574,28 @@ section {
         transform: translateX(-10%);
       }
     }
+
+    @include respond-to(xs) {
+      flex-basis: 100%;
+      overflow: hidden;
+
+      .wave {
+        @include size(300%, 200px);
+        transform: translateX(-25%);
+      }
+    }
   }
 
   .cta-btn {
     flex-basis: 100%;
+    margin-top: 2em;
   }
 
   .description {
     flex-basis: 30%;
     .title {
       font-size: 10em;
-
+      padding-right: 30px;
     }
   }
 
@@ -771,7 +797,7 @@ footer {
 
   .promo-text {
     color: rgba($label-grey, .5);
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 2em;
   }
 
@@ -784,6 +810,11 @@ footer {
     > span {
       padding-bottom: 0.5em;
       font-size: 1.15em;
+    }
+
+    label {
+      font-size: 0.65em;
+      opacity: 0.5;
     }
   }
 
@@ -883,7 +914,6 @@ body,
     display: none;
   }
 }
-
 
 .animated {
   @include respond-to($screen-md) {
