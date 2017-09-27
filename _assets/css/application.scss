@@ -1,5 +1,6 @@
 @import 'vendor/animate.min';
 @import 'vendor/normalize.min';
+@import 'fonts';
 @import 'variables';
 @import 'components';
 @import 'case';
@@ -7,7 +8,7 @@
 body {
   background-color: $card-grey;
   color: $white;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Graphik Web', sans-serif;
   font-size: 16px;
 
   @include respond-to(xs) {
@@ -21,6 +22,8 @@ body {
 
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 nav {
@@ -125,6 +128,12 @@ section {
         max-width: 90%;
         margin: 0 auto;
 
+        @media (min-width: 1400px) {
+          div {
+            max-width: 50vw;
+          }
+        }
+
         @include respond-to(md) {
           font-size: 0.5em;
           max-width: 100%;
@@ -138,9 +147,9 @@ section {
       border-right: 1px solid rgba(white, .3);
       display: flex;
       flex-direction: column;
-      flex-basis: 250px;
-      margin-right: 4em;
-      font-weight: 500;
+      flex-basis: 300px;
+      margin-right: 8em;
+      font-weight: 400;
 
       li {
         align-items: center;
@@ -161,6 +170,14 @@ section {
         }
       }
     }
+  }
+}
+
+.main-screen,
+.main {
+
+  .btn-primary {
+    text-transform: uppercase;
   }
 }
 
@@ -286,7 +303,7 @@ section {
     }
 
     .project-label {
-      border-bottom: 1px solid rgba(white, .5);
+      border-bottom: 1px solid rgba($white, .5);
       padding: 1em 0 0.5em;
 
       .project {
@@ -294,7 +311,7 @@ section {
       }
 
       .type {
-        color: rgba(white, .5);
+        color: rgba($white, .5);
         font-size: 0.7em;
         text-transform: uppercase;
         margin-top: 0.5em;
@@ -327,7 +344,7 @@ section {
     @media (max-width: 1400px) {
       background: {
         position: 100%, 20vw 55%;
-        size: 514px, 700px;
+        size: 390px, 770px;
       };
     }
 
@@ -372,7 +389,10 @@ section {
 
       span {
         color: rgba($white, .5);
-        max-width: 300px;
+        font-size: 0.9em;
+        max-width: 24vw;
+        line-height: 1.5em;
+        margin-bottom: 10em;
       }
     }
 
