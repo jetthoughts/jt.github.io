@@ -1,10 +1,3 @@
-miry:
-  name: 'Michael'
-  full_name: 'Michael Nikitochkin'
-  ava: 'http://gravatar.com/avatar/0e556a2be10ff4f32bb9e6f9a2c00cfa.png?s=160'
-  twitter: 'miry_sof'
-  role: 'Team Lead'
-  bio: 'Michael is a technology guru, who can cope with toughest projects. He can always provide a new insight and propose up-to-date solutions to your problems. As an inherent leader, he has built a team of highly-qualified developers.'
 pftg:
   name: 'Paul'
   full_name: 'Paul Nikitochkin'
@@ -12,37 +5,6 @@ pftg:
   twitter: 'pftg'
   role: 'Team Lead'
   bio: 'Paul is a software developer and an open source contributor. His favourite framework is Ruby on Rails. He has a great experience in tackling programming related problems. Paul likes to improve his beloved web framework by giving back to the community.'
-annkuptsova:
-  name: 'Asya'
-  full_name: 'Asya Kuptsova'
-  ava: '/images/team/asyakup.jpeg'
-  role: 'QA Engineer'
-  bio: "Asya uses her ability to think outside the box for making Ruby on Rails applications bug-free and user-friendly. She is very detailed-oriented and good at documenting her work. Errors shan't pass."
-annafoksha:
-  name: 'Anna'
-  full_name: 'Anna Foksha'
-  ava: '/images/team/annafoksha.jpg'
-  role: 'Manager'
-  bio: 'Anna connects clients expectation and ideas and the skills of our team to develop applications in the shortest time possible. She knows how to motivate the staff and to keep developers working effectively together.'
-xmarvin:
-  name: 'Alexey'
-  full_name: 'Alexey Kisel'
-  ava: '/images/team/alexey.jpeg'
-  role: 'Developer'
-  bio: 'A software guru by trade, Alexey is a highly-motivated person, who is passionate about working on unique projects. His aim is bringing value in every line of the code. Alexey always strives to self-improvement.'
-mir4a:
-  name: 'Miroslav'
-  full_name: 'Myroslav Martynov'
-  ava: '/images/team/mir4a.jpg'
-  twitter: 'mir4a_en'
-  role: 'Developer'
-  bio: 'Miroslav is a front-end developer, who breathes and lives technology. He is a responsive adopter, semantic lover and DRY coder. Being a lifelong learner, Miroslav is mastering new skills and using them to make the applications look great.'
-rskvirskiy:
-  name: 'Roman'
-  full_name: 'Roman Skvirskiy'
-  ava: '/images/team/roma.jpeg'
-  role: 'Developer'
-  bio: 'Roman enjoys software development and sees programming as a way of life rather than just a career. Having started programming in C++, Roman was fascinated by Ruby on Rails ecosystem. He is always willing to go an extra mile to achieve perfect results.'
 valeronm:
   name: 'Valeriy'
   full_name: 'Valeriy Mironov'
@@ -61,90 +23,24 @@ shyjt:
   ava: '/images/team/igor.jpg'
   role: 'Developer'
   bio: 'Igor is itching to learn all ins and outs of software development. He has chosen Ruby on Rails because it reminds him of Lego set assembling - both challenging and fun. Working for JetThoughts, Igor enjoys finding solutions for complicated issues.'
-tehhi42:
-  name: 'Elena'
-  full_name: 'Elena Gavryliuk'
-  ava: '/images/team/elena.jpg'
-  role: 'Manager'
-  bio: 'Elena brings together customer needs and our competitive prices for web and mobile development. She enjoys communication with people and working on exciting projects.'
-alyona:
-  name: 'Alyona'
-  full_name: 'Alyona'
-  ava: '/images/team/alena.jpg'
-  role: 'Manager'
-  bio: 'Alyona uses her creative and problem-solving skills to make sure that JetThoughts team members have everything they need for productive work. She keeps our office organised and provides the smooth operation of the day-to-day business of the company.'
-solomiya:
-  name: 'Solomiya'
-  full_name: 'Solomiya'
-  ava: '/images/team/solomiya.jpg'
-  role: 'Manager'
-  bio: 'Solomiya makes our office a great working environment by keeping it organized, tidy and filled with the smell of fresh cookies and coffee. She loves working with people and takes their opinions and needs into consideration.'
-nazar:
-  name: 'Nazar'
-  full_name: 'Nazar'
-  ava: '/images/team/nazar.jpg'
-  role: 'Developer'
-  bio: 'Nazar is a dedicated and results-driven Ruby on Rails developer. He is a  highly-communicative person and a good team player, who enjoys working with others on tough projects. Nazar loves Arts and appreciates the beauty of a well-written code.'
-andriy:
-  name: 'Andriy'
-  full_name: 'Andriy'
-  ava: '/images/team/andriy.jpg'
-  role: 'Developer'
-  bio: 'Andriy has been in love with Ruby on Rails since he first discovered this framework. He enjoys the advantages of remote work, that gives great flexibility and proper work-life balance. When not coding, Andriy is probably practicing yoga.'
 EnragedWildkin:
   name: 'Alexey'
   full_name: 'Alexey Chernov'
   ava: '/images/team/alexey_2.jpg'
   role: 'Developer'
   bio: 'Alexey likes development, because this profession gives him an opportunity not only to practice his logical thinking and solve puzzles, but also to build useful applications for real people.'
-marchi-martius:
-  name: 'Mark'
-  full_name: 'Mark Volosiuk'
-  ava: '/images/team/mark.jpg'
-  role: 'Developer'
-  bio: 'Inspired by simplicity and variety of nature beauty, Mark enjoys the construction of large-scale complex systems from simple and elegant pieces. The Ruby language as a tool suits perfectly for this task, because of its overall beautiful syntax and flexibility in solving a wide range of tasks.'
-hnatt:
-  name: 'Hnat'
-  full_name: 'Hnat Kubov'
-  ava: '/images/team/kubov.jpg'
-  role: 'Developer'
-  bio: 'Hnat is a Ruby on Rails developer. He appreciates clean and readable code more than anything in his profession and can argue for hours over choice of right names for classes and methods.'
 loogle18:
   name: 'Sviat'
   full_name: 'Sviat Medved'
   ava: '/images/team/medved.jpg'
   role: 'Developer'
   bio: 'Sviat is a young and promising Front-End developer. He is keen on what he is doing and likes to find a perfect balance between logic and creativity while developing.'
-katlavan:
-  name: 'Maxim'
-  full_name: 'Maxim Katkov'
-  ava: '/images/team/katkov.jpg'
-  role: 'Developer'
-  bio: 'Maxim converts the results of Ruby developers work in handy UI, using popular javascript frameworks. He likes to work with AngularJS. In his work Maxim focuses on the end user convenience. In his spare time he is improving knowledge of the MEAN development stack.'
-gra1:
-  name: 'Ostap'
-  full_name: 'Ostap Bochulia'
-  ava: '/images/team/ostap.jpg'
-  role: 'Developer'
-  bio: 'Ostap considers Ruby and Rails to be the best programming language and framework ever. He likes to work hard because resolving difficult issues makes Ostap happy. But he does not forget to be funny and enjoy life as well.'
-Magons:
-  name: 'Ivan'
-  full_name: 'Ivan Prokopenko'
-  ava: '/images/team/ivan.jpg'
-  role: 'Developer'
-  bio: 'Ivan has tried a lot of frameworks before he began to work with Ruby on Rails, and this framework immediately conquered his heart. Ivan wants to be a professional so he never stops learning. Ivan does not see a problem, he sees solutions.'
 vlaew:
   name: 'Dmitriy'
   full_name: 'Dmitriy Tsvetkov'
   ava: '/images/team/tsvetkov.jpg'
   role: 'Developer'
   bio: 'Dmitriy is a developer with years of hands-on experience of developing complicated web-services. He is an idealist who knows when to stop in order to finish the project successfully. He strives at writing simple, self-documenting code that is easy to read and support. Dmitriy writes code for humans, not for the machines.'
-Twizty:
-  name: 'Maxim'
-  full_name: 'Maxim Davydov'
-  ava: '/images/team/davydov.png'
-  role: 'Developer'
-  bio: 'Max is Ruby developer who went through Python and Go. He likes system programming, object-oriented design and clean code.'
 askel4dd:
   name: 'Dmitriy'
   full_name: 'Dmitriy Savin'
@@ -163,12 +59,6 @@ igor04:
   ava: '/images/team/guzak.jpg'
   role: 'Developer'
   bio: 'Igor is a Ruby developer. He considers that it does not matter who you are it only matters what you do, and writing code is not an exception.'
-VasylYaremkiv:
-  name: 'Vasyl'
-  full_name: 'Vasyl Yaremkiv'
-  ava: '/images/team/yaremkiv.jpg'
-  role: 'Developer'
-  bio: 'Vasyl advocates for a code quality and has a spite against poorly written code, doing his best to improve it, whenever he sees any issues. In addition, he is always ready to accept new challenges, which make us stronger and more resilient.'
 m-k:
   name: 'Maksym'
   full_name: 'Maksym Khukhrianskyi'
