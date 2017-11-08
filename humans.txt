@@ -9,7 +9,7 @@
 
 
 /* TEAM */
-  Back-end: Paul Nikitochkin & Michael Nikitochkin
+  Back-end: Paul Keen aka pftg
   Front-end: Miroslav Martynov aka mir4a
   Designer: Ivan Tolmachev
   Project manager: Anna Foksha
