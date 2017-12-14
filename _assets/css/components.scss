@@ -93,6 +93,13 @@
   @include size(100%, 100%);
 }
 
+.video-overlap {
+  @include size(100%, 100%);
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+}
+
 video {
   position: absolute;
   top: 50%;
