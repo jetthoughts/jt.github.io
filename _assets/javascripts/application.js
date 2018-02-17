@@ -1,6 +1,7 @@
-//= require vendor/zepto.min
+//= require vendor/zepto.min.js
 //= require vendor/smooth-scroll.min.js
 //= require vendor/noframework.waypoints.min.js
+//= require vendor/slick.min
 //= require form
 
 
@@ -22,6 +23,26 @@ function toggleForm() {
 }
 
 $(document).ready(function () {
+
+  if ($('.services-slideshow').length) {
+    var $teamSlider = $('.services-slideshow');
+
+    $teamSlider.on('init', function(event, slick, currentSlide, nextSlide) {
+      $('.services-slideshow-current-slide span').text(slick.currentSlide + 1);
+    });
+
+    $teamSlider.on('afterChange', function(event, slick, currentSlide, nextSlide) {
+      $('.services-slideshow-current-slide span').text(slick.currentSlide + 1);
+    });
+
+    $teamSlider.slick({
+      fade: true,
+      infinite: true,
+      nextArrow: '.services-slideshow-prev',
+      prevArrow: '.services-slideshow-next',
+    });
+  }
+
   smoothScroll.init();
 
   $('.js-hire-us').on('click', () => {

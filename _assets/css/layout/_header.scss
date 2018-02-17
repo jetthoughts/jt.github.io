@@ -1,0 +1,16 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 25px 35px;
+  overflow: hidden;
+  .logo {
+    margin-top: 10px;
+    float: left;
+  }
+  .btn-primary {
+    float: right;
+  }
+}

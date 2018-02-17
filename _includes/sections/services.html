@@ -1,24 +1,50 @@
 <section class="services" id="js-services">
-    <article class="team">
-        <div class="description animated"><label>Team</label>
-            <div class="subtitle">Highly qualified Ruby on Rails developers, designers and managers</div>
-        </div>
-        {% include service-wave-svg.html %}
-    </article>
-    <article class="slider consulting animated">
-        <div class="description"><label>Services</label>
-            <div class="service-wrapper">
-                <div class="title">Web Development</div>
-                <div class="subtitle">We passionate into elegant solution for your web project using RubyOnRails, React and
-                    more.
-                </div>
+
+  <div class="col">
+    <div class="services-slideshow">
+
+      <div class="services-slideshow__item">
+        <div class="cell">
+          <div class="holder">
+            <div class="services__description">
+              <small class="small-head ">SERVICES</small>
+              <h2 class="services__title"><span>Agile Consulting</span> We perform product audit, cofigure and automate processes, improve quality and productivity.</h2>
             </div>
-            <div class="service-wrapper">
-                <div class="title">Mobile Development</div>
-                <div class="subtitle">We build applications for mobile, from highly technical internal tools to robust customer
-                    - facing interfaces.
-                </div>
-            </div>
+          </div>
         </div>
-    </article>
+      </div><!-- services-slideshow__item -->
+
+      <div class="services-slideshow__item">
+        <div class="cell">
+          <div class="holder">
+            <div class="services__description">
+              <small class="small-head ">SERVICES</small>
+              <h2 class="services__title"><span>Web Development</span> We perform product audit, cofigure and automate processes, improve quality and productivity.</h2>
+            </div>
+          </div>
+        </div>
+      </div><!-- services-slideshow__item -->
+
+    </div><!-- services-slideshow -->
+    <span class="services-slideshow-current-slide">0<span>1</span></span>
+    <div class="services-slideshow-controls">
+      <span class="services-slideshow-controls__btn services-slideshow-prev">prev</span>
+      <span class="services-slideshow-controls__btn services-slideshow-next">next</span>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="cell">
+      <div class="holder">
+        <div class="services__description">
+          <small class="small-head ">Team</small>
+          <h2 class="services__title">Highly qualified Ruby on Rails developers, designers and managers.</h2>
+        </div>
+        <figure class="services__figure">
+          {% include service-wave-svg.html %}
+        </figure>
+      </div>
+    </div>
+  </div>
+
 </section>

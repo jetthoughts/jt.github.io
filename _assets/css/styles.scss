@@ -1,0 +1,19 @@
+@import 'vendor/_slick';
+@import 'vendor/_animate.min';
+@import 'vendor/_normalize.min';
+
+@import 'base/_buttons';
+@import 'base/_fonts';
+
+@import 'utils/_mixins';
+@import 'utils/_colors';
+@import 'utils/_breakpoints';
+
+@import 'layout/_header';
+@import 'layout/_main-screen';
+@import 'layout/_services';
+@import 'layout/_use-cases';
+@import 'layout/_posts';
+@import 'layout/_application';
+
+@import '_case';

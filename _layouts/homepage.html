@@ -1,29 +1,8 @@
----
-layout: default
----
-<section class="main-screen">
-    <div class="video-cover">
-        <video poster="{% asset_path bg.png %}" playsinline="" autoplay="" muted="" loop="">
-            <source src="/video_bg.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="video-overlap"></div>
-    <div class="container">
-        {% include nav.html %}
-
-        <div class="content">
-            <div class="main">
-                <div class="title animated">
-                    <div>Make anything possible</div>
-                </div>
-            </div>
-            <ul class="blog-articles hidden-md animated">
-                {% for post_hash in site.data.posts %}
-                {% assign post = post_hash[1] %}
-                    <li><a href="{{ post.url }}" target="_blank">{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
-</section>
-{{ content }}
+{% include head.html %}
+{% include header.html %}
+{% include sections/main-screen.html %}
+{% include sections/services.html %}
+{% include sections/use-cases.html %}
+{% include sections/posts.html %}
+{% include sections/form.html %}
+{% include footer.html %}
