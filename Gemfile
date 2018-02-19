@@ -1,16 +1,13 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '3.5.0'
+gem 'jekyll', '>= 3'
 
 gem 'minima', '~> 2.0'
 gem 'autoprefixer-rails'
 
-group :plugins do
-   gem 'jekyll-assets'
-end
-
 group :jekyll_plugins do
-   gem 'jekyll-feed', '~> 0.6'
+   gem 'jekyll-feed'
+   gem 'jekyll-assets'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

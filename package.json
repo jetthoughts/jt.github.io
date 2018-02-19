@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/jetthoughts/jetthoughts.github.io#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-imagemin": "^3.3.0",
-    "imagemin-pngcrush": "^5.1.0"
+    "gulp": "~3.9.1",
+    "gulp-imagemin": "~4",
+    "imagemin-pngcrush": "~5"
   }
 }
