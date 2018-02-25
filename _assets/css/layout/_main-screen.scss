@@ -3,7 +3,7 @@
   position: relative;
   .tbl {
     height: 100vh;
-    padding: 100px 0;
+    padding: 215px 0;
     .cell+.cell {
       width: 225px;
       padding-left: 15px;
@@ -80,6 +80,12 @@
   line-height: 26px;
   padding: 40px 44px 40px 0;
   position: relative;
+}
+.blog-nav__link {
+  color: #aaaab2;
+  display: block;
+  max-height: 78px;
+  overflow: hidden;
   &:before {
     content: '';
     position: absolute;
@@ -91,18 +97,10 @@
     transition: all .3s;
   }
   &:hover {
+    color: #fefefe;
     &:before {
       top: 0;
       bottom: 0;
     }
-  }
-}
-.blog-nav__link {
-  color: #aaaab2;
-  display: block;
-  max-height: 78px;
-  overflow: hidden;
-  &:hover {
-    color: #fefefe;
   }
 }

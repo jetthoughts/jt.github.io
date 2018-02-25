@@ -1,5 +1,5 @@
 body {
-  background-color: $bg-grey;
+  background: #1b1b1f;
   color: $white;
   font-family: 'Graphik Web', sans-serif;
   font-size: 16px;
@@ -66,6 +66,9 @@ h6 {
   font-weight: 500;
   margin: 0 0 15px;
 }
+p {
+  margin: 0 0 15px;
+}
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -87,6 +90,16 @@ h6 {
 
 section {
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.section {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.bg_dark {
+  background: #17171a;
 }
 
 
@@ -105,16 +118,16 @@ section {
 .logo {
   display: block;
   max-width: 172px;
-  overflow: hidden;
-  font-size: 0;
-  line-height: 0;
+  font-size: 20px;
+  line-height: 1em;
+  color: #fff;
   img {
+    display: inline-block;
+    vertical-align: top;
     width: 100%;
     height: auto;
   }
 }
-
-
 
 .desktop-hide {
   display: none;
@@ -126,345 +139,18 @@ section {
 
 
 
-.lets-talk {
-  align-items: center;
-  display: flex;
 
-  .container {
-    @extend %content-max-width;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-  }
 
-  @include respond-to(md) {
-    padding: 2em 0;
-  }
 
-  .wave-container {
-    flex-basis: 60%;
-    height: 200px;
-    position: relative;
 
-    .wave-cover {
-      @include size(100%, 200px);
-      background-color: $primary-grey;
-      position: absolute;
-      top: 0;
-      right: 0;
 
-      &.wave-overlap {
-        animation-name: width-animation;
-        animation-duration: 5s;
-        animation-fill-mode: forwards;
-      }
-    }
 
-    @include respond-to(md) {
-      flex-basis: 100%;
-      overflow: hidden;
 
-      .wave {
-        @include size(200%, 200px);
-        transform: translateX(-10%);
-      }
-    }
 
-    @include respond-to(xs) {
-      flex-basis: 100%;
-      overflow: hidden;
 
-      .wave {
-        @include size(300%, 200px);
-        transform: translateX(-25%);
-      }
-    }
-  }
 
-  .cta-btn {
-    flex-basis: 100%;
-    margin-top: 2em;
-  }
 
-  .description {
-    flex-basis: 30%;
-    .title {
-      font-size: 10em;
-      padding-right: 30px;
-    }
-  }
 
-  @include respond-to(xs) {
-    .description {
-      padding: 0 1.5em;
-      flex-basis: 100%;
-
-      .title {
-        font-size: 5em;
-      }
-    }
-
-    .cta-btn {
-      padding-left: 1.5em;
-    }
-
-  }
-}
-
-.contact-form-wrapper {
-  display: flex;
-  flex-direction: column;
-
-  @include respond-to(xs) {
-    padding: 0 10px;
-  }
-
-  .controls {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 60px;
-
-    .back-btn {
-      @include size(30px, 15px);
-      transform: rotate(180deg);
-      background: {
-        image: url(asset_path('vector/arrow-right.svg'));
-        repeat: no-repeat;
-        size: 30px;
-      }
-      cursor: pointer;
-      margin: 0 1.5em;
-    }
-
-    .close-btn {
-      @include size(20px, 20px);
-
-      background: {
-        image: url(asset_path('vector/close-x.svg'));
-        repeat: no-repeat;
-        size: 20px;
-      }
-      cursor: pointer;
-      margin: 1.5em;
-
-    }
-
-    @include respond-to(xs) {
-      .close-btn,
-      .back-btn {
-        margin: 0;
-      }
-    }
-  }
-
-  .contact-form {
-    @extend %content-max-width;
-    padding: 0 1.5em;
-    flex-grow: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    @include respond-to(xs) {
-      flex-grow: 0;
-      padding: 0 0 2em;
-    }
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    .form-group {
-      flex-basis: 40%;
-
-      &:first-of-type {
-        margin-right: 1em;
-      }
-    }
-
-    input {
-      display: block;
-    }
-
-    @include respond-to(xs) {
-      flex-direction: column;
-
-      .form-group {
-        flex-basis: 100%;
-        margin-bottom: 1em;
-        &:first-of-type {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-
-  .form-group {
-    label {
-      display: block;
-      margin-bottom: 1em;
-    }
-  }
-
-  .message {
-    padding-top: 3em;
-  }
-
-  .submit {
-    padding-top: 3em;
-
-    button {
-      padding: 10px 20px;
-    }
-  }
-}
-
-.form-sent {
-  align-items: center;
-  display: flex;
-  flex-grow: 2;
-  font-size: 2em;
-  justify-content: center;
-  text-align: center;
-  padding: 1em 0;
-}
-
-.talk-wrapper {
-  overflow-x: hidden;
-}
-
-footer {
-  background-color: $bg-grey;
-  padding: 3em 0 5em;
-
-  .social-links {
-    color: $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 1.75em;
-
-    li {
-      margin: 0.5em 0;
-    }
-
-  }
-
-  label {
-    display: block;
-    margin-bottom: 0.75em;
-  }
-
-  .container {
-    @extend %content-max-width;
-    display: flex;
-
-    .col-3 {
-      flex-basis: 33%;
-    }
-
-    .col-6 {
-      flex-basis: 66%;
-
-      @include respond-to(xs) {
-        display: flex;
-        flex-direction: column;
-      }
-    }
-
-    @include respond-to(md) {
-      .col-3,
-      .col-6 {
-        flex-basis: 50%;
-      }
-    }
-  }
-
-  .contacts {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 2em;
-
-  }
-
-  .promo-text {
-    color: rgba($label-grey, .5);
-    font-size: 1em;
-    line-height: 2em;
-  }
-
-  .rights {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: right;
-
-    > span {
-      padding-bottom: 0.5em;
-      font-size: 1.15em;
-    }
-
-    label {
-      font-size: 0.65em;
-      opacity: 0.5;
-    }
-  }
-
-  @include respond-to(md) {
-    padding: 3em 1.5em;
-
-    .container {
-      flex-wrap: wrap;
-      width: 95%;
-
-      .rights {
-        margin: 1em auto 0;
-        flex-basis: 100%;
-      }
-    }
-
-    .contacts {
-      flex-direction: column;
-
-      .mail {
-        margin-bottom: 1em;
-      }
-    }
-
-  }
-
-  @include respond-to(xs) {
-    width: inherit;
-
-    .container {
-      .col-3,
-      .col-6 {
-        flex-basis: 100%;
-      }
-
-      .rights {
-        text-align: left;
-      }
-    }
-
-    .social-links,
-    .contacts {
-      flex-direction: column;
-      margin: 1em 0;
-      > div {
-        margin-bottom: 0.5em;
-      }
-    }
-
-    .contacts {
-      margin: 0 0 1em;
-      padding-bottom: 0;
-    }
-  }
-}
 
 label {
   @include respond-to(xs) {
@@ -620,9 +306,3 @@ i {
   }
 }
 
-.form-group.invalid {
-  input,
-  textarea {
-    border-color: red;
-  }
-}

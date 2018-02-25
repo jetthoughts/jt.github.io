@@ -1,0 +1,156 @@
+.modal-open {
+  overflow: hidden;
+}
+.modal-hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  overflow: hidden;
+  height: 1px;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: none;
+  background: #1b1b1f;
+  overflow-y: auto;
+}
+.modal__holder {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh;
+  width: 1%;
+  padding: 15px;
+}
+.modal-content {
+  position: relative;
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 250px;
+  background: #fff;
+}
+.modal__close {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+  transition: all .3s;
+  &:hover {
+    opacity: .8;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #47474f;
+    top: 0;
+    left: 15px;
+    transform: rotate(45deg);
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #47474f;
+    top: 0;
+    right: 15px;
+    transform: rotate(-45deg);
+  }
+}
+
+
+.contact-form {
+  .row {
+    font-size: 0;
+    line-height: 0;
+    margin: 0 -50px 118px;
+  }
+  .col {
+    width: 50%;
+    display: inline-block;
+    vertical-align: text-top;
+    padding: 0 50px;
+  }
+  .invalid {
+    .form-control {
+      border-color: #d00;
+    }
+    &:before {
+      background: #d00;
+    }
+    &:after {
+      background: #d00;
+    }
+  }
+}
+
+.contact-form__btn {
+  border: none;
+  min-width: 144px;
+  transition: all .3s;
+  cursor: pointer;
+}
+.contact-form__label {
+  text-transform: uppercase;
+  color: #737380;
+  font-size: 13px;
+  line-height: 17px;
+}
+.contact-form__message {
+  margin: 0 0 108px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #424249;
+    height: 1px;
+    top: 65px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #424249;
+    height: 1px;
+    bottom: 65px;
+  }
+  .form-control {
+    height: 200px;
+    resize: none;
+  }
+}
+.form-control {
+  border: solid #424249;
+  border-width: 0 0 1px;
+  width: 100%;
+  height: 65px;
+  background: none;
+  font-size: 16px;
+  line-height: 65px;
+  color: #fff;
+  padding: 0;
+}
+.form-control::-moz-placeholder {
+  color: #737380;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #737380;
+}
+.form-control::-webkit-input-placeholder {
+  color: #737380;
+}

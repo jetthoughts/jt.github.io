@@ -1,0 +1,49 @@
+.lets-talk {
+  .cell:first-child {
+    width: 398px;
+    padding-right: 15px;
+  }
+  .cell {
+    width: auto;
+    height: 100vh;
+  }
+}
+.lets-talk__title {
+  font-size: 160px;
+  line-height: 192px;
+  margin-bottom: 50px;
+}
+.wave-wrapper {
+  padding-top: 37px;
+}
+.wave {
+  display: inline-block;
+  vertical-align: text-top;
+  padding-left: 195px;
+  font-size: 0;
+  line-height: 0;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    height: 1px;
+    width: 190px;
+    left: 0;
+    background: #49494c;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    height: 1px;
+    width: 2000px;
+    left: 100%;
+    margin-left: 5px;
+    background: #49494c;
+  }
+  img {
+    width: 371px;
+    height: auto;
+  }
+}

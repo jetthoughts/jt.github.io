@@ -42,6 +42,8 @@
 .services__title {
   font-size: 48px;
   line-height: 65px;
+  max-height: 517px;
+  overflow: hidden;
   margin: 0;
   span {
     display: block;

@@ -25,23 +25,85 @@ function toggleForm() {
 $(document).ready(function () {
 
   if ($('.services-slideshow').length) {
-    var $teamSlider = $('.services-slideshow');
+    var $servicesSlideshow = $('.services-slideshow');
 
-    $teamSlider.on('init', function(event, slick, currentSlide, nextSlide) {
+    $servicesSlideshow.on('init', function(event, slick, currentSlide, nextSlide) {
       $('.services-slideshow-current-slide span').text(slick.currentSlide + 1);
     });
 
-    $teamSlider.on('afterChange', function(event, slick, currentSlide, nextSlide) {
+    $servicesSlideshow.on('afterChange', function(event, slick, currentSlide, nextSlide) {
       $('.services-slideshow-current-slide span').text(slick.currentSlide + 1);
     });
 
-    $teamSlider.slick({
+    $servicesSlideshow.slick({
       fade: true,
       infinite: true,
       nextArrow: '.services-slideshow-prev',
       prevArrow: '.services-slideshow-next',
     });
   }
+
+  if ($('.post-slideshow').length) {
+    var $postSlideshow = $('.post-slideshow');
+
+    $postSlideshow.slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+    });
+  }
+
+  if ($('.uses-cases-slideshow').length) {
+    var $usesCasesSlideshow = $('.uses-cases-slideshow');
+
+    $usesCasesSlideshow.on('init', function(event, slick, currentSlide, nextSlide) {
+      onAtive($('.slick-current').index());
+    });
+
+    $usesCasesSlideshow.on('afterChange', function(event, slick, currentSlide, nextSlide) {
+      onAtive(currentSlide);
+    });
+
+    $usesCasesSlideshow.slick({
+      infinite: true,
+      fade: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      pauseOnHover: false,
+      pauseOnFocus: false,
+      speed: 500,
+    });
+
+    $('.uses-cases-controls__link').on('click', function() {
+      var indexElement = $(this).parent().index();
+
+      $usesCasesSlideshow.slick('slickGoTo', indexElement, false);
+      onAtive(indexElement);
+      return false
+    });
+
+    function onAtive(index) {
+      $('.uses-cases-controls__link').removeClass('uses-cases-controls__link_active');
+      $('.uses-cases-controls__item').eq(index).children().addClass('uses-cases-controls__link_active');
+    }
+  }
+
+  $('.modal-opener').click(function() {
+    var modalId = $(this).attr('href');
+    $('.modal').fadeOut();
+    $(modalId).fadeIn();
+    $('body').addClass('modal-open');
+    return false;
+  });
+
+  $('.modal__close').click(function(){
+    $('.modal').fadeOut();
+    $('body').removeClass('modal-open');
+    return false;
+  });
 
   smoothScroll.init();
 

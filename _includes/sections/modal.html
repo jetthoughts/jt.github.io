@@ -1,0 +1,34 @@
+<div class="modal-hide">
+  <div class="modal" id="form">
+    <div class="modal__holder">
+      <span class="modal__close">Close</span>
+      <div class="container">
+      <div class="contact-form">
+
+        <form data-source="contact:site">
+          <div class="row">
+            <div class="col form-group">
+              <label class="contact-form__label" for="name">Name</label>
+              <input id="name" type="text" name="name" class="name form-control" placeholder="Your name" required/>
+            </div>
+            <div class="col form-group">
+              <label class="contact-form__label" for="email">email</label>
+              <input id="email" type="email" name="email" class="email form-control" placeholder="Your email" required/>
+            </div>
+          </div>
+          <label class="contact-form__label" for="message">Message</label>
+          <div class="contact-form__message form-group">
+           <textarea id="message" name="message" class="message-txt form-control" placeholder="Type here" required></textarea>
+         </div>
+          <button class="btn-primary contact-form__btn">Send</button>
+        </form>
+
+      </div><!-- contact-form -->
+      </div><!-- container -->
+    </div><!-- modal__holder -->
+  </div><!-- modal -->
+</div><!-- modal-hide -->
+
+<!-- <div class="form-sent hide">
+  <span class="msg">Thank you for your message. We will respond you ASAP.</span>
+</div> -->
