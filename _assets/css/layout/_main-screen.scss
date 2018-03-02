@@ -9,20 +9,22 @@
       padding-left: 15px;
     }
   }
-  .container {
-    max-width: 1275px;
-    @include respond-to(md) {
-      font-size: 0.5em;
-      max-width: 100%;
-      text-align: center;
-      display: block;
-    }
-  }
 }
 .main-screen__title {
   font-size: 160px;
   line-height: 192px;
   font-weight: 500;
+  span {
+    display: block;
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 80px;
+    line-height: 90px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 60px;
+    line-height: 70px;
+  }
 }
 
 .video-cover {
@@ -67,19 +69,51 @@
   &:before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 100vh;
     bottom: -50vh;
-    left: 100%;
+    right: -44px;
     width: 1px;
     background: #404044;
+    transition: all .5s .5s;
+    @media screen and (max-width: 1365px) {
+      right: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    right: -100%;
+    background: #1b1b1f;
+    z-index: 4;
+    transition: all .3s;
   }
 }
+.menu-open .blog-nav {
+  @media screen and (max-width: 767px) {
+    right: 0;
+  }
+}
+
+.animation {
+  .blog-nav:before {
+    top: 0;
+  }
+}
+
 .blog-nav__item {
   text-align: right;
   font-size: 18px;
   line-height: 26px;
-  padding: 40px 44px 40px 0;
+  padding: 40px 0;
   position: relative;
+  @media screen and (max-width: 1365px) {
+    padding-right: 44px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
 }
 .blog-nav__link {
   color: #aaaab2;
@@ -89,12 +123,15 @@
   &:before {
     content: '';
     position: absolute;
-    left: 100%;
+    right: -45px;
     width: 2px;
     background: #fff;
     top: 50%;
     bottom: 50%;
     transition: all .3s;
+    @media screen and (max-width: 1365px) {
+      right: 0;
+    }
   }
   &:hover {
     color: #fefefe;

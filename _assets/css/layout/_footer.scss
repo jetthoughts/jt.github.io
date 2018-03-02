@@ -3,12 +3,24 @@
   color: #737380;
   font-size: 16px;
   line-height: 26px;
+  @media screen and (max-width: 767px) {
+    padding: 50px 0;
+  }
   .cell {
     vertical-align: top;
+    @media screen and (max-width: 767px) {
+      display: block;
+      width: auto;
+    }
   }
   .cell:first-child {
     padding-right: 15px;
     width: 300px;
+    @media screen and (max-width: 767px) {
+      display: block;
+      width: auto;
+      padding: 0;
+    }
   }
   .cell:last-child {
     padding-left: 15px;
@@ -16,6 +28,12 @@
     width: 390px;
     vertical-align: bottom;
     text-align: right;
+    @media screen and (max-width: 767px) {
+      display: block;
+      width: auto;
+      text-align: left;
+      padding: 0;
+    }
   }
   .description {
     font-weight: 400;
@@ -79,7 +97,14 @@
   vertical-align: top;
   font-size: 16px;
   line-height: 20px;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }
 .contacts-list__item+.contacts-list__item {
   margin-left: 126px;
+  @media screen and (max-width: 767px) {
+    margin-left: 0;
+    padding-top: 15px;
+  }
 }

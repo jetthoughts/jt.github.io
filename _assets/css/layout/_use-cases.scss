@@ -10,6 +10,9 @@
   left: 0;
   right: 0;
   z-index: 2;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .uses-cases-controls {
   list-style: none;
@@ -84,6 +87,9 @@
   width: 1%;
   height: 100vh;
   padding: 175px 0 0;
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
 }
 .uses-cases-box__descr {
   position: relative;
@@ -94,6 +100,17 @@
   font-size: 160px;
   line-height: 170px;
   margin-bottom: 70px;
+  span {
+    display: block;
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 80px;
+    line-height: 90px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 50px;
+    line-height: 62px;
+  }
 }
 .uses-cases-box__text {
   font-weight: 400;
@@ -145,5 +162,13 @@
   img {
     width: 100%;
     height: auto;
+    position: relative;
+    opacity: 0;
+    bottom: -100px;
+    transition: all .5s 1.5s;
   }
+}
+.animation .uses-cases-slideshow__figure img {
+  opacity: 1;
+  bottom: 0;
 }

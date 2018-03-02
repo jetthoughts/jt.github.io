@@ -73,6 +73,13 @@ p {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1205px;
+  @media screen and (max-width: 767px) {
+    padding: 0 40px;
+  }
+}
+
+.menu-open {
+  overflow: hidden;
 }
 
 .tbl {
@@ -92,11 +99,18 @@ section {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  @media screen and (max-width: 767px) {
+    min-height: 1px;
+  }
 }
 .section {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  visibility: visible !important;
+  @media screen and (max-width: 767px) {
+    min-height: 1px;
+  }
 }
 .bg_dark {
   background: #17171a;
@@ -131,6 +145,9 @@ section {
 
 .desktop-hide {
   display: none;
+    @media screen and (max-width: 767px) {
+      display: block;
+  }
 }
 
 

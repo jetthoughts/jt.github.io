@@ -9,8 +9,56 @@
   .logo {
     margin-top: 10px;
     float: left;
+    @media screen and (max-width: 767px) {
+      width: 27px;
+      overflow: hidden;
+      img {
+        width: 148px;
+      }
+    }
   }
   .btn-primary {
     float: right;
+  }
+}
+
+.menu-opener {
+  float: right;
+  margin-left: 23px;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  margin-top: 15px;
+  &:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 4px;
+    transition: all .3s;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    transition: all .3s;
+  }
+}
+.menu-open .menu-opener {
+  &:before {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  &:after {
+    transform: rotate(-45deg);
+    bottom: 11px;
   }
 }

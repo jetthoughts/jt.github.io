@@ -75,12 +75,20 @@
     font-size: 0;
     line-height: 0;
     margin: 0 -50px 118px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
   .col {
     width: 50%;
     display: inline-block;
     vertical-align: text-top;
     padding: 0 50px;
+    @media screen and (max-width: 767px) {
+      padding: 0 40px 30px;
+      display: block;
+      width: 100%;
+    }
   }
   .invalid {
     .form-control {
@@ -110,6 +118,9 @@
 .contact-form__message {
   margin: 0 0 108px;
   position: relative;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
   &:before {
     content: '';
     position: absolute;

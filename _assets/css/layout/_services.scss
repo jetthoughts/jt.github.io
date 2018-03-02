@@ -5,20 +5,37 @@
     float: right;
     text-align: right;
     position: relative;
+    @media screen and (max-width: 767px) {
+      float: none;
+      width: 100%;
+    }
     .holder {
       max-width: 602px;
       margin-right: auto;
       padding-right: 15px;
+      @media screen and (max-width: 991px) {
+        padding: 0 40px;
+        margin: 0;
+        max-width: 100%;
+      }
     }
   }
   .col+.col {
     float: left;
     text-align: left;
+    @media screen and (max-width: 767px) {
+      float: none;
+      width: 100%;
+    }
     .holder {
       margin-left: auto;
       margin-right: 0;
       padding-right: 0;
       padding-left: 15px;
+      @media screen and (max-width: 991px) {
+        padding: 0 40px;
+        margin: 0;
+      }
     }
   }
   .cell {
@@ -32,6 +49,21 @@
   right: 0;
   left: 0;
   margin: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 1.5s .5s;
+    background: #1b1b1f;
+  }
+}
+.animation {
+  .services__figure:before {
+    left: 100%;
+  }
 }
 .services__description {
   max-width: 400px;
@@ -45,6 +77,14 @@
   max-height: 517px;
   overflow: hidden;
   margin: 0;
+  @media screen and (max-width: 991px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
   span {
     display: block;
   }
@@ -52,13 +92,38 @@
 
 .services-slideshow {
   color: #aaaab2;
-  background: #fff;
+  position: relative;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    background: #fff;
+    transition: all 1s .3s;
+  }
   .services__title {
     font-size: 36px;
     line-height: 47px;
+    @media screen and (max-width: 991px) {
+      font-size: 28px;
+      line-height: 34px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      line-height: 27px;
+    }
     span {
       color: #17171a;
     }
+  }
+}
+.animation {
+  .services-slideshow:before {
+    top: 0;
   }
 }
 .services-slideshow__item {
@@ -67,16 +132,19 @@
 
 .services-slideshow-controls {
   position: absolute;
+  z-index: 3;
   left: 215px;
   bottom: 171px;
   font-size: 0;
   line-height: 0;
-  white-space: no-wrap;
+  white-space: nowrap;
+  @media screen and (max-width: 991px) {
+    left: 40px;
+  }
 }
 .services-slideshow-controls__btn {
   display: inline-block;
   vertical-align: top;
-  transition: all .3s;
   cursor: pointer;
   width: 29px;
   height: 15px;
@@ -95,10 +163,19 @@
 }
 
 .services-slideshow-current-slide {
+  z-index: 3;
+  top: 300px;
+  opacity: 0;
   position: absolute;
-  top: 101px;
   left: 614px;
   font-size: 36px;
   line-height: 1em;
   color: #17171a;
+  transition: all .5s .8s;
+}
+.animation {
+  .services-slideshow-current-slide {
+    top: 101px;
+    opacity: 1;
+  }
 }
