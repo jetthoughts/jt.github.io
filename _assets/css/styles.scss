@@ -1,13 +1,13 @@
 @import 'vendor/_slick';
-@import 'vendor/_normalize.min';
 
-@import 'base/_buttons';
+@import 'utils/_colors';
+@import 'utils/_mixins';
+@import 'utils/_breakpoints';
+
+@import 'base/_general';
 @import 'base/_animate';
 @import 'base/_fonts';
-
-@import 'utils/_mixins';
-@import 'utils/_colors';
-@import 'utils/_breakpoints';
+@import 'base/_buttons';
 
 @import 'layout/_header';
 @import 'layout/_main-screen';
@@ -17,6 +17,5 @@
 @import 'layout/_lets-talk';
 @import 'layout/_modal';
 @import 'layout/_footer';
-@import 'layout/_application';
 
 @import '_case';

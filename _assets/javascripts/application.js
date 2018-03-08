@@ -1,22 +1,7 @@
-const passAnimationClass = 'passed-animation';
-
-function animateShowing(element, direction, effect = 'fadeInUp') {
-  if ($(element).hasClass(passAnimationClass))  return false;
-  if (direction === 'down') {
-    $(element).addClass([effect, passAnimationClass].join(' '));
-  }
-}
-
-function toggleForm() {
-  $('.js-lets-talk .container').removeClass('fadeInLeft').addClass('fadeOutLeft');
-  $('.js-lets-talk .controls, .js-lets-talk .contact-form')
-    .removeClass('fadeOutRight hide')
-    .addClass('fadeInRight');
-  $('.js-lets-talk').toggleClass('lets-talk contact-form-wrapper');
-}
+//= require form
 
 $(document).ready(function () {
-
+  // slideshow
   if ($('.services-slideshow').length) {
     var $servicesSlideshow = $('.services-slideshow');
 
@@ -63,7 +48,6 @@ $(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      autoplay: true,
       autoplaySpeed: 5000,
       pauseOnHover: false,
       pauseOnFocus: false,
@@ -84,32 +68,66 @@ $(document).ready(function () {
     }
   }
 
-  $('.modal-opener').click(function() {
-    var modalId = $(this).attr('href');
+  // modal
+  $('.js-modal-opener').on('click', function() {
+    var href = $(this).attr('href');
     $('.modal').fadeOut();
-    $(modalId).fadeIn();
+    $(href).fadeIn();
     $('body').addClass('modal-open');
     return false;
   });
 
-  $('.modal__close').click(function(){
+  $('.js-modal-close').on('click', function(){
     $('.modal').fadeOut();
     $('body').removeClass('modal-open');
     return false;
   });
 
-  $('.header, .main-screen').addClass('animation');
-
-  var wow = new WOW({
-    boxClass: 'section',
-    animateClass: 'animation',
-    offset: 300,
-    mobile: true,
-    live:  true,
-    scrollContainer: null
+  // mobile menu
+  $('.js-menu-opener').on('click', function() {
+    $('body').toggleClass('menu-open');
+    return false;
   });
-  wow.init();
 
+  $(document).on('mouseup touchend',function (e) {
+    var container = $('.blog-nav, .js-menu-opener');
+    if (!container.is(e.target) && container.has(e.target).length === 0){
+      $('body').removeClass('menu-open');
+    }
+  });
+
+  // scroll go to
+  $('.js-scroll').on('click', function(e){
+    var href =  $(this).attr('href');
+    $('html, body').stop().animate({ 
+      scrollTop: href === "#" ? 0 : $(href).offset().top
+    }, 700);
+    e.preventDefault();
+  });
+
+  // scroll animation
+  $('.header, .main-screen').addClass('animation');
+  if ($(window).width() < 768) {
+    $('.section').addClass('animation');
+  }
+
+  $(window).scroll( function(){
+    $('.section').each(function() {
+      var $this = $(this);
+      var bottom_of_object = $this.offset().top + $this.outerHeight() / 5;
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      if (bottom_of_window > bottom_of_object) {
+        $this.addClass('animation');
+        if ($this.hasClass('uses-cases')) {
+          $('.uses-cases-slideshow').slick('slickPlay');
+        }
+      }
+    });
+  });
+
+
+  // delay animation
   $('.uses-cases-controls__item').each(function() {
     var $this = $(this);
     var index = $this.index();
@@ -130,65 +148,4 @@ $(document).ready(function () {
 
     $this.addClass('delay-' + index);
   });
-
-  $('.menu-opener').click(function(){
-    $('body').toggleClass('menu-open');
-    return false;
-  });
-
-  $(document).on('mouseup touchend',function (e){
-    var container = $('.blog-nav, .menu-opener');
-    if (!container.is(e.target) && container.has(e.target).length === 0){
-      $('body').removeClass('menu-open');
-    }
-  });
-
-  smoothScroll.init();
-
-  $('.js-hire-us').on('click', () => {
-    if ($('#js-lets-talk').hasClass('lets-talk')) {
-      $('.js-open-form').click();
-    }
-  });
-
-
-  $('.js-open-form').on('click', () => toggleForm());
-
-  $('.js-back, .js-close').on('click', () => {
-    $('.js-lets-talk .container').toggleClass('fadeOutLeft fadeInLeft');
-    $('.js-lets-talk .controls, .js-lets-talk .contact-form').toggleClass('fadeOutRight fadeInRight');
-    $('.js-lets-talk').toggleClass('lets-talk contact-form-wrapper');
-    $('.form-sent').addClass('hide');
-  });
-
-  if(window.innerWidth > 768) {
-    $('.main .title').addClass(`bounceInDown ${passAnimationClass}`);
-    $('.blog-articles').addClass('bounceInRight');
-
-    if ($('#js-services').length) {
-      const Team = new Waypoint({
-        element: document.getElementById('js-services'),
-        handler: (direction) => {
-          animateShowing('.team .description', direction);
-          animateShowing('.slider', direction);
-        },
-        offset: '30%'
-      });
-
-      const UseCase = new Waypoint({
-        element: document.getElementById('js-use-cases'),
-        handler: (direction) => {
-          animateShowing('.slide', direction);
-        },
-        offset: '40%'
-      })
-    }
-  } 
-
-  const LetsTalk = new Waypoint({
-    element: document.getElementById('js-lets-talk'),
-    handler: () => {
-      $('.js-wave-cover').addClass('wave-overlap')
-    }
-  })
 });

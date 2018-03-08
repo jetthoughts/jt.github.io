@@ -1,7 +1,10 @@
 .posts {
   .small-head {
     margin-bottom: 59px;
-    @media screen and (max-width: 991px) {
+    @media screen and ($b_laptop) {
+      margin-bottom: 50px;
+    }
+    @media screen and ($b_tablet) {
       margin-bottom: 15px;
     }
   }
@@ -15,8 +18,11 @@
 }
 .post-slideshow {
   margin: 0 -9px;
+  @media screen and ($b_laptop) {
+    margin: 0 -8px;
+  }
   .slick-arrow {
-    transition: all .3s;
+    @include transition(0.3s);
     position: absolute;
     top: 50%;
     margin-top: -10px;
@@ -25,11 +31,16 @@
     font-size: 0;
     line-height: 0;
     background: none;
-    transform: rotate(45deg);
-    border: solid #fff;
+    @include rotate(45deg);
+    border: solid $white;
     border-width: 1px 1px 0 0;
     cursor: pointer;
     outline: none;
+    @media screen and ($b_laptop) {
+      margin-top: -8px;
+      width: 17px;
+      height: 17px;
+    }
     &:hover {
       opacity: .8;
     }
@@ -37,9 +48,15 @@
   .slick-prev {
     left: -50px;
     border-width: 0 0 1px 1px;
+    @media screen and ($b_laptop) {
+      left: -43px;
+    }
   }
   .slick-next {
     right: -50px;
+    @media screen and ($b_laptop) {
+      right: -43px;
+    }
   }
   .slick-disabled {
     opacity: 0;
@@ -51,14 +68,24 @@
 }
 .post-slideshow__item {
   padding: 0 9px;
+  @media screen and ($b_laptop) {
+    padding: 0 8px;
+  }
 }
 .post-slideshow__link {
   display: table-cell;
   vertical-align: bottom;
-  padding: 44px 45px;
+  padding: 50px 45px;
   height: 500px;
-  background: #1b1b1f;
+  background: $gray;
   position: relative;
+  @media screen and ($b_laptop) {
+    padding: 43px 38px;
+    height: 427px;
+  }
+  @media screen and ($b_tablet) {
+    padding: 15px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -68,30 +95,42 @@
     right: 54px;
     background: url(asset_path('vector/arrow-right-white.svg')) no-repeat 50% 50%;
     background-size: 100% auto;
-    transition: all .3s;
+    @include transition(0.3s);
     opacity: 0;
+    @media screen and ($b_laptop) {
+      width: 27px;
+      height: 13px;
+      top: 36px;
+      right: 46px;
+    }
   }
-  @media screen and (max-width: 991px) {
-    padding: 15px;
+  .small-head {
+    margin-bottom: 12px;
   }
 }
 .post-slideshow__link:hover {
-  background: #1a8cff;
+  background: $blue;
   &:before {
     opacity: 1;
   }
   .small-head {
-    color: #fff;
+    color: $white;
   }
 }
 .post-slideshow__title {
   font-size: 36px;
-  line-height: 54px;
+  line-height: 47px;
+  max-height: 144px;
   margin: 0;
-  max-height: 162px;
   overflow: hidden;
-  @media screen and (max-width: 991px) {
+  @media screen and ($b_laptop) {
+    font-size: 31px;
+    line-height: 40px;
+    max-height: 123px;
+  }
+  @media screen and ($b_tablet) {
     font-size: 24px;
     line-height: 34px;
+    max-height: 133px;
   }
 }

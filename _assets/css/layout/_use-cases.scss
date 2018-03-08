@@ -1,8 +1,12 @@
 .uses-cases {
-  background: #1a8cff;
+  background: $blue;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
+  color: $white;
+  @media screen and ($b_laptop) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .uses-cases-controls-wrapper {
   position: absolute;
@@ -10,7 +14,7 @@
   left: 0;
   right: 0;
   z-index: 2;
-  @media screen and (max-width: 767px) {
+  @media screen and ($b_mobile) {
     display: none;
   }
 }
@@ -20,17 +24,34 @@
   margin: 0 -63px;
   font-size: 0;
   line-height: 0;
+  @media screen and ($b_laptop) {
+    padding: 76px 72px 0 0;
+    margin: 0 -54px;
+  }
+  @media screen and ($b_tablet) {
+   padding: 50px 0;
+   margin: 0 -15px;
+ }
 }
 .uses-cases-controls__item {
   display: inline-block;
   vertical-align: text-top;
   width: 33.33%;
   padding: 0 63px;
+  @media screen and ($b_laptop) {
+    padding: 0 54px;
+  }
+  @media screen and ($b_tablet) {
+    padding: 0 15px;
+  }
 }
 .uses-cases-controls__link {
   position: relative;
   display: block;
   padding-bottom: 28px;
+  @media screen and ($b_laptop) {
+    padding-bottom: 24px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -47,38 +68,47 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: $white;
   }
   &:hover {
     opacity: .8;
   }
 }
-.uses-cases-controls__link_active {
+.animation .uses-cases-controls__link_active {
   &:after {
     animation: loadbar 5s;
   }
 }
 @keyframes loadbar {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 100%;
-    }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .uses-cases-controls__title {
+  margin-bottom: 7px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 500;
   display: block;
-  margin-bottom: 7px;
+  @media screen and ($b_laptop) {
+    margin-bottom: 6px;
+    font-size: 17px;
+    line-height: 20px;
+  }
 }
 .uses-cases-controls__descr {
   text-transform: uppercase;
   font-size: 13px;
   line-height: 17px;
   opacity: .5;
+  @media screen and ($b_laptop) {
+    font-size: 11px;
+    line-height: 14px;
+  }
 }
 
 .uses-cases-box {
@@ -86,15 +116,22 @@
   vertical-align: middle;
   width: 1%;
   height: 100vh;
-  padding: 175px 0 0;
-  @media screen and (max-width: 767px) {
-    padding-top: 0;
+  padding: 137px 0 0;
+  @media screen and ($b_laptop) {
+    padding: 117px 0 0;
+  }
+  @media screen and ($b_mobile) {
+    height: auto;
+    padding: 50px 0;
   }
 }
 .uses-cases-box__descr {
   position: relative;
   z-index: 2;
   max-width: 500px;
+  @media screen and ($b_laptop) {
+    max-width: 427px;
+  }
 }
 .uses-cases-box__title {
   font-size: 160px;
@@ -103,11 +140,16 @@
   span {
     display: block;
   }
-  @media screen and (max-width: 991px) {
+  @media screen and ($b_laptop) {
+    font-size: 136px;
+    line-height: 145px;
+    margin-bottom: 60px;
+  }
+  @media screen and ($b_tablet) {
     font-size: 80px;
     line-height: 90px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and ($b_mobile) {
     font-size: 50px;
     line-height: 62px;
   }
@@ -119,6 +161,12 @@
   margin-bottom: 37px;
   padding-bottom: 15px;
   position: relative;
+  @media screen and ($b_laptop) {
+    min-height: 140px;
+    max-width: 256px;
+    margin-bottom: 30px;
+    padding-bottom: 13px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -127,6 +175,9 @@
     height: 1px;
     width: 80px;
     background: #8dc6ff;
+    @media screen and ($b_laptop) {
+      width: 68px;
+    }
   }
 }
 .uses-cases-box__more {
@@ -136,6 +187,10 @@
   font-size: 13px;
   line-height: 17px;
   text-transform: uppercase;
+  @media screen and ($b_laptop) {
+    font-size: 11px;
+    line-height: 14px;
+  }
   &:hover {
     &:before {
       width: 100%;
@@ -148,8 +203,8 @@
     left: 0;
     width: 0;
     height: 1px;
-    background: #fff;
-    transition: all .3s;
+    background: $white;
+    @include transition(0.3s);
   }
 }
 .uses-cases-slideshow__figure {
@@ -165,7 +220,7 @@
     position: relative;
     opacity: 0;
     bottom: -100px;
-    transition: all .5s 1.5s;
+    @include transition(0.5s 1.5s);
   }
 }
 .animation .uses-cases-slideshow__figure img {

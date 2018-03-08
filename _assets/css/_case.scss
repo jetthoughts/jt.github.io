@@ -275,7 +275,7 @@
     }
 
     .role {
-      color: rgba($bg-grey, .5);
+      color: rgba($dark_grey, .5);
       font-size: 0.8em;
       text-transform: uppercase;
     }
@@ -334,7 +334,7 @@
 
     &.screen {
       background: {
-        color: $primary-blue;
+        color: $blue;
         repeat: no-repeat;
         position: center;
         size: cover;
@@ -514,7 +514,7 @@
   }
 
   .subtitle {
-    color: $primary-blue;
+    color: $blue;
   }
 
   .text-block {
@@ -564,4 +564,19 @@
 .services-in-case,
 .project-demo {
   min-height: 640px;
+}
+
+%content-max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+
+  @media (max-width: $screen-md) {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  @media (min-width: $screen-md * 2) {
+    max-width: 1800px;
+  }
 }

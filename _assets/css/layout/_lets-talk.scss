@@ -2,10 +2,14 @@
   .cell:first-child {
     width: 398px;
     padding-right: 15px;
-     @media screen and (max-width: 991px) {
+    @media screen and ($b_laptop) {
+      width: 340px;
+      padding-right: 13px;
+    }
+     @media screen and ($b_tablet) {
       width: 150px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and ($b_mobile) {
       padding-right: 0;
       display: block;
       width: 100%;
@@ -14,7 +18,7 @@
   .cell {
     width: auto;
     height: 100vh;
-    @media screen and (max-width: 767px) {
+    @media screen and ($b_mobile) {
       height: auto;
       padding: 30px 0;
       display: block;
@@ -29,11 +33,16 @@
   span {
     display: block;
   }
-  @media screen and (max-width: 991px) {
+  @media screen and ($b_laptop) {
+    font-size: 137px;
+    line-height: 164px;
+    margin-bottom: 43px;
+  }
+  @media screen and ($b_tablet) {
     font-size: 80px;
     line-height: 90px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and ($b_mobile) {
     font-size: 70px;
     line-height: 82px;
   }
@@ -42,7 +51,13 @@
   padding-top: 37px;
   width: 0;
   overflow: hidden;
-  transition: all 5s .7s;
+  @include transition(5s 0.7s);
+  @media screen and ($b_laptop) {
+    padding-top: 32px;
+  }
+  @media screen and ($b_tablet) {
+    padding-top: 0;
+  }
 }
 .animation .wave-wrapper {
   width: 500%;
@@ -51,12 +66,15 @@
   display: inline-block;
   vertical-align: text-top;
   padding-left: 195px;
-  @media screen and (max-width: 991px) {
-    padding-left: 100px;
-  }
   font-size: 0;
   line-height: 0;
   position: relative;
+  @media screen and ($b_laptop) {
+    padding-left: 166px;
+  }
+  @media screen and ($b_tablet) {
+    padding-left: 100px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -65,7 +83,10 @@
     width: 190px;
     left: 0;
     background: #49494c;
-    @media screen and (max-width: 991px) {
+    @media screen and ($b_laptop) {
+      width: 162px;
+    }
+    @media screen and ($b_tablet) {
       width: 100px;
     }
   }
@@ -75,14 +96,21 @@
     bottom: 50%;
     height: 1px;
     width: 2000px;
-    left: 100%;
     margin-left: 5px;
+    left: 100%;
     background: #49494c;
+    @media screen and ($b_laptop) {
+      width: 1708px;
+      margin-left: 4px;
+    }
   }
   img {
     width: 371px;
     height: auto;
-    @media screen and (max-width: 991px) {
+    @media screen and ($b_laptop) {
+      width: 316px;
+    }
+    @media screen and ($b_tablet) {
       width: 300px;
     }
   }

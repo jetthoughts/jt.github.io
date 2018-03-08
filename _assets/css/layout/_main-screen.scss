@@ -3,27 +3,44 @@
   position: relative;
   .tbl {
     height: 100vh;
-    padding: 215px 0;
+    padding: 183px 0 215px;
+    @media screen and ($b_laptop) {
+      padding: 156px 0 184px;
+    }
+    @media screen and ($b_mobile) {
+      padding: 0 0 40px;
+    }
     .cell+.cell {
       width: 225px;
       padding-left: 15px;
+      @media screen and ($b_laptop) {
+        width: 192px;
+        padding-left: 13px;
+      }
+      @media screen and ($b_mobile) {
+        width: 100%;
+        padding-left: 0;
+      }
     }
   }
 }
 .main-screen__title {
   font-size: 160px;
   line-height: 192px;
-  font-weight: 500;
   span {
     display: block;
   }
-  @media screen and (max-width: 991px) {
-    font-size: 80px;
-    line-height: 90px;
+  @media screen and ($b_laptop) {
+    font-size: 136px;
+    line-height: 164px;
   }
-  @media screen and (max-width: 767px) {
-    font-size: 60px;
-    line-height: 70px;
+  @media screen and ($b_tablet) {
+    font-size: 100px;
+    line-height: 130px;
+  }
+  @media screen and ($b_mobile) {
+    font-size: 67px;
+    line-height: 80px;
   }
 }
 
@@ -36,7 +53,6 @@
   bottom: 0;
   right: 0;
   overflow: hidden;
-  background: #f1f1f1;
   video {
     position: absolute;
     top: 50%;
@@ -66,6 +82,13 @@
   padding: 0;
   margin: 0;
   position: relative;
+  right: -25px;
+  @media screen and ($b_laptop) {
+    right: -21px;
+  }
+  @media screen and ($b_tablet) {
+    right: 0;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -73,25 +96,34 @@
     bottom: -50vh;
     right: -44px;
     width: 1px;
-    background: #404044;
-    transition: all .5s .5s;
-    @media screen and (max-width: 1365px) {
-      right: 0;
+    background: #3d3d3e;
+    @include transition(0.5s 0.5s);
+    @media screen and ($b_laptop) {
+      right: -37px;
+    }
+    @media screen and ($b_tablet) {
+      right: -20px;
+    }
+    @media screen and ($b_mobile) {
+      display: none;
     }
   }
-  @media screen and (max-width: 767px) {
+  @media screen and ($b_mobile) {
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 100%;
-    right: -100%;
-    background: #1b1b1f;
+    width: 83%;
+    right: -83%;
+    background: $gray;
     z-index: 4;
-    transition: all .3s;
+    padding: 30px;
+    text-align: center;
+    overflow-y: auto;
+    @include transition(0.3s);
   }
 }
 .menu-open .blog-nav {
-  @media screen and (max-width: 767px) {
+  @media screen and ($b_mobile) {
     right: 0;
   }
 }
@@ -108,11 +140,10 @@
   line-height: 26px;
   padding: 40px 0;
   position: relative;
-  @media screen and (max-width: 1365px) {
-    padding-right: 44px;
-  }
-  @media screen and (max-width: 767px) {
-    padding: 15px;
+  @media screen and ($b_laptop) {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 34px 0;
   }
 }
 .blog-nav__link {
@@ -120,6 +151,9 @@
   display: block;
   max-height: 78px;
   overflow: hidden;
+  @media screen and ($b_laptop) {
+    max-height: 67px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -128,9 +162,12 @@
     background: #fff;
     top: 50%;
     bottom: 50%;
-    transition: all .3s;
-    @media screen and (max-width: 1365px) {
-      right: 0;
+    @include transition(0.3s);
+    @media screen and ($b_laptop) {
+      right: -38px;
+    }
+    @media screen and ($b_tablet) {
+      right: -21px;
     }
   }
   &:hover {
@@ -139,5 +176,46 @@
       top: 0;
       bottom: 0;
     }
+  }
+}
+
+.btn-scroll-down {
+  width: 15px;
+  height: 29px;
+  margin-left: 14px;
+  background: url(asset_path('vector/arrow-down.svg')) no-repeat 50% 50%;
+  background-size: 100% auto;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  bottom: 250px;
+  opacity: 0;
+  @include transition(0.5s 1.2s);
+  &:hover {
+    opacity: .8;
+  }
+  @media screen and ($b_laptop) {
+    width: 13px;
+    height: 25px;
+    margin-left: 12px;
+  }
+  @media screen and ($b_mobile) {
+    width: 14px;
+    height: 28px;
+    margin-left: 0;
+  }
+  @include transition(0s);
+}
+.animation .btn-scroll-down {
+  bottom: 169px;
+  opacity: 1;
+  @media screen and ($b_laptop) {
+    bottom: 144px;
+  }
+  @media screen and ($b_laptop) {
+    bottom: 181px;
+  }
+  @media screen and ($b_small_mobile_height) {
+    bottom: 30px;
   }
 }
