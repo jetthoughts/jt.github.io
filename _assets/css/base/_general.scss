@@ -103,6 +103,14 @@ p {
   line-height: 17px;
   margin: 0 0 15px;
   color: $light_grey;
+  @media screen and ($b_mobile) {
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 28px;
+  }
+  @media screen and ($b_small_mobile_height) {
+    margin-bottom: 10px;
+  }
 }
 .form-control {
   @include placeholder(#737380);
@@ -116,6 +124,9 @@ p {
   }
   @media screen and ($b_tablet) {
     padding: 0 40px;
+  }
+  @media screen and (max-width: 359px) {
+    padding: 0 15px;
   }
 }
 .tbl {
@@ -134,9 +145,6 @@ p {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  @media screen and ($b_mobile) {
-    min-height: 1px;
-  }
 }
 .bg_dark {
   background: $dark_grey;
@@ -160,6 +168,11 @@ p {
   display: none;
     @media screen and (max-width: 767px) {
       display: block;
+  }
+}
+.mobile-hide {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 .logo {

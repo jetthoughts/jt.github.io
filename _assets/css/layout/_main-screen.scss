@@ -5,7 +5,7 @@
     height: 100vh;
     padding: 183px 0 215px;
     @media screen and ($b_laptop) {
-      padding: 156px 0 184px;
+      padding: 106px 0 134px;
     }
     @media screen and ($b_mobile) {
       padding: 0 0 40px;
@@ -200,22 +200,25 @@
     margin-left: 12px;
   }
   @media screen and ($b_mobile) {
+    @include transition(0s);
     width: 14px;
     height: 28px;
     margin-left: 0;
   }
-  @include transition(0s);
 }
 .animation .btn-scroll-down {
   bottom: 169px;
   opacity: 1;
   @media screen and ($b_laptop) {
-    bottom: 144px;
+    bottom: 104px;
   }
-  @media screen and ($b_laptop) {
+  @media screen and ($b_mobile) {
     bottom: 181px;
   }
   @media screen and ($b_small_mobile_height) {
+    bottom: 30px;
+  }
+  @media screen and (max-width: 359px) {
     bottom: 30px;
   }
 }

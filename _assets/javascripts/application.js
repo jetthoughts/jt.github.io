@@ -16,8 +16,8 @@ $(document).ready(function () {
     $servicesSlideshow.slick({
       fade: true,
       infinite: true,
-      nextArrow: '.services-slideshow-prev',
-      prevArrow: '.services-slideshow-next',
+      nextArrow: '.services-slideshow-next',
+      prevArrow: '.services-slideshow-prev',
     });
   }
 
@@ -28,6 +28,14 @@ $(document).ready(function () {
       infinite: false,
       slidesToShow: 3,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+      ]
     });
   }
 
@@ -52,6 +60,14 @@ $(document).ready(function () {
       pauseOnHover: false,
       pauseOnFocus: false,
       speed: 1000,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            dots: true
+          }
+        },
+      ]
     });
 
     $('.uses-cases-controls__link').on('click', function() {
@@ -112,7 +128,7 @@ $(document).ready(function () {
   }
 
   $(window).scroll( function(){
-    $('.section').each(function() {
+    $('.section, .wave-wrapper').each(function() {
       var $this = $(this);
       var bottom_of_object = $this.offset().top + $this.outerHeight() / 5;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -126,26 +142,25 @@ $(document).ready(function () {
     });
   });
 
+  document.onkeydown = function(e){
+    if (e.keyCode == 32) {
+      $('.section').each(function() {
+          var windowHeight = $(window).height();
+          var thisOffset = $(this).offset().top;
+          var windowTop = $(window).scrollTop();
 
-  // delay animation
-  $('.uses-cases-controls__item').each(function() {
-    var $this = $(this);
-    var index = $this.index();
-
-    $this.addClass('delay-' + index);
-  });
-
-  $('.blog-nav__item').each(function() {
-    var $this = $(this);
-    var index = $this.index() + 3;
-
-    $this.addClass('delay-' + index);
-  });
-
-  $('.post-slideshow__item').each(function() {
-    var $this = $(this);
-    var index = $this.index() + 2;
-
-    $this.addClass('delay-' + index);
-  });
+          if (windowTop < thisOffset) {
+            $('html, body').stop().animate({ 
+              scrollTop: thisOffset
+            }, 300);
+            return false
+          } else {
+            $('html, body').stop().animate({ 
+              scrollTop: (windowTop + windowHeight)
+            }, 250);
+          }
+      });
+      e.preventDefault();
+    };
+  }
 });
