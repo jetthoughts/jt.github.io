@@ -23,7 +23,22 @@
       }
     }
   }
+  .menu-opener {
+    position: absolute;
+    top: 21px;
+    right: 18px;
+    z-index: 9;
+    margin: 0;
+    display: none;
+  }
 }
+
+.menu-open .main-screen {
+  .menu-opener {
+    display: block;
+  }
+}
+
 .main-screen__title {
   font-size: 160px;
   line-height: 192px;
@@ -112,14 +127,14 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 83%;
-    right: -83%;
+    width: 100%;
+    right: -100%;
     background: $gray;
     z-index: 4;
-    padding: 30px;
+    padding: 60px 40px 40px;
     text-align: center;
     overflow-y: auto;
-    @include transition(0.3s);
+    @include transition(0s);
   }
 }
 .menu-open .blog-nav {
@@ -143,7 +158,7 @@
   @media screen and ($b_laptop) {
     font-size: 15px;
     line-height: 22px;
-    padding: 34px 0;
+    padding: 25px 0;
   }
 }
 .blog-nav__link {

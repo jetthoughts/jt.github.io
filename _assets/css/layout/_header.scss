@@ -10,7 +10,6 @@
     padding: 21px 30px;
   }
   @media screen and ($b_mobile) {
-    @include transition(0.3s);
     padding: 10px 18px;
   }
   .logo {
@@ -32,11 +31,6 @@
   }
 }
 
-.menu-open .header {
-  left: -83%;
-  right: 83%;
-}
-
 .menu-opener {
   float: right;
   width: 22px;
@@ -54,7 +48,6 @@
     left: 0;
     right: 0;
     top: 4px;
-    @include transition(0.3s);
   }
   &:after {
     content: '';
@@ -64,9 +57,9 @@
     left: 0;
     right: 0;
     bottom: 4px;
-    @include transition(0.3s);
   }
 }
+
 .menu-open .menu-opener {
   &:before {
     @include rotate(45deg);

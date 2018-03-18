@@ -149,17 +149,9 @@ p {
 .bg_dark {
   background: $dark_grey;
 }
-.main-wrapper {
-  @include transition(0.3s);
-  position: relative;
-}
 .menu-open {
   overflow: hidden;
   height: 100%;
-}
-.menu-open .main-wrapper {
-  margin-left: -83%;
-  margin-right: 83%;
 }
 .hide {
   display: none;

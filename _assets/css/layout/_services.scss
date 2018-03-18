@@ -127,6 +127,9 @@
   color: #aaaab2;
   position: relative;
   z-index: 1;
+  @media screen and ($b_mobile) {
+    background: $white;
+  }
   &:before {
     position: absolute;
     content: '';
@@ -139,6 +142,7 @@
     @include transition(1s .3s);
     @media screen and ($b_mobile) {
       @include transition(0s);
+      display: none;
     }
   }
   .services__title {
