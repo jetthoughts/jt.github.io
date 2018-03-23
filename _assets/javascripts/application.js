@@ -1,6 +1,14 @@
 //= require form
 
 $(document).ready(function () {
+  // scroll animation
+  setTimeout(function() {
+    $('.header, .main-screen').addClass('animation');
+    if ($(window).width() < 768) {
+      $('.section').addClass('animation');
+    }
+  }, 500);
+
   // slideshow
   if ($('.services-slideshow').length) {
     var $servicesSlideshow = $('.services-slideshow');
@@ -120,12 +128,6 @@ $(document).ready(function () {
     }, 700);
     e.preventDefault();
   });
-
-  // scroll animation
-  $('.header, .main-screen').addClass('animation');
-  if ($(window).width() < 768) {
-    $('.section').addClass('animation');
-  }
 
   $(window).scroll( function(){
     $('.section, .wave-wrapper').each(function() {

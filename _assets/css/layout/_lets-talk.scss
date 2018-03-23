@@ -65,7 +65,8 @@
     padding-top: 0;
   }
   @media screen and ($b_mobile) {
-    @include transition(5s);
+    @include transition(0s);
+    width: 500%;
     position: absolute;
     padding-top: 53px;
     top: 50%;

@@ -9,6 +9,7 @@
   padding: 13px 19px;
   text-align: center;
   white-space: nowrap;
+  @include transition(background 0.3s);
   &:hover {
     background: #0173E6;
   }

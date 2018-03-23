@@ -216,24 +216,25 @@
   }
   @media screen and ($b_mobile) {
     @include transition(0s);
+    opacity: 1;
+    bottom: 181px;
     width: 14px;
     height: 28px;
     margin-left: 0;
-  }
-}
-.animation .btn-scroll-down {
-  bottom: 169px;
-  opacity: 1;
-  @media screen and ($b_laptop) {
-    bottom: 104px;
-  }
-  @media screen and ($b_mobile) {
-    bottom: 181px;
   }
   @media screen and ($b_small_mobile_height) {
     bottom: 30px;
   }
   @media screen and (max-width: 359px) {
     bottom: 30px;
+  }
+}
+.animation .btn-scroll-down {
+  @media screen and ($b_no_mobile) {
+    bottom: 169px;
+    opacity: 1;
+    @media screen and ($b_laptop) {
+      bottom: 104px;
+    }
   }
 }
