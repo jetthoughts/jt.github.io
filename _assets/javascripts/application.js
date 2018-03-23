@@ -145,7 +145,7 @@ $(document).ready(function () {
   });
 
   document.onkeydown = function(e){
-    if (e.keyCode == 32) {
+    if (e.keyCode == 32 && !$('body.modal-open').length) {
       $('.section').each(function() {
           var windowHeight = $(window).height();
           var thisOffset = $(this).offset().top;
