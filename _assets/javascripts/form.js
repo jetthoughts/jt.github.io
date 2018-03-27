@@ -1,10 +1,9 @@
 $(document).ready(function () {
   var contactForm = $('.contact-form'),
-    submitBtn = $('.submit-btn'),
+    submitBtn = $('.contact-form__btn'),
     requiredFields = $('[required]');
 
   function postToGoogle(form, name, email, message, source) {
-
     var params = {
       data: {
         'entry.408156996': name,
@@ -26,9 +25,9 @@ $(document).ready(function () {
     formHasSent(form);
   }
 
-    function formHasSent(form) {
-      $('.form-sent, .contact-form').toggleClass('hide');
-    }
+  function formHasSent(form) {
+    $('#form-success').fadeIn().siblings('.modal').fadeOut();
+  }
 
     function validateEmail(email) {
       var val = email.val(),
