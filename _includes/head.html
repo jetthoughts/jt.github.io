@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <meta name="og:url" content="www.jetthoughts.com">
+    <meta name="og:type" content="website">
+    <meta name="og:title" content="{{ page.title }}">
+    <meta name="og:locale" content="en_US">
+
+    <meta name="og:image" content="{{ site.url }}/images/logo_500.jpg">
+    <meta name="og:image:type" content="image/jpeg">
+    <meta name="og:image:width" content="500">
+    <meta name="og:image:height" content="500">
+
+    <meta name="og:image" content="{{ site.url }}/images/jetthoughts_500.jpg">
+    <meta name="og:image:type" content="image/jpeg">
+    <meta name="og:image:width" content="500">
+    <meta name="og:image:height" content="500">
+
+    <meta name="og:site_name" content="JetThoughts">
+    <meta name="og:updated_time" content="{{ site.time }}">
+    <!--TODO: Need to register app and insert app id into tag below, do the same with admins -->
+    <meta name="fb:app_id" content="">
+    <meta name="fb:admins" content="">
+    <meta name="fb:profile_id" content="277156138129">
+
+    <!--TODO: After production deployment need to validate and send application for twitter cards. More info at https://dev.twitter.com/docs/cards/validation/validator -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:creator" content="@jetthoughts">
+
+
+    {% assign first_cat  = page.categories | first %}
+    {% if first_cat == "blog" %}
+    {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 22 }}">
+    <meta name="description" content="{{ page.content | strip_html | truncatewords: 22 }}">
+    {% endif %}
+    {% else %}
+    <meta name="twitter:description" content="Ruby on Rails full stack web and mobile development team. We create Rails apps from scratch, offer support, optimisation and code review, provide RoR consulting services for startups and entrepreneurs. Use AngularJS and Backbone. Follow Agile workflow.">
+    <meta name="description" content="Ruby on Rails full stack web and mobile development team. We create Rails apps from scratch, offer support, optimisation and code review, provide RoR consulting services for startups and entrepreneurs. Use AngularJS and Backbone. Follow Agile workflow.">
+    {% endif %}
+
+    <meta name="twitter:domain" content="www.jetthoughts.com">
+    <meta name="twitter:site" content="@jetthoughts">
+    <meta name="twitter:image:src" content="{{ site.url }}/images/social-logo.jpg">
+
+    <meta name="google-site-verification" content="BE5YTiUkPfkf0Itp9yhMpCekgBkXZoC1ierHGaCdQpQ" />
+    {% asset styles.css %}
+    {% if page.categories == 404 %}
+    {% asset 404 %}
+    {% endif %}
+
+
+    <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32">
+    <link rel="shortcut icon" href="/favicon.ico?v=3">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <!--RSS-->
+    <!--<link href="{{site.url}}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.title }}" />-->
+
+</head>
+<body>

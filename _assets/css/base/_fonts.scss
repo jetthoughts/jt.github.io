@@ -1,0 +1,23 @@
+@font-face {
+  font-family:'Graphik Web';
+  src: url(asset_path('Graphik-Regular.eot'));
+  src: url(asset_path('Graphik-Regular.eot?#iefix')) format('embedded-opentype'),
+  url(asset_path('Graphik-Regular.woff2')) format('woff2'),
+  url(asset_path('Graphik-Regular.woff')) format('woff'),
+  url(asset_path('Graphik-Regular.ttf')) format('truetype'),
+  url(asset_path('Graphik-Regular.svg#Graphik-Regular')) format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'Graphik Web';
+  src: url(asset_path('Graphik-Medium.eot'));
+  src: url(asset_path('Graphik-Medium.eot?#iefix')) format('embedded-opentype'),
+  url(asset_path('Graphik-Medium.woff2')) format('woff2'),
+  url(asset_path('Graphik-Medium.woff')) format('woff'),
+  url(asset_path('Graphik-Medium.ttf')) format('truetype'),
+  url(asset_path('Graphik-Medium.svg#Graphik-Medium')) format('svg');
+  font-weight: 500;
+  font-style: normal;
+}

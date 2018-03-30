@@ -1,0 +1,582 @@
+.main.use-case {
+  background: {
+    image: linear-gradient(45deg, #0072E5, #409FFF);
+    repeat: no-repeat;
+  }
+  display: flex;
+  flex-direction: column;
+
+  .image-wrapper {
+    $image-wrapper: 60vw;
+    @include size($image-wrapper, $image-wrapper);
+    background: {
+      image: url(asset_path('ai_case_main_bg.png'));
+      repeat: no-repeat;
+      size: contain;
+    }
+  
+    position: absolute;
+    right: 0;
+    bottom: -#{$image-wrapper / 4};
+
+    @include respond-to(xs) {
+      opacity: .1;
+    }
+  }
+
+  .wrapper {
+    @extend %content-max-width;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+
+    @include respond-to(md) {
+      padding-top: 3em;
+    }
+  }
+
+  .title {
+    font-size: 10em;
+
+    @include respond-to(md) {
+      font-size: 4em;
+    }
+  }
+  
+  .btn-primary {
+    background-color: transparent;
+    border: 2px solid $white;
+    border-radius: 2px;
+  }
+
+  .subtitle {
+    span {
+      display: inline-block;
+      line-height: 150%;
+      max-width: 300px;
+
+      @media (max-width: $screen-sm) {
+        max-width: 50%;
+        margin-top: 1em;
+      }
+    }
+  }
+
+  .title,
+  .subtitle {
+    max-width: 300px;
+
+    @include respond-to(xs) {
+      max-width: 100%;
+    }
+  }
+}
+
+.case-descriptor {
+  background-color: $bg-sub-bg;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em 0;
+  min-height: 80vh;
+
+  .wrapper {
+    @extend %content-max-width;
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to(md) {
+      min-height: 80vh;
+      justify-content: space-around;
+    }
+
+    @include respond-to(sm) {
+      flex-direction: column;
+    }
+  }
+
+  .title {
+    font-size: 3em;
+    margin-bottom: 2em;
+
+    @include respond-to(sm) {
+      font-size: 2.5em;
+    }
+  }
+
+  .description {
+    color: $desc-color;
+    line-height: 2em;
+  }
+}
+
+.case-subscriptor,
+.challenge {
+  $house-bg-size: 900px;
+  align-items: center;
+  background: {
+    color: $white;
+    image: url(asset_path('message_platform.png')), url(asset_path('house.png')), linear-gradient(#0072E5, #0072E5);
+    repeat: no-repeat;
+    size: $house-bg-size / 1.6, $house-bg-size $house-bg-size / 1.6, $house-bg-size / 1.916 100%;
+    position: 98% 65%, 100% calc(100% + 68px), right center;
+  }
+  display: flex;
+
+  @include respond-to(md) {
+    align-items: flex-start;
+    background-image: none, url(asset_path('house.png')), none;
+    padding-top: 3em;
+  }
+
+  .wrapper {
+    @extend %content-max-width;
+
+    @include respond-to(xs) {
+      padding-bottom: 450px;
+    }
+
+    .title,
+    .description {
+      max-width: 30vw;
+
+      @include respond-to(md) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .title {
+    color: black;
+    font-size: 2.5em;
+    margin-bottom: 2em;
+
+    @include respond-to(sm) {
+      margin: 2em 0;
+    }
+  }
+
+  .description {
+    color: $desc-color;
+    line-height: 1.5em;
+  }
+}
+
+.keys {
+  display: flex;
+  min-height: 50vh;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &.project {
+    background-image: url(asset_path('keys_bg_project.png'));
+  }
+
+  &.values {
+    background-image: url(asset_path('black_iphone.png'));
+    background-size: cover;
+  }
+
+  .keys-list {
+    align-content: center;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+
+    @include respond-to(xs) {
+      flex-direction: column;
+    }
+
+    li {
+      padding: 1em;
+      text-align: center;
+    }
+
+    .label {
+      color: rgba($white, .5);
+      font-size: 1.33em;
+      margin-bottom: 1.1em;
+    }
+
+    .title {
+      color: $white;
+      font-size: 2em;
+    }
+  }
+}
+
+.feedback {
+  background-color: $bg-sub-bg;
+  display: flex;
+  min-height: 50vh;
+
+  &.customer {
+
+    .feedback-block .feedback-text {
+      margin-left: 0;
+    }
+  }
+
+  .feedback-list {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 0;
+
+    li {
+      background-color: $white;
+      padding: 2em;
+      margin: 1em;
+    }
+  }
+
+  .feedback-block {
+    max-width: 580px;
+    min-width: 350px;
+    flex: 1;
+
+    @include respond-to(md) {
+      max-width: 100%;
+      min-width: 200px;
+    }
+
+    &:hover {
+      box-shadow: 10px 10px 20px rgba(black, .05);
+    }
+
+    .author {
+      display: flex;
+      font-weight: 500;
+    }
+
+    .avatar {
+      @include size(42px, 42px);
+      border-radius: 50%;
+
+      &.tyler {
+        background-image: url(asset_path('avatar_tyler.png'));
+      }
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 0.95em;
+    }
+
+    .name {
+      color: black;
+      font-size: 1.3em;
+    }
+
+    .role {
+      color: rgba($dark_grey, .5);
+      font-size: 0.8em;
+      text-transform: uppercase;
+    }
+    .feedback-text {
+      color: #A6A6A6;
+      font-size: 1.1em;
+      margin-top: 4em;
+      margin-left: 57px;
+      line-height: 160%;
+    }
+  }
+}
+
+.challenge {
+  background: {
+    color: $white;
+    image: url(asset_path('web_rocket.png')), linear-gradient(#0072E5, #0072E5);
+    repeat: no-repeat;
+    size: 883px 137%, 385px 100%;
+    position: 100% calc(100% + 248px), right center;
+  }
+  min-height: 676px;
+
+  @include respond-to(md) {
+    background: {
+      image: url(asset_path('web_rocket.png'));
+      position: calc(100% + 390px) calc(100% + 248px);
+    }
+  ;
+  }
+}
+
+.screen-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include respond-to(md) {
+    &.reverse {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .block {
+    flex-basis: 50%;
+    min-width: ($screen-md / 2);
+
+    @include respond-to(md) {
+      flex-basis: 100%;
+      min-width: $screen-xs / 2;
+    }
+
+    &.screen,
+    &.text {
+      min-height: 80vh;
+    }
+
+    &.screen {
+      background: {
+        color: $blue;
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+      }
+
+      @include respond-to(xs) {
+        background-size: contain;
+      }
+
+      &.mvp {
+        background-image: url(asset_path('step_mvp.png'));
+      }
+
+      &.mls {
+        background-image: url(asset_path('step_mls.png'));
+      }
+
+      &.optimization {
+        background-image: url(asset_path('step_optimization.png'));
+      }
+    }
+
+    &.text {
+      align-items: center;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      padding: 0 3em;
+
+      @include respond-to(xs) {
+        padding: 1.5em;
+      }
+
+      .title {
+        color: #000;
+        font-size: 3em;
+        margin-bottom: 2em;
+      }
+
+      .description {
+        color: $desc-color;
+        line-height: 2em;
+      }
+    }
+  }
+}
+
+.technical-challenge {
+  padding-top: 9em;
+
+  .wrapper {
+    @extend %content-max-width;
+
+    > .title {
+      color: rgba($white, .5);
+      text-transform: uppercase;
+    }
+  }
+
+  .row {
+    display: flex;
+
+    @include respond-to(sm) {
+      flex-direction: column;
+      margin-bottom: 2em;
+
+      &.reverse {
+        flex-direction: column-reverse;
+      }
+    }
+    > div {
+      flex: 1;
+    }
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: $screen-md) {
+      max-width: 40vw;
+    }
+
+    .title {
+      font-size: 2em;
+      line-height: 130%;
+      margin-bottom: 1em;
+    }
+
+    .description {
+      color: #737380;
+      font-size: 1em;
+      line-height: 160%;
+    }
+  }
+
+  .image {
+
+    img {
+      @include size(100%, 100%);
+    }
+  }
+}
+
+.tech-stack {
+  background-color: $white;
+  padding: 100px 0 50px;
+  min-height: 500px;
+
+  .wrapper {
+    @extend %content-max-width;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include respond-to(xs) {
+      flex-direction: column;
+    }
+  }
+
+  .icons-block {
+    flex: 1;
+    padding: 0 50px 25px;
+
+    &:first-of-type {
+      border-right: 1px solid rgba(0, 0, 0, .05);
+    }
+
+    @include respond-to(xs) {
+      padding: 0 25px 25px;
+
+      &:first-of-type {
+        border-right: 0;
+      }
+    }
+
+  }
+
+  .title {
+    color: $primary-grey;
+    font-size: 2em;
+    margin-bottom: 5em;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    @include size(80px, 80px);
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .05);
+    margin: 10px;
+
+    background: {
+      image: url(asset_path('vector/css3.svg'));
+      repeat: no-repeat;
+      size: 40px;
+      position: center;
+    }
+  ;
+  }
+
+}
+
+.project-demo {
+  background-color: $white;
+  color: black;
+
+  .wrapper {
+    @extend %content-max-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 600px;
+  }
+
+  .subtitle {
+    color: $blue;
+  }
+
+  .text-block {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    font-size: 2.5em;
+    font-weight: 500;
+    justify-content: center;
+
+    @media (min-width: 1024px) {
+      max-width: 50%;
+    }
+  }
+
+  .switcher {
+    border-top: 1px solid rgba(black, .05);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    margin: 1em 0;
+
+    @include respond-to(md) {
+      padding: 1em 0;
+    }
+
+    @include respond-to(xs) {
+      flex-direction: column;
+    }
+
+    .project-label {
+      border-bottom: 1px solid rgba(white, .5);
+      padding: 0.5em;
+
+      .project {
+        font-size: 1.5em;
+        line-height: 3em;
+      }
+
+      &.active {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.services-in-case,
+.project-demo {
+  min-height: 640px;
+}
+
+%content-max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 80%;
+
+  @media (max-width: $screen-md) {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  @media (min-width: $screen-md * 2) {
+    max-width: 1800px;
+  }
+}

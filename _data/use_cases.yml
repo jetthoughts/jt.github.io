@@ -1,0 +1,12 @@
+agent_inbox:
+  title: 'Agent Inbox'
+  scope: 'web and mobile development'
+  desc: 'Next level for Real Estate Agents Communication. Help to build new platform and deliver on the market'
+opeanpply:
+  title: 'Open Apply'
+  scope: 'web development'
+  desc: 'Next level for Real Estate Agents Communication. Help to build new platform and deliver on the market'
+coach_alba:
+  title: 'Mobile Coach'
+  scope: 'web development'
+  desc: 'Next level for Real Estate Agents Communication. Help to build new platform and deliver on the market'

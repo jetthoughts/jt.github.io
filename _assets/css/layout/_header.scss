@@ -1,0 +1,72 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  overflow: hidden;
+  padding: 25px 35px;
+  @media screen and ($b_laptop) {
+    padding: 21px 30px;
+  }
+  @media screen and ($b_mobile) {
+    padding: 10px 18px;
+  }
+  .logo {
+    float: left;
+    margin-top: 10px;
+    @media screen and ($b_mobile) {
+      margin-top: 7px;
+      max-width: 34px;
+      overflow: hidden;
+    }
+    img {
+      @media screen and ($b_mobile) {
+        width: 158px;
+      }
+    }
+  }
+  .btn-primary {
+    float: right;
+  }
+}
+
+.menu-opener {
+  float: right;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  font-size: 0;
+  line-height: 0;
+  margin-left: 27px;
+  margin-top: 11px;
+  &:before {
+    content: '';
+    position: absolute;
+    background: $white;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 4px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background: $white;
+    height: 1px;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+  }
+}
+
+.menu-open .menu-opener {
+  &:before {
+    @include rotate(45deg);
+    top: 10px;
+  }
+  &:after {
+    @include rotate(-45deg);
+    bottom: 11px;
+  }
+}
