@@ -148,6 +148,7 @@ $(document).ready(function () {
   }
 
   if ($('.uses-cases-slideshow').length) {
+    var usesCasesSlideshow = { isPlay: false }
     var $usesCasesSlideshow = $('.uses-cases-slideshow');
 
     $usesCasesSlideshow.on('init', function(event, slick, currentSlide, nextSlide) {
@@ -237,7 +238,8 @@ $(document).ready(function () {
 
       if (bottom_of_window > bottom_of_object) {
         $this.addClass('animation');
-        if ($this.hasClass('uses-cases')) {
+        if ($this.hasClass('uses-cases') && !usesCasesSlideshow.isPlay) {
+          usesCasesSlideshow.isPlay = true;
           $('.uses-cases-slideshow').slick('slickPlay');
         }
       }
