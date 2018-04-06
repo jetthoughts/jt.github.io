@@ -8,10 +8,6 @@
 
 1. Clone project into your computer
 
-  ```bash
-  git clone https://github.com/jetthoughts/jetthoughts.github.io.git
-  ```
-
 1. Open project root directory
 
 1. Install project dependencies
@@ -38,10 +34,10 @@
 
 1. Write a good commit message based on http://chris.beams.io/posts/git-commit/ with some requirements:
 
-  ```
-  #[issue-number]: Capitalized, short (50 chars or less) summary
+        ```
+        #[issue-number]: Capitalized, short (50 chars or less) summary
 
-  More detailed explanatory ...
-  ```
+        More detailed explanatory ...
+        ```
 
 1. Convert an existing issue into a pull request: `hub pull-request -i [issue-number]`
