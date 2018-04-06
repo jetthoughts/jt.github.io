@@ -221,7 +221,7 @@ $(document).ready(function () {
   });
 
   // scroll go to
-  $('.js-scroll').on('click', function(e){
+  $('.js-scroll').on('click', function(e) {
     var href =  $(this).attr('href');
     $('html, body').stop().animate({ 
       scrollTop: href === "#" ? 0 : $(href).offset().top
@@ -229,7 +229,7 @@ $(document).ready(function () {
     e.preventDefault();
   });
 
-  $(window).scroll( function(){
+  $(window).scroll( function() {
     $('.section, .wave-wrapper').each(function() {
       var $this = $(this);
       var bottom_of_object = $this.offset().top + $this.outerHeight() / 5;
@@ -245,7 +245,7 @@ $(document).ready(function () {
     });
   });
 
-  document.onkeydown = function(e){
+  document.onkeydown = function(e) {
     if (e.keyCode == 32 && !$('body.modal-open').length) {
       $('.section').each(function() {
           var windowHeight = $(window).height();
@@ -253,12 +253,12 @@ $(document).ready(function () {
           var windowTop = $(window).scrollTop();
 
           if (windowTop < thisOffset) {
-            $('html, body').stop().animate({ 
+            $('html, body').stop().animate({
               scrollTop: thisOffset
             }, 300);
             return false
           } else {
-            $('html, body').stop().animate({ 
+            $('html, body').stop().animate({
               scrollTop: (windowTop + windowHeight)
             }, 250);
           }
