@@ -8,19 +8,25 @@
 
 1. Clone project into your computer
 
-    `git clone https://github.com/jetthoughts/jetthoughts.github.io.git`
+  ```bash
+  git clone https://github.com/jetthoughts/jetthoughts.github.io.git
+  ```
 
 1. Open project root directory
 
 1. Install project dependencies
 
-    `./bin/setup`
+    ```bash
+    ./bin/setup
+    ```
 
 ## How to use
 
 1. To run jekyll server
 
-    `yarn run jekyll`
+    ```bash
+    yarn run jekyll
+    ```
 
 ## How to contribute
 
@@ -36,7 +42,6 @@
   #[issue-number]: Capitalized, short (50 chars or less) summary
 
   More detailed explanatory ...
-
   ```
 
 1. Convert an existing issue into a pull request: `hub pull-request -i [issue-number]`
