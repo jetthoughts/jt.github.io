@@ -8,19 +8,19 @@
 
 1. Clone project into your computer
 
-    git clone https://github.com/jetthoughts/jetthoughts.github.io.git
+    `git clone https://github.com/jetthoughts/jetthoughts.github.io.git`
 
 1. Open project root directory
 
 1. Install project dependencies
 
-    ./bin/setup
+    `./bin/setup`
 
 ## How to use
 
 1. To run jekyll server
 
-    yarn run jekyll
+    `yarn run jekyll`
 
 ## How to contribute
 
@@ -28,7 +28,7 @@
 
 1. Create new branch for this issue
 
-    git checkout -b #[issue-number]-issue-name
+    `git checkout -b #[issue-number]-issue-name`
 
 1. Write a good commit message based on http://chris.beams.io/posts/git-commit/ with some requirements:
 
