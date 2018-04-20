@@ -172,10 +172,9 @@ p {
   font-size: 20px;
   line-height: 1em;
   color: $white;
-  img {
+  svg {
     display: inline-block;
     vertical-align: top;
-    width: 100%;
     height: auto;
   }
   @media screen and ($b_laptop) {
