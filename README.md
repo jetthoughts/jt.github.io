@@ -13,7 +13,7 @@
 1. Install project dependencies
 
     ```bash
-    ./bin/setup
+    bin/setup
     ```
 
 ## How to use
@@ -21,7 +21,7 @@
 1. To run jekyll server
 
     ```bash
-    yarn run jekyll
+    bin/server
     ```
 
 ## How to contribute
