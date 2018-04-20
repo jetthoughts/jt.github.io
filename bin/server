@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+require 'pathname'
+require 'fileutils'
+include FileUtils
+
+# path to your application root.
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+
+def system!(*args)
+  system(*args) || abort("\n== Command #{args} failed ==")
+end
+
+chdir APP_ROOT do
+  # This script is a starting the server to show up your application.
+  # It uses livereload, so you don't need to stop it manually.
+
+  puts '== Running server =='
+  system!('bundle exec jekyll s --livereload')
+end
