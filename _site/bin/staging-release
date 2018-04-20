@@ -1,0 +1,3 @@
+#!/bin/sh
+
+surge -p ./_site -d jetthoughts.surge.sh $@
