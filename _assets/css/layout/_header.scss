@@ -6,25 +6,9 @@
   z-index: 2;
   overflow: hidden;
   padding: 25px 35px;
-  @media screen and ($b_laptop) {
-    padding: 21px 30px;
-  }
-  @media screen and ($b_mobile) {
-    padding: 10px 18px;
-  }
   .logo {
     float: left;
     margin-top: 10px;
-    @media screen and ($b_mobile) {
-      margin-top: 7px;
-      max-width: 34px;
-      overflow: hidden;
-    }
-    img {
-      @media screen and ($b_mobile) {
-        width: 158px;
-      }
-    }
   }
   .btn-primary {
     float: right;
@@ -68,5 +52,26 @@
   &:after {
     @include rotate(-45deg);
     bottom: 11px;
+  }
+}
+
+@media screen and ($b_laptop) {
+  .header {
+    padding: 21px 30px;
+  }
+}
+@media screen and ($b_mobile) {
+  .header {
+    padding: 10px 18px;
+    .logo {
+      margin-top: 7px;
+      max-width: 34px;
+      overflow: hidden;
+      img {
+        @media screen and ($b_mobile) {
+          width: 158px;
+        }
+      }
+    }
   }
 }
