@@ -1,4 +1,7 @@
 @media screen and ($b_tablet) {
+  .container {
+    padding: 0 40px;
+  }
   .main-screen__title {
     font-size: 100px;
     line-height: 130px;

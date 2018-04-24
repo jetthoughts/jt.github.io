@@ -1,4 +1,11 @@
 @media screen and ($b_laptop) {
+  .logo {
+    max-width: 147px;
+    font-size: 17px;
+  }
+  .container {
+    max-width: $max-width_laptop;
+  }
   .header {
     padding: 21px 30px;
   }
