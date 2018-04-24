@@ -58,12 +58,12 @@ textarea,
 select {
   color: inherit;
   vertical-align: nmiddle;
-  font: 100% 'Graphik Web', Arial, sans-serif;
+  font: 100% Arial, sans-serif;
 }
 /* General settings */
 body {
   margin: 0;
-  font: 500 16px/20px 'Graphik Web', Arial, sans-serif;
+  font: 500 16px/20px Arial, sans-serif;
   color: $white;
   background: $gray;
   min-width: $min-width;
@@ -102,6 +102,14 @@ p {
   line-height: 17px;
   margin: 0 0 15px;
   color: $light_grey;
+  @media screen and ($b_mobile) {
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 28px;
+  }
+  @media screen and ($b_small_mobile_height) {
+    margin-bottom: 10px;
+  }
 }
 .form-control {
   @include placeholder(#737380);
@@ -110,6 +118,12 @@ p {
   margin: 0 auto;
   padding: 0 15px;
   max-width: $max-width;
+  @media screen and ($b_laptop) {
+    max-width: $max-width_laptop;
+  }
+  @media screen and ($b_tablet) {
+    padding: 0 40px;
+  }
   @media screen and (max-width: 359px) {
     padding: 0 15px;
   }
@@ -162,5 +176,9 @@ p {
     display: inline-block;
     vertical-align: top;
     height: auto;
+  }
+  @media screen and ($b_laptop) {
+    max-width: 147px;
+    font-size: 17px;
   }
 }
