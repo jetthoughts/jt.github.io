@@ -16,9 +16,7 @@
       </ul>
     </div>
   </div>
-
   <div class="uses-cases-slideshow">
-
     <div class="uses-cases-slideshow__item">
       <div class="uses-cases-box">
         <div class="container">
@@ -27,11 +25,14 @@
             <p class="uses-cases-box__text fade-down delay-6">Next level for Real Estate Agents Communication. Help to build new platform and deliver on the market.</p>
             <a class="uses-cases-box__more fade-down delay-7" href="https://agentinbox.com" target="_blank">Learn more</a>
           </div>
-          <div class="uses-cases-slideshow__figure">{% asset use-cases_img_01.png %}</div>
+          <picture class="uses-cases-slideshow__figure">
+            <source srcset="{% asset use-cases_img_01.webp @path %}" type="image/webp">
+            <source srcset="{% asset use-cases_img_01.png @path %}" type="image/jpeg">
+            <img src="{% asset use-cases_img_01.png @path %}" alt="Agent Inbox">
+          </picture>
         </div>
-      </div><!-- uses-cases-box -->
-    </div><!-- uses-cases-slideshow__item -->
-
+      </div>
+    </div>
     <div class="uses-cases-slideshow__item">
       <div class="uses-cases-box">
         <div class="container">
@@ -40,11 +41,14 @@
             <p class="uses-cases-box__text fade-down delay-6">Next level for Real Estate Agents Communication. Help to build new platform and deliver on the market.</p>
             <a class="uses-cases-box__more fade-down delay-7" href="https://www.openapply.com/" target="_blank">Learn more</a>
           </div>
-          <div class="uses-cases-slideshow__figure">{% asset use-cases_img_02.png %}</div>
+          <picture class="uses-cases-slideshow__figure">
+            <source srcset="{% asset use-cases_img_02.webp @path %}" type="image/webp">
+            <source srcset="{% asset use-cases_img_02.png @path %}" type="image/jpeg">
+            <img src="{% asset use-cases_img_02.png @path %}" alt="Open Apply">
+          </picture>
         </div>
-      </div><!-- uses-cases-box -->
-    </div><!-- uses-cases-slideshow__item -->
-
+      </div>
+    </div>
     <div class="uses-cases-slideshow__item">
       <div class="uses-cases-box">
         <div class="container">
@@ -53,14 +57,13 @@
             <p class="uses-cases-box__text fade-down delay-6">Next level for Real Estate Agents Communication. Help to build new platform and deliver on the market.</p>
             <a class="uses-cases-box__more fade-down delay-7" href="https://mobilecoach.com" target="_blank">Learn more</a>
           </div>
-          <div class="uses-cases-slideshow__figure">{% asset use-cases_img_03.png %}</div>
+          <picture class="uses-cases-slideshow__figure">
+            <source srcset="{% asset use-cases_img_03.webp @path %}" type="image/webp">
+            <source srcset="{% asset use-cases_img_03.png @path %}" type="image/jpeg">
+            <img src="{% asset use-cases_img_03.png @path %}" alt="Mobile Coach">
+          </picture>
         </div>
-      </div><!-- uses-cases-box -->
-    </div><!-- uses-cases-slideshow__item -->
-
-  </div><!-- uses-cases-slideshow -->
+      </div>
+    </div>
+  </div>
 </section>
-
-
-
-

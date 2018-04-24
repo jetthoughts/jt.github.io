@@ -43,10 +43,6 @@
   cursor: pointer;
   font-size: 0;
   line-height: 0;
-  @media screen and ($b_mobile) {
-    top: 40px;
-    right: 40px;
-  }
   @include transition(0.3s);
   &:hover {
     opacity: .8;
@@ -79,20 +75,12 @@
     font-size: 0;
     line-height: 0;
     margin: 0 -50px 118px;
-    @media screen and ($b_mobile) {
-      margin: 0;
-    }
   }
   .col {
     width: 50%;
     display: inline-block;
     vertical-align: text-top;
     padding: 0 50px;
-    @media screen and ($b_mobile) {
-      padding: 0 0 30px;
-      display: block;
-      width: 100%;
-    }
   }
   .invalid {
     .form-control {
@@ -118,19 +106,10 @@
   color: #737380;
   font-size: 13px;
   line-height: 17px;
-  @media screen and ($b_mobile) {
-    font-size: 10px;
-    line-height: 14px;
-    display: block;
-    margin-bottom: 15px;
-  }
 }
 .contact-form__message {
   margin: 0 0 108px;
   position: relative;
-  @media screen and ($b_mobile) {
-    margin-bottom: 30px;
-  }
   &:before {
     content: '';
     position: absolute;
@@ -139,9 +118,6 @@
     background: #424249;
     height: 1px;
     top: 65px;
-    @media screen and ($b_mobile) {
-      top: 41px;
-    }
   }
   &:after {
     content: '';
@@ -151,16 +127,10 @@
     background: #424249;
     height: 1px;
     bottom: 65px;
-    @media screen and ($b_mobile) {
-      bottom: 41px;
-    }
   }
   .form-control {
     height: 200px;
     resize: none;
-    @media screen and ($b_mobile) {
-      height: 120px;
-    }
   }
 }
 .form-control {
@@ -173,11 +143,6 @@
   line-height: 65px;
   color: $white;
   padding: 0;
-  @media screen and ($b_mobile) {
-    height: 40px;
-    font-size: 16px;
-    line-height: 40px;
-  }
 }
 
 .form-success {

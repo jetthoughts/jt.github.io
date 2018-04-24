@@ -1,0 +1,223 @@
+@media screen and ($b_laptop) {
+  .header {
+    padding: 21px 30px;
+  }
+  .main-screen .tbl {
+    padding: 106px 0 134px;
+  }
+  .main-screen .cell+.cell {
+    width: 192px;
+    padding-left: 13px;
+  }
+  .main-screen__title {
+    font-size: 136px;
+    line-height: 164px;
+  }
+  .blog-nav {
+    right: -21px;
+    &:before {
+      right: -37px;
+    }
+  }
+  .blog-nav__item {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 25px 0;
+  }
+  .blog-nav__link {
+    max-height: 67px;
+    &:before {
+      right: -38px;
+    }
+  }
+  .btn-scroll-down {
+    margin-left: 12px;
+  }
+  .animation .btn-scroll-down {
+    bottom: 104px;
+  }
+  .services .col .holder {
+    max-width: 517px;
+  }
+  .services .cell {
+    padding-bottom: 32px;
+  }
+  .services__description {
+    max-width: 341px;
+  }
+  .services__title {
+    font-size: 41px;
+    line-height: 55px;
+    max-height: 441px;
+  }
+  .services-slideshow .services__title {
+    font-size: 31px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .services-slideshow-controls {
+    left: 184px;
+    bottom: 129px;
+  }
+  .services-slideshow-controls__btn+.services-slideshow-controls__btn {
+    margin-left: 36px;
+  }
+  .services-slideshow-current-slide {
+    top: 256px;
+    left: 524px;
+    font-size: 31px;
+  }
+  .animation .services-slideshow-current-slide {
+    top: 86px;
+  }
+  .uses-cases {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .uses-cases-controls {
+    padding: 76px 72px 0 0;
+    margin: 0 -54px;
+  }
+  .uses-cases-controls__item {
+    padding: 0 54px;
+  }
+  .uses-cases-controls__link {
+    padding-bottom: 24px;
+  }
+  .uses-cases-controls__title {
+    margin-bottom: 6px;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .uses-cases-controls__descr {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .uses-cases-box {
+    padding: 157px 0 40px;
+  }
+  .uses-cases-box__descr {
+    max-width: 427px;
+  }
+  .uses-cases-box__title {
+    font-size: 136px;
+    line-height: 145px;
+    margin-bottom: 60px;
+  }
+  .uses-cases-box__text {
+    min-height: 140px;
+    max-width: 256px;
+    margin-bottom: 30px;
+    padding-bottom: 13px;
+    &:before {
+      width: 68px;
+    }
+  }
+  .uses-cases-box__more {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .posts .small-head {
+    margin-bottom: 50px;
+  }
+  .post-slideshow {
+    margin: 0 -8px;
+  }
+  .post-slideshow .slick-arrow {
+    margin-top: -8px;
+    width: 17px;
+    height: 17px;
+  }
+  .post-slideshow .slick-prev {
+    left: -43px;
+  }
+  .post-slideshow .slick-next {
+    right: -43px;
+  }
+  .post-slideshow__item {
+    padding: 0 8px;
+  }
+  .post-slideshow__link {
+    padding: 43px 38px;
+    height: 427px;
+    &:before {
+      top: 36px;
+      right: 46px;
+    }
+    &:after {
+      top: 31px;
+      right: 46px;
+    }
+  }
+  .post-slideshow__title {
+    font-size: 31px;
+    line-height: 40px;
+    max-height: 123px;
+  }
+  .lets-talk .cell:first-child {
+    width: 340px;
+    padding-right: 13px;
+  }
+  .lets-talk__title {
+    font-size: 137px;
+    line-height: 164px;
+    margin-bottom: 43px;
+  }
+  .wave-wrapper {
+    padding-top: 32px;
+  }
+  .wave {
+    padding-left: 166px;
+    &:before {
+      width: 162px;
+    }
+    &:after {
+      width: 1708px;
+      margin-left: 4px;
+    }
+    img {
+      width: 316px;
+    }
+  }
+  .footer {
+    padding: 130px 0;
+    font-size: 14px;
+    line-height: 22px;
+    .cell:first-child {
+      padding-right: 13px;
+      width: 256px;
+    }
+    .cell:last-child {
+      padding-left: 13px;
+      padding-bottom: 20px;
+      width: 333px;
+    }
+    .logo {
+      margin-bottom: 14px;
+    }
+    .copyright {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .small-head {
+      margin-bottom: 14px;
+    }
+  }
+  .social-links {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .social-links__item {
+    margin-bottom: 24px;
+  }
+  .contacts-list {
+    margin-bottom: 50px;
+  }
+  .contacts-list__item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .contacts-list__item+.contacts-list__item {
+    margin-left: 107px;
+  }
+}
