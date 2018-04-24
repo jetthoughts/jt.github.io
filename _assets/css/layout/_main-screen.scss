@@ -167,114 +167,12 @@
   @include transition(0.5s 1.2s);
 }
 
-
-
-
-@media screen and ($b_laptop) {
-  .main-screen .tbl {
-    padding: 106px 0 134px;
-  }
-  .main-screen .cell+.cell {
-    width: 192px;
-    padding-left: 13px;
-  }
-  .main-screen__title {
-    font-size: 136px;
-    line-height: 164px;
-  }
-  .blog-nav {
-    right: -21px;
-    &:before {
-      right: -37px;
-    }
-  }
-  .blog-nav__item {
-    font-size: 15px;
-    line-height: 22px;
-    padding: 25px 0;
-  }
-  .blog-nav__link {
-    max-height: 67px;
-    &:before {
-      right: -38px;
-    }
-  }
-  .btn-scroll-down {
-    margin-left: 12px;
-  }
-  .animation .btn-scroll-down {
-    bottom: 104px;
-  }
-}
-@media screen and ($b_tablet) {
-  .main-screen__title {
-    font-size: 100px;
-    line-height: 130px;
-  }
-  .blog-nav {
-    right: 0;
-    &:before {
-      right: -20px;
-    }
-  }
-  .blog-nav__link:before {
-    right: -21px;
-  }
-}
-@media screen and ($b_mobile) {
-  .main-screen .tbl {
-    padding: 0 0 40px;
-  }
-  .main-screen .cell+.cell {
-    width: 100%;
-    padding-left: 0;
-  }
-  .main-screen__title {
-    font-size: 67px;
-    line-height: 80px;
-  }
-  .blog-nav {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    right: -100%;
-    background: $gray;
-    z-index: 4;
-    padding: 60px 40px 40px;
-    text-align: center;
-    overflow-y: auto;
-    @include transition(0s);
-    &:before {
-      display: none;
-    }
-  }
-  .menu-open .blog-nav {
-    right: 0;
-  }
-  .btn-scroll-down {
-    opacity: 1;
-    bottom: 181px;
-    margin-left: 0;
-    @include transition(0s);
-  }
-  .animation .btn-scroll-down {
-    bottom: 181px;
-  }
-}
-@media screen and ($b_small_mobile_height) {
-  .btn-scroll-down {
-    bottom: 30px;
-  }
-  .animation .btn-scroll-down {
-    bottom: 30px;
-  }
-}
 @media screen and (max-width: 359px) {
   .btn-scroll-down {
     bottom: 30px;
   }
 }
+
 @media screen and ($b_no_mobile) {
   .animation .btn-scroll-down {
     bottom: 169px;

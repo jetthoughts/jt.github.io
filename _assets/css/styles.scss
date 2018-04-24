@@ -1,11 +1,14 @@
 @import 'vendor/_slick';
+
 @import 'utils/_colors';
 @import 'utils/_mixins';
 @import 'utils/_breakpoints';
+
 @import 'base/_general';
 @import 'base/_animate';
 @import 'base/_fonts';
 @import 'base/_buttons';
+
 @import 'layout/_header';
 @import 'layout/_main-screen';
 @import 'layout/_services';
@@ -14,3 +17,8 @@
 @import 'layout/_lets-talk';
 @import 'layout/_modal';
 @import 'layout/_footer';
+
+@import 'media/_laptop';
+@import 'media/_tablet';
+@import 'media/_mobile';
+@import 'media/_small_mobile';
