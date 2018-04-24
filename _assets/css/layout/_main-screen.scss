@@ -124,20 +124,51 @@
 
 .btn-scroll-down {
   width: 15px;
-  height: 29px;
+  height: 28px;
   margin-left: 14px;
-  background: url(asset_path('vector/arrow-down.svg')) no-repeat 50% 50%;
-  background-size: 100% auto;
   font-size: 0;
   line-height: 0;
   position: absolute;
   bottom: 250px;
   opacity: 0;
-  @include transition(0.5s 1.2s);
+  &:before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #fff;
+    right: 0;
+    left: 7px;
+    @include transition(0.3s);
+  }
+  &:after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 0;
+    left: 2px;
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+    @include rotate(45deg);
+    @include transition(0.3s);
+  }
   &:hover {
     opacity: .8;
+    &:before {
+      background: #fff;
+    }
+    &:after {
+      border-color: #fff;
+    }
   }
+  @include transition(0.5s 1.2s);
 }
+
+
+
 
 @media screen and ($b_laptop) {
   .main-screen .tbl {
@@ -169,8 +200,6 @@
     }
   }
   .btn-scroll-down {
-    width: 13px;
-    height: 25px;
     margin-left: 12px;
   }
   .animation .btn-scroll-down {
@@ -224,16 +253,20 @@
     right: 0;
   }
   .btn-scroll-down {
-    @include transition(0s);
     opacity: 1;
     bottom: 181px;
-    width: 14px;
-    height: 28px;
     margin-left: 0;
+    @include transition(0s);
+  }
+  .animation .btn-scroll-down {
+    bottom: 181px;
   }
 }
 @media screen and ($b_small_mobile_height) {
   .btn-scroll-down {
+    bottom: 30px;
+  }
+  .animation .btn-scroll-down {
     bottom: 30px;
   }
 }
