@@ -6,9 +6,14 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - run: gem install jekyll
       - run: bundle install
-      - run: bundle exec jekyll s
+      - run: bundle exec jekyll build
+      - deploy:
+          name: Deploy Release to GitHub
+          command: |
+            if [ $CIRCLE_BRANCH == 'develop' ]; then
+              bash .circleci/setup-github.sh
+            fi
 workflows:
   version: 2
   build:
