@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  run_jekyll:
+  deploy:
     docker:
       - image: circleci/ruby:2.4.3-node-browsers
     steps:
@@ -18,4 +18,4 @@ workflows:
   version: 2
   build:
     jobs:
-      - run_jekyll
+      - deploy

@@ -1,10 +1,12 @@
-# git config --global user.name "${CIRCLE_PROJECT_USERNAME}"
-# git config --global user.email "${CIRCLE_PROJECT_USERNAME}@${CIRCLE_PROJECT_USERNAME}"
-# git checkout -b deploy
-# git add -f _site/
-# git commit -a -m "Deploy"
-# git checkout master
-# git checkout deploy _site/**
-#   - rsync -av _site/ .
-#   - rm -rf _site
-# git add . && git commit -a -m "Deploy ${CIRCLE_BUILD_NUM}" && git push origin master
+find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
+mv _site/* .
+rm -R _site/
+
+git config user.name "$USER_NAME"
+git config user.email "$USER_EMAIL"
+
+git add -fA
+git commit --allow-empty -m "$(git log -1 --pretty=%B)"
+git push origin develop:master
+
+echo "deployed successfully"
