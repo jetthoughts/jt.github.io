@@ -1,20 +1,16 @@
 version: 2
 jobs:
-  one:
+  run_jekyll:
     docker:
-      - image: circleci/ruby:2.4.1
+      - image: circleci/ruby:2.4.3-node-browsers
     steps:
       - checkout
-      - run: echo "A first hello"
-  two:
-    docker:
-      - image: circleci/ruby:2.4.1
-    steps:
-      - checkout
-      - run: echo "A second hello"
+      - run: npm install
+      - run: gem install jekyll
+      - run: bundle install
+      - run: bundle exec jekyll s
 workflows:
   version: 2
-  one_and_two:
+  build:
     jobs:
-      - one
-      - two
+      - run_jekyll
