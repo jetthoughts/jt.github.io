@@ -29,7 +29,6 @@ exclude:
   - gulpfile
   - package
   - yarn
-  - redirects
 
 assets:
   compress:
