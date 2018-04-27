@@ -20,6 +20,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-assets
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
