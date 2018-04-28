@@ -19,6 +19,7 @@
   "devDependencies": {
     "gulp": "~3.9.1",
     "gulp-imagemin": "~4",
-    "imagemin-pngcrush": "~5"
+    "imagemin-pngcrush": "~5",
+    "surge": "^0.20.1"
   }
 }
