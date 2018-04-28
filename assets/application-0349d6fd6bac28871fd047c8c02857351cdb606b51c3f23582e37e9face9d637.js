@@ -263,4 +263,33 @@ $(document).ready(function () {
       e.preventDefault();
     };
   }
+
+
+
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  var active = false;
+
+  var lazyLoad = function() {
+    if (active === false) {
+      active = true;
+
+      setTimeout(function() {
+        lazyImages.forEach(function(lazyImage) {
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.srcset = lazyImage.dataset.srcset;
+            lazyImage.classList.remove("lazy");
+
+		  document.removeEventListener("scroll", lazyLoad);
+		  window.removeEventListener("resize", lazyLoad);
+		  window.removeEventListener("orientationchange", lazyLoad);
+        });
+
+        active = false;
+      }, 500);
+    }
+  };
+
+  document.addEventListener("scroll", lazyLoad);
+  window.addEventListener("resize", lazyLoad);
+  window.addEventListener("orientationchange", lazyLoad);
 });
