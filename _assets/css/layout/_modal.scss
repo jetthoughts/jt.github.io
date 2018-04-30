@@ -110,25 +110,13 @@
 .contact-form__message {
   margin: 0 0 108px;
   position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: #424249;
-    top: 65px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: #424249;
-    bottom: 65px;
-  }
   .form-control {
     height: 200px;
     resize: none;
+  }
+  textarea {
+    padding-top: 15px;
+    line-height: 24px;
   }
 }
 .form-control {
@@ -138,10 +126,8 @@
   height: 65px;
   background: none;
   font-size: 16px;
-  line-height: 20px;
   color: $white;
   padding: 0;
-  margin-top: 15px;
 }
 
 .form-success {
