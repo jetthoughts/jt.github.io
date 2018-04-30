@@ -1,28 +1,28 @@
-  <section class="section main-screen">
-    <div class="video-cover mobile-hide">
-      <video playsinline autoplay muted loop>
-        <source src="{% asset video_bg.mp4 @path %}" type="video/mp4">
-      </video>
-    </div>
-    <div class="container">
-      <div class="tbl">
-        <div class="cell">
-          <h1 class="main-screen__title fade-up delay-2">Make it <span class="fade-up delay-3">possible</span></h1>
-        </div>
-        <div class="cell">
-          <span href="#" class="js-menu-opener menu-opener mobile-show">Menu</span>
-          <ul class="blog-nav">
-            {% assign delay = 2 %}
-            {% for post_hash in site.data.posts %}
-              {% assign post = post_hash[1] %}
-              {% assign delay = delay | plus: 1 %}
-              <li class="blog-nav__item fade-right delay-{{ delay }}">
-                <a href="{{ post.url }}" target="_blank" class="blog-nav__link">{{ post.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+<section class="section main-screen">
+  <div class="video-cover mobile-hide">
+    <video playsinline autoplay muted loop preload>
+      <source src="{% asset video_bg.mp4 @path %}" type="video/mp4">
+    </video>
+  </div>
+  <div class="container">
+    <div class="tbl">
+      <div class="cell">
+        <h1 class="main-screen__title fade-up delay-2">Make it <span class="fade-up delay-3">possible</span></h1>
       </div>
-      <a href="#services" class="btn-scroll-down js-scroll"></a>
+      <div class="cell">
+        <span href="#" class="js-menu-opener menu-opener mobile-show">Menu</span>
+        <ul class="blog-nav">
+          {% assign delay = 2 %}
+          {% for post_hash in site.data.posts %}
+            {% assign post = post_hash[1] %}
+            {% assign delay = delay | plus: 1 %}
+            <li class="blog-nav__item fade-right delay-{{ delay }}">
+              <a href="{{ post.url }}" target="_blank" class="blog-nav__link">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-  </section>
+    <a href="#services" class="btn-scroll-down js-scroll"></a>
+  </div>
+</section>

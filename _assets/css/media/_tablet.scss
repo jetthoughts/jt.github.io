@@ -1,0 +1,79 @@
+@media screen and ($b_tablet) {
+  .main-screen__title {
+    font-size: 100px;
+    line-height: 130px;
+  }
+  .blog-nav {
+    right: 0;
+    &:before {
+      right: -20px;
+    }
+  }
+  .blog-nav__link:before {
+    right: -21px;
+  }
+  .services .col .holder {
+    padding: 0 40px;
+    margin: 0;
+    max-width: 100%;
+  }
+  .services .col+.col .holder {
+    padding: 0 40px;
+    margin: 0;
+  }
+  .services__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .services-slideshow .services__title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+  .services-slideshow-controls {
+    left: 40px;
+  }
+  .uses-cases-controls {
+   padding: 50px 0;
+   margin: 0 -15px;
+ }
+ .uses-cases-controls__item {
+    padding: 0 15px;
+  }
+  .uses-cases-box__title {
+    font-size: 80px;
+    line-height: 90px;
+  }
+  .posts .small-head {
+    margin-bottom: 29px;
+  }
+  .post-slideshow__link {
+    padding: 15px;
+  }
+  .post-slideshow__title {
+    font-size: 24px;
+    line-height: 34px;
+    max-height: 133px;
+  }
+  .lets-talk .cell:first-child {
+    width: 150px;
+  }
+  .lets-talk__title {
+    font-size: 80px;
+    line-height: 90px;
+  }
+  .wave-wrapper {
+    padding-top: 0;
+  }
+  .wave {
+    padding-left: 100px;
+    &:before {
+      width: 98px;
+    }
+    svg {
+      width: 300px;
+    }
+  }
+  .footer {
+    padding: 50px 0 30px;
+  }
+}

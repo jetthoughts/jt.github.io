@@ -20,10 +20,15 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-assets
+  - jekyll-redirect-from
 exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - bin
+  - gulpfile
+  - package
+  - yarn
 
 assets:
   compress:

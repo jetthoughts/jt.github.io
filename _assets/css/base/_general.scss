@@ -58,12 +58,12 @@ textarea,
 select {
   color: inherit;
   vertical-align: nmiddle;
-  font: 100% 'Graphik Web', Arial, sans-serif;
+  font: 100% Arial, sans-serif;
 }
 /* General settings */
 body {
   margin: 0;
-  font: 500 16px/20px 'Graphik Web', Arial, sans-serif;
+  font: 500 16px/20px Arial, sans-serif;
   color: $white;
   background: $gray;
   min-width: $min-width;
@@ -172,10 +172,9 @@ p {
   font-size: 20px;
   line-height: 1em;
   color: $white;
-  img {
+  svg {
     display: inline-block;
     vertical-align: top;
-    width: 100%;
     height: auto;
   }
   @media screen and ($b_laptop) {

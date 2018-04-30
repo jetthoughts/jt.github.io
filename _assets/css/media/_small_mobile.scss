@@ -1,0 +1,29 @@
+@media screen and ($b_small_mobile_height) {
+  .btn-scroll-down {
+    bottom: 30px;
+  }
+  .animation .btn-scroll-down {
+    bottom: 30px;
+  }
+  .services .cell {
+    padding: 0 0 45px;
+  }
+  .services__figure {
+    bottom: -50px;
+  }
+  .services__description {
+    max-width: 80%;
+  }
+  .services-slideshow-controls {
+    bottom: 50px;
+  }
+  .uses-cases-slideshow__figure {
+    width: 75%;
+  }
+  .lets-talk__title span {
+    display: inline-block;
+  }
+  .wave-wrapper {
+    padding-top: 0;
+  }
+}
