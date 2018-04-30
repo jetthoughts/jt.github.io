@@ -164,7 +164,7 @@ $(document).ready(function () {
       autoplaySpeed: 5000,
       pauseOnHover: false,
       pauseOnFocus: false,
-      speed: 1000,
+      speed: 300,
       responsive: [
         {
           breakpoint: 768,
