@@ -110,12 +110,10 @@
 .contact-form__message {
   margin: 0 0 108px;
   position: relative;
+  padding-top: 15px;
   .form-control {
     height: 200px;
     resize: none;
-  }
-  textarea {
-    padding-top: 15px;
     line-height: 24px;
   }
 }
