@@ -1189,26 +1189,12 @@ p {
 
 .contact-form__message {
   margin: 0 0 108px;
-  position: relative; }
-  .contact-form__message:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: #424249;
-    height: 1px;
-    top: 65px; }
-  .contact-form__message:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: #424249;
-    height: 1px;
-    bottom: 65px; }
+  position: relative;
+  padding-top: 15px; }
   .contact-form__message .form-control {
     height: 200px;
-    resize: none; }
+    resize: none;
+    line-height: 24px; }
 
 .form-control {
   border: solid #424249;
@@ -1217,8 +1203,8 @@ p {
   height: 65px;
   background: none;
   font-size: 16px;
-  line-height: 65px;
   color: #fff;
+  line-height: 65px;
   padding: 0; }
 
 .form-success {
@@ -1782,11 +1768,8 @@ p {
     margin-bottom: 15px; }
 
   .contact-form__message {
-    margin-bottom: 30px; }
-    .contact-form__message:before {
-      top: 41px; }
-    .contact-form__message:after {
-      bottom: 41px; }
+    margin-bottom: 30px;
+    padding-top: 0; }
     .contact-form__message .form-control {
       height: 120px; }
 
