@@ -68,6 +68,14 @@ body {
   background: $gray;
   min-width: $min-width;
 }
+.fonts-loaded body {
+  font-family: 'Graphik Web', Arial, sans-serif;
+  input,
+  textarea,
+  select {
+    font-family: 'Graphik Web', Arial, sans-serif;
+  }
+}
 h1 {
   font-weight: 500;
   margin: 0 0 15px;
