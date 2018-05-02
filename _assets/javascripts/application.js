@@ -168,8 +168,6 @@ $(document).ready(function () {
     };
   }
 
-
-
   var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
   var active = false;
 
@@ -179,13 +177,13 @@ $(document).ready(function () {
 
       setTimeout(function() {
         lazyImages.forEach(function(lazyImage) {
-            lazyImage.src = lazyImage.dataset.src;
-            lazyImage.srcset = lazyImage.dataset.srcset;
-            lazyImage.classList.remove("lazy");
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.srcset = lazyImage.dataset.srcset;
+          lazyImage.classList.remove("lazy");
 
-		  document.removeEventListener("scroll", lazyLoad);
-		  window.removeEventListener("resize", lazyLoad);
-		  window.removeEventListener("orientationchange", lazyLoad);
+          document.removeEventListener("scroll", lazyLoad);
+          window.removeEventListener("resize", lazyLoad);
+          window.removeEventListener("orientationchange", lazyLoad);
         });
 
         active = false;
@@ -196,4 +194,10 @@ $(document).ready(function () {
   document.addEventListener("scroll", lazyLoad);
   window.addEventListener("resize", lazyLoad);
   window.addEventListener("orientationchange", lazyLoad);
+});
+
+var font = new FontFaceObserver('Graphik Web');
+
+font.load().then(function () {
+  document.documentElement.className += " fonts-loaded";
 });
