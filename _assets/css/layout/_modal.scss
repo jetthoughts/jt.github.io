@@ -110,27 +110,11 @@
 .contact-form__message {
   margin: 0 0 108px;
   position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: #424249;
-    height: 1px;
-    top: 65px;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    background: #424249;
-    height: 1px;
-    bottom: 65px;
-  }
+  padding-top: 15px;
   .form-control {
     height: 200px;
     resize: none;
+    line-height: 24px;
   }
 }
 .form-control {
@@ -140,8 +124,8 @@
   height: 65px;
   background: none;
   font-size: 16px;
-  line-height: 65px;
   color: $white;
+  line-height: 65px;
   padding: 0;
 }
 
