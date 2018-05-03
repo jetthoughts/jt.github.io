@@ -1,7 +1,8 @@
 <section class="section main-screen">
   <div class="video-cover mobile-hide">
-    <video playsinline autoplay muted loop preload>
-      <source src="{% asset video_bg.mp4 @path %}" type="video/mp4">
+    <video playsinline autoplay muted loop class="video-bg">
+      <source src="{% asset video_bg_hd.m4v @path %}" data-src="{% asset video_bg_full_hd.m4v @path %}" type="video/mp4">
+      <source src="{% asset video_bg_hd.mp4 @path %}" data-src="{% asset video_bg_full_hd.mp4 @path %}" type="video/mp4">
     </video>
   </div>
   <div class="container">

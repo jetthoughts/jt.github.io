@@ -197,7 +197,23 @@ $(document).ready(function () {
 });
 
 var font = new FontFaceObserver('Graphik Web');
-
 font.load().then(function () {
   document.documentElement.className += " fonts-loaded";
 });
+
+(function() {
+  var bgVideos = [].slice.call(document.querySelectorAll("video.video-bg"));
+
+  if (window.innerWidth < 1366) {
+    return false
+  }
+
+  bgVideos.forEach(function(video) {
+    for (var source in video.children) {
+      var videoSource = video.children[source];
+      if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+        videoSource.src = videoSource.dataset.src;
+      }
+    }
+  });
+})();
