@@ -166,7 +166,9 @@
       border-color: #fff;
     }
   }
-  @include transition(0.5s 1.2s);
+  @media screen and ($b_no_mobile) {
+    @include transition(0.5s 1.2s);
+  }
 }
 
 @media screen and (max-width: 359px) {

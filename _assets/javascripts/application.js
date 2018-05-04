@@ -133,7 +133,7 @@ $(document).ready(function () {
     e.preventDefault();
   });
 
-  $(window).scroll( function() {
+  var animationAppear = function() {
     $('.section, .wave-wrapper').each(function() {
       var $this = $(this);
       var bottom_of_object = $this.offset().top + $this.outerHeight() / 5;
@@ -147,6 +147,11 @@ $(document).ready(function () {
         }
       }
     });
+  }
+  animationAppear();
+
+  $(window).scroll( function() {
+    animationAppear();
   });
 
   document.onkeydown = function(e) {
