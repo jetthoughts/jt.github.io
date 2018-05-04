@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+
 $(document).ready(function () {
   var contactForm = $('.contact-form'),
     submitBtn = $('.contact-form__btn'),

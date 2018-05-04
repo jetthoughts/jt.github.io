@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-inner-declarations */
 //= require form
 
 $(document).ready(function () {
@@ -48,7 +51,7 @@ $(document).ready(function () {
   }
 
   if ($('.uses-cases-slideshow').length) {
-    var usesCasesState = { isPlay: false }
+    var usesCasesState = { isPlay: false };
     var $usesCasesSlideshow = $('.uses-cases-slideshow');
 
     $usesCasesSlideshow.on('init', function(event, slick, currentSlide, nextSlide) {
@@ -84,7 +87,7 @@ $(document).ready(function () {
 
       $usesCasesSlideshow.slick('slickGoTo', indexElement, false);
       onAtive(indexElement);
-      return false
+      return false;
     });
 
     function onAtive(index) {
@@ -125,7 +128,7 @@ $(document).ready(function () {
   $('.js-scroll').on('click', function(e) {
     var href =  $(this).attr('href');
     $('html, body').stop().animate({
-      scrollTop: href === "#" ? 0 : $(href).offset().top
+      scrollTop: href === '#' ? 0 : $(href).offset().top
     }, 700);
     e.preventDefault();
   });
@@ -149,26 +152,26 @@ $(document).ready(function () {
   document.onkeydown = function(e) {
     if (e.keyCode == 32 && !$('body.modal-open').length) {
       $('.section').each(function() {
-          var windowHeight = $(window).height();
-          var thisOffset = $(this).offset().top;
-          var windowTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var thisOffset = $(this).offset().top;
+        var windowTop = $(window).scrollTop();
 
-          if (windowTop < thisOffset) {
-            $('html, body').stop().animate({
-              scrollTop: thisOffset
-            }, 300);
-            return false
-          } else {
-            $('html, body').stop().animate({
-              scrollTop: (windowTop + windowHeight)
-            }, 250);
-          }
+        if (windowTop < thisOffset) {
+          $('html, body').stop().animate({
+            scrollTop: thisOffset
+          }, 300);
+          return false;
+        } else {
+          $('html, body').stop().animate({
+            scrollTop: (windowTop + windowHeight)
+          }, 250);
+        }
       });
       e.preventDefault();
-    };
-  }
+    }
+  };
 
-  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  var lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
   var active = false;
 
   var lazyLoad = function() {
@@ -179,11 +182,11 @@ $(document).ready(function () {
         lazyImages.forEach(function(lazyImage) {
           lazyImage.src = lazyImage.dataset.src;
           lazyImage.srcset = lazyImage.dataset.srcset;
-          lazyImage.classList.remove("lazy");
+          lazyImage.classList.remove('lazy');
 
-          document.removeEventListener("scroll", lazyLoad);
-          window.removeEventListener("resize", lazyLoad);
-          window.removeEventListener("orientationchange", lazyLoad);
+          document.removeEventListener('scroll', lazyLoad);
+          window.removeEventListener('resize', lazyLoad);
+          window.removeEventListener('orientationchange', lazyLoad);
         });
 
         active = false;
@@ -191,9 +194,9 @@ $(document).ready(function () {
     }
   };
 
-  document.addEventListener("scroll", lazyLoad);
-  window.addEventListener("resize", lazyLoad);
-  window.addEventListener("orientationchange", lazyLoad);
+  document.addEventListener('scroll', lazyLoad);
+  window.addEventListener('resize', lazyLoad);
+  window.addEventListener('orientationchange', lazyLoad);
 
   // fixed section height (for tests)
   var getUrlParameter = function getUrlParameter(sParam) {
@@ -210,7 +213,7 @@ $(document).ready(function () {
       }
     }
   };
-  const height = getUrlParameter('height');
+  var height = getUrlParameter('height');
   if (height) {
     $('.section').css('min-height', height);
     seelctors = [
@@ -226,20 +229,20 @@ $(document).ready(function () {
 
 var font = new FontFaceObserver('Graphik Web');
 font.load().then(function () {
-  document.documentElement.className += " fonts-loaded";
+  document.documentElement.className += ' fonts-loaded';
 });
 
 (function() {
-  var bgVideos = [].slice.call(document.querySelectorAll("video.video-bg"));
+  var bgVideos = [].slice.call(document.querySelectorAll('video.video-bg'));
 
   if (window.innerWidth < 1366) {
-    return false
+    return false;
   }
 
   bgVideos.forEach(function(video) {
     for (var source in video.children) {
       var videoSource = video.children[source];
-      if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+      if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
         videoSource.src = videoSource.dataset.src;
       }
     }
