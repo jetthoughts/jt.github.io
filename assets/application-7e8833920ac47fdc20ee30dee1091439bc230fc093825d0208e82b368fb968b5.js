@@ -220,7 +220,7 @@ $(document).ready(function () {
   // scroll go to
   $('.js-scroll').on('click', function(e) {
     var href =  $(this).attr('href');
-    $('html, body').stop().animate({ 
+    $('html, body').stop().animate({
       scrollTop: href === "#" ? 0 : $(href).offset().top
     }, 700);
     e.preventDefault();
@@ -290,6 +290,34 @@ $(document).ready(function () {
   document.addEventListener("scroll", lazyLoad);
   window.addEventListener("resize", lazyLoad);
   window.addEventListener("orientationchange", lazyLoad);
+
+  // fixed section height (for tests)
+  var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+      sURLVariables = sPageURL.split('&'),
+      sParameterName,
+      i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+
+      if (sParameterName[0] === sParam) {
+        return sParameterName[1] === undefined ? true : sParameterName[1];
+      }
+    }
+  };
+  const height = getUrlParameter('height');
+  if (height) {
+    $('.section').css('min-height', height);
+    seelctors = [
+      '.lets-talk .cell',
+      '.services .cell',
+      '.main-screen .tbl',
+      '.modal__holder',
+      '.uses-cases-box'
+    ].join(', ');
+    $(seelctors).css('height', height);
+  }
 });
 
 var font = new FontFaceObserver('Graphik Web');
