@@ -208,7 +208,7 @@ p {
   @media screen and (max-width: 1367px) {
     .container {
       max-width: 1034px; } }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1024px) {
     .container {
       padding: 0 40px; } }
   @media screen and (max-width: 359px) {
@@ -523,8 +523,7 @@ p {
   line-height: 0;
   position: absolute;
   bottom: 250px;
-  opacity: 0;
-  transition: 0.5s 1.2s; }
+  opacity: 0; }
   .btn-scroll-down:before {
     content: '';
     z-index: 2;
@@ -554,6 +553,9 @@ p {
       background: #fff; }
     .btn-scroll-down:hover:after {
       border-color: #fff; }
+  @media screen and (min-width: 768px) {
+    .btn-scroll-down {
+      transition: 0.5s 1.2s; } }
 
 @media screen and (max-width: 359px) {
   .btn-scroll-down {
@@ -603,6 +605,9 @@ p {
     right: 0;
     transition: 1.5s 0.5s;
     background: #1b1b1f; }
+  .services__figure svg {
+    width: 100%;
+    height: auto; }
 
 .animation .services__figure:before {
   left: 100%; }
@@ -1004,6 +1009,7 @@ p {
   vertical-align: bottom;
   padding: 50px 45px;
   height: 500px;
+  width: 1%;
   background: #1b1b1f;
   position: relative;
   transition: background 0.3s; }
@@ -1209,6 +1215,7 @@ p {
     line-height: 24px; }
 
 .form-control {
+  box-shadow: none;
   border: solid #424249;
   border-width: 0 0 1px;
   width: 100%;
@@ -1294,8 +1301,7 @@ p {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
-  line-height: 20px;
-  padding-top: 15px; }
+  line-height: 20px; }
 
 .contacts-list__item + .contacts-list__item {
   margin-left: 126px; }
@@ -1508,7 +1514,7 @@ p {
 
   .contacts-list__item + .contacts-list__item {
     margin-left: 107px; } }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
   .main-screen__title {
     font-size: 100px;
     line-height: 130px; }
@@ -1529,6 +1535,10 @@ p {
   .services .col + .col .holder {
     padding: 0 40px;
     margin: 0; }
+
+  .services__description {
+    display: block;
+    margin: 0 auto; }
 
   .services__title {
     font-size: 30px;
@@ -1626,8 +1636,7 @@ p {
   .btn-scroll-down {
     opacity: 1;
     bottom: 181px;
-    margin-left: 0;
-    transition: 0s; }
+    margin-left: 0; }
 
   .animation .btn-scroll-down {
     bottom: 181px; }
@@ -1645,7 +1654,8 @@ p {
     padding: 30px 0; }
 
   .services__description {
-    max-width: 290px; }
+    max-width: 290px;
+    margin: 0; }
 
   .services__title {
     font-size: 30px;
