@@ -1,29 +1,33 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+
+
 $(document).ready(function () {
   var contactForm = $('.contact-form'),
-      submitBtn = $('.contact-form__btn'),
-      requiredFields = $('[required]');
+    submitBtn = $('.contact-form__btn'),
+    requiredFields = $('[required]');
 
-    function postToGoogle(form, name, email, message, source) {
-      var params = {
-        data: {
-          'entry.408156996': name,
-          'entry.1818089031': email,
-          'entry.1509418088': message,
-          'entry.1693009463': source
-        },
-        type: 'POST',
-        dataType: 'xml'
-      };
+  function postToGoogle(form, name, email, message, source) {
+    var params = {
+      data: {
+        'entry.408156996': name,
+        'entry.1818089031': email,
+        'entry.1509418088': message,
+        'entry.1693009463': source
+      },
+      type: 'POST',
+      dataType: 'xml'
+    };
 
-      fetch('https://docs.google.com/forms/d/19gksTm0W2HhbBV1jmaHO9O4wPGoO0KC2zEZkrCIwKsg/formResponse', params)
+    fetch('https://docs.google.com/forms/d/19gksTm0W2HhbBV1jmaHO9O4wPGoO0KC2zEZkrCIwKsg/formResponse', params)
       .then(function (res) {
-        return res.json()
+        return res.json();
       })
       .then(function (jsn) {
-        formHasSent(form)
+        formHasSent(form);
       });
-      formHasSent(form);
-    }
+    formHasSent(form);
+  }
 
   function formHasSent(form) {
     $('#form-success').fadeIn().siblings('.modal').fadeOut();
@@ -31,7 +35,7 @@ $(document).ready(function () {
 
   function validateEmail(email) {
     var val = email.val(),
-    pat = new RegExp(/.+@.+\..+/i);
+      pat = new RegExp(/.+@.+\..+/i);
     return pat.test(val);
   }
 
@@ -42,21 +46,21 @@ $(document).ready(function () {
 
   requiredFields.keyup(function () {
     var self = $(this),
-    form = self.parents('.contact-form');
+      form = self.parents('.contact-form');
     checkRequired(self);
     checkValidity(form);
   });
 
   requiredFields.on('blur', function () {
     var self = $(this),
-    form = self.parents('.contact-form');
+      form = self.parents('.contact-form');
     checkRequired(self);
     checkValidity(form);
   });
 
   function checkValidity(form) {
     var _email = form.find('.email'),
-    _message = form.find('.message-txt');
+      _message = form.find('.message-txt');
     form.toggleClass('invalid', !(validateEmail(_email) && requiredInput(_message)));
   }
 
@@ -82,12 +86,12 @@ $(document).ready(function () {
   submitBtn.on('click', function (e) {
     e.preventDefault();
     var self = $(this),
-    form = self.parents('.contact-form:not(.invalid)'),
-    requiredInputs = self.parents('form').find('[required]'),
-    _name = form.find('.name').val(),
-    _email = form.find('.email').val(),
-    _message = form.find('.message-txt').val(),
-    _source = form.data('source');
+      form = self.parents('.contact-form:not(.invalid)'),
+      requiredInputs = self.parents('form').find('[required]'),
+      _name = form.find('.name').val(),
+      _email = form.find('.email').val(),
+      _message = form.find('.message-txt').val(),
+      _source = form.data('source');
     if (form.length) {
       postToGoogle(form, _name, _email, _message, _source);
     } else {
@@ -95,6 +99,10 @@ $(document).ready(function () {
     }
   });
 });
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-inner-declarations */
+
 
 $(document).ready(function () {
   // scroll animation
@@ -144,7 +152,7 @@ $(document).ready(function () {
   }
 
   if ($('.uses-cases-slideshow').length) {
-    var usesCasesState = { isPlay: false }
+    var usesCasesState = { isPlay: false };
     var $usesCasesSlideshow = $('.uses-cases-slideshow');
 
     $usesCasesSlideshow.on('init', function(event, slick, currentSlide, nextSlide) {
@@ -180,7 +188,7 @@ $(document).ready(function () {
 
       $usesCasesSlideshow.slick('slickGoTo', indexElement, false);
       onAtive(indexElement);
-      return false
+      return false;
     });
 
     function onAtive(index) {
@@ -221,7 +229,7 @@ $(document).ready(function () {
   $('.js-scroll').on('click', function(e) {
     var href =  $(this).attr('href');
     $('html, body').stop().animate({
-      scrollTop: href === "#" ? 0 : $(href).offset().top
+      scrollTop: href === '#' ? 0 : $(href).offset().top
     }, 700);
     e.preventDefault();
   });
@@ -245,26 +253,26 @@ $(document).ready(function () {
   document.onkeydown = function(e) {
     if (e.keyCode == 32 && !$('body.modal-open').length) {
       $('.section').each(function() {
-          var windowHeight = $(window).height();
-          var thisOffset = $(this).offset().top;
-          var windowTop = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var thisOffset = $(this).offset().top;
+        var windowTop = $(window).scrollTop();
 
-          if (windowTop < thisOffset) {
-            $('html, body').stop().animate({
-              scrollTop: thisOffset
-            }, 300);
-            return false
-          } else {
-            $('html, body').stop().animate({
-              scrollTop: (windowTop + windowHeight)
-            }, 250);
-          }
+        if (windowTop < thisOffset) {
+          $('html, body').stop().animate({
+            scrollTop: thisOffset
+          }, 300);
+          return false;
+        } else {
+          $('html, body').stop().animate({
+            scrollTop: (windowTop + windowHeight)
+          }, 250);
+        }
       });
       e.preventDefault();
-    };
-  }
+    }
+  };
 
-  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  var lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
   var active = false;
 
   var lazyLoad = function() {
@@ -275,11 +283,11 @@ $(document).ready(function () {
         lazyImages.forEach(function(lazyImage) {
           lazyImage.src = lazyImage.dataset.src;
           lazyImage.srcset = lazyImage.dataset.srcset;
-          lazyImage.classList.remove("lazy");
+          lazyImage.classList.remove('lazy');
 
-          document.removeEventListener("scroll", lazyLoad);
-          window.removeEventListener("resize", lazyLoad);
-          window.removeEventListener("orientationchange", lazyLoad);
+          document.removeEventListener('scroll', lazyLoad);
+          window.removeEventListener('resize', lazyLoad);
+          window.removeEventListener('orientationchange', lazyLoad);
         });
 
         active = false;
@@ -287,9 +295,9 @@ $(document).ready(function () {
     }
   };
 
-  document.addEventListener("scroll", lazyLoad);
-  window.addEventListener("resize", lazyLoad);
-  window.addEventListener("orientationchange", lazyLoad);
+  document.addEventListener('scroll', lazyLoad);
+  window.addEventListener('resize', lazyLoad);
+  window.addEventListener('orientationchange', lazyLoad);
 
   // fixed section height (for tests)
   var getUrlParameter = function getUrlParameter(sParam) {
@@ -306,7 +314,7 @@ $(document).ready(function () {
       }
     }
   };
-  const height = getUrlParameter('height');
+  var height = getUrlParameter('height');
   if (height) {
     $('.section').css('min-height', height);
     seelctors = [
@@ -322,20 +330,20 @@ $(document).ready(function () {
 
 var font = new FontFaceObserver('Graphik Web');
 font.load().then(function () {
-  document.documentElement.className += " fonts-loaded";
+  document.documentElement.className += ' fonts-loaded';
 });
 
 (function() {
-  var bgVideos = [].slice.call(document.querySelectorAll("video.video-bg"));
+  var bgVideos = [].slice.call(document.querySelectorAll('video.video-bg'));
 
   if (window.innerWidth < 1366) {
-    return false
+    return false;
   }
 
   bgVideos.forEach(function(video) {
     for (var source in video.children) {
       var videoSource = video.children[source];
-      if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+      if (typeof videoSource.tagName === 'string' && videoSource.tagName === 'SOURCE') {
         videoSource.src = videoSource.dataset.src;
       }
     }

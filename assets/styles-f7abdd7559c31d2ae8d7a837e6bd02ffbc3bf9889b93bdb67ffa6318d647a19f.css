@@ -70,7 +70,7 @@
 
 @font-face {
   font-family: 'Graphik Web';
-  src: url("/assets/Graphik-Medium-9ef6e425eef019dadf24b2b0cdf0e848de623d4eb2e66a4d0d0a2655a103f8ac.woff2") format("woff2"), url("/assets/Graphik-Medium-f9183ec8049ddebf43fecdb59b61c13ded1b7216a2b5f9593ca6e22544cb7eba.woff") format("woff"), url("/assets/Graphik-Medium-b08920ea182bb93a3aaf6cbab25114491614bd4dc3d39c5e16bdd2b45fd49365.ttf") format("truetype");
+  src: url(/assets/Graphik-Medium-9ef6e425eef019dadf24b2b0cdf0e848de623d4eb2e66a4d0d0a2655a103f8ac.woff2) format("woff2"), url(/assets/Graphik-Medium-f9183ec8049ddebf43fecdb59b61c13ded1b7216a2b5f9593ca6e22544cb7eba.woff) format("woff"), url(/assets/Graphik-Medium-b08920ea182bb93a3aaf6cbab25114491614bd4dc3d39c5e16bdd2b45fd49365.ttf) format("truetype");
   font-weight: 500;
   font-style: normal; }
 /* General Reset */
