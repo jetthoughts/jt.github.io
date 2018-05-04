@@ -1,29 +1,29 @@
 $(document).ready(function () {
   var contactForm = $('.contact-form'),
-      submitBtn = $('.contact-form__btn'),
-      requiredFields = $('[required]');
+    submitBtn = $('.contact-form__btn'),
+    requiredFields = $('[required]');
 
-    function postToGoogle(form, name, email, message, source) {
-      var params = {
-        data: {
-          'entry.408156996': name,
-          'entry.1818089031': email,
-          'entry.1509418088': message,
-          'entry.1693009463': source
-        },
-        type: 'POST',
-        dataType: 'xml'
-      };
+  function postToGoogle(form, name, email, message, source) {
+    var params = {
+      data: {
+        'entry.408156996': name,
+        'entry.1818089031': email,
+        'entry.1509418088': message,
+        'entry.1693009463': source
+      },
+      type: 'POST',
+      dataType: 'xml'
+    };
 
-      fetch('https://docs.google.com/forms/d/19gksTm0W2HhbBV1jmaHO9O4wPGoO0KC2zEZkrCIwKsg/formResponse', params)
+    fetch('https://docs.google.com/forms/d/19gksTm0W2HhbBV1jmaHO9O4wPGoO0KC2zEZkrCIwKsg/formResponse', params)
       .then(function (res) {
-        return res.json()
+        return res.json();
       })
       .then(function (jsn) {
-        formHasSent(form)
+        formHasSent(form);
       });
-      formHasSent(form);
-    }
+    formHasSent(form);
+  }
 
   function formHasSent(form) {
     $('#form-success').fadeIn().siblings('.modal').fadeOut();
@@ -31,7 +31,7 @@ $(document).ready(function () {
 
   function validateEmail(email) {
     var val = email.val(),
-    pat = new RegExp(/.+@.+\..+/i);
+      pat = new RegExp(/.+@.+\..+/i);
     return pat.test(val);
   }
 
@@ -42,21 +42,21 @@ $(document).ready(function () {
 
   requiredFields.keyup(function () {
     var self = $(this),
-    form = self.parents('.contact-form');
+      form = self.parents('.contact-form');
     checkRequired(self);
     checkValidity(form);
   });
 
   requiredFields.on('blur', function () {
     var self = $(this),
-    form = self.parents('.contact-form');
+      form = self.parents('.contact-form');
     checkRequired(self);
     checkValidity(form);
   });
 
   function checkValidity(form) {
     var _email = form.find('.email'),
-    _message = form.find('.message-txt');
+      _message = form.find('.message-txt');
     form.toggleClass('invalid', !(validateEmail(_email) && requiredInput(_message)));
   }
 
@@ -82,12 +82,12 @@ $(document).ready(function () {
   submitBtn.on('click', function (e) {
     e.preventDefault();
     var self = $(this),
-    form = self.parents('.contact-form:not(.invalid)'),
-    requiredInputs = self.parents('form').find('[required]'),
-    _name = form.find('.name').val(),
-    _email = form.find('.email').val(),
-    _message = form.find('.message-txt').val(),
-    _source = form.data('source');
+      form = self.parents('.contact-form:not(.invalid)'),
+      requiredInputs = self.parents('form').find('[required]'),
+      _name = form.find('.name').val(),
+      _email = form.find('.email').val(),
+      _message = form.find('.message-txt').val(),
+      _source = form.data('source');
     if (form.length) {
       postToGoogle(form, _name, _email, _message, _source);
     } else {
