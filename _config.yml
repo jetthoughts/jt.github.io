@@ -14,12 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 name: JetThoughts
-url: http://www.jetthoughts.com
+url: https://www.jetthoughts.com
 
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-assets
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
