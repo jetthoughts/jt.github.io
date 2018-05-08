@@ -9,6 +9,7 @@ group :jekyll_plugins do
    gem 'jekyll-feed'
    gem 'jekyll-assets'
    gem 'jekyll-minifier'
+   gem 'jekyll-redirect-from'
    gem 'jekyll-sitemap'
 end
 
