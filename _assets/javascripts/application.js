@@ -3,7 +3,37 @@
 /* eslint-disable no-inner-declarations */
 //= require form
 
+var getUrlParameter = function getUrlParameter(sParam) {
+  var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+    sURLVariables = sPageURL.split('&'),
+    sParameterName,
+    i;
+
+  for (i = 0; i < sURLVariables.length; i++) {
+    sParameterName = sURLVariables[i].split('=');
+
+    if (sParameterName[0] === sParam) {
+      return sParameterName[1] === undefined ? true : sParameterName[1];
+    }
+  }
+};
+
 $(document).ready(function () {
+  var heightParam = getUrlParameter('height');
+  var stopAnimationParam = getUrlParameter('stop_animation');
+  // fixed section height (for tests)
+  if (heightParam) {
+    $('.section').css('min-height', heightParam);
+    var selectors = [
+      '.lets-talk .cell',
+      '.services .cell',
+      '.main-screen .tbl',
+      '.modal__holder',
+      '.uses-cases-box'
+    ].join(', ');
+    $(selectors).css('height', heightParam);
+    $('.lets-talk .cell').eq(1).css('height', 'auto');
+  }
   // scroll animation
   setTimeout(function() {
     $('.header, .main-screen').addClass('animation');
@@ -68,7 +98,7 @@ $(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      autoplaySpeed: 5000,
+      autoplaySpeed: stopAnimationParam ? 10000000 : 5000,
       pauseOnHover: false,
       pauseOnFocus: false,
       speed: 300,
@@ -202,34 +232,6 @@ $(document).ready(function () {
   document.addEventListener('scroll', lazyLoad);
   window.addEventListener('resize', lazyLoad);
   window.addEventListener('orientationchange', lazyLoad);
-
-  // fixed section height (for tests)
-  var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-      sURLVariables = sPageURL.split('&'),
-      sParameterName,
-      i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-      sParameterName = sURLVariables[i].split('=');
-
-      if (sParameterName[0] === sParam) {
-        return sParameterName[1] === undefined ? true : sParameterName[1];
-      }
-    }
-  };
-  var height = getUrlParameter('height');
-  if (height) {
-    $('.section').css('min-height', height);
-    seelctors = [
-      '.lets-talk .cell',
-      '.services .cell',
-      '.main-screen .tbl',
-      '.modal__holder',
-      '.uses-cases-box'
-    ].join(', ');
-    $(seelctors).css('height', height);
-  }
 });
 
 var font = new FontFaceObserver('Graphik Web');
