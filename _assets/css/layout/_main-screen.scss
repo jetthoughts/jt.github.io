@@ -171,12 +171,6 @@
   }
 }
 
-@media screen and (max-width: 359px) {
-  .btn-scroll-down {
-    bottom: 30px;
-  }
-}
-
 @media screen and ($b_no_mobile) {
   .animation .btn-scroll-down {
     bottom: 169px;

@@ -150,13 +150,13 @@
     display: table-cell;
     vertical-align: middle;
     width: 1%;
-    height: 100vh;
     background: none;
   }
   .lets-talk .cell {
     display: block;
-    height: auto;
-    background: red;
+  }
+  .lets-talk .cell:last-child {
+    height: auto !important;
   }
   .lets-talk__title {
     font-size: 77px;
