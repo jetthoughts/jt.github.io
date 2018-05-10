@@ -21,17 +21,34 @@ var getUrlParameter = function getUrlParameter(sParam) {
 $(document).ready(function () {
   var heightParam = getUrlParameter('height');
   var stopAnimationParam = getUrlParameter('stop_animation');
+  var activeScreenHeight = false;
+  var screenWidth = $(window).width();
+  var setScreenHeight = function() {
+    var screenHeight = $(window).height();
+    $('.js-min-full-vh').css('min-height', screenHeight);
+    $('.js-full-vh').css('height', screenHeight);
+  }
+  var checkOrientation = function() {
+    if (activeScreenHeight === false) {
+      activeScreenHeight = true;
+      var currentScreenWidth = $(window).width();
+      if (screenWidth !== currentScreenWidth) {
+        setScreenHeight();
+        screenWidth = currentScreenWidth
+      }
+      setTimeout(function() {
+        activeScreenHeight = false;
+      }, 200);
+    }
+  }
+  if ($(window).width() <= 1024 && !heightParam) {
+    setScreenHeight();
+    window.addEventListener('resize', checkOrientation);
+  }
   // fixed section height (for tests)
   if (heightParam) {
-    $('.section').css('min-height', heightParam);
-    var selectors = [
-      '.lets-talk .cell',
-      '.services .cell',
-      '.main-screen .tbl',
-      '.modal__holder',
-      '.uses-cases-box'
-    ].join(', ');
-    $(selectors).css('height', heightParam);
+    $('.js-min-full-vh').css('min-height', heightParam);
+    $('.js-full-vh').css('height', heightParam);
     $('.lets-talk .cell').eq(1).css('height', 'auto');
   }
   // scroll animation
