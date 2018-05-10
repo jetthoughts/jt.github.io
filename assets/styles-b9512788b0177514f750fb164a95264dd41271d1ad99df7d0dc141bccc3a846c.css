@@ -619,6 +619,8 @@ p {
   text-align: left; }
 
 .services__title {
+  font-weight: 500;
+  display: block;
   font-size: 48px;
   line-height: 64px;
   max-height: 517px;
@@ -809,6 +811,8 @@ p {
   max-width: 500px; }
 
 .uses-cases-box__title {
+  display: block;
+  font-weight: 500;
   font-size: 160px;
   line-height: 170px;
   margin-bottom: 70px; }
@@ -1051,6 +1055,8 @@ p {
     color: #fff; }
 
 .post-slideshow__title {
+  display: block;
+  font-weight: 500;
   font-size: 36px;
   line-height: 47px;
   max-height: 144px;
@@ -1065,6 +1071,8 @@ p {
   height: 100vh; }
 
 .lets-talk__title {
+  display: block;
+  font-weight: 500;
   font-size: 160px;
   line-height: 192px;
   margin-bottom: 50px; }
