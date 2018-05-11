@@ -41,6 +41,7 @@ $(document).ready(function () {
       }, 200);
     }
   }
+  // set fixed height on mobile
   if ($(window).width() <= 1024 && !heightParam) {
     setScreenHeight();
     window.addEventListener('resize', checkOrientation);
