@@ -557,9 +557,6 @@ p {
     .btn-scroll-down {
       transition: 0.5s 1.2s; } }
 
-@media screen and (max-width: 359px) {
-  .btn-scroll-down {
-    bottom: 30px; } }
 @media screen and (min-width: 768px) {
   .animation .btn-scroll-down {
     bottom: 169px;
@@ -1745,13 +1742,13 @@ p {
     display: table-cell;
     vertical-align: middle;
     width: 1%;
-    height: 100vh;
     background: none; }
 
   .lets-talk .cell {
-    display: block;
-    height: auto;
-    background: red; }
+    display: block; }
+
+  .lets-talk .cell:last-child {
+    height: auto !important; }
 
   .lets-talk__title {
     font-size: 77px;
@@ -1851,6 +1848,29 @@ p {
   .contacts-list__item + .contacts-list__item {
     margin-left: 40px; } }
 @media screen and (max-height: 479px) {
+  .section {
+    padding: 20px 0; }
+
+  .main-screen {
+    padding-top: 0;
+    padding-bottom: 0; }
+
+  .uses-cases {
+    padding-top: 0;
+    padding-bottom: 0; }
+
+  .uses-cases-box {
+    padding-top: 0; }
+
+  .uses-cases-box__text {
+    margin-bottom: 15px; }
+
+  .uses-cases-slideshow .slick-arrow {
+    bottom: 20px; }
+
+  .post-slideshow__link {
+    height: 200px; }
+
   .btn-scroll-down {
     bottom: 30px; }
 
@@ -1876,4 +1896,26 @@ p {
     display: inline-block; }
 
   .wave-wrapper {
-    padding-top: 0; } }
+    padding-top: 0; }
+
+  .services .col + .col .holder {
+    padding-top: 30px;
+    padding-bottom: 100px; } }
+@media screen and (max-width: 359px) {
+  .services .col .holder {
+    padding: 0 15px; }
+
+  .services .col + .col .holder {
+    padding: 0 15px; }
+
+  .uses-cases-slideshow .slick-prev {
+    left: 15px; }
+
+  .uses-cases-slideshow .slick-next {
+    left: 65px; }
+
+  .services-slideshow-controls {
+    left: 15px; }
+
+  .main-screen.animation .btn-scroll-down {
+    bottom: 60px; } }
