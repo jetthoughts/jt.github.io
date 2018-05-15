@@ -44,11 +44,11 @@
   }
   .btn-scroll-down {
     opacity: 1;
-    bottom: 181px;
+    bottom: 160px;
     margin-left: 0;
   }
   .animation .btn-scroll-down {
-    bottom: 181px;
+    bottom: 160px;
   }
   .services .col {
     float: none;
@@ -227,6 +227,15 @@
     .cell {
       display: block;
       width: auto;
+    }
+    .contacts {
+      display: table;
+      .contacts-list {
+        margin-top: 50px;
+      }
+      .description {
+        display: table-header-group;
+      }
     }
     .cell:first-child {
       display: block;
