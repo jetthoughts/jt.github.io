@@ -30,6 +30,7 @@ exclude:
   - gulpfile
   - package
   - yarn
+  - src
 
 assets:
   compress:
