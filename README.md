@@ -63,3 +63,12 @@
     - Click Generate & download
     - Put the fonts in the folder _assets/fonts
     - Connect fonts in _assets/css/base/_fonts.scss
+
+## Source media files are in folder:
+- src/fonts
+- src/images
+- src/video
+
+## Mockups are in:
+- [Google Drive](https://drive.google.com/drive/u/1/folders/1yVjuYSwctYQmBLw7YHrWmHIPHVq70ox7)
+- [Figma.com](https://www.figma.com/file/wmRuaLaG0wwnOE9kBWfnMn/Jetthoughts-2?node-id=1%3A2)
