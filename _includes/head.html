@@ -7,52 +7,35 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <meta property="og:url" content="www.jetthoughts.com">
+    <meta property="og:url" content="{{ site.url }}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:locale" content="en_US">
 
-    <meta property="og:image" content="https://www.jetthoughts.com/logo_500.png">
-    <meta property="og:description" content="">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.url }}/logo_500.png">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="500">
     <meta property="og:image:height" content="500">
 
-    <meta property="og:image" content="https://www.jetthoughts.com/jetthoughts_500.png">
-    <meta property="og:description" content="">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="500">
-    <meta property="og:image:height" content="500">
-
-    <meta property="og:site_name" content="JetThoughts">
+    <meta property="og:site_name" content="{{ site.name }}">
     <meta property="og:updated_time" content="{{ site.time }}">
+
     <!--TODO: Need to register app and insert app id into tag below, do the same with admins -->
+
     <meta name="fb:app_id" content="">
     <meta name="fb:admins" content="">
     <meta name="fb:profile_id" content="277156138129">
 
     <!--TODO: After production deployment need to validate and send application for twitter cards. More info at https://dev.twitter.com/docs/cards/validation/validator -->
+
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:creator" content="@jetthoughts">
-
-    {% assign first_cat  = page.categories | first %}
-    {% if first_cat == "blog" %}
-      {% if page.description %}
-        <meta name="twitter:description" content="{{ page.description }}">
-        <meta name="description" content="{{ page.description }}">
-      {% else %}
-        <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 22 }}">
-        <meta name="description" content="{{ page.content | strip_html | truncatewords: 22 }}">
-      {% endif %}
-    {% else %}
-      <meta name="twitter:description" content="Ruby on Rails full stack web and mobile development team. We create Rails apps from scratch, offer support, optimisation and code review, provide RoR consulting services for startups and entrepreneurs. Use AngularJS and Backbone. Follow Agile workflow.">
-      <meta name="description" content="Ruby on Rails full stack web and mobile development team. We create Rails apps from scratch, offer support, optimisation and code review, provide RoR consulting services for startups and entrepreneurs. Use AngularJS and Backbone. Follow Agile workflow.">
-    {% endif %}
-
+    <meta name="twitter:description" content="{{ site.description }}">
     <meta name="twitter:domain" content="www.jetthoughts.com">
     <meta name="twitter:site" content="@jetthoughts">
-    <meta name="twitter:image" content="https://www.jetthoughts.com/social-logo.png">
+    <meta name="twitter:image" content="{{ site.url }}/social-logo.png">
 
     {% asset styles.css @inline %}
 
