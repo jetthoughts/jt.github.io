@@ -8,6 +8,7 @@ $(document).ready(function () {
 
   function postToGoogle(form, name, email, message, source) {
     var params = {
+      url: 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSfVPGr85GXcV6WJw9zLnMazielXhuIBW6kZCWVjwmbMO2ABuA/formResponse',
       data: {
         'entry.408156996': name,
         'entry.1818089031': email,
@@ -18,14 +19,10 @@ $(document).ready(function () {
       dataType: 'xml'
     };
 
-    fetch('https://docs.google.com/forms/d/19gksTm0W2HhbBV1jmaHO9O4wPGoO0KC2zEZkrCIwKsg/formResponse', params)
-      .then(function (res) {
-        return res.json();
-      })
-      .then(function (jsn) {
+    $.ajax(params)
+      .always(function (res) {
         formHasSent(form);
       });
-    formHasSent(form);
   }
 
   function formHasSent(form) {
@@ -85,7 +82,7 @@ $(document).ready(function () {
   submitBtn.on('click', function (e) {
     e.preventDefault();
     var self = $(this),
-      form = self.parents('.contact-form:not(.invalid)'),
+      form = self.parents('.contact-form:not(.invalid)').find('form'),
       requiredInputs = self.parents('form').find('[required]'),
       _name = form.find('.name').val(),
       _email = form.find('.email').val(),
