@@ -1640,11 +1640,11 @@ p {
 
   .btn-scroll-down {
     opacity: 1;
-    bottom: 181px;
+    bottom: 160px;
     margin-left: 0; }
 
   .animation .btn-scroll-down {
-    bottom: 181px; }
+    bottom: 160px; }
 
   .services .col {
     float: none;
@@ -1812,6 +1812,12 @@ p {
     .footer .cell {
       display: block;
       width: auto; }
+    .footer .contacts {
+      display: table; }
+      .footer .contacts .contacts-list {
+        margin-top: 50px; }
+      .footer .contacts .description {
+        display: table-header-group; }
     .footer .cell:first-child {
       display: block;
       width: auto;
