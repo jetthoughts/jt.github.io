@@ -31,7 +31,7 @@
     right: -100%;
     background: $gray;
     z-index: 4;
-    padding: 60px 40px 40px;
+    padding: 60px 60px 40px;
     text-align: center;
     overflow-y: auto;
     @include transition(0s);
@@ -66,6 +66,11 @@
     max-width: 290px;
     margin: 0;
   }
+  .services .col .holder,
+  .services .col+.col .holder {
+    padding: 0 40px;
+    min-height: 1px;
+  }
   .services__title {
     font-size: 30px;
     line-height: 38px;
@@ -80,18 +85,17 @@
   .services-slideshow .services__title {
     font-size: 23px;
     line-height: 31px;
-    margin-bottom: 0;
   }
   .services-slideshow-controls {
-    bottom: 94px;
+    bottom: 80px;
+    left: 30px;
   }
   .services-slideshow-controls__btn+.services-slideshow-controls__btn {
-    margin-left: 40px;
+    margin-left: 2px;
   }
   .services-slideshow-current-slide {
-    @include transition(0s);
     left: auto;
-    right: 70px;
+    right: 40px;
     font-size: 18px;
   }
   .animation .services-slideshow-current-slide {
@@ -119,6 +123,9 @@
     @include transition(0s);
     float: right;
   }
+  .slideshow-posts-wrapper {
+    padding-bottom: 40px;
+  }
   .post-slideshow {
     margin-right: -53px;
     margin-left: -8px;
@@ -128,7 +135,7 @@
     }
   }
   .post-slideshow__link {
-    height: 240px;
+    height: 275px;
     padding: 23px 22px;
     margin-bottom: 5px;
     &:before {
@@ -161,31 +168,20 @@
   .lets-talk__title {
     font-size: 77px;
     line-height: 93px;
-    margin-bottom: 150px;
-  }
-  .wave-wrapper {
-    @include transition(0s);
-    width: 500%;
-    position: absolute;
-    padding-top: 53px;
-    top: 50%;
-    left: 0;
-    right: 0;
+    margin-bottom: 50px;
   }
   .wave {
-    padding-left: 82px;
-    &:before {
-      width: 80px;
-      bottom: auto;
-      top: 50%;
-    }
+    display: block;
+    margin: 0 -40px 50px;
+    font-size: 0;
+    line-height: 0;
+    padding: 0;
+    &:before,
     &:after {
-      width: 768px;
-      bottom: auto;
-      top: 50%;
+      display: none;
     }
     svg {
-      width: 181px;
+      width: 100%;
     }
   }
   .modal__close {
@@ -278,5 +274,8 @@
   }
   .contacts-list__item+.contacts-list__item {
     margin-left: 40px;
+  }
+  .posts {
+    min-height: 440px !important;
   }
 }

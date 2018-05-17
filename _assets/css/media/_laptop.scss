@@ -53,18 +53,18 @@
   .services-slideshow .services__title {
     font-size: 31px;
     line-height: 40px;
-    margin-bottom: 30px;
   }
   .services-slideshow-controls {
-    left: 184px;
+    left: 155px;
     bottom: 129px;
   }
   .services-slideshow-controls__btn+.services-slideshow-controls__btn {
-    margin-left: 36px;
+    margin-left: 16px;
   }
   .services-slideshow-current-slide {
     top: 256px;
-    left: 524px;
+    left: auto;
+    right: 124px;
     font-size: 31px;
   }
   .animation .services-slideshow-current-slide {

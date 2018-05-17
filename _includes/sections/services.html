@@ -1,36 +1,23 @@
 <section class="section js-min-full-vh services" id="services">
   <div class="col">
     <div class="services-slideshow">
-      <div class="services-slideshow__item">
-        <div class="cell js-full-vh">
-          <div class="holder">
-            <div class="services__description">
-              <small class="small-head fade-down delay-3">SERVICES</small>
-              <strong class="services__title fade-down delay-4" itemprop="name"><span>Agile Consulting</span> We perform product audit, process configuration and automation , improve quality and productivity.</strong>
+
+      {% for slide_hash in site.data.services %}
+        {% assign slide = slide_hash[1] %}
+
+        <div class="services-slideshow__item">
+          <div class="cell js-full-vh">
+            <div class="holder">
+              <div class="services__description">
+                <small class="small-head fade-down delay-3">SERVICES</small>
+                <strong class="services__title fade-down delay-4" itemprop="name"><span>{{ slide.title }} </span>{{ slide.description }}</strong>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="services-slideshow__item">
-        <div class="cell js-full-vh">
-          <div class="holder">
-            <div class="services__description">
-              <small class="small-head fade-down delay-3">SERVICES</small>
-              <strong class="services__title fade-down delay-4" itemprop="name"><span>Web Development</span> We passionate into elegant solution for your web project using RubyOnRails, React and more.</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="services-slideshow__item">
-        <div class="cell js-full-vh">
-          <div class="holder">
-            <div class="services__description">
-              <small class="small-head fade-down delay-3">SERVICES</small>
-              <strong class="services__title fade-down delay-4" itemprop="name"><span>Mobile Development</span> We build applications for mobile, from highly technical internal tools to robust customer facing interfaces.</strong>
-            </div>
-          </div>
-        </div>
-      </div>
+
+      {% endfor %}
+
     </div>
     <span class="services-slideshow-current-slide">0<span>1</span></span>
     <div class="services-slideshow-controls">

@@ -9,6 +9,7 @@
       max-width: 602px;
       margin-right: auto;
       padding-right: 15px;
+      min-height: 360px;
     }
   }
   .col+.col {
@@ -92,7 +93,6 @@
   .services__title {
     font-size: 36px;
     line-height: 47px;
-    margin-bottom: 35px;
     span {
       color: $dark_grey;
     }
@@ -110,7 +110,7 @@
 .services-slideshow-controls {
   position: absolute;
   z-index: 3;
-  left: 215px;
+  left: 180px;
   bottom: 151px;
   font-size: 0;
   line-height: 0;
@@ -120,18 +120,18 @@
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
-  width: 28px;
-  height: 15px;
+  width: 48px;
+  height: 45px;
   position: relative;
   &:before {
     content: '';
     z-index: 2;
     position: absolute;
-    width: 100%;
+    width: 28px;
     height: 1px;
     background: #ABAAB2;
-    right: 0;
-    top: 7px;
+    right: 10px;
+    top: 22px;
     @include transition(0.3s);
   }
   &:after {
@@ -140,8 +140,8 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    right: 0;
-    top: 2px;
+    right: 10px;
+    top: 17px;
     border: solid #ABAAB2;
     border-width: 0 1px 1px 0;
     @include rotate(-45deg);
@@ -156,7 +156,7 @@
     }
   }
   +.services-slideshow-controls__btn {
-    margin-left: 42px;
+    margin-left: 22px;
   }
 }
 .services-slideshow-prev {
@@ -172,7 +172,9 @@
   position: absolute;
   line-height: 1em;
   color: $dark_grey;
-  @include transition(0.5s 0.8s);
+  @media screen and ($b_no_mobile) {
+    @include transition(0.5s 0.8s);
+  }
 }
 .animation {
   .services-slideshow-current-slide {
