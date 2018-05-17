@@ -1,0 +1,20 @@
+@media screen and ($b_large_desktop) {
+  .services .col+.col .holder,
+  .services .col .holder {
+    max-width: 100%;
+  }
+  .services__description {
+    display: block;
+    margin: 0 auto;
+  }
+  .services-slideshow-current-slide {
+    left: auto;
+    right: 300px;
+  }
+  .services-slideshow-controls {
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-right: 302px;
+  }
+}

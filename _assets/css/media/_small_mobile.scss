@@ -19,9 +19,6 @@
   .uses-cases-slideshow .slick-arrow {
     bottom: 20px;
   }
-  .post-slideshow__link {
-    height: 200px;
-  }
   .btn-scroll-down {
     bottom: 30px;
   }
@@ -38,7 +35,7 @@
     max-width: 80%;
   }
   .services-slideshow-controls {
-    bottom: 50px;
+    bottom: 35px;
   }
   .uses-cases-slideshow__figure {
     width: 75%;
@@ -49,29 +46,46 @@
   .wave-wrapper {
     padding-top: 0;
   }
-  .services .col+.col .holder {
-    padding-top: 30px;
-    padding-bottom: 100px;
+  .wave {
+    padding-left: 100px;
+    &:before,
+    &:after {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-height: 479px) {
+  .lets-talk__title {
+    margin-bottom: 25px;
+  }
+  .wave {
+    margin-bottom: 25px;
   }
 }
 
 @media screen and (max-width: 359px) {
-  .services .col .holder {
-    padding: 0 15px;
-  }
-  .services .col+.col .holder {
-    padding: 0 15px;
-  }
-  .uses-cases-slideshow .slick-prev {
-    left: 15px;
-  }
-  .uses-cases-slideshow .slick-next {
-    left: 65px;
-  }
-  .services-slideshow-controls {
-    left: 15px;
-  }
   .main-screen.animation .btn-scroll-down {
     bottom: 60px;
+  }
+  .main-screen__title {
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .services {
+    padding: 0;
+  }
+  .services .cell {
+    padding: 0;
+  }
+  .services .col .cell {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .services-slideshow-controls {
+    bottom: 35px;
+  }
+  .post-slideshow {
+    padding-right: 80px;
   }
 }
