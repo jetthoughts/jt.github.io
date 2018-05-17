@@ -175,6 +175,14 @@ $(document).ready(function () {
       infinite: true,
       nextArrow: '.services-slideshow-next',
       prevArrow: '.services-slideshow-prev',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            adaptiveHeight: true
+          }
+        },
+      ]
     });
   }
 

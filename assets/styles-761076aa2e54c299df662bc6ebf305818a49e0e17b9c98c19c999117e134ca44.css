@@ -187,7 +187,7 @@ p {
       font-size: 10px;
       line-height: 14px;
       margin-bottom: 28px; } }
-  @media screen and (max-height: 479px) {
+  @media screen and (max-height: 420px) {
     .small-head {
       margin-bottom: 10px; } }
 
@@ -211,9 +211,6 @@ p {
   @media screen and (max-width: 1024px) {
     .container {
       padding: 0 40px; } }
-  @media screen and (max-width: 359px) {
-    .container {
-      padding: 0 15px; } }
 
 .tbl {
   display: table;
@@ -242,14 +239,14 @@ p {
   display: none; }
 
 .mobile-show {
-  display: none; }
+  display: none !important; }
   @media screen and (max-width: 767px) {
     .mobile-show {
-      display: block; } }
+      display: block !important; } }
 
 @media screen and (max-width: 767px) {
   .mobile-hide {
-    display: none; } }
+    display: none !important; } }
 
 .logo {
   display: block;
@@ -571,7 +568,8 @@ p {
     .services .col .holder {
       max-width: 602px;
       margin-right: auto;
-      padding-right: 15px; }
+      padding-right: 15px;
+      min-height: 360px; }
   .services .col + .col {
     float: left;
     text-align: left; }
@@ -642,8 +640,7 @@ p {
     transition: 1s 0.3s; }
   .services-slideshow .services__title {
     font-size: 36px;
-    line-height: 47px;
-    margin-bottom: 35px; }
+    line-height: 47px; }
     .services-slideshow .services__title span {
       color: #17171A; }
 
@@ -656,7 +653,7 @@ p {
 .services-slideshow-controls {
   position: absolute;
   z-index: 3;
-  left: 215px;
+  left: 180px;
   bottom: 151px;
   font-size: 0;
   line-height: 0;
@@ -666,18 +663,18 @@ p {
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
-  width: 28px;
-  height: 15px;
+  width: 48px;
+  height: 45px;
   position: relative; }
   .services-slideshow-controls__btn:before {
     content: '';
     z-index: 2;
     position: absolute;
-    width: 100%;
+    width: 28px;
     height: 1px;
     background: #ABAAB2;
-    right: 0;
-    top: 7px;
+    right: 10px;
+    top: 22px;
     transition: 0.3s; }
   .services-slideshow-controls__btn:after {
     content: '';
@@ -685,8 +682,8 @@ p {
     position: absolute;
     width: 10px;
     height: 10px;
-    right: 0;
-    top: 2px;
+    right: 10px;
+    top: 17px;
     border: solid #ABAAB2;
     border-width: 0 1px 1px 0;
     -webkit-transform: rotate(-45deg);
@@ -697,7 +694,7 @@ p {
   .services-slideshow-controls__btn:hover:after {
     border-color: #4A82C3; }
   .services-slideshow-controls__btn + .services-slideshow-controls__btn {
-    margin-left: 42px; }
+    margin-left: 22px; }
 
 .services-slideshow-prev {
   -webkit-transform: rotate(180deg);
@@ -711,8 +708,10 @@ p {
   opacity: 0;
   position: absolute;
   line-height: 1em;
-  color: #17171A;
-  transition: 0.5s 0.8s; }
+  color: #17171A; }
+  @media screen and (min-width: 768px) {
+    .services-slideshow-current-slide {
+      transition: 0.5s 0.8s; } }
 
 .animation .services-slideshow-current-slide {
   top: 101px;
@@ -875,25 +874,25 @@ p {
   font-size: 0;
   line-height: 0;
   border: none;
-  width: 28px;
-  height: 15px;
+  width: 48px;
+  height: 45px;
   bottom: 40px;
   z-index: 2;
   background: none; }
 
 .uses-cases-slideshow .slick-prev {
-  left: 40px;
+  left: 30px;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg); }
   .uses-cases-slideshow .slick-prev:before {
     content: '';
     z-index: 2;
     position: absolute;
-    width: 100%;
+    width: 28px;
     height: 1px;
     background: #fff;
-    right: 0;
-    top: 7px;
+    right: 10px;
+    top: 22px;
     transition: 0.3s; }
   .uses-cases-slideshow .slick-prev:after {
     content: '';
@@ -901,8 +900,8 @@ p {
     position: absolute;
     width: 10px;
     height: 10px;
-    right: 0;
-    top: 2px;
+    right: 10px;
+    top: 17px;
     border: solid #fff;
     border-width: 0 1px 1px 0;
     -webkit-transform: rotate(-45deg);
@@ -910,16 +909,16 @@ p {
     transition: 0.3s; }
 
 .uses-cases-slideshow .slick-next {
-  left: 90px; }
+  left: 80px; }
   .uses-cases-slideshow .slick-next:before {
     content: '';
     z-index: 2;
     position: absolute;
-    width: 100%;
+    width: 28px;
     height: 1px;
     background: #fff;
-    right: 0;
-    top: 7px;
+    right: 10px;
+    top: 22px;
     transition: 0.3s; }
   .uses-cases-slideshow .slick-next:after {
     content: '';
@@ -927,8 +926,8 @@ p {
     position: absolute;
     width: 10px;
     height: 10px;
-    right: 0;
-    top: 2px;
+    right: 10px;
+    top: 17px;
     border: solid #fff;
     border-width: 0 1px 1px 0;
     -webkit-transform: rotate(-45deg);
@@ -1311,6 +1310,24 @@ p {
 .contacts-list__item + .contacts-list__item {
   margin-left: 126px; }
 
+@media screen and (min-width: 1921px) {
+  .services .col + .col .holder,
+  .services .col .holder {
+    max-width: 100%; }
+
+  .services__description {
+    display: block;
+    margin: 0 auto; }
+
+  .services-slideshow-current-slide {
+    left: auto;
+    right: 300px; }
+
+  .services-slideshow-controls {
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-right: 302px; } }
 @media screen and (max-width: 1367px) {
   .header {
     padding: 21px 30px; }
@@ -1363,19 +1380,19 @@ p {
 
   .services-slideshow .services__title {
     font-size: 31px;
-    line-height: 40px;
-    margin-bottom: 30px; }
+    line-height: 40px; }
 
   .services-slideshow-controls {
-    left: 184px;
+    left: 155px;
     bottom: 129px; }
 
   .services-slideshow-controls__btn + .services-slideshow-controls__btn {
-    margin-left: 36px; }
+    margin-left: 16px; }
 
   .services-slideshow-current-slide {
     top: 256px;
-    left: 524px;
+    left: auto;
+    right: 124px;
     font-size: 31px; }
 
   .animation .services-slideshow-current-slide {
@@ -1533,17 +1550,19 @@ p {
     right: -21px; }
 
   .services .col .holder {
-    padding: 0 40px;
+    padding: 0 80px;
     margin: 0;
-    max-width: 100%; }
+    max-width: 100%;
+    min-height: 240px; }
 
   .services .col + .col .holder {
-    padding: 0 40px;
+    padding: 0 80px;
     margin: 0; }
 
   .services__description {
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 100%; }
 
   .services__title {
     font-size: 30px;
@@ -1553,8 +1572,11 @@ p {
     font-size: 28px;
     line-height: 34px; }
 
+  .services-slideshow-current-slide {
+    right: 80px; }
+
   .services-slideshow-controls {
-    left: 40px; }
+    left: 70px; }
 
   .uses-cases-controls {
     padding: 50px 0;
@@ -1628,7 +1650,7 @@ p {
     right: -100%;
     background: #1b1b1f;
     z-index: 4;
-    padding: 60px 40px 40px;
+    padding: 60px 60px 40px;
     text-align: center;
     overflow-y: auto;
     transition: 0s; }
@@ -1662,6 +1684,11 @@ p {
     max-width: 290px;
     margin: 0; }
 
+  .services .col .holder,
+  .services .col + .col .holder {
+    padding: 0 40px;
+    min-height: 1px; }
+
   .services__title {
     font-size: 30px;
     line-height: 38px; }
@@ -1674,19 +1701,18 @@ p {
 
   .services-slideshow .services__title {
     font-size: 23px;
-    line-height: 31px;
-    margin-bottom: 0; }
+    line-height: 31px; }
 
   .services-slideshow-controls {
-    bottom: 94px; }
+    bottom: 80px;
+    left: 30px; }
 
   .services-slideshow-controls__btn + .services-slideshow-controls__btn {
-    margin-left: 40px; }
+    margin-left: 2px; }
 
   .services-slideshow-current-slide {
-    transition: 0s;
     left: auto;
-    right: 70px;
+    right: 40px;
     font-size: 18px; }
 
   .animation .services-slideshow-current-slide {
@@ -1714,6 +1740,9 @@ p {
     transition: 0s;
     float: right; }
 
+  .slideshow-posts-wrapper {
+    padding-bottom: 40px; }
+
   .post-slideshow {
     margin-right: -53px;
     margin-left: -8px;
@@ -1722,7 +1751,7 @@ p {
       overflow: visible; }
 
   .post-slideshow__link {
-    height: 240px;
+    height: 275px;
     padding: 23px 22px;
     margin-bottom: 5px; }
     .post-slideshow__link:before {
@@ -1753,29 +1782,18 @@ p {
   .lets-talk__title {
     font-size: 77px;
     line-height: 93px;
-    margin-bottom: 150px; }
-
-  .wave-wrapper {
-    transition: 0s;
-    width: 500%;
-    position: absolute;
-    padding-top: 53px;
-    top: 50%;
-    left: 0;
-    right: 0; }
+    margin-bottom: 50px; }
 
   .wave {
-    padding-left: 82px; }
-    .wave:before {
-      width: 80px;
-      bottom: auto;
-      top: 50%; }
-    .wave:after {
-      width: 768px;
-      bottom: auto;
-      top: 50%; }
+    display: block;
+    margin: 0 -40px 50px;
+    font-size: 0;
+    line-height: 0;
+    padding: 0; }
+    .wave:before, .wave:after {
+      display: none; }
     .wave svg {
-      width: 181px; }
+      width: 100%; }
 
   .modal__close {
     top: 40px;
@@ -1852,8 +1870,11 @@ p {
     line-height: 15px; }
 
   .contacts-list__item + .contacts-list__item {
-    margin-left: 40px; } }
-@media screen and (max-height: 479px) {
+    margin-left: 40px; }
+
+  .posts {
+    min-height: 440px !important; } }
+@media screen and (max-height: 420px) {
   .section {
     padding: 20px 0; }
 
@@ -1874,9 +1895,6 @@ p {
   .uses-cases-slideshow .slick-arrow {
     bottom: 20px; }
 
-  .post-slideshow__link {
-    height: 200px; }
-
   .btn-scroll-down {
     bottom: 30px; }
 
@@ -1893,7 +1911,7 @@ p {
     max-width: 80%; }
 
   .services-slideshow-controls {
-    bottom: 50px; }
+    bottom: 35px; }
 
   .uses-cases-slideshow__figure {
     width: 75%; }
@@ -1904,24 +1922,36 @@ p {
   .wave-wrapper {
     padding-top: 0; }
 
-  .services .col + .col .holder {
-    padding-top: 30px;
-    padding-bottom: 100px; } }
+  .wave {
+    padding-left: 100px; }
+    .wave:before, .wave:after {
+      display: block; } }
+@media screen and (max-height: 479px) {
+  .lets-talk__title {
+    margin-bottom: 25px; }
+
+  .wave {
+    margin-bottom: 25px; } }
 @media screen and (max-width: 359px) {
-  .services .col .holder {
-    padding: 0 15px; }
+  .main-screen.animation .btn-scroll-down {
+    bottom: 60px; }
 
-  .services .col + .col .holder {
-    padding: 0 15px; }
+  .main-screen__title {
+    font-size: 60px;
+    line-height: 73px; }
 
-  .uses-cases-slideshow .slick-prev {
-    left: 15px; }
+  .services {
+    padding: 0; }
 
-  .uses-cases-slideshow .slick-next {
-    left: 65px; }
+  .services .cell {
+    padding: 0; }
+
+  .services .col .cell {
+    padding-top: 100px;
+    padding-bottom: 100px; }
 
   .services-slideshow-controls {
-    left: 15px; }
+    bottom: 35px; }
 
-  .main-screen.animation .btn-scroll-down {
-    bottom: 60px; } }
+  .post-slideshow {
+    padding-right: 80px; } }
