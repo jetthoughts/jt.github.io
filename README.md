@@ -72,3 +72,5 @@
 ## Mockups are in:
 - [Google Drive](https://drive.google.com/drive/u/1/folders/1yVjuYSwctYQmBLw7YHrWmHIPHVq70ox7)
 - [Figma.com](https://www.figma.com/file/wmRuaLaG0wwnOE9kBWfnMn/Jetthoughts-2?node-id=1%3A2)
+- [Invision](https://projects.invisionapp.com/share/EABU3IP46#/screens)
+- [Vimeo](https://vimeo.com/218007444)
