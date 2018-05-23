@@ -16,7 +16,8 @@
 name: JetThoughts
 url: https://www.jetthoughts.com
 description: Hire us to build you a world-class iOS, Android, or web app. Find Ruby on Rails, Vue.js and React Native developers.
-title: Ruby on Rails, Elixir, React, mobile design and development | JetThoughts
+title: Ruby on Rails, Elixir, React, mobile design and development
+keywords: dev shop, consulting, ruby, rails, node, ios, android, java, javascript, software development companies in chicago, software development companies in los angeles, software development companies in new york, mobile application development, android developer, mobile app development, app developer, top mobile app development companies, mobile app development company, ios developer
 
 markdown: kramdown
 plugins:
