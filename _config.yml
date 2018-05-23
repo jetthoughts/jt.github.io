@@ -15,7 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 name: JetThoughts
 url: https://www.jetthoughts.com
-description: Ruby on Rails full stack web and mobile development team. We create Rails apps from scratch, offer support, optimisation and code review, provide RoR consulting services for startups and entrepreneurs. Use AngularJS and Backbone. Follow Agile workflow.
+description: Hire us to build you a world-class iOS, Android, or web app. Find Ruby on Rails, Vue.js and React Native developers.
+title: Ruby on Rails, Elixir, React, mobile design and development | JetThoughts
 
 markdown: kramdown
 plugins:
