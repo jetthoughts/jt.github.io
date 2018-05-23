@@ -68,6 +68,7 @@
 - src/fonts
 - src/images
 - src/video
+- src/favicon
 
 ## Mockups are in:
 - [Google Drive](https://drive.google.com/drive/u/1/folders/1yVjuYSwctYQmBLw7YHrWmHIPHVq70ox7)
