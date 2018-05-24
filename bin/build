@@ -2,4 +2,4 @@
 
 echo "== Building Solution =="
 
-JEKYLL_ENV=production bundle exec jekyll build --watch $@
+JEKYLL_ENV=production bundle exec jekyll build $@

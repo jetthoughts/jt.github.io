@@ -1,9 +1,12 @@
-slide_1:
-  title: 'Agile Consulting'
-  description: 'We perform product audit, process configuration and automation, improve quality and productivity.'
-slide_2:
+slide_web:
   title: 'Web Development'
-  description: 'We passionate into elegant solution for your web project using RubyOnRails, React and more.'
-slide_3:
+  description: 'We passionate into elegant solution for your web project using Ruby On Rails, Vue.js and more.'
+slide_mobile:
   title: 'Mobile Development'
   description: 'We build applications for mobile, from highly technical internal tools to robust customer facing interfaces.'
+slide_rails:
+  title: 'Ruby on Rails'
+  description: 'Using the Ruby on Rails we can bring secure products to market quickly.'
+slide_react:
+  title: 'React Native'
+  description: 'React Native allows us to quickly ship mobile apps faster while maintaining a world-class mobile user experience.'
