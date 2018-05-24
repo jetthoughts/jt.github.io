@@ -21,5 +21,8 @@
     "gulp-imagemin": "~4",
     "imagemin-pngcrush": "~5",
     "surge": "^0.20.1"
+  },
+  "dependencies": {
+    "yarn": "^1.7.0"
   }
 }
