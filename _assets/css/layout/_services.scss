@@ -62,7 +62,7 @@
   vertical-align: top;
   text-align: left;
 }
-.services__title {
+.services__text {
   font-weight: 500;
   display: block;
   font-size: 48px;
@@ -70,9 +70,14 @@
   max-height: 517px;
   overflow: hidden;
   margin: 0;
-  span {
-    display: block;
-  }
+}
+.services__title {
+  display: block;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  color: $dark_grey;
 }
 
 .services-slideshow {
@@ -90,12 +95,9 @@
     background: $white;
     @include transition(1s .3s);
   }
-  .services__title {
+  .services__text {
     font-size: 36px;
     line-height: 47px;
-    span {
-      color: $dark_grey;
-    }
   }
 }
 .animation {
