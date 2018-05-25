@@ -43,8 +43,11 @@
 
     {% asset styles.css @inline %}
 
-    <link rel="icon" href="/favicon.ico?v=3" sizes="16x16 32x32">
-    <link rel="shortcut icon" href="/favicon.ico?v=3">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon-32.ico">
+    <link rel="icon" type="image/png" sizes="144x1144"  href="/android-icon-144x144.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_16.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
 
     {% include analytics.html %}
@@ -52,8 +55,8 @@
         {
           "@context": "http://schema.org",
           "@type": "Organization",
-	  "url": "{{ site.url }}",
-	  "name": "{{ site.name }}",
+	      "url": "{{ site.url }}",
+	      "name": "{{ site.name }}",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+1-321-363-9914",
