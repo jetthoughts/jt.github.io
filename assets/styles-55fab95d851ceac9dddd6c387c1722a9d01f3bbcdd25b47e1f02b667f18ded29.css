@@ -613,7 +613,7 @@ p {
   vertical-align: top;
   text-align: left; }
 
-.services__title {
+.services__text {
   font-weight: 500;
   display: block;
   font-size: 48px;
@@ -621,8 +621,14 @@ p {
   max-height: 517px;
   overflow: hidden;
   margin: 0; }
-  .services__title span {
-    display: block; }
+
+.services__title {
+  display: block;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  color: #17171A; }
 
 .services-slideshow {
   color: #aaaab2;
@@ -638,11 +644,9 @@ p {
     top: 100%;
     background: #fff;
     transition: 1s 0.3s; }
-  .services-slideshow .services__title {
+  .services-slideshow .services__text {
     font-size: 36px;
     line-height: 47px; }
-    .services-slideshow .services__title span {
-      color: #17171A; }
 
 .animation .services-slideshow:before {
   top: 0; }
@@ -1373,12 +1377,12 @@ p {
   .services__description {
     max-width: 341px; }
 
-  .services__title {
+  .services__text {
     font-size: 41px;
     line-height: 55px;
     max-height: 441px; }
 
-  .services-slideshow .services__title {
+  .services-slideshow .services__text {
     font-size: 31px;
     line-height: 40px; }
 
@@ -1564,11 +1568,11 @@ p {
     margin: 0 auto;
     max-width: 100%; }
 
-  .services__title {
+  .services__text {
     font-size: 30px;
     line-height: 36px; }
 
-  .services-slideshow .services__title {
+  .services-slideshow .services__text {
     font-size: 28px;
     line-height: 34px; }
 
@@ -1689,7 +1693,7 @@ p {
     padding: 0 40px;
     min-height: 1px; }
 
-  .services__title {
+  .services__text {
     font-size: 30px;
     line-height: 38px; }
 
@@ -1699,7 +1703,7 @@ p {
       transition: 0s;
       display: none; }
 
-  .services-slideshow .services__title {
+  .services-slideshow .services__text {
     font-size: 23px;
     line-height: 31px; }
 
