@@ -7,5 +7,5 @@ Disallow: /assets/styles*
 Disallow: /assets/application*
 Disallow: /assets/Graphik*
 Disallow: /index.*
-Sitemap: https://jetthoughts.com/sitemap.xml
-Host: https://jetthoughts.com
+Sitemap: https://www.jetthoughts.com/sitemap.xml
+Host: https://www.jetthoughts.com
