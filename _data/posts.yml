@@ -48,3 +48,23 @@ post_5:
     name: 'JetThoughts LLC'
     url: 'https://www.jetthoughts.com/social-logo.png'
   mainEntityOfPage: "https://medium.com/"
+post_6:
+  title: 'How We Hire Developers at JetThoughts'
+  url: 'https://jtway.co/how-we-hire-developers-at-jetthoughts-d71e8b88e62c'
+  author: 'Andriy Parashchuk'
+  image: 'https://cdn-images-1.medium.com/max/800/0*_BuegqkYZj3noHdH.jpg'
+  datePublished: 'Jun 21, 2018'
+  publisher:
+    name: 'JetThoughts LLC'
+    url: 'https://www.jetthoughts.com/social-logo.png'
+  mainEntityOfPage: "https://medium.com/"
+post_7:
+  title: 'A typical day at JetThoughts'
+  url: 'https://jtway.co/a-typical-day-at-jetthoughts-460b84eeb9c6'
+  author: 'Ilya Novohatskyi'
+  image: 'https://cdn-images-1.medium.com/max/800/0*Lex_wxi1D2uLZWg0.'
+  datePublished: 'May 23, 2018'
+  publisher:
+    name: 'JetThoughts LLC'
+    url: 'https://www.jetthoughts.com/social-logo.png'
+  mainEntityOfPage: "https://medium.com/"
