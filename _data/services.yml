@@ -6,7 +6,7 @@ slide_mobile:
   description: 'We build applications for mobile, from highly technical internal tools to robust customer facing interfaces.'
 slide_rails:
   title: 'Ruby on Rails'
-  description: 'Using the Ruby on Rails we can bring secure products to market quickly.'
+  description: 'Using Ruby on Rails we can bring secure products to market quickly.'
 slide_react:
   title: 'React Native'
   description: 'React Native allows us to quickly ship mobile apps faster while maintaining a world-class mobile user experience.'
