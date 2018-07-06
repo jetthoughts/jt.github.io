@@ -52,16 +52,18 @@ $(document).ready(function () {
     $('.js-full-vh').css('height', heightParam);
     $('.lets-talk .cell').eq(1).css('height', 'auto');
   }
-  // scroll animation
+  // disable animation for IPad
   var isIPad = /iPad/.test(navigator.userAgent);
-  if (!isIPad) {
-    setTimeout(function() {
-      $('.header, .main-screen').addClass('animation');
-      if ($(window).width() < 768) {
-        $('.section').addClass('animation');
-      }
-    }, 500);
+  if (isIPad) {
+    $('.body').addClass('no-animation');
   }
+  // scroll animation
+  setTimeout(function() {
+    $('.header, .main-screen').addClass('animation');
+    if ($(window).width() < 768) {
+      $('.section').addClass('animation');
+    }
+  }, 500);
   // slideshow
   if ($('.services-slideshow').length) {
     var $servicesSlideshow = $('.services-slideshow');
