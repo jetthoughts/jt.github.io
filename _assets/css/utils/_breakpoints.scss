@@ -6,6 +6,7 @@ $b_small_mobile: 'max-width: 479px';
 
 $b_no_tablet: 'min-width: 992px';
 $b_no_mobile: 'min-width: 768px';
+$b_no_ipad: '-webkit-min-device-pixel-ratio: 2';
 
 $b_tablet_heihgt: 'max-height: 767px';
 $b_small_mobile_height: 'max-height: 420px';

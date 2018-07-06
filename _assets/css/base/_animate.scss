@@ -1,4 +1,4 @@
-@media screen and ($b_no_mobile) {
+@media screen and ($b_no_mobile) and ($b_tablet) and ($b_no_ipad) {
   .fade-up {
     position: relative;
     @include transition(0.5s);
