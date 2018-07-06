@@ -53,13 +53,15 @@ $(document).ready(function () {
     $('.lets-talk .cell').eq(1).css('height', 'auto');
   }
   // scroll animation
-  setTimeout(function() {
-    $('.header, .main-screen').addClass('animation');
-    if ($(window).width() < 768) {
-      $('.section').addClass('animation');
-    }
-  }, 500);
-
+  var isIPad = /iPad/.test(navigator.userAgent);
+  if (!isIPad) {
+    setTimeout(function() {
+      $('.header, .main-screen').addClass('animation');
+      if ($(window).width() < 768) {
+        $('.section').addClass('animation');
+      }
+    }, 500);
+  }
   // slideshow
   if ($('.services-slideshow').length) {
     var $servicesSlideshow = $('.services-slideshow');
