@@ -55,7 +55,7 @@ $(document).ready(function () {
   // disable animation for IPad
   var isIPad = /iPad/.test(navigator.userAgent);
   if (isIPad) {
-    $('.body').addClass('no-animation');
+    $('body').addClass('no-animation');
   }
   // scroll animation
   setTimeout(function() {
