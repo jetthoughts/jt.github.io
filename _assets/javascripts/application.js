@@ -18,6 +18,14 @@ var getUrlParameter = function getUrlParameter(sParam) {
   }
 };
 
+function removeAnimationForIpad(animationClass) {
+  var elementsWithClass = document.getElementsByClassName(animationClass);
+
+  while (elementsWithClass.length > 0) {
+     elementsWithClass[0].classList.remove(animationClass);
+  }
+};
+
 $(document).ready(function () {
   var heightParam = getUrlParameter('height');
   var stopAnimationParam = getUrlParameter('stop_animation');
@@ -52,6 +60,14 @@ $(document).ready(function () {
     $('.js-full-vh').css('height', heightParam);
     $('.lets-talk .cell').eq(1).css('height', 'auto');
   }
+  // disable animation for IPad
+  var isIPad = /iPad/.test(navigator.userAgent);
+  if (isIPad) {
+    removeAnimationForIpad('fade-up');
+    removeAnimationForIpad('fade-right');
+    removeAnimationForIpad('fade-down');
+    removeAnimationForIpad('fade-left');
+  }
   // scroll animation
   setTimeout(function() {
     $('.header, .main-screen').addClass('animation');
@@ -59,7 +75,6 @@ $(document).ready(function () {
       $('.section').addClass('animation');
     }
   }, 500);
-
   // slideshow
   if ($('.services-slideshow').length) {
     var $servicesSlideshow = $('.services-slideshow');
