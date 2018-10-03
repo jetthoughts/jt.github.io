@@ -1,0 +1,38 @@
+.ai-company-info {
+  padding: 142px 0 100px;
+  min-height: 400px;
+  background-size: cover;
+  background-position: 50% 50%;
+  .info-list {
+    list-style: none;
+    margin: 0 -15px;
+    padding: 0;
+    font-size: 0.1;
+    line-height: 0;
+    text-align: justify;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      line-height: 0;
+    }
+  }
+  .info-list__item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .info-list__title {
+    opacity: 0.5;
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+    margin-bottom: 13px;
+  }
+  .info-list__text {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}

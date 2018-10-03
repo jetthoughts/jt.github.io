@@ -1,0 +1,26 @@
+.ai-description {
+  background: #f7f7f7;
+  text-align: center;
+  color: #a6a6a6;
+  .container {
+    max-width: 765px;
+  }
+  .cell {
+    height: 800px;
+    width: 1%;
+    padding: 50px 0 54px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.ai-description__title {
+  font-size: 56px;
+  line-height: 72px;
+  color: #17171a;
+  margin-bottom: 33px;
+}
+.ai-description__text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
