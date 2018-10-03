@@ -1,0 +1,44 @@
+.ai-communication {
+  position: relative;
+  overflow: hidden;
+  .cell {
+    height: 970px;
+    width: 1%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px 0 63px;
+    background: #fff;
+    color: #a6a6a6;
+  }
+  .communication-chat {
+    background: #1a8cff;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.ai-communication__title {
+  font-size: 56px;
+  line-height: 72px;
+  margin-bottom: 36px;
+  color: #17171a;
+  span {
+    display: block;
+  }
+}
+.ai-communication__description {
+  max-width: 480px;
+}
+.ai-communication__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.ai-communication__img {
+  position: absolute;
+  bottom: -82px;
+  right: 0;
+  z-index: 5;
+}

@@ -1,0 +1,35 @@
+.ai-main-banner {
+  color: #fff;
+  padding: 50px 0 88px;
+  height: 1000px;
+  width: 1%;
+  display: table-cell;
+  vertical-align: middle;
+  background: #409fff;
+  background: -moz-linear-gradient(45deg, #409fff 0%, #0173e6 100%);
+  background: -webkit-linear-gradient(45deg, #409fff 0%,#0173e6 100%);
+  background: linear-gradient(45deg, #409fff 0%,#0173e6 100%);
+  position: relative;
+}
+.ai-main-banner__title {
+  font-size: 160px;
+  line-height: 170px;
+  margin-bottom: 53px;
+  span {
+    display: block;
+  }
+}
+.ai-main-banner__description {
+  max-width: 275px;
+}
+.ai-main-banner__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.ai-main-banner__img {
+  position: absolute;
+  top: 188px;
+  right: 0;
+  z-index: 5;
+}
