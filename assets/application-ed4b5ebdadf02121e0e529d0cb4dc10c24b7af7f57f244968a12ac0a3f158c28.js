@@ -168,7 +168,7 @@ $(document).ready(function () {
   }
   // scroll animation
   setTimeout(function() {
-    $('.header, .main-screen').addClass('animation');
+    $('.header, .main-screen, .ai-main-banner').addClass('animation');
     if ($(window).width() < 768) {
       $('.section').addClass('animation');
     }
@@ -303,7 +303,7 @@ $(document).ready(function () {
   });
 
   var animationAppear = function() {
-    $('.section, .wave-wrapper').each(function() {
+    $('.section, .wave-wrapper, .ai-section').each(function() {
       var $this = $(this);
       var bottom_of_object = $this.offset().top + $this.outerHeight() / 5;
       var bottom_of_window = $(window).scrollTop() + $(window).height();
