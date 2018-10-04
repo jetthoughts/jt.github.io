@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+const token = process.env.GITHUB_AUTH_TOKEN;
+const owner = process.env.CIRCLE_PROJECT_USERNAME;
+const repositoryName = process.env.CIRCLE_PROJECT_REPONAME;
+const prNumber = process.env.PR_NUMBER;
+const appUrl = process.env.SITE_URL;
+
+if(!token || !owner || !repositoryName || !prNumber || !appUrl) {
+  console.log('Needs more information');
+  return;
+}
+
+const apisauce = require('apisauce');
+const api = apisauce.create({
+  baseURL: `https://api.github.com/repos/${owner}/${repositoryName}`,
+  headers: {
+    'Authorization': `token ${token}`
+  }
+});
+
+const getComments = () => api.get(`/issues/${prNumber}/comments`)
+const removeOldComments = (comments, message) => {
+  comments
+    .filter(comment => comment.body == message)
+    .forEach(comment => api.delete(`/issues/comments/${comment.id}`));
+}
+const addComment = (message) => api.post(`/issues/${prNumber}/comments`, { body: message})
+
+const message = `Deployed to https://${appUrl}`;
+getComments()
+  .then(response => removeOldComments(response.data, message))
+  .then(() => addComment(message))

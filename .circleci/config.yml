@@ -5,14 +5,30 @@ jobs:
       - image: circleci/ruby:2.4.3-node-browsers
     steps:
       - checkout
-      - run: npm install
-      - run: bundle install
-      - run: bundle exec jekyll build
+      - run:
+          name: Setup ENV VARs
+          command: |
+            PR_NUMBER=${CIRCLE_PULL_REQUEST##*/}
+            if [ $PR_NUMBER ]; then
+              SITE_URL="jetthoughts-pr-$PR_NUMBER.surge.sh"
+
+              echo "export PR_NUMBER=$PR_NUMBER" >> $BASH_ENV
+              echo "export SITE_URL=$SITE_URL" >> $BASH_ENV
+            fi
+      - run: ./bin/setup
+      - run: ./bin/build
       - deploy:
           name: Deploy Release to GitHub
           command: |
             if [ $CIRCLE_BRANCH == 'develop' ]; then
-              bash .circleci/setup-github.sh
+              ./.circleci/setup-github
+            fi
+      - deploy:
+          name: Deploy PR to surge
+          command: |
+            if [ $PR_NUMBER ]; then
+              ./bin/deploy-surge
+              ./.circleci/github-message
             fi
 workflows:
   version: 2

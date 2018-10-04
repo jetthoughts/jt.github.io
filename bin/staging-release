@@ -1,4 +1,0 @@
-#!/bin/sh
-
-bin/build
-npx surge -p ./_site -d jetthoughts.surge.sh $@
