@@ -10,7 +10,7 @@
     background: #fff;
     color: #a6a6a6;
   }
-  .communication-chat {
+  .ai-communication__aside {
     background: #1a8cff;
     width: 500px;
     position: absolute;
@@ -41,4 +41,11 @@
   bottom: -82px;
   right: 0;
   z-index: 5;
+}
+.ai-go-it {
+  overflow: visible;
+  .ai-communication__img {
+    right: -269px;
+    top: -13px;
+  }
 }
