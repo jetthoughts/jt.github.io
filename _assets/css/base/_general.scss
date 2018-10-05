@@ -122,6 +122,9 @@ p {
 .form-control {
   @include placeholder(#737380);
 }
+.main-wrapper {
+  overflow: hidden;
+}
 .container {
   margin: 0 auto;
   padding: 0 15px;
