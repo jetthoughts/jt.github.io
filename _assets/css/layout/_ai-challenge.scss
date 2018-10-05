@@ -1,0 +1,50 @@
+.ai-challenge {
+  padding: 135px 0 63px;
+  .tbl {
+    display: table;
+    margin-bottom: 75px;
+  }
+  .col {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+  }
+}
+.ai-challenge__holder {
+    display: block;
+    width: 50%;
+}
+.ai-challenge__head {
+  display: block;
+  max-width: 475px;
+  margin: 0 auto 43px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #737380;
+  text-transform: uppercase;
+}
+.ai-challenge__description {
+  max-width: 475px;
+  margin: 0 auto;
+}
+.ai-challenge__title {
+  font-size: 36px;
+  line-height: 42px;
+  color: #fff;
+  margin-bottom: 31px;
+}
+.ai-challenge__text {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #737380;
+  opacity: .5;
+  margin-bottom: 26px;
+}
+.ai-challenge__img {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}

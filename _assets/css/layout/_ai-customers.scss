@@ -1,0 +1,25 @@
+.ai-customers {
+  padding: 169px 0 224px;
+  color: #a6a6a6;
+  background: #f7f7f7;
+}
+.ai-customers-carousel {
+  max-width: 580px;
+  margin: 0 auto;
+  .slick-list {
+    overflow: visible;
+  }
+  .ai-testimonial {
+    box-shadow: 64px 64px 64px 0px rgba(0,0,0,0.05);
+    padding: 55px 65px 30px;
+  }
+  .ai-testimonial__position {
+    margin-bottom: 36px;
+  }
+  .ai-testimonial__description {
+    min-height: 317px;
+  }
+}
+.ai-customers-carousel__item {
+  padding: 0 10px;
+}

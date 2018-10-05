@@ -76,6 +76,17 @@ $(document).ready(function () {
     }
   }, 500);
   // slideshow
+  if ($('.ai-customers-carousel').length) {
+    var $customersCarousel = $('.ai-customers-carousel');
+
+    $customersCarousel.slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    });
+  }
+
   if ($('.services-slideshow').length) {
     var $servicesSlideshow = $('.services-slideshow');
 
