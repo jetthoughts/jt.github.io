@@ -263,7 +263,7 @@
       height: 828px;
       padding: 43px 0 54px;
     }
-    .ai-communication__aside {
+    &:before {
       width: 427px;
     }
   }
@@ -280,14 +280,37 @@
     line-height: 24px;
   }
   .ai-communication__img {
-    bottom: -70px;
-    max-width: 820px;
+    &.house {
+      max-width: 820px;
+    }
+    &.chat {
+      bottom: 444px;
+      max-width: 335px;
+    }
+    &.price {
+      bottom: 116px;
+      max-width: 482px;
+    }
+  }
+  .animation {
+    .ai-communication__img {
+      &.chat {
+        right: 55px;
+      }
+      &.price {
+        right: 17px;
+      }
+    }
   }
   .ai-go-it {
     .ai-communication__img {
       right: -230px;
-      top: -11px;
       max-width: 1179px;
+    }
+    &.animation {
+      .ai-communication__img {
+        top: -11px;
+      }
     }
   }
   .ai-company-info {
@@ -414,7 +437,7 @@
     }
     .list {
       margin: 0 -9px;
-      max-width: 342px;
+      max-width: 350px;
     }
     .list__item {
       padding: 0 9px 17px;
