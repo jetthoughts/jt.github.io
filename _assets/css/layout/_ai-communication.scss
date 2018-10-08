@@ -1,6 +1,5 @@
 .ai-communication {
   position: relative;
-  overflow: hidden;
   .cell {
     height: 970px;
     width: 1%;
@@ -10,13 +9,14 @@
     background: #fff;
     color: #a6a6a6;
   }
-  .ai-communication__aside {
-    background: #1a8cff;
-    width: 500px;
+  &:before {
     position: absolute;
+    content: '';
     top: 0;
     right: 0;
     bottom: 0;
+    background: #1a8cff;
+    width: 500px;
   }
 }
 .ai-communication__title {
@@ -38,16 +38,40 @@
 }
 .ai-communication__img {
   position: absolute;
-  bottom: -82px;
-  right: 0;
-  z-index: 5;
-  max-width: 961px;
+  &.house {
+    right: 0;
+    max-width: 961px;
+    z-index: 3;
+  }
+  &.chat {
+    bottom: 520px;
+    max-width: 392px;
+  }
+  &.price {
+    z-index: 4;
+    bottom: 136px;
+    max-width: 565px;
+  }
+}
+.animation {
+  .ai-communication__img {
+    &.chat {
+      right: 64px;
+    }
+    &.price {
+      right: 20px;
+    }
+  }
 }
 .ai-go-it {
-  overflow: visible;
   .ai-communication__img {
     right: -269px;
-    top: -13px;
+    top: 100%;
     max-width: 1381px;
+  }
+  &.animation {
+    .ai-communication__img {
+      top: -13px;
+    }
   }
 }
