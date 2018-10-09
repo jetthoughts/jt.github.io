@@ -85,4 +85,254 @@
   .footer {
     padding: 50px 0 30px;
   }
+  .ai-main-banner {
+    padding: 30px 0;
+    height: 500px;
+  }
+  .ai-main-banner__title {
+    font-size: 60px;
+    line-height: 65px;
+    margin-bottom: 30px;
+  }
+  .ai-main-banner__description {
+    max-width: 230px;
+  }
+  .ai-main-banner__img {
+    right: 0;
+    bottom: -125px;
+  }
+  .ai-description {
+    .cell {
+      height: 500px;
+      padding: 30px 0;
+    }
+  }
+  .ai-description__title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .ai-communication {
+    .cell {
+      height: 500px;
+      padding: 30px 0;
+    }
+    &:before {
+      width: 31.26%;
+    }
+  }
+  .ai-communication__title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .ai-communication__description {
+    max-width: 300px;
+  }
+  .ai-communication__img {
+    &.house {
+      bottom: 0;
+    }
+    &.chat {
+      bottom: 300px;
+    }
+    &.price {
+      bottom: 64px;
+    }
+  }
+  .animation {
+    .ai-communication__img {
+      &.chat {
+        right: 30px;
+      }
+      &.price {
+        right: 15px;
+      }
+    }
+  }
+  .ai-go-it {
+    .ai-communication__img {
+      right: -16.84%;
+    }
+    &.animation {
+      .ai-communication__img {
+        top: -11px;
+      }
+    }
+  }
+  .ai-company-info {
+    padding: 100px 0;
+    min-height: 250px;
+    .info-list {
+      margin: 0 -5px;
+      text-align: center;
+      font-size: 0;
+      line-height: 0;
+    }
+    .info-list__item {
+      width: 33.33%;
+      padding: 0 5px;
+    }
+    .info-list__title {
+      font-size: 17px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+    .info-list__text {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+  .ai-testimonials {
+    padding: 50px 0 35px;
+    .list {
+      margin: 0 -5px;
+    }
+    .list__item {
+      padding: 0 5px 15px;
+    }
+  }
+  .ai-testimonial {
+    padding: 25px;
+  }
+  .ai-testimonial__foto {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+  }
+  .ai-testimonial__description {
+    min-height: 250px;
+  }
+  .ai-testimonial__name {
+    margin-bottom: 5px;
+  }
+  .ai-testimonial__position {
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 20px;
+  }
+  .ai-testimonial__text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .ai-advantages {
+    section {
+      height: 400px;
+    }
+  }
+  .ai-advantages__description {
+    max-width: 300px;
+    margin: 50px auto;
+  }
+  .ai-advantages__title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .ai-advantages__text {
+    font-size: 13px;
+    line-height: 20px;
+    max-width: 250px;
+  }
+  .ai-challenge {
+    padding: 50px 0;
+    .tbl {
+      margin-bottom: 50px;
+    }
+  }
+  .ai-challenge__head {
+    max-width: 300px;
+    margin: 0 auto 20px;
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .ai-challenge__description {
+    max-width: 300px;
+  }
+  .ai-challenge__title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .ai-challenge__text {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .ai-customers {
+    padding: 100px 0;
+  }
+  .ai-customers-carousel {
+    max-width: 400px;
+    .ai-testimonial {
+      padding: 30px;
+    }
+    .ai-testimonial__position {
+      margin-bottom: 20px;
+    }
+    .ai-testimonial__description {
+      min-height: 270px;
+    }
+  }
+  .ai-customers-carousel__item {
+    padding: 0 5px;
+  }
+  .ai-stack {
+    padding: 50px 0;
+    .container {
+      display: table;
+      width: 100%;
+    }
+    .col+.col {
+      padding-left: 30px;
+    }
+    .list {
+      margin: 0 -5px;
+      max-width: 350px;
+    }
+    .list__item {
+      padding: 0 5px 15px;
+    }
+  }
+  .ai-stack__item {
+    max-width: 68px;
+    min-height: 122px;
+  }
+  .ai-stack__title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .ai-stack__holder {
+    width: 64px;
+    height: 64px;
+    border-radius: 13px;
+  }
+  .ai-stack__name {
+    padding-top: 11px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .ai-projects {
+    padding: 20px 0;
+    .list {
+      padding: 50px 0;
+      margin: 100px -5px 0;
+    }
+    .list__item {
+      padding: 0 5px;
+    }
+  }
+  .ai-projects__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .ai-projects__name {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .ai-projects__development {
+    font-size: 11px;
+    line-height: 24px;
+  }
 }

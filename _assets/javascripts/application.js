@@ -207,7 +207,7 @@ $(document).ready(function () {
   });
 
   // scroll go to
-  $('.js-scroll').on('click', function(e) {
+  $('.js-anchor').on('click', function(e) {
     var href =  $(this).attr('href');
     $('html, body').stop().animate({
       scrollTop: href === '#' ? 0 : $(href).offset().top
@@ -238,7 +238,7 @@ $(document).ready(function () {
 
   document.onkeydown = function(e) {
     if (e.keyCode == 32 && !$('body.modal-open').length) {
-      $('.section').each(function() {
+      $('.js-scroll').each(function() {
         var windowHeight = $(window).height();
         var thisOffset = $(this).offset().top;
         var windowTop = $(window).scrollTop();

@@ -237,8 +237,8 @@
     line-height: 20px;
   }
   .ai-main-banner__img {
-    top: 161px;
-    max-width: 936px;
+    bottom: -198px;
+    max-width: 68.55%;
   }
   .ai-description {
     .container {
@@ -264,7 +264,7 @@
       padding: 43px 0 54px;
     }
     &:before {
-      width: 427px;
+      width: 31.26%;
     }
   }
   .ai-communication__title {
@@ -281,15 +281,15 @@
   }
   .ai-communication__img {
     &.house {
-      max-width: 820px;
+      max-width: 60.03%;
     }
     &.chat {
       bottom: 444px;
-      max-width: 335px;
+      max-width: 24.52%;
     }
     &.price {
       bottom: 116px;
-      max-width: 482px;
+      max-width: 35.29%;
     }
   }
   .animation {
@@ -304,8 +304,8 @@
   }
   .ai-go-it {
     .ai-communication__img {
-      right: -230px;
-      max-width: 1179px;
+      right: -16.84%;
+      max-width: 86.31%;
     }
     &.animation {
       .ai-communication__img {
@@ -477,8 +477,6 @@
   .ai-projects__title {
     font-size: 48px;
     line-height: 61px;
-  }
-  .ai-projects__link {
   }
   .ai-projects__name {
     font-size: 17px;
