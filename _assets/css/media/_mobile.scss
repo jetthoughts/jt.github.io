@@ -278,4 +278,298 @@
   .posts {
     min-height: 440px !important;
   }
+  .ai-main-banner {
+    display: block;
+    width: 100%;
+    height: 667px;
+    padding: 126px 0;
+  }
+  .ai-main-banner__title {
+    font-size: 80px;
+    line-height: 85px;
+  }
+  .ai-main-banner__img {
+    right: -129px;
+    bottom: -117px;
+    width: 551px;
+    max-width: none;
+  }
+  .ai-description {
+    text-align: left;
+    .cell {
+      height: 491px;
+      padding: 30px 0;
+    }
+  }
+  .ai-description__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 21px;
+  }
+  .ai-description__text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .ai-communication {
+    .cell {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 84px 0 185px;
+    }
+    &:before {
+      display: none;
+    }
+  }
+  .ai-communication__title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 19px;
+    position: relative;
+    z-index: 3;
+  }
+  .ai-communication__text {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .ai-communication__description {
+    max-width: 275px;
+    position: relative;
+    z-index: 3;
+  }
+  .ai-communication__img {
+    z-index: 1;
+    &.house {
+      bottom: 0;
+      right: -220px;
+      width: 420px;
+      max-width: none;
+    }
+  }
+  .ai-go-it {
+    overflow: hidden;
+    .ai-communication__img {
+      max-width: none;
+      width: 690px;
+      top: auto;
+      bottom: -291px;
+      right: -323px;
+    }
+    &.animation {
+      .ai-communication__img {
+        top: auto;
+      }
+    }
+  }
+  .ai-company-info {
+    padding: 75px 0 20px;
+    .info-list {
+      margin: 0;
+    }
+    .info-list__item {
+      text-align: left;
+      width: 100%;
+      padding: 0 0 70px;
+    }
+    .info-list__title {
+      font-size: 15px;
+      line-height: 19px;
+      margin-bottom: 12px;
+    }
+    .info-list__text {
+      font-size: 28px;
+      line-height: 34px;
+    }
+  }
+  .ai-testimonials {
+    padding: 70px 0 66px;
+    .list {
+      margin: 0;
+    }
+    .list__item {
+      width: 100%;
+      padding: 0 0 30px;
+    }
+  }
+  .ai-testimonial {
+    padding: 29px 26px 82px;
+  }
+  .ai-testimonial__foto {
+    margin-right: 10px;
+  }
+  .ai-testimonial__description {
+    min-height: 0;
+  }
+  .ai-testimonial__name {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 2px;
+  }
+  .ai-testimonial__position {
+    margin-bottom: 18px;
+  }
+  .ai-testimonial__text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .ai-advantages {
+    section {
+      height: auto;
+      display: block;
+    }
+    .cell {
+      width: 1%;;
+      height: 400px;
+      padding: 15px 0 11px;
+    }
+    .img {
+      width: 100%;
+      display: block;
+      padding: 0;
+    }
+  }
+  .ai-advantages__description {
+    margin: 0 auto;
+  }
+  .ai-advantages__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+  }
+  .ai-advantages__text {
+    font-size: 12px;
+    line-height: 20px;
+    max-width: none;
+  }
+  .ai-challenge {
+    padding: 77px 0 25px;
+    .tbl {
+      margin-bottom: 50px;
+      display: block;
+    }
+    .col {
+      display: block;
+      width: 100%;
+      padding: 0 0 33px;
+    }
+  }
+  .ai-challenge__holder {
+    width: 100%;
+  }
+  .ai-challenge__head {
+    max-width: none;
+    font-size: 10px;
+    line-height: 16px;
+    margin: 0 40px 25px;
+  }
+  .ai-challenge__description {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .ai-challenge__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 32px;
+  }
+  .ai-challenge__text {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .ai-customers {
+    padding: 76px 40px 90px;
+  }
+  .ai-customers-carousel {
+    max-width: 400px;
+    .slick-list {
+      overflow: hidden;
+    }
+    .ai-testimonial {
+      padding: 34px 26px 25px;
+      min-height: 334px;
+    }
+    .ai-testimonial__position {
+      margin-bottom: 20px;
+    }
+    .ai-testimonial__name {
+      margin-bottom: 4px;
+    }
+    .ai-testimonial__description {
+      min-height: 270px;
+    }
+  }
+  .ai-customers-carousel__item {
+    padding: 0;
+  }
+  .ai-stack {
+    padding: 59px 0 19px;
+    .container {
+      display: block;
+    }
+    .col {
+      display: block;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .col+.col {
+      padding-left: 0;
+      border: none;
+    }
+    .list {
+      margin: 0 -7px 54px;
+      max-width: 350px;
+    }
+    .list__item {
+      padding: 0 7px 7px;
+    }
+  }
+  .ai-stack__item {
+    max-width: 58px;
+    min-height: 110px;
+  }
+  .ai-stack__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 34px;
+  }
+  .ai-stack__holder {
+    width: 58px;
+    height: 58px;
+    border-radius: 13px;
+  }
+  .ai-stack__name {
+    padding-top: 11px;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .ai-stack__img {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  .ai-projects {
+    padding: 0;
+    .list {
+      padding: 69px 0 50px;
+      margin: 0;
+      border: none;
+    }
+    .list__item {
+      padding: 0 0 35px;
+      display: block;
+      width: 100%;
+    }
+  }
+  .ai-projects__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .ai-projects__name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .ai-projects__development {
+    font-size: 10px;
+    line-height: 22px;
+  }
 }
