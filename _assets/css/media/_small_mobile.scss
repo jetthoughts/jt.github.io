@@ -53,6 +53,58 @@
       display: block;
     }
   }
+  .ai-main-banner {
+    height: 400px;
+    padding: 100px 0;
+  }
+  .ai-main-banner__img {
+    right: -96px;
+    bottom: -98px;
+    width: 432px;
+  }
+  .ai-description .cell {
+    height: 350px;
+    padding: 50px 0;
+  }
+  .ai-communication__description {
+    max-width: 400px;
+  }
+  .ai-advantages__description {
+    max-width: 440px;
+    padding: 0 40px;
+  }
+  .ai-company-info {
+    .info-list {
+      text-align: justify;
+      margin: 0 -15px;
+    }
+    .info-list__item {
+      width: auto;
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 15px 70px;
+    }
+  }
+  .ai-projects {
+    .list {
+      margin: 0 -15px;
+      font-size: 0.1;
+      line-height: 0;
+      text-align: justify;
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        line-height: 0;
+      }
+    }
+    .list__item {
+      width: auto;
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 15px 35px
+    }
+  }
 }
 
 @media screen and (max-height: 479px) {
