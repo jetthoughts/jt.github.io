@@ -4,7 +4,11 @@
     display: table;
     margin-bottom: 75px;
   }
+  .right {
+    direction: rtl;
+  }
   .col {
+    direction: ltr;
     display: table-cell;
     vertical-align: middle;
     width: 50%;

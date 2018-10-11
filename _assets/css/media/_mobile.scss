@@ -414,18 +414,18 @@
     line-height: 20px;
   }
   .ai-advantages {
-    section {
-      height: auto;
-      display: block;
+    .col {
+      float: none;
+      width: 100%;
+    }
+    .right {
+      float: none;
     }
     .cell {
-      width: 1%;;
       height: 400px;
       padding: 15px 0 11px;
     }
     .img {
-      width: 100%;
-      display: block;
       padding: 0;
     }
   }

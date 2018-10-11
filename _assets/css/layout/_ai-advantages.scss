@@ -1,14 +1,21 @@
 .ai-advantages {
   background: #fff;
   section {
-    display: table;
-    height: 800px;
-    width: 100%;
+    overflow: hidden;
+  }
+  .col {
+    width: 50%;
+    overflow: hidden;
+    float: left;
+  }
+  .right {
+    float: right;
   }
   .cell {
     display: table-cell;
     vertical-align: middle;
-    width: 50%;
+    width: 1%;
+    height: 800px;
   }
   .img {
     background: #1a8cff;

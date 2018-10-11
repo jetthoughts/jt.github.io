@@ -87,6 +87,25 @@ $(document).ready(function () {
     });
   }
 
+  if ($('.ai-testimonials .list').length) {
+    var $customersCarousel = $('.ai-testimonials .list');
+
+    $customersCarousel.slick({
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        },
+      ]
+    });
+  }
+
   if ($('.services-slideshow').length) {
     var $servicesSlideshow = $('.services-slideshow');
 
