@@ -30,6 +30,9 @@
   background-size: cover;
   background-position: 50% 50%;
   margin-right: 22px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
 .ai-testimonial__description {
   overflow: hidden;
