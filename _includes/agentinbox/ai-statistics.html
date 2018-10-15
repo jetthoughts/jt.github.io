@@ -1,4 +1,6 @@
-<section class="js-scroll ai-company-info ai-section" style="background-image: url({% asset ai-statistics-bg.jpg @path %})">
+<section class="js-scroll ai-company-info ai-section">
+  <img data-src="{% asset ai-statistics-bg.jpg @path %}" data-srcset="{% asset ai-statistics-bg.jpg @path %}" class="lazy bg-cover mobile-hide">
+  <img data-src="{% asset ai-statistics-bg-mobile.jpg @path %}" data-srcset="{% asset ai-statistics-bg-mobile.jpg @path %}" class="lazy bg-cover mobile-show ">
   <div class="container">
     <ul class="info-list">
       <li class="info-list__item fade-down delay-2">

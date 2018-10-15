@@ -3,7 +3,9 @@
     <ul class="list">
       <li class="list__item fade-down delay-1">
         <div class="ai-testimonial">
-          <div class="ai-testimonial__foto" style="background-image: url({% asset ai-testimonials_img_01.png @path %})"></div>
+          <div class="ai-testimonial__foto">
+            <img data-src="{% asset ai-testimonials_img_01.png @path %}" data-srcset="{% asset ai-testimonials_img_01.png @path %}" class="lazy bg-cover">
+          </div>
           <div class="ai-testimonial__description">
             <strong class="ai-testimonial__name">Tyler Gordon</strong>
             <small class="ai-testimonial__position">Director of Product</small>
@@ -13,7 +15,9 @@
       </li>
       <li class="list__item fade-down delay-2">
         <div class="ai-testimonial">
-          <div class="ai-testimonial__foto" style="background-image: url({% asset ai-testimonials_img_02.png @path %})"></div>
+          <div class="ai-testimonial__foto">
+            <img data-src="{% asset ai-testimonials_img_02.png @path %}" data-srcset="{% asset ai-testimonials_img_02.png @path %}" class="lazy bg-cover">
+          </div>
           <div class="ai-testimonial__description">
             <strong class="ai-testimonial__name">John Williams</strong>
             <small class="ai-testimonial__position">Director of Product</small>

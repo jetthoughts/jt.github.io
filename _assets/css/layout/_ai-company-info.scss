@@ -3,6 +3,9 @@
   min-height: 400px;
   background-size: cover;
   background-position: 50% 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
   .info-list {
     list-style: none;
     margin: 0 -15px;
