@@ -38,6 +38,8 @@
 .ai-projects__link_active {
   display: block;
   opacity: .5;
+  pointer-events: none;
+  cursor: default;
 }
 .ai-projects__name {
   font-size: 20px;
