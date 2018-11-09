@@ -75,9 +75,11 @@ $(document).ready(function () {
       $('.section').addClass('animation');
     }
   }, 500);
+
   // slideshow
   if ($('.ai-customers-carousel').length) {
     var $customersCarousel = $('.ai-customers-carousel');
+    var isHover = false
 
     $customersCarousel.slick({
       infinite: true,
@@ -85,12 +87,31 @@ $(document).ready(function () {
       slidesToScroll: 1,
       arrows: false
     });
+
+    $customersCarousel.hover(function() {
+      isHover = true
+      $(window).on('wheel', mouseWheelHandler)
+    }, function() {
+      isHover = false
+    })
+
+    function mouseWheelHandler(event) {
+      const delta = event.originalEvent.deltaY
+
+      if(delta > 0 && isHover) {
+        $customersCarousel.slick('slickPrev')
+        event.preventDefault()
+      } else if(delta < 0 && isHover) {
+        $customersCarousel.slick('slickNext')
+        event.preventDefault()
+      }
+    }
   }
 
   if ($('.ai-testimonials .list').length) {
-    var $customersCarousel = $('.ai-testimonials .list');
+    var $testimonialsCarousel = $('.ai-testimonials .list');
 
-    $customersCarousel.slick({
+    $testimonialsCarousel.slick({
       infinite: true,
       slidesToShow: 2,
       slidesToScroll: 1,

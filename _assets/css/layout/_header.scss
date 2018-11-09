@@ -54,3 +54,9 @@
     bottom: 11px;
   }
 }
+
+.no-menu {
+  .menu-opener {
+    display: none !important;
+  }
+}
