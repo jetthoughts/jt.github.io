@@ -1,0 +1,15 @@
+facebook:
+  title: 'Facebook'
+  url: 'https://www.facebook.com/jetthoughts/'
+twitter:
+  title: 'Twitter'
+  url: 'https://twitter.com/jetthoughts/'
+linkedin:
+  title: 'LinkedIn'
+  url: 'https://www.linkedin.com/company/jetthoughts/'
+github:
+  title: 'GitHub'
+  url: 'https://github.com/jetthoughts/'
+jtway:
+  title: 'Blog'
+  url: 'https://jtway.co/'

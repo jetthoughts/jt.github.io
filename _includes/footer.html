@@ -4,21 +4,12 @@
       <div class="cell">
         <small class="small-head">Social</small>
         <ul class="social-links" itemscope itemtype="http://schema.org/Organization">
-          <li class="social-links__item">
-            <a class="social-links__link" itemprop="sameAs" href="https://www.facebook.com/jetthoughts/" target="_blank" rel="noreferrer">Facebook</a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-links__link" itemprop="sameAs" href="https://twitter.com/jetthoughts/" target="_blank" rel="noreferrer">Twitter</a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-links__link" itemprop="sameAs" href="https://www.linkedin.com/company/jetthoughts/" target="_blank" rel="noreferrer">LinkedIn</a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-links__link" itemprop="sameAs" href="https://github.com/jetthoughts/" target="_blank" rel="noreferrer">GitHub</a>
-          </li>
-          <li class="social-links__item">
-            <a class="social-links__link" itemprop="sameAs" href="https://jtway.co/" target="_blank" rel="noreferrer">Blog</a>
-          </li>
+          {% for post_hash in site.data.socials %}
+            {% assign item = post_hash[1] %}
+            <li class="social-links__item">
+              <a class="social-links__link" itemprop="sameAs" href="{{ item.url }}" target="_blank" rel="noreferrer">{{ item.title }}</a>
+            </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="cell contacts">
@@ -33,8 +24,8 @@
           </li>
         </ul>
         <div class="description" itemprop="description">
-	  <p>We're industry experts crafting world-class apps in Rails, Elixir, React, iOS, and Android.</p>
-	  <p>JetThoughts's expert team of developers and consultants has helped clients launch highly tailored projects, and we'd love to help you, too.</p>
+          <p>We're industry experts crafting world-class apps in Rails, Elixir, React, iOS, and Android.</p>
+          <p>JetThoughts's expert team of developers and consultants has helped clients launch highly tailored projects, and we'd love to help you, too.</p>
         </div>
       </div>
       <div class="cell">
