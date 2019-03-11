@@ -70,10 +70,6 @@
   .animation .services-slideshow-current-slide {
     top: 86px;
   }
-  .uses-cases {
-    font-size: 14px;
-    line-height: 20px;
-  }
   .uses-cases-controls {
     padding: 76px 72px 0 0;
     margin: 0 -54px;
@@ -181,8 +177,6 @@
   }
   .footer {
     padding: 130px 0;
-    font-size: 14px;
-    line-height: 22px;
     .cell:first-child {
       padding-right: 13px;
       width: 256px;
@@ -213,10 +207,6 @@
   .contacts-list {
     margin-bottom: 50px;
   }
-  .contacts-list__item {
-    font-size: 14px;
-    line-height: 17px;
-  }
   .contacts-list__item+.contacts-list__item {
     margin-left: 107px;
   }
@@ -230,15 +220,11 @@
     margin-bottom: 45px;
   }
   .ai-main-banner__description {
-    max-width: 235px;
-  }
-  .ai-main-banner__text {
-    font-size: 14px;
-    line-height: 20px;
+    max-width: 400px;
   }
   .ai-main-banner__img {
     bottom: -198px;
-    max-width: 68.55%;
+    max-width: 60%;
   }
   .ai-description {
     .container {
@@ -353,8 +339,6 @@
     min-height: 284px;
   }
   .ai-testimonial__name {
-    font-size: 14px;
-    line-height: 17px;
     margin-bottom: 8px;
   }
   .ai-testimonial__position {
@@ -406,8 +390,6 @@
     margin-bottom: 26px;
   }
   .ai-challenge__text {
-    font-size: 14px;
-    line-height: 22px;
     margin-bottom: 22px;
   }
   .ai-customers {
