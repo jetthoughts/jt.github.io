@@ -1,20 +1,20 @@
 .ai-advantages {
   background: #fff;
-  section {
-    overflow: hidden;
-  }
-  .col {
-    width: 50%;
-    overflow: hidden;
-    float: left;
-  }
-  .right {
-    float: right;
+  .tbl {
+    display: table;
+    width: 100%;
+    &.right {
+      direction: rtl;
+    }
   }
   .cell {
+    width: 1%;
+  }
+  .col {
+    direction: ltr;
     display: table-cell;
     vertical-align: middle;
-    width: 1%;
+    width: 50%;
     height: 800px;
   }
   .img {

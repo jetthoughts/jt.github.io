@@ -416,11 +416,9 @@
   }
   .ai-advantages {
     .col {
-      float: none;
       width: 100%;
-    }
-    .right {
-      float: none;
+      display: block;
+      height: auto;
     }
     .cell {
       height: 400px;
