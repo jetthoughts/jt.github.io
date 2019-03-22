@@ -222,14 +222,15 @@
   .ai-main-banner__description {
     max-width: 400px;
   }
+  .ai-main-banner__text {
+    font-size: 15px;
+    line-height: 24px;
+  }
   .ai-main-banner__img {
     bottom: -198px;
     max-width: 60%;
   }
   .ai-description {
-    .container {
-      max-width: 653px;
-    }
     .cell {
       height: 683px;
       padding: 43px 0 46px;
@@ -259,16 +260,13 @@
     margin-bottom: 31px;
   }
   .ai-communication__description {
-    max-width: 410px;
+    max-width: 470px;
   }
   .ai-communication__text {
     font-size: 15px;
     line-height: 24px;
   }
   .ai-communication__img {
-    &.house {
-      max-width: 60.03%;
-    }
     &.chat {
       bottom: 444px;
       max-width: 24.52%;
@@ -356,7 +354,7 @@
     }
   }
   .ai-advantages__description {
-    max-width: 359px;
+    max-width: 410px;
     margin: 43px auto 70px;
   }
   .ai-advantages__title {
@@ -365,8 +363,8 @@
     margin-bottom: 17px;
   }
   .ai-advantages__text {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 24px;
   }
   .ai-challenge {
     padding: 115px 0 54px;
@@ -389,6 +387,8 @@
     margin-bottom: 26px;
   }
   .ai-challenge__text {
+    font-size: 15px;
+    line-height: 24px;
     margin-bottom: 22px;
   }
   .ai-customers {
