@@ -127,11 +127,12 @@
     margin-bottom: 30px;
   }
   .ai-communication__description {
-    max-width: 380px;
+    max-width: 37%;
   }
   .ai-communication__img {
     &.house {
       bottom: 0;
+      width: 60.03%;
     }
     &.chat {
       bottom: 300px;
@@ -250,8 +251,6 @@
     margin-bottom: 20px;
   }
   .ai-challenge__text {
-    font-size: 14px;
-    line-height: 22px;
     margin-bottom: 20px;
   }
   .ai-customers {
