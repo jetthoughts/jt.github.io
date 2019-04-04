@@ -17,10 +17,11 @@
     <meta property="og:locale" content="en_US">
 
     <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:image" content="{{ site.url }}/logo_500.png">
+    <meta property="og:image" content="{{ site.url }}/logo_900.png">
+    <meta property="og:image:secure_url" content="{{ site.url }}/logo_900.png">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="500">
-    <meta property="og:image:height" content="500">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="900">
 
     <meta property="og:site_name" content="{{ site.name }}">
     <meta property="og:updated_time" content="{{ site.time }}">
@@ -33,13 +34,13 @@
 
     <!--TODO: After production deployment need to validate and send application for twitter cards. More info at https://dev.twitter.com/docs/cards/validation/validator -->
 
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:creator" content="@jetthoughts">
     <meta name="twitter:description" content="{{ site.description }}">
     <meta name="twitter:domain" content="www.jetthoughts.com">
     <meta name="twitter:site" content="@jetthoughts">
-    <meta name="twitter:image" content="{{ site.url }}/social-logo.png">
+    <meta name="twitter:image" content="{{ site.url }}/logo_900.png">
 
     {% asset styles.css @inline %}
 
@@ -51,18 +52,47 @@
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
 
     {% include analytics.html %}
+
     <script type="application/ld+json">
         {
-          "@context": "http://schema.org",
-          "@type": "Organization",
-	      "url": "{{ site.url }}",
-	      "name": "{{ site.name }}",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-321-363-9914",
-            "email": "info@jetthoughts.com",
-            "contactType": "Customer service"
-          }
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "{{ site.url }}",
+            "@id":"{{ site.url }}/#website",
+            "name": "{{ site.name }}",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{{ site.name }}/?s={search_term_string}",
+                "query-input": "required name=search_term_string"}
+            }
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-321-363-9914",
+                "email": "info@jetthoughts.com",
+                "contactType": "Customer service"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "url": "{{ site.url }}",
+            "@id": "{{ site.url }}/#organization",
+            "name": "{{ site.name }}",
+            "logo": "{{ site.url }}/logo_900.png"
+            "sameAs": [
+                "https://www.facebook.com/jetthoughts",
+                "https://twitter.com/jetthoughts",
+                "https://www.linkedin.com/company/jetthoughts",
+                "https://github.com/jetthoughts"
+            ],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-321-363-9914",
+                "email": "info@jetthoughts.com",
+                "contactType": "Customer service"
+            }
         }
     </script>
 </head>
