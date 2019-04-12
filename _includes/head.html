@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="google-site-verification" content="Pv5lBObJgEEQZ8qdZrM_O0SgtG2WjFCkF7PZestBDcA" />
-    <meta name="msvalidate.01" content="97E2327CE62B44CB286DA3630D218B45" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ site.title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="title" content="{{ site.title }}">
-    <meta name="description" content="{{ site.description }}"/>
-    <link rel="canonical" href="{{ site.url }}" />
-    <meta name="keywords" content="{{ site.keywords }}">
+  <meta charset="utf-8">
+  <meta name="google-site-verification" content="Pv5lBObJgEEQZ8qdZrM_O0SgtG2WjFCkF7PZestBDcA" />
+  <meta name="msvalidate.01" content="97E2327CE62B44CB286DA3630D218B45" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="title" content="{{ site.title }}">
+  <meta name="description" content="{{ site.description }}"/>
+  <link rel="canonical" href="{{ site.url }}" />
+  <meta name="keywords" content="{{ site.keywords }}">
 
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:locale" content="en_US">
 
-    <meta property="og:description" content="{{ site.description }}">
-    <meta property="og:image" content="{{ site.url }}/logo_900.png">
-    <meta property="og:image:secure_url" content="{{ site.url }}/logo_900.png">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="900">
-    <meta property="og:image:height" content="900">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:image" content="{{ site.url }}/logo_900.png">
+  <meta property="og:image:secure_url" content="{{ site.url }}/logo_900.png">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="900">
+  <meta property="og:image:height" content="900">
 
-    <meta property="og:site_name" content="{{ site.name }}">
-    <meta property="og:updated_time" content="{{ site.time }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:updated_time" content="{{ site.time }}">
 
-    <!--TODO: Need to register app and insert app id into tag below, do the same with admins -->
+  <!--TODO: Need to register app and insert app id into tag below, do the same with admins -->
 
-    <meta name="fb:app_id" content="">
-    <meta name="fb:admins" content="">
-    <meta name="fb:profile_id" content="277156138129">
+  <meta name="fb:app_id" content="">
+  <meta name="fb:admins" content="">
+  <meta name="fb:profile_id" content="277156138129">
 
-    <!--TODO: After production deployment need to validate and send application for twitter cards. More info at https://dev.twitter.com/docs/cards/validation/validator -->
+  <!--TODO: After production deployment need to validate and send application for twitter cards. More info at https://dev.twitter.com/docs/cards/validation/validator -->
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:creator" content="@jetthoughts">
-    <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:domain" content="www.jetthoughts.com">
-    <meta name="twitter:site" content="@jetthoughts">
-    <meta name="twitter:image" content="{{ site.url }}/logo_900.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:creator" content="@jetthoughts">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:domain" content="www.jetthoughts.com">
+  <meta name="twitter:site" content="@jetthoughts">
+  <meta name="twitter:image" content="{{ site.url }}/logo_900.png">
 
-    {% asset styles.css @inline %}
+  {% asset styles.css @inline %}
 
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon-32.ico">
-    <link rel="icon" type="image/png" sizes="144x1144"  href="/android-icon-144x144.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_16.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon-32.ico">
+  <link rel="icon" type="image/png" sizes="144x1144"  href="/android-icon-144x144.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_16.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
 
-    {% include analytics.html %}
+  {% include analytics.html %}
 
-    <script type="application/ld+json">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "{{ site.url }}",
+      "name": "{{ site.name }}",
+      "logo": "{{ site.url }}/logo_900.png",
+      "sameAs": [
+        "https://www.facebook.com/jetthoughts",
+        "https://twitter.com/jetthoughts",
+        "https://www.linkedin.com/company/jetthoughts",
+        "https://github.com/jetthoughts"
+      ],
+      "contactPoint": [
         {
-            "@context": "http://schema.org",
-            "@type": "WebPage",
-            "url": "{{ site.url }}",
-            "@id":"{{ site.url }}/#website",
-            "name": "{{ site.name }}",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "{{ site.name }}/?s={search_term_string}",
-                "query-input": "required name=search_term_string"}
-            }
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+1-321-363-9914",
-                "email": "info@jetthoughts.com",
-                "contactType": "Customer service"
-            }
+          "@type": "ContactPoint",
+          "telephone": "+1-321-363-9914",
+          "email": "info@jetthoughts.com",
+          "contactType": "customer service"
         }
-    </script>
-    <script type="application/ld+json">
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "url": "{{ site.url }}",
+      "name": "{{ site.name }}",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ site.url }}/?s={search_term_string}",
+        "query-input": "required name=search_term_string"}
+      },
+      "contactPoint": [
         {
-            "@context": "http://schema.org",
-            "@type": "Organization",
-            "url": "{{ site.url }}",
-            "@id": "{{ site.url }}/#organization",
-            "name": "{{ site.name }}",
-            "logo": "{{ site.url }}/logo_900.png"
-            "sameAs": [
-                "https://www.facebook.com/jetthoughts",
-                "https://twitter.com/jetthoughts",
-                "https://www.linkedin.com/company/jetthoughts",
-                "https://github.com/jetthoughts"
-            ],
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+1-321-363-9914",
-                "email": "info@jetthoughts.com",
-                "contactType": "Customer service"
-            }
+          "@type": "ContactPoint",
+          "telephone": "+1-321-363-9914",
+          "email": "info@jetthoughts.com",
+          "contactType": "customer service"
         }
-    </script>
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "SiteNavigationElement",
+          "position": 1,
+          "name": "Agent Inbox",
+          "description": "Web and mobile development",
+          "url": "{{ site.url }}/agentinbox"
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
