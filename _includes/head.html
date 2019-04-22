@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <meta name="google-site-verification" content="Pv5lBObJgEEQZ8qdZrM_O0SgtG2WjFCkF7PZestBDcA" />
@@ -16,13 +16,16 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:locale" content="en_US">
+  <meta name="pubdate" content="20180101">
+  <meta name="author" content="JetThoughts">
 
   <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:image" content="{{ site.url }}/logo_900.png">
-  <meta property="og:image:secure_url" content="{{ site.url }}/logo_900.png">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="900">
-  <meta property="og:image:height" content="900">
+  <meta property="og:image" content="{{ site.url }}/logo_500.png">
+  <meta property="og:image:secure_url" content="{{ site.url }}/logo_500.png">
+  <meta property="og:image:alt" content="JetThoughts logo: white triskelion in the circle on the dark blue background">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
 
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:updated_time" content="{{ site.time }}">
@@ -35,13 +38,14 @@
 
   <!--TODO: After production deployment need to validate and send application for twitter cards. More info at https://dev.twitter.com/docs/cards/validation/validator -->
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:text:title" content="{{ page.title }}"/>
   <meta name="twitter:creator" content="@jetthoughts">
   <meta name="twitter:description" content="{{ site.description }}">
   <meta name="twitter:domain" content="www.jetthoughts.com">
   <meta name="twitter:site" content="@jetthoughts">
-  <meta name="twitter:image" content="{{ site.url }}/logo_900.png">
+  <meta name="twitter:image" content="{{ site.url }}/logo_500.png">
 
   {% asset styles.css @inline %}
 
@@ -60,7 +64,7 @@
       "@type": "Organization",
       "url": "{{ site.url }}",
       "name": "{{ site.name }}",
-      "logo": "{{ site.url }}/logo_900.png",
+      "logo": "{{ site.url }}/logo_500.png",
       "sameAs": [
         "https://www.facebook.com/jetthoughts",
         "https://twitter.com/jetthoughts",
