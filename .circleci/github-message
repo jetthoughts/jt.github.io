@@ -10,12 +10,7 @@ if(!token || !owner || !repositoryName || !prNumber || !appUrl) {
   console.log('Needs more information');
   return;
 }
-console.log('VARIABLES:')
-console.log(token)
-console.log(owner)
-console.log(repositoryName)
-console.log(prNumber)
-console.log(appUrl)
+
 const apisauce = require('apisauce');
 const api = apisauce.create({
   baseURL: `https://api.github.com/repos/${owner}/${repositoryName}`,
@@ -26,7 +21,6 @@ const api = apisauce.create({
 
 const getComments = () => api.get(`/issues/${prNumber}/comments`)
 const removeOldComments = (comments, message) => {
-  console.log(comments)
   comments
     .filter(comment => comment.body == message)
     .forEach(comment => api.delete(`/issues/comments/${comment.id}`));
@@ -35,9 +29,6 @@ const addComment = (message) => api.post(`/issues/${prNumber}/comments`, { body:
 
 const message = `Deployed to https://${appUrl}`;
 getComments()
-  .then(response => {
-    console.log(response)
-    removeOldComments(response.data, message)
-  })
+  .then(response => removeOldComments(response.data, message))
   .then(() => addComment(message))
   .catch(error => console.log(error.message))
