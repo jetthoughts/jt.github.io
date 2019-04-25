@@ -35,6 +35,10 @@ exclude:
   - yarn
   - src
 
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
+
 assets:
   compress:
     css: true
