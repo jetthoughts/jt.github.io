@@ -31,3 +31,4 @@ const message = `Deployed to https://${appUrl}`;
 getComments()
   .then(response => removeOldComments(response.data, message))
   .then(() => addComment(message))
+  .catch(error => console.log(error.message))
