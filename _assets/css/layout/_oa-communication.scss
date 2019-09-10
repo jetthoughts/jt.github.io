@@ -1,0 +1,24 @@
+.oa-communication {
+  position: relative;
+  .cell {
+    height: 970px;
+    width: 1%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px 0 63px;
+    background: #fff;
+    color: #a6a6a6;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom,#4b9ce2 0%,#6fcfc1 100%);
+    width: 500px;
+  }
+}
+.oa-communication__description {
+    max-width: 520px;
+}

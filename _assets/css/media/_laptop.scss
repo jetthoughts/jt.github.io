@@ -210,7 +210,8 @@
   .contacts-list__item+.contacts-list__item {
     margin-left: 107px;
   }
-  .ai-main-banner {
+  .ai-main-banner,
+  .oa-main-banner {
     padding: 43px 0 75px;
     height: 854px;
   }
@@ -226,7 +227,8 @@
     font-size: 15px;
     line-height: 24px;
   }
-  .ai-main-banner__img {
+  .ai-main-banner__img,
+  .oa-main-banner__img {
     bottom: -198px;
     max-width: 60%;
   }

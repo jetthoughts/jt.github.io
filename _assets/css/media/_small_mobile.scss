@@ -53,13 +53,19 @@
       display: block;
     }
   }
-  .ai-main-banner {
+  .ai-main-banner,
+  .ao-main-banner {
     height: 400px;
     padding: 100px 0;
   }
   .ai-main-banner__img {
     right: -96px;
     bottom: -98px;
+    width: 432px;
+  }
+  .oa-main-banner__img {
+    right: -96px;
+    bottom: -28px;
     width: 432px;
   }
   .ai-description .cell {
