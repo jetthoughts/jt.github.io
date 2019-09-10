@@ -268,7 +268,8 @@
     font-size: 15px;
     line-height: 24px;
   }
-  .ai-communication__img {
+  .ai-communication__img,
+  .oi-communication__img {
     &.chat {
       bottom: 444px;
       max-width: 24.52%;
@@ -279,7 +280,8 @@
     }
   }
   .animation {
-    .ai-communication__img {
+    .ai-communication__img,
+    .oa-communication__img {
       &.chat {
         right: 55px;
       }
@@ -288,17 +290,23 @@
       }
     }
   }
-  .ai-go-it {
-    .ai-communication__img {
+  .ai-go-it,
+  .oa-go-it {
+    .ai-communication__img,
+    .oa-communication__img {
       right: -16.84%;
       max-width: 86.31%;
     }
     &.animation {
+      .oa-communication__img {
+        top: -11px;
+      }
       .ai-communication__img {
         top: -11px;
       }
     }
   }
+
   .ai-company-info {
     padding: 121px 0 85px;
     min-height: 342px;

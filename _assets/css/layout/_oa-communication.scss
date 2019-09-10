@@ -1,7 +1,7 @@
 .oa-communication {
   position: relative;
   .cell {
-    height: 970px;
+    height: 770px;
     width: 1%;
     display: table-cell;
     vertical-align: middle;
@@ -20,5 +20,50 @@
   }
 }
 .oa-communication__description {
-    max-width: 520px;
+  max-width: 420px;
+}
+
+.animation {
+  .oa-communication__img {
+    &.chat {
+      right: 64px;
+    }
+    &.price {
+      right: 20px;
+    }
+  }
+}
+
+.oa-communication__img {
+  position: absolute;
+  &.house {
+    right: 0;
+    max-width: 961px;
+    width: 58%;
+    z-index: 3;
+  }
+  &.chat {
+    bottom: 520px;
+    max-width: 392px;
+  }
+  &.price {
+    z-index: 4;
+    bottom: 136px;
+    max-width: 565px;
+  }
+}
+
+.oa-go-it {
+  .oa-communication__img {
+    right: -269px;
+    top: 100%;
+    max-width: 1381px;
+  }
+  &.animation {
+    .oa-communication__img {
+      width: 30%;
+      right: 50px;
+      top: 20px;
+    }
+  }
 }

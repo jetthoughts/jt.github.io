@@ -311,7 +311,8 @@
     font-size: 12px;
     line-height: 20px;
   }
-  .ai-communication {
+  .ai-communication,
+  .oa-communication {
     .cell {
       display: block;
       width: 100%;
@@ -348,9 +349,11 @@
       max-width: none;
     }
   }
-  .ai-go-it {
+  .ai-go-it,
+  .oa-go-it {
     overflow: hidden;
-    .ai-communication__img {
+    .ai-communication__img,
+    .oa-communication__img {
       max-width: none;
       width: 690px;
       top: auto;
@@ -360,6 +363,9 @@
     &.animation {
       .ai-communication__img {
         top: auto;
+      }
+      .oa-communication__img {
+        top: 300px;
       }
     }
   }
@@ -415,7 +421,8 @@
     font-size: 12px;
     line-height: 20px;
   }
-  .ai-advantages {
+  .ai-advantages,
+  .oa-advantages {
     .col {
       width: 100%;
       display: block;
