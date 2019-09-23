@@ -16,6 +16,15 @@
     width: 33.33%;
   }
 }
+.ai-projects__story {
+  font-size: 36px;
+  text-decoration: underline;
+  color: #1a8cff;
+  &:hover {
+    color: #1a8cff;
+  }
+}
+
 .ai-projects__title {
   color: #17171a;
   font-size: 56px;
