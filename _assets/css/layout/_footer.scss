@@ -92,12 +92,14 @@
   align-items: center;
   flex-direction: row;
   height: 100%;
-  a {
-  }
+  color: $white;
   img {
     height: 30px;
   }
-  span {
-
+}
+.glassdoor-logo:hover {
+  img {
+    opacity: 0.3;
+    filter: alpha(opacity=30);
   }
 }
