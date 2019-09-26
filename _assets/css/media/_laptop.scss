@@ -298,9 +298,7 @@
       max-width: 86.31%;
     }
     &.animation {
-      .oa-communication__img {
-        top: -11px;
-      }
+      .oa-communication__img,
       .ai-communication__img {
         top: -11px;
       }
@@ -363,6 +361,8 @@
       height: 683px;
     }
   }
+
+  .oa-advantages__description,
   .ai-advantages__description {
     max-width: 410px;
     margin: 43px auto 70px;
@@ -468,6 +468,10 @@
   .ai-projects__title {
     font-size: 48px;
     line-height: 61px;
+  }
+  .ai-projects__story {
+    font-size: 36px;
+    line-height: 41px;
   }
   .ai-projects__name {
     font-size: 17px;

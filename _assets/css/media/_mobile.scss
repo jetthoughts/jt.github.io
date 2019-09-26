@@ -437,6 +437,7 @@
       padding: 0;
     }
   }
+  .oa-advantages__description,
   .ai-advantages__description {
     margin: 0 auto;
   }
@@ -574,6 +575,10 @@
     }
   }
   .ai-projects__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .ai-projects__story {
     font-size: 28px;
     line-height: 36px;
   }
