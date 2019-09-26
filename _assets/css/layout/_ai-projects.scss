@@ -19,8 +19,12 @@
 .ai-projects__story {
   font-size: 36px;
   line-height: 41px;
-  text-decoration: underline;
-  color: #1a8cff;
+  a {
+    color: #1a8cff;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 20px;
+  }
 }
 
 .ai-projects__title {

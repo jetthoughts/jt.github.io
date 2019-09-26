@@ -304,7 +304,6 @@
       }
     }
   }
-
   .ai-company-info {
     padding: 121px 0 85px;
     min-height: 342px;
@@ -470,8 +469,13 @@
     line-height: 61px;
   }
   .ai-projects__story {
-    font-size: 36px;
-    line-height: 41px;
+    font-size: 24px;
+    line-height: 36px;
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
   }
   .ai-projects__name {
     font-size: 17px;
