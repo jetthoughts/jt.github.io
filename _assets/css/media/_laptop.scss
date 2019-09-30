@@ -210,7 +210,8 @@
   .contacts-list__item+.contacts-list__item {
     margin-left: 107px;
   }
-  .ai-main-banner {
+  .ai-main-banner,
+  .oa-main-banner {
     padding: 43px 0 75px;
     height: 854px;
   }
@@ -226,7 +227,8 @@
     font-size: 15px;
     line-height: 24px;
   }
-  .ai-main-banner__img {
+  .ai-main-banner__img,
+  .oa-main-banner__img {
     bottom: -198px;
     max-width: 60%;
   }
@@ -266,7 +268,8 @@
     font-size: 15px;
     line-height: 24px;
   }
-  .ai-communication__img {
+  .ai-communication__img,
+  .oi-communication__img {
     &.chat {
       bottom: 444px;
       max-width: 24.52%;
@@ -277,7 +280,8 @@
     }
   }
   .animation {
-    .ai-communication__img {
+    .ai-communication__img,
+    .oa-communication__img {
       &.chat {
         right: 55px;
       }
@@ -286,12 +290,15 @@
       }
     }
   }
-  .ai-go-it {
-    .ai-communication__img {
+  .ai-go-it,
+  .oa-go-it {
+    .ai-communication__img,
+    .oa-communication__img {
       right: -16.84%;
       max-width: 86.31%;
     }
     &.animation {
+      .oa-communication__img,
       .ai-communication__img {
         top: -11px;
       }
@@ -353,6 +360,8 @@
       height: 683px;
     }
   }
+
+  .oa-advantages__description,
   .ai-advantages__description {
     max-width: 410px;
     margin: 43px auto 70px;
@@ -458,6 +467,15 @@
   .ai-projects__title {
     font-size: 48px;
     line-height: 61px;
+  }
+  .ai-projects__story {
+    font-size: 24px;
+    line-height: 36px;
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
   }
   .ai-projects__name {
     font-size: 17px;

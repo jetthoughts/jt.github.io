@@ -89,6 +89,7 @@
     padding: 30px 0;
     height: 500px;
   }
+  .oa-main-banner__title,
   .ai-main-banner__title {
     font-size: 60px;
     line-height: 65px;
@@ -112,7 +113,8 @@
     line-height: 40px;
     margin-bottom: 30px;
   }
-  .ai-communication {
+  .ai-communication,
+  .oa-communication {
     .cell {
       height: 500px;
       padding: 30px 0;
@@ -216,11 +218,13 @@
     font-size: 15px;
     line-height: 24px;
   }
-  .ai-advantages {
+  .ai-advantages,
+  .oa-advantages {
     .col {
       height: 400px;
     }
   }
+  .oa-advantages__description,
   .ai-advantages__description {
     max-width: 350px;
     margin: 50px auto;

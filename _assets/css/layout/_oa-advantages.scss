@@ -1,0 +1,26 @@
+.oa-advantages {
+  background: #fff;
+  .tbl {
+    display: table;
+    width: 100%;
+    &.right {
+      direction: rtl;
+    }
+  }
+  .cell {
+    width: 1%;
+  }
+  .col {
+    direction: ltr;
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    height: 800px;
+  }
+  .img {
+    background-image: linear-gradient(to bottom,#4b9ce2 0%,#6fcfc1 100%);
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+  }
+}

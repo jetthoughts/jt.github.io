@@ -1,0 +1,70 @@
+.oa-communication {
+  position: relative;
+  .cell {
+    height: 770px;
+    width: 1%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 50px 0 63px;
+    background: #fff;
+    color: #a6a6a6;
+  }
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom,#4b9ce2 0%,#6fcfc1 100%);
+    width: 500px;
+  }
+}
+
+.oa-communication__description {
+  max-width: 420px;
+}
+
+.animation {
+  .oa-communication__img {
+    &.chat {
+      right: 64px;
+    }
+    &.price {
+      right: 20px;
+    }
+  }
+}
+
+.oa-communication__img {
+  position: absolute;
+  &.house {
+    right: 0;
+    max-width: 961px;
+    width: 58%;
+    z-index: 3;
+  }
+  &.chat {
+    bottom: 520px;
+    max-width: 392px;
+  }
+  &.price {
+    z-index: 4;
+    bottom: 136px;
+    max-width: 565px;
+  }
+}
+
+.oa-go-it {
+  .oa-communication__img {
+    right: -269px;
+    top: 100%;
+    max-width: 1381px;
+  }
+  &.animation {
+    .oa-communication__img {
+      width: 30%;
+      right: 50px;
+      top: 20px;
+    }
+  }
+}

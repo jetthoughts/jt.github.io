@@ -83,3 +83,22 @@
 .contacts-list__item+.contacts-list__item {
   margin-left: 126px;
 }
+.glassdoor-logo-wrapper {
+  display: inline-block;
+  margin: 0px;
+}
+.glassdoor-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  color: $white;
+  img {
+    height: 30px;
+  }
+  &:hover {
+    img {
+      opacity: 0.3;
+    }
+  }
+}

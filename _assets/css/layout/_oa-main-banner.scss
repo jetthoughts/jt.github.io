@@ -1,0 +1,21 @@
+.oa-main-banner {
+  color: #fff;
+  padding: 50px 0 88px;
+  height: 1000px;
+  width: 1%;
+  display: table-cell;
+  vertical-align: middle;
+  background-image: linear-gradient(to bottom,#4b9ce2 0%,#6fcfc1 100%);
+  position: relative;
+}
+
+.oa-main-banner__title {
+  display: block;
+  font-weight: 500;
+  font-size: 160px;
+  line-height: 170px;
+  margin-bottom: 53px;
+  span {
+    display: block;
+  }
+}
