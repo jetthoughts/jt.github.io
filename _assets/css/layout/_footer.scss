@@ -85,7 +85,8 @@
 }
 .glassdoor-logo-wrapper {
   display: inline-block;
-  margin: 0px;
+  vertical-align: top;
+  margin: 0 0 115px;
 }
 .glassdoor-logo {
   display: flex;
@@ -107,9 +108,5 @@
   vertical-align: top;
   max-width: 130px;
   margin-right: -5px;
-}
-.testimonials-column {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  padding-top: 5px;
 }
