@@ -7,15 +7,19 @@
     vertical-align: top;
   }
   .cell:first-child {
+    width: 205px;
     padding-right: 15px;
-    width: 300px;
   }
   .cell:last-child {
+    width: 205px;
     padding-left: 15px;
     padding-bottom: 24px;
-    width: 390px;
     vertical-align: bottom;
     text-align: right;
+  }
+  .contacts-wrapper {
+    max-width: 485px;
+    margin: 0 auto;
   }
   .description {
     font-weight: 400;
@@ -26,6 +30,7 @@
     vertical-align: text-top;
   }
   .copyright {
+    white-space: nowrap;
     display: block;
     text-transform: uppercase;
     font-size: 13px;
