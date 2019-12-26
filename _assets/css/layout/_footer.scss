@@ -8,14 +8,17 @@
   }
   .cell:first-child {
     padding-right: 15px;
-    width: 300px;
   }
   .cell:last-child {
     padding-left: 15px;
     padding-bottom: 24px;
-    width: 390px;
     vertical-align: bottom;
     text-align: right;
+  }
+  .contacts-wrapper {
+    max-width: 485px;
+    margin: 0 auto;
+    padding: 0 50px;
   }
   .description {
     font-weight: 400;

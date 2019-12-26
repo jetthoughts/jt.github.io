@@ -224,7 +224,8 @@
       display: block;
       width: auto;
     }
-    .contacts {
+    .contacts-wrapper {
+      padding: 0;
       display: table;
       .contacts-list {
         margin-top: 50px;
@@ -235,12 +236,10 @@
     }
     .cell:first-child {
       display: block;
-      width: auto;
       padding: 0;
     }
     .cell:last-child {
       display: block;
-      width: auto;
       text-align: left;
       padding: 0;
     }
