@@ -226,6 +226,8 @@
     }
     .contacts-wrapper {
       padding: 0;
+      margin: 0;
+      max-width: 100%;
       display: table;
       .contacts-list {
         margin-top: 50px;
