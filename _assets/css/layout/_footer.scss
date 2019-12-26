@@ -4,12 +4,15 @@
   line-height: 26px;
   color: $light_grey;
   .cell {
+    width: 100%;
     vertical-align: top;
   }
   .cell:first-child {
+    width: 1%;
     padding-right: 15px;
   }
   .cell:last-child {
+    width: 1%;
     padding-left: 15px;
     padding-bottom: 24px;
     vertical-align: bottom;
@@ -18,7 +21,6 @@
   .contacts-wrapper {
     max-width: 485px;
     margin: 0 auto;
-    padding: 0 50px;
   }
   .description {
     font-weight: 400;

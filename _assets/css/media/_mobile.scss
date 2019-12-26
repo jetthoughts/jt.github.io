@@ -221,6 +221,7 @@
     font-size: 11px;
     line-height: 19px;
     .cell {
+      width: auto;
       display: block;
       width: auto;
     }
@@ -235,10 +236,12 @@
       }
     }
     .cell:first-child {
+      width: auto;
       display: block;
       padding: 0;
     }
     .cell:last-child {
+      width: auto;
       display: block;
       text-align: left;
       padding: 0;
