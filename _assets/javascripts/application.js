@@ -70,7 +70,7 @@ $(document).ready(function () {
   }
   // scroll animation
   setTimeout(function() {
-    $('.header, .main-screen, .ai-main-banner, .oa-main-banner').addClass('animation');
+    $('.header, .main-screen, .ai-main-banner, .oa-main-banner, .dev-description').addClass('animation');
     if ($(window).width() < 768) {
       $('.section').addClass('animation');
     }

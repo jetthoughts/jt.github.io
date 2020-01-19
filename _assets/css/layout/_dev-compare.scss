@@ -2,28 +2,32 @@
   background: #fff;
   font-weight: 400;
   color: #a6a6a6;
+  padding: 50px 0;
 }
 
-.dev-compare_title {
-  font-size: 36px;
-  line-height: 42px;
-  color: #1b1b1f;
-  margin-bottom: 20px;
+.dev-compare__title {
+  font-size: 56px;
+  line-height: 72px;
+  color: #17171a;
+  margin-bottom: 33px;
+  text-align: center;
 }
 
-.dev-compare_wrap {
+.dev-compare__wrap {
   font-size: 0;
   line-height: 0;
   margin: 0 -15px;
+  padding: 50px 0;
 }
 
-.dev-compare_col {
+.dev-compare__col {
   display: inline-block;
   vertical-align: top;
   padding: 0 15px;
+  width: 50%;
 }
 
-.dev-compare_list {
+.dev-compare__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -31,7 +35,7 @@
   line-height: 28px;
 }
 
-.dev-compare_item {
+.dev-compare__item {
   &.-reject {
 
   }
