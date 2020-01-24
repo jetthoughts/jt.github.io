@@ -1,15 +1,21 @@
 .dev-compare {
   font-weight: 400;
-  color: #a6a6a6;
   padding: 150px 0;
 }
 
 .dev-compare__title {
   font-size: 56px;
   line-height: 72px;
-  color: #17171a;
+  color: $dark_grey;
   margin-bottom: 33px;
   text-align: center;
+}
+
+.dev-compare__sub-title {
+  font-size: 30px;
+  line-height: 34px;
+  color: $dark_grey;
+  margin-bottom: 30px;
 }
 
 .dev-compare__wrap {
@@ -35,8 +41,11 @@
   font-size: 16px;
   line-height: 24px;
   border-radius: 15px;
-  box-shadow: 0 0 32px rgba(21,21,21,0.11);
   list-style: none;
+
+  &.-shadow {
+    box-shadow: 0 0 32px rgba(21,21,21,0.11);
+  }
 }
 
 .dev-compare__item {
@@ -71,6 +80,7 @@
       opacity: 0.8;
     }
   }
+
   &.-success {
     &:before {
       position: absolute;
@@ -83,6 +93,20 @@
       border: solid #47d147;
       border-width: 0 0 4px 4px;
       opacity: 0.8;
+    }
+  }
+
+  &.-dot {
+    &:before {
+      position: absolute;
+      content: '';
+      width: 12px;
+      height: 12px;
+      left: 0;
+      top: 8px;
+      border-radius: 50%;
+      opacity: 0.8;
+      background: $light_grey;
     }
   }
 }
