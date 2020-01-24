@@ -209,8 +209,8 @@ p {
   text-align: left;
 }
 .bg-white {
-  background: $white;
+  background: $white !important;
 }
 .color-white {
-  color: $white;
+  color: $white !important;
 }
