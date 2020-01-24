@@ -1,19 +1,18 @@
-.dev-compare {
-  background: #fff;
+.dev-process {
   font-weight: 400;
-  color: #a6a6a6;
+  color: #fff;
   padding: 150px 0;
 }
 
-.dev-compare__title {
+.dev-process__title {
   font-size: 56px;
   line-height: 72px;
-  color: #17171a;
+  color: #fff;
   margin-bottom: 33px;
   text-align: center;
 }
 
-.dev-compare__wrap {
+.dev-process__wrap {
   display: table;
   width: 100%;
   font-size: 0;
@@ -21,7 +20,7 @@
   padding: 50px 0;
 }
 
-.dev-compare__col {
+.dev-process__col {
   display: table-cell;
   vertical-align: middle;
   width: 50%;
@@ -29,7 +28,7 @@
   padding: 0 15px;
 }
 
-.dev-compare__list {
+.dev-process__list {
   height: 100%;
   margin: 0;
   padding: 50px 40px;
@@ -40,7 +39,7 @@
   list-style: none;
 }
 
-.dev-compare__item {
+.dev-process__item {
   padding: 0 0 23px 40px;
   position: relative;
   display: block;
