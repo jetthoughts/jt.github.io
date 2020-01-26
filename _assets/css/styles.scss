@@ -8,7 +8,6 @@
 @import 'base/_general';
 @import 'base/_animate';
 @import 'base/_buttons';
-@import 'base/_colors';
 
 @import 'layout/_header';
 @import 'layout/_main-screen';
@@ -34,6 +33,8 @@
 @import 'layout/_ai-customers';
 @import 'layout/_dev-compare';
 @import 'layout/_dev-description';
+
+@import 'base/_colors';
 
 @import 'media/_large_desktop';
 @import 'media/_laptop';
