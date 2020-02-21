@@ -1,6 +1,12 @@
 .main-screen {
   overflow: hidden;
   position: relative;
+  .btn-primary {
+    position: absolute;
+    z-index: 9;
+    bottom: 250px;
+    opacity: 0;
+  }
   .tbl {
     height: 100vh;
     padding: 183px 0 215px;
@@ -175,5 +181,11 @@
   .animation .btn-scroll-down {
     bottom: 169px;
     opacity: 1;
+  }
+  .animation.main-screen {
+    .btn-primary {
+      bottom: 169px;
+      opacity: 1;
+    }
   }
 }

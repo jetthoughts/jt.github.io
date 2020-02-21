@@ -50,6 +50,18 @@
   .animation .btn-scroll-down {
     bottom: 160px;
   }
+  .main-screen {
+    .btn-primary {
+      opacity: 1;
+      bottom: 160px;
+      margin-left: 0;
+    }
+  }
+  .animation.main-screen {
+    .btn-primary {
+      bottom: 160px;
+    }
+  }
   .services .col {
     float: none;
     width: 100%;

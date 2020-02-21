@@ -36,6 +36,16 @@
   .animation .btn-scroll-down {
     bottom: 104px;
   }
+  .main-screen {
+    .btn-primary {
+      margin-left: 12px;
+    }
+  }
+  .animation.main-screen {
+    .btn-primary {
+      bottom: 104px;
+    }
+  }
   .services .col .holder {
     max-width: 517px;
   }
