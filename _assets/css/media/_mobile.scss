@@ -615,4 +615,62 @@
   .clutch-widget {
     padding: 15px 0;
   }
+  .container {
+    padding: 0 15px;
+  }
+  .dev-description {
+    .cell {
+      padding: 115px 0 50px;
+    }
+  }
+  .dev-description__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .dev-description__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .dev-compare {
+    padding: 30px 0 0;
+  }
+  .dev-compare__title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .dev-compare__sub-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 20px;
+  }
+  .dev-compare__holder {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+  .dev-compare__item {
+    padding-bottom: 30px;
+  }
+  .dev-compare__item.-dot:before {
+    top: 4px;
+  }
+  .dev-compare__item.-success:before {
+    top: -1px;
+  }
+  .dev-compare__col {
+    padding-right: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .dev-compare__col + .dev-compare__col {
+    padding-left: 0;
+  }
+  .dev-trial-period {
+    padding: 30px 0;
+    font-size: 12px;
+    line-height: 20px;
+  }
 }
