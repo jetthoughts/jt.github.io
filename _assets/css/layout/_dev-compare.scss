@@ -35,7 +35,12 @@
   vertical-align: middle;
   width: 50%;
   height: 200px;
-  padding: 0 15px;
+  padding-right: 15px;
+}
+
+.dev-compare__col + .dev-compare__col {
+  padding-right: 0;
+  padding-left: 15px;
 }
 
 .dev-compare__holder {
