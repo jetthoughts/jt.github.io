@@ -17,6 +17,8 @@
 
   .container {
     max-width: 1000px;
+    position: relative;
+    z-index: 2;
   }
 
   &:before {
@@ -28,6 +30,7 @@
     bottom: 0;
     background: #000;
     opacity: 0.4;
+    z-index: 1;
   }
 }
 
