@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  position: relative;
 
   .cell {
     height: 100vh;
@@ -19,7 +20,16 @@
     max-width: 1000px;
   }
 
-  text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
+  &:before {
+    content: '',;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.3;
+  }
 }
 
 .dev-description__title {
