@@ -52,6 +52,10 @@
 
   &.-shadow {
     box-shadow: 0 0 32px rgba(21,21,21,0.11);
+
+    .dev-compare__item {
+      min-height: 80px;
+    }
   }
 }
 
@@ -62,7 +66,8 @@
 }
 
 .dev-compare__item {
-  padding: 0 0 23px 40px;
+  padding: 0 0 5px 40px;
+  min-height: 100px;
   position: relative;
   display: block;
 

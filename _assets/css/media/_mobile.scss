@@ -650,9 +650,16 @@
     line-height: 20px;
     margin-bottom: 30px;
     padding: 0 20px;
+
+    &.-shadow {
+      .dev-compare__item {
+        min-height: 0;
+      }
+    }
   }
   .dev-compare__item {
     padding-bottom: 30px;
+    min-height: 0;
   }
   .dev-compare__item.-dot:before {
     top: 4px;
