@@ -1,0 +1,20 @@
+.dev-trial-period {
+  min-height: auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.dev-trial-period {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.dev-trial-period__button {
+  margin-bottom: 50px;
+}
+
+.dev-trial-period__description {
+  line-height: 26px;
+  color: #737380;
+}

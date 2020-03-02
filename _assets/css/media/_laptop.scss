@@ -36,6 +36,16 @@
   .animation .btn-scroll-down {
     bottom: 104px;
   }
+  .main-screen {
+    .btn-primary {
+      margin-left: 12px;
+    }
+  }
+  .animation.main-screen {
+    .btn-primary {
+      bottom: 104px;
+    }
+  }
   .services .col .holder {
     max-width: 517px;
   }
@@ -118,17 +128,6 @@
   }
   .post-slideshow {
     margin: 0 -8px;
-  }
-  .post-slideshow .slick-arrow {
-    margin-top: -8px;
-    width: 17px;
-    height: 17px;
-  }
-  .post-slideshow .slick-prev {
-    left: -43px;
-  }
-  .post-slideshow .slick-next {
-    right: -43px;
   }
   .post-slideshow__item {
     padding: 0 8px;

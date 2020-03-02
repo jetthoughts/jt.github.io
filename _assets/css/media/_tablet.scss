@@ -333,4 +333,43 @@
     font-size: 11px;
     line-height: 24px;
   }
+  .dev-description {
+    .cell {
+      padding: 135px 0 50px;
+    }
+  }
+  .dev-description__title {
+    font-size: 72px;
+    line-height: 82px;
+  }
+  .dev-compare {
+    padding: 50px 0;
+  }
+  .dev-compare__title {
+    font-size: 40px;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
+  .dev-compare__sub-title {
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 -15px 30px;
+  }
+  .dev-compare__row {
+    padding: 0;
+  }
+  .dev-compare__holder {
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .dev-compare__holder.-shadow {
+    padding: 30px 20px;
+  }
+  .dev-trial-period {
+    padding: 50px 0;
+  }
+  .dev-trial-period__button {
+    margin-bottom: 30px;
+  }
 }

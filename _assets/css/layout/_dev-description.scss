@@ -1,0 +1,48 @@
+.dev-description {
+  min-height: auto;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  position: relative;
+
+  .cell {
+    height: 100vh;
+    width: 1%;
+    padding: 185px 0 100px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1000px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before {
+    content: '',;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.4;
+    z-index: 1;
+  }
+}
+
+.dev-description__title {
+  font-size: 90px;
+  line-height: 100px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.dev-description__text {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}

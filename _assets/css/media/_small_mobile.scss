@@ -25,6 +25,16 @@
   .animation .btn-scroll-down {
     bottom: 30px;
   }
+  .main-screen {
+    .btn-primary {
+      bottom: 30px;
+    }
+  }
+  .animation.main-screen {
+    .btn-primary {
+      bottom: 30px;
+    }
+  }
   .services .cell {
     padding: 0 0 45px;
   }
@@ -132,6 +142,11 @@
 @media screen and (max-width: 359px) {
   .main-screen.animation .btn-scroll-down {
     bottom: 60px;
+  }
+  .animation.main-screen {
+    .btn-primary {
+      bottom: 60px;
+    }
   }
   .main-screen__title {
     font-size: 60px;
