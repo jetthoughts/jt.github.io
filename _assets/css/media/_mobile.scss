@@ -22,6 +22,7 @@
   .main-screen__title {
     font-size: 67px;
     line-height: 80px;
+    margin-bottom: 15px;
   }
   .blog-nav {
     position: fixed;
@@ -258,6 +259,10 @@
       display: block;
       text-align: left;
       padding: 0;
+
+      .social-links {
+        margin-bottom: 0;
+      }
     }
     .description {
       margin-bottom: 48px;
