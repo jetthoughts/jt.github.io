@@ -14,7 +14,6 @@
     width: 205px;
     padding-left: 15px;
     padding-bottom: 24px;
-    vertical-align: bottom;
     text-align: right;
   }
   .contacts-wrapper {
@@ -91,7 +90,7 @@
 .glassdoor-logo-wrapper {
   display: inline-block;
   vertical-align: top;
-  margin: 0 0 110px;
+  margin: 0 0 58px;
 }
 .glassdoor-logo {
   display: flex;
@@ -114,4 +113,11 @@
   max-width: 130px;
   margin-right: -5px;
   padding-top: 5px;
+}
+.footer-address {
+  font-size: 12px;
+  line-height: 19px;
+  font-style: normal;
+  margin-bottom: 14px;
+  display: block;
 }

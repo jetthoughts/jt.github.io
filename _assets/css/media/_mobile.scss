@@ -265,7 +265,6 @@
     .logo {
       font-size: 12px;
       line-height: 16px;
-      margin-bottom: 0;
     }
     .copyright {
       font-size: 10px;
@@ -274,6 +273,10 @@
     .small-head {
       margin-bottom: 0;
     }
+  }
+  .footer-address {
+    font-size: 10px;
+    line-height: 17px;
   }
   .social-links {
     padding: 26px 0 34px;
@@ -610,7 +613,7 @@
     line-height: 22px;
   }
   .glassdoor-logo-wrapper {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
   }
   .clutch-widget {
     padding: 15px 0;
