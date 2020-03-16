@@ -1,4 +1,11 @@
 @media screen and ($b_small_mobile_height) {
+  .image-cover {
+    .image-bg {
+      min-height: none;
+      width: 100%;
+      min-width: 0;
+    }
+  }
   .section {
     padding: 20px 0;
   }
