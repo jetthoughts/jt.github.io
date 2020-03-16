@@ -14,8 +14,11 @@
     width: 205px;
     padding-left: 15px;
     padding-bottom: 24px;
-    vertical-align: bottom;
     text-align: right;
+
+    .social-links {
+      margin-bottom: 85px;
+    }
   }
   .contacts-wrapper {
     max-width: 485px;

@@ -258,6 +258,10 @@
       display: block;
       text-align: left;
       padding: 0;
+
+      .social-links {
+        margin-bottom: 0;
+      }
     }
     .description {
       margin-bottom: 48px;
