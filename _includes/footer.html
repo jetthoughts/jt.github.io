@@ -31,22 +31,20 @@
         </div>
       </div>
       <div class="cell">
-        <div class="d-inline-block text-left">
-          <small class="small-head">Testimonials</small>
-          <div>
-            <div class="clutch-widget" data-url="https://widget.clutch.co" data-widget-type="1" data-height="50" data-darkbg="1" data-clutchcompany-id="927824"></div>
-          </div>
-          <p class="glassdoor-logo-wrapper">
-            <a class="glassdoor-logo" href="https://www.glassdoor.com/Overview/Working-at-JetThoughts-EI_IE456589.11,22.htm">
-              <img src="{% asset glassdoor-icon.png @path %}" alt="Glassdoor">
-              <span>Glassdoor</span>
-            </a>
-          </p>
-        </div>
-        <p>
+        <small class="small-head">Testimonials</small>
+        <ul class="social-links">
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://clutch.co/profile/jetthoughts" target="_blank" rel="noreferrer">Clutch</a>
+          </li>
+          <li class="social-links__item">
+            <a class="social-links__link" href="https://www.glassdoor.com/Overview/Working-at-JetThoughts-EI_IE456589.11,22.htm" target="_blank" rel="noreferrer">Glassdoor</a>
+          </li>
+        </ul>
+        <div>
           <a href="/" class="logo">JetThoughts LLC</a>
+          <address class="footer-address">340 S Lemon Ave #7503<br/>Walnut, CA 91789, USA</address>
           <span class="copyright">&copy; <span itemprop="copyrightYear">2020</span>. All Rights Reserved.</span>
-        </p>
+        </div>
       </div>
     </div>
   </div>
@@ -55,6 +53,5 @@
   {% asset vendor/fontfaceobserver.js @inline %}
   {% asset vendor/slick.min.js @inline %}
   {% asset application.js @inline %}
-  <script type="text/javascript" src="https://widget.clutch.co/static/js/widget.js"></script>
 </body>
 </html>
