@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/jetthoughts/jetthoughts.github.io#readme",
   "devDependencies": {
-    "apisauce": "^0.16.0",
+    "apisauce": "^1.1.1",
     "gulp": "^4.0.0",
     "gulp-imagemin": "^7.1.0",
     "imagemin-pngcrush": "^6.0.0",
