@@ -1,0 +1,130 @@
+.dev-compare {
+  min-height: auto;
+  font-weight: 400;
+  padding: 140px 0;
+  color: $dark_grey-2;
+  background: $white;
+}
+
+.dev-compare__title {
+  font-size: 56px;
+  line-height: 72px;
+  color: $blue;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dev-compare__sub-title {
+  font-size: 26px;
+  line-height: 30px;
+  color: $blue;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dev-compare__row {
+  display: table;
+  width: 100%;
+  font-size: 0;
+  line-height: 0;
+  padding: 50px 0;
+}
+
+.dev-compare__col {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  height: 200px;
+  padding-right: 15px;
+}
+
+.dev-compare__col + .dev-compare__col {
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+.dev-compare__holder {
+  height: 100%;
+  padding: 50px 40px;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 15px;
+
+  &.-shadow {
+    box-shadow: 0 0 32px rgba(21,21,21,0.11);
+
+    .dev-compare__item {
+      min-height: 80px;
+    }
+  }
+}
+
+.dev-compare__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dev-compare__item {
+  padding: 0 0 5px 40px;
+  min-height: 100px;
+  position: relative;
+  display: block;
+
+  &.-reject {
+    &:before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 4px;
+      border-radius: 2px;
+      background: #FF5733;
+      left: 0;
+      top: 10px;
+      transform: rotate(45deg);
+      opacity: 0.8;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      width: 4px;
+      height: 20px;
+      border-radius: 2px;
+      background: #FF5733;
+      left: 8px;
+      top: 2px;
+      transform: rotate(45deg);
+      opacity: 0.8;
+    }
+  }
+
+  &.-success {
+    &:before {
+      position: absolute;
+      content: '';
+      width: 18px;
+      height: 10px;
+      left: 0;
+      top: 2px;
+      transform: rotate(-45deg);
+      border: solid #47d147;
+      border-width: 0 0 4px 4px;
+      opacity: 0.8;
+    }
+  }
+
+  &.-dot {
+    &:before {
+      position: absolute;
+      content: '';
+      width: 12px;
+      height: 12px;
+      left: 0;
+      top: 8px;
+      border-radius: 50%;
+      opacity: 0.8;
+      background: $blue;
+    }
+  }
+}

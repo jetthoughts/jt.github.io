@@ -1,6 +1,12 @@
 .main-screen {
   overflow: hidden;
   position: relative;
+  .btn-primary {
+    position: absolute;
+    z-index: 9;
+    bottom: 250px;
+    opacity: 0;
+  }
   .tbl {
     height: 100vh;
     padding: 183px 0 215px;
@@ -28,8 +34,35 @@
 .main-screen__title {
   font-size: 160px;
   line-height: 192px;
+  margin-bottom: 50px;
   span {
     display: block;
+  }
+}
+
+.main-screen__subtitle {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.image-cover {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+
+  .image-bg {
+    max-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
   }
 }
 
@@ -175,5 +208,11 @@
   .animation .btn-scroll-down {
     bottom: 169px;
     opacity: 1;
+  }
+  .animation.main-screen {
+    .btn-primary {
+      bottom: 169px;
+      opacity: 1;
+    }
   }
 }

@@ -70,7 +70,7 @@ $(document).ready(function () {
   }
   // scroll animation
   setTimeout(function() {
-    $('.header, .main-screen, .ai-main-banner, .oa-main-banner').addClass('animation');
+    $('.header, .main-screen, .ai-main-banner, .oa-main-banner, .dev-description').addClass('animation');
     if ($(window).width() < 768) {
       $('.section').addClass('animation');
     }
@@ -161,11 +161,13 @@ $(document).ready(function () {
       infinite: false,
       slidesToShow: 3,
       slidesToScroll: 1,
+      arrows: false,
       responsive: [
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 1,
+            arrows: true
           }
         },
       ]
