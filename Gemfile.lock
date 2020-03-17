@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/kou/jekyll-assets.git
-  revision: 591fcfc69672ad877a20e9f757650ebfa80276d4
+  revision: 63f8aa3165742b74a14892b42027f47ac6a785fd
   branch: add-support-for-sprockets-4.0
   specs:
     jekyll-assets (4.0.0.alpha)
@@ -26,7 +26,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.3)
+    activesupport (5.2.4.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -46,11 +46,11 @@ GEM
     extras (0.3.0)
       forwardable-extended (~> 2.5)
     fastimage (2.1.7)
-    ffi (1.11.1)
+    ffi (1.12.1)
     forwardable-extended (2.6.0)
     htmlcompressor (0.4.0)
     http_parser.rb (0.6.0)
-    i18n (1.7.0)
+    i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jekyll (4.0.0)
       addressable (~> 2.4)
@@ -95,7 +95,7 @@ GEM
     liquid-tag-parser (1.9.0)
       extras (~> 0.3)
       liquid (>= 3.0, < 5.0)
-    listen (3.2.0)
+    listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
@@ -104,17 +104,17 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (5.12.2)
+    minitest (5.14.0)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.1)
-    rack (2.0.8)
+    public_suffix (4.0.3)
+    rack (2.1.2)
     rb-fsevent (0.10.3)
-    rb-inotify (0.10.0)
+    rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rouge (3.12.0)
+    rouge (3.15.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -129,11 +129,11 @@ GEM
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     thread_safe (0.3.6)
-    tzinfo (1.2.5)
+    tzinfo (1.2.6)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
-    unicode-display_width (1.6.0)
+    unicode-display_width (1.6.1)
 
 PLATFORMS
   ruby
