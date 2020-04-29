@@ -15,6 +15,9 @@
   .main-screen .tbl {
     padding: 0 0 40px;
   }
+  .main-screen .cell {
+    width: 100%;
+  }
   .main-screen .cell+.cell {
     width: 100%;
     padding-left: 0;
