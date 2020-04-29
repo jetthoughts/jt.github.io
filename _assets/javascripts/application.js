@@ -49,6 +49,12 @@ $(document).ready(function () {
       }, 200);
     }
   }
+  var imageMobile = function() {
+    $('.image-mobile').each(function(index, image) {
+      var src = image.getAttribute('data-src')
+      $(image).attr('src', src).removeClass('image-mobile')
+    })
+  }
   // set fixed height on mobile
   if ($(window).width() <= 1024 && !heightParam) {
     setScreenHeight();
@@ -73,6 +79,7 @@ $(document).ready(function () {
     $('.header, .main-screen, .ai-main-banner, .oa-main-banner, .dev-description').addClass('animation');
     if ($(window).width() < 768) {
       $('.section').addClass('animation');
+      imageMobile()
     }
   }, 500);
 
