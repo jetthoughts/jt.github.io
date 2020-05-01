@@ -1,9 +1,10 @@
 GIT
   remote: https://github.com/envygeeks/jekyll-sanity.git
-  revision: 7096a6c3b236ffa3ad2a6a4233b0ff47a47d37aa
+  revision: 9b90029b5c403232e122b40a8dd33e79755ba405
   specs:
-    jekyll-sanity (1.2.1)
+    jekyll-sanity (1.6.0)
       jekyll (>= 3.1, < 5.0)
+      pathutil (~> 0.16)
 
 GIT
   remote: https://github.com/kou/jekyll-assets.git
@@ -88,7 +89,8 @@ GEM
     json (2.2.0)
     json-minify (0.0.3)
       json (> 0)
-    kramdown (2.1.0)
+    kramdown (2.2.1)
+      rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
@@ -109,19 +111,20 @@ GEM
       mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.3)
+    public_suffix (4.0.4)
     rack (2.1.2)
-    rb-fsevent (0.10.3)
+    rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rouge (3.17.0)
+    rexml (3.2.4)
+    rouge (3.18.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sassc (2.2.1)
+    sassc (2.3.0)
       ffi (~> 1.9)
     sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
