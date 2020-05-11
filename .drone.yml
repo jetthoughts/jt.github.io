@@ -2,6 +2,9 @@ kind: pipeline
 type: kubernetes
 name: default
 
+clone:
+  depth: 1
+
 steps:
   - name: build
     image: circleci/ruby:2.6.5-node-browsers
