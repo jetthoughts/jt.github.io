@@ -9,6 +9,7 @@ steps:
 - name: build
   image: circleci/ruby:2.6.5-node-browsers
   commands:
+  - sudo chmod -R 775 .git
   - bin/setup
   - bin/build
   - .circleci/setup-github
