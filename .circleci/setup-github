@@ -1,12 +1,12 @@
 #!/bin/sh
 
-set -e
-
 git config user.name "$USER_NAME"
 git config user.email "$USER_EMAIL"
 
 git add -fA _site
 git commit --allow-empty -m "$(git log develop -1 --pretty=%B)"
-git push origin `git subtree split --prefix _site master`:master --force
+
+git subtree split --prefix=_site -b gh-publish
+git push --force origin gh-publish:master
 
 echo "deployed successfully"
