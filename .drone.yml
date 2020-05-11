@@ -2,9 +2,17 @@ kind: pipeline
 type: kubernetes
 name: default
 
+clone:
+  depth: 1
+
 steps:
-  - name: greeting
-    image: alpine
+  - name: build
+    image: circleci/ruby:2.6.5-node-browsers
     commands:
-      - echo hello
-      - echo world
+      - bin/setup
+      - bin/build
+      - .circleci/setup-github
+    when:
+      branch:
+        - develop
+        - setup-build-on-drone-io
