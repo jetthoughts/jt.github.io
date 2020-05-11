@@ -6,13 +6,14 @@ clone:
   depth: 1
 
 steps:
-  - name: build
-    image: circleci/ruby:2.6.5-node-browsers
-    commands:
-      - bin/setup
-      - bin/build
-      - .circleci/setup-github
-    when:
-      branch:
-        - develop
-        - setup-build-on-drone-io
+- name: build
+  image: circleci/ruby:2.6.5-node-browsers
+  commands:
+  - bin/setup
+  - bin/build
+  - .circleci/setup-github
+
+trigger:
+  branch:
+  - develop
+  - drone-io
