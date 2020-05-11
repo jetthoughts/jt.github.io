@@ -8,13 +8,11 @@ clone:
 steps:
   - name: build
     image: circleci/ruby:2.6.5-node-browsers
-    volumes:
-    - name: bundle
-      path: /usr/local/bundle
     commands:
       - bin/setup
       - bin/build
-
-volumes:
-  - name: bundle
-    temp: {}
+      - .circleci/setup-github
+    when:
+      branch:
+        - develop
+        - setup-build-on-drone-io
