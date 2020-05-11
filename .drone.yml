@@ -4,7 +4,7 @@ name: default
 
 steps:
   - name: build
-    image: circleci/ruby:2.7.1-node-browsers
+    image: circleci/ruby:2.6.5-node-browsers
     commands:
       - bin/setup
       - bin/build
