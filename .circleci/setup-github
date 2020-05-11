@@ -6,12 +6,12 @@ git config user.email "$USER_EMAIL"
 git checkout master
 git pull origin master
 
-find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec sudo rm -rf {} \;
-mv _site/* .
-rm -R _site/
+#find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec sudo rm -rf {} \;
+#mv _site/* .
+#rm -R _site/
 
-git add -fA
+git add -fA _site
 git commit --allow-empty -m "$(git log develop -1 --pretty=%B)"
-git push origin master
+git subtree push --prefix _site origin master
 
 echo "deployed successfully"
