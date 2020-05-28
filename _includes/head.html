@@ -46,10 +46,6 @@
   <meta name="twitter:site" content="@jetthoughts">
   <meta name="twitter:image" content="{{ site.url }}/logo_500.png">
 
-  {% if page.path contains '_posts' %}
-    <link rel="amphtml" href="{{ page.id | prepend: '/YOURDIR' | prepend: site.baseurl | prepend: site.url | append: '.html' }}">
-  {% endif %}
-
   {% asset styles.css @inline %}
 
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
