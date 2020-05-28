@@ -2,4 +2,5 @@
 <div class="main-wrapper" itemscope itemtype="http://schema.org/WebPage">
   {% include amp/content.html %}
 </div>
-{% include amp/footer.html %}
+{% capture footer %}{% include footer.html %}{% endcapture %}
+{{ footer | amp_images: false, 24, 24 }}
