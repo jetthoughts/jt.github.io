@@ -33,6 +33,10 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    amp-jekyll (1.0.3)
+      fastimage (>= 1.8.0)
+      jekyll (>= 3.0, < 5.0)
+      nokogiri (>= 1.6.0)
     autoprefixer-rails (9.7.3)
       execjs
     colorator (1.1.0)
@@ -139,6 +143,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  amp-jekyll
   autoprefixer-rails
   jekyll (>= 4)
   jekyll-assets!
