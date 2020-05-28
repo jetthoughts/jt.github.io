@@ -1,8 +1,19 @@
 {% include amp/head.html %}
+{% capture header %}{% include sections/header.html %}{% endcapture %}
+{{ header | amp_images: false }}
 <div class="main-wrapper" itemscope itemtype="http://schema.org/WebPage">
-  {% include amp/content.html %}
+  {% capture main-screen %}{% include sections/main-screen.html %}{% endcapture %}
+  {{ main-screen | amp_images: false }}
+  {% capture use-cases %}{% include sections/use-cases.html %}{% endcapture %}
+  {{ use-cases | amp_images: false }}
+  {% capture services %}{% include sections/services.html %}{% endcapture %}
+  {{ services | amp_images: false }}
+  {% capture posts %}{% include sections/posts.html %}{% endcapture %}
+  {{ posts | amp_images: false }}
+  {% capture lets-talk %}{% include sections/lets-talk.html %}{% endcapture %}
+  {{ lets-talk | amp_images: false }}
 </div>
 {% capture footer %}{% include footer.html %}{% endcapture %}
-{{ footer | amp_images: false, 24, 24 }}
+{{ footer | amp_images: false }}
 </body>
 </html>
