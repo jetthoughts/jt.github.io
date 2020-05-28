@@ -1,0 +1,40 @@
+<section class="js-scroll section js-min-full-vh services animation" id="services">
+  <div class="col">
+    <div class="services-slideshow">
+
+      {% for slide_hash in site.data.services %}
+        {% assign slide = slide_hash[1] %}
+
+        <div class="services-slideshow__item">
+          <div class="cell js-full-vh">
+            <div class="holder">
+              <div class="services__description">
+                <small class="small-head fade-down delay-3">SERVICES</small>
+                <strong class="services__text fade-down delay-4" itemprop="name"><h2 class="services__title">{{ slide.title }}</h2> {{ slide.description }}</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      {% endfor %}
+
+    </div>
+    <span class="services-slideshow-current-slide">0<span>1</span></span>
+    <div class="services-slideshow-controls">
+      <span class="services-slideshow-controls__btn services-slideshow-prev fade-down delay-5">prev</span>
+      <span class="services-slideshow-controls__btn services-slideshow-next fade-down delay-5">next</span>
+    </div>
+  </div>
+  <div class="col">
+    <div class="cell js-full-vh">
+      <div class="holder">
+        <div class="services__description">
+          <small class="small-head fade-down delay-2">Team</small>
+          <strong class="services__text fade-down delay-3" itemprop="name">Motivated developers, ready to join your team</strong>
+        </div>
+        <figure class="services__figure">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>

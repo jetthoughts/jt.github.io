@@ -1,16 +1,16 @@
 {% include amp/head.html %}
-{% capture header %}{% include sections/header.html %}{% endcapture %}
+{% capture header %}{% include amp/header.html %}{% endcapture %}
 {{ header | amp_images: false }}
 <div class="main-wrapper" itemscope itemtype="http://schema.org/WebPage">
-  {% capture main-screen %}{% include sections/main-screen.html %}{% endcapture %}
+  {% capture main-screen %}{% include amp/main-screen.html %}{% endcapture %}
   {{ main-screen | amp_images: false }}
-  {% capture use-cases %}{% include sections/use-cases.html %}{% endcapture %}
+  {% capture use-cases %}{% include amp/use-cases.html %}{% endcapture %}
   {{ use-cases | amp_images: false }}
-  {% capture services %}{% include sections/services.html %}{% endcapture %}
+  {% capture services %}{% include amp/services.html %}{% endcapture %}
   {{ services | amp_images: false }}
-  {% capture posts %}{% include sections/posts.html %}{% endcapture %}
+  {% capture posts %}{% include amp/posts.html %}{% endcapture %}
   {{ posts | amp_images: false }}
-  {% capture lets-talk %}{% include sections/lets-talk.html %}{% endcapture %}
+  {% capture lets-talk %}{% include amp/lets-talk.html %}{% endcapture %}
   {{ lets-talk | amp_images: false }}
 </div>
 {% capture footer %}{% include footer.html %}{% endcapture %}
