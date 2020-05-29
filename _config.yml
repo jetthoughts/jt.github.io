@@ -25,6 +25,7 @@ plugins:
   - jekyll-assets
   - jekyll-redirect-from
   - jekyll-sitemap
+  - amp-jekyll
 exclude:
   - Gemfile
   - Gemfile.lock
