@@ -49,11 +49,17 @@
 }
 .social-logos {
   white-space: nowrap;
+  font-size: 0;
+  .social-links__item {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .social-links__item + .social-links__item {
+    margin-left: 7px;
+  }
 }
 .social-links__item {
   margin-bottom: 28px;
-  display: inline-block;
-  vertical-align: top;
 }
 .social-links__link {
   position: relative;
