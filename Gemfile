@@ -5,6 +5,7 @@ gem 'amp-jekyll'
 
 gem 'minima', '~> 2.0'
 gem 'autoprefixer-rails'
+gem 'mini_magick'
 
 group :jekyll_plugins do
    gem 'jekyll-feed'
