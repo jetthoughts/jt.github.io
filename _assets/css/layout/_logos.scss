@@ -7,8 +7,8 @@
 .logos_section {
   display: inline-block;
   vertical-align: top;
-  width: 50%;
-  padding: 30px;
+  width: 33.33%;
+  padding: 15px;
 }
 
 .logos_image {
@@ -35,8 +35,10 @@
   line-height: 16px;
   display: block;
   padding: 10px;
-  color: $blue;
+  color: $gray;
   background: rgba(255,255,255,0.2);
+  background: $white;
+  opacity: 0.3;
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
@@ -49,7 +51,7 @@
   color: $white;
   display: inline-block;
   vertical-align: top;
-  min-width: 50px;
+  min-width: 125px;
   padding: 10px;
   margin-right: 7px;
   margin-top: 7px;
