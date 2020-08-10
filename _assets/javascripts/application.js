@@ -230,7 +230,7 @@ $(document).ready(function () {
   //copy
   $('.js-copy').on('click', function() {
     var src = $(this).attr('data-src');
-    $('<input class="hide">').val(src).appendTo('body').select().setSelectionRange(0, 99999);
+    var clipboard = $('<input>').val(src).appendTo('body').select().addClass('hide-input');
     document.execCommand('copy');
   });
 
