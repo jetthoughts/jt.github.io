@@ -1,4 +1,8 @@
-logo_1:
-  url: 'logos/logo_01.png'
-logo_2:
-  url: 'logos/logo_02.png'
+square:
+  logo_1:
+    url: 'logos/logo_01.png'
+  logo_2:
+    url: 'logos/logo_02.png'
+rectangle:
+  logo_1:
+    url: 'logos/logo_03.png'

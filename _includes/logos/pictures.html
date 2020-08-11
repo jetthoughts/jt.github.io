@@ -1,20 +1,42 @@
 <div class="logos">
-  {% for logo_hash in site.data.logos %}
-    {% assign logo = logo_hash[1] %}
-    <section class="logos_section">
-      <div class="logos_holder">
-        <img src="{% asset {{logo.url}} @path %}" class="logos_image" />
-      </div>
-      <div class="logos_description">
-        <strong class="logos_text">Copy link</strong>
-        <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=60x60 @path %}">60x60</span>
-        <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=110x110 @path %}">110x110</span>
-        <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=128x128 @path %}">128x128</span>
-        <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=165x165 @path %}">165x165</span>
-        <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=170x170 @path %}">170x170</span>
-        <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=300x300 @path %}">300x300</span>
-        <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=400x400 @path %}">400x400</span>
-      </div>
-    </section>
-  {% endfor %}
+  <div>
+    {% for logo_hash in site.data.logos.square %}
+      {% assign logo = logo_hash[1] %}
+      <section class="logos_section">
+        <div class="logos_holder">
+          <img src="{% asset {{logo.url}} @path %}" class="logos_image" />
+        </div>
+        <div class="logos_description">
+          <strong class="logos_text">Links</strong>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=60x60 @path %}">60x60</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=110x110 @path %}">110x110</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=128x128 @path %}">128x128</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=165x165 @path %}">165x165</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=170x170 @path %}">170x170</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=300x300 @path %}">300x300</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=400x400 @path %}">400x400</span>
+        </div>
+      </section>
+    {% endfor %}
+  </div>
+
+  <div>
+    {% for logo_hash in site.data.logos.rectangle %}
+      {% assign logo = logo_hash[1] %}
+      <section class="logos_section">
+        <div class="logos_holder">
+          <img src="{% asset {{logo.url}} @path %}" class="logos_image" />
+        </div>
+        <div class="logos_description">
+          <strong class="logos_text">Links</strong>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=160x50 @path %}">160x50</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=224x70 @path %}">224x70</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=320x100 @path %}">320x100</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=384x120 @path %}">384x120</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=480x150 @path %}">480x150</span>
+          <span class="logos_link js-copy" data-src="{{site.url}}{% asset {{logo.url}} magick:resize=640x200 @path %}">640x200</span>
+        </div>
+      </section>
+    {% endfor %}
+  </div>
 </div>
