@@ -227,6 +227,13 @@ $(document).ready(function () {
     }
   }
 
+  //copy
+  $('.js-copy').on('click', function() {
+    var src = $(this).attr('data-src');
+    var clipboard = $('<input>').val(src).appendTo('body').select().addClass('hide-input');
+    document.execCommand('copy');
+  });
+
   // modal
   $('.js-modal-opener').on('click', function() {
     var href = $(this).attr('href');
