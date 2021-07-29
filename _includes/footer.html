@@ -4,8 +4,7 @@
       <div class="cell">
         <small class="small-head">Social</small>
         <ul class="social-links" itemscope itemtype="http://schema.org/Organization">
-          {% for post_hash in site.data.socials %}
-            {% assign item = post_hash[1] %}
+          {% for item in site.data.socials.items %}
             <li class="social-links__item">
               <a class="social-links__link" itemprop="sameAs" href="{{ item.url }}" target="_blank" rel="noreferrer">{{ item.title }}</a>
             </li>

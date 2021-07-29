@@ -1,9 +1,7 @@
 <section class="js-scroll ai-section ai-customers">
   <div class="ai-customers-carousel fade-down delay-1">
 
-      {% for post_hash in site.data.customers %}
-        {% assign item = post_hash[1] %}
-
+      {% for item in site.data.customers.items %}
         <div class="ai-customers-carousel__item">
           <div class="ai-testimonial" itemscope itemtype="http://schema.org/Review">
             <div class="ai-testimonial__description" itemprop="itemReviewed" content="5">
@@ -13,7 +11,6 @@
             </div>
           </div>
         </div>
-
       {% endfor %}
 
   </div>

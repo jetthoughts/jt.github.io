@@ -2,9 +2,7 @@
   <div class="col">
     <div class="services-slideshow">
 
-      {% for slide_hash in site.data.services %}
-        {% assign slide = slide_hash[1] %}
-
+      {% for slide in site.data.services.items %}
         <div class="services-slideshow__item">
           <div class="cell js-full-vh">
             <div class="holder">
@@ -15,7 +13,6 @@
             </div>
           </div>
         </div>
-
       {% endfor %}
 
     </div>

@@ -1,15 +1,13 @@
-agent_inbox:
-  title: 'Agent Inbox'
-  scope: 'web and mobile development'
-  desc: 'We helped Agent Inbox become the most innovative technology company in U.S. Real Estate.'
-  url: 'https://agentinbox.com'
-open_apply:
-  title: 'Open Apply'
-  scope: 'web development'
-  desc: 'Improved conversion and code for a high growth startup.'
-  url: 'https://www.openapply.com'
-mobile_coach:
-  title: 'Mobile Coach'
-  scope: 'web development'
-  desc: 'Together with Mobile Coach we built Chat Bot solution with millions of users.'
-  url: 'https://mobilecoach.com'
+items:
+  - title: Agent Inbox
+    scope: web and mobile development
+    desc: We helped Agent Inbox become the most innovative technology company in U.S. Real Estate.
+    url: https://agentinbox.com
+  - title: Open Apply
+    scope: web development
+    desc: Improved conversion and code for a high growth startup.
+    url: https://www.openapply.com
+  - title: Mobile Coach
+    scope: web development
+    desc: Together with Mobile Coach we built Chat Bot solution with millions of users.
+    url: https://mobilecoach.com

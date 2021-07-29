@@ -1,18 +1,13 @@
-facebook:
-  title: 'Facebook'
-  url: 'https://www.facebook.com/jetthoughts/'
-twitter:
-  title: 'Twitter'
-  url: 'https://twitter.com/jetthoughts/'
-linkedin:
-  title: 'LinkedIn'
-  url: 'https://www.linkedin.com/company/jetthoughts/'
-github:
-  title: 'GitHub'
-  url: 'https://github.com/jetthoughts/'
-jtway:
-  title: 'Blog'
-  url: 'https://jtway.co/'
-logos:
-  title: 'Brand assets'
-  url: '/logos'
+items:
+  - title: Facebook
+    url: https://www.facebook.com/jetthoughts/
+  - title: Twitter
+    url: https://twitter.com/jetthoughts/
+  - title: LinkedIn
+    url: https://www.linkedin.com/company/jetthoughts/
+  - title: GitHub
+    url: https://github.com/jetthoughts/
+  - title: Blog
+    url: https://jtway.co/
+  - title: Brand assets
+    url: /logos
