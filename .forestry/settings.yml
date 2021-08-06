@@ -1,11 +1,16 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
-sections: 
-upload_dir: uploads
-public_path: "/uploads"
+sections:
+- type: directory
+  path: _data/home
+  label: Home page
+  create: all
+  match: "**/*"
+upload_dir: _assets/images
+public_path: _assets/images
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
