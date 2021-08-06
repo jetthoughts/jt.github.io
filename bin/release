@@ -2,5 +2,6 @@
 
 echo "== Building and Deploying on $1 =="
 
+cp _data/home/home.md _data/home/home.yml
 JEKYLL_ENV=production bundle exec jekyll build
 surge -p ./_site -d $1

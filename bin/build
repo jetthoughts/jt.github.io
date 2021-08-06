@@ -2,4 +2,5 @@
 
 echo "== Building Solution =="
 
+cp _data/home/home.md _data/home/home.yml
 JEKYLL_ENV=production bundle exec jekyll build $@

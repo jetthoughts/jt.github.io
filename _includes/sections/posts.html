@@ -4,7 +4,7 @@
       <small class="small-head fade-down delay-1" itemprop="name">Latest posts</small>
       <div class="post-slideshow">
         {% assign delay = 1 %}
-        {% for post_hash in site.data.posts %}
+        {% for post_hash in site.data.home.home.posts %}
           {% assign post = post_hash[1] %}
           {% assign delay = delay | plus: 1 %}
           <div class="post-slideshow__item fade-down delay-{{ delay }}" itemscope itemtype="http://schema.org/BlogPosting">

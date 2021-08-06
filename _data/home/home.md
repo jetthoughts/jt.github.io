@@ -1,0 +1,134 @@
+---
+main_screen_posts:
+  post_1:
+    title: 'The 4 Steps to Bringing Life to a Struggling Project'
+    url: 'https://jtway.co/the-4-steps-to-bringing-life-to-a-struggling-project-37a53bf9c7dc'
+    author: 'Paul Keen'
+    image: 'https://cdn-images-1.medium.com/max/1200/1*ggxVr-ljos8O9Sp1vOkXIA.jpeg'
+    datePublished: 'Apr 27, 2017'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+  post_2:
+    title: 'How to Get Remote Teams to High Perform'
+    url: 'https://jtway.co/how-to-get-remote-teams-to-high-perform-b9b29d698feb'
+    author: 'Paul Keen'
+    image: 'https://cdn-images-1.medium.com/max/2000/1*1Y-djx_fBY4GWJoNR6pVAw.jpeg'
+    datePublished: 'May 7, 2018'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+  post_3:
+    title: 'Inexpensive is Not Cheap'
+    url: 'https://jtway.co/inexpensive-is-not-cheap-choosing-software-development-company-for-your-project-da97b7d9b3c0'
+    author: 'Paul Keen'
+    image: 'https://cdn-images-1.medium.com/max/1000/1*qOIHICIJpa1YkrOHXzm6Gg.jpeg'
+    datePublished: 'Jun 15, 2017'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+use_cases:
+  agent_inbox:
+    title: Agent Inbox
+    scope: web and mobile development
+    desc: We helped Agent Inbox become the most innovative technology company in U.S.
+      Real Estate.
+    url: https://agentinbox.com
+  open_apply:
+    title: Open Apply
+    scope: web development
+    desc: Improved ctytytonversion and code for a high growth startup.
+    url: https://www.openapply.com
+  mobile_coach:
+    title: Mobile Coach
+    scope: web development
+    desc: Together with Mobile Coach we built Chat Bot solution with millions of users.
+    url: https://mobilecoach.com
+services:
+  slide_web:
+    title: 'Web Development'
+    description: 'We bring elegant solutions into your web projects using Ruby on Rails, Vue.js, React.js, and more.'
+  slide_mobile:
+    title: 'Mobile Development'
+    description: 'We build applications for mobile, from highly technical internal tools to robust customer-facing interfaces.'
+  slide_rails:
+    title: 'Ruby on Rails'
+    description: 'Using Ruby on Rails, we can instantly bring reliable products onto the market.'
+  slide_react:
+    title: 'React Native'
+    description: 'React Native allows us to build mobile apps faster while maintaining world-class mobile user experience.'
+posts:
+  post_1:
+    title: 'MVP Hosting for next 1k Users for Free'
+    url: 'https://jtway.co/how-to-setup-a-project-that-can-host-up-to-1000-users-for-free-ab59ad3edaf1'
+    author: 'Paul Keen'
+    image: 'https://cdn-images-1.medium.com/max/1200/1*IxmIzg_IKDthRTmXeR1Rlw.jpeg'
+    datePublished: 'Jun 12, 2017'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+  post_2:
+    title: 'Ubuntu Server 16.04 on Raspberry Pi 3 via Terraform'
+    url: 'https://jtway.co/ubuntu-server-16-06-on-raspberry-pi-3-via-terraform-93dccaef5ddb'
+    author: 'Michael Nikitochkin'
+    image: 'https://cdn-images-1.medium.com/max/1200/1*wpJwYpRHBA4L2Idsn_17Uw.jpeg'
+    datePublished: 'Jul 3, 2017'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+  post_3:
+    title: 'The 4 Steps to Bringing Life to a Struggling Project'
+    url: 'https://jtway.co/the-4-steps-to-bringing-life-to-a-struggling-project-37a53bf9c7dc'
+    author: 'Paul Keen'
+    image: 'https://cdn-images-1.medium.com/max/1200/1*ggxVr-ljos8O9Sp1vOkXIA.jpeg'
+    datePublished: 'Apr 27, 2017'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+  post_4:
+    title: 'Inexpensive is Not Cheap'
+    url: 'https://jtway.co/inexpensive-is-not-cheap-choosing-software-development-company-for-your-project-da97b7d9b3c0'
+    author: 'Paul Keen'
+    image: 'https://cdn-images-1.medium.com/max/1000/1*qOIHICIJpa1YkrOHXzm6Gg.jpeg'
+    datePublished: 'Jun 15, 2017'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+  post_5:
+    title: 'The simplest way to automate delivery of your React Native Application'
+    url: 'https://jtway.co/the-simplest-way-to-automate-delivery-of-your-react-native-application-f37f2c71eb1d'
+    author: 'Misha Sebalo'
+    image: 'https://cdn-images-1.medium.com/fit/c/60/60/1*nz2VrOXGRMFsgDFeYuqBhQ.jpeg'
+    datePublished: 'Oct 17, 2017'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+  post_6:
+    title: 'How We Hire Developers at JetThoughts'
+    url: 'https://jtway.co/how-we-hire-developers-at-jetthoughts-d71e8b88e62c'
+    author: 'Andriy Parashchuk'
+    image: 'https://cdn-images-1.medium.com/max/800/0*_BuegqkYZj3noHdH.jpg'
+    datePublished: 'Jun 21, 2018'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+  post_7:
+    title: 'A typical day at JetThoughts'
+    url: 'https://jtway.co/a-typical-day-at-jetthoughts-460b84eeb9c6'
+    author: 'Ilya Novohatskyi'
+    image: 'https://cdn-images-1.medium.com/max/800/0*Lex_wxi1D2uLZWg0.'
+    datePublished: 'May 23, 2018'
+    publisher:
+      name: 'JetThoughts LLC'
+      url: 'https://www.jetthoughts.com/social-logo.png'
+    mainEntityOfPage: "https://medium.com/"
+---

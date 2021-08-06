@@ -24,7 +24,7 @@
         <span class="js-menu-opener menu-opener mobile-show">Menu</span>
         <ul class="blog-nav">
           {% assign delay = 2 %}
-          {% for post_hash in site.data.main_screen_posts %}
+          {% for post_hash in site.data.home.home.main_screen_posts %}
             {% assign post = post_hash[1] %}
             {% assign delay = delay | plus: 1 %}
             <li class="blog-nav__item fade-right delay-{{ delay }}" itemscope itemtype="http://schema.org/BlogPosting">

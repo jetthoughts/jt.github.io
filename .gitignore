@@ -1,4 +1,5 @@
 _site
+_data/home/home.yml
 vendor
 .sass-cache
 .asset-cache
@@ -7,4 +8,3 @@ vendor
 package-lock.json
 node_modules/
 .DS_Store
-
