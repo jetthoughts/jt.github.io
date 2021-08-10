@@ -1,8 +1,9 @@
 <section class="js-scroll ai-description ai-section">
   <div class="cell">
     <div class="container">
-      <h2 class="ai-description__title fade-down delay-2">World’s Leading Real Estate Communication Platform</h2>
-      <p class="ai-description__text fade-down delay-3">Real estate is a fast-moving industry. Properties go on and off the market, showings happen all over town, and deals are constantly evolving. Agent Inbox recognized the need for easy, seamless communication between agents, brokerages, and customers, and envisioned a modern messaging platform to facilitate it. Powered by Multiple Listing Service (MLS) data, the platform would help centralize each and every deal from start to finish.</p>
+      {% assign description = site.data.agentinbox.agentinbox.description %}
+      <h2 class="ai-description__title fade-down delay-2">{{ description.title }}</h2>
+      <p class="ai-description__text fade-down delay-3">{{ description.description }}</p>
     </div>
   </div>
 </section>

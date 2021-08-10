@@ -1,5 +1,8 @@
 _site
 _data/home/home.yml
+_data/developers/developers.yml
+_data/agentinbox/agentinbox.yml
+_data/openapply/openapply.yml
 vendor
 .sass-cache
 .asset-cache

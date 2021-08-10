@@ -1,8 +1,9 @@
 <section class="js-scroll dev-description" style="background-image: url('{% asset dev-description-img-01.jpeg @path %}');">
   <div class="cell">
     <div class="container">
-      <h2 class="dev-description__title fade-down delay-2">JetThoughts Team</h2>
-      <p class="dev-description__text fade-down delay-3">Developers who won’t let you down. We offer a fully managed dedicated tech team consisting of full-stack Ruby on Rails, Vue.js, React, and React Native software engineers.</p>
+      {% assign description = site.data.developers.developers.description %}
+      <h2 class="dev-description__title fade-down delay-2">{{ description.title }}</h2>
+      <p class="dev-description__text fade-down delay-3">{{ description.description }}</p>
     </div>
   </div>
 </section>
