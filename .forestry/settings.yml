@@ -9,6 +9,21 @@ sections:
   label: Home page
   create: all
   match: "**/*"
+- type: directory
+  path: _data/agentinbox
+  label: Agent Inbox page
+  create: all
+  match: "**/*"
+- type: directory
+  path: _data/openapply
+  label: Open Apply page
+  create: all
+  match: "**/*"
+- type: directory
+  path: _data/developers
+  label: Developers page
+  create: all
+  match: "**/*"
 upload_dir: _assets/images
 public_path: _assets/images
 front_matter_path: ''
