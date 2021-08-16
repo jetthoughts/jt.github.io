@@ -6,5 +6,6 @@ cp _data/home/home.md _data/home/home.yml
 cp _data/developers/developers.md _data/developers/developers.yml
 cp _data/agentinbox/agentinbox.md _data/agentinbox/agentinbox.yml
 cp _data/openapply/openapply.md _data/openapply/openapply.yml
+cp _data/careers/careers.md _data/careers/careers.yml
 JEKYLL_ENV=production bundle exec jekyll build
 surge -p ./_site -d $1
