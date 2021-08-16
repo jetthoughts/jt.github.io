@@ -1,0 +1,27 @@
+<section class="js-scroll vacancies">
+  <div class="container">
+    {% assign careers = site.data.careers.careers.careers %}
+
+    <h2 class="title">{{ careers.title }}</h2>
+    <p class="sub-title">{{ careers.subtitle }}</p>
+    <ul class="list fade-right delay-{{ delay }}">
+    {% assign delay = 2 %}
+    {% for vacancy in careers.vacancies %}
+      {% assign delay = delay | plus: 1 %}
+      <li class="vacancy">
+        <div class="head">
+          <h5 class="label">{{ vacancy.label }}</h5>
+          {% if vacancy.remote_allowed %}
+            <span class="remote"></span>
+          {% endif %}
+          {% if vacancy.hot %}
+            <span class="hot"></span>
+          {% endif %}
+        </div>
+       <h4 class="name">{{ vacancy.name }}</h4>
+       <div class="location">{{ vacancy.location }} | <strong>{{ vacancy.additional_location }}</strong></div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
