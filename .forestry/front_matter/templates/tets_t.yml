@@ -1,4 +1,12 @@
 ---
 label: tets_t
 hide_body: false
-fields: []
+fields:
+- name: one
+  type: text
+  config:
+    required: false
+  label: one
+- name: two
+  type: boolean
+  label: two
