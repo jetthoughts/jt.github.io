@@ -1,14 +1,14 @@
-<section class="js-scroll vacancies">
+<section class="js-scroll vacancies section">
   <div class="container">
     {% assign careers = site.data.careers.careers.careers %}
 
     <h2 class="title">{{ careers.title }}</h2>
     <p class="sub-title">{{ careers.subtitle }}</p>
-    <ul class="list fade-right delay-{{ delay }}">
+    <ul class="list">
     {% assign delay = 2 %}
     {% for vacancy in careers.vacancies %}
       {% assign delay = delay | plus: 1 %}
-      <li class="vacancy">
+      <li class="vacancy fade-right delay-{{ delay }}">
         <div class="head">
           <h5 class="label">{{ vacancy.label }}</h5>
           {% if vacancy.remote_allowed %}

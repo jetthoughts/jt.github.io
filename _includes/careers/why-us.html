@@ -1,0 +1,13 @@
+<section class="js-scroll why-us section">
+  <div class="container">
+    {% assign why_us = site.data.careers.careers.why_us %}
+    <h2 class="title">{{ why_us.title }}</h2>
+    <ul class="list">
+    {% assign delay = 2 %}
+    {% for item in why_us.items %}
+      {% assign delay = delay | plus: 1 %}
+      <li class="item fade-right delay-{{ delay }}">{{ item }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>

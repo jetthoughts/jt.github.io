@@ -5,6 +5,8 @@
       {% include logo.html %}
     </a>
     <span href="#" class="js-menu-opener menu-opener mobile-show">Menu</span>
-    <a href='#form' class="btn-primary js-modal-opener">{{ include.button_text }}</a>
+    {% if include.button_text %}
+      <a href='#form' class="btn-primary js-modal-opener">{{ include.button_text }}</a>
+    {% endif %}
   </div>
 </header>
