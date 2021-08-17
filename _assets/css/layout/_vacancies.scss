@@ -2,6 +2,7 @@
   background: #f7f7f7;
   color: #a6a6a6;
   padding: 150px 0;
+  text-align: center;
 
   .title {
     font-size: 56px;
@@ -11,10 +12,9 @@
   }
 
   .subtitle {
-    font-size: 56px;
-    line-height: 72px;
-    color: #17171a;
-    margin-bottom: 33px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 50px;
   }
 
   .list {
@@ -28,22 +28,27 @@
   box-shadow: 0 0 32px rgba(21,21,21,0.11);
   margin: 0 0 30px;
   padding: 30px 20px;
-
+  text-align: left;
 
   .head {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1em;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .label {
-    text-transform: uppercase;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1em;
+    margin: 0;
   }
 
   .remote {
-    padding: 5px 15px;
+    padding: 5px 5px;
     color: #fff;
     background: #000000;
   }
@@ -52,6 +57,7 @@
     padding: 5px 15px;
     color: #fff;
     background: #D2304C;
+    margin-left: 15px;
   }
 
   .name {
@@ -63,7 +69,7 @@
 
   .location {
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1em;
     color: #A7A7A7;
   }

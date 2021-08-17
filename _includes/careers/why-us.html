@@ -6,7 +6,7 @@
     {% assign delay = 2 %}
     {% for item in why_us.items %}
       {% assign delay = delay | plus: 1 %}
-      <li class="item fade-right delay-{{ delay }}">{{ item }}</li>
+      <li class="item -dot fade-right delay-{{ delay }}">{{ item }}</li>
     {% endfor %}
     </ul>
   </div>

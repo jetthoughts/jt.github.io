@@ -11,12 +11,14 @@
       <li class="vacancy fade-right delay-{{ delay }}">
         <div class="head">
           <h5 class="label">{{ vacancy.label }}</h5>
-          {% if vacancy.remote_allowed %}
-            <span class="remote"></span>
-          {% endif %}
-          {% if vacancy.hot %}
-            <span class="hot"></span>
-          {% endif %}
+          <div>
+            {% if vacancy.remote_allowed %}
+              <span class="remote">Remote Allowed</span>
+            {% endif %}
+            {% if vacancy.hot %}
+              <span class="hot">Hot</span>
+            {% endif %}
+          </div>
         </div>
        <h4 class="name">{{ vacancy.name }}</h4>
        <div class="location">{{ vacancy.location }} | <strong class="sublocation">{{ vacancy.additional_location }}</strong></div>
