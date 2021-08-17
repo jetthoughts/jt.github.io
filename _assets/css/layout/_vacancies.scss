@@ -1,0 +1,74 @@
+.vacancies {
+  background: #f7f7f7;
+  color: #a6a6a6;
+  padding: 150px 0;
+
+  .title {
+    font-size: 56px;
+    line-height: 72px;
+    color: #17171a;
+    margin-bottom: 33px;
+  }
+
+  .subtitle {
+    font-size: 56px;
+    line-height: 72px;
+    color: #17171a;
+    margin-bottom: 33px;
+  }
+
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.vacancy {
+  box-shadow: 0 0 32px rgba(21,21,21,0.11);
+  margin: 0 0 30px;
+  padding: 30px 20px;
+
+
+  .head {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1em;
+  }
+
+  .label {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1em;
+  }
+
+  .remote {
+    padding: 5px 15px;
+    color: #fff;
+    background: #000000;
+  }
+
+  .hot {
+    padding: 5px 15px;
+    color: #fff;
+    background: #D2304C;
+  }
+
+  .name {
+    color: #050505;
+    font-size: 28px;
+    line-height: 1em;
+    margin: 0 0 15px;
+  }
+
+  .location {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1em;
+    color: #A7A7A7;
+  }
+
+  .sublocation {
+    color: #838383;
+  }
+}
