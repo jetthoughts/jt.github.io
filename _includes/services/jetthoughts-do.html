@@ -1,0 +1,13 @@
+<section class="js-scroll jetthoughts-do section">
+  <div class="container">
+    {% assign jetthoughts_do = site.data.services.services.jetthoughts_do %}
+    <h2 class="title">{{ jetthoughts_do.title }}</h2>
+    <ul class="list">
+    {% assign delay = 2 %}
+    {% for item in jetthoughts_do.items %}
+      {% assign delay = delay | plus: 1 %}
+      <li class="item -dot fade-right delay-{{ delay }}">{{ item }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
