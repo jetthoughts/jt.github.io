@@ -4,7 +4,7 @@ description:
   description: Become A Part of JetThoughts Team
 careers:
   title: We are looking for
-  subtitle: We are looking for
+  subtitle: ''
   vacancies:
   - label: Software development
     name: Middle/Senior Ruby Software Engineer
