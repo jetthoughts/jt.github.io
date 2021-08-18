@@ -29,6 +29,11 @@ sections:
   label: Careers page
   create: all
   match: "**/*"
+- type: directory
+  path: _data/services
+  label: Services page
+  create: all
+  match: "**/*"
 upload_dir: _assets/images
 public_path: _assets/images
 front_matter_path: ''

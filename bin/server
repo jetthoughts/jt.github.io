@@ -20,5 +20,6 @@ chdir APP_ROOT do
   system!('cp _data/agentinbox/agentinbox.md _data/agentinbox/agentinbox.yml')
   system!('cp _data/openapply/openapply.md _data/openapply/openapply.yml')
   system!('cp _data/careers/careers.md _data/careers/careers.yml')
+  system!('cp _data/services/services.md _data/services/services.yml')
   system!('bundle exec jekyll s --livereload')
 end

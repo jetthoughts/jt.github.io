@@ -4,6 +4,7 @@ _data/developers/developers.yml
 _data/agentinbox/agentinbox.yml
 _data/openapply/openapply.yml
 _data/careers/careers.yml
+_data/services/services.yml
 vendor
 .sass-cache
 .asset-cache
