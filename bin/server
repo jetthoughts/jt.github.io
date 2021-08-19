@@ -21,5 +21,9 @@ chdir APP_ROOT do
   system!('cp _data/openapply/openapply.md _data/openapply/openapply.yml')
   system!('cp _data/careers/careers.md _data/careers/careers.yml')
   system!('cp _data/outstaffing/outstaffing.md _data/outstaffing/outstaffing.yml')
+  system!('cp _data/services/services.md _data/services/services.yml')
+  system!('cp _data/services/outstaffing.md _data/services/outstaffing.yml')
+  system!('cp _data/services/dedicatedteam.md _data/services/dedicatedteam.yml')
+  system!('cp _data/services/forstartups.md _data/services/forstartups.yml')
   system!('bundle exec jekyll s --livereload')
 end
