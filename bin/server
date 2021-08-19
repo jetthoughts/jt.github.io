@@ -15,15 +15,5 @@ chdir APP_ROOT do
   # It uses livereload, so you don't need to stop it manually.
 
   puts '== Running server =='
-  system!('cp _data/home/home.md _data/home/home.yml')
-  system!('cp _data/developers/developers.md _data/developers/developers.yml')
-  system!('cp _data/agentinbox/agentinbox.md _data/agentinbox/agentinbox.yml')
-  system!('cp _data/openapply/openapply.md _data/openapply/openapply.yml')
-  system!('cp _data/careers/careers.md _data/careers/careers.yml')
-  system!('cp _data/outstaffing/outstaffing.md _data/outstaffing/outstaffing.yml')
-  system!('cp _data/services/services.md _data/services/services.yml')
-  system!('cp _data/services/outstaffing.md _data/services/outstaffing.yml')
-  system!('cp _data/services/dedicatedteam.md _data/services/dedicatedteam.yml')
-  system!('cp _data/services/forstartups.md _data/services/forstartups.yml')
   system!('bundle exec jekyll s --livereload')
 end
