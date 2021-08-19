@@ -1,7 +1,6 @@
-description:
-  title: Outstaffing / Pool of developers
-  description: A budget-effective solution for you by JetThoughts
 service_section:
+  title: Outstaffing / Pool of developers
+  description: A budget-effective solution for you by JetThoughts 
   items:
     - title: How outstaffing works
       description: We gather all requirements, specify the client's problems, ideas, and business goals. On this stage, we create a team that suits clients' demands and structure.
@@ -20,3 +19,6 @@ benefits:
       description: The strategy aims to reduce expenses and overheads.
     - title: A more thorough process of recruitment
       description: The strategy aims to reduce expenses and overheads.
+description:
+  title: Outstaffing / Pool of developers
+  description: A budget-effective solution for you by JetThoughts
