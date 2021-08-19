@@ -3,10 +3,8 @@
   {% include header.html button_text='Start trial period' %}
 </div>
 <div class="main-wrapper">
-  {% include services/outstaffing.html %}
-  {% include services/benefits.html %}
-  {% include services/description.html %}
-  {% include services/profit.html %}
+  {% include services/services-section.html services_sections=site.data.services.dedicatedteam.services_section %}
+  {% include services/benefits.html benefits=site.data.services.dedicatedteam.benefits %}
   {% include services/jetthoughts-do.html %}
   {% include services/contact-form.html %}
   {% include developers/dev-trial-period.html %}
