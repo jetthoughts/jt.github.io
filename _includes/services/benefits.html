@@ -1,0 +1,16 @@
+<section class="js-scroll benefits section">
+  <div class="container">
+    {% assign benefits = include.benefits %}
+    <h2 class="title">{{ benefits.title }}</h2>
+    <ul class="list">
+    {% assign delay = 2 %}
+    {% for item in benefits.items %}
+      {% assign delay = delay | plus: 1 %}
+      <li class="item -dot fade-right delay-{{ delay }}">
+        <strong class="title">{{ item.title }}</strong>
+        <span class="description">{{ item.description }}</span>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>

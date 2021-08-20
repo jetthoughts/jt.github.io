@@ -1,0 +1,30 @@
+<div class="services-sections">
+  {% assign services_sections = include.services_sections %}
+  <h2 class="title">{{ services_sections.title }}</h2>
+  <p class="description">{{ services_sections.description }}</p>
+
+  {% assign delay = 2 %}
+  {% for section in services_sections.sections %}
+    {% assign delay = delay | plus: 1 %}
+
+    <section class="js-scroll services-section">
+      <div class="tbl {% cycle '-right', '-left' %}">
+        <div class="col img">
+          <div class="cell">
+            <img data-src="{{ section.image }}" data-srcset="{{ section.image }}" class="lazy image fade-down delay-{{ delay }}">
+          </div>
+        </div>
+        <div class="col">
+          <div class="cell">
+            <div class="holder">
+              <h2 class="title">{{ section.title }}</h2>
+              <p class="description">{{ section.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  {% endfor %}
+
+</div>

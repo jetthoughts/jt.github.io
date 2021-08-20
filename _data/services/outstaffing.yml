@@ -1,13 +1,13 @@
-service_section:
+services_sections:
   title: Outstaffing / Pool of developers
   description: A budget-effective solution for you by JetThoughts 
-  items:
+  sections:
     - title: How outstaffing works
       description: We gather all requirements, specify the client's problems, ideas, and business goals. On this stage, we create a team that suits clients' demands and structure.
-      image:
+      image: _assets/images/use-cases_img_03.jpg
     - title: How outstaffing works
       description: We gather all requirements, specify the client's problems, ideas, and business goals. On this stage, we create a team that suits clients' demands and structure.
-      image:
+      image: _assets/images/use-cases_img_03.jpg
 benefits:
   title: Benefits of the outstaffing model
   items:
