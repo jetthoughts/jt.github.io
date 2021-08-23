@@ -72,9 +72,20 @@
     font-size: 12px;
     line-height: 1em;
     color: #A7A7A7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .sublocation {
     color: #838383;
+  }
+
+  .btn {
+    font-size: 14px;
+    line-height: 1em;
+    padding: 8px 15px;
+    min-width: auto;
   }
 }

@@ -8,7 +8,7 @@
     font-size: 56px;
     line-height: 72px;
     color: $white;
-    margin: 0 0 30px;
+    margin: 0 0 75px;
     text-align: center;
   }
 
@@ -25,7 +25,7 @@
     width: 33.33%;
     display: inline-block;
     vertical-align: top;
-    padding: 5px 35px 15px;
+    padding: 0 20px 50px;
     font-size: 16px;
     line-height: 1em;
     position: relative;
@@ -37,11 +37,16 @@
       display: block;
       border-radius: 50%;
       background: $white;
-      width: 30px;
+      width: 50px;
       font-size: 20px;
-      line-height: 30px;
+      line-height: 50px;
       color: $blue;
       margin: 0 auto 15px;
     }
+  }
+
+  .text {
+    max-width: 175px;
+    margin: 0 auto;
   }
 }

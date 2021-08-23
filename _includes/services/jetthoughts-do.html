@@ -6,7 +6,7 @@
     {% assign delay = 2 %}
     {% for item in jetthoughts_do.items %}
       {% assign delay = delay | plus: 1 %}
-      <li class="item -dot fade-right delay-{{ delay }}">{{ item }}</li>
+      <li class="item -dot fade-right delay-{{ delay }}"><div class="text">{{ item }}</div></li>
     {% endfor %}
     </ul>
   </div>

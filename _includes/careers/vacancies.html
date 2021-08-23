@@ -21,7 +21,10 @@
           </div>
         </div>
        <h4 class="name">{{ vacancy.name }}</h4>
-       <div class="location">{{ vacancy.location }} | <strong class="sublocation">{{ vacancy.additional_location }}</strong></div>
+       <div class="location">
+        <span>{{ vacancy.location }} | <strong class="sublocation">{{ vacancy.additional_location }}</strong></span>
+        <a href="#careers-contact-form" class="btn btn-primary js-anchor">Apply</a>
+      </div>
       </li>
     {% endfor %}
     </ul>
