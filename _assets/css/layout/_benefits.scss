@@ -1,4 +1,4 @@
-.why-us {
+.benefits {
   min-height: auto;
   font-weight: 400;
   padding: 140px 0;
@@ -6,8 +6,17 @@
   background: $white;
 
   .title {
+    font-size: 56px;
+    line-height: 72px;
+    color: $blue;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .subtitle {
     font-size: 18px;
-    line-height: 28px
+    line-height: 28px;
+    color: #333;
   }
 
   .description {
@@ -29,7 +38,7 @@
   .item {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 0 5px 40px;
+    padding: 0 0 15px 40px;
     position: relative;
     display: block;
 

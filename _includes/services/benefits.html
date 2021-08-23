@@ -7,7 +7,7 @@
     {% for item in benefits.items %}
       {% assign delay = delay | plus: 1 %}
       <li class="item -dot fade-right delay-{{ delay }}">
-        <strong class="title">{{ item.title }}</strong>
+        <strong class="subtitle">{{ item.title }}</strong>
         <span class="description">{{ item.description }}</span>
       </li>
     {% endfor %}
