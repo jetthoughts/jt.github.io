@@ -12,12 +12,24 @@ careers:
     additional_location: Dnipro, Zaporizhia, Odesa, Kherson, Mykolaiv
     remote_allowed: true
     hot: true
+    details:
+    - head: Skills
+      text: Solid experience in Ruby/Rails (4+ years)
+    - head: Skills
+      text: Solid experience in Ruby/Rails (4+ years)
+    - head: Skills
+      text: Solid experience in Ruby/Rails (4+ years)
   - label: Big Data
     name: Big Data architect (GCP)
     location: Poland
     additional_location: Warsaw, Wroclaw
     remote_allowed: false
     hot: false
+    details:
+    - head: Skills
+      text: Solid experience in Ruby/Rails (4+ years)
+    - head: Skills
+      text: Solid experience in Ruby/Rails (4+ years)
 why_us:
   title: Why us
   items:
