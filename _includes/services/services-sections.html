@@ -11,7 +11,7 @@
       <div class="tbl {% cycle '-right', '-left' %}">
         <div class="col img">
           <div class="cell">
-            <img data-src="{{ section.image }}" data-srcset="{{ section.image }}" class="lazy image fade-down delay-{{ delay }}">
+            <img src="{% asset {{section.image}} @path %}" class="image">
           </div>
         </div>
         <div class="col">

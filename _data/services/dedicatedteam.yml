@@ -4,16 +4,16 @@ services_sections:
   sections:
     - title: SCOPING
       description: We gather all requirements, specify the client's problems, ideas, and business goals. On this stage, we create a team that suits clients' demands and structure.
-      image:
+      image: use-cases_img_03.jpg
     - title: SETTING UP
       description: We search for proactive developers with the appropriate knowledge and sets up a suitable environment and tools.
-      image:
+      image: use-cases_img_03.jpg
     - title: LAUNCHING
       description: Based on years of practice, we smoothly and painlessly integrate our team into your ongoing project. They continuously work only for your project, get to know its specifics, and see the general idea behind each separate task. You can choose the preferred management approach. Team members become part of your company and, with the others, adhere to the client’s corporate culture, management style, and project methodologies.
-      image:
+      image: use-cases_img_03.jpg
     - title: SUCCEED
       description: You get the needed specialists under your complete control, just as with your in-house team. Our self-managed, flexible senior Ruby on Rails developers will take care of all aspects throughout the project’s development when you want to scale the business fast and don’t lose client or time spent recruiting and onboarding activities.
-      image:
+      image: use-cases_img_03.jpg
 benefits:
   title: Benefits of Dedicated Team model
   items:

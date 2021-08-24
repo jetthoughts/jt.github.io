@@ -4,10 +4,10 @@ services_sections:
   sections:
     - title: Research
       description: Starting with technical recommendations we come up with a proof-of-concept (POC) or prototype, followed by a detailed product strategy plan and a scope of work (SOW). We get your product ready to hit the first phase of the development — an MVP. 
-      image:
+      image: use-cases_img_03.jpg
     - title: Setting up
       description: Our MVP mindset is shaped by lean startup practices. At this stage, wireframes, high-level design, and POC materialize into a minimal viable product. We are focusing on quality while keeping the development momentum. In the end, you are ready to conquer the market.
-      image:
+      image: use-cases_img_03.jpg
     - title: Development
       description: This phase covers the biggest part of the process and is ready for your critical evaluation. It sets the ground for the final iterations and necessary improvements. We empower you with a knowledgeable team who leverage the Agile/Scrum approach and set up a productive, hustle-free project environment.
-      image:
+      image: use-cases_img_03.jpg
