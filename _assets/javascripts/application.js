@@ -262,6 +262,11 @@ $(document).ready(function () {
     }
   });
 
+  // vacancy accordeon
+  $('.js-vacancy-opener').click(function() {
+    this.parent('.vacancy').toggleClass('-open');
+  });
+
   // scroll go to
   $('.js-anchor').on('click', function(e) {
     var href =  $(this).attr('href');

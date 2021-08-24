@@ -29,6 +29,7 @@
   margin: 0 0 30px;
   padding: 30px 20px;
   text-align: left;
+  position: relative;
 
   .head {
     text-transform: uppercase;
@@ -72,10 +73,6 @@
     font-size: 12px;
     line-height: 1em;
     color: #A7A7A7;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .sublocation {
@@ -87,5 +84,73 @@
     line-height: 1em;
     padding: 8px 15px;
     min-width: auto;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin-left: -15px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      transform: rotate(-45deg);
+      border: solid #ccc;
+      border-width: 0 1px 1px 0;
+      top: 5px;
+      left: 5px;
+    }
+  }
+
+  .details {
+    max-height: 0;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+
+  &.-open {
+    .details {
+      max-height: 100%;
+    }
+
+    .arrow {
+
+    }
+  }
+
+  .wrapper {
+    margin-bottom: 30px;
+
+    &:first-child {
+      padding-top: 30px;
+    }
+  }
+
+  .heading {
+    color: #17171a;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1em;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    margin: 0 0 15px;
+    font-size: 14px;
+    line-height: 1em;
   }
 }

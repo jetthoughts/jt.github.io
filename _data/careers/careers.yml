@@ -13,12 +13,17 @@ careers:
     remote_allowed: true
     hot: true
     details:
-    - head: Skills
-      text: Solid experience in Ruby/Rails (4+ years)
-    - head: Skills
-      text: Solid experience in Ruby/Rails (4+ years)
-    - head: Skills
-      text: Solid experience in Ruby/Rails (4+ years)
+    - heading: Skills
+      fields:
+        - Solid experience in Ruby/Rails (4+ years)
+        - Solid experience in Ruby/Rails (4+ years)
+        - Solid experience in Ruby/Rails (4+ years)
+    - heading: Skills
+      fields:
+        - Solid experience in Ruby/Rails (4+ years)
+    - heading: Skills
+      fields:
+        - Solid experience in Ruby/Rails (4+ years)
   - label: Big Data
     name: Big Data architect (GCP)
     location: Poland
@@ -26,10 +31,12 @@ careers:
     remote_allowed: false
     hot: false
     details:
-    - head: Skills
-      text: Solid experience in Ruby/Rails (4+ years)
-    - head: Skills
-      text: Solid experience in Ruby/Rails (4+ years)
+    - heading: Skills
+      fields:
+        - Solid experience in Ruby/Rails (4+ years)
+    - heading: Skills
+      fields:
+        - Solid experience in Ruby/Rails (4+ years)
 why_us:
   title: Why us
   items:

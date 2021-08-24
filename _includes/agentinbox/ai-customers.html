@@ -1,20 +1,15 @@
 <section class="js-scroll ai-section ai-customers">
   <div class="ai-customers-carousel fade-down delay-1">
-
-      {% for post_hash in site.data.agentinbox.agentinbox.customers %}
-        {% assign item = post_hash[1] %}
-
+      {% for customer in site.data.agentinbox.agentinbox.customers %}
         <div class="ai-customers-carousel__item">
           <div class="ai-testimonial" itemscope itemtype="http://schema.org/Review">
             <div class="ai-testimonial__description" itemprop="itemReviewed" content="5">
-              <strong class="ai-testimonial__name" itemprop="author">{{ item.name }}</strong>
-              <small class="ai-testimonial__position" itemprop="headline">{{ item.position }}</small>
-              <p class="ai-testimonial__text" itemprop="reviewBody">{{ item.text }}</p>
+              <strong class="ai-testimonial__name" itemprop="author">{{ customer.name }}</strong>
+              <small class="ai-testimonial__position" itemprop="headline">{{ customer.position }}</small>
+              <p class="ai-testimonial__text" itemprop="reviewBody">{{ customer.text }}</p>
             </div>
           </div>
         </div>
-
       {% endfor %}
-
   </div>
 </section>

@@ -1,1 +1,29 @@
-<h1>ok</h1>
+<section class="js-scroll section">
+  <div class="container">
+    <div class="contact-form">
+      {% assign contact_form = site.data.services.services.contact_form %}
+      <h2 class="title fade-down delay-2">{{ contact_form.title }}</h2>
+      <p class="text fade-down delay-3">{{ contact_form.sub_title }}</p>
+      <form data-source="contact:site">
+        <div class="row">
+          <div class="col">
+            <input type="text" name="firts-name" class="name form-control" placeholder="First Name" required/>
+          </div>
+          <div class="col">
+            <input type="text" name="last-name" class="name form-control" placeholder="Last Name" required/>
+          </div>
+          <div class="col">
+            <input type="email" name="email" class="email form-control" placeholder="Email Address" required/>
+          </div>
+          <div class="col">
+            <input type="phone" name="phone" class="email form-control" placeholder="Phone Number" required/>
+          </div>
+        </div>
+        <div class="contact-form__message">
+         <textarea name="message" class="message-txt form-control" placeholder="Message" required></textarea>
+       </div>
+        <button class="btn-primary contact-form__btn">Apply</button>
+      </form>
+    </div>
+  </div>
+</section>
