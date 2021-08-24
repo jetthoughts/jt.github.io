@@ -59,6 +59,7 @@
     color: #fff;
     background: #D2304C;
     margin-left: 5px;
+    min-width: 70px;
   }
 
   .name {
@@ -98,8 +99,6 @@
     height: 30px;
     left: 50%;
     margin-left: -15px;
-    border-radius: 50%;
-    border: 1px solid #ccc;
     cursor: pointer;
 
     &:after {
@@ -109,25 +108,20 @@
       height: 20px;
       transform: rotate(-45deg);
       border: solid #ccc;
-      border-width: 0 1px 1px 0;
-      top: 5px;
-      left: 5px;
+      border-width: 0 0 1px 1px;
+      top: 10px;
+      left: 50%;
+      margin-left: -10px;
     }
   }
 
   .details {
-    max-height: 0;
-    transition: 0.3s;
-    overflow: hidden;
+    display: none;
   }
 
   &.-open {
-    .details {
-      max-height: 100%;
-    }
-
     .arrow {
-
+      transform: rotate(180deg);
     }
   }
 

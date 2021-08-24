@@ -55,6 +55,13 @@ $(document).ready(function () {
       $(image).attr('src', src).removeClass('image-mobile')
     })
   }
+
+  // vacancy accordeon
+  $('.js-vacancy-opener').click(function() {
+    $(this).parent('.vacancy').toggleClass('-open');
+    $(this).siblings('.details').slideToggle();
+  });
+
   // set fixed height on mobile
   if ($(window).width() <= 1024 && !heightParam) {
     setScreenHeight();
@@ -260,11 +267,6 @@ $(document).ready(function () {
     if (!container.is(e.target) && container.has(e.target).length === 0){
       $('body').removeClass('menu-open');
     }
-  });
-
-  // vacancy accordeon
-  $('.js-vacancy-opener').click(function() {
-    this.parent('.vacancy').toggleClass('-open');
   });
 
   // scroll go to
