@@ -1,0 +1,149 @@
+.vacancies {
+  background: #f7f7f7;
+  color: #a6a6a6;
+  padding: 150px 0;
+  text-align: center;
+
+  .title {
+    font-size: 56px;
+    line-height: 72px;
+    color: #17171a;
+    margin-bottom: 33px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 0 50px;
+  }
+
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.vacancy {
+  box-shadow: 0 0 32px rgba(21,21,21,0.11);
+  margin: 0 0 30px;
+  padding: 30px 20px;
+  text-align: left;
+  position: relative;
+
+  .head {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1em;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .label {
+    font-size: 14px;
+    line-height: 1em;
+    margin: 0;
+  }
+
+  .remote {
+    padding: 5px 15px;
+    color: #fff;
+    background: #000000;
+  }
+
+  .hot {
+    padding: 5px 15px;
+    color: #fff;
+    background: #D2304C;
+    margin-left: 5px;
+  }
+
+  .name {
+    color: #050505;
+    font-size: 28px;
+    line-height: 1em;
+    margin: 0 0 30px;
+  }
+
+  .location {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1em;
+    color: #A7A7A7;
+  }
+
+  .sublocation {
+    color: #838383;
+  }
+
+  .btn {
+    font-size: 14px;
+    line-height: 1em;
+    padding: 8px 15px;
+    min-width: auto;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: 30px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin-left: -15px;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      transform: rotate(-45deg);
+      border: solid #ccc;
+      border-width: 0 0 1px 1px;
+      top: 10px;
+      left: 50%;
+      margin-left: -10px;
+    }
+  }
+
+  .details {
+    display: none;
+  }
+
+  &.-open {
+    .arrow {
+      transform: rotate(180deg);
+    }
+  }
+
+  .wrapper {
+    margin-bottom: 30px;
+
+    &:first-child {
+      padding-top: 30px;
+    }
+  }
+
+  .heading {
+    color: #17171a;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1em;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    margin: 0 0 15px;
+    font-size: 14px;
+    line-height: 1em;
+  }
+}

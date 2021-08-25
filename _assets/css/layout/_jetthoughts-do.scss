@@ -1,0 +1,52 @@
+.jetthoughts-do {
+  background: $blue;
+  color: $white;
+  padding: 150px 0;
+  min-height: auto;
+
+  .title {
+    font-size: 56px;
+    line-height: 72px;
+    color: $white;
+    margin: 0 0 75px;
+    text-align: center;
+  }
+
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    counter-reset: counter;
+  }
+
+  .item {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 20px 50px;
+    font-size: 16px;
+    line-height: 1em;
+    position: relative;
+    counter-increment: counter;
+    text-align: center;
+
+    &:before {
+      content: "0" counter(counter);
+      display: block;
+      border-radius: 50%;
+      background: $white;
+      width: 50px;
+      font-size: 20px;
+      line-height: 50px;
+      color: $blue;
+      margin: 0 auto 15px;
+    }
+  }
+
+  .text {
+    max-width: 175px;
+    margin: 0 auto;
+  }
+}

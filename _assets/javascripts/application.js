@@ -55,6 +55,13 @@ $(document).ready(function () {
       $(image).attr('src', src).removeClass('image-mobile')
     })
   }
+
+  // vacancy accordeon
+  $('.js-vacancy-opener').click(function() {
+    $(this).parent('.vacancy').toggleClass('-open');
+    $(this).siblings('.details').slideToggle();
+  });
+
   // set fixed height on mobile
   if ($(window).width() <= 1024 && !heightParam) {
     setScreenHeight();

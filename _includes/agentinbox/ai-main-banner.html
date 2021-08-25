@@ -5,7 +5,8 @@
       <span class="fade-down delay-3">Inbox</span>
     </strong>
     <div class="ai-main-banner__description fade-down delay-4 mobile-hide">
-      <p class="ai-main-banner__text">Agent Inbox envisioned taking real estate communication to the next level. They hired us to build the right platform, deliver a market-ready solution, and help the team grow.</p>
+      {% assign main_banner = site.data.agentinbox.agentinbox.main_banner %}
+      <p class="ai-main-banner__text">{{ main_banner.description }}</p>
     </div>
   </div>
   <img src="{% asset ai-main-banner_img_01.png @path %}" class="ai-main-banner__img fade-right delay-5" alt="Agent Inbox">

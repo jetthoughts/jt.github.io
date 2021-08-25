@@ -3,7 +3,7 @@
     <div class="container">
       <ul class="uses-cases-controls">
         {% assign delay = -1 %}
-        {% for case_hash in site.data.use_cases %}
+        {% for case_hash in site.data.home.home.use_cases %}
           {% assign case = case_hash[1] %}
           {% assign delay = delay | plus: 1 %}
           <li class="uses-cases-controls__item fade-left delay-{{ delay }}">

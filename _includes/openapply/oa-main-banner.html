@@ -5,9 +5,8 @@
       <span class="fade-down delay-3">Apply</span>
     </strong>
     <div class="ai-main-banner__description fade-down delay-4 mobile-hide">
-      <p class="ai-main-banner__text">
-        (FEG)’s OpenApply product needed to accommodate increasing demand, but the code contained a multitude of bugs. Internally, FEG wasn’t equipped to address the growing issue or to meet customer demands for a better UI experience. We were hired to stop regressions, build a foundation, scale feature development for faster growth, and build out FEG’s internal team.
-      </p>
+      {% assign main_banner = site.data.openapply.openapply.main_banner %}
+      <p class="ai-main-banner__text">{{ main_banner.description }}</p>
     </div>
   </div>
   <img src="{% asset oa-main-banner_img_01.png @path %}" class="ai-main-banner__img fade-right delay-5" alt="Banner">

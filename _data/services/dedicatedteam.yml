@@ -1,0 +1,27 @@
+services_sections:
+  title: How Dedicated Team works?
+  description: The dedicated team approach in JetThoughts is divided into several stages
+  sections:
+    - title: SCOPING
+      description: We gather all requirements, specify the client's problems, ideas, and business goals. On this stage, we create a team that suits clients' demands and structure.
+      image: use-cases_img_03.jpg
+    - title: SETTING UP
+      description: We search for proactive developers with the appropriate knowledge and sets up a suitable environment and tools.
+      image: use-cases_img_03.jpg
+    - title: LAUNCHING
+      description: Based on years of practice, we smoothly and painlessly integrate our team into your ongoing project. They continuously work only for your project, get to know its specifics, and see the general idea behind each separate task. You can choose the preferred management approach. Team members become part of your company and, with the others, adhere to the client’s corporate culture, management style, and project methodologies.
+      image: use-cases_img_03.jpg
+    - title: SUCCEED
+      description: You get the needed specialists under your complete control, just as with your in-house team. Our self-managed, flexible senior Ruby on Rails developers will take care of all aspects throughout the project’s development when you want to scale the business fast and don’t lose client or time spent recruiting and onboarding activities.
+      image: use-cases_img_03.jpg
+benefits:
+  title: Benefits of Dedicated Team model
+  items:
+    - title: Cost-effectiveness 
+      description: Choosing a dedicated team model is economically viable. Aside from incomparable differences between the cost of dedicated teams and in-house developers, it is also more profitable than project-based models of cooperation.  This depends largely on the specification of the project and the size of the dedicated team, which makes the price for this model lower by 10-20%.
+    - title: Maximum focus on the client’s project
+      description: An important advantage of a dedicated team is its full involvement in solution development.The vendor thus provides a team that is not easily distracted by working on other projects that lead to the increased adaptability of team members. It allows clients to easily reconfigure the team at any stage of the working process as required.
+    - title: The team is fully managed by the client
+      description: Another advantage of a dedicated team model is the possibility for clients to select, and manage every working process of a dedicated team. There are software engineers, quality assurance specialists, UI/UX designers and a project manager at the client’s disposal.
+    - title: Tight-knit work of client and team
+      description: The actual primary thing businesses gain from dedicated teams is that this type of collaboration creates an atmosphere of team building where every member is led to achieving common goals. It allows for long-term work planning more accurately and invests in the project by contributing more effort. The close-knit collaboration between the client and a dedicated team can bear incredibly tangible results.

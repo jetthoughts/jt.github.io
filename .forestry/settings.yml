@@ -1,0 +1,47 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: directory
+  path: _data/home
+  label: Home page
+  create: all
+  match: "**/*"
+- type: directory
+  path: _data/agentinbox
+  label: Agent Inbox page
+  create: all
+  match: "**/*"
+- type: directory
+  path: _data/openapply
+  label: Open Apply page
+  create: all
+  match: "**/*"
+- type: directory
+  path: _data/developers
+  label: Developers page
+  create: all
+  match: "**/*"
+- type: directory
+  path: _data/careers
+  label: Careers page
+  create: all
+  match: "**/*"
+- type: directory
+  path: _data/services
+  label: Services page
+  create: all
+  match: "**/*"
+upload_dir: _assets/images
+public_path: _assets/images
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/node:12
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run develop

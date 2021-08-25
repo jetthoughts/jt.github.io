@@ -6,11 +6,10 @@
         <div class="dev-compare__holder -shadow fade-left delay-2">
           <h2 class="dev-compare__sub-title color-light-grey">Before:</h2>
           <ul class="dev-compare__list">
-            <li class="dev-compare__item -reject">Search, vetting, onboarding, and hiring takes a lot of time</li>
-            <li class="dev-compare__item -reject">Disappointment in candidates who are missing deadlines and don’t guaranty any quality</li>
-            <li class="dev-compare__item -reject">It’s not easy to to do due diligence</li>
-            <li class="dev-compare__item -reject">Failure to put great teams to work together effectively</li>
-            <li class="dev-compare__item -reject">Own employees leaving after just one year</li>
+            {% for compare_hash in site.data.developers.developers.compares.before %}
+            {% assign compare = compare_hash[1] %}
+              <li class="dev-compare__item -reject">{{ compare }}</li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -18,11 +17,10 @@
         <div class="dev-compare__holder -shadow fade-right delay-2">
           <h2 class="dev-compare__sub-title color-light-grey">After:</h2>
           <ul class="dev-compare__list">
-            <li class="dev-compare__item -success">Senior developers with 5+ years of commercial experience, who were tested on internal projects first</li>
-            <li class="dev-compare__item -success">Long-term partners who are easy to work with will become part of a team</li>
-            <li class="dev-compare__item -success">Best practices and proven dev processes make interaction fast and efficient</li>
-            <li class="dev-compare__item -success">Spend the time to share your vision and review the results, nothing more</li>
-            <li class="dev-compare__item -success">Full visibility and transparency of the job done</li>
+            {% for compare_hash in site.data.developers.developers.compares.after %}
+            {% assign compare = compare_hash[1] %}
+              <li class="dev-compare__item -success">{{ compare }}</li>
+            {% endfor %}
           </ul>
         </div>
       </div>

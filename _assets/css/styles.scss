@@ -3,6 +3,7 @@
 @import 'utils/_colors';
 @import 'utils/_mixins';
 @import 'utils/_breakpoints';
+@import 'utils/_spacing';
 
 @import 'base/_fonts';
 @import 'base/_general';
@@ -34,8 +35,12 @@
 @import 'layout/_dev-compare';
 @import 'layout/_dev-description';
 @import 'layout/_dev-trial-period';
-@import 'layout/_logos';
-
+@import 'layout/_description';
+@import 'layout/_vacancies';
+@import 'layout/_why-us';
+@import 'layout/_jetthoughts-do';
+@import 'layout/_benefits';
+@import 'layout/_services-sections';
 @import 'base/_colors';
 
 @import 'media/_large_desktop';

@@ -1,0 +1,14 @@
+{% include head.html %}
+<div class="no-menu">
+  {% include header.html button_text='Start trial period' %}
+</div>
+<div class="main-wrapper">
+  {% include services/services-sections.html services_sections=site.data.services.development.services_sections %}
+  {% include services/benefits.html benefits=site.data.services.development.benefits %}
+  {% include services/jetthoughts-do.html %}
+  {% include services/contact-form.html %}
+  {% include developers/dev-trial-period.html %}
+  {% include sections/modal.html %}
+</div>
+{% include footer.html %}
+{% include scripts.html %}

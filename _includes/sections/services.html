@@ -2,15 +2,16 @@
   <div class="col">
     <div class="services-slideshow">
 
-      {% for slide_hash in site.data.services %}
-        {% assign slide = slide_hash[1] %}
+      {% for service in site.data.home.home.services %}
 
         <div class="services-slideshow__item">
           <div class="cell js-full-vh">
             <div class="holder">
               <div class="services__description">
                 <small class="small-head fade-down delay-3">SERVICES</small>
-                <strong class="services__text fade-down delay-4" itemprop="name"><h2 class="services__title">{{ slide.title }}</h2> {{ slide.description }}</strong>
+                <a href="{{ service.url }}">
+                  <strong class="services__text fade-down delay-4" itemprop="name"><h2 class="services__title">{{ service.title }}</h2> {{ service.description }}</strong>
+                </a>
               </div>
             </div>
           </div>
