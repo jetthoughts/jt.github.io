@@ -1,25 +1,26 @@
 .services-sections {
-  background: #f7f7f7;
-  padding: 100px 0 0;
-  color: #a6a6a6;
-  text-align: center;
+  .wrapper {
+    background-image: linear-gradient(to bottom,#4b9ce2 0%,#6fcfc1 100%);
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+  }
 
   .title {
     font-size: 56px;
     line-height: 72px;
-    color: #1b1b1f;
+    color: #fff;
     margin: 0 0 33px;
   }
 
   .description {
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 100px;
+    margin: 0;
   }
 }
 
 .services-section {
-  text-align: left;
   background: #fff;
 
   .tbl {
