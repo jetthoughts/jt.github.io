@@ -8,7 +8,7 @@ services_sections:
     description: We gather all requirements, specify the client's problems, ideas,
       and business goals. On this stage, we create a team that suits clients' demands
       and structure.
-    image: oa-stack-img-07.png
+    image: oa-stack-img-02.png
   - title: SETTING UP
     description: We search for proactive developers with the appropriate knowledge
       and sets up a suitable environment and tools.
