@@ -32,7 +32,10 @@ careers:
     hot: false
     details:
     - heading: Skills
-      fields: ''
+      fields:
+      - JS
+      - CSS
+      - HTML
     - heading: Skills
       fields:
       - Solid experience in Ruby/Rails (4+ years)
