@@ -7,6 +7,41 @@ careers:
   subtitle: ''
   vacancies:
   - label: Software development
+    name: Node.js developer
+    location: Ukraine
+    additional_location: Remote
+    remote_allowed: true
+    hot: true
+    details:
+    - heading: Skills
+      fields:
+      - At least 2+ years of experience with Node.js backend development
+      - Experience with relational and non-relational databases (like Postgres, MongoDB,
+        Redis)
+      - Passion about writing well designed, testable, efficient code
+      - At least an Intermediate level of English is a must
+      - Understands how to provide Proactive communication
+    - heading: Nice to have
+      fields:
+      - Experience working remotely
+      - Experience working directly with English speaking Managers
+      - Understanding of project design, microservice architecture, TDD, CI/CD
+      - Experience with AWS S3
+    - heading: We offer
+      fields:
+      - NO BURNOUT, NO DEADLINES, and NO ASAP shit
+      - Relaxed company environment
+      - Flexible hours. Just set up your time to work efficiently
+      - Work remotely from anywhere you want
+      - Great work-life balance with flexible working hours
+      - Mentoring and personal growth, by Open Source Contributors
+      - Performance review every 12 months
+    - heading: Responsibilities
+      fields:
+      - Work both with a complete set of requirements, sometimes directly with stakeholders
+      - Design and develop well-tested code
+      - Increase overall code quality across all our products
+  - label: Software development
     name: Middle/Senior Ruby Software Engineer
     location: Ukraine
     additional_location: Remote
@@ -83,7 +118,7 @@ careers:
       - Pair programming with Developers
       - Code review pull requests
 why_us:
-  title: Why us
+  title: Why us?
   items:
   - NO BURNOUT, NO DEADLINES, and NO ASAP shit.
   - Relaxed company environment
