@@ -117,6 +117,45 @@ careers:
       - Refactor existing code following the TDD principles
       - Pair programming with Developers
       - Code review pull requests
+  - name: Remote Talent Sourcer/Rectuiter
+    location: Ukraine
+    additional_location: Remote
+    remote_allowed: true
+    hot: true
+    details:
+    - heading: Skills
+      fields:
+      - 1+ year of experience in full cycle of recruiting processes
+      - Experience in organizing meetings, team buildings, etc;
+      - Outstanding communicational and organizational skills;
+      - Excellent time management skills and ability to multitask and prioritize work;
+      - Attention to detail and problem-solving skills;
+      - English level — upper-intermediate or higher
+    - heading: Nice to have
+      fields:
+      - Familiarity with professional networks (like GitHub, linkedIn ets.)
+    - heading: We offer
+      fields:
+      - NO BURNOUT, NO DEADLINES, and NO ASAP shit;
+      - Relaxed company environment;
+      - 'Flexible hours. Just set up your time to work efficiently; '
+      - Work remotely from anywhere you want;
+      - Great work-life balance with flexible working hours;
+      - Performance review every 12 months.
+    - heading: Responsibilities
+      fields:
+      - Define job description;
+      - Create catchy messages to draw candidates’ attention;
+      - Maintaining a well-organized database of prospective candidates;
+      - Scheduling and conducting interviews;
+      - Facilitate the onboarding and offboarding of team members;
+      - Ensure team processes are documented;
+      - Schedule regular team agreement reviews;
+      - Organize in-person retreat logistics, which take place twice a year;
+      - General company administration tasks;
+      - Arrange and be responsible for some of the company benefits (birthday presents,
+        vacations, days off etc).
+    label: Recruit
 why_us:
   title: Why us?
   items:
