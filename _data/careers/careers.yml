@@ -7,6 +7,46 @@ careers:
   subtitle: ''
   vacancies:
   - label: Software development
+    name: Ruby on Rails developer
+    location: Ukraine
+    additional_location: Remote
+    remote_allowed: true
+    hot: true
+    details:
+    - heading: Skills
+      fields:
+      - "— 5+ years of experience in designing and developing web applications from
+        the front-end and back-end side."
+      - "— Good understanding of HTML, CSS, JavaScript."
+      - "— Experience in working with DevOps tools like Jenkins, Docker, AWS."
+      - "— Proficiency with EmberJS, ReactJS or AngularJS."
+      - "— Proficiency with Ruby on Rails."
+      - "— Familiarity with database technology such as PostgreSQL or MySQL or Oracle
+        or MongoDB."
+      - "— At least an Intermediate level of English."
+      - "— Understands how to provide Proactive communication."
+    - heading: Nice to have
+      fields:
+      - "— Experience working remotely"
+      - "— Good communication skills"
+      - "— Experience working directly with English speaking Managers"
+      - "— Develop projects from scratch"
+    - heading: We offer
+      fields:
+      - "— NO BURNOUT, NO DEADLINES, and NO ASAP shit."
+      - "— Relaxed company environment"
+      - "— Flexible hours. Just set up your time to work efficiently"
+      - "— Work remotely from anywhere you want"
+      - "— Great work-life balance with flexible working hours"
+      - "— Mentoring and personal growth, by Open Source Contributors"
+      - "— Performance review every 12 months"
+    - heading: Responsibilities
+      fields:
+      - "— Work both with a complete set of requirements, sometimes directly with
+        stakeholders"
+      - "— Design and develop well-tested code"
+      - "— Increase overall code quality across all our products"
+  - label: Software development
     name: Ember.js developer
     location: Ukraine
     additional_location: Remote
