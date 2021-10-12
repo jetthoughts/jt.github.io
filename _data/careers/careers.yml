@@ -14,13 +14,43 @@ careers:
     hot: true
     details:
     - heading: Skills
-      fields: ''
+      fields:
+      - "— Experience with HTML5, CSS3, CSS frameworks and CSS pre-processors."
+      - "— Experience with jQuery, Node.js, JavaScript build tools, and modern JavaScript
+        frameworks such as React, Redux, Ractive, Ember, or Angular."
+      - "— You have a big interest in learning Ember.js or have already experience
+        with Ember.js"
+      - "— Experience building scalable front-end software."
+      - "— Make the appropriate trade-offs to balance innovative UX with implementation
+        complexity."
+      - "— At least an Intermediate level of English."
+      - "— Understands how to provide Proactive communication."
     - heading: Nice to have
-      fields: ''
+      fields:
+      - "— Experience working remotely"
+      - "— Experience working directly with English speaking Managers"
+      - "— Develop projects from scratch"
     - heading: We offer
-      fields: ''
+      fields:
+      - "— NO BURNOUT, NO DEADLINES, and NO ASAP shit."
+      - "— Relaxed company environment"
+      - "— Flexible hours. Just set up your time to work efficiently"
+      - "— Work remotely from anywhere you want"
+      - "— Great work-life balance with flexible working hours"
+      - "— Mentoring and personal growth, by Open Source Contributors"
+      - "— Performance review every 12 months"
     - heading: Responsibilities
-      fields: ''
+      fields:
+      - "—Work with Product and UX design to understand and create solutions for diverse
+        user requirements (e.g., accessibility, internationalization), user hardware
+        constraints, and front-end security risks."
+      - "—Instrument software with real user metrics (e.g., taps/clicks, feature interaction,
+        performance, fatals) to provide data and protect the customer experience."
+      - "— Improve the design and engineering processes using knowledge of the UX
+        space to and to build, create, and deliver the right experience for customers."
+      - "—Drive the highest standards and solve the most challenging problems. Work
+        hand in hand with engineers across both development teams providing senior
+        technical leadership in all facets of front-end software development."
   - label: Software development
     name: Middle/Senior Ruby Software Engineer
     location: Ukraine
