@@ -17,6 +17,10 @@ careers:
       fields: ''
     - heading: Nice to have
       fields: ''
+    - heading: We offer
+      fields: ''
+    - heading: Responsibilities
+      fields: ''
   - label: Software development
     name: Middle/Senior Ruby Software Engineer
     location: Ukraine
