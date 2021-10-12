@@ -13,7 +13,9 @@ careers:
     remote_allowed: true
     hot: true
     details:
-    - heading: ''
+    - heading: Skills
+      fields: ''
+    - heading: Nice to have
       fields: ''
   - label: Software development
     name: Middle/Senior Ruby Software Engineer
