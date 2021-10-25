@@ -47,7 +47,7 @@ careers:
       - "— Design and develop well-tested code"
       - "— Increase overall code quality across all our products"
   - label: Software development
-    name: Ember.js developer
+    name: Frontend developer (Ember.js)
     location: Ukraine
     additional_location: Remote
     remote_allowed: true
@@ -81,6 +81,9 @@ careers:
       - "— Performance review every 12 months"
     - heading: Responsibilities
       fields:
+      - "—Temporarily work mostly with Ember.js (you can learn it even after applying
+        for this vacancy, only your interest in it is important), and then you will
+        move on to other JS frameworks ( React, Redux, Angular, etc.)"
       - "—Work with Product and UX design to understand and create solutions for diverse
         user requirements (e.g., accessibility, internationalization), user hardware
         constraints, and front-end security risks."
