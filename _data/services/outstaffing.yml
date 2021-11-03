@@ -16,6 +16,9 @@ services_sections:
       and business goals. On this stage, we create a team that suits clients' demands
       and structure.
     image: oa-advantages-img-03.png
+  - title: " Talent Acquisition and Administrating"
+    description: ''
+    image: ''
 benefits:
   title: Benefits of the outstaffing model
   items:
