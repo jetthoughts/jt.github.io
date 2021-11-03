@@ -4,9 +4,12 @@ services_sections:
   description: A budget-effective solution for you by JetThoughts
   sections:
   - title: How outstaffing works
-    description: We gather all requirements, specify the client's problems, ideas,
-      and business goals. On this stage, we create a team that suits clients' demands
-      and structure.
+    description: |-
+      Outstaffing presupposes extending your in-house team with remote workers with the help of a third-party vendor company.
+
+      Using this strategy, your business may recruit individual highly talented developers from external vendors to briefly expand in-house departments over a project period.
+
+      The process of outstaffing might be known to you like the process of hiring a contractor.
     image: oa-advantages-img-03.png
   - title: How outstaffing works
     description: We gather all requirements, specify the client's problems, ideas,
