@@ -26,6 +26,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - amp-jekyll
+  - jekyll-datapage-generator
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -35,6 +36,13 @@ exclude:
   - package
   - yarn
   - src
+
+page_gen:
+- data: 'careers.vacancies'
+  template: 'vacancy'
+  dir: 'careers'
+  name: 'name'
+  name_expr: record['link']
 
 jekyll-minifier:
   uglifier_args:

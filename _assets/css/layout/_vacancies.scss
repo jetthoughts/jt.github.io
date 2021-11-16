@@ -27,7 +27,6 @@
 .vacancy {
   box-shadow: 0 0 32px rgba(21,21,21,0.11);
   margin: 0 0 30px;
-  padding: 30px 20px;
   text-align: left;
   position: relative;
 
@@ -46,6 +45,11 @@
     font-size: 14px;
     line-height: 1em;
     margin: 0;
+  }
+
+  .link {
+    padding: 30px 20px;
+    display: block;
   }
 
   .remote {
@@ -119,8 +123,10 @@
   }
 
   &.-open {
-    .arrow {
-      transform: rotate(180deg);
+    padding: 30px 20px;
+
+    .details {
+      display: block;
     }
   }
 

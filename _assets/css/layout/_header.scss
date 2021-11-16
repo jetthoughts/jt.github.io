@@ -59,6 +59,11 @@
   .menu-opener {
     display: none !important;
   }
+
+  &.-black .header {
+    background: #1b1b1f;
+    position: relative;
+  }
 }
 
 .hide-text {

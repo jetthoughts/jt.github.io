@@ -1,0 +1,32 @@
+<section class="js-scroll vacancies section">
+  <div class="container">
+    <ul class="list">
+      <li class="vacancy -open">
+        <div class="head">
+          <h5 class="label">{{ page.label }}</h5>
+          <div>
+            {% if page.remote_allowed %}
+              <span class="remote">Remote Allowed</span>
+            {% endif %}
+            {% if page.hot %}
+              <span class="hot">Hot</span>
+            {% endif %}
+          </div>
+        </div>
+         <h4 class="name">{{ page.name }}</h4>
+         <div class="location">{{ page.location }} | <strong class="sublocation">{{ page.additional_location }}</strong></div>
+        <div class="details">
+          {% for item in page.details %}
+            <div class="wrapper">
+              <strong class="heading">{{ item.heading }}</strong>
+              {% for field in item.fields %}
+                <p class="text">- {{ field }}</p>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+        <a href="#careers-contact-form" class="btn btn-primary js-anchor">Apply</a>
+      </li>
+    </ul>
+  </div>
+</section>

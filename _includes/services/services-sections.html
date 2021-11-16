@@ -13,7 +13,9 @@
       <div class="tbl {% cycle '-right', '-left' %}">
         <div class="col img">
           <div class="cell">
-            <img src="{% asset {{section.image}} @path %}" class="image">
+            {% if section.image != '' %}
+              <img src="{% asset {{section.image}} @path %}" class="image">
+            {% endif %}
           </div>
         </div>
         <div class="col">

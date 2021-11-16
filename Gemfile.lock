@@ -71,6 +71,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
+    jekyll-datapage-generator (1.4.0)
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-minifier (0.1.10)
@@ -152,6 +153,7 @@ DEPENDENCIES
   autoprefixer-rails
   jekyll (>= 4)
   jekyll-assets!
+  jekyll-datapage-generator
   jekyll-feed
   jekyll-minifier
   jekyll-redirect-from

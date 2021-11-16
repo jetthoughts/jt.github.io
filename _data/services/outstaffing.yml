@@ -18,7 +18,7 @@ services_sections:
     image: oa-advantages-img-03.png
   - title: " Talent Acquisition and Administrating"
     description: ''
-    image: ''
+    image: oa-advantages-img-03.png
 benefits:
   title: Benefits of the outstaffing model
   items:
