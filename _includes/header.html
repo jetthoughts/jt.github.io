@@ -8,6 +8,6 @@
     {% if include.button_text %}
       <a href='#form' class="btn-primary js-modal-opener">{{ include.button_text }}</a>
     {% endif %}
-    <a href='/careers' class="btn-primary _mr-15">Careers</a>
+    <a href='{{ site.data.socials.careers.url }}' target="_blank" class="btn-primary _mr-15">{{ site.data.socials.careers.title }}</a>
   </div>
 </header>
