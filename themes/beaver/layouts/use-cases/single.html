@@ -1,0 +1,383 @@
+{{ partial "page/header.html" . }}
+
+<div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+   <div class="fl-content-full container">
+      <div class="row">
+         <div class="fl-content col-md-12">
+            <article class="fl-post post-3027 page type-page status-publish hentry" id="fl-post-3027" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+               <div class="fl-post-content clearfix" itemprop="text">
+                  <div class="fl-builder-content fl-builder-content-3027 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="3027">
+                     <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-ybgzh4il31w2 fl-row-default-height fl-row-align-center fl-row-has-layers" data-node="ybgzh4il31w2">
+                        <div class="fl-row-content-wrap">
+                           <div class="fl-builder-layer fl-builder-shape-layer fl-builder-bottom-edge-layer fl-builder-shape-rect">
+                              <svg class="fl-builder-layer-align-bottom-center" viewBox="0 0 800 450" preserveAspectRatio="none">
+                                 <defs>
+                                 </defs>
+                                 <g class="fl-shape-content">
+                                    <rect class="fl-shape" x="0" y="0" width="800" height="450"></rect>
+                                 </g>
+                              </svg>
+                           </div>
+                           <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                              <div class="fl-col-group fl-node-rq273te0cidm" data-node="rq273te0cidm">
+                                 <div class="fl-col fl-node-7zdx61osbq4a" data-node="7zdx61osbq4a">
+                                    <div class="fl-col-content fl-node-content">
+                                       <div class="fl-module fl-module-heading fl-node-i0hg97xw3lft" data-node="i0hg97xw3lft">
+                                          <div class="fl-module-content fl-node-content">
+                                             <h1 class="fl-heading">
+                                                <span class="fl-heading-text">{{ .Page.Params.headline }}</span>
+                                             </h1>
+                                          </div>
+                                       </div>
+                                       <div class="fl-module fl-module-rich-text fl-node-ks17cuw5y9lr" data-node="ks17cuw5y9lr">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="fl-rich-text">
+                                                <p>{{ .Page.Params.excerpt }}</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="fl-module fl-module-button fl-node-wh4cbm261s3z" data-node="wh4cbm261s3z">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="fl-button-wrap fl-button-width-auto fl-button-left">
+                                                <a href="{{ absURL "free-consultation/" }}" target="_self" class="fl-button">
+                                                <span class="fl-button-text">Talk to an Expert</span>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="fl-module fl-module-photo fl-node-8xown02sy9ki blue-border" data-node="8xown02sy9ki">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+                                                <div class="fl-photo-content fl-photo-img-jpg">
+
+                                                   {{ $image := .Page.Resources.GetMatch .Page.Params.cover_image }}
+
+                                                   {{ $imageW2048 := $image.Resize "2048x webp q75" }}
+   
+                                                   {{ $imageW1024 := $image.Resize "1024x webp q75" }}
+                                                   {{ $imageW1536 := $image.Resize "1536x webp q75" }}
+                                                   {{ $imageW768 := $image.Resize "768x webp q75" }}
+                                                   {{ $imageW600 := $image.Resize "600x webp q75" }}
+                                                   {{ $imageW300 := $image.Resize "300x webp q75" }}
+
+
+                                                   <img fetchpriority="high" decoding="async" class="fl-photo-img wp-image-3073 size-full" src="{{ $image.RelPermalink }}" alt="{{ title .Page.Params.cover_image }}"
+                                                      itemprop="image" height="{{ $image.Height }}" width="{{ $image.Width }}" srcset="{{ $image.RelPermalink }} 2048w,
+                                                      {{ $imageW300.RelPermalink }} 300w,
+                                                      {{ $imageW1024.RelPermalink }} 1024w,
+                                                      {{ $imageW768.RelPermalink }} 768w,
+                                                      {{ $imageW1536.RelPermalink }} 1536w"
+                                                      sizes="(max-width: 2048px) 100vw, 2048px" /> </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-y9o1fktxjhwd fl-row-default-height fl-row-align-center Case Details - Dark" data-node="y9o1fktxjhwd">
+                        <div class="fl-row-content-wrap">
+                           <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                              <div class="fl-col-group fl-node-4wahe38dpuik fl-col-group-custom-width" data-node="4wahe38dpuik">
+                                 <div class="fl-col fl-node-f29vwky6nx4s fl-col-small fl-col-small-custom-width" data-node="f29vwky6nx4s">
+                                    <div class="fl-col-content fl-node-content">
+                                       {{ range .Params.outcome }}
+                                       <div class="fl-module fl-module-rich-text fl-node-zmit95d7f3gw jt-counter-number" data-node="zmit95d7f3gw">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p><span class="counter-value active" data-count="{{ .value }}">0</span>+</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <div class="fl-module fl-module-rich-text fl-node-b76ngexvt1ms case-name" data-node="b76ngexvt1ms"  style="margin-bottom: 60px;">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p>{{ .name }}</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                       {{ end }}
+                                    </div>
+                                 </div>
+                                 <div class="fl-col fl-node-s87qe53iz1yh fl-col-small-custom-width" data-node="s87qe53iz1yh">
+                                    <div class="fl-col-content fl-node-content">
+                                       <div class="fl-module fl-module-rich-text fl-node-hieuj5zs6k7c case-content" data-node="hieuj5zs6k7c">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="fl-rich-text">
+                                                {{ .Content }}
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="fl-module fl-module-html fl-node-n1taf6k8y549 case-outcome" data-node="n1taf6k8y549">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="fl-html">
+                                                <div class="cs-outcome-wrapper">
+                                                   <div class="cs-outcome">
+                                                      <div class="outcome-value"></div>
+                                                      <div class="outcome-text"></div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-ipax0h7k16zl fl-row-default-height fl-row-align-center fl-row-has-layers" data-node="ipax0h7k16zl">
+                        <div class="fl-row-content-wrap">
+                           <div class="fl-builder-layer fl-builder-shape-layer fl-builder-bottom-edge-layer fl-builder-shape-rect">
+                              <svg class="fl-builder-layer-align-bottom-center" viewBox="0 0 800 450" preserveAspectRatio="none">
+                                 <defs>
+                                 </defs>
+                                 <g class="fl-shape-content">
+                                    <rect class="fl-shape" x="0" y="0" width="800" height="450"></rect>
+                                 </g>
+                              </svg>
+                           </div>
+                           <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                              <div class="fl-col-group fl-node-9aepq2dfcl60 fl-col-group-custom-width" data-node="9aepq2dfcl60">
+                                 <div class="fl-col fl-node-knc34g8oepwd fl-col-small-custom-width fl-col-has-cols" data-node="knc34g8oepwd">
+                                    <div class="fl-col-content fl-node-content">
+                                       <div class="fl-module fl-module-rich-text fl-node-q62bxsf1m4k3" data-node="q62bxsf1m4k3">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="fl-rich-text">
+                                                <p>CLIENTS + CASE STUDIES</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="fl-module fl-module-heading fl-node-re69lqku382s" data-node="re69lqku382s">
+                                          <div class="fl-module-content fl-node-content">
+                                             <h2 class="fl-heading">
+                                                <span class="fl-heading-text">Our client experiences</span>
+                                             </h2>
+                                          </div>
+                                       </div>
+                                       <div class="fl-col-group fl-node-decp4stz39jy fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="decp4stz39jy">
+                                          <div class="fl-col fl-node-20dgfs6qmr9c fl-col-small fl-col-small-custom-width" data-node="20dgfs6qmr9c">
+                                             <div class="fl-col-content fl-node-content">
+                                                <div class="fl-module fl-module-rich-text fl-node-0iqjwp4ucxmn" data-node="0iqjwp4ucxmn">
+                                                   <div class="fl-module-content fl-node-content">
+                                                      <div class="fl-rich-text">
+                                                         <p>We’ve delivered successful project outcomes in a variety of industries, ranging from early-stage startups to established enterprises.</p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="fl-col fl-node-su7djq5l8ibt fl-col-small fl-col-small-custom-width" data-node="su7djq5l8ibt">
+                                             <div class="fl-col-content fl-node-content">
+                                                <div class="fl-module fl-module-button fl-node-qym512pwze3d" data-node="qym512pwze3d">
+                                                   <div class="fl-module-content fl-node-content">
+                                                      <div class="fl-button-wrap fl-button-width-auto fl-button-right">
+                                                         <a href="{{ absURL "clients/" }}" target="_self" class="fl-button">
+                                                         <span class="fl-button-text">View All Clients</span>
+                                                         </a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="fl-module fl-module-pp-content-grid fl-node-c62a1otdremk jt-clickable" data-node="c62a1otdremk">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="pp-posts-wrapper">
+                                                <div class="pp-content-posts" style="--items-count: 3;--column-xl: 3;--column-lg: 3;--column-md: 3;--column-sm: 1;">
+                                                   <div class="pp-content-post-grid pp-equal-height pp-css-grid" itemscope="itemscope" itemtype="https://schema.org/Collection">
+                                                      {{ $pages := where .Site.RegularPages "Type" "clients" }}
+                                                      {{ $pages = $pages | first 3 }}
+                                                      
+                                                      {{ range $pages }}
+                                                      {{ partial "clients/grid-single.html" . }}
+                                                      {{ end }}
+                                                   </div>
+                                                   <div class="fl-clear"></div>
+                                                </div>
+                                                <!-- .pp-content-posts -->
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                             
+                              
+                              {{ partial "page/testimonials.html" . }}
+
+
+                              <div class="fl-col-group fl-node-9s3uy48afhtg fl-col-group-custom-width" data-node="9s3uy48afhtg">
+                                 <div class="fl-col fl-node-mgnli9p56eku fl-col-small-custom-width fl-col-has-cols blue-border" data-node="mgnli9p56eku">
+                                    <div class="fl-col-content fl-node-content">
+                                       <div class="fl-module fl-module-rich-text fl-node-rujwd9mzxche" data-node="rujwd9mzxche">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="fl-rich-text">
+                                                <p>CONTACT US</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="fl-module fl-module-heading fl-node-fa7hjib92cpv" data-node="fa7hjib92cpv">
+                                          <div class="fl-module-content fl-node-content">
+                                             <h2 class="fl-heading">
+                                                <span class="fl-heading-text">Let’s get started now</span>
+                                             </h2>
+                                          </div>
+                                       </div>
+                                       <div class="fl-module fl-module-rich-text fl-node-9hf5wet31z02" data-node="9hf5wet31z02">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="fl-rich-text">
+                                                <p>Get in touch with one of our experts to get a technical strategy &amp; planning session for your project at no cost.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="fl-module fl-module-pp-spacer fl-node-toa2hwegbp4q fl-visible-desktop fl-visible-large fl-visible-medium" data-node="toa2hwegbp4q">
+                                          <div class="fl-module-content fl-node-content">
+                                             <div class="pp-spacer-module"></div>
+                                          </div>
+                                       </div>
+                                       <div class="fl-col-group fl-node-d96zqbnxltuj fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="d96zqbnxltuj">
+                                          <div class="fl-col fl-node-pdak97nlsr0m fl-col-small fl-col-small-custom-width" data-node="pdak97nlsr0m">
+                                             <div class="fl-col-content fl-node-content">
+                                                <div class="fl-module fl-module-pp-infolist fl-node-9bd56tarons2 jt-contact-list" data-node="9bd56tarons2">
+                                                   <div class="fl-module-content fl-node-content">
+                                                      <div class="pp-infolist-wrap">
+                                                         <div class="pp-infolist layout-1">
+                                                            <ul class="pp-list-items">
+                                                               <li class="pp-list-item pp-list-item-0">
+                                                                  <div class="pp-list-item-content">
+                                                                     <div class="pp-icon-wrapper animated none">
+                                                                        <div class="pp-infolist-icon">
+                                                                           <div class="pp-infolist-icon-inner">
+                                                                              <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="pp-heading-wrapper">
+                                                                        <div class="pp-infolist-title">
+                                                                           <p class="pp-infolist-title-text">13+ Years of Industry Experience</p>
+                                                                        </div>
+                                                                        <div class="pp-infolist-description">
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="pp-list-connector"></div>
+                                                               </li>
+                                                               <li class="pp-list-item pp-list-item-1">
+                                                                  <div class="pp-list-item-content">
+                                                                     <div class="pp-icon-wrapper animated none">
+                                                                        <div class="pp-infolist-icon">
+                                                                           <div class="pp-infolist-icon-inner">
+                                                                              <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="pp-heading-wrapper">
+                                                                        <div class="pp-infolist-title">
+                                                                           <p class="pp-infolist-title-text">2 Years is Our Shortest Client Relationship</p>
+                                                                        </div>
+                                                                        <div class="pp-infolist-description">
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="pp-list-connector"></div>
+                                                               </li>
+                                                               <li class="pp-list-item pp-list-item-2">
+                                                                  <div class="pp-list-item-content">
+                                                                     <div class="pp-icon-wrapper animated none">
+                                                                        <div class="pp-infolist-icon">
+                                                                           <div class="pp-infolist-icon-inner">
+                                                                              <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="pp-heading-wrapper">
+                                                                        <div class="pp-infolist-title">
+                                                                           <p class="pp-infolist-title-text">Proprietary Talent Network</p>
+                                                                        </div>
+                                                                        <div class="pp-infolist-description">
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="pp-list-connector"></div>
+                                                               </li>
+                                                               <li class="pp-list-item pp-list-item-3">
+                                                                  <div class="pp-list-item-content">
+                                                                     <div class="pp-icon-wrapper animated none">
+                                                                        <div class="pp-infolist-icon">
+                                                                           <div class="pp-infolist-icon-inner">
+                                                                              <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="pp-heading-wrapper">
+                                                                        <div class="pp-infolist-title">
+                                                                           <p class="pp-infolist-title-text">Competitive Cost Structure</p>
+                                                                        </div>
+                                                                        <div class="pp-infolist-description">
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="pp-list-connector"></div>
+                                                               </li>
+                                                               <li class="pp-list-item pp-list-item-4">
+                                                                  <div class="pp-list-item-content">
+                                                                     <div class="pp-icon-wrapper animated none">
+                                                                        <div class="pp-infolist-icon">
+                                                                           <div class="pp-infolist-icon-inner">
+                                                                              <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                           </div>
+                                                                        </div>
+                                                                     </div>
+                                                                     <div class="pp-heading-wrapper">
+                                                                        <div class="pp-infolist-title">
+                                                                           <p class="pp-infolist-title-text">Reliable Development Systems</p>
+                                                                        </div>
+                                                                        <div class="pp-infolist-description">
+                                                                        </div>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="pp-list-connector"></div>
+                                                               </li>
+                                                            </ul>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="fl-col fl-node-no1p3qm2vyd7 fl-col-small-custom-width" data-node="no1p3qm2vyd7">
+                                             <div class="fl-col-content fl-node-content">
+                                                <div class="fl-module fl-module-pp-gravity-form fl-node-btz2rn93xyu8 contact-page cta-contact" data-node="btz2rn93xyu8">
+                                                   <div class="fl-module-content fl-node-content">
+                                                      <div class="pp-gf-content">
+                                                         <div class="pp-gf-inner">
+                                                            <script type="text/javascript"></script>
+                                                            <div class='gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_2' >
+                                                               <div id='gf_2' class='gform_anchor' tabindex='-1'></div>
+                                                               <div class='gform_heading'>
+                                                                  <p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                                                               </div>
+                                                               {{ partial "page/contact-form.html" . }}
+                                                            </div>
+                                                
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- .fl-post-content -->
+            </article>
+     {{ partial "page/footer.html" . }}

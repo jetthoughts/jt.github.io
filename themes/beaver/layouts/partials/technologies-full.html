@@ -1,0 +1,68 @@
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-w8dym2q746pj fl-row-default-height fl-row-align-center" data-node="w8dym2q746pj">
+    <div class="fl-row-content-wrap nitro-lazy">
+       <div class="fl-row-content fl-row-fixed-width fl-node-content">
+          <div class="fl-col-group fl-node-getow2r614dq fl-col-group-custom-width" data-node="getow2r614dq">
+             <div class="fl-col fl-node-h9g6ylqb3eom fl-col-small-custom-width" data-node="h9g6ylqb3eom">
+                <div class="fl-col-content fl-node-content">
+                   <div class="fl-module fl-module-rich-text fl-node-qilu3d2rcznf" data-node="qilu3d2rcznf">
+                      <div class="fl-module-content fl-node-content">
+                         <div class="fl-rich-text">
+                            <p>TECHNOLOGIES</p>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="fl-module fl-module-heading fl-node-8jdgl4xevh9r" data-node="8jdgl4xevh9r">
+                      <div class="fl-module-content fl-node-content">
+                         <h2 class="fl-heading"> <span class="fl-heading-text">Just like you, we choose scalable and flexible technologies</span> </h2>
+                      </div>
+                   </div>
+                   <div class="fl-module fl-module-rich-text fl-node-n9djf3xr82bq" data-node="n9djf3xr82bq">
+                      <div class="fl-module-content fl-node-content">
+                         <div class="fl-rich-text">
+                            <p>We provide a diverse mix of experiences across the leading back-end and front-end coding languages.</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="fl-col-group fl-node-4xayl9kqod3b fl-col-group-custom-width" data-node="4xayl9kqod3b">
+
+
+            {{ range .Site.Data.technologies }}
+            <div class="fl-col fl-node-c352mble96pn fl-col-small fl-col-small-custom-width" data-node="c352mble96pn" style="margin-bottom:60px">
+                <div class="fl-col-content fl-node-content">
+                   <div class="fl-module fl-module-photo fl-node-r4l68x09cspw" data-node="r4l68x09cspw">
+                      <div class="fl-module-content fl-node-content">
+                         <div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+                            <div class="fl-photo-content fl-photo-img-png"> <img alt="{{ .name }}" itemprop="image" height="112" width="130" nitro-lazy-src="{{ if (resources.GetMatch .image ) }}{{ ((resources.GetMatch .image).Fit `112x113 webp Smart q50`).RelPermalink | safeURL }}{{ else }}{{ .image }}{{ end }}" content="{{ if (resources.GetMatch .image ) }}{{ ((resources.GetMatch .image).Fit `112x113 jpg Smart q50`).RelPermalink | safeURL }}{{ else }}{{ .image }}{{ end }}" class="fl-photo-img wp-image-614 size-full nitro-lazy" decoding="async" nitro-lazy-empty id="NDU0OjIyNg==-1" src="data:image/svg+xml;nitro-empty-id=NDU0OjIyNg==-1;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTMwIDExMiIgd2lkdGg9IjEzMCIgaGVpZ2h0PSIxMTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PC9zdmc+" /> </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="fl-module fl-module-rich-text fl-node-l6d9zyhkmps7" data-node="l6d9zyhkmps7">
+                      <div class="fl-module-content fl-node-content">
+                         <div class="fl-rich-text">
+                            <p>{{ .name }}</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+            {{ end }}
+      
+          </div>
+          <div class="fl-col-group fl-node-6ohvzu5c0syx" data-node="6ohvzu5c0syx">
+             <div class="fl-col fl-node-wj03avgxeu9f fl-visible-desktop fl-visible-large fl-visible-medium" data-node="wj03avgxeu9f">
+                <div class="fl-col-content fl-node-content">
+                   <div class="fl-module fl-module-pp-spacer fl-node-txe5h863mjia" data-node="txe5h863mjia">
+                      <div class="fl-module-content fl-node-content">
+                         <div class="pp-spacer-module"></div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+    
+       </div>
+    </div>
+ </div>

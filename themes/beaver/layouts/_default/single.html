@@ -1,0 +1,40 @@
+{{ partial "header.html" . }}
+{{ if (and (eq .Section "posts") (eq .Site.Params.jsonLdRender "true")) }}
+<script type="application/ld+json">
+{ "@context": "https://schema.org", 
+ "@type": "TechArticle",
+ "headline": {{ .Title }},
+ "proficiencyLevel": "Beginner",
+ "alternativeHeadline": "{{ .Title | safeJS }}",
+ "author": "AucT", 
+ "publisher": {
+    "@type": "Organization",
+    "name": "tech.auct.eu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tech.auct.eu/icon.png"
+    }
+  },	
+ "image": "https://tech.auct.eu/icon.png",
+ "award": "Best article ever written",
+ "genre": "search engine optimization",
+ "keywords": "{{ range .Params.tags }}{{ . }} {{ end }}", 
+ "url": "https://tech.auct.eu",
+ "articleBody": {{ .Content }},
+ "datePublished": "{{ .Date.Format "2006-01-02" }}",
+ "dateCreated": "{{ .Date.Format "2006-01-02" }}",
+ "dateModified": "{{ .Date.Format "2006-01-02" }}"
+ }
+</script>
+{{ end }}
+<article>
+<header>
+<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+{{ if eq .Section "posts" }}
+<p>Updated: {{ .Date.Format "2th January 2006" }}
+<br>Tags: {{ range .Params.tags }}<a href="/tags/{{ . | urlize }}/">{{ . }}</a> {{ end }}</p>
+{{ end }}
+</header>
+{{ .Content }}
+</article>
+{{ partial "footer.html" . }}

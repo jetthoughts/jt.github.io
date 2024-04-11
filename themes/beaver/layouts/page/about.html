@@ -1,0 +1,477 @@
+{{ partial "page/header.html" . }}
+
+<div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+    <div class="fl-content-full container">
+    <div class="row">
+    <div class="fl-content col-md-12">
+    <article class="fl-post post-701 page type-page status-publish hentry" id="fl-post-701" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+       <div class="fl-post-content clearfix" itemprop="text">
+          <div class="fl-builder-content fl-builder-content-701 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="701">
+             <div class="fl-row fl-row-full-width fl-row-bg-color fl-node-wazohulbme7q fl-row-default-height fl-row-align-center fl-row-has-layers" data-node="wazohulbme7q">
+                <div class="fl-row-content-wrap">
+                   <div class="fl-builder-layer fl-builder-shape-layer fl-builder-bottom-edge-layer fl-builder-shape-rect">
+                      <svg class="fl-builder-layer-align-bottom-center" viewBox="0 0 800 450" preserveAspectRatio="none">
+                         <defs>
+                         </defs>
+                         <g class="fl-shape-content">
+                            <rect class="fl-shape" x="0" y="0" width="800" height="450"></rect>
+                         </g>
+                      </svg>
+                   </div>
+                   <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                      <div class="fl-col-group fl-node-pzj93mxq06vo" data-node="pzj93mxq06vo">
+                         <div class="fl-col fl-node-vcrwsnm34dab" data-node="vcrwsnm34dab">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-heading fl-node-vh9u3t4br8cm" data-node="vh9u3t4br8cm">
+                                  <div class="fl-module-content fl-node-content">
+                                     <h1 class="fl-heading">
+                                        <span class="fl-heading-text">Learn more about our story, our culture, and our values</span>
+                                     </h1>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-photo fl-node-19njtzagfebh" data-node="19njtzagfebh">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+                                        <div class="fl-photo-content fl-photo-img-jpg">
+{{ $image := .Page.Resources.GetMatch .Page.Params.cover_image }}
+{{ $imageW2048 := $image.Resize "2048x webp q75" }}
+{{ $imageW1024 := $image.Resize "1024x webp q75" }}
+{{ $imageW1536 := $image.Resize "1536x webp q75" }}
+{{ $imageW768 := $image.Resize "768x webp q75" }}
+{{ $imageW600 := $image.Resize "600x webp q75" }}
+{{ $imageW300 := $image.Resize "300x webp q75" }}
+
+                                        <img fetchpriority="high" decoding="async" class="fl-photo-img wp-image-710 size-full" src="{{ $image.RelPermalink }}" alt="The Best Products" itemprop="image"
+                                        height="{{ $image.Height }}" width="{{ $image.Width }}" srcset="{{ $image.RelPermalink }} 2360w,
+                                            {{ $imageW300.RelPermalink }} 300w,
+                                            {{ $imageW1024.RelPermalink }} 1024w,
+                                            {{ $imageW768.RelPermalink }} 768w,
+                                            {{ $imageW1536.RelPermalink }} 1536w,
+                                            {{ $imageW2048.RelPermalink }} 2048w" }}"
+                                            sizes="(max-width: 2360px) 100vw, 2360px" /> </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-uiyz63qn8r0f fl-row-default-height fl-row-align-center" data-node="uiyz63qn8r0f">
+                <div class="fl-row-content-wrap">
+                   <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                      <div class="fl-col-group fl-node-0i3jlsdov2t9 fl-col-group-custom-width" data-node="0i3jlsdov2t9">
+                         <div class="fl-col fl-node-6tcum8ds5ip4 fl-col-small fl-col-small-custom-width" data-node="6tcum8ds5ip4">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-rich-text fl-node-ows5td8cbip3" data-node="ows5td8cbip3">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p>{{ .Params.about_us_block1.headline }}</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-rich-text fl-node-7rwpn0gkzc45 jt-mission-culture" data-node="7rwpn0gkzc45">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <ul>
+                                          {{ range .Params.about_us_block1.items }}
+                                          <li>{{ . }}</li>
+                                          {{ end }}
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="fl-col fl-node-cxsbfvdr49eg fl-col-small fl-col-small-custom-width" data-node="cxsbfvdr49eg">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-rich-text fl-node-6d9equxbio2h" data-node="6d9equxbio2h">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                       <p>{{ .Params.about_us_block2.headline }}</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-rich-text fl-node-594ngq8xc7ws jt-mission-culture" data-node="594ngq8xc7ws">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <ul>
+                                          {{ range .Params.about_us_block2.items }}
+                                          <li>{{ . }}</li>
+                                          {{ end }}
+                                        </ul>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="fl-col-group fl-node-l1ruymexao69 fl-col-group-custom-width" data-node="l1ruymexao69">
+                         <div class="fl-col fl-node-os8vrc1dwlji fl-col-small-custom-width" data-node="os8vrc1dwlji">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-rich-text fl-node-wju40a395zbl" data-node="wju40a395zbl">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p>OUR CORE VALUES</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-heading fl-node-il8sadb7x3nv" data-node="il8sadb7x3nv">
+                                  <div class="fl-module-content fl-node-content">
+                                     <h2 class="fl-heading">
+                                        <span class="fl-heading-text">How we see the world helps drive our success</span>
+                                     </h2>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="fl-col-group fl-node-agujqh5fxnds fl-col-group-custom-width" data-node="agujqh5fxnds">
+                         <div class="fl-col fl-node-h1byus7aprfd fl-col-small fl-col-small-custom-width" data-node="h1byus7aprfd">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-pp-infobox fl-node-5tmpu20yerbq" data-node="5tmpu20yerbq">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="pp-infobox-wrap">
+                                        <div class="pp-infobox layout-5">
+                                           <div class="pp-icon-wrapper animated">
+                                              <div class="pp-infobox-image">
+                                                 <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/trust-transparency.svg" }}" alt="Trust Transparency" />
+                                              </div>
+                                           </div>
+                                           <div class="pp-infobox-title-wrapper">
+                                              <h3 class="pp-infobox-title">Trust & Transparency</h3>
+                                           </div>
+                                           <div class="pp-infobox-description">
+                                              <div class="pp-description-wrap">
+                                                 <p>Trust is our most important company value because it’s essential for any successful long-term relationship. In order to build trust, we believe in the need for transparency.</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="fl-col fl-node-p3acnwe42skd fl-col-small fl-col-small-custom-width" data-node="p3acnwe42skd">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-pp-infobox fl-node-k0y7grmbj6n8" data-node="k0y7grmbj6n8">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="pp-infobox-wrap">
+                                        <div class="pp-infobox layout-5">
+                                           <div class="pp-icon-wrapper animated">
+                                              <div class="pp-infobox-image">
+                                                 <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/alignment-communication.svg" }}" alt="Alignment Communication" />
+                                              </div>
+                                           </div>
+                                           <div class="pp-infobox-title-wrapper">
+                                              <h3 class="pp-infobox-title">Alignment & Communication</h3>
+                                           </div>
+                                           <div class="pp-infobox-description">
+                                              <div class="pp-description-wrap">
+                                                 <p>Software development can be costly, which is why we believe in the importance of proper scoping, planning, and communication throughout the process.</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="fl-col fl-node-bzo12nhdvj97 fl-col-small fl-col-small-custom-width" data-node="bzo12nhdvj97">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-pp-infobox fl-node-g5t28lcnjfkh" data-node="g5t28lcnjfkh">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="pp-infobox-wrap">
+                                        <div class="pp-infobox layout-5">
+                                           <div class="pp-icon-wrapper animated">
+                                              <div class="pp-infobox-image">
+                                                 <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/reliability-adaptability.svg" }}" alt="Reliability Adaptability" />
+                                              </div>
+                                           </div>
+                                           <div class="pp-infobox-title-wrapper">
+                                              <h3 class="pp-infobox-title">Reliability & Adaptability</h3>
+                                           </div>
+                                           <div class="pp-infobox-description">
+                                              <div class="pp-description-wrap">
+                                                 <p>Even after the technology is developed, it usually requires ongoing supervision to fix problems, adjust to changes, and keep it stable over time.</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-v524b8z0hwrt fl-row-default-height fl-row-align-center" data-node="v524b8z0hwrt">
+                <div class="fl-row-content-wrap">
+                   <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                      <div class="fl-col-group fl-node-dyipogh0wz7c fl-col-group-custom-width" data-node="dyipogh0wz7c">
+                         <div class="fl-col fl-node-cv38mr0lszjt fl-col-small-custom-width" data-node="cv38mr0lszjt">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-rich-text fl-node-nb2thxdw075q" data-node="nb2thxdw075q">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p>ACHIEVEMENTS</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-heading fl-node-735gaw8z0rx4" data-node="735gaw8z0rx4">
+                                  <div class="fl-module-content fl-node-content">
+                                     <h2 class="fl-heading">
+                                        <span class="fl-heading-text">Our successful outcome</span>
+                                     </h2>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="fl-col-group fl-node-67fuqzwp2svj fl-col-group-custom-width" data-node="67fuqzwp2svj">
+                         <div class="fl-col fl-node-j53lh2y9utgk fl-col-small fl-col-small-custom-width" data-node="j53lh2y9utgk">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-rich-text fl-node-6dnrx0uvg45j jt-counter-number" data-node="6dnrx0uvg45j">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p><span class="counter-value active" data-count="5">0</span>+</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-rich-text fl-node-a2xb65fhgy79" data-node="a2xb65fhgy79">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p>Years of Average Client Relationship</p>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="fl-col fl-node-rhuqmig4nfkp fl-col-small fl-col-small-custom-width" data-node="rhuqmig4nfkp">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-rich-text fl-node-p9so2tfi6euz jt-counter-number" data-node="p9so2tfi6euz">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p><span class="counter-value active" data-count="8">0</span>+</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-rich-text fl-node-7f326tcxngwi" data-node="7f326tcxngwi">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p>Years of Average Developer Experience</p>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="fl-col fl-node-xsf32a07cupe fl-col-small fl-col-small-custom-width" data-node="xsf32a07cupe">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-rich-text fl-node-twdnl1vagh9s jt-counter-number" data-node="twdnl1vagh9s">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p><span class="counter-value active" data-count="4">0</span>+</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-rich-text fl-node-r0hgcj5bm8kf" data-node="r0hgcj5bm8kf">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p>Years of Average Developer Turnover</p>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-r0z92ais74j1 fl-row-default-height fl-row-align-center fl-row-has-layers" data-node="r0z92ais74j1">
+                <div class="fl-row-content-wrap">
+                   <div class="fl-builder-layer fl-builder-shape-layer fl-builder-bottom-edge-layer fl-builder-shape-rect">
+                      <svg class="fl-builder-layer-align-bottom-center" viewBox="0 0 800 450" preserveAspectRatio="none">
+                         <defs>
+                         </defs>
+                         <g class="fl-shape-content">
+                            <rect class="fl-shape" x="0" y="0" width="800" height="450"></rect>
+                         </g>
+                      </svg>
+                   </div>
+                   <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                   
+                      {{ partial "page/testimonials.html" . }}
+                      <div class="fl-col-group fl-node-3h8mj6w59d2c fl-col-group-custom-width" data-node="3h8mj6w59d2c">
+                         <div class="fl-col fl-node-fdsvgxpowi03 fl-col-small-custom-width fl-col-has-cols blue-border" data-node="fdsvgxpowi03">
+                            <div class="fl-col-content fl-node-content">
+                               <div class="fl-module fl-module-rich-text fl-node-rujwd9mzxche" data-node="rujwd9mzxche">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p>CONTACT US</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-heading fl-node-fa7hjib92cpv" data-node="fa7hjib92cpv">
+                                  <div class="fl-module-content fl-node-content">
+                                     <h2 class="fl-heading">
+                                        <span class="fl-heading-text">Let’s get started now</span>
+                                     </h2>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-rich-text fl-node-9hf5wet31z02" data-node="9hf5wet31z02">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="fl-rich-text">
+                                        <p>Get in touch with one of our experts to get a technical strategy &amp; planning session for your project at no cost.</p>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-module fl-module-pp-spacer fl-node-toa2hwegbp4q fl-visible-desktop fl-visible-large fl-visible-medium" data-node="toa2hwegbp4q">
+                                  <div class="fl-module-content fl-node-content">
+                                     <div class="pp-spacer-module"></div>
+                                  </div>
+                               </div>
+                               <div class="fl-col-group fl-node-d96zqbnxltuj fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="d96zqbnxltuj">
+                                  <div class="fl-col fl-node-pdak97nlsr0m fl-col-small fl-col-small-custom-width" data-node="pdak97nlsr0m">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-infolist fl-node-9bd56tarons2 jt-contact-list" data-node="9bd56tarons2">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-infolist-wrap">
+                                                 <div class="pp-infolist layout-1">
+                                                    <ul class="pp-list-items">
+                                                       <li class="pp-list-item pp-list-item-0">
+                                                          <div class="pp-list-item-content">
+                                                             <div class="pp-icon-wrapper animated none">
+                                                                <div class="pp-infolist-icon">
+                                                                   <div class="pp-infolist-icon-inner">
+                                                                      <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                   </div>
+                                                                </div>
+                                                             </div>
+                                                             <div class="pp-heading-wrapper">
+                                                                <div class="pp-infolist-title">
+                                                                   <p class="pp-infolist-title-text">13+ Years of Industry Experience</p>
+                                                                </div>
+                                                                <div class="pp-infolist-description">
+                                                                </div>
+                                                             </div>
+                                                          </div>
+                                                          <div class="pp-list-connector"></div>
+                                                       </li>
+                                                       <li class="pp-list-item pp-list-item-1">
+                                                          <div class="pp-list-item-content">
+                                                             <div class="pp-icon-wrapper animated none">
+                                                                <div class="pp-infolist-icon">
+                                                                   <div class="pp-infolist-icon-inner">
+                                                                      <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                   </div>
+                                                                </div>
+                                                             </div>
+                                                             <div class="pp-heading-wrapper">
+                                                                <div class="pp-infolist-title">
+                                                                   <p class="pp-infolist-title-text">2 Years is Our Shortest Client Relationship</p>
+                                                                </div>
+                                                                <div class="pp-infolist-description">
+                                                                </div>
+                                                             </div>
+                                                          </div>
+                                                          <div class="pp-list-connector"></div>
+                                                       </li>
+                                                       <li class="pp-list-item pp-list-item-2">
+                                                          <div class="pp-list-item-content">
+                                                             <div class="pp-icon-wrapper animated none">
+                                                                <div class="pp-infolist-icon">
+                                                                   <div class="pp-infolist-icon-inner">
+                                                                      <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                   </div>
+                                                                </div>
+                                                             </div>
+                                                             <div class="pp-heading-wrapper">
+                                                                <div class="pp-infolist-title">
+                                                                   <p class="pp-infolist-title-text">Proprietary Talent Network</p>
+                                                                </div>
+                                                                <div class="pp-infolist-description">
+                                                                </div>
+                                                             </div>
+                                                          </div>
+                                                          <div class="pp-list-connector"></div>
+                                                       </li>
+                                                       <li class="pp-list-item pp-list-item-3">
+                                                          <div class="pp-list-item-content">
+                                                             <div class="pp-icon-wrapper animated none">
+                                                                <div class="pp-infolist-icon">
+                                                                   <div class="pp-infolist-icon-inner">
+                                                                      <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                   </div>
+                                                                </div>
+                                                             </div>
+                                                             <div class="pp-heading-wrapper">
+                                                                <div class="pp-infolist-title">
+                                                                   <p class="pp-infolist-title-text">Competitive Cost Structure</p>
+                                                                </div>
+                                                                <div class="pp-infolist-description">
+                                                                </div>
+                                                             </div>
+                                                          </div>
+                                                          <div class="pp-list-connector"></div>
+                                                       </li>
+                                                       <li class="pp-list-item pp-list-item-4">
+                                                          <div class="pp-list-item-content">
+                                                             <div class="pp-icon-wrapper animated none">
+                                                                <div class="pp-infolist-icon">
+                                                                   <div class="pp-infolist-icon-inner">
+                                                                      <img decoding="async" src="{{ absURL "wp-content/uploads/2022/10/tick-circle-white.svg" }}" alt="" role="presentation" />
+                                                                   </div>
+                                                                </div>
+                                                             </div>
+                                                             <div class="pp-heading-wrapper">
+                                                                <div class="pp-infolist-title">
+                                                                   <p class="pp-infolist-title-text">Reliable Development Systems</p>
+                                                                </div>
+                                                                <div class="pp-infolist-description">
+                                                                </div>
+                                                             </div>
+                                                          </div>
+                                                          <div class="pp-list-connector"></div>
+                                                       </li>
+                                                    </ul>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="fl-col fl-node-no1p3qm2vyd7 fl-col-small-custom-width" data-node="no1p3qm2vyd7">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-gravity-form fl-node-btz2rn93xyu8 contact-page cta-contact" data-node="btz2rn93xyu8">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-gf-content">
+                                                 <div class="pp-gf-inner">
+                                                    <script type="text/javascript"></script>
+                                                    <div class='gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_2' >
+                                                       <div id='gf_2' class='gform_anchor' tabindex='-1'></div>
+                                                       <div class='gform_heading'>
+                                                          <p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                                                       </div>
+                                                       {{ partial "page/contact-form.html" . }}
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <!-- .fl-post-content -->
+    </article>
+
+{{ partial "page/footer.html" . }}    

@@ -1,0 +1,533 @@
+{{ partial "page/header.html" . }}
+<div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+  <div class="fl-builder-content fl-builder-content-2998 fl-builder-global-templates-locked" data-post-id="2998">
+     <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-pljy58ha90t6 fl-row-default-height fl-row-align-center fl-row-has-layers" data-node="pljy58ha90t6">
+        <div class="fl-row-content-wrap">
+           <div class="fl-builder-layer fl-builder-shape-layer fl-builder-bottom-edge-layer fl-builder-shape-rect">
+              <svg class="fl-builder-layer-align-bottom-center" viewBox="0 0 800 450" preserveAspectRatio="none">
+                 <defs>
+                 </defs>
+                 <g class="fl-shape-content">
+                    <rect class="fl-shape" x="0" y="0" width="800" height="450"></rect>
+                 </g>
+              </svg>
+           </div>
+           <div class="fl-row-content fl-row-fixed-width fl-node-content">
+              <div class="fl-col-group fl-node-zqy80dlfkgs4" data-node="zqy80dlfkgs4">
+                 <div class="fl-col fl-node-o3fzmxkt7pnq" data-node="o3fzmxkt7pnq">
+                    <div class="fl-col-content fl-node-content">
+                       <div class="fl-module fl-module-heading fl-node-ib740solzrug" data-node="ib740solzrug">
+                          <div class="fl-module-content fl-node-content">
+                             <h1 class="fl-heading">
+                                <span class="fl-heading-text">{{ .Title }}</span>
+                             </h1>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-rich-text fl-node-jqo3yekxubd7" data-node="jqo3yekxubd7">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                                <p>{{ .Page.Params.excerpt }}</p>
+                              </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-photo fl-node-upmnzwl7ocg0" data-node="upmnzwl7ocg0">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+                                <div class="fl-photo-content fl-photo-img-jpg">
+
+
+                                  {{ $image := .Page.Resources.GetMatch .Page.Params.client.cover_image }}
+                                                                         
+                                  {{ $imageW1024 := $image.Resize "1024x webp q75" }}
+                                  {{ $imageW1536 := $image.Resize "1536x webp q75" }}
+                                  {{ $imageW768 := $image.Resize "768x webp q75" }}
+                                  {{ $imageW600 := $image.Resize "600x webp q75" }}
+                                  {{ $imageW300 := $image.Resize "300x webp q75" }}
+
+                                  <img loading="lazy" decoding="async" class="fl-photo-img wp-image-3212 size-full"
+                                    src="{{ $image.RelPermalink }}" alt="{{ .Page.Params.client.name }}"
+                                    itemprop="image" height="{{ $image.Height }}" width="{{ $image.Width }}" title="{{ .Page.Params.client.name }}"
+                                    srcset="{{ $image.RelPermalink }} 1920w,
+                                    {{ $imageW300.RelPermalink }} 300w,
+                                    {{ $imageW1024.RelPermalink }} 1024w,
+                                    {{ $imageW768.RelPermalink }} 768w,
+                                    {{ $imageW1536.RelPermalink }} 1536w"
+                                    sizes="(max-width: 1920px) 100vw, 1920px" />
+                                  </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-xaj4396uy5vp fl-row-default-height fl-row-align-center Case Details - Dark" data-node="xaj4396uy5vp">
+        <div class="fl-row-content-wrap">
+           <div class="fl-row-content fl-row-fixed-width fl-node-content">
+              <div class="fl-col-group fl-node-68ts0mr5uf1k fl-col-group-custom-width" data-node="68ts0mr5uf1k">
+                 <div class="fl-col fl-node-tgivwns6ak74 fl-col-small fl-col-small-custom-width" data-node="tgivwns6ak74">
+                    <div class="fl-col-content fl-node-content">
+                       <div class="fl-module fl-module-rich-text fl-node-rns95wbpaj6f" data-node="rns95wbpaj6f">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                                <p>Client</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-rich-text fl-node-h0r9d45m3eiv case-name" data-node="h0r9d45m3eiv">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                              <p><a href="{{ .Page.Params.client.website }}" target="_blank" rel="noopener">{{ .Page.Params.client.name }}</a></p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-rich-text fl-node-4wy53kqjanli" data-node="4wy53kqjanli">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                                <p>Industry</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-rich-text fl-node-qf5o2ylp9stz" data-node="qf5o2ylp9stz">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                              <p>{{ .Page.Params.client.industry }}</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-rich-text fl-node-ls29p7r4fc0i" data-node="ls29p7r4fc0i">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                                <p>Locations</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-rich-text fl-node-ipusof9c1q4k" data-node="ipusof9c1q4k">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                              <p>{{ .Page.Params.client.locations }}</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-rich-text fl-node-92ndlib4txzy" data-node="92ndlib4txzy">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                                <p>Timeline</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-rich-text fl-node-i2noaebh6cv9" data-node="i2noaebh6cv9">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                              <p>{{ .Page.Params.client.timeline }}</p>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="fl-col fl-node-5mzg89cri2dx fl-col-small-custom-width" data-node="5mzg89cri2dx">
+                    <div class="fl-col-content fl-node-content">
+                       <div class="fl-module fl-module-rich-text fl-node-rtpwkne6gfz8 case-content" data-node="rtpwkne6gfz8">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                              {{ .Content}}
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-html fl-node-1yg9r4bsoe7n case-outcome" data-node="1yg9r4bsoe7n">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-html">
+                                <div class="cs-outcome-wrapper">
+                                  {{ range .Params.outcome }}
+                                  <div class="cs-outcome">
+                                    <div class="outcome-value">{{ .value }}</div>
+                                    <div class="outcome-text">{{ .name }}</div>
+                                  </div>
+                                  {{ end }}
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-9oke63pn1lct fl-row-default-height fl-row-align-center fl-row-has-layers" data-node="9oke63pn1lct">
+        <div class="fl-row-content-wrap">
+           <div class="fl-builder-layer fl-builder-shape-layer fl-builder-bottom-edge-layer fl-builder-shape-rect">
+              <svg class="fl-builder-layer-align-bottom-center" viewBox="0 0 800 450" preserveAspectRatio="none">
+                 <defs>
+                 </defs>
+                 <g class="fl-shape-content">
+                    <rect class="fl-shape" x="0" y="0" width="800" height="450"></rect>
+                 </g>
+              </svg>
+           </div>
+           <div class="fl-row-content fl-row-fixed-width fl-node-content">
+              <div class="fl-col-group fl-node-mdb2kiqg4stj" data-node="mdb2kiqg4stj">
+                 <div class="fl-col fl-node-3dkhcawzbiv6" data-node="3dkhcawzbiv6">
+                    <div class="fl-col-content fl-node-content">
+                       <div class="fl-module fl-module-pp-gallery fl-node-74cwydp2ahsq fl-visible-desktop fl-visible-large case-gallery" data-node="74cwydp2ahsq">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="pp-photo-gallery" itemscope="itemscope" itemtype="https://schema.org/ImageGallery">
+
+                              {{ range .Params.gallery }}
+                              {{ $imageItem := $.Page.Resources.GetMatch . }}
+                              {{ $imageItemW1024 := $imageItem.Resize "1024x webp q75" }}
+
+
+                                <div class="pp-photo-gallery-item" data-item-id="3209" itemprop="associatedMedia" itemscope="itemscope" itemtype="http://schema.org/ImageObject">
+                                   <div class="pp-photo-gallery-content">
+                                      <a
+                                         href="{{ $imageItemW1024.RelPermalink }}"
+                                         data-fancybox="images" 
+                                         title="{{ $.Page.Title }}" 
+                                         data-description="" 
+                                         itemprop="contentUrl">
+                                         <img loading="lazy" decoding="async" class="pp-gallery-img no-lazyload skip-lazy"
+                                         src="{{ $imageItemW1024.RelPermalink }}"
+                                         alt="{{ $.Page.Title }}" data-no-lazy="1" itemprop="thumbnail" width="{{ $imageItemW1024.Width }}" height="{{ $imageItemW1024.Height }}" />
+                                         <!-- Overlay Wrapper -->
+                                         <div class="pp-gallery-overlay">
+                                            <div class="pp-overlay-inner">
+                                            </div>
+                                         </div>
+                                         <!-- Overlay Wrapper Closed -->
+                                      </a>
+                                      <meta itemprop="width" content="{{ $imageItemW1024.Width }}" />
+                                      <meta itemprop="height" content="{{ $imageItemW1024.Height }}" />
+                                   </div>
+                                </div>
+
+                                {{ end }}
+        
+                             </div>
+                          </div>
+                       </div>
+                     
+                       <div class="fl-module fl-module-html fl-node-8l54f9zu3rkh cs-testimonial" data-node="8l54f9zu3rkh">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-html">
+                                <div class="cs-testimonial-wrapper">
+                                   <div class="testimonial-content">
+                                      “The project was hugely successful in that it was released in a short amount of time, one of the consultants from JetThoughts helped us to remove all issues and accomplished all of our core goals of infinite scale, high performance, and reliability.”
+                                   </div>
+                                   <div class="testimonial-meta">
+                                      <p class="testimonial-name">Matthew Fields</p>
+                                      <p class="testimonial-position">Director</p>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="fl-col-group fl-node-31daogzev674" data-node="31daogzev674">
+                 <div class="fl-col fl-node-2uy6ecgtjdqi" data-node="2uy6ecgtjdqi">
+                    <div class="fl-col-content fl-node-content">
+                       <div class="fl-module fl-module-heading fl-node-4kxo2ech7gin" data-node="4kxo2ech7gin">
+                          <div class="fl-module-content fl-node-content">
+                             <h2 class="fl-heading">
+                                <span class="fl-heading-text">More case studies</span>
+                             </h2>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-pp-content-grid fl-node-cr7afu1kde2w jt-clickable" data-node="cr7afu1kde2w">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="pp-posts-wrapper">
+                                <div class="pp-content-posts" style="--items-count: 3;--column-xl: 3;--column-lg: 3;--column-md: 3;--column-sm: 1;">
+                                   <div class="pp-content-post-grid pp-equal-height pp-css-grid" itemscope="itemscope" itemtype="https://schema.org/Collection">
+                                      <div class="pp-content-post pp-content-grid-post pp-grid-custom post-3213 jt_case_studies type-jt_case_studies status-publish has-post-thumbnail hentry jt_case_studies_category-hotwire jt_case_studies_category-ruby-on-rails jt_case_studies_category-tailwind-css" itemscope itemtype="https://schema.org/CreativeWork" data-id="3213">
+                                         <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="http://3213" content="See How JetThoughts Helped OrchestrateCS Go From an Idea to Software in Just 60 Days" />
+                                         <meta itemprop="datePublished" content="2022-12-04" />
+                                         <meta itemprop="dateModified" content="2022-12-11" />
+                                         <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                                            <meta itemprop="name" content="JetThoughts">
+                                         </div>
+                                         <div itemscope itemprop="author" itemtype="https://schema.org/Person">
+                                            <meta itemprop="url" content="https://www.jetthoughts.com/blog/author/greyson/" />
+                                            <meta itemprop="name" content="Greyson" />
+                                         </div>
+                                         <div itemscope itemprop="image" itemtype="https://schema.org/ImageObject">
+                                            <meta itemprop="url" content="https://www.jetthoughts.com/wp-content/uploads/2022/12/ocs-return-work-with-confidence.png" />
+                                            <meta itemprop="width" content="2000" />
+                                            <meta itemprop="height" content="1573" />
+                                         </div>
+                                         <div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
+                                            <meta itemprop="interactionType" content="https://schema.org/CommentAction" />
+                                            <meta itemprop="userInteractionCount" content="0" />
+                                         </div>
+                                         <div class="pp-content-grid-post-image">
+                                            <a href="https://www.jetthoughts.com/clients/see-how-jetthoughts-helped-orchestratecs-go-from-an-idea-to-software-in-just-60-days/"><img width="450" height="175" src="https://www.jetthoughts.com/wp-content/uploads/2022/12/OCS-Logo-1.png" class="attachment-full size-full pp-post-img" alt="OCS Logo" decoding="async" loading="lazy" srcset="https://www.jetthoughts.com/wp-content/uploads/2022/12/OCS-Logo-1.png 450w, https://www.jetthoughts.com/wp-content/uploads/2022/12/OCS-Logo-1-300x117.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></a>
+                                         </div>
+                                         <div class="pp-content-grid-post-text">
+                                            <div class="excerpt">
+                                               <p>To help make their startup idea a reality, OrchestrateCS hired us to help them go from zero to revenue by making their an initial MVP they could use to go-to-market.</p>
+                                            </div>
+                                            <div class="case-category">
+                                               <ul class='fl-jt_case_studies_category'>
+                                                  <li><span class="hotwire">Hotwire</span></li>
+                                                  <li><span class="ruby-on-rails">Ruby on Rails</span></li>
+                                                  <li><span class="tailwind-css">Tailwind CSS</span></li>
+                                               </ul>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      <div class="pp-content-post pp-content-grid-post pp-grid-custom post-3198 jt_case_studies type-jt_case_studies status-publish has-post-thumbnail hentry jt_case_studies_category-angularjs jt_case_studies_category-bootstrap jt_case_studies_category-graphql jt_case_studies_category-react-js jt_case_studies_category-ruby-on-rails" itemscope itemtype="https://schema.org/CreativeWork" data-id="3198">
+                                         <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="http://3198" content="See How JetThoughts Helped Corsis Transform a Legacy Software Project &amp; Gain Control Over a Complex Codebase" />
+                                         <meta itemprop="datePublished" content="2022-12-04" />
+                                         <meta itemprop="dateModified" content="2022-12-04" />
+                                         <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                                            <meta itemprop="name" content="JetThoughts">
+                                         </div>
+                                         <div itemscope itemprop="author" itemtype="https://schema.org/Person">
+                                            <meta itemprop="url" content="https://www.jetthoughts.com/blog/author/greyson/" />
+                                            <meta itemprop="name" content="Greyson" />
+                                         </div>
+                                         <div itemscope itemprop="image" itemtype="https://schema.org/ImageObject">
+                                            <meta itemprop="url" content="https://www.jetthoughts.com/wp-content/uploads/2022/12/unnamed.png" />
+                                            <meta itemprop="width" content="934" />
+                                            <meta itemprop="height" content="703" />
+                                         </div>
+                                         <div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
+                                            <meta itemprop="interactionType" content="https://schema.org/CommentAction" />
+                                            <meta itemprop="userInteractionCount" content="0" />
+                                         </div>
+                                         <div class="pp-content-grid-post-image">
+                                            <a href="https://www.jetthoughts.com/clients/see-how-jetthoughts-helped-corsis-transform-a-legacy-software-project-gain-control-over-a-complex-codebase/"><img width="470" height="107" src="https://www.jetthoughts.com/wp-content/uploads/2022/12/download-1.jpg" class="attachment-full size-full pp-post-img" alt="The Corsis logo" decoding="async" loading="lazy" srcset="https://www.jetthoughts.com/wp-content/uploads/2022/12/download-1.jpg 470w, https://www.jetthoughts.com/wp-content/uploads/2022/12/download-1-300x68.jpg 300w" sizes="(max-width: 470px) 100vw, 470px" /></a>
+                                         </div>
+                                         <div class="pp-content-grid-post-text">
+                                            <div class="excerpt">
+                                               <p>To help salvage an aging legacy project, Corsis hired us to take over responsibility for ongoing architecture and development for a proprietary software in desperate need of a technical owner.</p>
+                                            </div>
+                                            <div class="case-category">
+                                               <ul class='fl-jt_case_studies_category'>
+                                                  <li><span class="angularjs">AngularJS</span></li>
+                                                  <li><span class="bootstrap">Bootstrap</span></li>
+                                                  <li><span class="graphql">GraphQL</span></li>
+                                                  <li><span class="react-js">React.js</span></li>
+                                                  <li><span class="ruby-on-rails">Ruby on Rails</span></li>
+                                               </ul>
+                                            </div>
+                                         </div>
+                                      </div>
+                                      <div class="pp-content-post pp-content-grid-post pp-grid-custom post-2994 jt_case_studies type-jt_case_studies status-publish has-post-thumbnail hentry jt_case_studies_category-node-js jt_case_studies_category-python jt_case_studies_category-react-js jt_case_studies_category-ruby-on-rails jt_case_studies_category-vue-js" itemscope itemtype="https://schema.org/CreativeWork" data-id="2994">
+                                         <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="http://2994" content="See How JetThoughts Helped Agent Inbox Go From Idea to Software in 60 Days" />
+                                         <meta itemprop="datePublished" content="2022-10-13" />
+                                         <meta itemprop="dateModified" content="2022-11-29" />
+                                         <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                                            <meta itemprop="name" content="JetThoughts">
+                                         </div>
+                                         <div itemscope itemprop="author" itemtype="https://schema.org/Person">
+                                            <meta itemprop="url" content="https://www.jetthoughts.com/blog/author/paul/" />
+                                            <meta itemprop="name" content="Paul Keen" />
+                                         </div>
+                                         <div itemscope itemprop="image" itemtype="https://schema.org/ImageObject">
+                                            <meta itemprop="url" content="https://www.jetthoughts.com/wp-content/uploads/2022/10/hero-ai.jpg" />
+                                            <meta itemprop="width" content="2048" />
+                                            <meta itemprop="height" content="868" />
+                                         </div>
+                                         <div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
+                                            <meta itemprop="interactionType" content="https://schema.org/CommentAction" />
+                                            <meta itemprop="userInteractionCount" content="0" />
+                                         </div>
+                                         <div class="pp-content-grid-post-image">
+                                            <a href="https://www.jetthoughts.com/clients/agent-inbox/"><img width="260" height="72" src="https://www.jetthoughts.com/wp-content/uploads/2022/10/case-study-agent-inbox-color.png" class="attachment-full size-full pp-post-img" alt="Agent Inbox" decoding="async" loading="lazy" /></a>
+                                         </div>
+                                         <div class="pp-content-grid-post-text">
+                                            <div class="excerpt">
+                                               <p>To take real estate communication to the next level, Agent Inbox hired us to build the right platform, deliver a market-ready solution, and help the team grow.</p>
+                                            </div>
+                                            <div class="case-category">
+                                               <ul class='fl-jt_case_studies_category'>
+                                                  <li><span class="node-js">Node.js</span></li>
+                                                  <li><span class="python">Python</span></li>
+                                                  <li><span class="react-js">React.js</span></li>
+                                                  <li><span class="ruby-on-rails">Ruby on Rails</span></li>
+                                                  <li><span class="vue-js">Vue.js</span></li>
+                                               </ul>
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="fl-clear"></div>
+                                </div>
+                                <!-- .pp-content-posts -->
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="fl-col-group fl-node-xwpgvtdncjb2 fl-col-group-custom-width" data-node="xwpgvtdncjb2">
+                 <div class="fl-col fl-node-6lkcf2wjvygx fl-col-small-custom-width fl-col-has-cols blue-border" data-node="6lkcf2wjvygx">
+                    <div class="fl-col-content fl-node-content">
+                       <div class="fl-module fl-module-rich-text fl-node-rujwd9mzxche" data-node="rujwd9mzxche">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                                <p>CONTACT US</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-heading fl-node-fa7hjib92cpv" data-node="fa7hjib92cpv">
+                          <div class="fl-module-content fl-node-content">
+                             <h2 class="fl-heading">
+                                <span class="fl-heading-text">Let’s get started now</span>
+                             </h2>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-rich-text fl-node-9hf5wet31z02" data-node="9hf5wet31z02">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="fl-rich-text">
+                                <p>Get in touch with one of our experts to get a technical strategy &amp; planning session for your project at no cost.</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="fl-module fl-module-pp-spacer fl-node-toa2hwegbp4q fl-visible-desktop fl-visible-large fl-visible-medium" data-node="toa2hwegbp4q">
+                          <div class="fl-module-content fl-node-content">
+                             <div class="pp-spacer-module"></div>
+                          </div>
+                       </div>
+                       <div class="fl-col-group fl-node-d96zqbnxltuj fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="d96zqbnxltuj">
+                          <div class="fl-col fl-node-pdak97nlsr0m fl-col-small fl-col-small-custom-width" data-node="pdak97nlsr0m">
+                             <div class="fl-col-content fl-node-content">
+                                <div class="fl-module fl-module-pp-infolist fl-node-9bd56tarons2 jt-contact-list" data-node="9bd56tarons2">
+                                   <div class="fl-module-content fl-node-content">
+                                      <div class="pp-infolist-wrap">
+                                         <div class="pp-infolist layout-1">
+                                            <ul class="pp-list-items">
+                                               <li class="pp-list-item pp-list-item-0">
+                                                  <div class="pp-list-item-content">
+                                                     <div class="pp-icon-wrapper animated none">
+                                                        <div class="pp-infolist-icon">
+                                                           <div class="pp-infolist-icon-inner">
+                                                              <img decoding="async" src="https://www.jetthoughts.com/wp-content/uploads/2022/10/tick-circle-white.svg" alt="" role="presentation" />
+                                                           </div>
+                                                        </div>
+                                                     </div>
+                                                     <div class="pp-heading-wrapper">
+                                                        <div class="pp-infolist-title">
+                                                           <p class="pp-infolist-title-text">13+ Years of Industry Experience</p>
+                                                        </div>
+                                                        <div class="pp-infolist-description">
+                                                        </div>
+                                                     </div>
+                                                  </div>
+                                                  <div class="pp-list-connector"></div>
+                                               </li>
+                                               <li class="pp-list-item pp-list-item-1">
+                                                  <div class="pp-list-item-content">
+                                                     <div class="pp-icon-wrapper animated none">
+                                                        <div class="pp-infolist-icon">
+                                                           <div class="pp-infolist-icon-inner">
+                                                              <img decoding="async" src="https://www.jetthoughts.com/wp-content/uploads/2022/10/tick-circle-white.svg" alt="" role="presentation" />
+                                                           </div>
+                                                        </div>
+                                                     </div>
+                                                     <div class="pp-heading-wrapper">
+                                                        <div class="pp-infolist-title">
+                                                           <p class="pp-infolist-title-text">2 Years is Our Shortest Client Relationship</p>
+                                                        </div>
+                                                        <div class="pp-infolist-description">
+                                                        </div>
+                                                     </div>
+                                                  </div>
+                                                  <div class="pp-list-connector"></div>
+                                               </li>
+                                               <li class="pp-list-item pp-list-item-2">
+                                                  <div class="pp-list-item-content">
+                                                     <div class="pp-icon-wrapper animated none">
+                                                        <div class="pp-infolist-icon">
+                                                           <div class="pp-infolist-icon-inner">
+                                                              <img decoding="async" src="https://www.jetthoughts.com/wp-content/uploads/2022/10/tick-circle-white.svg" alt="" role="presentation" />
+                                                           </div>
+                                                        </div>
+                                                     </div>
+                                                     <div class="pp-heading-wrapper">
+                                                        <div class="pp-infolist-title">
+                                                           <p class="pp-infolist-title-text">Proprietary Talent Network</p>
+                                                        </div>
+                                                        <div class="pp-infolist-description">
+                                                        </div>
+                                                     </div>
+                                                  </div>
+                                                  <div class="pp-list-connector"></div>
+                                               </li>
+                                               <li class="pp-list-item pp-list-item-3">
+                                                  <div class="pp-list-item-content">
+                                                     <div class="pp-icon-wrapper animated none">
+                                                        <div class="pp-infolist-icon">
+                                                           <div class="pp-infolist-icon-inner">
+                                                              <img decoding="async" src="https://www.jetthoughts.com/wp-content/uploads/2022/10/tick-circle-white.svg" alt="" role="presentation" />
+                                                           </div>
+                                                        </div>
+                                                     </div>
+                                                     <div class="pp-heading-wrapper">
+                                                        <div class="pp-infolist-title">
+                                                           <p class="pp-infolist-title-text">Competitive Cost Structure</p>
+                                                        </div>
+                                                        <div class="pp-infolist-description">
+                                                        </div>
+                                                     </div>
+                                                  </div>
+                                                  <div class="pp-list-connector"></div>
+                                               </li>
+                                               <li class="pp-list-item pp-list-item-4">
+                                                  <div class="pp-list-item-content">
+                                                     <div class="pp-icon-wrapper animated none">
+                                                        <div class="pp-infolist-icon">
+                                                           <div class="pp-infolist-icon-inner">
+                                                              <img decoding="async" src="https://www.jetthoughts.com/wp-content/uploads/2022/10/tick-circle-white.svg" alt="" role="presentation" />
+                                                           </div>
+                                                        </div>
+                                                     </div>
+                                                     <div class="pp-heading-wrapper">
+                                                        <div class="pp-infolist-title">
+                                                           <p class="pp-infolist-title-text">Reliable Development Systems</p>
+                                                        </div>
+                                                        <div class="pp-infolist-description">
+                                                        </div>
+                                                     </div>
+                                                  </div>
+                                                  <div class="pp-list-connector"></div>
+                                               </li>
+                                            </ul>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                          <div class="fl-col fl-node-no1p3qm2vyd7 fl-col-small-custom-width" data-node="no1p3qm2vyd7">
+                             <div class="fl-col-content fl-node-content">
+                                <div class="fl-module fl-module-pp-gravity-form fl-node-btz2rn93xyu8 contact-page cta-contact" data-node="btz2rn93xyu8">
+                                   <div class="fl-module-content fl-node-content">
+                                      <div class="pp-gf-content">
+                                         <div class="pp-gf-inner">
+                                            
+                                            <div class='gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_2' >
+                                               <div id='gf_2' class='gform_anchor' tabindex='-1'></div>
+                                               <div class='gform_heading'>
+                                                  <p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                                               </div>
+                                              {{ partial "page/contact-form.html" . }}
+                                            </div>
+                          
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+{{ partial "page/footer.html" . }}

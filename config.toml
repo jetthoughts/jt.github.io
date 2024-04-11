@@ -1,0 +1,248 @@
+baseURL = "https://jetthoughts.netlify.app/"
+languageCode = "en-us"
+title = "JetThoghts Demo"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+theme = "beaver"
+enableGitInfo = true
+assetDir = "static"
+disableKinds = ["section", "taxonomy", "term"]
+[permalinks]
+  pages = "/:slug/"
+
+[params]
+ 
+  email="info@jetthoughts.com"
+  phone="+1 754 216 9568"
+  description="JetThoughts’s expert team of developers and consultants has helped clients launch highly tailored projects, and we’d love to help you, too."
+  copyright="© 2022 JetThoughts. All Rights Reserved."
+
+
+  testimonials_headin = "Most clients stay over 3 years. Some stayed beyond 6."
+  testimonials_description = "Don’t just take our word for it. See what our clients say about our services."
+[[params.testimonials]]
+  name = "Bruno Wozniak"
+  rating = 5
+  title = "Director of Engineering at PubNative"
+  description = "“Usually, in my experience, contractors are either highly talented but lacking in communication skills or vice versa. Guys from JetThoughts got the best of both worlds. They implemented easy ways to manage the flow of a distributed team and support high-quality code and development overall. Their team was also detailed and precise, helping us to find problems before they appear. We knew exactly what was happening and where we were going the whole time.”"
+
+[[params.testimonials]]
+  name = "Vince Han"
+  rating = 5
+  title = "CEO of Mobile Coach"
+  description = "“JetThoughts principals are very entrepreneurial and they really understand the process of scaling and growing a business. Their commitment to a highly technical skill set with their team members has been key for us. JetThoughts is more than a contractor—they’re a trustworthy partner with impressive knowledge and skills. Currently, I’m still working with them and giving my ideas to translate into concrete actions.”"
+
+[[params.testimonials]]
+  name = "Bruno Wozniak"
+  rating = 5
+  title = "Director of Engineering at PubNative"
+  description = "“Usually, in my experience, contractors are either highly talented but lacking in communication skills or vice versa. Guys from JetThoughts got the best of both worlds. They implemented easy ways to manage the flow of a distributed team and support high-quality code and development overall. Their team was also detailed and precise, helping us to find problems before they appear. We knew exactly what was happening and where we were going the whole time.”"
+
+[[params.testimonials]]
+  name = "Vince Han"
+  rating = 5
+  title = "CEO of Mobile Coach"
+  description = "“JetThoughts principals are very entrepreneurial and they really understand the process of scaling and growing a business. Their commitment to a highly technical skill set with their team members has been key for us. JetThoughts is more than a contractor—they’re a trustworthy partner with impressive knowledge and skills. Currently, I’m still working with them and giving my ideas to translate into concrete actions.”"
+
+
+  
+[menu]
+[[menu.main]]
+  identifier = "services"
+  name = "Services"
+  pageRef= "pages/services/"
+  weight = 10
+
+    [[menu.main]]
+      parent = "services"
+      identifier = "fractional-cto"
+      name = "Fractional CTO"
+      pageRef= "/services/fractional-cto/"
+      weight = 1
+
+    [[menu.main]]
+      parent = "services"
+      identifier = "fractional-product"
+      name = "Fractional Product Management"
+      pageRef= "/services/fractional-product-management/"
+      weight = 2
+
+    [[menu.main]]
+      parent = "services"
+      identifier = "app-web"
+      name = "App/Web Development"
+      pageRef= "/services/app-web-development/"
+      weight = 3
+
+    [[menu.main]]
+      parent = "services"
+      identifier = "outsourced-developer"
+      name = "Outsourced Developer Staffing"
+      pageRef= "/services/outsourced-developer-staffing/"
+      weight = 4
+
+    [[menu.main]]
+      parent = "services"
+      identifier = "software-qa"
+      name = "Software AQA & Testing"
+      pageRef= "/services/software-qa-cat/"
+      weight = 5
+
+    [[menu.main]]
+      parent = "services"
+      identifier = "talent-recruiting"
+      name = "Talent Recruiting & Training"
+      pageRef= "/services/talent-recruiting-training/"
+      weight = 6
+
+[[menu.main]]
+  identifier = "usecases"
+  name = "Use Cases"
+  pageRef= "pages/use-cases/"
+  weight = 20
+
+    [[menu.main]]
+      parent = "usecases"
+      identifier = "startup-mvp"
+      name = "Startup MVP Prototyping & Development"
+      pageRef= "/use-cases/startup-mvp-prototyping-development/"
+      weight = 1
+
+    [[menu.main]]
+      parent = "usecases"
+      identifier = "salvage-project"
+      name = "Salvage an Existing Project"
+      pageRef= "/use-cases/salvage-existing-project/"
+      weight = 2
+
+    [[menu.main]]
+      parent = "usecases"
+      identifier = "empower-team"
+      name = "Empower an Existing Engineering Team"
+      pageRef= "/use-cases/empower-existing-engineering-team/"
+      weight = 3
+
+    [[menu.main]]
+      parent = "usecases"
+      identifier = "emergency-cto"
+      name = "Emergency CTO Leadership"
+      pageRef= "/use-cases/emergency-cto-leadership/"
+      weight = 4
+
+    [[menu.main]]
+      parent = "usecases"
+      identifier = "automate-product"
+      name = "Automate Product QA & Testing"
+      pageRef= "/use-cases/automate-product-qa-testing/"
+      weight = 5
+
+    [[menu.main]]
+      parent = "usecases"
+      identifier = "accelerate-dev"
+      name = "Accelerate Development & Maximize Capacity"
+      pageRef= "/use-cases/accelerate-development-maximize-capacity/"
+      weight = 6
+
+[[menu.main]]
+  identifier = "about-us"
+  name = "About Us"
+  pageRef= "pages/about-us/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "clients"
+  name = "Clients"
+  pageRef= "pages/clients/"
+  weight = 40
+
+[[menu.main]]
+  identifier = "careers"
+  name = "Careers"
+  pageRef = "pages/careers"
+  weight = 50
+
+[[menu.main]]
+  identifier = "contact-us"
+  name = "Contact Us"
+  pageRef = "pages/contact-us"
+  weight = 60
+
+[[menu.services]]
+  name = "Fractional CTO"
+  url = "/services/fractional-cto/"
+  weight = 10
+[[menu.services]]
+  name = "Fractional Product Management"
+  url = "/services/fractional-product-management/"
+  weight = 20
+[[menu.services]]
+  name = "Talent Recruiting &amp; Training"
+  url = "/services/talent-recruiting-training/"
+  weight = 30
+[[menu.services]]
+  name = "App/Web Development"
+  url = "/services/app-web-development/"
+  weight = 40
+[[menu.services]]
+  name = "Outsourced Developer Staffing"
+  url = "/services/outsourced-developer-staffing/"
+  weight = 50
+[[menu.services]]
+  name = "Software QA &amp; CAT"
+  url = "/services/software-qa-cat/"
+  weight = 60
+
+
+[[menu.company]]
+  name = "About Us"
+  url = "/about-us/"
+  weight = 10
+[[menu.company]]
+  name = "Contact Us"
+  url = "/contact-us/"
+  weight = 20
+[[menu.company]]
+  name = "Free Consultation"
+  url = "/free-consultation/"
+  weight = 30
+[[menu.company]]
+  name = "Careers <strong>we’re hiring</strong>"
+  url = "/careers/"
+  weight = 40
+
+[[menu.resources]]
+  name = "Clients"
+  url = "/clients/"
+  weight = 10
+[[menu.resources]]
+  name = "Use Cases"
+  url = "/use-cases/"
+  weight = 20
+
+
+[outputFormats]
+  [outputFormats.html]
+    isPlainText = true
+
+[params.forms.career]
+action = "https://docs.google.com/forms/d/e/1FAIpXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxXXXXXXXXXXXXXXXX1Eg/formResponse"
+first_name = "entry.12345"
+last_name = "entry.12345"
+position= "entry.12345"
+linkedin = "entry.12345"
+introduce = "entry.12345"
+email = "entry.12345"
+phone = "entry.12345"
+
+
+[params.forms.contact]
+action = "https://docs.google.com/forms/d/e/1FAIpXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxXXXXXXXXXXXXXXXX1Eg/formResponse"
+first_name = "entry.12345"
+last_name = "entry.12345"
+email = "entry.12345"
+phone = "entry.12345"
+tell = "entry.12345"
+
+
+[params.forms.newsletter]
+action = "https://docs.google.com/forms/d/e/1FAIpXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxXXXXXXXXXXXXXXXX1Eg/formResponse"
+email = "entry.12345"

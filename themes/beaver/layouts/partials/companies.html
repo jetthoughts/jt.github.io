@@ -1,0 +1,15 @@
+{{ range $index, $tech := .Site.Data.companies }}
+<div class="pp-logo pp-logo-{{ $index }}">
+    <a href="#" target="_self">
+        <div class="pp-logo-inner">
+            <div class="pp-logo-inner-wrap">
+            <div class="logo-image-wrapper">
+                <img decoding="async" class="logo-image"
+                src="{{ if (resources.GetMatch $tech.image ) }}{{ ((resources.GetMatch $tech.image).Resize `200x webp Smart q75`).RelPermalink | safeURL }}{{ else }}{{ absURL $tech.image }}{{ end }}"
+                alt="{{ $tech.name }}">
+            </div>
+            </div>
+        </div>
+    </a>
+</div>
+{{ end }}

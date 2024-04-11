@@ -1,0 +1,497 @@
+{{ partial "page/header.html" . }}
+<div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+    <div class="fl-content-full container">
+       <div class="row">
+          <div class="fl-content col-md-12">
+             <article class="fl-post post-3086 page type-page status-publish hentry" id="fl-post-3086" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+                <div class="fl-post-content clearfix" itemprop="text">
+                   <div class="fl-builder-content fl-builder-content-3086 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="3086">
+                      <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-ydac1kbu0mr5 fl-row-default-height fl-row-align-center" data-node="ydac1kbu0mr5">
+                         <div class="fl-row-content-wrap">
+                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                               <div class="fl-col-group fl-node-769zqh15eu4f" data-node="769zqh15eu4f">
+                                  <div class="fl-col fl-node-dwgq9vpn70ls" data-node="dwgq9vpn70ls">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-heading fl-node-znrykfbt5jag" data-node="znrykfbt5jag">
+                                           <div class="fl-module-content fl-node-content">
+                                              <h1 class="fl-heading">
+                                                 <span class="fl-heading-text">Looking for a Team to Take You to the Next Level?</span>
+                                              </h1>
+                                           </div>
+                                        </div>
+                                        <div class="fl-module fl-module-rich-text fl-node-4ozql2gni9v5" data-node="4ozql2gni9v5">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p>Join an Elite Group of Developers on the Forefront of Software Innovation</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <div class="fl-module fl-module-button fl-node-4sahmupye5n9" data-node="4sahmupye5n9">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-button-wrap fl-button-width-auto fl-button-left">
+                                                 <a href="{{ absURL "contact-us/" }}" target="_self" class="fl-button">
+                                                 <span class="fl-button-text">Get in Touch</span>
+                                                 </a>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-w02opu1zjdef fl-row-default-height fl-row-align-center" data-node="w02opu1zjdef">
+                         <div class="fl-row-content-wrap">
+                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                               <div class="fl-col-group fl-node-rkz3lqdvyji5 fl-col-group-equal-height fl-col-group-align-bottom fl-col-group-custom-width fl-col-group-responsive-reversed" data-node="rkz3lqdvyji5">
+                                  <div class="fl-col fl-node-pm9n6xlvbdcr fl-col-small fl-col-small-custom-width" data-node="pm9n6xlvbdcr">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-rich-text fl-node-4h3i0s82lbyx" data-node="4h3i0s82lbyx">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p>BENEFITS</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <div class="fl-module fl-module-heading fl-node-avobk6yunz3d" data-node="avobk6yunz3d">
+                                           <div class="fl-module-content fl-node-content">
+                                              <h2 class="fl-heading">
+                                                 <span class="fl-heading-text">Why Work with Us?</span>
+                                              </h2>
+                                           </div>
+                                        </div>
+                                        <div class="fl-module fl-module-rich-text fl-node-usxbejnl6297" data-node="usxbejnl6297">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p>At JetThoughts, we love what we do and the team members we work with.</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="fl-col fl-node-9o52smetxgia fl-col-small fl-col-small-custom-width" data-node="9o52smetxgia">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-photo fl-node-gi0qls6dvyk9" data-node="gi0qls6dvyk9">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+                                                 <div class="fl-photo-content fl-photo-img-jpeg">
+                                                   
+                                                    {{ $image := .Page.Resources.GetMatch .Page.Params.cover_image }}
+                                                    {{ $imageW1210 := $image.Resize "1210x webp q75" }}
+                                                    {{ $imageW1024 := $image.Resize "1024x webp q75" }}
+                                                    {{ $imageW768 := $image.Resize "768x webp q75" }}
+                                                    {{ $imageW300 := $image.Resize "300x webp q75" }}
+                                            
+                                                   
+                                                    <img fetchpriority="high" decoding="async" class="fl-photo-img wp-image-3055 size-full"
+                                                        src="{{ $image.RelPermalink }}"
+                                                        alt="Browse. Apply. Prepare your bright future." itemprop="image" height="{{ $image.Height }}" width="{{ $image.Width }}"
+                                                        srcset="{{ $imageW1210.RelPermalink }} 1210w,
+                                                        {{ $imageW300.RelPermalink }} 300w,
+                                                        {{ $imageW1024.RelPermalink }} 1024w,
+                                                        {{ $imageW768.RelPermalink }} 768w"
+                                                        sizes="(max-width: 1210px) 100vw, 1210px" />  </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-col-group fl-node-tkbxilua731h" data-node="tkbxilua731h">
+                                  <div class="fl-col fl-node-f8b1riy273sj fl-visible-desktop fl-visible-large fl-visible-medium" data-node="f8b1riy273sj">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-spacer fl-node-h0tyqmkv4lcs fl-visible-desktop fl-visible-large fl-visible-medium" data-node="h0tyqmkv4lcs">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-spacer-module"></div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-col-group fl-node-e7fri2m0gpkj fl-col-group-custom-width" data-node="e7fri2m0gpkj">
+                                  <div class="fl-col fl-node-yx43bujcaiqn fl-col-small fl-col-small-custom-width hover-box" data-node="yx43bujcaiqn">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-infobox fl-node-2qjtxd5mnu0o" data-node="2qjtxd5mnu0o">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-infobox-wrap">
+                                                 <div class="pp-infobox layout-5">
+                                                    <div class="pp-icon-wrapper animated">
+                                                       <div class="pp-infobox-image">
+                                                          <img decoding="async" src="{{ absURL "wp-content/uploads/2022/11/people-oriented.png" }}" alt="People oriented icon" />
+                                                       </div>
+                                                    </div>
+                                                    <div class="pp-infobox-title-wrapper">
+                                                       <h3 class="pp-infobox-title">People-Oriented</h3>
+                                                    </div>
+                                                    <div class="pp-infobox-description">
+                                                       <div class="pp-description-wrap">
+                                                          <p>People are at the center of any successful business. At JetThoughts, we recognize the importance of making every team member our priority.</p>
+                                                       </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="fl-col fl-node-ktz4ipj39vd6 fl-col-small fl-col-small-custom-width hover-box" data-node="ktz4ipj39vd6">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-infobox fl-node-fsx06y1qr7am" data-node="fsx06y1qr7am">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-infobox-wrap">
+                                                 <div class="pp-infobox layout-5">
+                                                    <div class="pp-icon-wrapper animated">
+                                                       <div class="pp-infobox-image">
+                                                          <img decoding="async" src="{{ absURL "wp-content/uploads/2022/11/long-term-focused.png" }}" alt="Long term focused icon" />
+                                                       </div>
+                                                    </div>
+                                                    <div class="pp-infobox-title-wrapper">
+                                                       <h3 class="pp-infobox-title">Long-Term Focused</h3>
+                                                    </div>
+                                                    <div class="pp-infobox-description">
+                                                       <div class="pp-description-wrap">
+                                                          <p>We’ve rarely ever fired employees because our hiring is focused on the bigger picture. We strive to find the best people to align around our long-term vision.</p>
+                                                       </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="fl-col fl-node-m39uvorzy5g8 fl-col-small fl-col-small-custom-width hover-box" data-node="m39uvorzy5g8">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-infobox fl-node-t9y6kecruwx0" data-node="t9y6kecruwx0">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-infobox-wrap">
+                                                 <div class="pp-infobox layout-5">
+                                                    <div class="pp-icon-wrapper animated">
+                                                       <div class="pp-infobox-image">
+                                                          <img decoding="async" src="{{ absURL "wp-content/uploads/2022/11/tight-knit-team.png" }}" alt="Tight knit team" />
+                                                       </div>
+                                                    </div>
+                                                    <div class="pp-infobox-title-wrapper">
+                                                       <h3 class="pp-infobox-title">Tight-Knit Team</h3>
+                                                    </div>
+                                                    <div class="pp-infobox-description">
+                                                       <div class="pp-description-wrap">
+                                                          <p>Unlike larger development agencies, we aim to create a curated team environment that’s familiar, supportive, and empowering. Everyone on our team knows each other well and collaborates closely (whether remote or in-person).</p>
+                                                       </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-col-group fl-node-segpo6lw8v2x" data-node="segpo6lw8v2x">
+                                  <div class="fl-col fl-node-lru5v2k7htgj fl-visible-desktop fl-visible-large fl-visible-medium" data-node="lru5v2k7htgj">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-spacer fl-node-gq1zu0tr6e4m fl-visible-desktop fl-visible-large fl-visible-medium" data-node="gq1zu0tr6e4m">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-spacer-module"></div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-col-group fl-node-49pkc27wr180 fl-col-group-custom-width" data-node="49pkc27wr180">
+                                  <div class="fl-col fl-node-oxvacq3nkrmt fl-col-small fl-col-small-custom-width" data-node="oxvacq3nkrmt">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-infobox fl-node-7dpf8coyqrj1" data-node="7dpf8coyqrj1">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-infobox-wrap">
+                                                 <div class="pp-infobox layout-5">
+                                                    <div class="pp-icon-wrapper animated">
+                                                       <div class="pp-infobox-image">
+                                                          <img decoding="async" src="{{ absURL "wp-content/uploads/2022/11/flexible-nvironment.png" }}" alt="Flexible environment icon" />
+                                                       </div>
+                                                    </div>
+                                                    <div class="pp-infobox-title-wrapper">
+                                                       <h3 class="pp-infobox-title">Flexible Environment</h3>
+                                                    </div>
+                                                    <div class="pp-infobox-description">
+                                                       <div class="pp-description-wrap">
+                                                          <p>Culture is the heart of any company and we believe a high-performing team needs an environment that’s adaptable and flexible. Our team is distributed worldwide and works on a schedule that’s optimal for their situation.</p>
+                                                       </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="fl-col fl-node-j89kuaibv574 fl-col-small fl-col-small-custom-width" data-node="j89kuaibv574">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-infobox fl-node-silug3152ocd" data-node="silug3152ocd">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-infobox-wrap">
+                                                 <div class="pp-infobox layout-5">
+                                                    <div class="pp-icon-wrapper animated">
+                                                       <div class="pp-infobox-image">
+                                                          <img decoding="async" src="{{ absURL "wp-content/uploads/2022/11/growth-beyond-jetthoughts.png" }}" alt="Growth beyond JetThoughts icon" />
+                                                       </div>
+                                                    </div>
+                                                    <div class="pp-infobox-title-wrapper">
+                                                       <h3 class="pp-infobox-title">Growth Beyond JetThoughts</h3>
+                                                    </div>
+                                                    <div class="pp-infobox-description">
+                                                       <div class="pp-description-wrap">
+                                                          <p>At JetThoughts, we offer more than simply a job. Employees get access to the company’s network and we provide opportunities to step up in bigger ways.</p>
+                                                       </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="fl-col fl-node-gz025t4lvoui fl-col-small fl-col-small-custom-width" data-node="gz025t4lvoui">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-pp-infobox fl-node-xowkfsrzlcn8" data-node="xowkfsrzlcn8">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-infobox-wrap">
+                                                 <div class="pp-infobox layout-5">
+                                                    <div class="pp-icon-wrapper animated">
+                                                       <div class="pp-infobox-image">
+                                                          <img decoding="async" src="{{ absURL "wp-content/uploads/2022/11/world-class-training.png" }}" alt="World class training" />
+                                                       </div>
+                                                    </div>
+                                                    <div class="pp-infobox-title-wrapper">
+                                                       <h3 class="pp-infobox-title">World-Class Training</h3>
+                                                    </div>
+                                                    <div class="pp-infobox-description">
+                                                       <div class="pp-description-wrap">
+                                                          <p>A key part of what makes JetThoughts successful is our proprietary systems for training, onboarding, and managing the software development process. Learn development best practices from a top-tier digital agency.</p>
+                                                       </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-dkc4gbvj193z fl-row-default-height fl-row-align-center" data-node="dkc4gbvj193z">
+                         <div class="fl-row-content-wrap">
+                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                               <div class="fl-col-group fl-node-glhy7x5esni6 fl-col-group-custom-width" data-node="glhy7x5esni6">
+                                  <div class="fl-col fl-node-pvmd79cnor48 fl-col-small fl-col-small-custom-width" data-node="pvmd79cnor48">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-photo fl-node-o7uedk0zaipg" data-node="o7uedk0zaipg">
+                                           <div class="fl-module-content fl-node-content">
+
+                                            
+{{ $image := .Page.Resources.GetMatch .Page.Params.testimonial.image }}
+                                                                         
+{{ $imageW300 := $image.Resize "300x webp q75" }}
+
+{{ $imageW150 := $image.Resize "150x webp q75" }}
+
+
+                                              <div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+                                                 <div class="fl-photo-content fl-photo-img-jpg">
+                                                    <img decoding="async" class="fl-photo-img wp-image-3054 size-full"
+                                                        src="{{ $image.RelPermalink }}" alt="John Doe" itemprop="image"
+                                                        height="{{ $image.Height }}" width="{{ $image.Width }}"
+                                                        srcset="{{ $image.RelPermalink }} 528w,
+                                                        {{ $imageW300.RelPermalink }} 300w,
+                                                        {{ $imageW150.RelPermalink }} 150w"
+                                                        sizes="(max-width: 528px) 100vw, 528px" /> </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                                  <div class="fl-col fl-node-y2fxeojvpr0z fl-col-small-custom-width" data-node="y2fxeojvpr0z">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-rich-text fl-node-hl3t85x4f6cr" data-node="hl3t85x4f6cr">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p>{{ .Page.Params.testimonial.content }}</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <div class="fl-module fl-module-rich-text fl-node-nmlkaetdxo0q" data-node="nmlkaetdxo0q">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p>{{ .Page.Params.testimonial.who }}</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <div class="fl-module fl-module-rich-text fl-node-uy0d41vnxm86" data-node="uy0d41vnxm86">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p>{{ .Page.Params.testimonial.position }} at <a style="text-decoration: underline;" href="{{ .Page.Params.testimonial.website }}">{{ .Page.Params.testimonial.company }}</a></p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-f0p6suehzirx fl-row-default-height fl-row-align-center fl-row-has-layers" data-node="f0p6suehzirx">
+                         <div class="fl-row-content-wrap">
+                            <div class="fl-builder-layer fl-builder-shape-layer fl-builder-bottom-edge-layer fl-builder-shape-rect">
+                               <svg class="fl-builder-layer-align-bottom-center" viewBox="0 0 800 450" preserveAspectRatio="none">
+                                  <defs>
+                                  </defs>
+                                  <g class="fl-shape-content">
+                                     <rect class="fl-shape" x="0" y="0" width="800" height="450"></rect>
+                                  </g>
+                               </svg>
+                            </div>
+                            <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                               <div class="fl-col-group fl-node-6y5er840mfbw fl-col-group-custom-width" data-node="6y5er840mfbw">
+                                  <div class="fl-col fl-node-w4yx9gr5h1od fl-col-small-custom-width" data-node="w4yx9gr5h1od">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-rich-text fl-node-31rjgest75um" data-node="31rjgest75um">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p>OPEN ROLES</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <div class="fl-module fl-module-heading fl-node-pjtxle16swrv" data-node="pjtxle16swrv">
+                                           <div class="fl-module-content fl-node-content">
+                                              <h2 class="fl-heading">
+                                                 <span class="fl-heading-text">Check out exciting job offers</span>
+                                              </h2>
+                                           </div>
+                                        </div>
+                                        <div class="fl-module fl-module-rich-text fl-node-zhlys39qktgm" data-node="zhlys39qktgm">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="fl-rich-text">
+                                                 <p>If you want to work in a dynamic, multicultural environment and with a variety of client industries, please check out our current open positions.</p>
+                                              </div>
+                                           </div>
+                                        </div>
+                                        <div id="open-positions" class="fl-module fl-module-pp-content-grid fl-node-t2084qdhsoz6 jt-clickable" data-node="t2084qdhsoz6">
+                                           <div class="fl-module-content fl-node-content">
+                                              <div class="pp-posts-wrapper">
+                                                 <div class="pp-content-posts" style="--items-count: 2;--column-xl: 2;--column-lg: 2;--column-md: 2;--column-sm: 1;">
+                                                    <div class="pp-content-post-grid pp-equal-height pp-css-grid" itemscope="itemscope" itemtype="https://schema.org/Collection">
+                                               
+                                                      {{ range where site.RegularPages "Type" "careers" }}
+                                                                                                       
+                                                        <div class="pp-content-post pp-content-grid-post pp-grid-custom post-3048 jt-careers type-jt-careers status-publish hentry jt_careers_category-engineering" itemscope itemtype="https://schema.org/CreativeWork" data-id="3048">
+                                                            <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" content="{{ .Params.position }}" />
+                                                            <meta itemprop="datePublished" content="{{ dateFormat "2006-01-02" .Date }}" />
+                                                            <meta itemprop="dateModified" content="{{ dateFormat "2006-01-02" .Lastmod }}" />
+                                                            <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                                                                <meta itemprop="name" content="JetThoughts" />
+                                                            </div>
+                                                            <div itemscope itemprop="author" itemtype="https://schema.org/Person">
+                                                                <meta itemprop="name" content="{{.Params.author }}" />
+                                                            </div>
+                                                            <div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
+                                                                <meta itemprop="interactionType" content="https://schema.org/CommentAction" />
+                                                                <meta itemprop="userInteractionCount" content="0" />
+                                                            </div>
+                                                            <div class="pp-content-grid-post-text">
+                                                                <div class="career-cat">
+                                                                    <ul class='fl-jt_careers_category'>
+                                                                        <li><span class="engineering">{{ .Params.position_type }}</span></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <h3 class="pp-content-grid-post-title"><a href='{{ .Permalink }}' title='{{ .Params.position }}'>{{ .Params.position }}</a></h3>
+                                                                <div class="career-detail">
+
+                                                                    {{ range .Params.requirements }}
+                                                                    <div class="car-{{ .name | urlize }}">
+                                                                        <h4>{{ .name }}</h4>
+                                                                        <p>{{ .value }}</p>
+                                                                    </div>
+                                                                    {{ end }}
+
+                                                                    <div class="readmore"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                     {{ end }}
+                                                    </div>
+                                                    <div class="fl-clear"></div>
+                                                 </div>
+                                                 <!-- .pp-content-posts -->
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                               <div class="fl-col-group fl-node-ia512gwq9fxy fl-col-group-custom-width" data-node="ia512gwq9fxy">
+                                  <div class="fl-col fl-node-hfa6xverdc82 fl-col-small-custom-width fl-col-has-cols blue-border" data-node="hfa6xverdc82">
+                                     <div class="fl-col-content fl-node-content">
+                                        <div class="fl-col-group fl-node-b1oi92a3zgte fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="b1oi92a3zgte">
+                                           <div class="fl-col fl-node-r6vutaz8bsnq fl-col-small fl-col-small-custom-width" data-node="r6vutaz8bsnq">
+                                              <div class="fl-col-content fl-node-content">
+                                                 <div class="fl-module fl-module-heading fl-node-rhgcenbtxzqi" data-node="rhgcenbtxzqi">
+                                                    <div class="fl-module-content fl-node-content">
+                                                       <h2 class="fl-heading">
+                                                          <span class="fl-heading-text">Subscribe to our newsletter</span>
+                                                       </h2>
+                                                    </div>
+                                                 </div>
+                                                 <div class="fl-module fl-module-rich-text fl-node-bo3cr61zgnis" data-node="bo3cr61zgnis">
+                                                    <div class="fl-module-content fl-node-content">
+                                                       <div class="fl-rich-text">
+                                                          <p>Subscribe to get our latest news, offers, insights, technology, and updates.</p>
+                                                       </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                           <div class="fl-col fl-node-m4fy3ijh6oev fl-col-small fl-col-small-custom-width" data-node="m4fy3ijh6oev">
+                                              <div class="fl-col-content fl-node-content">
+                                                 <div class="fl-module fl-module-pp-gravity-form fl-node-erl54g069p1u jt-newsletter" data-node="erl54g069p1u">
+                                                    <div class="fl-module-content fl-node-content">
+                                                       <div class="pp-gf-content">
+                                                          <div class="pp-gf-inner">
+                                                             <script type="text/javascript"></script>
+                                                             <div class='gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_4' >
+                                                                <div id='gf_4' class='gform_anchor' tabindex='-1'></div>
+                                                                <div class='gform_heading'>
+                                                                   <p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                                                                </div>
+                                                                <form method='post' target="_blank" action='{{ .Site.Params.forms.newsletter.action }}'>
+                                                                   <div class='gform-body gform_body'>
+                                                                      <div id='gform_fields_4' class='gform_fields top_label form_sublabel_below description_below'>
+                                                                         <div id="field_4_1" class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_4_1" >
+                                                                            <label class='gfield_label gform-field-label' for='input_4_1'>Email address<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                                                            <div class='ginput_container ginput_container_email'>
+                                                                               <input required name='{{.Site.Params.forms.newsletter.email }}' id='input_4_1' type='email' value='' class='large' tabindex='100'  placeholder='e.g. johndoe@gmail.com' aria-required="true" aria-invalid="false"  />
+                                                                            </div>
+                                                                         </div>
+                                                                      </div>
+                                                                   </div>
+                                                                   <div class='gform_footer top_label'>
+                                                                     <input type='submit' id='gform_submit_button_4' class='gform_button button' value='Subscribe' tabindex='101' />
+                                                                   </div>
+                                                                </form>
+                                                             </div>
+                                                          </div>
+                                                       </div>
+                                                    </div>
+                                                 </div>
+                                              </div>
+                                           </div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <!-- .fl-post-content -->
+             </article>
+
+             {{ partial "page/footer.html" . }}

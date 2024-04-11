@@ -1,0 +1,37 @@
+- name: Client Company
+  image: /assets/img/companies/logo-company.png
+  url: "#"
+- name: Credit Glory
+  image: /assets/img/companies/credit-glory-company.png
+  url: "#"
+- name: Verve Group
+  image: /assets/img/companies/verve-group-company.png
+  url: "#"
+- name: Lime Leads
+  image: /assets/img/companies/lime-leads-company.png
+  url: "#"
+- name: Open Apply
+  image: /assets/img/companies/open-apply-company.png
+  url: "#"
+- name: Def Method
+  image: /assets/img/companies/def-method-company.png
+  url: "#"
+- name: Big Binary
+  image: /assets/img/companies/big-binary-company.png
+  url: "#"
+- name: S company
+  image: /assets/img/companies/s-company.png
+  url: "#"
+- name: OCS
+  image: /assets/img/companies/ocs-company.png
+  url: "#"
+- name: Knight Foundation
+  image: /assets/img/companies/knight-foundation-company.png
+  url: "#"
+- name: Agent Inbox
+  image: /assets/img/companies/agent-inbox-company.png
+  url: "#"
+
+
+
+

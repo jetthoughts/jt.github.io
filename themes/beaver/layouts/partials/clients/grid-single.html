@@ -1,0 +1,58 @@
+{{ $image := .Resources.GetMatch .Params.client.cover_image }}
+                                                                                                                                                
+{{ $imageW1024 := $image.Resize "1024x webp q75" }}
+
+{{ $logo := .Resources.GetMatch .Params.client.logo }}
+
+{{ if eq (.Scratch.Get "logoVariant") "white" }}
+{{ $logo = .Resources.GetMatch .Params.client.logo_white_version }}
+{{ end }}
+{{ .Scratch.Delete "logoVariant" }}
+                                                                        
+{{ $logoW450 := $logo.Resize "450x webp q75" }}
+{{ $logoW300 := $logo.Resize "300x webp q75" }}
+<div class="pp-content-post pp-content-grid-post pp-grid-custom post-3206 jt_case_studies type-jt_case_studies status-publish has-post-thumbnail hentry jt_case_studies_category-amazon-web-services jt_case_studies_category-elastisearch jt_case_studies_category-postgresql jt_case_studies_category-react-js jt_case_studies_category-ruby-on-rails" itemscope itemtype="https://schema.org/CreativeWork" data-id="3206">
+    <meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="http://3206" content="{{ .Title }}"/>
+    <meta itemprop="datePublished" content="{{ dateFormat "2006-01-02" .Date }}" />
+    <meta itemprop="dateModified" content="{{ dateFormat "2006-01-02" .Lastmod }}" />
+    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+        <meta itemprop="name" content="JetThoughts">
+    </div>
+    <div itemscope itemprop="author" itemtype="https://schema.org/Person">
+        <meta itemprop="name" content="{{.Params.author }}"/>
+    </div>
+    <div itemscope itemprop="image" itemtype="https://schema.org/ImageObject">
+        <meta itemprop="url"
+          content="{{ $imageW1024.RelPermalink }}" />
+        <meta itemprop="width" content="{{ $imageW1024.Width }}" />
+        <meta itemprop="height" content="{{ $imageW1024.Height }}" />
+      </div>
+    <div itemprop="interactionStatistic" itemscope itemtype="https://schema.org/InteractionCounter">
+        <meta itemprop="interactionType" content="https://schema.org/CommentAction"/>
+        <meta itemprop="userInteractionCount" content="0"/>
+    </div>
+    <div class="pp-content-grid-post-image">
+        <a
+            href="{{ .Permalink }}">
+            <img loading="lazy" decoding="async" width="{{ $logoW450.Width }}" height="{{ $logoW450.Height }}"
+
+            width="{{ $logoW450.Width }}" height="{{ $logoW450.Height }}" alt="OCS Logo"
+            sizes="(max-width: 450px) 100vw, 450px"
+            srcset="{{ $logoW450.RelPermalink }} 450w, {{ $logoW300.RelPermalink }} 300w"
+                src="{{ $logo.RelPermalink }}"
+                class="attachment-full size-full pp-post-img" alt="The LimeLeads logo" />
+        </a>
+    </div>
+    <div class="pp-content-grid-post-text">
+        <div class="excerpt">
+            <p>{{ .Params.excerpt }}</p>
+        </div>
+        <div class="case-category">
+            <ul class='fl-jt_case_studies_category'>
+                {{ range .Params.categories }}
+                <li><span class="{{ . | urlize }}">{{ . }}</span></li>
+                {{ end }}
+              </ul>
+        </div>
+    </div>
+</div>

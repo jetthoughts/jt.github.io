@@ -1,0 +1,184 @@
+{{ partial "page/header.html" . }}
+         <div id="fl-main-content" class="fl-page-content" itemprop="mainContentOfPage" role="main">
+            <div class="fl-builder-content fl-builder-content-3050 fl-builder-global-templates-locked" data-post-id="3050">
+               <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-3debxjmt89f4 fl-row-default-height fl-row-align-center" data-node="3debxjmt89f4">
+                  <div class="fl-row-content-wrap">
+                     <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                        <div class="fl-col-group fl-node-l6ztmq3h7fv2 fl-col-group-custom-width" data-node="l6ztmq3h7fv2">
+                           <div class="fl-col fl-node-8ws2e9fm0yqn fl-col-small-custom-width" data-node="8ws2e9fm0yqn">
+                              <div class="fl-col-content fl-node-content">
+                                 <div class="fl-module fl-module-heading fl-node-rq3ws0n4gdmx" data-node="rq3ws0n4gdmx">
+                                    <div class="fl-module-content fl-node-content">
+                                       <h1 class="fl-heading">
+                                          <span class="fl-heading-text">{{ .Params.position }}</span>
+                                       </h1>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="fl-col-group fl-node-0enadgf5wp84 fl-col-group-equal-height fl-col-group-align-top fl-col-group-custom-width" data-node="0enadgf5wp84">
+                            {{ range .Params.requirements }}
+                                <div class="fl-col fl-node-nmsh5axc3k28 fl-col-small fl-col-small-custom-width" data-node="nmsh5axc3k28">
+                                    <div class="fl-col-content fl-node-content">
+                                        <div class="fl-module fl-module-rich-text fl-node-qs2ucemf7j56" data-node="qs2ucemf7j56">
+                                            <div class="fl-module-content fl-node-content">
+                                                <div class="fl-rich-text">
+                                                    <p>{{ .name }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fl-module fl-module-rich-text fl-node-73cldefikyg5" data-node="73cldefikyg5">
+                                            <div class="fl-module-content fl-node-content">
+                                                <div class="fl-rich-text">
+                                                    <p>{{ .value }}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ end }}
+                           <div class="fl-col fl-node-5m4it1br29ze fl-col-small fl-col-small-custom-width" data-node="5m4it1br29ze">
+                              <div class="fl-col-content fl-node-content">
+                                 <div class="fl-module fl-module-rich-text fl-node-wtch9dloa7yx" data-node="wtch9dloa7yx">
+                                    <div class="fl-module-content fl-node-content">
+                                       <div class="fl-rich-text">
+                                          <p>Share to</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="fl-module fl-module-pp-social-share fl-node-rnjk7gex4iu1 career-share" data-node="rnjk7gex4iu1">
+                                    <div class="fl-module-content fl-node-content">
+                                       <div class="pp-social-share-content pp-share-buttons-view-icon-text pp-share-buttons-skin-minimal pp-share-buttons-shape-square pp-social-share-col-0 pp-share-buttons-align-left pp-share-buttons-color-custom">
+                                          <div class="pp-social-share-inner">
+                                             <div class="pp-share-grid-item">
+                                                <div class="pp-share-button pp-share-button-facebook">
+                                                   <a class="pp-share-button-link" href="https://www.facebook.com/sharer.php?u={{ .Permalink }}&title=Junior+Ruby+on+Rails+Developer">
+                                                      <span class="pp-share-button-icon">
+                                                      <i class="fab fa-facebook" aria-hidden="true"></i>
+                                                      <span class="pp-screen-only">Share on Facebook</span>
+                                                      </span>
+                                                      <div class="pp-share-button-text">
+                                                         <span class="pp-share-button-title">Facebook</span>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="pp-share-grid-item">
+                                                <div class="pp-share-button pp-share-button-twitter">
+                                                   <a class="pp-share-button-link" href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text=Junior+Ruby+on+Rails+Developer">
+                                                      <span class="pp-share-button-icon">
+                                                      <i class="fab pp-x-icon">𝕏</i>
+                                                      <span class="pp-screen-only">Share on Twitter</span>
+                                                      </span>
+                                                      <div class="pp-share-button-text">
+                                                         <span class="pp-share-button-title">Twitter</span>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div class="pp-share-grid-item">
+                                                <div class="pp-share-button pp-share-button-linkedin">
+                                                   <a class="pp-share-button-link" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title=Junior+Ruby+on+Rails+Developer">
+                                                      <span class="pp-share-button-icon">
+                                                      <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                                      <span class="pp-screen-only">Share on Linkedin</span>
+                                                      </span>
+                                                      <div class="pp-share-button-text">
+                                                         <span class="pp-share-button-title">Linkedin</span>
+                                                      </div>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-ywcmkjq4az6f fl-row-default-height fl-row-align-center" data-node="ywcmkjq4az6f">
+                  <div class="fl-row-content-wrap">
+                     <div class="fl-row-content fl-row-fixed-width fl-node-content">
+                        <div class="fl-col-group fl-node-9v74jmuxkpdg fl-col-group-custom-width" data-node="9v74jmuxkpdg">
+                           <div class="fl-col fl-node-1swhjnc7y8ki fl-col-small fl-col-small-custom-width" data-node="1swhjnc7y8ki">
+                              <div class="fl-col-content fl-node-content">
+                                 <div class="fl-module fl-module-rich-text fl-node-hm8u5ebytjw1 single-content career-content" data-node="hm8u5ebytjw1">
+                                    <div class="fl-module-content fl-node-content">
+                                       <div class="fl-rich-text">
+                                        {{ .Content}}
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="fl-col fl-node-p8famz26ljce fl-col-small-custom-width" data-node="p8famz26ljce">
+                              <div class="fl-col-content fl-node-content">
+                                 <div class="fl-module fl-module-pp-gravity-form fl-node-nkrzpgyfwo7s contact-page career-form blue-border" data-node="nkrzpgyfwo7s">
+                                    <div class="fl-module-content fl-node-content">
+                                       <div class="pp-gf-content">
+                                          <div class="pp-gf-inner">
+                                             <h3 class="form-title">Apply for this position</h3>
+                                             <p class="form-description"></p>
+                                             <script type="text/javascript"></script>
+                                             <div class='gf_browser_chrome gform_wrapper gravity-theme gform-theme--no-framework' data-form-theme='gravity-theme' data-form-index='0' id='gform_wrapper_6' >
+                                                <div id='gf_6' class='gform_anchor' tabindex='-1'></div>
+                                                <div class='gform_heading'>
+                                                   <h2 class="gform_title">Career</h2>
+                                                   <p class='gform_required_legend'>&quot;<span class="gfield_required gfield_required_asterisk">*</span>&quot; indicates required fields</p>
+                                                </div>
+                                                <form method='post' target="_blank" action='{{ .Site.Params.forms.career.action }}' data-formid='6'>
+                                                   <input type='hidden' name='{{ .Site.Params.forms.career.position }}' value='{{ .Params.position }}' />
+                                                   <div class='gform-body gform_body'>
+                                                      <div id='gform_fields_6' class='gform_fields top_label form_sublabel_below description_below'>
+                                                         <div id="field_6_1" class="gfield gfield--type-text gfield--input-type-text gfield--width-half gf_half gf_half_left gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_6_1" >
+                                                            <label class='gfield_label gform-field-label' for='input_6_1'>First name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                                            <div class='ginput_container ginput_container_text'><input required name='{{.Site.Params.forms.career.first_name }}' id='input_6_1' type='text' value='' class='large'   tabindex='200' placeholder='e.g. John' aria-required="true" aria-invalid="false"   /> </div>
+                                                         </div>
+                                                         <div id="field_6_3" class="gfield gfield--type-text gfield--input-type-text gfield--width-half gf_half gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_6_3" >
+                                                            <label class='gfield_label gform-field-label' for='input_6_3'>Last name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                                            <div class='ginput_container ginput_container_text'><input required name='{{.Site.Params.forms.career.last_name }}' id='input_6_3' type='text' value='' class='large'   tabindex='201' placeholder='e.g. Doe' aria-required="true" aria-invalid="false"   /> </div>
+                                                         </div>
+                                                         <div id="field_6_4" class="gfield gfield--type-email gfield--input-type-email gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_6_4" >
+                                                            <label class='gfield_label gform-field-label' for='input_6_4'>Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                                            <div class='ginput_container ginput_container_email'>
+                                                               <input required name='{{.Site.Params.forms.career.email }}' id='input_6_4' type='email' value='' class='large' tabindex='202'  placeholder='e.g. johndoe@gmail.com' aria-required="true" aria-invalid="false"  />
+                                                            </div>
+                                                         </div>
+                                                         <div id="field_6_5" class="gfield gfield--type-phone gfield--input-type-phone gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_6_5" >
+                                                            <label class='gfield_label gform-field-label' for='input_6_5'>Phone<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                                            <div class='ginput_container ginput_container_phone'><input required name='{{ .Site.Params.forms.career.phone }}' id='input_6_5' type='tel' value='' class='large' tabindex='203' placeholder='e.g. (+1) 234 567' aria-required="true" aria-invalid="false"   /></div>
+                                                         </div>
+                                                         <div id="field_6_6" class="gfield gfield--type-text gfield--input-type-text gfield--width-full gfield_contains_required field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_6_6" >
+                                                            <label class='gfield_label gform-field-label' for='input_6_6'>LinkedIn URL<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label>
+                                                            <div class='ginput_container ginput_container_text'><input required name='{{ .Site.Params.forms.career.linkedin }}' id='input_6_6' type='text' value='' class='large'   tabindex='204'  aria-required="true" aria-invalid="false"   /> </div>
+                                                         </div>
+                                                       
+                                                         <div id="field_6_8" class="gfield gfield--type-textarea gfield--input-type-textarea gfield--width-full field_sublabel_below gfield--no-description field_description_below gfield_visibility_visible"  data-js-reload="field_6_8" >
+                                                            <label class='gfield_label gform-field-label' for='input_6_8'>Introduce yourself</label>
+                                                            <div class='ginput_container ginput_container_textarea'><textarea required name='{{ .Site.Params.forms.career.introduce }}' id='input_6_8' class='textarea small' tabindex='206'   placeholder='Type here...'  aria-invalid="false"   rows='10' cols='50'></textarea></div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                
+                                                   <div class='gform_footer top_label'>
+                                                      <input type='submit' id='gform_submit_button_6' class='gform_button button' value='Apply Now' tabindex='208' onclick='if(window["gf_submitting_6"]){return false;}  if( !jQuery("#gform_6")[0].checkValidity || jQuery("#gform_6")[0].checkValidity()){window["gf_submitting_6"]=true;}  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_6"]){return false;} if( !jQuery("#gform_6")[0].checkValidity || jQuery("#gform_6")[0].checkValidity()){window["gf_submitting_6"]=true;}  jQuery("#gform_6").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=6&amp;title=1&amp;description=&amp;tabindex=200&amp;theme=data-form-theme=&#039;gravity-theme&#039;' />
+                                                   </div>
+                                                </form>
+                                             </div>
+                                        
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+         <!-- .fl-page-content -->
+        {{ partial "page/footer.html" . }}

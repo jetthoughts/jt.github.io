@@ -1,0 +1,123 @@
+// Variables
+$border-radius: 16px;
+$light-blue: #F3F5F8;
+$base: #121212;
+$base-hover: #292929;
+$border: #DEDEDE;
+
+$tablet: 1115px;
+$mobile: 860px;
+$min-mobile: 861px;
+
+/* Custom Gravity Form */
+.pp-gf-content{
+	.pp-gf-inner{
+		.form-title{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.form-description{
+			margin-top: 5px;
+			margin-bottom: 25px;
+		}
+		.gform_confirmation_message{
+			i{
+				font-size: 50px;
+				margin-bottom: 20px;
+				color: green;
+			}
+		}
+		form{
+			.gform_body{
+				.gform_fields{
+					.gfield{
+						position: relative;
+						margin-bottom: 15px;
+						.ginput_container_select{
+							position: relative;
+							select{
+								padding-top: 0 !important;
+								padding-bottom: 0 !important;
+								appearance: none;
+								-webkit-appearance: none;
+								-moz-appearance: none;
+							}
+							&::after{
+								content: "\f078";
+								font-family: "Font Awesome 5 Pro";
+								font-size: 14px;
+								position: absolute;
+								top: 50%;
+								right: 15px;
+								transform: translateY(-50%);
+							}
+						}
+						.ginput_container_textarea{
+							textarea{
+								height: 85px;
+							}
+						}
+						@media(min-width: $min-mobile){
+							&.gf_left{
+								width: 50% !important;
+								display: inline-block !important;
+								vertical-align: top;
+								padding-right: 7.5px;
+							}
+							&.gf_right{
+								width: 50% !important;
+								display: inline-block !important;
+								vertical-align: top;
+								padding-left: 7.5px;
+								.gfield_validation_message{
+									left: unset;
+									right: -12rem;
+								}
+								.gfield_validation_message{
+									::before {
+										left: -0.5rem;
+										right: auto;
+										transform: rotate(-180deg);
+									}
+								}
+							}
+						}
+						.gfield_validation_message{
+							font-size: 14px;
+							padding: 8px;
+							background-color: #F7454C;
+							color: #FFF !important;
+							position: absolute;
+							width: 200px !important;
+							left: -21rem;
+							top: 50%;
+							transform: translateY(-50%);
+							::before {
+								position: absolute;
+								width: 0;
+								height: 0;
+								content: '';
+								border-style: solid;
+								right: -0.5rem;
+								top: 1.2rem;
+								left: auto;
+								border-width: 5px 0 5px 5px;
+								border-color: transparent transparent transparent #F7454D;
+							}
+						}
+						.gfield_error{
+							input{
+								border-color: #F7454D !important;
+								background: url('/wp-content/uploads/2022/08/error.svg') scroll no-repeat right 10px center !important;
+								background-size: 18px !important;
+							}
+						}
+					}
+				}
+			}
+			.gform_footer{
+				padding-top: 10px;
+			}
+		}
+	}
+}
